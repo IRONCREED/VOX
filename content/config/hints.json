@@ -1,0 +1,38 @@
+[
+	{
+		"id": "documentation-clarity",
+		"locale": "uk",
+		"label": "Що означає «ясність»?",
+		"source": {
+			"kind": "html",
+			"html": "<strong>Ясність</strong> — можливість відновити намір рішення, його межі та спосіб перевірки без особистої присутності автора."
+		}
+	},
+	{
+		"id": "documentation-clarity",
+		"locale": "en",
+		"label": "What does “clarity” mean?",
+		"source": {
+			"kind": "html",
+			"html": "<strong>Clarity</strong> is the ability to recover a decision’s intent, boundaries, and method of verification without the author being present."
+		}
+	},
+	{
+		"id": "constitutional-enforcement",
+		"locale": "uk",
+		"label": "Технічний примус",
+		"source": {
+			"kind": "text",
+			"text": "Автоматична перевірка, що перетворює записаний інваріант на межу для кандидатної зміни."
+		}
+	},
+	{
+		"id": "constitutional-enforcement",
+		"locale": "en",
+		"label": "Technical enforcement",
+		"source": {
+			"kind": "text",
+			"text": "An automated check that turns a recorded invariant into a boundary for a candidate change."
+		}
+	}
+]

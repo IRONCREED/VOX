@@ -1,0 +1,618 @@
+[
+	{
+		"id": "horror",
+		"order": 10,
+		"labels": {
+			"uk": "горор",
+			"en": "horror"
+		}
+	},
+	{
+		"id": "body-horror",
+		"order": 20,
+		"labels": {
+			"uk": "тілесний горор",
+			"en": "body horror"
+		}
+	},
+	{
+		"id": "environmental-horror",
+		"order": 30,
+		"labels": {
+			"uk": "середовищний горор",
+			"en": "environmental horror"
+		}
+	},
+	{
+		"id": "media-horror",
+		"order": 40,
+		"labels": {
+			"uk": "медіальний горор",
+			"en": "media horror"
+		}
+	},
+	{
+		"id": "perception",
+		"order": 50,
+		"labels": {
+			"uk": "сприйняття",
+			"en": "perception"
+		}
+	},
+	{
+		"id": "communication",
+		"order": 60,
+		"labels": {
+			"uk": "комунікація",
+			"en": "communication"
+		}
+	},
+	{
+		"id": "signal",
+		"order": 70,
+		"labels": {
+			"uk": "сигнал",
+			"en": "signal"
+		}
+	},
+	{
+		"id": "war",
+		"order": 80,
+		"labels": {
+			"uk": "війна",
+			"en": "war"
+		}
+	},
+	{
+		"id": "chornobyl",
+		"order": 90,
+		"labels": {
+			"uk": "Чорнобиль",
+			"en": "Chornobyl"
+		}
+	},
+	{
+		"id": "metal-gear-solid-v",
+		"order": 100,
+		"labels": {
+			"uk": "Metal Gear Solid V",
+			"en": "Metal Gear Solid V"
+		}
+	},
+	{
+		"id": "documentation",
+		"order": 110,
+		"labels": {
+			"uk": "документація",
+			"en": "documentation"
+		}
+	},
+	{
+		"id": "literate-programming",
+		"order": 120,
+		"labels": {
+			"uk": "літературне програмування",
+			"en": "literate programming"
+		}
+	},
+	{
+		"id": "donald-knuth",
+		"order": 130,
+		"labels": {
+			"uk": "Дональд Кнут",
+			"en": "Donald Knuth"
+		}
+	},
+	{
+		"id": "web",
+		"order": 140,
+		"labels": {
+			"uk": "WEB",
+			"en": "WEB"
+		}
+	},
+	{
+		"id": "software-engineering",
+		"order": 150,
+		"labels": {
+			"uk": "програмна інженерія",
+			"en": "software engineering"
+		}
+	},
+	{
+		"id": "reproducibility",
+		"order": 160,
+		"labels": {
+			"uk": "відтворюваність",
+			"en": "reproducibility"
+		}
+	},
+	{
+		"id": "ai-assisted-development",
+		"order": 170,
+		"labels": {
+			"uk": "ШІ-асистоване розроблення",
+			"en": "AI-assisted development"
+		}
+	},
+	{
+		"id": "united-states-constitution",
+		"order": 180,
+		"labels": {
+			"uk": "Конституція США",
+			"en": "United States Constitution"
+		}
+	},
+	{
+		"id": "code-constitution",
+		"order": 190,
+		"labels": {
+			"uk": "Конституція коду",
+			"en": "Code Constitution"
+		}
+	},
+	{
+		"id": "article-vii",
+		"order": 200,
+		"labels": {
+			"uk": "стаття VII",
+			"en": "Article VII"
+		}
+	},
+	{
+		"id": "software-architecture",
+		"order": 210,
+		"labels": {
+			"uk": "архітектура програмного забезпечення",
+			"en": "software architecture"
+		}
+	},
+	{
+		"id": "operating-system",
+		"order": 220,
+		"labels": {
+			"uk": "операційна система",
+			"en": "operating system"
+		}
+	},
+	{
+		"id": "federation",
+		"order": 230,
+		"labels": {
+			"uk": "федерація",
+			"en": "federation"
+		}
+	},
+	{
+		"id": "ratification",
+		"order": 240,
+		"labels": {
+			"uk": "ратифікація",
+			"en": "ratification"
+		}
+	},
+	{
+		"id": "software-testing",
+		"order": 250,
+		"labels": {
+			"uk": "тестування програмного забезпечення",
+			"en": "software testing"
+		}
+	},
+	{
+		"id": "warden",
+		"order": 260,
+		"labels": {
+			"uk": "WARDEN",
+			"en": "WARDEN"
+		}
+	},
+	{
+		"id": "death-stranding",
+		"order": 270,
+		"labels": {
+			"uk": "Death Stranding",
+			"en": "Death Stranding"
+		}
+	},
+	{
+		"id": "article-vi",
+		"order": 280,
+		"labels": {
+			"uk": "стаття VI",
+			"en": "Article VI"
+		}
+	},
+	{
+		"id": "root-of-trust",
+		"order": 290,
+		"labels": {
+			"uk": "root of trust",
+			"en": "root of trust"
+		}
+	},
+	{
+		"id": "supremacy-clause",
+		"order": 300,
+		"labels": {
+			"uk": "Supremacy Clause",
+			"en": "Supremacy Clause"
+		}
+	},
+	{
+		"id": "continuity",
+		"order": 310,
+		"labels": {
+			"uk": "наступність",
+			"en": "continuity"
+		}
+	},
+	{
+		"id": "oath",
+		"order": 320,
+		"labels": {
+			"uk": "присяга",
+			"en": "oath"
+		}
+	},
+	{
+		"id": "religious-test",
+		"order": 330,
+		"labels": {
+			"uk": "релігійний тест",
+			"en": "religious test"
+		}
+	},
+	{
+		"id": "article-v",
+		"order": 340,
+		"labels": {
+			"uk": "стаття V",
+			"en": "Article V"
+		}
+	},
+	{
+		"id": "constitutional-amendments",
+		"order": 350,
+		"labels": {
+			"uk": "конституційні поправки",
+			"en": "constitutional amendments"
+		}
+	},
+	{
+		"id": "kernel-update",
+		"order": 360,
+		"labels": {
+			"uk": "оновлення ядра",
+			"en": "kernel update"
+		}
+	},
+	{
+		"id": "migration",
+		"order": 370,
+		"labels": {
+			"uk": "міграція",
+			"en": "migration"
+		}
+	},
+	{
+		"id": "article-iv",
+		"order": 380,
+		"labels": {
+			"uk": "стаття IV",
+			"en": "Article IV"
+		}
+	},
+	{
+		"id": "distributed-systems",
+		"order": 390,
+		"labels": {
+			"uk": "розподілені системи",
+			"en": "distributed systems"
+		}
+	},
+	{
+		"id": "states",
+		"order": 400,
+		"labels": {
+			"uk": "штати",
+			"en": "states"
+		}
+	},
+	{
+		"id": "full-faith-and-credit",
+		"order": 410,
+		"labels": {
+			"uk": "Full Faith and Credit",
+			"en": "Full Faith and Credit"
+		}
+	},
+	{
+		"id": "privileges-and-immunities",
+		"order": 420,
+		"labels": {
+			"uk": "Privileges and Immunities",
+			"en": "Privileges and Immunities"
+		}
+	},
+	{
+		"id": "interstate-recognition",
+		"order": 430,
+		"labels": {
+			"uk": "міжштатне визнання",
+			"en": "interstate recognition"
+		}
+	},
+	{
+		"id": "admission-of-states",
+		"order": 440,
+		"labels": {
+			"uk": "приєднання штатів",
+			"en": "admission of states"
+		}
+	},
+	{
+		"id": "federal-territories",
+		"order": 450,
+		"labels": {
+			"uk": "федеральні території",
+			"en": "federal territories"
+		}
+	},
+	{
+		"id": "guarantee-clause",
+		"order": 460,
+		"labels": {
+			"uk": "Guarantee Clause",
+			"en": "Guarantee Clause"
+		}
+	},
+	{
+		"id": "article-iii",
+		"order": 470,
+		"labels": {
+			"uk": "стаття III",
+			"en": "Article III"
+		}
+	},
+	{
+		"id": "judicial-power",
+		"order": 480,
+		"labels": {
+			"uk": "судова влада",
+			"en": "judicial power"
+		}
+	},
+	{
+		"id": "jurisdiction",
+		"order": 490,
+		"labels": {
+			"uk": "юрисдикція",
+			"en": "jurisdiction"
+		}
+	},
+	{
+		"id": "case-or-controversy",
+		"order": 500,
+		"labels": {
+			"uk": "case or controversy",
+			"en": "case or controversy"
+		}
+	},
+	{
+		"id": "standing",
+		"order": 510,
+		"labels": {
+			"uk": "standing",
+			"en": "standing"
+		}
+	},
+	{
+		"id": "evidence",
+		"order": 520,
+		"labels": {
+			"uk": "докази",
+			"en": "evidence"
+		}
+	},
+	{
+		"id": "judicial-review",
+		"order": 530,
+		"labels": {
+			"uk": "judicial review",
+			"en": "judicial review"
+		}
+	},
+	{
+		"id": "remedy",
+		"order": 540,
+		"labels": {
+			"uk": "засіб відновлення",
+			"en": "remedy"
+		}
+	},
+	{
+		"id": "appeal",
+		"order": 550,
+		"labels": {
+			"uk": "апеляція",
+			"en": "appeal"
+		}
+	},
+	{
+		"id": "precedent",
+		"order": 560,
+		"labels": {
+			"uk": "прецедент",
+			"en": "precedent"
+		}
+	},
+	{
+		"id": "treason",
+		"order": 570,
+		"labels": {
+			"uk": "державна зрада",
+			"en": "treason"
+		}
+	},
+	{
+		"id": "article-ii",
+		"order": 580,
+		"labels": {
+			"uk": "стаття II",
+			"en": "Article II"
+		}
+	},
+	{
+		"id": "executive-power",
+		"order": 590,
+		"labels": {
+			"uk": "виконавча влада",
+			"en": "executive power"
+		}
+	},
+	{
+		"id": "president",
+		"order": 600,
+		"labels": {
+			"uk": "Президент",
+			"en": "President"
+		}
+	},
+	{
+		"id": "take-care-clause",
+		"order": 610,
+		"labels": {
+			"uk": "Take Care Clause",
+			"en": "Take Care Clause"
+		}
+	},
+	{
+		"id": "appointments",
+		"order": 620,
+		"labels": {
+			"uk": "призначення",
+			"en": "appointments"
+		}
+	},
+	{
+		"id": "treaties",
+		"order": 630,
+		"labels": {
+			"uk": "договори",
+			"en": "treaties"
+		}
+	},
+	{
+		"id": "pardon",
+		"order": 640,
+		"labels": {
+			"uk": "помилування",
+			"en": "pardon"
+		}
+	},
+	{
+		"id": "commander-in-chief",
+		"order": 650,
+		"labels": {
+			"uk": "Commander in Chief",
+			"en": "Commander in Chief"
+		}
+	},
+	{
+		"id": "presidential-succession",
+		"order": 660,
+		"labels": {
+			"uk": "президентське наступництво",
+			"en": "presidential succession"
+		}
+	},
+	{
+		"id": "twenty-fifth-amendment",
+		"order": 670,
+		"labels": {
+			"uk": "XXV поправка",
+			"en": "Twenty-Fifth Amendment"
+		}
+	},
+	{
+		"id": "execution-of-judgments",
+		"order": 680,
+		"labels": {
+			"uk": "виконання судових рішень",
+			"en": "execution of judgments"
+		}
+	},
+	{
+		"id": "article-i",
+		"order": 690,
+		"labels": {
+			"uk": "стаття I",
+			"en": "Article I"
+		}
+	},
+	{
+		"id": "congress",
+		"order": 700,
+		"labels": {
+			"uk": "Конгрес",
+			"en": "Congress"
+		}
+	},
+	{
+		"id": "legislative-power",
+		"order": 710,
+		"labels": {
+			"uk": "законодавча влада",
+			"en": "legislative power"
+		}
+	},
+	{
+		"id": "bicameralism",
+		"order": 720,
+		"labels": {
+			"uk": "двопалатність",
+			"en": "bicameralism"
+		}
+	},
+	{
+		"id": "presentment-clause",
+		"order": 730,
+		"labels": {
+			"uk": "Presentment Clause",
+			"en": "Presentment Clause"
+		}
+	},
+	{
+		"id": "necessary-and-proper-clause",
+		"order": 740,
+		"labels": {
+			"uk": "Necessary and Proper Clause",
+			"en": "Necessary and Proper Clause"
+		}
+	},
+	{
+		"id": "appropriations-clause",
+		"order": 750,
+		"labels": {
+			"uk": "Appropriations Clause",
+			"en": "Appropriations Clause"
+		}
+	},
+	{
+		"id": "impeachment",
+		"order": 760,
+		"labels": {
+			"uk": "імпічмент",
+			"en": "impeachment"
+		}
+	},
+	{
+		"id": "software-governance",
+		"order": 770,
+		"labels": {
+			"uk": "software governance",
+			"en": "software governance"
+		}
+	}
+]

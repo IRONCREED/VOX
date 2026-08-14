@@ -1,0 +1,2991 @@
+[
+	{
+		"id": "view.horror.body-to-signal",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.from-body-to-signal",
+		"invitation": {
+			"uk": "Це есе рухається від тіла до середовища, сигналу, війни та меж моделі. Оберіть вузол, і ми продовжимо його дочірніми питаннями.",
+			"en": "This essay moves from body to environment, signal, war, and the limits of the model. Choose a node and we will continue through its child questions."
+		},
+		"entryQuestionIds": [
+			"q.horror.body-archive",
+			"q.horror.environment-risk",
+			"q.horror.signal-harm",
+			"q.horror.infection-card",
+			"q.horror.war-communication",
+			"q.horror.model-limits"
+		],
+		"nodes": [
+			"q.horror.body-archive",
+			"q.horror.body-historical-strike",
+			"q.horror.body-godzilla",
+			"q.horror.body-tetsuo",
+			"q.horror.body-biopolitics",
+			"q.horror.environment-risk",
+			"q.horror.environment-regime",
+			"q.horror.environment-memory",
+			"q.horror.environment-stalker",
+			"q.horror.environment-metro",
+			"q.horror.signal-harm",
+			"q.horror.signal-channel",
+			"q.channel-centrality",
+			"q.horror.signal-understanding",
+			"q.horror.signal-refusal",
+			"q.horror.infection-card",
+			"q.horror.infection-epidemic",
+			"q.horror.infection-weapon",
+			"q.horror.weapon-intent",
+			"q.horror.weapon-target",
+			"q.horror.weapon-delivery",
+			"q.horror.weapon-selection",
+			"q.horror.infection-hybrid",
+			"q.horror.war-communication",
+			"q.horror.war-trust",
+			"q.horror.war-sorting",
+			"q.horror.war-without-battlefield",
+			"q.horror.model-limits",
+			"q.horror.limits-other-threat",
+			"q.horror.limits-history-analysis",
+			"q.horror.limits-counterexample"
+		],
+		"edges": [
+			{
+				"from": "q.horror.body-archive",
+				"to": "q.horror.body-historical-strike",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.body-archive",
+				"to": "q.horror.body-godzilla",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.body-archive",
+				"to": "q.horror.body-tetsuo",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.body-archive",
+				"to": "q.horror.body-biopolitics",
+				"type": "expands",
+				"order": 30,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.environment-risk",
+				"to": "q.horror.environment-regime",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.environment-risk",
+				"to": "q.horror.environment-memory",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.environment-risk",
+				"to": "q.horror.environment-stalker",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.environment-risk",
+				"to": "q.horror.environment-metro",
+				"type": "expands",
+				"order": 30,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.signal-harm",
+				"to": "q.horror.signal-channel",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.signal-harm",
+				"to": "q.channel-centrality",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {
+					"uk": "Перевірити роль каналу всередині медіального механізму.",
+					"en": "Test the channel role inside the medial mechanism."
+				}
+			},
+			{
+				"from": "q.horror.signal-harm",
+				"to": "q.horror.signal-understanding",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.signal-harm",
+				"to": "q.horror.signal-refusal",
+				"type": "expands",
+				"order": 30,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.infection-card",
+				"to": "q.horror.infection-epidemic",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.infection-card",
+				"to": "q.horror.infection-weapon",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.infection-weapon",
+				"to": "q.horror.weapon-intent",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.infection-weapon",
+				"to": "q.horror.weapon-target",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.infection-weapon",
+				"to": "q.horror.weapon-delivery",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.infection-weapon",
+				"to": "q.horror.weapon-selection",
+				"type": "expands",
+				"order": 30,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.infection-card",
+				"to": "q.horror.infection-hybrid",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.war-communication",
+				"to": "q.horror.war-trust",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.war-communication",
+				"to": "q.horror.war-sorting",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.war-communication",
+				"to": "q.horror.war-without-battlefield",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.model-limits",
+				"to": "q.channel-centrality",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {
+					"uk": "Використати як граничний тест застосовності моделі.",
+					"en": "Use as a boundary test for the model."
+				}
+			},
+			{
+				"from": "q.horror.model-limits",
+				"to": "q.horror.limits-other-threat",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.model-limits",
+				"to": "q.horror.limits-history-analysis",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {}
+			},
+			{
+				"from": "q.horror.model-limits",
+				"to": "q.horror.limits-counterexample",
+				"type": "expands",
+				"order": 30,
+				"usageNote": {}
+			}
+		]
+	},
+	{
+		"id": "view.programming.why-documentation",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.why-documentation",
+		"invitation": {
+			"uk": "Стаття рухається від пам’яті рішення до Кнута, WEB, сучасних робочих процесів, ШІ та практики проєкту. Оберіть вузол, щоб відкрити його дочірні питання.",
+			"en": "The article moves from the memory of a decision through Knuth, WEB, modern workflows, AI, and project practice. Choose a node to open its child questions."
+		},
+		"entryQuestionIds": [
+			"q.documentation.documentation-memory",
+			"q.documentation.code-limits",
+			"q.documentation.knuth-method",
+			"q.documentation.web-mechanism",
+			"q.documentation.modern-workflows",
+			"q.documentation.method-boundaries",
+			"q.documentation.ai-continuation",
+			"q.documentation.project-application"
+		],
+		"nodes": [
+			"q.documentation.documentation-memory",
+			"q.documentation.documentation-context-layers",
+			"q.documentation.documentation-team-memory",
+			"q.documentation.documentation-los-alamos",
+			"q.documentation.documentation-ceremonial",
+			"q.documentation.code-limits",
+			"q.documentation.code-readable",
+			"q.documentation.code-tests",
+			"q.documentation.code-history",
+			"q.documentation.code-voltage",
+			"q.documentation.knuth-method",
+			"q.documentation.knuth-essayist",
+			"q.documentation.knuth-comments",
+			"q.documentation.knuth-network",
+			"q.documentation.knuth-debugging",
+			"q.documentation.web-mechanism",
+			"q.documentation.web-source",
+			"q.documentation.web-dual-projection",
+			"q.documentation.web-primes",
+			"q.documentation.web-single-source",
+			"q.documentation.web-production",
+			"q.documentation.modern-workflows",
+			"q.documentation.modern-cweb-noweb",
+			"q.documentation.modern-org-babel",
+			"q.documentation.modern-notebooks",
+			"q.documentation.modern-graphs",
+			"q.documentation.modern-environment",
+			"q.documentation.method-boundaries",
+			"q.documentation.boundaries-not-for-all",
+			"q.documentation.boundaries-systems",
+			"q.documentation.boundaries-excess",
+			"q.documentation.boundaries-governance",
+			"q.documentation.boundaries-dogma",
+			"q.documentation.boundaries-occam",
+			"q.documentation.ai-continuation",
+			"q.documentation.ai-prompt-log",
+			"q.documentation.ai-candidate",
+			"q.documentation.ai-prompt-literate",
+			"q.documentation.ai-vibe-coding",
+			"q.documentation.ai-authority",
+			"q.documentation.project-application",
+			"q.documentation.project-source",
+			"q.documentation.project-decision-record",
+			"q.documentation.project-generated",
+			"q.documentation.project-ci",
+			"q.documentation.project-retire"
+		],
+		"edges": [
+			{
+				"from": "q.documentation.documentation-memory",
+				"to": "q.documentation.documentation-context-layers",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.documentation-memory",
+				"to": "q.documentation.documentation-team-memory",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.documentation-memory",
+				"to": "q.documentation.documentation-los-alamos",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.documentation-memory",
+				"to": "q.documentation.documentation-ceremonial",
+				"type": "expands",
+				"order": 30,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.code-limits",
+				"to": "q.documentation.code-readable",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.code-limits",
+				"to": "q.documentation.code-tests",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.code-limits",
+				"to": "q.documentation.code-history",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.code-limits",
+				"to": "q.documentation.code-voltage",
+				"type": "expands",
+				"order": 30,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.knuth-method",
+				"to": "q.documentation.knuth-essayist",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.knuth-method",
+				"to": "q.documentation.knuth-comments",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.knuth-method",
+				"to": "q.documentation.knuth-network",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.knuth-method",
+				"to": "q.documentation.knuth-debugging",
+				"type": "expands",
+				"order": 30,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.web-mechanism",
+				"to": "q.documentation.web-source",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.web-mechanism",
+				"to": "q.documentation.web-dual-projection",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.web-mechanism",
+				"to": "q.documentation.web-primes",
+				"type": "expands",
+				"order": 30,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.web-mechanism",
+				"to": "q.documentation.web-single-source",
+				"type": "expands",
+				"order": 40,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.web-mechanism",
+				"to": "q.documentation.web-production",
+				"type": "expands",
+				"order": 50,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.modern-workflows",
+				"to": "q.documentation.modern-cweb-noweb",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.modern-workflows",
+				"to": "q.documentation.modern-org-babel",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.modern-workflows",
+				"to": "q.documentation.modern-notebooks",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.modern-workflows",
+				"to": "q.documentation.modern-graphs",
+				"type": "expands",
+				"order": 30,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.modern-workflows",
+				"to": "q.documentation.modern-environment",
+				"type": "expands",
+				"order": 40,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.method-boundaries",
+				"to": "q.documentation.boundaries-not-for-all",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.method-boundaries",
+				"to": "q.documentation.boundaries-systems",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.method-boundaries",
+				"to": "q.documentation.boundaries-excess",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.method-boundaries",
+				"to": "q.documentation.boundaries-governance",
+				"type": "expands",
+				"order": 30,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.method-boundaries",
+				"to": "q.documentation.boundaries-dogma",
+				"type": "expands",
+				"order": 40,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.method-boundaries",
+				"to": "q.documentation.boundaries-occam",
+				"type": "expands",
+				"order": 50,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.ai-continuation",
+				"to": "q.documentation.ai-prompt-log",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.ai-continuation",
+				"to": "q.documentation.ai-candidate",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.ai-continuation",
+				"to": "q.documentation.ai-prompt-literate",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.ai-continuation",
+				"to": "q.documentation.ai-vibe-coding",
+				"type": "expands",
+				"order": 30,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.ai-continuation",
+				"to": "q.documentation.ai-authority",
+				"type": "expands",
+				"order": 40,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.project-application",
+				"to": "q.documentation.project-source",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.project-application",
+				"to": "q.documentation.project-decision-record",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.project-application",
+				"to": "q.documentation.project-generated",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.project-application",
+				"to": "q.documentation.project-ci",
+				"type": "expands",
+				"order": 30,
+				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.project-application",
+				"to": "q.documentation.project-retire",
+				"type": "expands",
+				"order": 40,
+				"usageNote": {}
+			}
+		]
+	},
+	{
+		"id": "view.about.iron-creed",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"pageId": "page.about",
+		"invitation": {
+			"uk": "IRON CREED зафіксував два доступні питання про власну ідентичність. Решта подробиць залишиться за межами цього випуску.",
+			"en": "IRON CREED has registered two available questions about his identity. Further details remain outside this release."
+		},
+		"entryQuestionIds": [
+			"q.iron-creed.model",
+			"q.iron-creed.game"
+		],
+		"nodes": [
+			"q.iron-creed.model",
+			"q.iron-creed.game"
+		],
+		"edges": []
+	},
+	{
+		"id": "view.constitution-runtime.article-vii",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.constitution-runtime-01-article-vii",
+		"invitation": {
+			"uk": "Оберіть самостійне питання до частини 1 серії «Конституція, що виконується». Дочірні переходи відтворюють авторський каталог, а не постійну ієрархію питань.",
+			"en": "Choose a standalone question for part 1 of The Constitution That Runs. Child transitions reproduce the authorial catalogue, not a permanent question hierarchy."
+		},
+		"entryQuestionIds": [
+			"q.constitution.article-vii.experience",
+			"q.constitution.article-vii.activation",
+			"q.constitution.article-vii.software-model",
+			"q.constitution.article-vii.model-provenance",
+			"q.constitution.article-vii.warden",
+			"q.constitution.article-vii.adaptability"
+		],
+		"nodes": [
+			"q.constitution.article-vii.experience",
+			"q.constitution.article-vii.experience.map-perception",
+			"q.constitution.article-vii.experience.system-layers",
+			"q.constitution.article-vii.experience.uca-id",
+			"q.constitution.article-vii.experience.analogy-limit",
+			"q.constitution.article-vii.activation",
+			"q.constitution.article-vii.activation.convention-channel",
+			"q.constitution.article-vii.activation.ninth-ratification",
+			"q.constitution.article-vii.activation.scope",
+			"q.constitution.article-vii.activation.transition",
+			"q.constitution.article-vii.software-model",
+			"q.constitution.article-vii.software-model.pattern",
+			"q.constitution.article-vii.software-model.event-log",
+			"q.constitution.article-vii.software-model.authenticity",
+			"q.constitution.article-vii.software-model.invalid-event",
+			"q.constitution.article-vii.model-provenance",
+			"q.constitution.article-vii.model-provenance.set",
+			"q.constitution.article-vii.model-provenance.scope-field",
+			"q.constitution.article-vii.model-provenance.runtime-field",
+			"q.constitution.article-vii.model-provenance.historical-data",
+			"q.constitution.article-vii.warden",
+			"q.constitution.article-vii.warden.text-derived-tests",
+			"q.constitution.article-vii.warden.interpretive-tests",
+			"q.constitution.article-vii.warden.court-boundary",
+			"q.constitution.article-vii.warden.circularity",
+			"q.constitution.article-vii.adaptability",
+			"q.constitution.article-vii.adaptability.low-loss",
+			"q.constitution.article-vii.adaptability.human-interpretation",
+			"q.constitution.article-vii.adaptability.series-criterion",
+			"q.constitution.article-vii.adaptability.rebuild-trigger"
+		],
+		"edges": [
+			{
+				"from": "q.constitution.article-vii.experience",
+				"to": "q.constitution.article-vii.experience.map-perception",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-vii.experience",
+				"to": "q.constitution.article-vii.experience.system-layers",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-vii.experience",
+				"to": "q.constitution.article-vii.experience.uca-id",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-vii.experience",
+				"to": "q.constitution.article-vii.experience.analogy-limit",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-vii.activation",
+				"to": "q.constitution.article-vii.activation.convention-channel",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-vii.activation",
+				"to": "q.constitution.article-vii.activation.ninth-ratification",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-vii.activation",
+				"to": "q.constitution.article-vii.activation.scope",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-vii.activation",
+				"to": "q.constitution.article-vii.activation.transition",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-vii.software-model",
+				"to": "q.constitution.article-vii.software-model.pattern",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-vii.software-model",
+				"to": "q.constitution.article-vii.software-model.event-log",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-vii.software-model",
+				"to": "q.constitution.article-vii.software-model.authenticity",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-vii.software-model",
+				"to": "q.constitution.article-vii.software-model.invalid-event",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-vii.model-provenance",
+				"to": "q.constitution.article-vii.model-provenance.set",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-vii.model-provenance",
+				"to": "q.constitution.article-vii.model-provenance.scope-field",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-vii.model-provenance",
+				"to": "q.constitution.article-vii.model-provenance.runtime-field",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-vii.model-provenance",
+				"to": "q.constitution.article-vii.model-provenance.historical-data",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-vii.warden",
+				"to": "q.constitution.article-vii.warden.text-derived-tests",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-vii.warden",
+				"to": "q.constitution.article-vii.warden.interpretive-tests",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-vii.warden",
+				"to": "q.constitution.article-vii.warden.court-boundary",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-vii.warden",
+				"to": "q.constitution.article-vii.warden.circularity",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-vii.adaptability",
+				"to": "q.constitution.article-vii.adaptability.low-loss",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-vii.adaptability",
+				"to": "q.constitution.article-vii.adaptability.human-interpretation",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-vii.adaptability",
+				"to": "q.constitution.article-vii.adaptability.series-criterion",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-vii.adaptability",
+				"to": "q.constitution.article-vii.adaptability.rebuild-trigger",
+				"type": "expands",
+				"order": 30
+			}
+		]
+	},
+	{
+		"id": "view.constitution-runtime.article-vi",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.constitution-runtime-02-article-vi",
+		"invitation": {
+			"uk": "Оберіть самостійне питання до частини 2 серії «Конституція, що виконується». Дочірні переходи відтворюють авторський каталог, а не постійну ієрархію питань.",
+			"en": "Choose a standalone question for part 2 of The Constitution That Runs. Child transitions reproduce the authorial catalogue, not a permanent question hierarchy."
+		},
+		"entryQuestionIds": [
+			"q.constitution.article-vi.connected-trust",
+			"q.constitution.article-vi.continuity",
+			"q.constitution.article-vi.root",
+			"q.constitution.article-vi.supremacy",
+			"q.constitution.article-vi.public-role",
+			"q.constitution.article-vi.warden",
+			"q.constitution.article-vi.adaptability"
+		],
+		"nodes": [
+			"q.constitution.article-vi.connected-trust",
+			"q.constitution.article-vi.connected-trust.capabilities",
+			"q.constitution.article-vi.connected-trust.transport-vs-authority",
+			"q.constitution.article-vi.connected-trust.canonical-copies",
+			"q.constitution.article-vi.connected-trust.analogy-limit",
+			"q.constitution.article-vi.continuity",
+			"q.constitution.article-vi.continuity.historical-scope",
+			"q.constitution.article-vi.continuity.external-contract",
+			"q.constitution.article-vi.continuity.obligation-vs-custom",
+			"q.constitution.article-vi.continuity.unverified-claim",
+			"q.constitution.article-vi.root",
+			"q.constitution.article-vi.root.article-vii-dependency",
+			"q.constitution.article-vi.root.identifier-digest",
+			"q.constitution.article-vi.root.popularity",
+			"q.constitution.article-vi.root.custody-upgrade",
+			"q.constitution.article-vi.supremacy",
+			"q.constitution.article-vi.supremacy.in-pursuance",
+			"q.constitution.article-vi.supremacy.treaty-authority",
+			"q.constitution.article-vi.supremacy.self-claim",
+			"q.constitution.article-vi.supremacy.partial-displacement",
+			"q.constitution.article-vi.supremacy.omitted-preemption",
+			"q.constitution.article-vi.public-role",
+			"q.constitution.article-vi.public-role.oath-affirmation",
+			"q.constitution.article-vi.public-role.support-meaning",
+			"q.constitution.article-vi.public-role.no-religious-credential",
+			"q.constitution.article-vi.public-role.state-test-boundary",
+			"q.constitution.article-vi.public-role.oath-behavior",
+			"q.constitution.article-vi.warden",
+			"q.constitution.article-vi.warden.text-derived",
+			"q.constitution.article-vi.warden.engineering",
+			"q.constitution.article-vi.warden.test-limit",
+			"q.constitution.article-vi.warden.broader-review",
+			"q.constitution.article-vi.warden.article-v-upgrade-test",
+			"q.constitution.article-vi.adaptability",
+			"q.constitution.article-vi.adaptability.low-loss",
+			"q.constitution.article-vi.adaptability.human-judgment",
+			"q.constitution.article-vi.adaptability.stop-quality",
+			"q.constitution.article-vi.adaptability.article-v-root-migration"
+		],
+		"edges": [
+			{
+				"from": "q.constitution.article-vi.connected-trust",
+				"to": "q.constitution.article-vi.connected-trust.capabilities",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-vi.connected-trust",
+				"to": "q.constitution.article-vi.connected-trust.transport-vs-authority",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-vi.connected-trust",
+				"to": "q.constitution.article-vi.connected-trust.canonical-copies",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-vi.connected-trust",
+				"to": "q.constitution.article-vi.connected-trust.analogy-limit",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-vi.continuity",
+				"to": "q.constitution.article-vi.continuity.historical-scope",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-vi.continuity",
+				"to": "q.constitution.article-vi.continuity.external-contract",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-vi.continuity",
+				"to": "q.constitution.article-vi.continuity.obligation-vs-custom",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-vi.continuity",
+				"to": "q.constitution.article-vi.continuity.unverified-claim",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-vi.root",
+				"to": "q.constitution.article-vi.root.article-vii-dependency",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-vi.root",
+				"to": "q.constitution.article-vi.root.identifier-digest",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-vi.root",
+				"to": "q.constitution.article-vi.root.popularity",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-vi.root",
+				"to": "q.constitution.article-vi.root.custody-upgrade",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-vi.supremacy",
+				"to": "q.constitution.article-vi.supremacy.in-pursuance",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-vi.supremacy",
+				"to": "q.constitution.article-vi.supremacy.treaty-authority",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-vi.supremacy",
+				"to": "q.constitution.article-vi.supremacy.self-claim",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-vi.supremacy",
+				"to": "q.constitution.article-vi.supremacy.partial-displacement",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-vi.supremacy",
+				"to": "q.constitution.article-vi.supremacy.omitted-preemption",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-vi.public-role",
+				"to": "q.constitution.article-vi.public-role.oath-affirmation",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-vi.public-role",
+				"to": "q.constitution.article-vi.public-role.support-meaning",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-vi.public-role",
+				"to": "q.constitution.article-vi.public-role.no-religious-credential",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-vi.public-role",
+				"to": "q.constitution.article-vi.public-role.state-test-boundary",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-vi.public-role",
+				"to": "q.constitution.article-vi.public-role.oath-behavior",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-vi.warden",
+				"to": "q.constitution.article-vi.warden.text-derived",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-vi.warden",
+				"to": "q.constitution.article-vi.warden.engineering",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-vi.warden",
+				"to": "q.constitution.article-vi.warden.test-limit",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-vi.warden",
+				"to": "q.constitution.article-vi.warden.broader-review",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-vi.warden",
+				"to": "q.constitution.article-vi.warden.article-v-upgrade-test",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-vi.adaptability",
+				"to": "q.constitution.article-vi.adaptability.low-loss",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-vi.adaptability",
+				"to": "q.constitution.article-vi.adaptability.human-judgment",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-vi.adaptability",
+				"to": "q.constitution.article-vi.adaptability.stop-quality",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-vi.adaptability",
+				"to": "q.constitution.article-vi.adaptability.article-v-root-migration",
+				"type": "expands",
+				"order": 30
+			}
+		]
+	},
+	{
+		"id": "view.constitution-runtime.article-v",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.constitution-runtime-03-article-v",
+		"invitation": {
+			"uk": "Оберіть самостійне питання до частини 3 серії «Конституція, що виконується». Дочірні переходи відтворюють авторський каталог, а не постійну ієрархію питань.",
+			"en": "Choose a standalone question for part 3 of The Constitution That Runs. Child transitions reproduce the authorial catalogue, not a permanent question hierarchy."
+		},
+		"entryQuestionIds": [
+			"q.constitution.article-v.root-replacement",
+			"q.constitution.article-v.proposal-routes",
+			"q.constitution.article-v.exact-artifact",
+			"q.constitution.article-v.ratification",
+			"q.constitution.article-v.entrenchment",
+			"q.constitution.article-v.attestation",
+			"q.constitution.article-v.migration",
+			"q.constitution.article-v.warden",
+			"q.constitution.article-v.adaptability"
+		],
+		"nodes": [
+			"q.constitution.article-v.root-replacement",
+			"q.constitution.article-v.root-replacement.change-level",
+			"q.constitution.article-v.root-replacement.capability-authority",
+			"q.constitution.article-v.root-replacement.self-reference",
+			"q.constitution.article-v.root-replacement.lineage",
+			"q.constitution.article-v.proposal-routes",
+			"q.constitution.article-v.proposal-routes.threshold-calculation",
+			"q.constitution.article-v.proposal-routes.president",
+			"q.constitution.article-v.proposal-routes.state-applications",
+			"q.constitution.article-v.proposal-routes.convention-gaps",
+			"q.constitution.article-v.proposal-routes.anti-capture",
+			"q.constitution.article-v.exact-artifact",
+			"q.constitution.article-v.exact-artifact.digest-fields",
+			"q.constitution.article-v.exact-artifact.substantive-edit",
+			"q.constitution.article-v.exact-artifact.sha256",
+			"q.constitution.article-v.exact-artifact.external-evidence",
+			"q.constitution.article-v.exact-artifact.transition-plan",
+			"q.constitution.article-v.ratification",
+			"q.constitution.article-v.ratification.three-fourths",
+			"q.constitution.article-v.ratification.duplicate",
+			"q.constitution.article-v.ratification.wrong-mode",
+			"q.constitution.article-v.ratification.attestation-distinction",
+			"q.constitution.article-v.ratification.twenty-seventh",
+			"q.constitution.article-v.ratification.rescission",
+			"q.constitution.article-v.entrenchment",
+			"q.constitution.article-v.entrenchment.pre-1808",
+			"q.constitution.article-v.entrenchment.historical-check",
+			"q.constitution.article-v.entrenchment.equal-suffrage",
+			"q.constitution.article-v.entrenchment.individual-consent",
+			"q.constitution.article-v.entrenchment.classification-authority",
+			"q.constitution.article-v.attestation",
+			"q.constitution.article-v.attestation.creates-validity",
+			"q.constitution.article-v.attestation.root-fields",
+			"q.constitution.article-v.attestation.official-corpus",
+			"q.constitution.article-v.attestation.integration-error",
+			"q.constitution.article-v.migration",
+			"q.constitution.article-v.migration.runtime-components",
+			"q.constitution.article-v.migration.coexistence",
+			"q.constitution.article-v.migration.safe-state",
+			"q.constitution.article-v.migration.rollback",
+			"q.constitution.article-v.migration.repeal-procedure",
+			"q.constitution.article-v.warden",
+			"q.constitution.article-v.warden.article-v-tests",
+			"q.constitution.article-v.warden.administrative-tests",
+			"q.constitution.article-v.warden.code-constitution-tests",
+			"q.constitution.article-v.warden.requires-review",
+			"q.constitution.article-v.warden.mutation-test",
+			"q.constitution.article-v.adaptability",
+			"q.constitution.article-v.adaptability.machine-transfer",
+			"q.constitution.article-v.adaptability.human-interpretation",
+			"q.constitution.article-v.adaptability.explicit-gaps",
+			"q.constitution.article-v.adaptability.software-governance",
+			"q.constitution.article-v.adaptability.article-iv"
+		],
+		"edges": [
+			{
+				"from": "q.constitution.article-v.root-replacement",
+				"to": "q.constitution.article-v.root-replacement.change-level",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-v.root-replacement",
+				"to": "q.constitution.article-v.root-replacement.capability-authority",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-v.root-replacement",
+				"to": "q.constitution.article-v.root-replacement.self-reference",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-v.root-replacement",
+				"to": "q.constitution.article-v.root-replacement.lineage",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-v.proposal-routes",
+				"to": "q.constitution.article-v.proposal-routes.threshold-calculation",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-v.proposal-routes",
+				"to": "q.constitution.article-v.proposal-routes.president",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-v.proposal-routes",
+				"to": "q.constitution.article-v.proposal-routes.state-applications",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-v.proposal-routes",
+				"to": "q.constitution.article-v.proposal-routes.convention-gaps",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-v.proposal-routes",
+				"to": "q.constitution.article-v.proposal-routes.anti-capture",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-v.exact-artifact",
+				"to": "q.constitution.article-v.exact-artifact.digest-fields",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-v.exact-artifact",
+				"to": "q.constitution.article-v.exact-artifact.substantive-edit",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-v.exact-artifact",
+				"to": "q.constitution.article-v.exact-artifact.sha256",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-v.exact-artifact",
+				"to": "q.constitution.article-v.exact-artifact.external-evidence",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-v.exact-artifact",
+				"to": "q.constitution.article-v.exact-artifact.transition-plan",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-v.ratification",
+				"to": "q.constitution.article-v.ratification.three-fourths",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-v.ratification",
+				"to": "q.constitution.article-v.ratification.duplicate",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-v.ratification",
+				"to": "q.constitution.article-v.ratification.wrong-mode",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-v.ratification",
+				"to": "q.constitution.article-v.ratification.attestation-distinction",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-v.ratification",
+				"to": "q.constitution.article-v.ratification.twenty-seventh",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-v.ratification",
+				"to": "q.constitution.article-v.ratification.rescission",
+				"type": "expands",
+				"order": 50
+			},
+			{
+				"from": "q.constitution.article-v.entrenchment",
+				"to": "q.constitution.article-v.entrenchment.pre-1808",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-v.entrenchment",
+				"to": "q.constitution.article-v.entrenchment.historical-check",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-v.entrenchment",
+				"to": "q.constitution.article-v.entrenchment.equal-suffrage",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-v.entrenchment",
+				"to": "q.constitution.article-v.entrenchment.individual-consent",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-v.entrenchment",
+				"to": "q.constitution.article-v.entrenchment.classification-authority",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-v.attestation",
+				"to": "q.constitution.article-v.attestation.creates-validity",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-v.attestation",
+				"to": "q.constitution.article-v.attestation.root-fields",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-v.attestation",
+				"to": "q.constitution.article-v.attestation.official-corpus",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-v.attestation",
+				"to": "q.constitution.article-v.attestation.integration-error",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-v.migration",
+				"to": "q.constitution.article-v.migration.runtime-components",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-v.migration",
+				"to": "q.constitution.article-v.migration.coexistence",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-v.migration",
+				"to": "q.constitution.article-v.migration.safe-state",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-v.migration",
+				"to": "q.constitution.article-v.migration.rollback",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-v.migration",
+				"to": "q.constitution.article-v.migration.repeal-procedure",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-v.warden",
+				"to": "q.constitution.article-v.warden.article-v-tests",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-v.warden",
+				"to": "q.constitution.article-v.warden.administrative-tests",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-v.warden",
+				"to": "q.constitution.article-v.warden.code-constitution-tests",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-v.warden",
+				"to": "q.constitution.article-v.warden.requires-review",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-v.warden",
+				"to": "q.constitution.article-v.warden.mutation-test",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-v.adaptability",
+				"to": "q.constitution.article-v.adaptability.machine-transfer",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-v.adaptability",
+				"to": "q.constitution.article-v.adaptability.human-interpretation",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-v.adaptability",
+				"to": "q.constitution.article-v.adaptability.explicit-gaps",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-v.adaptability",
+				"to": "q.constitution.article-v.adaptability.software-governance",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-v.adaptability",
+				"to": "q.constitution.article-v.adaptability.article-iv",
+				"type": "expands",
+				"order": 40
+			}
+		]
+	},
+	{
+		"id": "view.constitution-runtime.article-iv",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.constitution-runtime-04-article-iv",
+		"invitation": {
+			"uk": "Оберіть самостійне питання до частини 4 серії «Конституція, що виконується». Дочірні переходи відтворюють авторський каталог, а не постійну ієрархію питань.",
+			"en": "Choose a standalone question for part 4 of The Constitution That Runs. Child transitions reproduce the authorial catalogue, not a permanent question hierarchy."
+		},
+		"entryQuestionIds": [
+			"q.constitution.article-iv.autonomous-state",
+			"q.constitution.article-iv.artifact-recognition",
+			"q.constitution.article-iv.recognition-execution",
+			"q.constitution.article-iv.citizen-standing",
+			"q.constitution.article-iv.interstate-transfer",
+			"q.constitution.article-iv.superseded-clause",
+			"q.constitution.article-iv.state-admission",
+			"q.constitution.article-iv.territory-protection",
+			"q.constitution.article-iv.warden",
+			"q.constitution.article-iv.adaptability"
+		],
+		"nodes": [
+			"q.constitution.article-iv.autonomous-state",
+			"q.constitution.article-iv.autonomous-state.subordinate-component",
+			"q.constitution.article-iv.autonomous-state.technical-boundary",
+			"q.constitution.article-iv.autonomous-state.local-decisions",
+			"q.constitution.article-iv.autonomous-state.common-order",
+			"q.constitution.article-iv.autonomous-state.material-absorption",
+			"q.constitution.article-iv.artifact-recognition",
+			"q.constitution.article-iv.artifact-recognition.classes",
+			"q.constitution.article-iv.artifact-recognition.digest-authentication",
+			"q.constitution.article-iv.artifact-recognition.competence",
+			"q.constitution.article-iv.artifact-recognition.compatible-root",
+			"q.constitution.article-iv.artifact-recognition.revision-mismatch",
+			"q.constitution.article-iv.recognition-execution",
+			"q.constitution.article-iv.recognition-execution.merits-review",
+			"q.constitution.article-iv.recognition-execution.choice-of-law",
+			"q.constitution.article-iv.recognition-execution.local-means",
+			"q.constitution.article-iv.recognition-execution.effect-limit",
+			"q.constitution.article-iv.recognition-execution.human-challenge",
+			"q.constitution.article-iv.citizen-standing",
+			"q.constitution.article-iv.citizen-standing.fundamental-activities",
+			"q.constitution.article-iv.citizen-standing.local-law",
+			"q.constitution.article-iv.citizen-standing.substantial-reason",
+			"q.constitution.article-iv.citizen-standing.close-relationship",
+			"q.constitution.article-iv.citizen-standing.fourteenth-amendment",
+			"q.constitution.article-iv.interstate-transfer",
+			"q.constitution.article-iv.interstate-transfer.documents",
+			"q.constitution.article-iv.interstate-transfer.asylum-review",
+			"q.constitution.article-iv.interstate-transfer.guilt",
+			"q.constitution.article-iv.interstate-transfer.execution",
+			"q.constitution.article-iv.interstate-transfer.dispute",
+			"q.constitution.article-iv.superseded-clause",
+			"q.constitution.article-iv.superseded-clause.original-function",
+			"q.constitution.article-iv.superseded-clause.thirteenth-amendment",
+			"q.constitution.article-iv.superseded-clause.historical-corpus",
+			"q.constitution.article-iv.superseded-clause.backward-compatibility",
+			"q.constitution.article-iv.superseded-clause.moral-neutrality",
+			"q.constitution.article-iv.state-admission",
+			"q.constitution.article-iv.state-admission.external-candidate",
+			"q.constitution.article-iv.state-admission.affected-consents",
+			"q.constitution.article-iv.state-admission.equal-footing",
+			"q.constitution.article-iv.state-admission.migration",
+			"q.constitution.article-iv.state-admission.no-exit",
+			"q.constitution.article-iv.territory-protection",
+			"q.constitution.article-iv.territory-protection.state-territory",
+			"q.constitution.article-iv.territory-protection.claims",
+			"q.constitution.article-iv.territory-protection.threat-routes",
+			"q.constitution.article-iv.territory-protection.executive-fallback",
+			"q.constitution.article-iv.territory-protection.intervention-limits",
+			"q.constitution.article-iv.warden",
+			"q.constitution.article-iv.warden.literal-tests",
+			"q.constitution.article-iv.warden.doctrine-tests",
+			"q.constitution.article-iv.warden.engineering-tests",
+			"q.constitution.article-iv.warden.article-iii-handoff",
+			"q.constitution.article-iv.warden.mutation-test",
+			"q.constitution.article-iv.adaptability",
+			"q.constitution.article-iv.adaptability.machine-transfer",
+			"q.constitution.article-iv.adaptability.human-interpretation",
+			"q.constitution.article-iv.adaptability.software-precision",
+			"q.constitution.article-iv.adaptability.political-richness",
+			"q.constitution.article-iv.adaptability.article-iii"
+		],
+		"edges": [
+			{
+				"from": "q.constitution.article-iv.autonomous-state",
+				"to": "q.constitution.article-iv.autonomous-state.subordinate-component",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iv.autonomous-state",
+				"to": "q.constitution.article-iv.autonomous-state.technical-boundary",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iv.autonomous-state",
+				"to": "q.constitution.article-iv.autonomous-state.local-decisions",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iv.autonomous-state",
+				"to": "q.constitution.article-iv.autonomous-state.common-order",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iv.autonomous-state",
+				"to": "q.constitution.article-iv.autonomous-state.material-absorption",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iv.artifact-recognition",
+				"to": "q.constitution.article-iv.artifact-recognition.classes",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iv.artifact-recognition",
+				"to": "q.constitution.article-iv.artifact-recognition.digest-authentication",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iv.artifact-recognition",
+				"to": "q.constitution.article-iv.artifact-recognition.competence",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iv.artifact-recognition",
+				"to": "q.constitution.article-iv.artifact-recognition.compatible-root",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iv.artifact-recognition",
+				"to": "q.constitution.article-iv.artifact-recognition.revision-mismatch",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iv.recognition-execution",
+				"to": "q.constitution.article-iv.recognition-execution.merits-review",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iv.recognition-execution",
+				"to": "q.constitution.article-iv.recognition-execution.choice-of-law",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iv.recognition-execution",
+				"to": "q.constitution.article-iv.recognition-execution.local-means",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iv.recognition-execution",
+				"to": "q.constitution.article-iv.recognition-execution.effect-limit",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iv.recognition-execution",
+				"to": "q.constitution.article-iv.recognition-execution.human-challenge",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iv.citizen-standing",
+				"to": "q.constitution.article-iv.citizen-standing.fundamental-activities",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iv.citizen-standing",
+				"to": "q.constitution.article-iv.citizen-standing.local-law",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iv.citizen-standing",
+				"to": "q.constitution.article-iv.citizen-standing.substantial-reason",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iv.citizen-standing",
+				"to": "q.constitution.article-iv.citizen-standing.close-relationship",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iv.citizen-standing",
+				"to": "q.constitution.article-iv.citizen-standing.fourteenth-amendment",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iv.interstate-transfer",
+				"to": "q.constitution.article-iv.interstate-transfer.documents",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iv.interstate-transfer",
+				"to": "q.constitution.article-iv.interstate-transfer.asylum-review",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iv.interstate-transfer",
+				"to": "q.constitution.article-iv.interstate-transfer.guilt",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iv.interstate-transfer",
+				"to": "q.constitution.article-iv.interstate-transfer.execution",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iv.interstate-transfer",
+				"to": "q.constitution.article-iv.interstate-transfer.dispute",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iv.superseded-clause",
+				"to": "q.constitution.article-iv.superseded-clause.original-function",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iv.superseded-clause",
+				"to": "q.constitution.article-iv.superseded-clause.thirteenth-amendment",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iv.superseded-clause",
+				"to": "q.constitution.article-iv.superseded-clause.historical-corpus",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iv.superseded-clause",
+				"to": "q.constitution.article-iv.superseded-clause.backward-compatibility",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iv.superseded-clause",
+				"to": "q.constitution.article-iv.superseded-clause.moral-neutrality",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iv.state-admission",
+				"to": "q.constitution.article-iv.state-admission.external-candidate",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iv.state-admission",
+				"to": "q.constitution.article-iv.state-admission.affected-consents",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iv.state-admission",
+				"to": "q.constitution.article-iv.state-admission.equal-footing",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iv.state-admission",
+				"to": "q.constitution.article-iv.state-admission.migration",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iv.state-admission",
+				"to": "q.constitution.article-iv.state-admission.no-exit",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iv.territory-protection",
+				"to": "q.constitution.article-iv.territory-protection.state-territory",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iv.territory-protection",
+				"to": "q.constitution.article-iv.territory-protection.claims",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iv.territory-protection",
+				"to": "q.constitution.article-iv.territory-protection.threat-routes",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iv.territory-protection",
+				"to": "q.constitution.article-iv.territory-protection.executive-fallback",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iv.territory-protection",
+				"to": "q.constitution.article-iv.territory-protection.intervention-limits",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iv.warden",
+				"to": "q.constitution.article-iv.warden.literal-tests",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iv.warden",
+				"to": "q.constitution.article-iv.warden.doctrine-tests",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iv.warden",
+				"to": "q.constitution.article-iv.warden.engineering-tests",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iv.warden",
+				"to": "q.constitution.article-iv.warden.article-iii-handoff",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iv.warden",
+				"to": "q.constitution.article-iv.warden.mutation-test",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iv.adaptability",
+				"to": "q.constitution.article-iv.adaptability.machine-transfer",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iv.adaptability",
+				"to": "q.constitution.article-iv.adaptability.human-interpretation",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iv.adaptability",
+				"to": "q.constitution.article-iv.adaptability.software-precision",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iv.adaptability",
+				"to": "q.constitution.article-iv.adaptability.political-richness",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iv.adaptability",
+				"to": "q.constitution.article-iv.adaptability.article-iii",
+				"type": "expands",
+				"order": 40
+			}
+		]
+	},
+	{
+		"id": "view.constitution-runtime.article-iii",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.constitution-runtime-05-article-iii",
+		"invitation": {
+			"uk": "Оберіть самостійне питання до частини 5 серії «Конституція, що виконується». Дочірні переходи відтворюють авторський каталог, а не постійну ієрархію питань.",
+			"en": "Choose a standalone question for part 5 of The Constitution That Runs. Child transitions reproduce the authorial catalogue, not a permanent question hierarchy."
+		},
+		"entryQuestionIds": [
+			"q.constitution.article-iii.judicial-boundary",
+			"q.constitution.article-iii.case-or-controversy",
+			"q.constitution.article-iii.jurisdiction-routing",
+			"q.constitution.article-iii.evidentiary-record",
+			"q.constitution.article-iii.judicial-review",
+			"q.constitution.article-iii.bounded-remedy",
+			"q.constitution.article-iii.review-precedent",
+			"q.constitution.article-iii.criminal-safeguards",
+			"q.constitution.article-iii.warden",
+			"q.constitution.article-iii.adaptability"
+		],
+		"nodes": [
+			"q.constitution.article-iii.judicial-boundary",
+			"q.constitution.article-iii.judicial-boundary.vesting",
+			"q.constitution.article-iii.judicial-boundary.independence",
+			"q.constitution.article-iii.judicial-boundary.finding-versus-test",
+			"q.constitution.article-iii.judicial-boundary.warden-no-holding",
+			"q.constitution.article-iii.judicial-boundary.capability-concentration",
+			"q.constitution.article-iii.case-or-controversy",
+			"q.constitution.article-iii.case-or-controversy.adverse-parties",
+			"q.constitution.article-iii.case-or-controversy.injury-in-fact",
+			"q.constitution.article-iii.case-or-controversy.causation",
+			"q.constitution.article-iii.case-or-controversy.redressability",
+			"q.constitution.article-iii.case-or-controversy.ripeness-and-mootness",
+			"q.constitution.article-iii.jurisdiction-routing",
+			"q.constitution.article-iii.jurisdiction-routing.nine-heads",
+			"q.constitution.article-iii.jurisdiction-routing.constitutional-versus-statutory",
+			"q.constitution.article-iii.jurisdiction-routing.original-jurisdiction",
+			"q.constitution.article-iii.jurisdiction-routing.eleventh-amendment",
+			"q.constitution.article-iii.jurisdiction-routing.incoming-packet",
+			"q.constitution.article-iii.evidentiary-record",
+			"q.constitution.article-iii.evidentiary-record.authentication",
+			"q.constitution.article-iii.evidentiary-record.admission-versus-truth",
+			"q.constitution.article-iii.evidentiary-record.fact-finder",
+			"q.constitution.article-iii.evidentiary-record.finding-provenance",
+			"q.constitution.article-iii.evidentiary-record.llm-assistance",
+			"q.constitution.article-iii.judicial-review",
+			"q.constitution.article-iii.judicial-review.text-and-marbury",
+			"q.constitution.article-iii.judicial-review.hierarchy-versus-applicability",
+			"q.constitution.article-iii.judicial-review.pursuance",
+			"q.constitution.article-iii.judicial-review.displaced-local-rule",
+			"q.constitution.article-iii.judicial-review.semantic-boundary",
+			"q.constitution.article-iii.bounded-remedy",
+			"q.constitution.article-iii.bounded-remedy.holding-versus-opinion",
+			"q.constitution.article-iii.bounded-remedy.proved-injury",
+			"q.constitution.article-iii.bounded-remedy.least-scope",
+			"q.constitution.article-iii.bounded-remedy.execution-handoff",
+			"q.constitution.article-iii.bounded-remedy.denial-of-relief",
+			"q.constitution.article-iii.review-precedent",
+			"q.constitution.article-iii.review-precedent.affirm-and-reverse",
+			"q.constitution.article-iii.review-precedent.vacate-and-remand",
+			"q.constitution.article-iii.review-precedent.parent-digest",
+			"q.constitution.article-iii.review-precedent.final-versus-precedent",
+			"q.constitution.article-iii.review-precedent.stare-decisis-limit",
+			"q.constitution.article-iii.criminal-safeguards",
+			"q.constitution.article-iii.criminal-safeguards.impeachment",
+			"q.constitution.article-iii.criminal-safeguards.venue",
+			"q.constitution.article-iii.criminal-safeguards.sixth-amendment",
+			"q.constitution.article-iii.criminal-safeguards.two-witnesses",
+			"q.constitution.article-iii.criminal-safeguards.punishment-boundary",
+			"q.constitution.article-iii.warden",
+			"q.constitution.article-iii.warden.literal-text",
+			"q.constitution.article-iii.warden.amendment-and-doctrine",
+			"q.constitution.article-iii.warden.engineering-rules",
+			"q.constitution.article-iii.warden.article-iv-integration",
+			"q.constitution.article-iii.warden.mutation-test",
+			"q.constitution.article-iii.adaptability",
+			"q.constitution.article-iii.adaptability.transferable-properties",
+			"q.constitution.article-iii.adaptability.human-judgment",
+			"q.constitution.article-iii.adaptability.procedural-transparency",
+			"q.constitution.article-iii.adaptability.institutional-richness",
+			"q.constitution.article-iii.adaptability.article-ii-handoff"
+		],
+		"edges": [
+			{
+				"from": "q.constitution.article-iii.judicial-boundary",
+				"to": "q.constitution.article-iii.judicial-boundary.vesting",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iii.judicial-boundary",
+				"to": "q.constitution.article-iii.judicial-boundary.independence",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iii.judicial-boundary",
+				"to": "q.constitution.article-iii.judicial-boundary.finding-versus-test",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iii.judicial-boundary",
+				"to": "q.constitution.article-iii.judicial-boundary.warden-no-holding",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iii.judicial-boundary",
+				"to": "q.constitution.article-iii.judicial-boundary.capability-concentration",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iii.case-or-controversy",
+				"to": "q.constitution.article-iii.case-or-controversy.adverse-parties",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iii.case-or-controversy",
+				"to": "q.constitution.article-iii.case-or-controversy.injury-in-fact",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iii.case-or-controversy",
+				"to": "q.constitution.article-iii.case-or-controversy.causation",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iii.case-or-controversy",
+				"to": "q.constitution.article-iii.case-or-controversy.redressability",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iii.case-or-controversy",
+				"to": "q.constitution.article-iii.case-or-controversy.ripeness-and-mootness",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iii.jurisdiction-routing",
+				"to": "q.constitution.article-iii.jurisdiction-routing.nine-heads",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iii.jurisdiction-routing",
+				"to": "q.constitution.article-iii.jurisdiction-routing.constitutional-versus-statutory",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iii.jurisdiction-routing",
+				"to": "q.constitution.article-iii.jurisdiction-routing.original-jurisdiction",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iii.jurisdiction-routing",
+				"to": "q.constitution.article-iii.jurisdiction-routing.eleventh-amendment",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iii.jurisdiction-routing",
+				"to": "q.constitution.article-iii.jurisdiction-routing.incoming-packet",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iii.evidentiary-record",
+				"to": "q.constitution.article-iii.evidentiary-record.authentication",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iii.evidentiary-record",
+				"to": "q.constitution.article-iii.evidentiary-record.admission-versus-truth",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iii.evidentiary-record",
+				"to": "q.constitution.article-iii.evidentiary-record.fact-finder",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iii.evidentiary-record",
+				"to": "q.constitution.article-iii.evidentiary-record.finding-provenance",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iii.evidentiary-record",
+				"to": "q.constitution.article-iii.evidentiary-record.llm-assistance",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iii.judicial-review",
+				"to": "q.constitution.article-iii.judicial-review.text-and-marbury",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iii.judicial-review",
+				"to": "q.constitution.article-iii.judicial-review.hierarchy-versus-applicability",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iii.judicial-review",
+				"to": "q.constitution.article-iii.judicial-review.pursuance",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iii.judicial-review",
+				"to": "q.constitution.article-iii.judicial-review.displaced-local-rule",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iii.judicial-review",
+				"to": "q.constitution.article-iii.judicial-review.semantic-boundary",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iii.bounded-remedy",
+				"to": "q.constitution.article-iii.bounded-remedy.holding-versus-opinion",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iii.bounded-remedy",
+				"to": "q.constitution.article-iii.bounded-remedy.proved-injury",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iii.bounded-remedy",
+				"to": "q.constitution.article-iii.bounded-remedy.least-scope",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iii.bounded-remedy",
+				"to": "q.constitution.article-iii.bounded-remedy.execution-handoff",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iii.bounded-remedy",
+				"to": "q.constitution.article-iii.bounded-remedy.denial-of-relief",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iii.review-precedent",
+				"to": "q.constitution.article-iii.review-precedent.affirm-and-reverse",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iii.review-precedent",
+				"to": "q.constitution.article-iii.review-precedent.vacate-and-remand",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iii.review-precedent",
+				"to": "q.constitution.article-iii.review-precedent.parent-digest",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iii.review-precedent",
+				"to": "q.constitution.article-iii.review-precedent.final-versus-precedent",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iii.review-precedent",
+				"to": "q.constitution.article-iii.review-precedent.stare-decisis-limit",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iii.criminal-safeguards",
+				"to": "q.constitution.article-iii.criminal-safeguards.impeachment",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iii.criminal-safeguards",
+				"to": "q.constitution.article-iii.criminal-safeguards.venue",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iii.criminal-safeguards",
+				"to": "q.constitution.article-iii.criminal-safeguards.sixth-amendment",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iii.criminal-safeguards",
+				"to": "q.constitution.article-iii.criminal-safeguards.two-witnesses",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iii.criminal-safeguards",
+				"to": "q.constitution.article-iii.criminal-safeguards.punishment-boundary",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iii.warden",
+				"to": "q.constitution.article-iii.warden.literal-text",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iii.warden",
+				"to": "q.constitution.article-iii.warden.amendment-and-doctrine",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iii.warden",
+				"to": "q.constitution.article-iii.warden.engineering-rules",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iii.warden",
+				"to": "q.constitution.article-iii.warden.article-iv-integration",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iii.warden",
+				"to": "q.constitution.article-iii.warden.mutation-test",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-iii.adaptability",
+				"to": "q.constitution.article-iii.adaptability.transferable-properties",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-iii.adaptability",
+				"to": "q.constitution.article-iii.adaptability.human-judgment",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-iii.adaptability",
+				"to": "q.constitution.article-iii.adaptability.procedural-transparency",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-iii.adaptability",
+				"to": "q.constitution.article-iii.adaptability.institutional-richness",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-iii.adaptability",
+				"to": "q.constitution.article-iii.adaptability.article-ii-handoff",
+				"type": "expands",
+				"order": 40
+			}
+		]
+	},
+	{
+		"id": "view.constitution-runtime.article-ii",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.constitution-runtime-06-article-ii",
+		"invitation": {
+			"uk": "Оберіть самостійне питання до частини 6 серії «Конституція, що виконується». Дочірні переходи відтворюють авторський каталог, а не постійну ієрархію питань.",
+			"en": "Choose a standalone question for part 6 of The Constitution That Runs. Child transitions reproduce the authorial catalogue, not a permanent question hierarchy."
+		},
+		"entryQuestionIds": [
+			"q.constitution.article-ii.mandate",
+			"q.constitution.article-ii.distributed-executive",
+			"q.constitution.article-ii.continuity",
+			"q.constitution.article-ii.faithful-execution",
+			"q.constitution.article-ii.judgment-execution",
+			"q.constitution.article-ii.appointments",
+			"q.constitution.article-ii.treaties",
+			"q.constitution.article-ii.clemency",
+			"q.constitution.article-ii.commander-in-chief",
+			"q.constitution.article-ii.warden",
+			"q.constitution.article-ii.adaptability"
+		],
+		"nodes": [
+			"q.constitution.article-ii.mandate",
+			"q.constitution.article-ii.mandate.vesting",
+			"q.constitution.article-ii.mandate.twelfth-amendment",
+			"q.constitution.article-ii.mandate.twentieth-twenty-second",
+			"q.constitution.article-ii.mandate.president-elect-oath",
+			"q.constitution.article-ii.mandate.self-appointment",
+			"q.constitution.article-ii.distributed-executive",
+			"q.constitution.article-ii.distributed-executive.unity-versus-personal-execution",
+			"q.constitution.article-ii.distributed-executive.department-accountability",
+			"q.constitution.article-ii.distributed-executive.office-before-officer",
+			"q.constitution.article-ii.distributed-executive.officer-capability",
+			"q.constitution.article-ii.distributed-executive.software-controllers",
+			"q.constitution.article-ii.continuity",
+			"q.constitution.article-ii.continuity.vice-president-becomes-president",
+			"q.constitution.article-ii.continuity.acting-president",
+			"q.constitution.article-ii.continuity.contested-restoration",
+			"q.constitution.article-ii.continuity.dual-vacancy",
+			"q.constitution.article-ii.continuity.immutable-lineage",
+			"q.constitution.article-ii.faithful-execution",
+			"q.constitution.article-ii.faithful-execution.take-care-duty",
+			"q.constitution.article-ii.faithful-execution.bounded-discretion",
+			"q.constitution.article-ii.faithful-execution.youngstown",
+			"q.constitution.article-ii.faithful-execution.structural-verification",
+			"q.constitution.article-ii.faithful-execution.human-judgment",
+			"q.constitution.article-ii.judgment-execution",
+			"q.constitution.article-ii.judgment-execution.remedy-fields",
+			"q.constitution.article-ii.judgment-execution.stay-remand",
+			"q.constitution.article-ii.judgment-execution.reversible-before-finality",
+			"q.constitution.article-ii.judgment-execution.order-versus-judgment",
+			"q.constitution.article-ii.judgment-execution.receipt-handoff",
+			"q.constitution.article-ii.appointments",
+			"q.constitution.article-ii.appointments.principal-inferior",
+			"q.constitution.article-ii.appointments.senate-consent",
+			"q.constitution.article-ii.appointments.inferior-appointing-actors",
+			"q.constitution.article-ii.appointments.commission",
+			"q.constitution.article-ii.appointments.recess-appointment",
+			"q.constitution.article-ii.treaties",
+			"q.constitution.article-ii.treaties.senators-present",
+			"q.constitution.article-ii.treaties.independent-consent",
+			"q.constitution.article-ii.treaties.self-executing",
+			"q.constitution.article-ii.treaties.implementing-legislation",
+			"q.constitution.article-ii.treaties.constitutional-root",
+			"q.constitution.article-ii.clemency",
+			"q.constitution.article-ii.clemency.forms",
+			"q.constitution.article-ii.clemency.state-offense",
+			"q.constitution.article-ii.clemency.independent-consequences",
+			"q.constitution.article-ii.clemency.impeachment-exception",
+			"q.constitution.article-ii.clemency.self-pardon",
+			"q.constitution.article-ii.commander-in-chief",
+			"q.constitution.article-ii.commander-in-chief.militia",
+			"q.constitution.article-ii.commander-in-chief.congressional-powers",
+			"q.constitution.article-ii.commander-in-chief.youngstown-categories",
+			"q.constitution.article-ii.commander-in-chief.factual-determinations",
+			"q.constitution.article-ii.commander-in-chief.command-versus-war",
+			"q.constitution.article-ii.warden",
+			"q.constitution.article-ii.warden.literal-text",
+			"q.constitution.article-ii.warden.amendments-doctrine",
+			"q.constitution.article-ii.warden.engineering-extensions",
+			"q.constitution.article-ii.warden.integration",
+			"q.constitution.article-ii.warden.dangerous-mutation",
+			"q.constitution.article-ii.adaptability",
+			"q.constitution.article-ii.adaptability.direct-transfer",
+			"q.constitution.article-ii.adaptability.institutional-analogues",
+			"q.constitution.article-ii.adaptability.transparency",
+			"q.constitution.article-ii.adaptability.false-confidence",
+			"q.constitution.article-ii.adaptability.article-i-artifacts"
+		],
+		"edges": [
+			{
+				"from": "q.constitution.article-ii.mandate",
+				"to": "q.constitution.article-ii.mandate.vesting",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-ii.mandate",
+				"to": "q.constitution.article-ii.mandate.twelfth-amendment",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-ii.mandate",
+				"to": "q.constitution.article-ii.mandate.twentieth-twenty-second",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-ii.mandate",
+				"to": "q.constitution.article-ii.mandate.president-elect-oath",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-ii.mandate",
+				"to": "q.constitution.article-ii.mandate.self-appointment",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-ii.distributed-executive",
+				"to": "q.constitution.article-ii.distributed-executive.unity-versus-personal-execution",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-ii.distributed-executive",
+				"to": "q.constitution.article-ii.distributed-executive.department-accountability",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-ii.distributed-executive",
+				"to": "q.constitution.article-ii.distributed-executive.office-before-officer",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-ii.distributed-executive",
+				"to": "q.constitution.article-ii.distributed-executive.officer-capability",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-ii.distributed-executive",
+				"to": "q.constitution.article-ii.distributed-executive.software-controllers",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-ii.continuity",
+				"to": "q.constitution.article-ii.continuity.vice-president-becomes-president",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-ii.continuity",
+				"to": "q.constitution.article-ii.continuity.acting-president",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-ii.continuity",
+				"to": "q.constitution.article-ii.continuity.contested-restoration",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-ii.continuity",
+				"to": "q.constitution.article-ii.continuity.dual-vacancy",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-ii.continuity",
+				"to": "q.constitution.article-ii.continuity.immutable-lineage",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-ii.faithful-execution",
+				"to": "q.constitution.article-ii.faithful-execution.take-care-duty",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-ii.faithful-execution",
+				"to": "q.constitution.article-ii.faithful-execution.bounded-discretion",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-ii.faithful-execution",
+				"to": "q.constitution.article-ii.faithful-execution.youngstown",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-ii.faithful-execution",
+				"to": "q.constitution.article-ii.faithful-execution.structural-verification",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-ii.faithful-execution",
+				"to": "q.constitution.article-ii.faithful-execution.human-judgment",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-ii.judgment-execution",
+				"to": "q.constitution.article-ii.judgment-execution.remedy-fields",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-ii.judgment-execution",
+				"to": "q.constitution.article-ii.judgment-execution.stay-remand",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-ii.judgment-execution",
+				"to": "q.constitution.article-ii.judgment-execution.reversible-before-finality",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-ii.judgment-execution",
+				"to": "q.constitution.article-ii.judgment-execution.order-versus-judgment",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-ii.judgment-execution",
+				"to": "q.constitution.article-ii.judgment-execution.receipt-handoff",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-ii.appointments",
+				"to": "q.constitution.article-ii.appointments.principal-inferior",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-ii.appointments",
+				"to": "q.constitution.article-ii.appointments.senate-consent",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-ii.appointments",
+				"to": "q.constitution.article-ii.appointments.inferior-appointing-actors",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-ii.appointments",
+				"to": "q.constitution.article-ii.appointments.commission",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-ii.appointments",
+				"to": "q.constitution.article-ii.appointments.recess-appointment",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-ii.treaties",
+				"to": "q.constitution.article-ii.treaties.senators-present",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-ii.treaties",
+				"to": "q.constitution.article-ii.treaties.independent-consent",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-ii.treaties",
+				"to": "q.constitution.article-ii.treaties.self-executing",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-ii.treaties",
+				"to": "q.constitution.article-ii.treaties.implementing-legislation",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-ii.treaties",
+				"to": "q.constitution.article-ii.treaties.constitutional-root",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-ii.clemency",
+				"to": "q.constitution.article-ii.clemency.forms",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-ii.clemency",
+				"to": "q.constitution.article-ii.clemency.state-offense",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-ii.clemency",
+				"to": "q.constitution.article-ii.clemency.independent-consequences",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-ii.clemency",
+				"to": "q.constitution.article-ii.clemency.impeachment-exception",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-ii.clemency",
+				"to": "q.constitution.article-ii.clemency.self-pardon",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-ii.commander-in-chief",
+				"to": "q.constitution.article-ii.commander-in-chief.militia",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-ii.commander-in-chief",
+				"to": "q.constitution.article-ii.commander-in-chief.congressional-powers",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-ii.commander-in-chief",
+				"to": "q.constitution.article-ii.commander-in-chief.youngstown-categories",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-ii.commander-in-chief",
+				"to": "q.constitution.article-ii.commander-in-chief.factual-determinations",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-ii.commander-in-chief",
+				"to": "q.constitution.article-ii.commander-in-chief.command-versus-war",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-ii.warden",
+				"to": "q.constitution.article-ii.warden.literal-text",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-ii.warden",
+				"to": "q.constitution.article-ii.warden.amendments-doctrine",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-ii.warden",
+				"to": "q.constitution.article-ii.warden.engineering-extensions",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-ii.warden",
+				"to": "q.constitution.article-ii.warden.integration",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-ii.warden",
+				"to": "q.constitution.article-ii.warden.dangerous-mutation",
+				"type": "expands",
+				"order": 40
+			},
+			{
+				"from": "q.constitution.article-ii.adaptability",
+				"to": "q.constitution.article-ii.adaptability.direct-transfer",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-ii.adaptability",
+				"to": "q.constitution.article-ii.adaptability.institutional-analogues",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-ii.adaptability",
+				"to": "q.constitution.article-ii.adaptability.transparency",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-ii.adaptability",
+				"to": "q.constitution.article-ii.adaptability.false-confidence",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-ii.adaptability",
+				"to": "q.constitution.article-ii.adaptability.article-i-artifacts",
+				"type": "expands",
+				"order": 40
+			}
+		]
+	},
+	{
+		"id": "view.constitution-runtime.article-i",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.constitution-runtime-07-article-i",
+		"invitation": {
+			"uk": "Оберіть самостійне питання до частини 7 серії «Конституція, що виконується». Дочірні переходи відтворюють авторський каталог, а не постійну ієрархію питань.",
+			"en": "Choose a standalone question for part 7 of The Constitution That Runs. Child transitions reproduce the authorial catalogue, not a permanent question hierarchy."
+		},
+		"entryQuestionIds": [
+			"q.constitution.article-i.normmaker",
+			"q.constitution.article-i.independent-consents",
+			"q.constitution.article-i.exact-text",
+			"q.constitution.article-i.presentment",
+			"q.constitution.article-i.competence",
+			"q.constitution.article-i.procedure-and-substance",
+			"q.constitution.article-i.appropriations",
+			"q.constitution.article-i.impeachment",
+			"q.constitution.article-i.module-interfaces",
+			"q.constitution.article-i.warden",
+			"q.constitution.article-i.adaptability",
+			"q.constitution.article-i.seven-article-conclusion"
+		],
+		"nodes": [
+			"q.constitution.article-i.normmaker",
+			"q.constitution.article-i.normmaker.vesting",
+			"q.constitution.article-i.normmaker.founding-profile",
+			"q.constitution.article-i.normmaker.expertise-versus-mandate",
+			"q.constitution.article-i.normmaker.outside-scope",
+			"q.constitution.article-i.independent-consents",
+			"q.constitution.article-i.independent-consents.representation",
+			"q.constitution.article-i.independent-consents.independence-test",
+			"q.constitution.article-i.independent-consents.decorative-separation",
+			"q.constitution.article-i.independent-consents.risk-profile",
+			"q.constitution.article-i.exact-text",
+			"q.constitution.article-i.exact-text.version-versus-text",
+			"q.constitution.article-i.exact-text.local-identifiers",
+			"q.constitution.article-i.exact-text.revenue-amendment",
+			"q.constitution.article-i.exact-text.software-artifact",
+			"q.constitution.article-i.presentment",
+			"q.constitution.article-i.presentment.signature",
+			"q.constitution.article-i.presentment.return-veto",
+			"q.constitution.article-i.presentment.pocket-veto",
+			"q.constitution.article-i.presentment.calendar-boundary",
+			"q.constitution.article-i.competence",
+			"q.constitution.article-i.competence.power-registry",
+			"q.constitution.article-i.competence.linked-power",
+			"q.constitution.article-i.competence.four-checks",
+			"q.constitution.article-i.competence.decision-layer",
+			"q.constitution.article-i.procedure-and-substance",
+			"q.constitution.article-i.procedure-and-substance.attainder",
+			"q.constitution.article-i.procedure-and-substance.ex-post-facto",
+			"q.constitution.article-i.procedure-and-substance.slavery-root",
+			"q.constitution.article-i.procedure-and-substance.validity-versus-permissibility",
+			"q.constitution.article-i.appropriations",
+			"q.constitution.article-i.appropriations.fields",
+			"q.constitution.article-i.appropriations.credentials",
+			"q.constitution.article-i.appropriations.protected-resources",
+			"q.constitution.article-i.appropriations.receipt",
+			"q.constitution.article-i.impeachment",
+			"q.constitution.article-i.impeachment.outside-article-iii",
+			"q.constitution.article-i.impeachment.chief-justice",
+			"q.constitution.article-i.impeachment.bounded-judgment",
+			"q.constitution.article-i.impeachment.article-ii-handoff",
+			"q.constitution.article-i.module-interfaces",
+			"q.constitution.article-i.module-interfaces.office",
+			"q.constitution.article-i.module-interfaces.military-authorization",
+			"q.constitution.article-i.module-interfaces.inferior-courts",
+			"q.constitution.article-i.module-interfaces.integrated-387",
+			"q.constitution.article-i.warden",
+			"q.constitution.article-i.warden.constitutional-text",
+			"q.constitution.article-i.warden.amendments-doctrine",
+			"q.constitution.article-i.warden.engineering-invariants",
+			"q.constitution.article-i.warden.justice-limit",
+			"q.constitution.article-i.adaptability",
+			"q.constitution.article-i.adaptability.direct-transfer",
+			"q.constitution.article-i.adaptability.institutional-inversion",
+			"q.constitution.article-i.adaptability.semantic-boundary",
+			"q.constitution.article-i.adaptability.project-scale",
+			"q.constitution.article-i.seven-article-conclusion",
+			"q.constitution.article-i.seven-article-conclusion.reverse-order",
+			"q.constitution.article-i.seven-article-conclusion.five-properties",
+			"q.constitution.article-i.seven-article-conclusion.prototype-versus-research",
+			"q.constitution.article-i.seven-article-conclusion.research-impact",
+			"q.constitution.article-i.seven-article-conclusion.next-experiment"
+		],
+		"edges": [
+			{
+				"from": "q.constitution.article-i.normmaker",
+				"to": "q.constitution.article-i.normmaker.vesting",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-i.normmaker",
+				"to": "q.constitution.article-i.normmaker.founding-profile",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-i.normmaker",
+				"to": "q.constitution.article-i.normmaker.expertise-versus-mandate",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-i.normmaker",
+				"to": "q.constitution.article-i.normmaker.outside-scope",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-i.independent-consents",
+				"to": "q.constitution.article-i.independent-consents.representation",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-i.independent-consents",
+				"to": "q.constitution.article-i.independent-consents.independence-test",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-i.independent-consents",
+				"to": "q.constitution.article-i.independent-consents.decorative-separation",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-i.independent-consents",
+				"to": "q.constitution.article-i.independent-consents.risk-profile",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-i.exact-text",
+				"to": "q.constitution.article-i.exact-text.version-versus-text",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-i.exact-text",
+				"to": "q.constitution.article-i.exact-text.local-identifiers",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-i.exact-text",
+				"to": "q.constitution.article-i.exact-text.revenue-amendment",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-i.exact-text",
+				"to": "q.constitution.article-i.exact-text.software-artifact",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-i.presentment",
+				"to": "q.constitution.article-i.presentment.signature",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-i.presentment",
+				"to": "q.constitution.article-i.presentment.return-veto",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-i.presentment",
+				"to": "q.constitution.article-i.presentment.pocket-veto",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-i.presentment",
+				"to": "q.constitution.article-i.presentment.calendar-boundary",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-i.competence",
+				"to": "q.constitution.article-i.competence.power-registry",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-i.competence",
+				"to": "q.constitution.article-i.competence.linked-power",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-i.competence",
+				"to": "q.constitution.article-i.competence.four-checks",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-i.competence",
+				"to": "q.constitution.article-i.competence.decision-layer",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-i.procedure-and-substance",
+				"to": "q.constitution.article-i.procedure-and-substance.attainder",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-i.procedure-and-substance",
+				"to": "q.constitution.article-i.procedure-and-substance.ex-post-facto",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-i.procedure-and-substance",
+				"to": "q.constitution.article-i.procedure-and-substance.slavery-root",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-i.procedure-and-substance",
+				"to": "q.constitution.article-i.procedure-and-substance.validity-versus-permissibility",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-i.appropriations",
+				"to": "q.constitution.article-i.appropriations.fields",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-i.appropriations",
+				"to": "q.constitution.article-i.appropriations.credentials",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-i.appropriations",
+				"to": "q.constitution.article-i.appropriations.protected-resources",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-i.appropriations",
+				"to": "q.constitution.article-i.appropriations.receipt",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-i.impeachment",
+				"to": "q.constitution.article-i.impeachment.outside-article-iii",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-i.impeachment",
+				"to": "q.constitution.article-i.impeachment.chief-justice",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-i.impeachment",
+				"to": "q.constitution.article-i.impeachment.bounded-judgment",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-i.impeachment",
+				"to": "q.constitution.article-i.impeachment.article-ii-handoff",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-i.module-interfaces",
+				"to": "q.constitution.article-i.module-interfaces.office",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-i.module-interfaces",
+				"to": "q.constitution.article-i.module-interfaces.military-authorization",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-i.module-interfaces",
+				"to": "q.constitution.article-i.module-interfaces.inferior-courts",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-i.module-interfaces",
+				"to": "q.constitution.article-i.module-interfaces.integrated-387",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-i.warden",
+				"to": "q.constitution.article-i.warden.constitutional-text",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-i.warden",
+				"to": "q.constitution.article-i.warden.amendments-doctrine",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-i.warden",
+				"to": "q.constitution.article-i.warden.engineering-invariants",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-i.warden",
+				"to": "q.constitution.article-i.warden.justice-limit",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-i.adaptability",
+				"to": "q.constitution.article-i.adaptability.direct-transfer",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-i.adaptability",
+				"to": "q.constitution.article-i.adaptability.institutional-inversion",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-i.adaptability",
+				"to": "q.constitution.article-i.adaptability.semantic-boundary",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-i.adaptability",
+				"to": "q.constitution.article-i.adaptability.project-scale",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-i.seven-article-conclusion",
+				"to": "q.constitution.article-i.seven-article-conclusion.reverse-order",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.constitution.article-i.seven-article-conclusion",
+				"to": "q.constitution.article-i.seven-article-conclusion.five-properties",
+				"type": "expands",
+				"order": 10
+			},
+			{
+				"from": "q.constitution.article-i.seven-article-conclusion",
+				"to": "q.constitution.article-i.seven-article-conclusion.prototype-versus-research",
+				"type": "expands",
+				"order": 20
+			},
+			{
+				"from": "q.constitution.article-i.seven-article-conclusion",
+				"to": "q.constitution.article-i.seven-article-conclusion.research-impact",
+				"type": "expands",
+				"order": 30
+			},
+			{
+				"from": "q.constitution.article-i.seven-article-conclusion",
+				"to": "q.constitution.article-i.seven-article-conclusion.next-experiment",
+				"type": "expands",
+				"order": 40
+			}
+		]
+	}
+]

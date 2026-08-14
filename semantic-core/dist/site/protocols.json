@@ -1,0 +1,69 @@
+[
+	{
+		"id": "protocol.infection-case-card",
+		"kind": "protocol",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"title": {
+			"uk": "Картка зараження",
+			"en": "Infection case card"
+		},
+		"summary": {
+			"uk": "Шість полів для порівняння біологічних, медіальних і гібридних випадків.",
+			"en": "Six fields for comparing biological, medial, and hybrid cases."
+		},
+		"fields": [
+			{
+				"id": "agent",
+				"order": 1,
+				"label": {
+					"uk": "Природа агента",
+					"en": "Nature of the agent"
+				}
+			},
+			{
+				"id": "origin",
+				"order": 2,
+				"label": {
+					"uk": "Походження",
+					"en": "Origin"
+				}
+			},
+			{
+				"id": "case-type",
+				"order": 3,
+				"label": {
+					"uk": "Тип випадку",
+					"en": "Case type"
+				}
+			},
+			{
+				"id": "transmission",
+				"order": 4,
+				"label": {
+					"uk": "Канал передавання",
+					"en": "Transmission channel"
+				}
+			},
+			{
+				"id": "scale-selectivity",
+				"order": 5,
+				"label": {
+					"uk": "Масштаб і селективність",
+					"en": "Scale and selectivity"
+				}
+			},
+			{
+				"id": "countermeasure",
+				"order": 6,
+				"label": {
+					"uk": "Контрзахід",
+					"en": "Countermeasure"
+				}
+			}
+		],
+		"provenance": "editorial"
+	}
+]

@@ -1,0 +1,11 @@
+{
+	"loader": {
+		"minimumVisibleMs": 3000,
+		"maximumWaitMs": 6000,
+		"exitTransitionMs": 280
+	},
+	"typewriter": {
+		"invitationCharacterMs": 11,
+		"answerCharacterMs": 7
+	}
+}

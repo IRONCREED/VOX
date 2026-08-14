@@ -1,0 +1,37 @@
+[
+	{
+		"id": "home",
+		"order": 0,
+		"kind": "home",
+		"icon": "⌂",
+		"labels": {
+			"uk": "Головна",
+			"en": "Home"
+		}
+	},
+	{
+		"id": "about",
+		"order": 5,
+		"kind": "page",
+		"pageId": "page.about",
+		"icon": "◉",
+		"labels": {
+			"uk": "Про проєкт",
+			"en": "About"
+		}
+	},
+	{
+		"id": "courses",
+		"order": 1000,
+		"kind": "disabled",
+		"icon": "◇",
+		"labels": {
+			"uk": "Курси",
+			"en": "Courses"
+		},
+		"badges": {
+			"uk": "Скоро!",
+			"en": "Soon!"
+		}
+	}
+]

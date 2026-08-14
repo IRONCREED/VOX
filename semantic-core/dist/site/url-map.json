@@ -1,0 +1,258 @@
+[
+	{
+		"kind": "page",
+		"id": "page.about",
+		"pageId": "page.about",
+		"locale": "en",
+		"path": "/en/pages/about",
+		"legacyUrls": []
+	},
+	{
+		"kind": "page",
+		"id": "page.ai-policy",
+		"pageId": "page.ai-policy",
+		"locale": "en",
+		"path": "/en/pages/ai-policy",
+		"legacyUrls": []
+	},
+	{
+		"kind": "page",
+		"id": "page.corpus-index",
+		"pageId": "page.corpus-index",
+		"locale": "en",
+		"path": "/en/pages/corpus-index",
+		"legacyUrls": []
+	},
+	{
+		"kind": "page",
+		"id": "page.licensing",
+		"pageId": "page.licensing",
+		"locale": "en",
+		"path": "/en/pages/licensing",
+		"legacyUrls": []
+	},
+	{
+		"kind": "page",
+		"id": "page.privacy-policy",
+		"pageId": "page.privacy-policy",
+		"locale": "en",
+		"path": "/en/pages/privacy-policy",
+		"legacyUrls": []
+	},
+	{
+		"kind": "page",
+		"id": "page.terms-of-use",
+		"pageId": "page.terms-of-use",
+		"locale": "en",
+		"path": "/en/pages/terms-of-use",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.why-documentation",
+		"materialId": "material.why-documentation",
+		"locale": "en",
+		"path": "/en/programming/why-documentation-matters",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.constitution-runtime-05-article-iii",
+		"materialId": "material.constitution-runtime-05-article-iii",
+		"locale": "en",
+		"path": "/en/research/adjudicate-america-how-article-iii-turns-conflict-into-enforceable-judgment",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.constitution-runtime-01-article-vii",
+		"materialId": "material.constitution-runtime-01-article-vii",
+		"locale": "en",
+		"path": "/en/research/connect-america-how-article-vii-bootstraps-a-republic",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.constitution-runtime-06-article-ii",
+		"materialId": "material.constitution-runtime-06-article-ii",
+		"locale": "en",
+		"path": "/en/research/execute-america-how-article-ii-turns-a-decision-into-action",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.from-body-to-signal",
+		"materialId": "material.from-body-to-signal",
+		"locale": "en",
+		"path": "/en/research/from-body-to-signal",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.constitution-runtime-04-article-iv",
+		"materialId": "material.constitution-runtime-04-article-iv",
+		"locale": "en",
+		"path": "/en/research/link-america-how-article-iv-turns-the-states-into-a-federal-network",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.constitution-runtime-03-article-v",
+		"materialId": "material.constitution-runtime-03-article-v",
+		"locale": "en",
+		"path": "/en/research/update-america-how-article-v-changes-the-constitutional-kernel",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.constitution-runtime-02-article-vi",
+		"materialId": "material.constitution-runtime-02-article-vi",
+		"locale": "en",
+		"path": "/en/research/what-america-trusts-how-article-vi-assembles-the-supreme-order",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.constitution-runtime-07-article-i",
+		"materialId": "material.constitution-runtime-07-article-i",
+		"locale": "en",
+		"path": "/en/research/write-america-how-article-i-turns-intent-into-general-law",
+		"legacyUrls": []
+	},
+	{
+		"kind": "series",
+		"id": "series.constitution-runtime",
+		"seriesId": "series.constitution-runtime",
+		"locale": "en",
+		"path": "/en/series/the-constitution-that-runs",
+		"legacyUrls": []
+	},
+	{
+		"kind": "page",
+		"id": "page.about",
+		"pageId": "page.about",
+		"locale": "uk",
+		"path": "/uk/pages/about",
+		"legacyUrls": []
+	},
+	{
+		"kind": "page",
+		"id": "page.ai-policy",
+		"pageId": "page.ai-policy",
+		"locale": "uk",
+		"path": "/uk/pages/ai-policy",
+		"legacyUrls": []
+	},
+	{
+		"kind": "page",
+		"id": "page.corpus-index",
+		"pageId": "page.corpus-index",
+		"locale": "uk",
+		"path": "/uk/pages/corpus-index",
+		"legacyUrls": []
+	},
+	{
+		"kind": "page",
+		"id": "page.licensing",
+		"pageId": "page.licensing",
+		"locale": "uk",
+		"path": "/uk/pages/licensing",
+		"legacyUrls": []
+	},
+	{
+		"kind": "page",
+		"id": "page.privacy-policy",
+		"pageId": "page.privacy-policy",
+		"locale": "uk",
+		"path": "/uk/pages/privacy-policy",
+		"legacyUrls": []
+	},
+	{
+		"kind": "page",
+		"id": "page.terms-of-use",
+		"pageId": "page.terms-of-use",
+		"locale": "uk",
+		"path": "/uk/pages/terms-of-use",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.why-documentation",
+		"materialId": "material.why-documentation",
+		"locale": "uk",
+		"path": "/uk/programming/navishcho-potribna-dokumentatsiia",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.constitution-runtime-02-article-vi",
+		"materialId": "material.constitution-runtime-02-article-vi",
+		"locale": "uk",
+		"path": "/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.constitution-runtime-07-article-i",
+		"materialId": "material.constitution-runtime-07-article-i",
+		"locale": "uk",
+		"path": "/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.constitution-runtime-03-article-v",
+		"materialId": "material.constitution-runtime-03-article-v",
+		"locale": "uk",
+		"path": "/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.constitution-runtime-01-article-vii",
+		"materialId": "material.constitution-runtime-01-article-vii",
+		"locale": "uk",
+		"path": "/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.constitution-runtime-05-article-iii",
+		"materialId": "material.constitution-runtime-05-article-iii",
+		"locale": "uk",
+		"path": "/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.from-body-to-signal",
+		"materialId": "material.from-body-to-signal",
+		"locale": "uk",
+		"path": "/uk/research/vid-tila-do-syhnalu",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.constitution-runtime-06-article-ii",
+		"materialId": "material.constitution-runtime-06-article-ii",
+		"locale": "uk",
+		"path": "/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.constitution-runtime-04-article-iv",
+		"materialId": "material.constitution-runtime-04-article-iv",
+		"locale": "uk",
+		"path": "/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu",
+		"legacyUrls": []
+	},
+	{
+		"kind": "series",
+		"id": "series.constitution-runtime",
+		"seriesId": "series.constitution-runtime",
+		"locale": "uk",
+		"path": "/uk/series/konstytutsiia-shcho-vykonuietsia",
+		"legacyUrls": []
+	}
+]
