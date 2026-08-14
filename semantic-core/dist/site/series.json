@@ -1,0 +1,72 @@
+[
+	{
+		"id": "icw-series-research-001-en",
+		"seriesId": "series.constitution-runtime",
+		"translationKey": "constitution-runtime",
+		"locale": "en",
+		"slug": "the-constitution-that-runs",
+		"title": "The Constitution That Runs",
+		"description": "Seven parts read the United States Constitution in reverse order—from ratification to legislation—as executable contracts for authority, state, transitions, and verification.",
+		"category": "research",
+		"tags": [
+			"united-states-constitution",
+			"code-constitution",
+			"software-architecture",
+			"software-testing",
+			"warden"
+		],
+		"materialIds": [
+			"material.constitution-runtime-01-article-vii",
+			"material.constitution-runtime-02-article-vi",
+			"material.constitution-runtime-03-article-v",
+			"material.constitution-runtime-04-article-iv",
+			"material.constitution-runtime-05-article-iii",
+			"material.constitution-runtime-06-article-ii",
+			"material.constitution-runtime-07-article-i"
+		],
+		"folderLabel": "IRON CREED RESEARCH · 7 PARTS",
+		"folderSheets": 2,
+		"catalogMode": "latest-part",
+		"latestMaterialId": "material.constitution-runtime-07-article-i",
+		"latestTitle": "Write America: How Article I Turns Intent into General Law",
+		"latestDescription": "Article I becomes legislate(): bounded competence, two independent consents, one exact text, presentment, and challenge produce an auditable general law.",
+		"publishedAt": "2026-08-02",
+		"updatedAt": "2026-08-14",
+		"status": "published"
+	},
+	{
+		"id": "icw-series-research-001-uk",
+		"seriesId": "series.constitution-runtime",
+		"translationKey": "constitution-runtime",
+		"locale": "uk",
+		"slug": "konstytutsiia-shcho-vykonuietsia",
+		"title": "Конституція, що виконується",
+		"description": "Сім частин читають Конституцію США у зворотному порядку — від ратифікації до законодавства — як набір виконуваних контрактів для повноважень, стану, переходів і перевірки.",
+		"category": "research",
+		"tags": [
+			"united-states-constitution",
+			"code-constitution",
+			"software-architecture",
+			"software-testing",
+			"warden"
+		],
+		"materialIds": [
+			"material.constitution-runtime-01-article-vii",
+			"material.constitution-runtime-02-article-vi",
+			"material.constitution-runtime-03-article-v",
+			"material.constitution-runtime-04-article-iv",
+			"material.constitution-runtime-05-article-iii",
+			"material.constitution-runtime-06-article-ii",
+			"material.constitution-runtime-07-article-i"
+		],
+		"folderLabel": "ДОСЛІДЖЕННЯ IRON CREED · 7 ЧАСТИН",
+		"folderSheets": 2,
+		"catalogMode": "latest-part",
+		"latestMaterialId": "material.constitution-runtime-07-article-i",
+		"latestTitle": "Написати Америку: як стаття I перетворює намір на загальний закон",
+		"latestDescription": "Стаття I стає legislate(): обмежена компетенція, дві незалежні згоди, один точний текст, представлення та оскарження створюють аудитовний закон.",
+		"publishedAt": "2026-08-02",
+		"updatedAt": "2026-08-14",
+		"status": "published"
+	}
+]

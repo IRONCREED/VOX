@@ -1,0 +1,206 @@
+{
+	"schemaVersion": "1.0.0",
+	"id": "icw-vox-public-source-001",
+	"revision": "1.0.0",
+	"destination": {
+		"owner": "IRONCREED",
+		"repository": "VOX",
+		"branch": "main"
+	},
+	"outputDirectory": "work/vox-export",
+	"managedMarker": "VOX-PUBLICATION.json",
+	"maximumFileBytes": 2500000,
+	"maximumTotalBytes": 12000000,
+	"trees": [
+		{
+			"source": "app",
+			"destination": "app",
+			"extensions": [".css", ".ts", ".tsx"]
+		},
+		{
+			"source": "src",
+			"destination": "src",
+			"extensions": [".css", ".json", ".ts", ".tsx"]
+		},
+		{
+			"source": "worker",
+			"destination": "worker",
+			"extensions": [".ts"]
+		},
+		{
+			"source": "build",
+			"destination": "build",
+			"extensions": [".ts"]
+		},
+		{
+			"source": "content/config",
+			"destination": "content/config",
+			"extensions": [".json"]
+		},
+		{
+			"source": "public",
+			"destination": "public",
+			"extensions": [".svg"]
+		},
+		{
+			"source": "semantic-core/dist/site",
+			"destination": "semantic-core/dist/site",
+			"extensions": [".json"]
+		},
+		{
+			"source": "types",
+			"destination": "types",
+			"extensions": [".d.ts"]
+		}
+	],
+	"files": [
+		{
+			"source": ".prettierignore",
+			"destination": ".prettierignore"
+		},
+		{
+			"source": "eslint.config.mjs",
+			"destination": "eslint.config.mjs"
+		},
+		{
+			"source": "LICENSE.md",
+			"destination": "LICENSE.md"
+		},
+		{
+			"source": "next.config.ts",
+			"destination": "next.config.ts"
+		},
+		{
+			"source": "package-lock.json",
+			"destination": "package-lock.json"
+		},
+		{
+			"source": "postcss.config.mjs",
+			"destination": "postcss.config.mjs"
+		},
+		{
+			"source": "prettier.config.mjs",
+			"destination": "prettier.config.mjs"
+		},
+		{
+			"source": "scripts/build-public.sh",
+			"destination": "scripts/build-public.sh"
+		},
+		{
+			"source": "scripts/render-brand-asset.mjs",
+			"destination": "scripts/render-brand-asset.mjs"
+		},
+		{
+			"source": "scripts/sites-env.sh",
+			"destination": "scripts/sites-env.sh"
+		},
+		{
+			"source": "scripts/validate-artifact.sh",
+			"destination": "scripts/validate-artifact.sh"
+		},
+		{
+			"source": "stylelint.config.mjs",
+			"destination": "stylelint.config.mjs"
+		},
+		{
+			"source": "tests/rendered-html.test.mjs",
+			"destination": "tests/rendered-html.test.mjs"
+		},
+		{
+			"source": "tsconfig.json",
+			"destination": "tsconfig.json"
+		},
+		{
+			"source": "vite.config.ts",
+			"destination": "vite.config.ts"
+		},
+		{
+			"source": "vox/publication-policy.json",
+			"destination": "publication-policy.json"
+		},
+		{
+			"source": "vox/public-source/.gitignore",
+			"destination": ".gitignore"
+		},
+		{
+			"source": "vox/public-source/.openai/hosting.json",
+			"destination": ".openai/hosting.json"
+		},
+		{
+			"source": "vox/public-source/tests/source/public-contract.test.mjs",
+			"destination": "tests/source/public-contract.test.mjs"
+		},
+		{
+			"source": "vox/public-docs/README.md",
+			"destination": "README.md",
+			"language": "en"
+		},
+		{
+			"source": "vox/public-docs/ARCHITECTURE.md",
+			"destination": "docs/ARCHITECTURE.md",
+			"language": "en"
+		},
+		{
+			"source": "vox/public-docs/PUBLICATION-BOUNDARY.md",
+			"destination": "docs/PUBLICATION-BOUNDARY.md",
+			"language": "en"
+		},
+		{
+			"source": "vox/public-docs/SECURITY.md",
+			"destination": "docs/SECURITY.md",
+			"language": "en"
+		},
+		{
+			"source": "vox/public-docs/NOTICE.md",
+			"destination": "NOTICE.md",
+			"language": "en"
+		}
+	],
+	"generatedFiles": ["package.json", "VOX-PUBLICATION.json"],
+	"executableDestinations": [
+		"scripts/build-public.sh",
+		"scripts/sites-env.sh",
+		"scripts/validate-artifact.sh"
+	],
+	"forbiddenDestinationPrefixes": [
+		".git/",
+		".sites-runtime/",
+		".wrangler/",
+		"constitutional-guard/",
+		"governance/",
+		"node_modules/",
+		"semantic-core/corpus/",
+		"semantic-core/dist/custom-gpt/",
+		"semantic-core/governance/",
+		"semantic-core/materials/",
+		"semantic-core/tooling/",
+		"scripts/vox/",
+		"vox/public-docs/",
+		"work/"
+	],
+	"forbiddenSourcePrefixes": [
+		".git/",
+		".openai/hosting.json",
+		".sites-runtime/",
+		".wrangler/",
+		"CONSTITUTION.md",
+		"constitutional-guard/",
+		"governance/",
+		"node_modules/",
+		"semantic-core/corpus/",
+		"semantic-core/dist/custom-gpt/",
+		"semantic-core/governance/",
+		"semantic-core/materials/",
+		"semantic-core/tooling/",
+		"scripts/vox/",
+		"work/"
+	],
+	"secretPatterns": [
+		"github_pat_[A-Za-z0-9_]{20,}",
+		"gh[pousr]_[A-Za-z0-9_]{20,}",
+		"-----BEGIN [A-Z ]*PRIVATE KEY-----",
+		"https://[^\\s/:]+:[^\\s/@]+@github\\.com",
+		"appgprj_[A-Za-z0-9]+",
+		"oaiapp_[A-Za-z0-9]+"
+	]
+}

@@ -1,0 +1,41 @@
+[
+	{
+		"id": "programming",
+		"order": 20,
+		"icon": "⌬",
+		"labels": {
+			"uk": "Програмування",
+			"en": "Programming"
+		},
+		"descriptions": {
+			"uk": "Код, архітектура, інструменти та практики керованої розробки.",
+			"en": "Code, architecture, tools, and practices for governable development."
+		}
+	},
+	{
+		"id": "research",
+		"order": 30,
+		"icon": "⌁",
+		"labels": {
+			"uk": "Дослідження",
+			"en": "Research"
+		},
+		"descriptions": {
+			"uk": "Авторські дослідження та публічні адаптації, що організовують докази в робочу модель.",
+			"en": "Original studies and public adaptations that organize evidence into a working model."
+		}
+	},
+	{
+		"id": "scenarios",
+		"order": 40,
+		"icon": "⟁",
+		"labels": {
+			"uk": "Сценарії",
+			"en": "Scenarios"
+		},
+		"descriptions": {
+			"uk": "Альтернативні варіанти розвитку, мисленнєві експерименти та дослідження ворожих середовищ.",
+			"en": "Alternative developments, thought experiments, and hostile-environment investigations."
+		}
+	}
+]

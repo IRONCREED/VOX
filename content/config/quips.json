@@ -1,0 +1,46 @@
+{
+	"uk": [
+		{
+			"prompt": "— На вас чекає Гаазький суд.",
+			"reply": "— Зачекайте… Леді Гаага буде особисто?"
+		},
+		{
+			"prompt": "— Це порушує Женевську конвенцію.",
+			"reply": "— Хто взагалі такий цей Женя? І чому його думка всіх так хвилює?"
+		},
+		{
+			"prompt": "— Почався Нюрнберзький процес.",
+			"reply": "— То Нюрнберг обвинувачує чи його судять? Я заплутався."
+		},
+		{
+			"prompt": "— Було підписано Версальський договір.",
+			"reply": "— Версаль молодець, звісно. Усе сам організував."
+		},
+		{
+			"prompt": "— Світ живе за Бреттон-Вудською системою.",
+			"reply": "— Бреттон і Вуд відкрили бухгалтерську фірму, яка випадково стала світовою фінансовою системою?"
+		}
+	],
+	"en": [
+		{
+			"prompt": "— You will face The Hague Court.",
+			"reply": "— Wait… will Lady Hague be there in person?"
+		},
+		{
+			"prompt": "— This violates the Geneva Convention.",
+			"reply": "— Who is this Gene, anyway? And why does everyone care what he thinks?"
+		},
+		{
+			"prompt": "— The Nuremberg trials have begun.",
+			"reply": "— So is Nuremberg prosecuting, or is he on trial? I’m lost."
+		},
+		{
+			"prompt": "— The Treaty of Versailles was signed.",
+			"reply": "— Good for Versailles, of course. Organized the whole thing himself."
+		},
+		{
+			"prompt": "— The world runs on the Bretton Woods system.",
+			"reply": "— Did Bretton and Wood open an accounting firm that accidentally became the global financial system?"
+		}
+	]
+}

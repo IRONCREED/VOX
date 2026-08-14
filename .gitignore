@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.next/
+.wrangler/
+.sites-runtime/
+work/
+coverage/
+.env*
+*.pem
+npm-debug.log*
+tsconfig.tsbuildinfo
+next-env.d.ts

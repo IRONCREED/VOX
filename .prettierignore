@@ -1,0 +1,16 @@
+.next
+.openai
+.vinext
+.wrangler
+.sites-runtime
+dist
+node_modules
+work
+palantir/**/*.yaml
+palantir/docs/*.txt
+package-lock.json
+CONSTITUTION.md
+README.md
+content/**/*.md
+governance/**/*.json
+governance/**/*.md
