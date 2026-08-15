@@ -17,8 +17,8 @@ export function MaterialCard({
 }: MaterialCardProps) {
 	const isSeries = article.kind === 'series';
 	const eyebrow = isSeries
-		? `${seriesLabel ?? 'Series'} · ${article.partCount ?? 0}`
-		: article.category;
+		? `${article.categoryLabel} · ${seriesLabel ?? 'Series'} · ${article.partCount ?? 0}`
+		: article.categoryLabel;
 	return (
 		<article
 			className={`material-card${isSeries ? ' material-card--series' : ''}`}

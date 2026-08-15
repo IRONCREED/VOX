@@ -33,6 +33,13 @@ Public documentation is English-only. Ukrainian remains a supported product
 locale and therefore appears in application copy and released runtime data; it
 does not create a second documentation set.
 
+## Deployment coupling
+
+Every new production deployment is accompanied by a verified VOX snapshot.
+`VOX-PUBLICATION.json` records the exact canonical Sites commit, release
+versions, public content digest, and complete allowlisted file set. A deployment
+is not accepted as a separate release if its VOX publication has not succeeded.
+
 ## Licence boundary
 
 Original code is distributed under MIT. Original non-brand editorial material

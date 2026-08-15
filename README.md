@@ -5,11 +5,11 @@ contains the application code, the public runtime data required to render the
 released interface, build and test configuration, licensing notices, and
 English public documentation.
 
-- Website version: `1.2.0`
-- Public corpus version: `1.4.0`
-- Application source commit: `b381deab353d9048fcb179b0b8e5ad9b833fd6e9`
-- Corpus projection source commit: `342b01b6b68546afff96144e01f6404f7bad678a`
-- Public content digest: `af3c963e3b393d72705a91935a9d66152f7305d561e97c643f27907f8f6667ea`
+- Website version: `1.3.0`
+- Public corpus version: `1.5.0`
+- Application source commit: `88b3ec911b88c9bd9cd5fefd87d456d7ef4684d5`
+- Corpus projection source commit: `bf555570644019fcd4608e2458354b4a25cf084a`
+- Public content digest: `d7a4a04a7a1aa19708a4316a05f2e94a6e5dca18419cd3d72a9dbc18b500e075`
 - Production site: <https://ironcreed-credo.ironcreed.chatgpt.site>
 
 The private Sites repository remains the canonical engineering source. VOX is a
@@ -32,6 +32,10 @@ npm run dev
 The checked-in `semantic-core/dist/site` directory contains the sealed public
 runtime projection used by this release. It is generated upstream and must not
 be edited manually in VOX.
+
+Every new production deployment is completed with a verified VOX snapshot.
+The application source commit recorded above and in `VOX-PUBLICATION.json`
+identifies the exact canonical Sites state behind that deployment.
 
 ## Public documentation
 

@@ -2225,8 +2225,7 @@ body {
 	border-bottom: 1px solid var(--line);
 }
 
-.policy-directory > strong,
-.page-directory h2 {
+.policy-directory > strong {
 	display: block;
 	margin: 0 0 14px;
 	color: var(--muted);
@@ -2264,47 +2263,6 @@ body {
 	border-color: var(--cyan);
 	color: var(--cyan);
 	background: var(--cyan-soft);
-}
-
-.page-directory {
-	position: relative;
-	z-index: 1;
-	margin-bottom: 28px;
-}
-
-.page-directory ul {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	gap: 8px;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.page-directory a {
-	display: grid;
-	gap: 8px;
-	height: 100%;
-	padding: 16px;
-	border: 1px solid var(--line-soft);
-	background: rgba(247, 249, 248, 0.42);
-}
-
-.page-directory a:hover,
-.page-directory a:focus-visible,
-.page-directory a[aria-current='page'] {
-	border-color: var(--cyan);
-}
-
-.page-directory strong {
-	font-size: 12px;
-	font-weight: 650;
-}
-
-.page-directory span {
-	color: var(--muted);
-	font-size: 10px;
-	line-height: 1.5;
 }
 
 .content-page-index-intro {
@@ -2580,28 +2538,41 @@ body {
 	height: 290px;
 }
 
+.protocol-folder__back,
 .protocol-folder__sheet {
 	position: absolute;
-	z-index: 1;
 	width: clamp(190px, 16vw, 260px);
 	aspect-ratio: 0.72;
 	border: 1px solid rgba(52, 68, 78, 0.34);
-	background:
-		repeating-linear-gradient(0deg, transparent 0 14px, rgba(26, 42, 51, 0.035) 14px 15px), #dbe0df;
-	box-shadow: 8px 10px 20px rgba(31, 43, 49, 0.14);
-	transform: perspective(900px) rotateX(54deg) rotateZ(22deg) translate(-9px, 11px);
 	transition: transform 0.48s ease;
 }
 
-.protocol-folder__sheet--2 {
+.protocol-folder__back {
+	z-index: 1;
+	background: #aab3b2;
+	box-shadow:
+		2px 2px 0 1px rgba(46, 61, 70, 0.5),
+		18px 20px 32px rgba(31, 43, 49, 0.24);
+	transform: perspective(900px) rotateX(54deg) rotateZ(22deg) translate(12px, 15px);
+}
+
+.protocol-folder__sheet {
 	z-index: 2;
+	background:
+		repeating-linear-gradient(0deg, transparent 0 14px, rgba(26, 42, 51, 0.035) 14px 15px), #dbe0df;
+	box-shadow: 8px 10px 20px rgba(31, 43, 49, 0.14);
+	transform: perspective(900px) rotateX(54deg) rotateZ(22deg) translate(12px, -10px);
+}
+
+.protocol-folder__sheet--2 {
+	z-index: 3;
 	background: #d2d9d8;
-	transform: perspective(900px) rotateX(54deg) rotateZ(22deg) translate(-5px, 6px);
+	transform: perspective(900px) rotateX(54deg) rotateZ(22deg) translate(7px, -5px);
 }
 
 .protocol-folder__document {
 	position: relative;
-	z-index: 3;
+	z-index: 4;
 	display: flex;
 	width: clamp(190px, 16vw, 260px);
 	aspect-ratio: 0.72;
@@ -2614,10 +2585,7 @@ body {
 	background:
 		linear-gradient(105deg, rgba(255, 255, 255, 0.68), transparent 30%),
 		repeating-linear-gradient(0deg, transparent 0 14px, rgba(26, 42, 51, 0.035) 14px 15px), #c8cfce;
-	box-shadow:
-		12px 15px 0 -4px #aab3b2,
-		14px 17px 0 -3px rgba(46, 61, 70, 0.5),
-		25px 28px 35px rgba(31, 43, 49, 0.26);
+	box-shadow: 25px 28px 35px rgba(31, 43, 49, 0.26);
 	transform: perspective(900px) rotateX(54deg) rotateZ(22deg);
 	transition:
 		transform 0.48s ease,
@@ -2652,21 +2620,23 @@ body {
 
 .material-card:hover .protocol-folder--interactive .protocol-folder__document,
 .material-card:focus-within .protocol-folder--interactive .protocol-folder__document {
-	box-shadow:
-		17px 20px 0 -4px #aab3b2,
-		19px 22px 0 -3px rgba(46, 61, 70, 0.5),
-		30px 34px 42px rgba(31, 43, 49, 0.3);
+	box-shadow: 30px 34px 42px rgba(31, 43, 49, 0.3);
 	transform: perspective(900px) rotateX(50deg) rotateZ(18deg) translateY(-8px);
+}
+
+.material-card:hover .protocol-folder--interactive .protocol-folder__back,
+.material-card:focus-within .protocol-folder--interactive .protocol-folder__back {
+	transform: perspective(900px) rotateX(50deg) rotateZ(18deg) translate(17px, 20px);
 }
 
 .material-card:hover .protocol-folder--interactive .protocol-folder__sheet,
 .material-card:focus-within .protocol-folder--interactive .protocol-folder__sheet {
-	transform: perspective(900px) rotateX(50deg) rotateZ(18deg) translate(-14px, 2px);
+	transform: perspective(900px) rotateX(50deg) rotateZ(18deg) translate(17px, -10px);
 }
 
 .material-card:hover .protocol-folder--interactive .protocol-folder__sheet--2,
 .material-card:focus-within .protocol-folder--interactive .protocol-folder__sheet--2 {
-	transform: perspective(900px) rotateX(50deg) rotateZ(18deg) translate(-8px, -3px);
+	transform: perspective(900px) rotateX(50deg) rotateZ(18deg) translate(11px, -5px);
 }
 
 .material-pagination {
@@ -3926,10 +3896,6 @@ html[data-theme='dark'] *::-webkit-scrollbar-track {
 
 	.listing-introduction {
 		padding: 36px 0 48px;
-	}
-
-	.page-directory ul {
-		grid-template-columns: 1fr;
 	}
 
 	.content-page-header h1 {

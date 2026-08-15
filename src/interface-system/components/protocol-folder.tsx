@@ -17,6 +17,7 @@ export function ProtocolFolder({ label, interactive = false, sheets = 0 }: Proto
 			<div className="protocol-folder__axis protocol-folder__axis--vertical" />
 			<div className="protocol-folder__orbit protocol-folder__orbit--outer" />
 			<div className="protocol-folder__orbit protocol-folder__orbit--inner" />
+			<div aria-hidden="true" className="protocol-folder__back" />
 			{Array.from({ length: Math.min(2, Math.max(0, sheets)) }, (_, index) => (
 				<div
 					aria-hidden="true"

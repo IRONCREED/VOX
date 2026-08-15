@@ -371,6 +371,7 @@ export function getPolicyPages(locale: Locale): LocalizedContentPage[] {
 }
 
 export function toArticleSummary(article: LocalizedArticle): ArticleSummary {
+	const categoryLabel = getCategory(article.locale, article.category)?.label ?? article.category;
 	return {
 		id: article.id,
 		kind: 'material',
@@ -380,6 +381,7 @@ export function toArticleSummary(article: LocalizedArticle): ArticleSummary {
 		description: article.description,
 		folderLabel: article.folderLabel,
 		category: article.category,
+		categoryLabel,
 		tags: article.tags,
 		href: getArticleHref(article),
 		publishedAt: article.publishedAt,
@@ -387,6 +389,7 @@ export function toArticleSummary(article: LocalizedArticle): ArticleSummary {
 }
 
 export function toSeriesSummary(series: LocalizedSeries): ArticleSummary {
+	const categoryLabel = getCategory(series.locale, series.category)?.label ?? series.category;
 	const tags = new Set([
 		...series.tags,
 		...getSeriesParts(series).flatMap((article) => article.tags),
@@ -400,6 +403,7 @@ export function toSeriesSummary(series: LocalizedSeries): ArticleSummary {
 		description: series.latestDescription,
 		folderLabel: series.folderLabel,
 		category: series.category,
+		categoryLabel,
 		tags: [...tags],
 		href: getSeriesHref(series),
 		publishedAt: series.updatedAt,

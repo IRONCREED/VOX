@@ -8,7 +8,6 @@ import {
 	getInterfaceCopy,
 	getNavigation,
 	getPolicyPages,
-	getPublishedContentPages,
 	getPublicEntityIndex,
 	getTranslatedContentPage,
 } from '../../../../src/content-catalog/adapters/corpus-content-repository';
@@ -77,13 +76,7 @@ export default async function ContentPage({ params }: ContentPageProps) {
 	};
 
 	if (page.pageType === 'corpus-index') {
-		return (
-			<CorpusIndexPageTemplate
-				{...common}
-				entities={getPublicEntityIndex(locale)}
-				pages={getPublishedContentPages(locale)}
-			/>
-		);
+		return <CorpusIndexPageTemplate {...common} entities={getPublicEntityIndex(locale)} />;
 	}
 
 	return (

@@ -1,11 +1,10 @@
-import Link from 'next/link';
 import type {
 	InterfaceCopy,
 	Locale,
-	LocalizedContentPage,
 	NavigationItem,
 	PublicEntityIndexEntry,
 } from '../../content-catalog/domain/content-model';
+import type { LocalizedContentPage } from '../../content-catalog/domain/content-model';
 import type { BuildIdentity } from '../../site-navigation/application/build-identity';
 import { ArticleBody } from '../components/article-body';
 import { EntityIndexTree } from '../components/entity-index-tree';
@@ -19,7 +18,6 @@ interface CorpusIndexPageTemplateProps {
 	locale: Locale;
 	navigation: NavigationItem[];
 	page: LocalizedContentPage;
-	pages: LocalizedContentPage[];
 	translatedPage?: LocalizedContentPage;
 }
 
@@ -30,7 +28,6 @@ export function CorpusIndexPageTemplate({
 	locale,
 	navigation,
 	page,
-	pages,
 	translatedPage,
 }: CorpusIndexPageTemplateProps) {
 	const otherLocale: Locale = locale === 'uk' ? 'en' : 'uk';
@@ -58,23 +55,6 @@ export function CorpusIndexPageTemplate({
 					<div className="title-rule" />
 					<p>{page.description}</p>
 				</header>
-
-				<section aria-labelledby="page-directory-title" className="page-directory">
-					<h2 id="page-directory-title">{copy.pageDirectory}</h2>
-					<ul>
-						{pages.map((listedPage) => (
-							<li key={listedPage.pageId}>
-								<Link
-									aria-current={listedPage.pageId === page.pageId ? 'page' : undefined}
-									href={`/${locale}/pages/${listedPage.slug}`}
-								>
-									<strong>{listedPage.title}</strong>
-									<span>{listedPage.description}</span>
-								</Link>
-							</li>
-						))}
-					</ul>
-				</section>
 
 				<div className="content-page-index-intro">
 					<ArticleBody body={page.body} />

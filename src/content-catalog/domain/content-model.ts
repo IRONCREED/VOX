@@ -98,6 +98,7 @@ export interface ArticleSummary {
 	description: string;
 	folderLabel: string;
 	category: string;
+	categoryLabel: string;
 	tags: string[];
 	href: string;
 	publishedAt: string;
@@ -195,7 +196,6 @@ export interface InterfaceCopy {
 	hint: string;
 	closeHint: string;
 	policyDirectory: string;
-	pageDirectory: string;
 	nextQuip: string;
 	corpusIndex: string;
 	corpusIndexDescription: string;
