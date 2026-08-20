@@ -1,6 +1,6 @@
 {
 	"name": "ironcreed-credo",
-	"version": "1.3.0",
+	"version": "1.4.0",
 	"private": true,
 	"engines": {
 		"node": ">=22.13.0"
@@ -18,8 +18,9 @@
 		"typecheck": "tsc --noEmit",
 		"test:source": "node --test tests/source/*.test.mjs",
 		"test:rendered": "node --test tests/rendered-html.test.mjs",
+		"guard:integrity": "node constitutional-guard/run.mjs integrity",
 		"test": "npm run test:source && npm run build && npm run test:rendered",
-		"check": "npm run format:check && npm run lint && npm run typecheck && npm run lint:styles && npm run brand:check && npm run test",
+		"check": "npm run format:check && npm run lint && npm run typecheck && npm run lint:styles && npm run brand:check && npm run guard:integrity && npm run test",
 		"validate:artifact": "bash scripts/validate-artifact.sh"
 	},
 	"dependencies": {

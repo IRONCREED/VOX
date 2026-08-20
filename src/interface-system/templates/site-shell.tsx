@@ -11,6 +11,7 @@ import {
 } from '../../content-catalog/adapters/corpus-content-repository';
 import type { BuildIdentity } from '../../site-navigation/application/build-identity';
 import { LoadingGate } from '../components/loading-gate';
+import type { HeaderContextActions } from '../components/header-action-dock';
 import { SiteHeader } from '../components/site-header';
 import { SiteNavigation } from '../components/site-navigation';
 
@@ -28,6 +29,7 @@ interface SiteShellProps {
 	locale: Locale;
 	localeLinks: LocaleLink[];
 	navigation: NavigationItem[];
+	headerActions?: HeaderContextActions;
 }
 
 export function SiteShell({
@@ -38,6 +40,7 @@ export function SiteShell({
 	locale,
 	localeLinks,
 	navigation,
+	headerActions,
 }: SiteShellProps) {
 	const corpusIndexPage = getContentPageById(locale, 'page.corpus-index');
 	const policyLinks = getPolicyPages(locale).map((page) => ({
@@ -56,6 +59,7 @@ export function SiteShell({
 					lightThemeLabel={copy.lightTheme}
 					localeLinks={localeLinks}
 					themeLabel={copy.theme}
+					contextActions={headerActions}
 				/>
 				<SiteNavigation
 					buildLabel={buildIdentity.label}
@@ -66,6 +70,7 @@ export function SiteShell({
 							: undefined
 					}
 					items={navigation}
+					locale={locale}
 					policyLinks={policyLinks}
 				/>
 				{children}

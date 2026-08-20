@@ -26,9 +26,11 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
 	const copy = getInterfaceCopy(locale);
 	const origin = getSiteOrigin();
 	const canonical = new URL(`/${locale}/`, origin);
+	const socialPreview = new URL('/og.png', origin);
+	const title = `IRON CREED — ${copy.homeTitle}`;
 
 	return {
-		title: `IRON CREED — ${copy.homeTitle}`,
+		title,
 		description: copy.homeDescription,
 		alternates: {
 			canonical,
@@ -39,10 +41,25 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
 			},
 		},
 		openGraph: {
-			title: `IRON CREED — ${copy.homeTitle}`,
+			title,
 			description: copy.homeDescription,
+			images: [
+				{
+					alt: 'IRON CREED — architecture, memory, and formal systems',
+					height: 630,
+					url: socialPreview,
+					width: 1200,
+				},
+			],
+			siteName: 'IRON CREED',
 			type: 'website',
 			url: canonical,
+		},
+		twitter: {
+			card: 'summary_large_image',
+			description: copy.homeDescription,
+			images: [socialPreview],
+			title,
 		},
 	};
 }

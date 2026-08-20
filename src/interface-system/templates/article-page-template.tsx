@@ -10,6 +10,7 @@ import type {
 	NavigationItem,
 } from '../../content-catalog/domain/content-model';
 import type { BuildIdentity } from '../../site-navigation/application/build-identity';
+import { getDoiUrl } from '../../content-catalog/adapters/zenodo-record';
 import { ArticleActions } from '../components/article-actions';
 import { ArticleBody } from '../components/article-body';
 import { CompanionPanel } from '../components/companion-panel';
@@ -76,6 +77,17 @@ export function ArticlePageTemplate({
 			locale={locale}
 			localeLinks={localeLinks}
 			navigation={navigation}
+			headerActions={{
+				markerId: 'article-actions',
+				discuss: { href: '#companion', label: copy.discuss },
+				deep: article.publication
+					? {
+							href: getDoiUrl(article.publication.doi),
+							label: copy.deepArticle,
+							external: true,
+						}
+					: undefined,
+			}}
 		>
 			<main className="knowledge-panel knowledge-panel--article" id="main">
 				<nav aria-label="Breadcrumb" className="article-route">

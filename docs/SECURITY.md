@@ -22,8 +22,12 @@ finite expiry and rotate the token after suspected exposure.
 The verifier blocks publication when it finds an unexpected path, a symbolic
 link, a forbidden source class, a secret-shaped value, non-English public
 documentation, an oversized file, a mismatched digest, a dirty source release,
-or an unmanaged non-empty destination repository. Branch updates are
-fast-forward only.
+an unpinned or drifted gitlink, or an unmanaged non-empty destination
+repository. Branch updates are fast-forward only.
+
+The Code Constitution submodule is fixed to one full commit in the publication
+policy. `.gitmodules` contains only its public HTTPS URL; no credential helper,
+embedded token, or mutable branch is part of the release contract.
 
 Hosted Sites runtime secrets are not required by this source distribution. A
 repository write token should not be placed in client-side code or a public

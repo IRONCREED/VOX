@@ -1,0 +1,11 @@
+{
+	"name": "iron-warden",
+	"version": "0.1.0-experimental",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"test": "node run.mjs all",
+		"test:prebuild": "node run.mjs prebuild",
+		"test:postbuild": "node run.mjs postbuild"
+	}
+}

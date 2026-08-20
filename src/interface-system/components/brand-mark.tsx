@@ -55,7 +55,7 @@ export function BrandMark({ variant }: BrandMarkProps) {
 		>
 			<path className="brand-mark__trident" d={geometry.tridentPath} />
 			<g className="brand-mark__pulse">
-				<path className="brand-mark__baseline" d={geometry.baselinePath} />
+				<PulseTrace path={geometry.baselinePath} />
 				<PulseTrace path={geometry.pulsePath} />
 				{geometry.endpoints.map((endpoint) => (
 					<circle

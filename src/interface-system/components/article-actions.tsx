@@ -18,6 +18,7 @@ export function ArticleActions({
 		<nav
 			aria-label={articleBodyLabel}
 			className={`article-actions${publication ? '' : ' article-actions--dialogue-only'}`}
+			id="article-actions"
 		>
 			<a className="article-action article-action--discuss" href="#companion">
 				<span aria-hidden="true" className="article-action__icon">

@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
 		description: 'Architecture, memory, and formal systems inside software.',
 		start_url: '/uk/',
 		display: 'standalone',
-		background_color: '#edf0ef',
-		theme_color: '#edf0ef',
+		background_color: '#fcfcfc',
+		theme_color: '#fcfcfc',
 		orientation: 'any',
 		icons: [
 			{

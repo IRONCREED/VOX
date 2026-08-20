@@ -12,3 +12,6 @@ partnership, or official origin.
 
 Third-party packages remain governed by their own licences. The dependency
 lockfile identifies the exact package graph used by the release.
+
+The `code-constitution` Git submodule is a separately versioned work. Its own
+license and notices govern that directory at the pinned commit.

@@ -22,7 +22,8 @@ function renderPaths(geometry) {
 		.join('\n');
 
 	return `\t<path class="iron-creed-mark__ink" d="${escapeAttribute(geometry.tridentPath)}" />
-\t<path d="${escapeAttribute(geometry.baselinePath)}" stroke="${geometry.colours.pulse}" stroke-width="${geometry.strokes.baseline}" stroke-linecap="round" />
+\t<path class="iron-creed-mark__outline" d="${escapeAttribute(geometry.baselinePath)}" stroke-width="${geometry.strokes.outline}" stroke-linecap="round" stroke-linejoin="miter" />
+\t<path d="${escapeAttribute(geometry.baselinePath)}" stroke="${geometry.colours.pulse}" stroke-width="${geometry.strokes.signal}" stroke-linecap="round" stroke-linejoin="miter" />
 \t<path class="iron-creed-mark__outline" d="${escapeAttribute(geometry.pulsePath)}" stroke-width="${geometry.strokes.outline}" stroke-linecap="round" stroke-linejoin="miter" />
 \t<path d="${escapeAttribute(geometry.pulsePath)}" stroke="${geometry.colours.pulse}" stroke-width="${geometry.strokes.signal}" stroke-linecap="round" stroke-linejoin="miter" />
 ${endpoints}`;

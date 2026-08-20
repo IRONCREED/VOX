@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import type { Locale } from '../../content-catalog/domain/content-model';
 import { BrandMark } from './brand-mark';
+import { HeaderActionDock, type HeaderContextActions } from './header-action-dock';
+import { SidebarToggle } from './sidebar-toggle';
 import { ThemeSwitcher } from './theme-switcher';
 
 interface LocaleLink {
@@ -16,6 +18,7 @@ interface SiteHeaderProps {
 	localeLinks: LocaleLink[];
 	languageLabel: string;
 	themeLabel: string;
+	contextActions?: HeaderContextActions;
 }
 
 export function SiteHeader({
@@ -25,10 +28,19 @@ export function SiteHeader({
 	localeLinks,
 	languageLabel,
 	themeLabel,
+	contextActions,
 }: SiteHeaderProps) {
 	return (
 		<header className="system-header">
 			<div className="header-crest">
+				<Link aria-label="IRON CREED" className="header-wordmark" href={`/${currentLocale}/`}>
+					<BrandMark variant="header" />
+					<span>IRON CREED</span>
+				</Link>
+				<SidebarToggle locale={currentLocale} />
+			</div>
+
+			<div className="header-control-cell">
 				<div className="header-controls">
 					<nav aria-label={languageLabel} className="locale-switcher">
 						{localeLinks.map((link) => (
@@ -48,13 +60,9 @@ export function SiteHeader({
 						label={themeLabel}
 						lightLabel={lightThemeLabel}
 					/>
+					<HeaderActionDock actions={contextActions} />
 				</div>
 			</div>
-
-			<Link aria-label="IRON CREED" className="header-wordmark" href={`/${currentLocale}/`}>
-				<BrandMark variant="header" />
-				<span>IRON CREED</span>
-			</Link>
 
 			<div aria-hidden="true" className="header-reserved" />
 		</header>

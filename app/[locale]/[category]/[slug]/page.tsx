@@ -54,19 +54,27 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 	if (enArticle) {
 		languages.en = new URL(getArticleHref(enArticle), origin);
 	}
+	const title = `${article.title} — IRON CREED`;
 
 	return {
-		title: `${article.title} — IRON CREED`,
+		title,
 		description: article.description,
 		alternates: {
 			canonical,
 			languages,
 		},
 		openGraph: {
-			title: `${article.title} — IRON CREED`,
+			title,
 			description: article.description,
+			images: [],
 			type: 'article',
 			url: canonical,
+		},
+		twitter: {
+			card: 'summary',
+			description: article.description,
+			images: [],
+			title,
 		},
 	};
 }

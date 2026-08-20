@@ -43,16 +43,24 @@ export async function generateMetadata({ params }: SeriesPageProps): Promise<Met
 		languages['x-default'] = new URL(getSeriesHref(ukSeries), origin);
 	}
 	if (enSeries) languages.en = new URL(getSeriesHref(enSeries), origin);
+	const title = `${series.title} — IRON CREED`;
 
 	return {
-		title: `${series.title} — IRON CREED`,
+		title,
 		description: series.description,
 		alternates: { canonical, languages },
 		openGraph: {
-			title: `${series.title} — IRON CREED`,
+			title,
 			description: series.description,
+			images: [],
 			type: 'website',
 			url: canonical,
+		},
+		twitter: {
+			card: 'summary',
+			description: series.description,
+			images: [],
+			title,
 		},
 	};
 }

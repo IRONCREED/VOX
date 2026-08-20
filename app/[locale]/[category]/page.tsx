@@ -41,9 +41,10 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 
 	const origin = getSiteOrigin();
 	const canonical = new URL(`/${locale}/${category.id}`, origin);
+	const title = `${category.label} — IRON CREED`;
 
 	return {
-		title: `${category.label} — IRON CREED`,
+		title,
 		description: category.description,
 		alternates: {
 			canonical,
@@ -54,10 +55,17 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 			},
 		},
 		openGraph: {
-			title: `${category.label} — IRON CREED`,
+			title,
 			description: category.description,
+			images: [],
 			type: 'website',
 			url: canonical,
+		},
+		twitter: {
+			card: 'summary',
+			description: category.description,
+			images: [],
+			title,
 		},
 	};
 }

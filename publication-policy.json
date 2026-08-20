@@ -1,7 +1,7 @@
 {
-	"schemaVersion": "1.0.0",
+	"schemaVersion": "2.0.0",
 	"id": "icw-vox-public-source-001",
-	"revision": "1.1.0",
+	"revision": "2.0.0",
 	"destination": {
 		"owner": "IRONCREED",
 		"repository": "VOX",
@@ -40,7 +40,7 @@
 		{
 			"source": "public",
 			"destination": "public",
-			"extensions": [".svg"]
+			"extensions": [".png", ".svg"]
 		},
 		{
 			"source": "semantic-core/dist/site",
@@ -51,9 +51,31 @@
 			"source": "types",
 			"destination": "types",
 			"extensions": [".d.ts"]
+		},
+		{
+			"source": "governance/legislation",
+			"destination": "governance/legislation",
+			"extensions": [".md"]
+		},
+		{
+			"source": "constitutional-guard",
+			"destination": "constitutional-guard",
+			"extensions": [".json", ".md", ".mjs"]
 		}
 	],
 	"files": [
+		{
+			"source": "CONSTITUTION.md",
+			"destination": "CONSTITUTION.md"
+		},
+		{
+			"source": "governance/PROFILE.md",
+			"destination": "governance/PROFILE.md"
+		},
+		{
+			"source": "governance/acts.json",
+			"destination": "governance/acts.json"
+		},
 		{
 			"source": ".prettierignore",
 			"destination": ".prettierignore"
@@ -119,6 +141,10 @@
 			"destination": "publication-policy.json"
 		},
 		{
+			"source": "vox/public-source/.gitmodules",
+			"destination": ".gitmodules"
+		},
+		{
 			"source": "vox/public-source/.gitignore",
 			"destination": ".gitignore"
 		},
@@ -156,6 +182,13 @@
 			"language": "en"
 		}
 	],
+	"gitlinks": [
+		{
+			"path": "code-constitution",
+			"repository": "https://github.com/FOP-Oksana-Dubinetska/code-constitution.git",
+			"commit": "6bdb3f85236a45254724e7dabee840b2c573f5da"
+		}
+	],
 	"generatedFiles": ["package.json", "VOX-PUBLICATION.json"],
 	"executableDestinations": [
 		"scripts/build-public.sh",
@@ -166,8 +199,9 @@
 		".git/",
 		".sites-runtime/",
 		".wrangler/",
-		"constitutional-guard/",
-		"governance/",
+		"governance/attestations/",
+		"governance/prompts/",
+		"governance/reports/",
 		"node_modules/",
 		"semantic-core/corpus/",
 		"semantic-core/dist/custom-gpt/",
@@ -183,9 +217,9 @@
 		".openai/hosting.json",
 		".sites-runtime/",
 		".wrangler/",
-		"CONSTITUTION.md",
-		"constitutional-guard/",
-		"governance/",
+		"governance/attestations/",
+		"governance/prompts/",
+		"governance/reports/",
 		"node_modules/",
 		"semantic-core/corpus/",
 		"semantic-core/dist/custom-gpt/",

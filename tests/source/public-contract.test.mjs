@@ -15,13 +15,14 @@ test('the public source uses the released locale and projection contracts', asyn
 	assert.match(siteManifest.contentDigest, /^[0-9a-f]{64}$/);
 });
 
-test('the public repository excludes private project classes', async () => {
+test('the public repository exposes governance enforcement but excludes private editorial classes', async () => {
 	const publication = JSON.parse(await readFile('VOX-PUBLICATION.json', 'utf8'));
 	const paths = publication.files.map((entry) => entry.path);
 
 	for (const prefix of [
-		'governance/',
-		'constitutional-guard/',
+		'governance/attestations/',
+		'governance/prompts/',
+		'governance/reports/',
 		'semantic-core/corpus/',
 		'semantic-core/materials/',
 		'semantic-core/dist/custom-gpt/',
@@ -32,4 +33,16 @@ test('the public repository excludes private project classes', async () => {
 			prefix,
 		);
 	}
+
+	assert.ok(paths.includes('CONSTITUTION.md'));
+	assert.ok(paths.includes('governance/PROFILE.md'));
+	assert.ok(paths.includes('governance/acts.json'));
+	assert.ok(paths.includes('constitutional-guard/run.mjs'));
+	assert.deepEqual(publication.gitlinks, [
+		{
+			path: 'code-constitution',
+			repository: 'https://github.com/FOP-Oksana-Dubinetska/code-constitution.git',
+			commit: '6bdb3f85236a45254724e7dabee840b2c573f5da',
+		},
+	]);
 });

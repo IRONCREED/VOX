@@ -10,13 +10,17 @@ from the allowlist means exclusion; discretion at publish time is not a policy.
 - public interface configuration and SVG assets required by the build;
 - the sealed `site` runtime projection;
 - public build, formatting, linting, type-checking, and test configuration;
+- the adopted project Constitution wrapper, Founding Profile, acts registry,
+  and project Legislation;
+- IRON WARDEN source, immutable historical tests, integrity manifest, and its
+  stable testing interface;
+- the universal Code Constitution as a full-SHA-pinned Git submodule;
 - the immutable machine-readable publication policy and digest manifest;
 - the licensing map, notices, and English public documentation.
 
 ## Excluded
 
-- the Code Constitution, project Profile, legislation, operational prompts,
-  WARDEN history, attestations, and internal reports;
+- operational governance prompts, attestations, and internal reports;
 - the operational publisher implementation and its repository credential path;
 - canonical semantic-core registries, material packages, editorial intake,
   migration evidence, review notes, and unpublished records;
@@ -37,7 +41,8 @@ does not create a second documentation set.
 
 Every new production deployment is accompanied by a verified VOX snapshot.
 `VOX-PUBLICATION.json` records the exact canonical Sites commit, release
-versions, public content digest, and complete allowlisted file set. A deployment
+versions, public content digest, complete allowlisted file set, and every pinned
+gitlink. A deployment
 is not accepted as a separate release if its VOX publication has not succeeded.
 
 ## Licence boundary

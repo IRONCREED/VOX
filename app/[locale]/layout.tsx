@@ -19,9 +19,12 @@ const geistMono = Geist_Mono({
 	variable: '--font-geist-mono',
 });
 
+const siteDescription = 'Architecture, memory, and formal systems inside software.';
+const socialPreview = new URL('/og.png', getSiteOrigin());
+
 export const metadata: Metadata = {
 	applicationName: 'IRON CREED',
-	description: 'Architecture, memory, and formal systems inside software.',
+	description: siteDescription,
 	icons: {
 		icon: BRAND_FAVICON_SRC,
 		shortcut: BRAND_FAVICON_SRC,
@@ -29,6 +32,20 @@ export const metadata: Metadata = {
 	},
 	manifest: '/manifest.webmanifest',
 	metadataBase: getSiteOrigin(),
+	openGraph: {
+		description: siteDescription,
+		images: [
+			{
+				alt: 'IRON CREED — architecture, memory, and formal systems',
+				height: 630,
+				url: socialPreview,
+				width: 1200,
+			},
+		],
+		siteName: 'IRON CREED',
+		title: 'IRON CREED',
+		type: 'website',
+	},
 	other: {
 		'codex-preview': 'development',
 	},
@@ -36,11 +53,17 @@ export const metadata: Metadata = {
 		follow: false,
 		index: false,
 	},
+	twitter: {
+		card: 'summary_large_image',
+		description: siteDescription,
+		images: [socialPreview],
+		title: 'IRON CREED',
+	},
 };
 
 export const viewport: Viewport = {
 	colorScheme: 'light dark',
-	themeColor: '#edf0ef',
+	themeColor: '#fcfcfc',
 	width: 'device-width',
 	initialScale: 1,
 	viewportFit: 'cover',
