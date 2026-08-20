@@ -10,10 +10,10 @@ test('material API clamps an exhausted page to the addressable catalog', async (
 
 	assert.equal(response.status, 200);
 	const payload = await response.json();
-	assert.equal(payload.page, 2);
+	assert.equal(payload.page, 3);
 	assert.equal(payload.pageSize, 2);
-	assert.equal(payload.totalItems, 3);
-	assert.equal(payload.totalPages, 2);
+	assert.equal(payload.totalItems, 5);
+	assert.equal(payload.totalPages, 3);
 	assert.equal(payload.items.length, 1);
 	assert.ok(payload.items.every((item) => item.href.startsWith('/uk/')));
 });
@@ -72,16 +72,21 @@ test('one material series replaces its seven parts in catalog listings', async (
 	}
 
 	const homeHtml = await homeResponse.text();
-	assert.match(homeHtml, /href="\/en\/series\/the-constitution-that-runs"/);
+	assert.match(homeHtml, /href="\/en\/series\/psychobiosocial-patterns"/);
+	assert.match(homeHtml, /href="\/en\/scenarios\/do-not-be-afraid-sir"/);
 	assert.match(homeHtml, /material-card--series/);
 	assert.match(homeHtml, /protocol-folder__back/);
 	assert.match(homeHtml, /protocol-folder__sheet--1/);
 	assert.match(homeHtml, /protocol-folder__sheet--2/);
-	assert.match(withoutReactMarkers(homeHtml), /Research · Material series · 7/);
-	assert.match(homeHtml, /Write America: How Article I Turns Intent into General Law/);
+	assert.match(withoutReactMarkers(homeHtml), /Research · Material series · 1/);
+	assert.match(homeHtml, /The “Body as a Temporary Construction” Pattern/);
 
 	const researchHtml = await researchResponse.text();
 	assert.equal((researchHtml.match(/data-catalog-id=/g) ?? []).length, 2);
+	assert.equal(
+		(researchHtml.match(/data-catalog-id="series\.psychobiosocial-patterns"/g) ?? []).length,
+		1,
+	);
 	assert.equal(
 		(researchHtml.match(/data-catalog-id="series\.constitution-runtime"/g) ?? []).length,
 		1,
@@ -92,9 +97,9 @@ test('one material series replaces its seven parts in catalog listings', async (
 	);
 
 	const payload = await apiResponse.json();
-	assert.equal(payload.totalItems, 2);
-	assert.equal(payload.items.filter((item) => item.kind === 'series').length, 1);
-	assert.equal(payload.items.find((item) => item.kind === 'series')?.partCount, 7);
+	assert.equal(payload.totalItems, 3);
+	assert.equal(payload.items.filter((item) => item.kind === 'series').length, 2);
+	assert.equal(payload.items.find((item) => item.partCount === 7)?.kind, 'series');
 
 	const seriesHtml = await seriesResponse.text();
 	assert.match(seriesHtml, /The Constitution That Runs/);
@@ -166,12 +171,14 @@ test('the programming post is addressable and filterable by its stable tag', asy
 
 test('the complete entity index has its own localized content page', async () => {
 	const site = await createCompiledSiteDriver();
-	const [ukHomeResponse, ukResponse, enResponse, deepQuestionResponse] = await Promise.all([
-		site.request('/uk/'),
-		site.request('/uk/pages/corpus-index'),
-		site.request('/en/pages/corpus-index'),
-		site.request('/en/research/from-body-to-signal?question=q.channel-centrality#companion'),
-	]);
+	const [ukHomeResponse, ukResponse, enResponse, deepQuestionResponse, indexQuestionResponse] =
+		await Promise.all([
+			site.request('/uk/'),
+			site.request('/uk/pages/corpus-index'),
+			site.request('/en/pages/corpus-index'),
+			site.request('/en/research/from-body-to-signal?question=q.channel-centrality#companion'),
+			site.request('/en/questions/q.ada.why-not-stop-sir'),
+		]);
 	assert.equal(ukHomeResponse.status, 200);
 	const ukHomeHtml = await ukHomeResponse.text();
 	assert.match(ukHomeHtml, /href="\/uk\/pages\/corpus-index"/);
@@ -181,7 +188,7 @@ test('the complete entity index has its own localized content page', async () =>
 	assert.match(ukHtml, /Індекс корпусу/);
 	assert.match(ukHtml, /aria-label="Тип сутності"/);
 	assert.match(ukHtml, /value="question"/);
-	assert.match(ukHtml, />545<\/small>/);
+	assert.match(ukHtml, />566<\/small>/);
 	assert.match(ukHtml, /value="page"/);
 
 	assert.equal(enResponse.status, 200);
@@ -195,17 +202,39 @@ test('the complete entity index has its own localized content page', async () =>
 
 	assert.equal(deepQuestionResponse.status, 200);
 	assert.match(await deepQuestionResponse.text(), /AI companion/);
+	assert.equal(indexQuestionResponse.status, 200);
+	const questionHtml = await indexQuestionResponse.text();
+	assert.match(questionHtml, /data-selected-entity="q\.ada\.why-not-stop-sir"/);
+	assert.match(questionHtml, /data-selected="true"/);
+	assert.match(questionHtml, /Materials under this question/);
+	assert.match(questionHtml, /Do Not Be Afraid, Sir/);
+	assert.match(questionHtml, /application\/ld\+json/);
 });
 
-test('the build, about page, policies, and human-readable discovery are public', async () => {
+test('the build, policies, and four localized search maps are public', async () => {
 	const site = await createCompiledSiteDriver();
-	const [home, about, licensing, privacy, robots, sitemap] = await Promise.all([
+	const [
+		home,
+		about,
+		licensing,
+		privacy,
+		robots,
+		sitemap,
+		ukSiteMap,
+		ukQuestionMap,
+		enSiteMap,
+		enQuestionMap,
+	] = await Promise.all([
 		site.request('/en/'),
 		site.request('/en/pages/about'),
 		site.request('/en/pages/licensing'),
 		site.request('/en/pages/privacy-policy'),
 		site.request('/robots.txt'),
 		site.request('/sitemap.xml'),
+		site.request('/sitemaps/uk/site.xml'),
+		site.request('/sitemaps/uk/questions.xml'),
+		site.request('/sitemaps/en/site.xml'),
+		site.request('/sitemaps/en/questions.xml'),
 	]);
 
 	assert.equal(home.status, 200);
@@ -234,8 +263,23 @@ test('the build, about page, policies, and human-readable discovery are public',
 	assert.match(licensingHtml, /VOX-PUBLICATION\.json/);
 
 	assert.equal(robots.status, 200);
-	assert.doesNotMatch(await robots.text(), /sitemap/i);
-	assert.equal(sitemap.status, 404);
+	const robotsText = await robots.text();
+	assert.match(robotsText, /Allow:\s*\//i);
+	assert.match(robotsText, /Sitemap:.*\/sitemap\.xml/i);
+	assert.equal(sitemap.status, 200);
+	const sitemapText = await sitemap.text();
+	assert.equal((sitemapText.match(/<sitemap>/g) ?? []).length, 4);
+	for (const response of [ukSiteMap, ukQuestionMap, enSiteMap, enQuestionMap]) {
+		assert.equal(response.status, 200);
+	}
+	assert.equal(((await ukSiteMap.text()).match(/<url>/g) ?? []).length, 23);
+	assert.equal(((await enSiteMap.text()).match(/<url>/g) ?? []).length, 23);
+	const ukQuestions = await ukQuestionMap.text();
+	const enQuestions = await enQuestionMap.text();
+	assert.equal((ukQuestions.match(/<url>/g) ?? []).length, 455);
+	assert.equal((enQuestions.match(/<url>/g) ?? []).length, 455);
+	assert.match(enQuestions, /\/en\/questions\/q\.ada\.why-not-stop-sir/);
+	assert.doesNotMatch(enQuestions, /\?question=/);
 });
 
 test('publication metadata uses permanent DOI and linked ORCID authors', async () => {

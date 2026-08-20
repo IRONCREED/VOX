@@ -13,5 +13,6 @@ if [[ ! -x "${vinext}" ]]; then
   exit 69
 fi
 
+npm --prefix "${SITES_PROJECT_ROOT}" run sitemaps:check
 "${vinext}" build
 "${script_dir}/validate-artifact.sh"

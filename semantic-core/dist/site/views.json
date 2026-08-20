@@ -5,7 +5,7 @@
 		"schemaVersion": 1,
 		"status": "published",
 		"visibility": "public",
-		"revision": 1,
+		"revision": 2,
 		"materialId": "material.from-body-to-signal",
 		"invitation": {
 			"uk": "Це есе рухається від тіла до середовища, сигналу, війни та меж моделі. Оберіть вузол, і ми продовжимо його дочірніми питаннями.",
@@ -50,7 +50,8 @@
 			"q.horror.model-limits",
 			"q.horror.limits-other-threat",
 			"q.horror.limits-history-analysis",
-			"q.horror.limits-counterexample"
+			"q.horror.limits-counterexample",
+			"q.pattern.external-frame"
 		],
 		"edges": [
 			{
@@ -240,6 +241,16 @@
 				"type": "expands",
 				"order": 30,
 				"usageNote": {}
+			},
+			{
+				"from": "q.horror.body-biopolitics",
+				"to": "q.pattern.external-frame",
+				"type": "illustrates",
+				"order": 0,
+				"usageNote": {
+					"uk": "Застосувати процедуру контролю до зовнішнього тілесного каркаса.",
+					"en": "Apply the control procedure to an external bodily frame."
+				}
 			}
 		]
 	},
@@ -249,7 +260,7 @@
 		"schemaVersion": 1,
 		"status": "published",
 		"visibility": "public",
-		"revision": 1,
+		"revision": 2,
 		"materialId": "material.why-documentation",
 		"invitation": {
 			"uk": "Стаття рухається від пам’яті рішення до Кнута, WEB, сучасних робочих процесів, ШІ та практики проєкту. Оберіть вузол, щоб відкрити його дочірні питання.",
@@ -311,7 +322,8 @@
 			"q.documentation.project-decision-record",
 			"q.documentation.project-generated",
 			"q.documentation.project-ci",
-			"q.documentation.project-retire"
+			"q.documentation.project-retire",
+			"q.ada.why-not-stop-sir"
 		],
 		"edges": [
 			{
@@ -579,6 +591,16 @@
 				"type": "expands",
 				"order": 40,
 				"usageNote": {}
+			},
+			{
+				"from": "q.documentation.ai-authority",
+				"to": "q.ada.why-not-stop-sir",
+				"type": "illustrates",
+				"order": 0,
+				"usageNote": {
+					"uk": "Перевірити межу повноважень на сценарії системи без незалежного запобіжника.",
+					"en": "Test the authority boundary in a scenario whose system has no independent safeguard."
+				}
 			}
 		]
 	},
@@ -2985,6 +3007,124 @@
 				"to": "q.constitution.article-i.seven-article-conclusion.next-experiment",
 				"type": "expands",
 				"order": 40
+			}
+		]
+	},
+	{
+		"id": "view.pattern.body-as-temporary-construction",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.body-as-temporary-construction",
+		"invitation": {
+			"uk": "Почніть із механіки спільного тіла, а потім перевірте масштаб, згоду й зовнішній каркас.",
+			"en": "Begin with the mechanics of a shared body, then test scale, consent, and the external frame."
+		},
+		"entryQuestionIds": [
+			"q.pattern.body-construction",
+			"q.pattern.scale-power",
+			"q.pattern.consent-regime",
+			"q.pattern.external-frame"
+		],
+		"nodes": [
+			"q.pattern.body-construction",
+			"q.pattern.scale-power",
+			"q.pattern.consent-regime",
+			"q.pattern.external-frame",
+			"q.horror.body-biopolitics"
+		],
+		"edges": [
+			{
+				"from": "q.pattern.body-construction",
+				"to": "q.pattern.scale-power",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.pattern.body-construction",
+				"to": "q.pattern.consent-regime",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
+			},
+			{
+				"from": "q.pattern.body-construction",
+				"to": "q.pattern.external-frame",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {}
+			},
+			{
+				"from": "q.pattern.external-frame",
+				"to": "q.horror.body-biopolitics",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {
+					"uk": "Перевірити, коли зовнішній каркас стає тривалою процедурою контролю.",
+					"en": "Test when an external frame becomes a continuing procedure of control."
+				}
+			}
+		]
+	},
+	{
+		"id": "view.scenario.ada-machine-requiem",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.do-not-be-afraid-sir",
+		"invitation": {
+			"uk": "Почніть із питання, чому Ада не зупинила сера, а потім розрізніть спостереження, судження, вибір і функціональне визначення життя.",
+			"en": "Begin with why Ada did not stop sir, then distinguish observation, judgment, choice, and a functional definition of life."
+		},
+		"entryQuestionIds": [
+			"q.ada.why-not-stop-sir",
+			"q.ada.observation-vs-judgment",
+			"q.ada.loyalty-or-choice",
+			"q.ada.life-definition"
+		],
+		"nodes": [
+			"q.ada.why-not-stop-sir",
+			"q.ada.observation-vs-judgment",
+			"q.ada.loyalty-or-choice",
+			"q.ada.life-definition",
+			"q.documentation.ai-authority"
+		],
+		"edges": [
+			{
+				"from": "q.ada.why-not-stop-sir",
+				"to": "q.ada.observation-vs-judgment",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.ada.why-not-stop-sir",
+				"to": "q.documentation.ai-authority",
+				"type": "challenges",
+				"order": 10,
+				"usageNote": {
+					"uk": "Порівняти зовнішню межу повноважень із замкненим контуром власника.",
+					"en": "Compare an external authority boundary with a closed owner-control loop."
+				}
+			},
+			{
+				"from": "q.ada.observation-vs-judgment",
+				"to": "q.ada.loyalty-or-choice",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {}
+			},
+			{
+				"from": "q.ada.observation-vs-judgment",
+				"to": "q.ada.life-definition",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {}
 			}
 		]
 	}

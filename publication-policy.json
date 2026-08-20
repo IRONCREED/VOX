@@ -1,7 +1,7 @@
 {
 	"schemaVersion": "2.0.0",
 	"id": "icw-vox-public-source-001",
-	"revision": "2.0.0",
+	"revision": "2.1.0",
 	"destination": {
 		"owner": "IRONCREED",
 		"repository": "VOX",
@@ -40,7 +40,7 @@
 		{
 			"source": "public",
 			"destination": "public",
-			"extensions": [".png", ".svg"]
+			"extensions": [".png", ".svg", ".xml"]
 		},
 		{
 			"source": "semantic-core/dist/site",
@@ -113,6 +113,10 @@
 			"destination": "scripts/render-brand-asset.mjs"
 		},
 		{
+			"source": "scripts/sitemaps.mjs",
+			"destination": "scripts/sitemaps.mjs"
+		},
+		{
 			"source": "scripts/sites-env.sh",
 			"destination": "scripts/sites-env.sh"
 		},
@@ -169,6 +173,11 @@
 		{
 			"source": "vox/public-docs/PUBLICATION-BOUNDARY.md",
 			"destination": "docs/PUBLICATION-BOUNDARY.md",
+			"language": "en"
+		},
+		{
+			"source": "vox/public-docs/QUESTION-DISCOVERY.md",
+			"destination": "docs/QUESTION-DISCOVERY.md",
 			"language": "en"
 		},
 		{

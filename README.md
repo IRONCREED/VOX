@@ -6,11 +6,11 @@ released interface, the adopted project governance and IRON WARDEN audit
 surface, build and test configuration, licensing notices, and English public
 documentation.
 
-- Website version: `1.4.0`
-- Public corpus version: `1.6.0`
-- Application source commit: `9b0997acfa20964f109c83732e1b1506899f6c03`
-- Corpus projection source commit: `65fc3dab920ac5d0c5069c789d8e5e46aa3bee71`
-- Public content digest: `ab0788f27b23cbf0f559984d98c9205eb616c8bf01f29f0e3bd16afc79a08607`
+- Website version: `1.6.0`
+- Public corpus version: `1.7.0`
+- Application source commit: `d375ee180aaeb4817a4501fe2316f8db3fbc84cd`
+- Corpus projection source commit: `7d5103a4e1b053d665e3f758f0050143ab4cf1f3`
+- Public content digest: `4367fee3d4441972e0001795d6c9eb85b4bc52abee7215314074662edec33327`
 - Production site: <https://ironcreed-credo.ironcreed.chatgpt.site>
 
 The private Sites repository remains the canonical engineering source. VOX is a
@@ -39,6 +39,25 @@ Every new production deployment is completed with a verified VOX snapshot.
 The application source commit recorded above and in `VOX-PUBLICATION.json`
 identifies the exact canonical Sites state behind that deployment.
 
+## Question discovery
+
+IRONCREED publishes four generated XML maps: a general route map and a question
+map for each of the Ukrainian and English locales. The root `sitemap.xml` is an
+index of those four maps. `npm run sitemaps:check` proves that the checked XML
+matches the sealed public runtime projection; `npm run sitemaps:build` performs
+the explicit regeneration when released routes or questions change.
+
+Question-map URLs use `/{locale}/questions/{stable-question-id}`. They render
+the official Corpus Index opened on the named question and show every public
+material or page canonically associated with it. Other index entity kinds do
+not receive parallel generated routes.
+
+We treat question-level discovery as a likely direction for future search:
+long-form publications remain the authoritative objects, while their explicit,
+standalone questions become stable retrieval and navigation units. This avoids
+fabricating thin derivative pages and lets a search system move from a precise
+question back to the complete set of source materials that actually address it.
+
 The universal Code Constitution is a pinned Git submodule at
 `code-constitution`. `CONSTITUTION.md`, `governance/PROFILE.md`, the project
 legislation, its acts registry, and `constitutional-guard/` expose the adopted
@@ -50,6 +69,7 @@ of VOX.
 ## Public documentation
 
 - [Architecture](docs/ARCHITECTURE.md)
+- [Question-level discovery](docs/QUESTION-DISCOVERY.md)
 - [Publication boundary](docs/PUBLICATION-BOUNDARY.md)
 - [Security](docs/SECURITY.md)
 - [Licensing map](LICENSE.md)

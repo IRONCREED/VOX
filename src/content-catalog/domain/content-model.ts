@@ -70,6 +70,7 @@ export interface ArticleMetadata {
 	hintIds: string[];
 	publication?: ZenodoPublication;
 	series: ArticleSeriesMembership | null;
+	presentationMode: 'standard' | 'scenario-log';
 }
 
 export interface ArticleSeriesMembership {
@@ -204,6 +205,8 @@ export interface InterfaceCopy {
 	searchEntities: string;
 	noEntities: string;
 	openEntity: string;
+	openQuestion: string;
+	questionAssociations: string;
 	entityKinds: Record<PublicEntityKind, string>;
 }
 
@@ -256,6 +259,14 @@ export interface PublicEntityIndexEntry {
 	materialIds: string[];
 	pageIds?: string[];
 	href?: string;
+	relatedEntries?: PublicEntityRelatedEntry[];
+}
+
+export interface PublicEntityRelatedEntry {
+	id: string;
+	kind: 'material' | 'page';
+	label: string;
+	href: string;
 }
 
 export type ContentPageType = 'about' | 'corpus-index' | 'policy';

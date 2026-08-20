@@ -22,6 +22,7 @@ export async function readCanonicalText(relativePath) {
 
 export async function createCompiledSiteDriver() {
 	const workerPath = path.join(projectRoot(), 'dist/server/index.js');
+	const clientRoot = path.join(projectRoot(), 'dist/client');
 	const workerUrl = pathToFileURL(workerPath);
 	workerUrl.searchParams.set('iron-warden', `${process.pid}-${Date.now()}`);
 	const { default: worker } = await import(workerUrl.href);
@@ -36,7 +37,38 @@ export async function createCompiledSiteDriver() {
 				new Request(new URL(pathname, 'https://ironcreed.test'), init),
 				{
 					ASSETS: {
-						fetch: async () => new Response('Not found', { status: 404 }),
+						fetch: async (request) => {
+							const url = new URL(request.url);
+							let relativePath;
+							try {
+								relativePath = decodeURIComponent(url.pathname).replace(/^\/+/, '');
+							} catch {
+								return new Response('Not found', { status: 404 });
+							}
+							const assetPath = path.resolve(clientRoot, relativePath);
+							if (assetPath !== clientRoot && !assetPath.startsWith(`${clientRoot}${path.sep}`)) {
+								return new Response('Not found', { status: 404 });
+							}
+							try {
+								const content = await readFile(assetPath);
+								const contentTypes = {
+									'.css': 'text/css; charset=utf-8',
+									'.js': 'text/javascript; charset=utf-8',
+									'.json': 'application/json; charset=utf-8',
+									'.png': 'image/png',
+									'.svg': 'image/svg+xml; charset=utf-8',
+									'.xml': 'application/xml; charset=utf-8',
+								};
+								return new Response(request.method === 'HEAD' ? null : content, {
+									headers: {
+										'content-type':
+											contentTypes[path.extname(assetPath)] ?? 'application/octet-stream',
+									},
+								});
+							} catch {
+								return new Response('Not found', { status: 404 });
+							}
+						},
 					},
 					IMAGES: {
 						input() {

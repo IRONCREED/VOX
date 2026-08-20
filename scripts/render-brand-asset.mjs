@@ -50,20 +50,26 @@ ${renderPaths(geometry)}
 }
 
 export function renderFaviconAsset(geometry) {
-	const [, , width, height] = geometry.viewBox.split(/\s+/).map(Number);
-	const side = Math.max(width, height);
-	const offsetX = (side - width) / 2;
-	const offsetY = (side - height) / 2;
 	const paths = renderPaths(geometry)
 		.split('\n')
 		.map((line) => `\t${line}`)
 		.join('\n');
 
-	return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${side} ${side}" fill="none">
+	return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
 \t<title>IRON CREED</title>
-\t<desc>Static peak state of the IRON CREED mark</desc>
-${renderTheme(geometry)}
-\t<g transform="translate(${offsetX} ${offsetY})">
+\t<desc>Optically enlarged static peak state of the IRON CREED mark</desc>
+\t<style>
+\t\t.iron-creed-favicon__plate { fill: ${geometry.colours.ink}; }
+\t\t.iron-creed-mark__ink { fill: ${geometry.colours.invertedInk}; }
+\t\t.iron-creed-mark__outline { stroke: ${geometry.colours.ink}; }
+\t\t@media (prefers-color-scheme: dark) {
+\t\t\t.iron-creed-favicon__plate { fill: ${geometry.colours.invertedInk}; }
+\t\t\t.iron-creed-mark__ink { fill: ${geometry.colours.ink}; }
+\t\t\t.iron-creed-mark__outline { stroke: ${geometry.colours.invertedInk}; }
+\t\t}
+\t</style>
+\t<rect class="iron-creed-favicon__plate" x="4" y="4" width="120" height="120" rx="24" />
+\t<g transform="translate(25 9) scale(1 0.69) translate(-25 0)">
 ${paths}
 \t</g>
 </svg>

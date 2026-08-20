@@ -65,6 +65,14 @@
 	},
 	{
 		"kind": "material",
+		"id": "material.body-as-temporary-construction",
+		"materialId": "material.body-as-temporary-construction",
+		"locale": "en",
+		"path": "/en/research/body-as-temporary-construction",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
 		"id": "material.constitution-runtime-01-article-vii",
 		"materialId": "material.constitution-runtime-01-article-vii",
 		"locale": "en",
@@ -117,6 +125,22 @@
 		"materialId": "material.constitution-runtime-07-article-i",
 		"locale": "en",
 		"path": "/en/research/write-america-how-article-i-turns-intent-into-general-law",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.do-not-be-afraid-sir",
+		"materialId": "material.do-not-be-afraid-sir",
+		"locale": "en",
+		"path": "/en/scenarios/do-not-be-afraid-sir",
+		"legacyUrls": []
+	},
+	{
+		"kind": "series",
+		"id": "series.psychobiosocial-patterns",
+		"seriesId": "series.psychobiosocial-patterns",
+		"locale": "en",
+		"path": "/en/series/psychobiosocial-patterns",
 		"legacyUrls": []
 	},
 	{
@@ -225,6 +249,14 @@
 	},
 	{
 		"kind": "material",
+		"id": "material.body-as-temporary-construction",
+		"materialId": "material.body-as-temporary-construction",
+		"locale": "uk",
+		"path": "/uk/research/tilo-iak-tymchasova-konstruktsiia",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
 		"id": "material.from-body-to-signal",
 		"materialId": "material.from-body-to-signal",
 		"locale": "uk",
@@ -248,11 +280,27 @@
 		"legacyUrls": []
 	},
 	{
+		"kind": "material",
+		"id": "material.do-not-be-afraid-sir",
+		"materialId": "material.do-not-be-afraid-sir",
+		"locale": "uk",
+		"path": "/uk/scenarios/ne-biitesia-ser",
+		"legacyUrls": []
+	},
+	{
 		"kind": "series",
 		"id": "series.constitution-runtime",
 		"seriesId": "series.constitution-runtime",
 		"locale": "uk",
 		"path": "/uk/series/konstytutsiia-shcho-vykonuietsia",
+		"legacyUrls": []
+	},
+	{
+		"kind": "series",
+		"id": "series.psychobiosocial-patterns",
+		"seriesId": "series.psychobiosocial-patterns",
+		"locale": "uk",
+		"path": "/uk/series/psykhobiosotsialni-paterny",
 		"legacyUrls": []
 	}
 ]

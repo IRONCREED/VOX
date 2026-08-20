@@ -34,7 +34,7 @@ test('the semantic core is the single bilingual publication source', async () =>
 	]);
 
 	assert.equal(corpus.id, 'corpus.ironcreed');
-	assert.equal(siteManifest.contentVersion, '1.6.0');
+	assert.equal(siteManifest.contentVersion, '1.7.0');
 	assert.equal(siteManifest.sourceCommit, gptManifest.sourceCommit);
 	assert.equal(siteManifest.contentDigest, gptManifest.contentDigest);
 	assert.equal(siteManifest.schemaVersion, gptManifest.schemaVersion);
@@ -50,16 +50,19 @@ test('the semantic core is the single bilingual publication source', async () =>
 			'material.constitution-runtime-05-article-iii',
 			'material.constitution-runtime-06-article-ii',
 			'material.constitution-runtime-07-article-i',
+			'material.body-as-temporary-construction',
+			'material.do-not-be-afraid-sir',
 		]),
 	);
-	assert.equal(materials.length, 18);
-	assert.equal(series.length, 2);
-	assert.ok(series.every((item) => item.materialIds.length === 7));
+	assert.equal(materials.length, 22);
+	assert.equal(series.length, 4);
+	assert.equal(series.filter((item) => item.materialIds.length === 7).length, 2);
+	assert.equal(series.filter((item) => item.materialIds.length === 1).length, 2);
 	assert.equal(pages.length, 12);
-	assert.equal(tags.length, 77);
-	assert.equal(urls.length, 32);
-	assert.equal(entities.filter((item) => item.locale === 'uk').length, 545);
-	assert.equal(entities.filter((item) => item.locale === 'en').length, 545);
+	assert.equal(tags.length, 86);
+	assert.equal(urls.length, 38);
+	assert.equal(entities.filter((item) => item.locale === 'uk').length, 566);
+	assert.equal(entities.filter((item) => item.locale === 'en').length, 566);
 	assert.ok(entities.every((item) => item.status === 'published'));
 	assert.deepEqual(
 		categories.map((category) => category.id),
@@ -82,7 +85,7 @@ test('all questions are standalone and views alone own navigation', async () => 
 		readJson('semantic-core/corpus/views/registry.json'),
 		readJson('semantic-core/corpus/protocols/registry.json'),
 	]);
-	assert.equal(questions.length, 447);
+	assert.equal(questions.length, 455);
 	for (const question of questions) {
 		assert.equal(question.standalone, true, `${question.id} is not standalone`);
 		for (const forbidden of ['parentId', 'children', 'depth', 'materialId']) {
@@ -96,7 +99,7 @@ test('all questions are standalone and views alone own navigation', async () => 
 		);
 		assert.equal(new Set(normalized).size, normalized.length, `${locale} contains a duplicate`);
 	}
-	assert.equal(views.length, 10);
+	assert.equal(views.length, 12);
 	assert.ok(views.every((view) => view.entryQuestionIds.length > 0 && view.nodes.length > 0));
 	assert.deepEqual(views.find((view) => view.id === 'view.about.iron-creed')?.entryQuestionIds, [
 		'q.iron-creed.model',
@@ -125,7 +128,7 @@ test('the site consumes the checked projection and exposes a dedicated corpus in
 	assert.match(navigation, /build-identity__index/);
 	assert.doesNotMatch(navigation, /EntityIndexTree/);
 	assert.match(buildScript, /run build:check/);
-	assert.equal(packageManifest.version, '1.4.0');
+	assert.equal(packageManifest.version, '1.6.0');
 });
 
 test('the entity index links only through canonical material associations', async () => {
@@ -158,12 +161,12 @@ test('the entity index links only through canonical material associations', asyn
 	const sharedQuestion = entities.find(
 		(entry) => entry.locale === 'en' && entry.id === 'q.channel-centrality',
 	);
-	assert.match(sharedQuestion.href, /\?question=q\.channel-centrality#companion$/);
+	assert.equal(sharedQuestion.href, '/en/questions/q.channel-centrality');
 	assert.deepEqual(sharedQuestion.materialIds, ['material.from-body-to-signal']);
 	const modelQuestion = entities.find(
 		(entry) => entry.locale === 'en' && entry.id === 'q.iron-creed.model',
 	);
-	assert.match(modelQuestion.href, /\/en\/pages\/about\?question=q\.iron-creed\.model#companion$/);
+	assert.equal(modelQuestion.href, '/en/questions/q.iron-creed.model');
 	assert.deepEqual(modelQuestion.pageIds, ['page.about']);
 });
 
@@ -178,7 +181,7 @@ test('governance records and attests the active release', async () => {
 			readJson('vox/publication-policy.json'),
 			readText('semantic-core/docs/article-publication-template-v4.txt'),
 			readText('governance/prompts/README.md'),
-			readJson('governance/attestations/interface-governance-release-2026-08-20.json'),
+			readJson('governance/attestations/question-discovery-release-2026-08-21.json'),
 		]);
 	assert.match(profile, /Редакция: `0\.7\.0`/);
 	assert.match(profile, /`\/semantic-core\/corpus\/`/);
@@ -210,8 +213,11 @@ test('governance records and attests the active release', async () => {
 	assert.match(lifecycle, /Каждый новый production/);
 	assert.match(voxAct, /Каждый новый production/);
 	assert.equal(policy.destination.repository, 'VOX');
+	assert.equal(policy.revision, '2.1.0');
 	assert.match(lifecycle, /record\.revision/);
+	assert.match(lifecycle, /sitemaps:build/);
 	assert.match(promptIndex, /MATERIAL_DEPRECATE_OR_DELETE\.md/);
+	assert.match(promptIndex, /SITEMAP_UPDATE\.md/);
 	assert.match(template, /Редакция: 4\.4\.0/);
 	assert.match(template, /standalone: true/);
 	assert.equal(
@@ -219,8 +225,11 @@ test('governance records and attests the active release', async () => {
 		'2.1.0',
 	);
 	assert.equal(attestation.constitutionImpact.status, 'reviewed-no-change');
-	assert.equal(attestation.profileImpact.status, 'amended');
-	assert.equal(attestation.contentImpact.contentVersion, '1.6.0');
+	assert.equal(attestation.profileImpact.status, 'reviewed-no-change');
+	assert.equal(attestation.contentImpact.contentVersion, '1.7.0');
+	assert.equal(attestation.release.siteVersion, '1.6.0');
+	assert.equal(attestation.release.questionCount, 455);
+	assert.equal(attestation.release.sitemapCount, 4);
 	for (const document of attestation.documents) {
 		const content = await readFile(path.join(projectRoot, document.path));
 		assert.equal(createHash('sha256').update(content).digest('hex'), document.sha256);

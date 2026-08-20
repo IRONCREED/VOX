@@ -63,9 +63,7 @@ export function SidebarToggle({ locale }: SidebarToggleProps) {
 			title={label}
 			type="button"
 		>
-			<span aria-hidden="true" className="sidebar-toggle__glyph">
-				<i />
-			</span>
+			<span aria-hidden="true" className="sidebar-toggle__glyph" />
 		</button>
 	);
 }

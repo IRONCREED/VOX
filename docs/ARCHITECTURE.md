@@ -17,6 +17,7 @@ to audit how a release is controlled.
 | `content/config/`          | Public interface copy, categories, hints, and navigation configuration |
 | `semantic-core/dist/site/` | Generated public runtime data for the released corpus                  |
 | `tests/`                   | Public source and rendered-artifact checks                             |
+| `scripts/sitemaps.mjs`     | Deterministic localized route and question sitemap generation          |
 | `code-constitution/`       | Pinned universal Code Constitution Git submodule                       |
 | `governance/`              | Adopted Profile, acts registry, and project legislation                |
 | `constitutional-guard/`    | IRON WARDEN runner, integrity manifest, and historical checks          |
@@ -37,3 +38,24 @@ Constitution gitlink.
 
 TheWorldOfCanon is a separate archival projection. A VOX publication neither
 mutates nor implicitly authorizes a TheWorldOfCanon pull request.
+
+## Search projection
+
+The public search surface is deliberately split into four maps:
+
+| Locale    | General routes          | Question routes              |
+| --------- | ----------------------- | ---------------------------- |
+| Ukrainian | `/sitemaps/uk/site.xml` | `/sitemaps/uk/questions.xml` |
+| English   | `/sitemaps/en/site.xml` | `/sitemaps/en/questions.xml` |
+
+The root `/sitemap.xml` is an index, not a fifth content map. General maps are
+derived from published homes, categories, content pages, series, and materials.
+Question maps are derived from every `published + public` question in the sealed
+entity index. Each question must have a canonical material or page association;
+the generator refuses to emit an orphan URL.
+
+A question route does not create a second answer or a synthetic article. It
+renders the full Corpus Index, selects the stable question, and exposes its
+associated source publications. This lets future search systems address a
+long-form corpus at question granularity while preserving provenance and the
+authority of the originating materials.

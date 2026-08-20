@@ -5,6 +5,7 @@ import type {
 	PublicEntityIndexEntry,
 } from '../../content-catalog/domain/content-model';
 import type { LocalizedContentPage } from '../../content-catalog/domain/content-model';
+import { getQuestionHref } from '../../content-catalog/adapters/corpus-content-repository';
 import type { BuildIdentity } from '../../site-navigation/application/build-identity';
 import { ArticleBody } from '../components/article-body';
 import { EntityIndexTree } from '../components/entity-index-tree';
@@ -19,6 +20,7 @@ interface CorpusIndexPageTemplateProps {
 	navigation: NavigationItem[];
 	page: LocalizedContentPage;
 	translatedPage?: LocalizedContentPage;
+	selectedEntityId?: string;
 }
 
 export function CorpusIndexPageTemplate({
@@ -28,14 +30,25 @@ export function CorpusIndexPageTemplate({
 	locale,
 	navigation,
 	page,
+	selectedEntityId,
 	translatedPage,
 }: CorpusIndexPageTemplateProps) {
 	const otherLocale: Locale = locale === 'uk' ? 'en' : 'uk';
 	const localeLinks = [
-		{ locale, href: `/${locale}/pages/${page.slug}`, direct: true },
+		{
+			locale,
+			href: selectedEntityId
+				? getQuestionHref(locale, selectedEntityId)
+				: `/${locale}/pages/${page.slug}`,
+			direct: true,
+		},
 		{
 			locale: otherLocale,
-			href: translatedPage ? `/${otherLocale}/pages/${translatedPage.slug}` : `/${otherLocale}/`,
+			href: selectedEntityId
+				? getQuestionHref(otherLocale, selectedEntityId)
+				: translatedPage
+					? `/${otherLocale}/pages/${translatedPage.slug}`
+					: `/${otherLocale}/`,
 			direct: Boolean(translatedPage),
 		},
 	].toSorted((left, right) => (left.locale === 'uk' ? -1 : right.locale === 'uk' ? 1 : 0));
@@ -59,7 +72,7 @@ export function CorpusIndexPageTemplate({
 				<div className="content-page-index-intro">
 					<ArticleBody body={page.body} />
 				</div>
-				<EntityIndexTree copy={copy} entries={entities} />
+				<EntityIndexTree copy={copy} entries={entities} initialEntityId={selectedEntityId} />
 				<QuipCollection locale={locale} nextLabel={copy.nextQuip} />
 			</main>
 		</SiteShell>

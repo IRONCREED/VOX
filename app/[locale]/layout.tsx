@@ -46,12 +46,9 @@ export const metadata: Metadata = {
 		title: 'IRON CREED',
 		type: 'website',
 	},
-	other: {
-		'codex-preview': 'development',
-	},
 	robots: {
-		follow: false,
-		index: false,
+		follow: true,
+		index: true,
 	},
 	twitter: {
 		card: 'summary_large_image',

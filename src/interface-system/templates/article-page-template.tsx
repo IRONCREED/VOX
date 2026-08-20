@@ -175,14 +175,18 @@ export function ArticlePageTemplate({
 
 				<section
 					aria-labelledby="article-body-title"
-					className="article-document"
+					className={
+						article.presentationMode === 'scenario-log'
+							? 'article-document article-document--scenario-log'
+							: 'article-document'
+					}
 					id="article-body"
 				>
 					<header>
 						<small>IRON CREED / {article.translationKey.toUpperCase()}</small>
 						<h2 id="article-body-title">{copy.articleBody}</h2>
 					</header>
-					<ArticleBody body={article.body} />
+					<ArticleBody body={article.body} variant={article.presentationMode} />
 
 					{hints.length > 0 ? (
 						<div className="article-hints">

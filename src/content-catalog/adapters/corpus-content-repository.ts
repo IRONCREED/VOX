@@ -362,6 +362,10 @@ export function getContentPageHref(page: Pick<LocalizedContentPage, 'locale' | '
 	return `/${page.locale}/pages/${page.slug}`;
 }
 
+export function getQuestionHref(locale: Locale, questionId: string) {
+	return `/${locale}/questions/${encodeURIComponent(questionId)}`;
+}
+
 export function getAllPublishedPageRoutes(): LocalizedContentPage[] {
 	return contentPages.filter((page) => page.status === 'published');
 }
@@ -526,7 +530,68 @@ export function getCompanionScenario(viewId: string, locale: Locale): CompanionS
 }
 
 export function getPublicEntityIndex(locale: Locale): PublicEntityIndexEntry[] {
-	return entities.filter((entity) => entity.locale === locale);
+	const localizedArticles = new Map(
+		articles
+			.filter((article) => article.locale === locale && article.status === 'published')
+			.map((article) => [article.materialId, article]),
+	);
+	const localizedPages = new Map(
+		getPublishedContentPages(locale).map((page) => [page.pageId, page]),
+	);
+
+	return entities
+		.filter((entity) => entity.locale === locale)
+		.map((entity) => {
+			const relatedEntries = [
+				...entity.materialIds.flatMap((materialId) => {
+					const article = localizedArticles.get(materialId);
+					return article
+						? [
+								{
+									id: article.materialId,
+									kind: 'material' as const,
+									label: article.title,
+									href: getArticleHref(article),
+								},
+							]
+						: [];
+				}),
+				...(entity.pageIds ?? []).flatMap((pageId) => {
+					const page = localizedPages.get(pageId);
+					return page
+						? [
+								{
+									id: page.pageId,
+									kind: 'page' as const,
+									label: page.title,
+									href: getContentPageHref(page),
+								},
+							]
+						: [];
+				}),
+			];
+
+			return {
+				...entity,
+				href: entity.kind === 'question' ? getQuestionHref(locale, entity.id) : entity.href,
+				relatedEntries,
+			};
+		});
+}
+
+export function getQuestionIndexEntry(
+	locale: Locale,
+	questionId: string,
+): PublicEntityIndexEntry | undefined {
+	return getPublicEntityIndex(locale).find(
+		(entry) => entry.kind === 'question' && entry.id === questionId,
+	);
+}
+
+export function getAllQuestionIndexEntries(): PublicEntityIndexEntry[] {
+	return SUPPORTED_LOCALES.flatMap((locale) =>
+		getPublicEntityIndex(locale).filter((entry) => entry.kind === 'question'),
+	);
 }
 
 export function getContextualHints(locale: Locale, hintIds: string[]): ContextualHint[] {

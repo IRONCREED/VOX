@@ -614,5 +614,77 @@
 			"uk": "software governance",
 			"en": "software governance"
 		}
+	},
+	{
+		"id": "patterns",
+		"order": 780,
+		"labels": {
+			"uk": "патерни",
+			"en": "patterns"
+		}
+	},
+	{
+		"id": "psychobiosocial",
+		"order": 790,
+		"labels": {
+			"uk": "психобіосоціальне",
+			"en": "psychobiosocial"
+		}
+	},
+	{
+		"id": "consent",
+		"order": 800,
+		"labels": {
+			"uk": "згода",
+			"en": "consent"
+		}
+	},
+	{
+		"id": "embodiment",
+		"order": 810,
+		"labels": {
+			"uk": "тілесність",
+			"en": "embodiment"
+		}
+	},
+	{
+		"id": "silent-hill",
+		"order": 820,
+		"labels": {
+			"uk": "Silent Hill",
+			"en": "Silent Hill"
+		}
+	},
+	{
+		"id": "scenarios",
+		"order": 830,
+		"labels": {
+			"uk": "сценарії",
+			"en": "scenarios"
+		}
+	},
+	{
+		"id": "fallout-4",
+		"order": 840,
+		"labels": {
+			"uk": "Fallout 4",
+			"en": "Fallout 4"
+		}
+	},
+	{
+		"id": "machine-authority",
+		"order": 850,
+		"labels": {
+			"uk": "машинне повноваження",
+			"en": "machine authority"
+		}
+	},
+	{
+		"id": "grief",
+		"order": 860,
+		"labels": {
+			"uk": "горе",
+			"en": "grief"
+		}
 	}
 ]

@@ -1,15 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158 158" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
 	<title>IRON CREED</title>
-	<desc>Static peak state of the IRON CREED mark</desc>
+	<desc>Optically enlarged static peak state of the IRON CREED mark</desc>
 	<style>
-		.iron-creed-mark__ink { fill: #111820; }
-		.iron-creed-mark__outline { stroke: #fcfcfc; }
+		.iron-creed-favicon__plate { fill: #111820; }
+		.iron-creed-mark__ink { fill: #f4f6f5; }
+		.iron-creed-mark__outline { stroke: #111820; }
 		@media (prefers-color-scheme: dark) {
-			.iron-creed-mark__ink { fill: #f4f6f5; }
-			.iron-creed-mark__outline { stroke: #111416; }
+			.iron-creed-favicon__plate { fill: #f4f6f5; }
+			.iron-creed-mark__ink { fill: #111820; }
+			.iron-creed-mark__outline { stroke: #f4f6f5; }
 		}
 	</style>
-	<g transform="translate(15 0)">
+	<rect class="iron-creed-favicon__plate" x="4" y="4" width="120" height="120" rx="24" />
+	<g transform="translate(25 9) scale(1 0.69) translate(-25 0)">
 		<path class="iron-creed-mark__ink" d="M64 9.1L67.7 21.5V104.6H60.2V21.6ZM33.4 22.4L40.8 34.6V90.8L43.7 94.9V104.5H41.1L33.3 92.1ZM94.6 22.5L94.7 92.4L86.9 104.6H84.2V95.1L87.3 90.8V34.5ZM46.2 46.3L53.3 58.8V104.6H46.1ZM81.7 46.5V104.5H74.6V58.9ZM46.2 104.5H53.3V114.9L62.7 128.3V158L57.3 146.2L57.2 134.5L46.1 118.8ZM74.7 104.5H81.8V118.9L70.7 134.9V146L65.3 158V128.3L74.6 115Z" />
 		<path class="iron-creed-mark__outline" d="M40.6 107H60.1M70.9 107H87.4" stroke-width="4" stroke-linecap="round" stroke-linejoin="miter" />
 		<path d="M40.6 107H60.1M70.9 107H87.4" stroke="#e52b20" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="miter" />

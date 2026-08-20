@@ -7,7 +7,9 @@ from the allowlist means exclusion; discretion at publish time is not a policy.
 ## Included
 
 - application, component, template, worker, and adapter source code;
-- public interface configuration and SVG assets required by the build;
+- public interface configuration, brand assets, and generated XML sitemaps
+  required by the build;
+- the deterministic sitemap generator and its non-mutating verification mode;
 - the sealed `site` runtime projection;
 - public build, formatting, linting, type-checking, and test configuration;
 - the adopted project Constitution wrapper, Founding Profile, acts registry,

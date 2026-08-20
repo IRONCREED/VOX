@@ -68,5 +68,59 @@
 		"publishedAt": "2026-08-02",
 		"updatedAt": "2026-08-14",
 		"status": "published"
+	},
+	{
+		"id": "icw-series-research-002-en",
+		"seriesId": "series.psychobiosocial-patterns",
+		"translationKey": "psychobiosocial-patterns",
+		"locale": "en",
+		"slug": "psychobiosocial-patterns",
+		"title": "Psychobiosocial Patterns",
+		"description": "A series about repeatable constructions in which body, mind, and social regime form one temporary mechanism.",
+		"category": "research",
+		"tags": [
+			"patterns",
+			"psychobiosocial",
+			"embodiment"
+		],
+		"materialIds": [
+			"material.body-as-temporary-construction"
+		],
+		"folderLabel": "IRON CREED RESEARCH · PSYCHOBIOSOCIAL",
+		"folderSheets": 2,
+		"catalogMode": "latest-part",
+		"latestMaterialId": "material.body-as-temporary-construction",
+		"latestTitle": "The “Body as a Temporary Construction” Pattern",
+		"latestDescription": "Support, scale, and consent turn two bodies into a temporary visual apparatus, while an external frame changes its political regime.",
+		"publishedAt": "2026-08-20",
+		"updatedAt": "2026-08-20",
+		"status": "published"
+	},
+	{
+		"id": "icw-series-research-002-uk",
+		"seriesId": "series.psychobiosocial-patterns",
+		"translationKey": "psychobiosocial-patterns",
+		"locale": "uk",
+		"slug": "psykhobiosotsialni-paterny",
+		"title": "Психобіосоціальні патерни",
+		"description": "Серія про повторювані конструкції, у яких тіло, психіка й соціальний режим утворюють один тимчасовий механізм.",
+		"category": "research",
+		"tags": [
+			"patterns",
+			"psychobiosocial",
+			"embodiment"
+		],
+		"materialIds": [
+			"material.body-as-temporary-construction"
+		],
+		"folderLabel": "ДОСЛІДЖЕННЯ IRON CREED · ПСИХОБІОСОЦІАЛЬНЕ",
+		"folderSheets": 2,
+		"catalogMode": "latest-part",
+		"latestMaterialId": "material.body-as-temporary-construction",
+		"latestTitle": "Патерн «Тіло як тимчасова конструкція»",
+		"latestDescription": "Опора, масштаб і згода перетворюють два тіла на тимчасовий візуальний апарат, а зовнішній каркас змінює його політичний режим.",
+		"publishedAt": "2026-08-20",
+		"updatedAt": "2026-08-20",
+		"status": "published"
 	}
 ]

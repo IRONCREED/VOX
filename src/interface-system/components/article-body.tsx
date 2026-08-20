@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 
 interface ArticleBodyProps {
 	body: string;
+	variant?: 'standard' | 'scenario-log';
 }
 
 type MarkdownBlock =
@@ -252,11 +253,15 @@ function renderInline(source: string, keyPrefix = 'inline'): ReactNode[] {
 	});
 }
 
-export function ArticleBody({ body }: ArticleBodyProps) {
+export function ArticleBody({ body, variant = 'standard' }: ArticleBodyProps) {
 	const blocks = parseBlocks(body);
 
 	return (
-		<div className="article-body">
+		<div
+			className={
+				variant === 'scenario-log' ? 'article-body article-body--scenario-log' : 'article-body'
+			}
+		>
 			{blocks.map((block, index) => {
 				if (block.kind === 'heading') {
 					return block.level === 2 ? (

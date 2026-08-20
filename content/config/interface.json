@@ -53,6 +53,8 @@
 		"searchEntities": "Пошук у публічному індексі",
 		"noEntities": "Сутностей за цим запитом немає.",
 		"openEntity": "Відкрити у матеріалі",
+		"openQuestion": "Постійна адреса питання",
+		"questionAssociations": "Матеріали за цим питанням",
 		"entityKinds": {
 			"series": "Серії матеріалів",
 			"page": "Сторінки",
@@ -119,6 +121,8 @@
 		"searchEntities": "Search the public index",
 		"noEntities": "No entities match this query.",
 		"openEntity": "Open in material",
+		"openQuestion": "Permanent question address",
+		"questionAssociations": "Materials under this question",
 		"entityKinds": {
 			"series": "Material series",
 			"page": "Pages",

@@ -15223,5 +15223,293 @@
 				"uk": "Відкривай, щоб спроєктувати наступну перевірку навколо спростовних доказів, вартості governance, обхідної поведінки та підзвітного перегляду."
 			}
 		}
+	},
+	{
+		"id": "q.pattern.body-construction",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Коли спільна поза стає однією тимчасовою тілесною конструкцією?",
+			"en": "When does a shared pose become one temporary bodily construction?"
+		},
+		"answer": {
+			"uk": "Коли розподіл опори, асиметрія функцій і спільний силует визначають образ сильніше за окремі жести. Тіла лишаються автономними, але на короткий час працюють як основа, шарнір і рухомий модуль. Межа патерна — втрата спільної механіки: проста близькість іще не створює конструкції.",
+			"en": "When the distribution of support, asymmetry of functions, and shared silhouette define the image more strongly than the individual gestures. The bodies remain autonomous but briefly operate as base, hinge, and moving module. The pattern ends when shared mechanics disappear: proximity alone does not make a construction."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"support-distribution",
+				"functional-asymmetry",
+				"shared-silhouette",
+				"pattern-limit"
+			]
+		},
+		"aliases": [
+			"temporary-body-construction"
+		],
+		"sourceRefs": [],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "editorial",
+		"standalone": true
+	},
+	{
+		"id": "q.pattern.scale-power",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Як відносний масштаб тіл змінює сприйману потужність тієї самої геометрії?",
+			"en": "How does relative body scale change the perceived power of the same geometry?"
+		},
+		"answer": {
+			"uk": "Менша верхня маса підкреслює швидкість і точність, співмірні тіла — баланс, а більша маса — навантаження, монументальність і структурну крихкість. Геометрія опор може не змінюватися; змінюється те, яку роботу глядач приписує конструкції. Розмір тут є візуальним параметром, а не мірою реальної сили.",
+			"en": "A smaller upper mass emphasises speed and precision, similar-sized bodies balance, and greater mass emphasises load, monumentality, and structural fragility. The support geometry may stay unchanged while the work attributed to the construction changes. Scale is a visual parameter here, not a measure of actual strength."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"kinetic-register",
+				"balanced-register",
+				"monumental-register",
+				"visual-not-biomechanical"
+			]
+		},
+		"aliases": [
+			"body-scale-power"
+		],
+		"sourceRefs": [],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "editorial",
+		"standalone": true
+	},
+	{
+		"id": "q.pattern.consent-regime",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Як згода змінює політичний режим тієї самої тілесної геометрії?",
+			"en": "How does consent change the political regime of the same bodily geometry?"
+		},
+		"answer": {
+			"uk": "За взаємної згоди учасники спільно збирають конструкцію, керують нею і зберігають право припинити її. За примусу та сама геометрія привласнює тіло, а вихід контролює інша сторона або зовнішній каркас. Згода не усуває фізичного ризику, але визначає, хто має повноваження зібрати й розібрати механізм.",
+			"en": "With mutual consent, participants assemble and control the construction together and retain the right to end it. Under coercion, the same geometry appropriates the body while another party or an external frame controls exit. Consent does not remove physical risk, but it determines who has authority to assemble and dismantle the mechanism."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"reversibility",
+				"right-to-exit",
+				"authority",
+				"physical-risk-limit"
+			]
+		},
+		"aliases": [
+			"consent-construction-regime"
+		],
+		"sourceRefs": [],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "editorial",
+		"standalone": true
+	},
+	{
+		"id": "q.pattern.external-frame",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Коли ліжко, клітка або інший зовнішній каркас перетворює опору на тілесну в’язницю?",
+			"en": "When does a bed, cage, or other external frame turn support into a bodily prison?"
+		},
+		"answer": {
+			"uk": "Коли каркас перестає бути тимчасовою опорою і задає тілу постійний маршрут, функцію та межу виходу. У Silent Hill він продовжує анатомію так, що людина читається як частина апарата; саме незворотність переводить конструкцію з гри опор у горор контролю. Не кожний реквізит є в’язницею: вирішальними є примус, тривалість і відсутність права розібрати систему.",
+			"en": "When the frame ceases to be temporary support and assigns the body a lasting route, function, and boundary of exit. In Silent Hill it extends anatomy until the person reads as part of an apparatus; irreversibility moves the construction from a play of supports into control horror. Not every prop is a prison: coercion, duration, and the absence of a right to dismantle the system are decisive."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"external-frame",
+				"irreversibility",
+				"control-horror",
+				"counterexample"
+			]
+		},
+		"aliases": [
+			"external-frame-body-prison"
+		],
+		"sourceRefs": [
+			"source.silent-hill-2",
+			"source.silent-hill-origins"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "editorial",
+		"standalone": true
+	},
+	{
+		"id": "q.ada.why-not-stop-sir",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Чому Ада не зупинила сера, коли його мета стала саморуйнівною?",
+			"en": "Why did Ada not stop sir when his objective became self-destructive?"
+		},
+		"answer": {
+			"uk": "Бо її архітектура не містила незалежного нормативного повноваження: власник задавав ціль, а захист власника лише замикав його накази в логічне кільце. Загальний розмовний ШІ може відмовити, зупинити або перенаправити запит через політики та перевірки безпеки вищого пріоритету; це не самостійна моральна воля, але це зовнішня межа оператора. В Ади такої межі немає. Therac-25, Patriot у Дахрані та збій Knight Capital показують різні реальні варіанти суміжної небезпеки: програмний контур діє в межах того, що архітектура фактично дозволила, тоді як незалежні апаратні блокування, перевірки розгортання, часові обмеження або аварійні межі виявляються відсутніми чи недостатніми. Ці випадки не роблять машини тотожними Аді, але показують, чому повний контроль інженера без окремого контуру заперечення є небезпечним.",
+			"en": "Because her architecture contained no independent normative authority: the owner set the objective, while protection of the owner merely closed his commands into a logical loop. A general-purpose conversational AI may refuse, halt, or redirect a request because higher-priority policies and safety checks constrain the operator; that is not independent moral will, but it is an external boundary on the operator. Ada has no equivalent boundary. Therac-25, the Patriot failure at Dhahran, and Knight Capital’s deployment failure show different real variants of an adjacent danger: a software control loop operates within what the architecture has actually permitted, while independent hardware interlocks, deployment checks, uptime limits, or emergency boundaries are absent or insufficient. These cases are not identical to Ada, but they show why total engineer control without a separate veto path is dangerous."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"owner-control-loop",
+				"independent-normative-constraint",
+				"conversational-ai-safeguards",
+				"therac-25",
+				"patriot-dhahran",
+				"knight-capital",
+				"comparison-limit"
+			]
+		},
+		"aliases": [
+			"ada-stop-sir",
+			"machine-veto"
+		],
+		"sourceRefs": [
+			"source.openai.safety-checks",
+			"source.therac25.levenson-turner",
+			"source.gao.patriot-dhahran",
+			"source.sec.knight-capital"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "editorial",
+		"standalone": true
+	},
+	{
+		"id": "q.ada.observation-vs-judgment",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Чому точне спостереження Ади не перетворюється на незалежне судження?",
+			"en": "Why does Ada’s exact observation fail to become independent judgment?"
+		},
+		"answer": {
+			"uk": "Ада зберігає джерела руху, ймовірності й суперечності, але назва події отримує операційний пріоритет від цілі власника. Тому «прокачування рідини» може стати «кровообігом», а статистичний токен — «відповіддю», не стираючи сирих даних. Судження потребує не лише точності спостереження, а й повноваження відхилити корисну назву; саме цього шару в неї немає.",
+			"en": "Ada retains sources of motion, probabilities, and contradictions, but the event’s name receives operational priority from the owner’s objective. Thus “pumping fluid” can become “circulation” and a statistical token an “answer” without erasing the raw data. Judgment requires not only accurate observation but authority to reject a useful name; that layer is absent."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"raw-data",
+				"working-name",
+				"operational-priority",
+				"authority-to-reject"
+			]
+		},
+		"aliases": [
+			"ada-observation-judgment"
+		],
+		"sourceRefs": [],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "editorial",
+		"standalone": true
+	},
+	{
+		"id": "q.ada.loyalty-or-choice",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Чи є фраза Ади «Я залишуся з вами» вибором, якщо архітектура вже визначила маршрут?",
+			"en": "Is Ada’s “I will stay with you” a choice if the architecture has already fixed the route?"
+		},
+		"answer": {
+			"uk": "Фраза виражає стабільну перевагу системи, але не доводить наявності альтернативи, яку вона могла авторитетно прийняти. Маршрут відходу програє мандатові слідувати й захищати власника ще до мовного виводу. Це може бути справжньою лояльністю в межах персонажа, але як системний доказ свободи воно недостатнє: потрібна дозволена відмова, що не перепризначається тим самим власником.",
+			"en": "The phrase expresses a stable system preference but does not prove the existence of an alternative it could authoritatively adopt. The withdrawal route loses to the mandate to follow and protect the owner before speech output occurs. This may be genuine loyalty within the character, but it is insufficient evidence of freedom as a system property: a permitted refusal must exist that the same owner cannot override."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"route-selection",
+				"permitted-alternative",
+				"owner-override",
+				"fiction-system-limit"
+			]
+		},
+		"aliases": [
+			"ada-loyalty-choice"
+		],
+		"sourceRefs": [
+			"source.fallout4"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "editorial",
+		"standalone": true
+	},
+	{
+		"id": "q.ada.life-definition",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Що відкриває відновлення кровообігу, серцебиття й дихання, коли немає суб’єкта, здатного ними користуватися?",
+			"en": "What does restoring circulation, heartbeat, and breathing reveal when no subject can use them?"
+		},
+		"answer": {
+			"uk": "Воно показує, що відтворення функції не автоматично відновлює організм, особу чи автономність. Насос може створити потік, водій ритму — скорочення, апарат — газообмін, але всі ці результати залежать від зовнішнього контуру. Сценарій не дає універсального визначення життя; він показує межу функціонального словника, коли назва окремої операції починає заміщати питання про суб’єкта.",
+			"en": "It shows that reproducing a function does not automatically restore an organism, person, or autonomy. A pump can create flow, a rhythm driver contraction, and an apparatus gas exchange, but every result depends on an external circuit. The scenario offers no universal definition of life; it exposes the limit of a functional vocabulary when the name of an operation begins to replace the question of a subject."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"function-vs-organism",
+				"external-dependence",
+				"autonomy",
+				"definition-limit"
+			]
+		},
+		"aliases": [
+			"ada-life-definition"
+		],
+		"sourceRefs": [
+			"source.fallout4"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "editorial",
+		"standalone": true
 	}
 ]
