@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Locale } from '../../content-catalog/domain/content-model';
+import { AnthemToggle } from './anthem-toggle';
 import { BrandMark } from './brand-mark';
 import { HeaderActionDock, type HeaderContextActions } from './header-action-dock';
 import { SidebarToggle } from './sidebar-toggle';
@@ -18,6 +19,10 @@ interface SiteHeaderProps {
 	localeLinks: LocaleLink[];
 	languageLabel: string;
 	themeLabel: string;
+	anthemPlayLabel: string;
+	anthemPauseLabel: string;
+	anthemLoadingLabel: string;
+	anthemUnavailableLabel: string;
 	contextActions?: HeaderContextActions;
 }
 
@@ -28,6 +33,10 @@ export function SiteHeader({
 	localeLinks,
 	languageLabel,
 	themeLabel,
+	anthemPlayLabel,
+	anthemPauseLabel,
+	anthemLoadingLabel,
+	anthemUnavailableLabel,
 	contextActions,
 }: SiteHeaderProps) {
 	return (
@@ -59,6 +68,12 @@ export function SiteHeader({
 						darkLabel={darkThemeLabel}
 						label={themeLabel}
 						lightLabel={lightThemeLabel}
+					/>
+					<AnthemToggle
+						loadingLabel={anthemLoadingLabel}
+						pauseLabel={anthemPauseLabel}
+						playLabel={anthemPlayLabel}
+						unavailableLabel={anthemUnavailableLabel}
 					/>
 					<HeaderActionDock actions={contextActions} />
 				</div>

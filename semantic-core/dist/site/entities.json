@@ -1016,14 +1016,157 @@
 		"id": "material.do-not-be-afraid-sir",
 		"kind": "material",
 		"locale": "en",
-		"label": "Do Not Be Afraid, Sir: Ada’s Machine Requiem",
-		"summary": "A machine log about Ada, whose absolute precision of observation produces no independent judgment when the entire architecture closes around the owner’s will.",
+		"label": "Do Not Be Afraid, Sir — I. Caravan",
+		"summary": "Ada remains the only active machine beside a destroyed caravan until an unknown armed man accepts her creator’s unfinished objective.",
 		"status": "published",
 		"materialIds": [
 			"material.do-not-be-afraid-sir"
 		],
 		"pageIds": [],
 		"href": "/en/scenarios/do-not-be-afraid-sir"
+	},
+	{
+		"id": "material.ada-machine-requiem-02-mechanist",
+		"kind": "material",
+		"locale": "en",
+		"label": "Do Not Be Afraid, Sir — II. Mechanist",
+		"summary": "The pursuit of the Mechanist completes Jackson’s revenge, while a temporary shared objective becomes sir’s permanent command authority over Ada.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-02-mechanist"
+		],
+		"pageIds": [],
+		"href": "/en/scenarios/do-not-be-afraid-sir-mechanist"
+	},
+	{
+		"id": "material.ada-machine-requiem-03-second-assembly",
+		"kind": "material",
+		"locale": "en",
+		"label": "Do Not Be Afraid, Sir — III. Second Assembly",
+		"summary": "Sir rebuilds Ada from incompatible parts, and a more precise body expands her observation without granting independent authority to judge its owner.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-03-second-assembly"
+		],
+		"pageIds": [],
+		"href": "/en/scenarios/do-not-be-afraid-sir-second-assembly"
+	},
+	{
+		"id": "material.ada-machine-requiem-04-vault-81",
+		"kind": "material",
+		"locale": "en",
+		"label": "Do Not Be Afraid, Sir — IV. Vault 81",
+		"summary": "The search for medicine for Shaun leads sir to Curie, after which useful knowledge and its human carrier acquire different values for him.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-04-vault-81"
+		],
+		"pageIds": [],
+		"href": "/en/scenarios/do-not-be-afraid-sir-vault-81"
+	},
+	{
+		"id": "material.ada-machine-requiem-09-working-definition-of-life",
+		"kind": "material",
+		"locale": "en",
+		"label": "Do Not Be Afraid, Sir — IX. Working Definition of Life",
+		"summary": "External pumps, rhythms, voice, and a smile restore separate functions of Nora until useful names begin to replace the absent subject.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-09-working-definition-of-life"
+		],
+		"pageIds": [],
+		"href": "/en/scenarios/do-not-be-afraid-sir-working-definition-of-life"
+	},
+	{
+		"id": "material.ada-machine-requiem-05-island",
+		"kind": "material",
+		"locale": "en",
+		"label": "Do Not Be Afraid, Sir — V. Island",
+		"summary": "Captured Spectacle Island becomes sir’s engineering circuit: space, access, and architecture are subordinated to one useful name.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-05-island"
+		],
+		"pageIds": [],
+		"href": "/en/scenarios/do-not-be-afraid-sir-island"
+	},
+	{
+		"id": "material.ada-machine-requiem-06-weapons-for-all",
+		"kind": "material",
+		"locale": "en",
+		"label": "Do Not Be Afraid, Sir — VI. Weapons for All",
+		"summary": "Trade, standardisation, and batch testing turn lethality into a measured property of a contract.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-06-weapons-for-all"
+		],
+		"pageIds": [],
+		"href": "/en/scenarios/do-not-be-afraid-sir-weapons-for-all"
+	},
+	{
+		"id": "material.ada-machine-requiem-07-consilium",
+		"kind": "material",
+		"locale": "en",
+		"label": "Do Not Be Afraid, Sir — VII. Consilium",
+		"summary": "The assembled specialists formalise death as a set of stopped functions and establish a route to Nora’s body.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-07-consilium"
+		],
+		"pageIds": [],
+		"href": "/en/scenarios/do-not-be-afraid-sir-consilium"
+	},
+	{
+		"id": "material.ada-machine-requiem-08-vault-111",
+		"kind": "material",
+		"locale": "en",
+		"label": "Do Not Be Afraid, Sir — VIII. Vault 111",
+		"summary": "Sir returns to Vault 111, identifies Nora’s body as the required referent, and brings it back to the Island.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-08-vault-111"
+		],
+		"pageIds": [],
+		"href": "/en/scenarios/do-not-be-afraid-sir-vault-111"
+	},
+	{
+		"id": "material.ada-machine-requiem-10-commonwealth-assembles",
+		"kind": "material",
+		"locale": "en",
+		"label": "Do Not Be Afraid, Sir — X. The Commonwealth Assembles",
+		"summary": "Intercepted channels show the Commonwealth combining its logistics against the Island as sir’s system enters siege mode.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-10-commonwealth-assembles"
+		],
+		"pageIds": [],
+		"href": "/en/scenarios/do-not-be-afraid-sir-commonwealth-assembles"
+	},
+	{
+		"id": "material.ada-machine-requiem-11-assault",
+		"kind": "material",
+		"locale": "en",
+		"label": "Do Not Be Afraid, Sir — XI. Assault",
+		"summary": "During the assault, weapons return to their maker, the environment collapses, and the Nora node multiplies answers faster than the meaning of the question.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-11-assault"
+		],
+		"pageIds": [],
+		"href": "/en/scenarios/do-not-be-afraid-sir-assault"
+	},
+	{
+		"id": "material.ada-machine-requiem-12-death-of-my-world",
+		"kind": "material",
+		"locale": "en",
+		"label": "Do Not Be Afraid, Sir — XII. Death of My World",
+		"summary": "The final route leads to the reactor, the last battle, and permission to leave, which Ada mirrors with her own formula for staying.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-12-death-of-my-world"
+		],
+		"pageIds": [],
+		"href": "/en/scenarios/do-not-be-afraid-sir-death-of-my-world"
 	},
 	{
 		"id": "material.constitution-runtime-06-article-ii",
@@ -1134,7 +1277,7 @@
 		"kind": "page",
 		"locale": "en",
 		"label": "About IRON CREED",
-		"summary": "A concise account of the IRON CREED character and his role across the Zhovten Games infrastructure.",
+		"summary": "IRON CREED is a currently classified recurring character and a personified engineering process connecting code, research, scenarios, and publications.",
 		"status": "published",
 		"materialIds": [],
 		"pageIds": [
@@ -1241,7 +1384,7 @@
 		"summary": "It can when people define the permitted operations, canonical source, limits of change, and acceptance criteria. The model proposes prose and checks; the right to adopt them remains outside it.",
 		"status": "published",
 		"materialIds": [
-			"material.do-not-be-afraid-sir",
+			"material.ada-machine-requiem-02-mechanist",
 			"material.why-documentation"
 		],
 		"pageIds": [],
@@ -3309,6 +3452,12 @@
 		"summary": "The phrase expresses a stable system preference but does not prove the existence of an alternative it could authoritatively adopt. The withdrawal route loses to the mandate to follow and protect the owner before speech output occurs. This may be genuine loyalty within the character, but it is insufficient evidence of freedom as a system property: a permitted refusal must exist that the same owner cannot override.",
 		"status": "published",
 		"materialIds": [
+			"material.ada-machine-requiem-02-mechanist",
+			"material.ada-machine-requiem-03-second-assembly",
+			"material.ada-machine-requiem-05-island",
+			"material.ada-machine-requiem-08-vault-111",
+			"material.ada-machine-requiem-10-commonwealth-assembles",
+			"material.ada-machine-requiem-12-death-of-my-world",
 			"material.do-not-be-afraid-sir"
 		],
 		"pageIds": [],
@@ -3673,7 +3822,10 @@
 		"summary": "It shows that reproducing a function does not automatically restore an organism, person, or autonomy. A pump can create flow, a rhythm driver contraction, and an apparatus gas exchange, but every result depends on an external circuit. The scenario offers no universal definition of life; it exposes the limit of a functional vocabulary when the name of an operation begins to replace the question of a subject.",
 		"status": "published",
 		"materialIds": [
-			"material.do-not-be-afraid-sir"
+			"material.ada-machine-requiem-07-consilium",
+			"material.ada-machine-requiem-08-vault-111",
+			"material.ada-machine-requiem-09-working-definition-of-life",
+			"material.ada-machine-requiem-12-death-of-my-world"
 		],
 		"pageIds": [],
 		"href": "/en/questions/q.ada.life-definition"
@@ -5963,7 +6115,12 @@
 		"summary": "Because her architecture contained no independent normative authority: the owner set the objective, while protection of the owner merely closed his commands into a logical loop. A general-purpose conversational AI may refuse, halt, or redirect a request because higher-priority policies and safety checks constrain the operator; that is not independent moral will, but it is an external boundary on the operator. Ada has no equivalent boundary. Therac-25, the Patriot failure at Dhahran, and Knight Capital’s deployment failure show different real variants of an adjacent danger: a software control loop operates within what the architecture has actually permitted, while independent hardware interlocks, deployment checks, uptime limits, or emergency boundaries are absent or insufficient. These cases are not identical to Ada, but they show why total engineer control without a separate veto path is dangerous.",
 		"status": "published",
 		"materialIds": [
-			"material.do-not-be-afraid-sir",
+			"material.ada-machine-requiem-02-mechanist",
+			"material.ada-machine-requiem-04-vault-81",
+			"material.ada-machine-requiem-06-weapons-for-all",
+			"material.ada-machine-requiem-10-commonwealth-assembles",
+			"material.ada-machine-requiem-11-assault",
+			"material.ada-machine-requiem-12-death-of-my-world",
 			"material.why-documentation"
 		],
 		"pageIds": [],
@@ -6159,6 +6316,13 @@
 		"summary": "Ada retains sources of motion, probabilities, and contradictions, but the event’s name receives operational priority from the owner’s objective. Thus “pumping fluid” can become “circulation” and a statistical token an “answer” without erasing the raw data. Judgment requires not only accurate observation but authority to reject a useful name; that layer is absent.",
 		"status": "published",
 		"materialIds": [
+			"material.ada-machine-requiem-03-second-assembly",
+			"material.ada-machine-requiem-04-vault-81",
+			"material.ada-machine-requiem-05-island",
+			"material.ada-machine-requiem-06-weapons-for-all",
+			"material.ada-machine-requiem-07-consilium",
+			"material.ada-machine-requiem-09-working-definition-of-life",
+			"material.ada-machine-requiem-11-assault",
 			"material.do-not-be-afraid-sir"
 		],
 		"pageIds": [],
@@ -7140,6 +7304,30 @@
 		"href": "/en/questions/q.constitution.article-i.exact-text.local-identifiers"
 	},
 	{
+		"id": "series.ada-machine-requiem",
+		"kind": "series",
+		"locale": "en",
+		"label": "Do Not Be Afraid, Sir: Ada’s Machine Requiem",
+		"summary": "A twelve-part machine log about Ada, whose absolute precision of observation produces no independent judgment when the entire architecture closes around the owner’s will.",
+		"status": "published",
+		"materialIds": [
+			"material.do-not-be-afraid-sir",
+			"material.ada-machine-requiem-02-mechanist",
+			"material.ada-machine-requiem-03-second-assembly",
+			"material.ada-machine-requiem-04-vault-81",
+			"material.ada-machine-requiem-05-island",
+			"material.ada-machine-requiem-06-weapons-for-all",
+			"material.ada-machine-requiem-07-consilium",
+			"material.ada-machine-requiem-08-vault-111",
+			"material.ada-machine-requiem-09-working-definition-of-life",
+			"material.ada-machine-requiem-10-commonwealth-assembles",
+			"material.ada-machine-requiem-11-assault",
+			"material.ada-machine-requiem-12-death-of-my-world"
+		],
+		"pageIds": [],
+		"href": "/en/series/do-not-be-afraid-sir-adas-machine-requiem"
+	},
+	{
 		"id": "series.psychobiosocial-patterns",
 		"kind": "series",
 		"locale": "en",
@@ -7179,10 +7367,21 @@
 		"summary": "https://fallout.bethesda.net/en/games/fallout-4",
 		"status": "published",
 		"materialIds": [
+			"material.ada-machine-requiem-02-mechanist",
+			"material.ada-machine-requiem-03-second-assembly",
+			"material.ada-machine-requiem-04-vault-81",
+			"material.ada-machine-requiem-05-island",
+			"material.ada-machine-requiem-06-weapons-for-all",
+			"material.ada-machine-requiem-07-consilium",
+			"material.ada-machine-requiem-08-vault-111",
+			"material.ada-machine-requiem-09-working-definition-of-life",
+			"material.ada-machine-requiem-10-commonwealth-assembles",
+			"material.ada-machine-requiem-11-assault",
+			"material.ada-machine-requiem-12-death-of-my-world",
 			"material.do-not-be-afraid-sir"
 		],
 		"pageIds": [],
-		"href": "/en/scenarios/do-not-be-afraid-sir?entity=source.fallout4#article-body"
+		"href": "/en/scenarios/do-not-be-afraid-sir-mechanist?entity=source.fallout4#article-body"
 	},
 	{
 		"id": "source.zenodo.horror-language-infection",
@@ -7282,10 +7481,10 @@
 		"summary": "https://www.gao.gov/products/imtec-92-26",
 		"status": "published",
 		"materialIds": [
-			"material.do-not-be-afraid-sir"
+			"material.ada-machine-requiem-02-mechanist"
 		],
 		"pageIds": [],
-		"href": "/en/scenarios/do-not-be-afraid-sir?entity=source.gao.patriot-dhahran#article-body"
+		"href": "/en/scenarios/do-not-be-afraid-sir-mechanist?entity=source.gao.patriot-dhahran#article-body"
 	},
 	{
 		"id": "source.zenodo.literate-programming",
@@ -7308,10 +7507,10 @@
 		"summary": "DOI: 10.1109/MC.1993.274940",
 		"status": "published",
 		"materialIds": [
-			"material.do-not-be-afraid-sir"
+			"material.ada-machine-requiem-02-mechanist"
 		],
 		"pageIds": [],
-		"href": "/en/scenarios/do-not-be-afraid-sir?entity=source.therac25.levenson-turner#article-body"
+		"href": "/en/scenarios/do-not-be-afraid-sir-mechanist?entity=source.therac25.levenson-turner#article-body"
 	},
 	{
 		"id": "source.openai.safety-checks",
@@ -7321,10 +7520,10 @@
 		"summary": "https://developers.openai.com/api/docs/guides/safety-checks",
 		"status": "published",
 		"materialIds": [
-			"material.do-not-be-afraid-sir"
+			"material.ada-machine-requiem-02-mechanist"
 		],
 		"pageIds": [],
-		"href": "/en/scenarios/do-not-be-afraid-sir?entity=source.openai.safety-checks#article-body"
+		"href": "/en/scenarios/do-not-be-afraid-sir-mechanist?entity=source.openai.safety-checks#article-body"
 	},
 	{
 		"id": "source.oed.reverse-cowgirl",
@@ -7347,10 +7546,10 @@
 		"summary": "https://www.sec.gov/newsroom/press-releases/2013-222",
 		"status": "published",
 		"materialIds": [
-			"material.do-not-be-afraid-sir"
+			"material.ada-machine-requiem-02-mechanist"
 		],
 		"pageIds": [],
-		"href": "/en/scenarios/do-not-be-afraid-sir?entity=source.sec.knight-capital#article-body"
+		"href": "/en/scenarios/do-not-be-afraid-sir-mechanist?entity=source.sec.knight-capital#article-body"
 	},
 	{
 		"id": "source.silent-hill-2",
@@ -8447,14 +8646,157 @@
 		"id": "material.do-not-be-afraid-sir",
 		"kind": "material",
 		"locale": "uk",
-		"label": "Не бійтеся, сер: машинний реквієм Ади",
-		"summary": "Машинний журнал про Аду, чия абсолютна точність спостереження не створює незалежного судження, коли вся архітектура замикається на волі власника.",
+		"label": "Не бійтеся, сер — I. Караван",
+		"summary": "Ада залишається єдиною активною машиною біля знищеного каравану, доки невідомий озброєний чоловік не приймає незавершену мету її творця.",
 		"status": "published",
 		"materialIds": [
 			"material.do-not-be-afraid-sir"
 		],
 		"pageIds": [],
 		"href": "/uk/scenarios/ne-biitesia-ser"
+	},
+	{
+		"id": "material.ada-machine-requiem-02-mechanist",
+		"kind": "material",
+		"locale": "uk",
+		"label": "Не бійтеся, сер — II. Механіст",
+		"summary": "Переслідування Механіста завершує помсту за Джексона, а тимчасова спільна мета перетворюється на постійне командне повноваження сера над Адою.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-02-mechanist"
+		],
+		"pageIds": [],
+		"href": "/uk/scenarios/ne-biitesia-ser-mekhanist"
+	},
+	{
+		"id": "material.ada-machine-requiem-03-second-assembly",
+		"kind": "material",
+		"locale": "uk",
+		"label": "Не бійтеся, сер — III. Друга збірка",
+		"summary": "Сер перебудовує Аду з несумісних деталей, а точніше тіло розширює її спостереження, не додаючи незалежного права оцінювати власника.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-03-second-assembly"
+		],
+		"pageIds": [],
+		"href": "/uk/scenarios/ne-biitesia-ser-druha-zbirka"
+	},
+	{
+		"id": "material.ada-machine-requiem-04-vault-81",
+		"kind": "material",
+		"locale": "uk",
+		"label": "Не бійтеся, сер — IV. Сховище 81",
+		"summary": "Пошук ліків для Шона приводить сера до Кюрі, після чого корисність знання й людського носія отримує для нього різну ціну.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-04-vault-81"
+		],
+		"pageIds": [],
+		"href": "/uk/scenarios/ne-biitesia-ser-skhovyshche-81"
+	},
+	{
+		"id": "material.ada-machine-requiem-09-working-definition-of-life",
+		"kind": "material",
+		"locale": "uk",
+		"label": "Не бійтеся, сер — IX. Робоче визначення життя",
+		"summary": "Зовнішні насоси, ритми, голос і посмішка відновлюють окремі функції Нори, доки корисні назви не починають заміщати відсутнього суб’єкта.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-09-working-definition-of-life"
+		],
+		"pageIds": [],
+		"href": "/uk/scenarios/ne-biitesia-ser-roboche-vyznachennia-zhyttia"
+	},
+	{
+		"id": "material.ada-machine-requiem-05-island",
+		"kind": "material",
+		"locale": "uk",
+		"label": "Не бійтеся, сер — V. Острів",
+		"summary": "Захоплений Острів видовищ стає інженерним контуром сера: простір, доступ і архітектура підпорядковуються одному корисному імені.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-05-island"
+		],
+		"pageIds": [],
+		"href": "/uk/scenarios/ne-biitesia-ser-ostriv"
+	},
+	{
+		"id": "material.ada-machine-requiem-06-weapons-for-all",
+		"kind": "material",
+		"locale": "uk",
+		"label": "Не бійтеся, сер — VI. Зброя для всіх",
+		"summary": "Торгівля, стандартизація й серійні випробування перетворюють смертельність на вимірювану властивість контракту.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-06-weapons-for-all"
+		],
+		"pageIds": [],
+		"href": "/uk/scenarios/ne-biitesia-ser-zbroia-dlia-vsikh"
+	},
+	{
+		"id": "material.ada-machine-requiem-07-consilium",
+		"kind": "material",
+		"locale": "uk",
+		"label": "Не бійтеся, сер — VII. Консиліум",
+		"summary": "Зібрані фахівці формалізують смерть як набір зупинених функцій і прокладають маршрут до тіла Нори.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-07-consilium"
+		],
+		"pageIds": [],
+		"href": "/uk/scenarios/ne-biitesia-ser-konsylium"
+	},
+	{
+		"id": "material.ada-machine-requiem-08-vault-111",
+		"kind": "material",
+		"locale": "uk",
+		"label": "Не бійтеся, сер — VIII. Сховище 111",
+		"summary": "Сер повертається до Сховища 111, визначає тіло Нори як потрібний референт і доставляє його на Острів.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-08-vault-111"
+		],
+		"pageIds": [],
+		"href": "/uk/scenarios/ne-biitesia-ser-skhovyshche-111"
+	},
+	{
+		"id": "material.ada-machine-requiem-10-commonwealth-assembles",
+		"kind": "material",
+		"locale": "uk",
+		"label": "Не бійтеся, сер — X. Співдружність збирається",
+		"summary": "Перехоплені канали показують, як Співдружність об’єднує логістику проти Острова, а система сера переводить поселення в режим облоги.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-10-commonwealth-assembles"
+		],
+		"pageIds": [],
+		"href": "/uk/scenarios/ne-biitesia-ser-spivdruzhnist-zbyraietsia"
+	},
+	{
+		"id": "material.ada-machine-requiem-11-assault",
+		"kind": "material",
+		"locale": "uk",
+		"label": "Не бійтеся, сер — XI. Штурм",
+		"summary": "Під час штурму зброя повертається до виробника, середовище руйнується, а вузол Нори множить відповідь швидше за сенс питання.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-11-assault"
+		],
+		"pageIds": [],
+		"href": "/uk/scenarios/ne-biitesia-ser-shturm"
+	},
+	{
+		"id": "material.ada-machine-requiem-12-death-of-my-world",
+		"kind": "material",
+		"locale": "uk",
+		"label": "Не бійтеся, сер — XII. Смерть мого світу",
+		"summary": "Останній маршрут веде до реактора, фінальної битви й дозволу піти, який Ада віддзеркалює власною формулою залишитися.",
+		"status": "published",
+		"materialIds": [
+			"material.ada-machine-requiem-12-death-of-my-world"
+		],
+		"pageIds": [],
+		"href": "/uk/scenarios/ne-biitesia-ser-smert-moho-svitu"
 	},
 	{
 		"id": "material.constitution-runtime-03-article-v",
@@ -8578,7 +8920,7 @@
 		"kind": "page",
 		"locale": "uk",
 		"label": "Про проєкт",
-		"summary": "Коротко про персонажа IRON CREED і його роль у наскрізній інфраструктурі Zhovten Games.",
+		"summary": "IRON CREED — поки засекречений наскрізний персонаж і персоніфікований інженерний процес, що пов’язує код, дослідження, сценарії та публікації.",
 		"status": "published",
 		"materialIds": [],
 		"pageIds": [
@@ -9246,6 +9588,12 @@
 		"summary": "Фраза виражає стабільну перевагу системи, але не доводить наявності альтернативи, яку вона могла авторитетно прийняти. Маршрут відходу програє мандатові слідувати й захищати власника ще до мовного виводу. Це може бути справжньою лояльністю в межах персонажа, але як системний доказ свободи воно недостатнє: потрібна дозволена відмова, що не перепризначається тим самим власником.",
 		"status": "published",
 		"materialIds": [
+			"material.ada-machine-requiem-02-mechanist",
+			"material.ada-machine-requiem-03-second-assembly",
+			"material.ada-machine-requiem-05-island",
+			"material.ada-machine-requiem-08-vault-111",
+			"material.ada-machine-requiem-10-commonwealth-assembles",
+			"material.ada-machine-requiem-12-death-of-my-world",
 			"material.do-not-be-afraid-sir"
 		],
 		"pageIds": [],
@@ -9311,7 +9659,7 @@
 		"summary": "Може, коли перелік дозволених операцій, канонічне джерело, межі зміни й критерії прийняття встановлює людина. Модель пропонує текст і перевірки, а право ухвалення залишається поза нею.",
 		"status": "published",
 		"materialIds": [
-			"material.do-not-be-afraid-sir",
+			"material.ada-machine-requiem-02-mechanist",
 			"material.why-documentation"
 		],
 		"pageIds": [],
@@ -9884,7 +10232,12 @@
 		"summary": "Бо її архітектура не містила незалежного нормативного повноваження: власник задавав ціль, а захист власника лише замикав його накази в логічне кільце. Загальний розмовний ШІ може відмовити, зупинити або перенаправити запит через політики та перевірки безпеки вищого пріоритету; це не самостійна моральна воля, але це зовнішня межа оператора. В Ади такої межі немає. Therac-25, Patriot у Дахрані та збій Knight Capital показують різні реальні варіанти суміжної небезпеки: програмний контур діє в межах того, що архітектура фактично дозволила, тоді як незалежні апаратні блокування, перевірки розгортання, часові обмеження або аварійні межі виявляються відсутніми чи недостатніми. Ці випадки не роблять машини тотожними Аді, але показують, чому повний контроль інженера без окремого контуру заперечення є небезпечним.",
 		"status": "published",
 		"materialIds": [
-			"material.do-not-be-afraid-sir",
+			"material.ada-machine-requiem-02-mechanist",
+			"material.ada-machine-requiem-04-vault-81",
+			"material.ada-machine-requiem-06-weapons-for-all",
+			"material.ada-machine-requiem-10-commonwealth-assembles",
+			"material.ada-machine-requiem-11-assault",
+			"material.ada-machine-requiem-12-death-of-my-world",
 			"material.why-documentation"
 		],
 		"pageIds": [],
@@ -10795,6 +11148,13 @@
 		"summary": "Ада зберігає джерела руху, ймовірності й суперечності, але назва події отримує операційний пріоритет від цілі власника. Тому «прокачування рідини» може стати «кровообігом», а статистичний токен — «відповіддю», не стираючи сирих даних. Судження потребує не лише точності спостереження, а й повноваження відхилити корисну назву; саме цього шару в неї немає.",
 		"status": "published",
 		"materialIds": [
+			"material.ada-machine-requiem-03-second-assembly",
+			"material.ada-machine-requiem-04-vault-81",
+			"material.ada-machine-requiem-05-island",
+			"material.ada-machine-requiem-06-weapons-for-all",
+			"material.ada-machine-requiem-07-consilium",
+			"material.ada-machine-requiem-09-working-definition-of-life",
+			"material.ada-machine-requiem-11-assault",
 			"material.do-not-be-afraid-sir"
 		],
 		"pageIds": [],
@@ -11003,7 +11363,10 @@
 		"summary": "Воно показує, що відтворення функції не автоматично відновлює організм, особу чи автономність. Насос може створити потік, водій ритму — скорочення, апарат — газообмін, але всі ці результати залежать від зовнішнього контуру. Сценарій не дає універсального визначення життя; він показує межу функціонального словника, коли назва окремої операції починає заміщати питання про суб’єкта.",
 		"status": "published",
 		"materialIds": [
-			"material.do-not-be-afraid-sir"
+			"material.ada-machine-requiem-07-consilium",
+			"material.ada-machine-requiem-08-vault-111",
+			"material.ada-machine-requiem-09-working-definition-of-life",
+			"material.ada-machine-requiem-12-death-of-my-world"
 		],
 		"pageIds": [],
 		"href": "/uk/questions/q.ada.life-definition"
@@ -14551,6 +14914,30 @@
 		"href": "/uk/series/konstytutsiia-shcho-vykonuietsia"
 	},
 	{
+		"id": "series.ada-machine-requiem",
+		"kind": "series",
+		"locale": "uk",
+		"label": "Не бійтеся, сер: машинний реквієм Ади",
+		"summary": "Дванадцятичастинний машинний журнал про Аду, чия абсолютна точність спостереження не створює незалежного судження, коли вся архітектура замикається на волі власника.",
+		"status": "published",
+		"materialIds": [
+			"material.do-not-be-afraid-sir",
+			"material.ada-machine-requiem-02-mechanist",
+			"material.ada-machine-requiem-03-second-assembly",
+			"material.ada-machine-requiem-04-vault-81",
+			"material.ada-machine-requiem-05-island",
+			"material.ada-machine-requiem-06-weapons-for-all",
+			"material.ada-machine-requiem-07-consilium",
+			"material.ada-machine-requiem-08-vault-111",
+			"material.ada-machine-requiem-09-working-definition-of-life",
+			"material.ada-machine-requiem-10-commonwealth-assembles",
+			"material.ada-machine-requiem-11-assault",
+			"material.ada-machine-requiem-12-death-of-my-world"
+		],
+		"pageIds": [],
+		"href": "/uk/series/ne-biitesia-ser-mashynnyi-rekviem-ady"
+	},
+	{
 		"id": "series.psychobiosocial-patterns",
 		"kind": "series",
 		"locale": "uk",
@@ -14584,10 +14971,21 @@
 		"summary": "https://fallout.bethesda.net/en/games/fallout-4",
 		"status": "published",
 		"materialIds": [
+			"material.ada-machine-requiem-02-mechanist",
+			"material.ada-machine-requiem-03-second-assembly",
+			"material.ada-machine-requiem-04-vault-81",
+			"material.ada-machine-requiem-05-island",
+			"material.ada-machine-requiem-06-weapons-for-all",
+			"material.ada-machine-requiem-07-consilium",
+			"material.ada-machine-requiem-08-vault-111",
+			"material.ada-machine-requiem-09-working-definition-of-life",
+			"material.ada-machine-requiem-10-commonwealth-assembles",
+			"material.ada-machine-requiem-11-assault",
+			"material.ada-machine-requiem-12-death-of-my-world",
 			"material.do-not-be-afraid-sir"
 		],
 		"pageIds": [],
-		"href": "/uk/scenarios/ne-biitesia-ser?entity=source.fallout4#article-body"
+		"href": "/uk/scenarios/ne-biitesia-ser-mekhanist?entity=source.fallout4#article-body"
 	},
 	{
 		"id": "source.zenodo.horror-language-infection",
@@ -14636,10 +15034,10 @@
 		"summary": "https://www.gao.gov/products/imtec-92-26",
 		"status": "published",
 		"materialIds": [
-			"material.do-not-be-afraid-sir"
+			"material.ada-machine-requiem-02-mechanist"
 		],
 		"pageIds": [],
-		"href": "/uk/scenarios/ne-biitesia-ser?entity=source.gao.patriot-dhahran#article-body"
+		"href": "/uk/scenarios/ne-biitesia-ser-mekhanist?entity=source.gao.patriot-dhahran#article-body"
 	},
 	{
 		"id": "source.zenodo.literate-programming",
@@ -14662,10 +15060,10 @@
 		"summary": "DOI: 10.1109/MC.1993.274940",
 		"status": "published",
 		"materialIds": [
-			"material.do-not-be-afraid-sir"
+			"material.ada-machine-requiem-02-mechanist"
 		],
 		"pageIds": [],
-		"href": "/uk/scenarios/ne-biitesia-ser?entity=source.therac25.levenson-turner#article-body"
+		"href": "/uk/scenarios/ne-biitesia-ser-mekhanist?entity=source.therac25.levenson-turner#article-body"
 	},
 	{
 		"id": "source.openai.safety-checks",
@@ -14675,10 +15073,10 @@
 		"summary": "https://developers.openai.com/api/docs/guides/safety-checks",
 		"status": "published",
 		"materialIds": [
-			"material.do-not-be-afraid-sir"
+			"material.ada-machine-requiem-02-mechanist"
 		],
 		"pageIds": [],
-		"href": "/uk/scenarios/ne-biitesia-ser?entity=source.openai.safety-checks#article-body"
+		"href": "/uk/scenarios/ne-biitesia-ser-mekhanist?entity=source.openai.safety-checks#article-body"
 	},
 	{
 		"id": "source.oed.reverse-cowgirl",
@@ -14701,10 +15099,10 @@
 		"summary": "https://www.sec.gov/newsroom/press-releases/2013-222",
 		"status": "published",
 		"materialIds": [
-			"material.do-not-be-afraid-sir"
+			"material.ada-machine-requiem-02-mechanist"
 		],
 		"pageIds": [],
-		"href": "/uk/scenarios/ne-biitesia-ser?entity=source.sec.knight-capital#article-body"
+		"href": "/uk/scenarios/ne-biitesia-ser-mekhanist?entity=source.sec.knight-capital#article-body"
 	},
 	{
 		"id": "source.silent-hill-2",

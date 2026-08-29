@@ -1,85 +1,39 @@
+import { createHash } from 'node:crypto';
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const projectRoot = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const geometryPath = path.join(projectRoot, 'src/interface-system/brand/iron-creed-mark.json');
+const sourcePath = path.join(projectRoot, 'src/interface-system/brand/iron-creed-ic.png');
 const outputPaths = {
 	brand: path.join(projectRoot, 'public/brand/iron-creed-mark.svg'),
 	favicon: path.join(projectRoot, 'public/favicon.svg'),
 };
 
-function escapeAttribute(value) {
-	return String(value).replaceAll('&', '&amp;').replaceAll('"', '&quot;');
-}
-
-function renderPaths(geometry) {
-	const endpoints = geometry.endpoints
-		.map(
-			(endpoint) =>
-				`\t<circle cx="${endpoint.cx}" cy="${endpoint.cy}" r="${endpoint.r}" fill="${geometry.colours.pulse}" />`,
-		)
-		.join('\n');
-
-	return `\t<path class="iron-creed-mark__ink" d="${escapeAttribute(geometry.tridentPath)}" />
-\t<path class="iron-creed-mark__outline" d="${escapeAttribute(geometry.baselinePath)}" stroke-width="${geometry.strokes.outline}" stroke-linecap="round" stroke-linejoin="miter" />
-\t<path d="${escapeAttribute(geometry.baselinePath)}" stroke="${geometry.colours.pulse}" stroke-width="${geometry.strokes.signal}" stroke-linecap="round" stroke-linejoin="miter" />
-\t<path class="iron-creed-mark__outline" d="${escapeAttribute(geometry.pulsePath)}" stroke-width="${geometry.strokes.outline}" stroke-linecap="round" stroke-linejoin="miter" />
-\t<path d="${escapeAttribute(geometry.pulsePath)}" stroke="${geometry.colours.pulse}" stroke-width="${geometry.strokes.signal}" stroke-linecap="round" stroke-linejoin="miter" />
-${endpoints}`;
-}
-
-function renderTheme(geometry) {
-	return `\t<style>
-\t\t.iron-creed-mark__ink { fill: ${geometry.colours.ink}; }
-\t\t.iron-creed-mark__outline { stroke: ${geometry.colours.outline}; }
-\t\t@media (prefers-color-scheme: dark) {
-\t\t\t.iron-creed-mark__ink { fill: ${geometry.colours.invertedInk}; }
-\t\t\t.iron-creed-mark__outline { stroke: ${geometry.colours.invertedOutline}; }
-\t\t}
-\t</style>`;
-}
-
-export function renderBrandAsset(geometry) {
-	return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${escapeAttribute(geometry.viewBox)}" fill="none">
+export function renderBrandAsset(sourceDataUrl, sourceDigest) {
+	return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768" data-source-sha256="${sourceDigest}">
 \t<title>IRON CREED</title>
-${renderTheme(geometry)}
-${renderPaths(geometry)}
+\t<image href="${sourceDataUrl}" width="768" height="768" preserveAspectRatio="xMidYMid meet" />
 </svg>
 `;
 }
 
-export function renderFaviconAsset(geometry) {
-	const paths = renderPaths(geometry)
-		.split('\n')
-		.map((line) => `\t${line}`)
-		.join('\n');
-
-	return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+export function renderFaviconAsset(sourceDataUrl, sourceDigest) {
+	return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" data-source-sha256="${sourceDigest}">
 \t<title>IRON CREED</title>
-\t<desc>Optically enlarged static peak state of the IRON CREED mark</desc>
-\t<style>
-\t\t.iron-creed-favicon__plate { fill: ${geometry.colours.ink}; }
-\t\t.iron-creed-mark__ink { fill: ${geometry.colours.invertedInk}; }
-\t\t.iron-creed-mark__outline { stroke: ${geometry.colours.ink}; }
-\t\t@media (prefers-color-scheme: dark) {
-\t\t\t.iron-creed-favicon__plate { fill: ${geometry.colours.invertedInk}; }
-\t\t\t.iron-creed-mark__ink { fill: ${geometry.colours.ink}; }
-\t\t\t.iron-creed-mark__outline { stroke: ${geometry.colours.invertedInk}; }
-\t\t}
-\t</style>
-\t<rect class="iron-creed-favicon__plate" x="4" y="4" width="120" height="120" rx="24" />
-\t<g transform="translate(25 9) scale(1 0.69) translate(-25 0)">
-${paths}
-\t</g>
+\t<desc>Optically enlarged IC monogram with red signal chevrons</desc>
+\t<rect x="4" y="4" width="120" height="120" rx="24" fill="#eef1f0" />
+\t<image href="${sourceDataUrl}" x="8" y="3" width="112" height="122" preserveAspectRatio="xMidYMid meet" />
 </svg>
 `;
 }
 
-const geometry = JSON.parse(await readFile(geometryPath, 'utf8'));
+const source = await readFile(sourcePath);
+const sourceDataUrl = `data:image/png;base64,${source.toString('base64')}`;
+const sourceDigest = createHash('sha256').update(source).digest('hex');
 const expectedAssets = new Map([
-	[outputPaths.brand, renderBrandAsset(geometry)],
-	[outputPaths.favicon, renderFaviconAsset(geometry)],
+	[outputPaths.brand, renderBrandAsset(sourceDataUrl, sourceDigest)],
+	[outputPaths.favicon, renderFaviconAsset(sourceDataUrl, sourceDigest)],
 ]);
 const mode = process.argv[2] ?? '--check';
 
@@ -93,7 +47,7 @@ if (mode === '--write') {
 		const actual = await readFile(outputPath, 'utf8');
 		if (actual !== expected) {
 			throw new Error(
-				`${path.relative(projectRoot, outputPath)} does not match the canonical brand geometry. Run npm run brand:generate.`,
+				`${path.relative(projectRoot, outputPath)} does not match the canonical brand master. Run npm run brand:generate.`,
 			);
 		}
 	}

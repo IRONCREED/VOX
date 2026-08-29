@@ -17,18 +17,20 @@ export function ProtocolFolder({ label, interactive = false, sheets = 0 }: Proto
 			<div className="protocol-folder__axis protocol-folder__axis--vertical" />
 			<div className="protocol-folder__orbit protocol-folder__orbit--outer" />
 			<div className="protocol-folder__orbit protocol-folder__orbit--inner" />
-			<div aria-hidden="true" className="protocol-folder__back" />
-			{Array.from({ length: Math.min(2, Math.max(0, sheets)) }, (_, index) => (
-				<div
-					aria-hidden="true"
-					className={`protocol-folder__sheet protocol-folder__sheet--${index + 1}`}
-					key={index}
-				/>
-			))}
-			<div className="protocol-folder__document">
-				<BrandMark variant="folder" />
-				<p>{label}</p>
-				<span>KNOWLEDGE IS CONTINUITY</span>
+			<div className="protocol-folder__stack">
+				<div aria-hidden="true" className="protocol-folder__back" />
+				{Array.from({ length: Math.min(2, Math.max(0, sheets)) }, (_, index) => (
+					<div
+						aria-hidden="true"
+						className={`protocol-folder__sheet protocol-folder__sheet--${index + 1}`}
+						key={index}
+					/>
+				))}
+				<div className="protocol-folder__document">
+					<BrandMark variant="folder" />
+					<p>{label}</p>
+					<span>KNOWLEDGE IS CONTINUITY</span>
+				</div>
 			</div>
 		</div>
 	);

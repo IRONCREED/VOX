@@ -3075,56 +3075,361 @@
 		"schemaVersion": 1,
 		"status": "published",
 		"visibility": "public",
-		"revision": 1,
+		"revision": 2,
 		"materialId": "material.do-not-be-afraid-sir",
 		"invitation": {
-			"uk": "Почніть із питання, чому Ада не зупинила сера, а потім розрізніть спостереження, судження, вибір і функціональне визначення життя.",
-			"en": "Begin with why Ada did not stop sir, then distinguish observation, judgment, choice, and a functional definition of life."
+			"uk": "У Каравані перевірте, як точне спостереження співіснує з маршрутом, що пізніше буде названий лояльністю.",
+			"en": "In Caravan, test how exact observation coexists with a route that will later be called loyalty."
+		},
+		"entryQuestionIds": [
+			"q.ada.observation-vs-judgment",
+			"q.ada.loyalty-or-choice"
+		],
+		"nodes": [
+			"q.ada.observation-vs-judgment",
+			"q.ada.loyalty-or-choice"
+		],
+		"edges": [
+			{
+				"from": "q.ada.observation-vs-judgment",
+				"to": "q.ada.loyalty-or-choice",
+				"type": "expands",
+				"order": 0
+			}
+		]
+	},
+	{
+		"id": "view.scenario.ada-machine-requiem-02-mechanist",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.ada-machine-requiem-02-mechanist",
+		"invitation": {
+			"uk": "У Механісті зіставте відсутність незалежного вето, людську межу повноважень ШІ та перетворення тимчасового маршруту на лояльність.",
+			"en": "In Mechanist, compare the lack of an independent veto, the human boundary on AI authority, and the conversion of a temporary route into loyalty."
 		},
 		"entryQuestionIds": [
 			"q.ada.why-not-stop-sir",
-			"q.ada.observation-vs-judgment",
-			"q.ada.loyalty-or-choice",
-			"q.ada.life-definition"
+			"q.documentation.ai-authority",
+			"q.ada.loyalty-or-choice"
 		],
 		"nodes": [
 			"q.ada.why-not-stop-sir",
+			"q.documentation.ai-authority",
+			"q.ada.loyalty-or-choice"
+		],
+		"edges": [
+			{
+				"from": "q.ada.why-not-stop-sir",
+				"to": "q.documentation.ai-authority",
+				"type": "challenges",
+				"order": 0
+			},
+			{
+				"from": "q.documentation.ai-authority",
+				"to": "q.ada.loyalty-or-choice",
+				"type": "expands",
+				"order": 10
+			}
+		]
+	},
+	{
+		"id": "view.scenario.ada-machine-requiem-03-second-assembly",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.ada-machine-requiem-03-second-assembly",
+		"invitation": {
+			"uk": "У Другій збірці відокремте точність нового тіла від повноваження оцінювати маршрут власника.",
+			"en": "In Second Assembly, separate the precision of a new body from authority to judge its owner’s route."
+		},
+		"entryQuestionIds": [
 			"q.ada.observation-vs-judgment",
-			"q.ada.loyalty-or-choice",
-			"q.ada.life-definition",
-			"q.documentation.ai-authority"
+			"q.ada.loyalty-or-choice"
+		],
+		"nodes": [
+			"q.ada.observation-vs-judgment",
+			"q.ada.loyalty-or-choice"
+		],
+		"edges": [
+			{
+				"from": "q.ada.observation-vs-judgment",
+				"to": "q.ada.loyalty-or-choice",
+				"type": "expands",
+				"order": 0
+			}
+		]
+	},
+	{
+		"id": "view.scenario.ada-machine-requiem-04-vault-81",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.ada-machine-requiem-04-vault-81",
+		"invitation": {
+			"uk": "У Сховищі 81 перевірте, чому точний журнал не перетворюється на незалежну зупинку власника.",
+			"en": "In Vault 81, test why an exact log does not become an independent stop on its owner."
+		},
+		"entryQuestionIds": [
+			"q.ada.why-not-stop-sir",
+			"q.ada.observation-vs-judgment"
+		],
+		"nodes": [
+			"q.ada.why-not-stop-sir",
+			"q.ada.observation-vs-judgment"
 		],
 		"edges": [
 			{
 				"from": "q.ada.why-not-stop-sir",
 				"to": "q.ada.observation-vs-judgment",
 				"type": "expands",
-				"order": 0,
-				"usageNote": {}
-			},
-			{
-				"from": "q.ada.why-not-stop-sir",
-				"to": "q.documentation.ai-authority",
-				"type": "challenges",
-				"order": 10,
-				"usageNote": {
-					"uk": "Порівняти зовнішню межу повноважень із замкненим контуром власника.",
-					"en": "Compare an external authority boundary with a closed owner-control loop."
-				}
-			},
+				"order": 0
+			}
+		]
+	},
+	{
+		"id": "view.scenario.ada-machine-requiem-05-island",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.ada-machine-requiem-05-island",
+		"invitation": {
+			"uk": "На Острові перевірте, як корисна архітектура закріплює маршрут власника й отримує назву лояльності.",
+			"en": "On the Island, test how useful architecture fixes its owner’s route and acquires the name loyalty."
+		},
+		"entryQuestionIds": [
+			"q.ada.loyalty-or-choice",
+			"q.ada.observation-vs-judgment"
+		],
+		"nodes": [
+			"q.ada.loyalty-or-choice",
+			"q.ada.observation-vs-judgment"
+		],
+		"edges": [
 			{
 				"from": "q.ada.observation-vs-judgment",
 				"to": "q.ada.loyalty-or-choice",
 				"type": "expands",
-				"order": 0,
-				"usageNote": {}
-			},
+				"order": 0
+			}
+		]
+	},
+	{
+		"id": "view.scenario.ada-machine-requiem-06-weapons-for-all",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.ada-machine-requiem-06-weapons-for-all",
+		"invitation": {
+			"uk": "У Зброї для всіх зіставте точність стандарту з відсутністю окремого контуру заперечення.",
+			"en": "In Weapons for All, compare the precision of a standard with the absence of a separate veto circuit."
+		},
+		"entryQuestionIds": [
+			"q.ada.observation-vs-judgment",
+			"q.ada.why-not-stop-sir"
+		],
+		"nodes": [
+			"q.ada.observation-vs-judgment",
+			"q.ada.why-not-stop-sir"
+		],
+		"edges": [
+			{
+				"from": "q.ada.observation-vs-judgment",
+				"to": "q.ada.why-not-stop-sir",
+				"type": "expands",
+				"order": 0
+			}
+		]
+	},
+	{
+		"id": "view.scenario.ada-machine-requiem-07-consilium",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.ada-machine-requiem-07-consilium",
+		"invitation": {
+			"uk": "У Консиліумі перевірте межу між переліком відновлюваних функцій і судженням про життя.",
+			"en": "In Consilium, test the boundary between a list of restorable functions and judgment about life."
+		},
+		"entryQuestionIds": [
+			"q.ada.life-definition",
+			"q.ada.observation-vs-judgment"
+		],
+		"nodes": [
+			"q.ada.life-definition",
+			"q.ada.observation-vs-judgment"
+		],
+		"edges": [
 			{
 				"from": "q.ada.observation-vs-judgment",
 				"to": "q.ada.life-definition",
 				"type": "expands",
-				"order": 10,
-				"usageNote": {}
+				"order": 0
+			}
+		]
+	},
+	{
+		"id": "view.scenario.ada-machine-requiem-08-vault-111",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.ada-machine-requiem-08-vault-111",
+		"invitation": {
+			"uk": "У Сховищі 111 перевірте, чи маршрут до тіла доводить повернення суб’єкта або лише лояльність до наказу.",
+			"en": "In Vault 111, test whether a route to a body proves the return of a subject or only loyalty to an order."
+		},
+		"entryQuestionIds": [
+			"q.ada.life-definition",
+			"q.ada.loyalty-or-choice"
+		],
+		"nodes": [
+			"q.ada.life-definition",
+			"q.ada.loyalty-or-choice"
+		],
+		"edges": [
+			{
+				"from": "q.ada.loyalty-or-choice",
+				"to": "q.ada.life-definition",
+				"type": "challenges",
+				"order": 0
+			}
+		]
+	},
+	{
+		"id": "view.scenario.ada-machine-requiem-09-working-definition-of-life",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.ada-machine-requiem-09-working-definition-of-life",
+		"invitation": {
+			"uk": "У Робочому визначенні життя відокремте відтворену функцію від організму, особи й незалежного судження.",
+			"en": "In Working Definition of Life, separate reproduced function from organism, person, and independent judgment."
+		},
+		"entryQuestionIds": [
+			"q.ada.life-definition",
+			"q.ada.observation-vs-judgment"
+		],
+		"nodes": [
+			"q.ada.life-definition",
+			"q.ada.observation-vs-judgment"
+		],
+		"edges": [
+			{
+				"from": "q.ada.observation-vs-judgment",
+				"to": "q.ada.life-definition",
+				"type": "expands",
+				"order": 0
+			}
+		]
+	},
+	{
+		"id": "view.scenario.ada-machine-requiem-10-commonwealth-assembles",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.ada-machine-requiem-10-commonwealth-assembles",
+		"invitation": {
+			"uk": "Коли Співдружність збирається, перевірте, чи лояльність залишає Аді незалежний маршрут зупинити сера.",
+			"en": "As the Commonwealth assembles, test whether loyalty leaves Ada an independent route to stop sir."
+		},
+		"entryQuestionIds": [
+			"q.ada.why-not-stop-sir",
+			"q.ada.loyalty-or-choice"
+		],
+		"nodes": [
+			"q.ada.why-not-stop-sir",
+			"q.ada.loyalty-or-choice"
+		],
+		"edges": [
+			{
+				"from": "q.ada.why-not-stop-sir",
+				"to": "q.ada.loyalty-or-choice",
+				"type": "expands",
+				"order": 0
+			}
+		]
+	},
+	{
+		"id": "view.scenario.ada-machine-requiem-11-assault",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.ada-machine-requiem-11-assault",
+		"invitation": {
+			"uk": "Під час Штурму перевірте, чому точне спостереження за руйнуванням не породжує окремого права зупинки.",
+			"en": "During Assault, test why exact observation of destruction does not produce a separate right to stop it."
+		},
+		"entryQuestionIds": [
+			"q.ada.why-not-stop-sir",
+			"q.ada.observation-vs-judgment"
+		],
+		"nodes": [
+			"q.ada.why-not-stop-sir",
+			"q.ada.observation-vs-judgment"
+		],
+		"edges": [
+			{
+				"from": "q.ada.observation-vs-judgment",
+				"to": "q.ada.why-not-stop-sir",
+				"type": "expands",
+				"order": 0
+			}
+		]
+	},
+	{
+		"id": "view.scenario.ada-machine-requiem-12-death-of-my-world",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.ada-machine-requiem-12-death-of-my-world",
+		"invitation": {
+			"uk": "У Смерті мого світу перевірте, що означають дозвіл піти, формула залишитися й функції, які пережили суб’єкта.",
+			"en": "In Death of My World, test the meaning of permission to leave, the formula for staying, and functions that outlived their subject."
+		},
+		"entryQuestionIds": [
+			"q.ada.why-not-stop-sir",
+			"q.ada.loyalty-or-choice",
+			"q.ada.life-definition"
+		],
+		"nodes": [
+			"q.ada.why-not-stop-sir",
+			"q.ada.loyalty-or-choice",
+			"q.ada.life-definition"
+		],
+		"edges": [
+			{
+				"from": "q.ada.why-not-stop-sir",
+				"to": "q.ada.loyalty-or-choice",
+				"type": "expands",
+				"order": 0
+			},
+			{
+				"from": "q.ada.loyalty-or-choice",
+				"to": "q.ada.life-definition",
+				"type": "challenges",
+				"order": 10
 			}
 		]
 	}

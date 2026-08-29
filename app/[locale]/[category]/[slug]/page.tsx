@@ -106,6 +106,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 		description: article.description,
 		datePublished: article.publishedAt,
 		dateModified: article.updatedAt,
+		contentRating: article.ageRestriction.rating,
 		inLanguage: article.locale,
 		mainEntityOfPage: articleUrl,
 		keywords: resolvedTags.map((tag) => tag.label),

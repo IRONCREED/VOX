@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import type { ReactNode } from 'react';
 import { isLocale, SUPPORTED_LOCALES } from '../../src/content-catalog/domain/content-model';
 import { BRAND_FAVICON_SRC } from '../../src/interface-system/components/brand-mark';
+import { SiteAudioProvider } from '../../src/interface-system/components/site-audio-provider';
 import { ThemeBootstrap } from '../../src/interface-system/components/theme-bootstrap';
 import { getSiteOrigin } from '../../src/site-metadata/site-origin';
 import '../globals.css';
@@ -92,7 +93,7 @@ export default async function LocaleLayout({
 				<noscript>
 					<style>{'.loading-gate{display:none!important}'}</style>
 				</noscript>
-				{children}
+				<SiteAudioProvider>{children}</SiteAudioProvider>
 			</body>
 		</html>
 	);

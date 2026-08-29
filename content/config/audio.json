@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"activeTrackId": "track.iron-creed-anthem",
+	"tracks": [
+		{
+			"id": "track.iron-creed-anthem",
+			"title": "IRON CREED",
+			"artist": "IRONCREED",
+			"shareUrl": "https://suno.com/s/oGZyvvf6rdWiYHPb",
+			"sources": [
+				{
+					"src": "https://cdn1.suno.ai/21d23ef4-802c-47c2-a30d-2578decc08e1.mp3",
+					"type": "audio/mpeg"
+				},
+				{
+					"src": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/21d23ef4-802c-47c2-a30d-2578decc08e1.m4a",
+					"type": "audio/mp4"
+				}
+			]
+		}
+	]
+}

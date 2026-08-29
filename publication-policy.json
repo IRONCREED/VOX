@@ -1,7 +1,7 @@
 {
 	"schemaVersion": "2.0.0",
 	"id": "icw-vox-public-source-001",
-	"revision": "2.1.0",
+	"revision": "2.2.0",
 	"destination": {
 		"owner": "IRONCREED",
 		"repository": "VOX",
@@ -20,7 +20,7 @@
 		{
 			"source": "src",
 			"destination": "src",
-			"extensions": [".css", ".json", ".ts", ".tsx"]
+			"extensions": [".css", ".json", ".png", ".ts", ".tsx"]
 		},
 		{
 			"source": "worker",

@@ -9,6 +9,7 @@ import { BRAND_MARK_SRC, BrandMark } from './brand-mark';
 const MINIMUM_VISIBLE_TIME = 2400;
 const MAXIMUM_WAIT_TIME = 6000;
 const LOADER_SESSION_KEY = 'ironcreed:loading-gate-seen';
+const LOADER_COMPLETE_EVENT = 'ironcreed:loading-gate-complete';
 
 interface LoadingGateProps {
 	releaseId: string;
@@ -16,11 +17,13 @@ interface LoadingGateProps {
 
 function waitForCriticalResources(): Promise<void> {
 	const fontsReady = document.fonts?.ready ?? Promise.resolve();
-	const brandReady = document.querySelector(
+	const brand = document.querySelector<HTMLImageElement>(
 		`.loading-gate [data-brand-resource="${BRAND_MARK_SRC}"]`,
-	)
+	);
+	const brandReady = brand?.complete
 		? Promise.resolve()
-		: new Promise<void>((resolve) => window.requestAnimationFrame(() => resolve()));
+		: (brand?.decode().catch(() => undefined) ??
+			new Promise<void>((resolve) => window.requestAnimationFrame(() => resolve())));
 
 	return Promise.all([fontsReady, brandReady]).then(() => undefined);
 }
@@ -91,7 +94,10 @@ export function LoadingGate({ releaseId }: LoadingGateProps) {
 					// Storage is optional; the current gate can still complete normally.
 				}
 				setIsLeaving(true);
-				window.setTimeout(() => setIsVisible(false), interfaceBehavior.loader.exitTransitionMs);
+				window.setTimeout(() => {
+					setIsVisible(false);
+					window.dispatchEvent(new Event(LOADER_COMPLETE_EVENT));
+				}, interfaceBehavior.loader.exitTransitionMs);
 			}, remaining);
 		});
 
@@ -115,8 +121,8 @@ export function LoadingGate({ releaseId }: LoadingGateProps) {
 				<BrandMark variant="loader" />
 				<strong>IRON CREED</strong>
 				<p ref={quoteRef}>
-					{loaderQuotes[0].map((line) => (
-						<span key={line}>{line}</span>
+					{loaderQuotes[0].map((line, index) => (
+						<span key={`${index}-${line}`}>{line}</span>
 					))}
 				</p>
 			</div>

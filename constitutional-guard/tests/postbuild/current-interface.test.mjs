@@ -72,16 +72,18 @@ test('one material series replaces its seven parts in catalog listings', async (
 	}
 
 	const homeHtml = await homeResponse.text();
-	assert.match(homeHtml, /href="\/en\/series\/psychobiosocial-patterns"/);
-	assert.match(homeHtml, /href="\/en\/scenarios\/do-not-be-afraid-sir"/);
+	assert.match(homeHtml, /href="\/en\/series\/the-constitution-that-runs"/);
+	assert.match(homeHtml, /href="\/en\/series\/do-not-be-afraid-sir-adas-machine-requiem"/);
 	assert.match(homeHtml, /material-card--series/);
 	assert.match(homeHtml, /protocol-folder__back/);
 	assert.match(homeHtml, /protocol-folder__sheet--1/);
 	assert.match(homeHtml, /protocol-folder__sheet--2/);
-	assert.match(withoutReactMarkers(homeHtml), /Research · Material series · 1/);
-	assert.match(homeHtml, /The “Body as a Temporary Construction” Pattern/);
+	const plainHomeHtml = withoutReactMarkers(homeHtml);
+	assert.match(plainHomeHtml, /Research · Material series · 7/);
+	assert.match(plainHomeHtml, /Scenarios · Material series · 12/);
 
 	const researchHtml = await researchResponse.text();
+	assert.match(researchHtml, /The “Body as a Temporary Construction” Pattern/);
 	assert.equal((researchHtml.match(/data-catalog-id=/g) ?? []).length, 2);
 	assert.equal(
 		(researchHtml.match(/data-catalog-id="series\.psychobiosocial-patterns"/g) ?? []).length,
@@ -109,6 +111,39 @@ test('one material series replaces its seven parts in catalog listings', async (
 		(seriesHtml.match(/data-catalog-id="material\.constitution-runtime-/g) ?? []).length,
 		7,
 	);
+});
+
+test('Ada is a twelve-part scenario series with one age contract per part', async () => {
+	const site = await createCompiledSiteDriver();
+	const [seriesResponse, firstResponse, finalResponse] = await Promise.all([
+		site.request('/en/series/do-not-be-afraid-sir-adas-machine-requiem'),
+		site.request('/en/scenarios/do-not-be-afraid-sir'),
+		site.request('/en/scenarios/do-not-be-afraid-sir-death-of-my-world'),
+	]);
+
+	for (const response of [seriesResponse, firstResponse, finalResponse]) {
+		assert.equal(response.status, 200);
+	}
+
+	const seriesHtml = withoutReactMarkers(await seriesResponse.text());
+	assert.match(seriesHtml, /Do Not Be Afraid, Sir: Ada’s Machine Requiem/);
+	assert.equal(
+		(seriesHtml.match(/data-catalog-id="material\.ada-machine-requiem-/g) ?? []).length,
+		11,
+	);
+	assert.match(seriesHtml, /data-catalog-id="material\.do-not-be-afraid-sir"/);
+
+	const firstHtml = withoutReactMarkers(await firstResponse.text());
+	assert.match(firstHtml, />1\/12</);
+	assert.match(firstHtml, /Age rating/);
+	assert.match(firstHtml, /Age rating \/ 21\+/);
+	assert.match(firstHtml, /Content notice/);
+	assert.match(firstHtml, /graphic descriptions of violence/);
+
+	const finalHtml = withoutReactMarkers(await finalResponse.text());
+	assert.match(finalHtml, />12\/12</);
+	assert.match(finalHtml, /I will stay with you/);
+	assert.doesNotMatch(finalHtml, /rel="next"/);
 });
 
 test('series parts expose membership, permanent DOI, authors, and previous-next navigation', async () => {
@@ -188,7 +223,7 @@ test('the complete entity index has its own localized content page', async () =>
 	assert.match(ukHtml, /Індекс корпусу/);
 	assert.match(ukHtml, /aria-label="Тип сутності"/);
 	assert.match(ukHtml, /value="question"/);
-	assert.match(ukHtml, />566<\/small>/);
+	assert.match(ukHtml, />578<\/small>/);
 	assert.match(ukHtml, /value="page"/);
 
 	assert.equal(enResponse.status, 200);
@@ -239,7 +274,7 @@ test('the build, policies, and four localized search maps are public', async () 
 
 	assert.equal(home.status, 200);
 	const homeHtml = await home.text();
-	assert.match(homeHtml, /Objective established: live/);
+	assert.match(homeHtml, /This system will live/);
 	assert.match(homeHtml, /href="https:\/\/github\.com\/IRONCREED\/VOX"/);
 	assert.match(homeHtml, /Lady Hague/);
 	assert.doesNotMatch(homeHtml, /aria-label="Next line"/);
@@ -247,7 +282,9 @@ test('the build, policies, and four localized search maps are public', async () 
 
 	assert.equal(about.status, 200);
 	const aboutHtml = await about.text();
-	assert.match(aboutHtml, /military medical-AI prototype/);
+	assert.match(aboutHtml, /identity and role in the game remain classified/);
+	assert.match(aboutHtml, /personified engineering process/);
+	assert.doesNotMatch(aboutHtml, /military medical-AI prototype/);
 	assert.match(aboutHtml, /OpenAI GPT/);
 	assert.match(aboutHtml, /https:\/\/interdead\.phantom-draft\.com\//);
 	assert.match(aboutHtml, /AI companion/);
@@ -272,8 +309,8 @@ test('the build, policies, and four localized search maps are public', async () 
 	for (const response of [ukSiteMap, ukQuestionMap, enSiteMap, enQuestionMap]) {
 		assert.equal(response.status, 200);
 	}
-	assert.equal(((await ukSiteMap.text()).match(/<url>/g) ?? []).length, 23);
-	assert.equal(((await enSiteMap.text()).match(/<url>/g) ?? []).length, 23);
+	assert.equal(((await ukSiteMap.text()).match(/<url>/g) ?? []).length, 35);
+	assert.equal(((await enSiteMap.text()).match(/<url>/g) ?? []).length, 35);
 	const ukQuestions = await ukQuestionMap.text();
 	const enQuestions = await enQuestionMap.text();
 	assert.equal((ukQuestions.match(/<url>/g) ?? []).length, 455);
@@ -301,4 +338,50 @@ test('publication metadata uses permanent DOI and linked ORCID authors', async (
 		researchHtml,
 		/<em>Language as Infection: Media Communication as a Mechanism of Harm<\/em>/,
 	);
+});
+
+test('the canonical monogram, welcome dialog, social links, and loader copy share one shell', async () => {
+	const site = await createCompiledSiteDriver();
+	const response = await site.request('/en/');
+	assert.equal(response.status, 200);
+	const html = await response.text();
+
+	assert.match(html, /data-brand-state="ic-monogram-2026"/);
+	assert.match(html, /src="\/brand\/iron-creed-mark\.svg"/);
+	assert.match(html, /class="brand-mark brand-mark--header"/);
+	assert.match(html, /class="brand-mark brand-mark--loader"/);
+	assert.match(html, /class="brand-mark brand-mark--folder"/);
+	assert.match(html, /I stand/);
+	assert.match(html, /When everything/);
+	assert.match(html, /Lies down\./);
+	assert.match(html, /Welcome to IRON CREED/);
+	assert.match(html, /IRON CREED is a currently classified recurring character/);
+	assert.match(html, /href="https:\/\/t\.me\/\+6-ge0JXP25o4MTQy"/);
+	assert.match(html, /href="https:\/\/github\.com\/IRONCREED"/);
+	assert.match(html, /href="https:\/\/www\.linkedin\.com\/company\/IRONCREED"/);
+	assert.match(html, /class="social-links social-links--sidebar"/);
+	assert.match(html, /class="social-links social-links--modal"/);
+});
+
+test('the header exposes the persistent opt-in anthem player after the theme control', async () => {
+	const site = await createCompiledSiteDriver();
+	const [ukResponse, enResponse, privacyResponse] = await Promise.all([
+		site.request('/uk/'),
+		site.request('/en/'),
+		site.request('/en/pages/privacy-policy'),
+	]);
+	for (const response of [ukResponse, enResponse, privacyResponse])
+		assert.equal(response.status, 200);
+
+	const ukHtml = withoutReactMarkers(await ukResponse.text());
+	const enHtml = withoutReactMarkers(await enResponse.text());
+	assert.match(
+		ukHtml,
+		/class="theme-switcher"[\s\S]*aria-label="Увімкнути гімн: IRON CREED"[^>]*class="anthem-toggle"/,
+	);
+	assert.match(enHtml, /aria-label="Play the anthem: IRON CREED"/);
+	assert.match(enHtml, /<audio[^>]*aria-hidden="true"[^>]*preload="none"/);
+	assert.match(enHtml, /https:\/\/cdn1\.suno\.ai\/21d23ef4-802c-47c2-a30d-2578decc08e1\.mp3/);
+	assert.doesNotMatch(enHtml, /autoplay/);
+	assert.match(await privacyResponse.text(), /requests[\s\S]*directly from Suno/i);
 });

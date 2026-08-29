@@ -16,6 +16,7 @@ import {
 	SIDEBAR_MIN_WIDTH,
 	SIDEBAR_WIDTH_STORAGE_KEY,
 } from '../sidebar-contract';
+import { SocialLinks } from './social-links';
 
 interface NavigationLink {
 	href: string;
@@ -29,6 +30,7 @@ interface SiteNavigationProps {
 	items: NavigationItem[];
 	locale: Locale;
 	policyLinks: NavigationLink[];
+	socialLabel: string;
 }
 
 const DRAG_THRESHOLD = 7;
@@ -45,6 +47,7 @@ export function SiteNavigation({
 	items,
 	locale,
 	policyLinks,
+	socialLabel,
 }: SiteNavigationProps) {
 	const navigationRef = useRef<HTMLElement>(null);
 	const sidebarRef = useRef<HTMLElement>(null);
@@ -228,6 +231,8 @@ export function SiteNavigation({
 					),
 				)}
 			</nav>
+
+			<SocialLinks label={socialLabel} locale={locale} />
 
 			<div className="build-identity">
 				<span>{buildTitle}</span>

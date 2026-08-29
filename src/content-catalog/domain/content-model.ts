@@ -71,6 +71,12 @@ export interface ArticleMetadata {
 	publication?: ZenodoPublication;
 	series: ArticleSeriesMembership | null;
 	presentationMode: 'standard' | 'scenario-log';
+	ageRestriction: AgeRestriction;
+}
+
+export interface AgeRestriction {
+	rating: '0+' | '16+' | '21+';
+	notice?: string;
 }
 
 export interface ArticleSeriesMembership {
@@ -157,6 +163,10 @@ export interface InterfaceCopy {
 	theme: string;
 	lightTheme: string;
 	darkTheme: string;
+	anthemPlay: string;
+	anthemPause: string;
+	anthemLoading: string;
+	anthemUnavailable: string;
 	homeTitle: string;
 	homeDescription: string;
 	latestMaterials: string;
@@ -207,6 +217,14 @@ export interface InterfaceCopy {
 	openEntity: string;
 	openQuestion: string;
 	questionAssociations: string;
+	ageRating: string;
+	welcomeTitle: string;
+	welcomeContinue: string;
+	welcomeAbout: string;
+	contentNoticeTitle: string;
+	contentNoticeContinue: string;
+	contentNoticeLeave: string;
+	socialNetworks: string;
 	entityKinds: Record<PublicEntityKind, string>;
 }
 

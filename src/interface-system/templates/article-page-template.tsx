@@ -88,6 +88,16 @@ export function ArticlePageTemplate({
 						}
 					: undefined,
 			}}
+			contentNotice={
+				article.ageRestriction.notice
+					? {
+							leaveHref: `/${locale}/${category.id}`,
+							materialId: article.materialId,
+							notice: article.ageRestriction.notice,
+							rating: article.ageRestriction.rating,
+						}
+					: undefined
+			}
 		>
 			<main className="knowledge-panel knowledge-panel--article" id="main">
 				<nav aria-label="Breadcrumb" className="article-route">
@@ -149,6 +159,9 @@ export function ArticlePageTemplate({
 								))}
 							</span>
 							<span>{article.edition}</span>
+							<span>
+								{copy.ageRating}: {article.ageRestriction.rating}
+							</span>
 						</div>
 						<ul aria-label={copy.tags} className="article-tags">
 							{resolvedTags.map((tag) => (

@@ -136,6 +136,102 @@
 		"legacyUrls": []
 	},
 	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-11-assault",
+		"materialId": "material.ada-machine-requiem-11-assault",
+		"locale": "en",
+		"path": "/en/scenarios/do-not-be-afraid-sir-assault",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-10-commonwealth-assembles",
+		"materialId": "material.ada-machine-requiem-10-commonwealth-assembles",
+		"locale": "en",
+		"path": "/en/scenarios/do-not-be-afraid-sir-commonwealth-assembles",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-07-consilium",
+		"materialId": "material.ada-machine-requiem-07-consilium",
+		"locale": "en",
+		"path": "/en/scenarios/do-not-be-afraid-sir-consilium",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-12-death-of-my-world",
+		"materialId": "material.ada-machine-requiem-12-death-of-my-world",
+		"locale": "en",
+		"path": "/en/scenarios/do-not-be-afraid-sir-death-of-my-world",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-05-island",
+		"materialId": "material.ada-machine-requiem-05-island",
+		"locale": "en",
+		"path": "/en/scenarios/do-not-be-afraid-sir-island",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-02-mechanist",
+		"materialId": "material.ada-machine-requiem-02-mechanist",
+		"locale": "en",
+		"path": "/en/scenarios/do-not-be-afraid-sir-mechanist",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-03-second-assembly",
+		"materialId": "material.ada-machine-requiem-03-second-assembly",
+		"locale": "en",
+		"path": "/en/scenarios/do-not-be-afraid-sir-second-assembly",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-08-vault-111",
+		"materialId": "material.ada-machine-requiem-08-vault-111",
+		"locale": "en",
+		"path": "/en/scenarios/do-not-be-afraid-sir-vault-111",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-04-vault-81",
+		"materialId": "material.ada-machine-requiem-04-vault-81",
+		"locale": "en",
+		"path": "/en/scenarios/do-not-be-afraid-sir-vault-81",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-06-weapons-for-all",
+		"materialId": "material.ada-machine-requiem-06-weapons-for-all",
+		"locale": "en",
+		"path": "/en/scenarios/do-not-be-afraid-sir-weapons-for-all",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-09-working-definition-of-life",
+		"materialId": "material.ada-machine-requiem-09-working-definition-of-life",
+		"locale": "en",
+		"path": "/en/scenarios/do-not-be-afraid-sir-working-definition-of-life",
+		"legacyUrls": []
+	},
+	{
+		"kind": "series",
+		"id": "series.ada-machine-requiem",
+		"seriesId": "series.ada-machine-requiem",
+		"locale": "en",
+		"path": "/en/series/do-not-be-afraid-sir-adas-machine-requiem",
+		"legacyUrls": []
+	},
+	{
 		"kind": "series",
 		"id": "series.psychobiosocial-patterns",
 		"seriesId": "series.psychobiosocial-patterns",
@@ -288,11 +384,107 @@
 		"legacyUrls": []
 	},
 	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-03-second-assembly",
+		"materialId": "material.ada-machine-requiem-03-second-assembly",
+		"locale": "uk",
+		"path": "/uk/scenarios/ne-biitesia-ser-druha-zbirka",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-07-consilium",
+		"materialId": "material.ada-machine-requiem-07-consilium",
+		"locale": "uk",
+		"path": "/uk/scenarios/ne-biitesia-ser-konsylium",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-02-mechanist",
+		"materialId": "material.ada-machine-requiem-02-mechanist",
+		"locale": "uk",
+		"path": "/uk/scenarios/ne-biitesia-ser-mekhanist",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-05-island",
+		"materialId": "material.ada-machine-requiem-05-island",
+		"locale": "uk",
+		"path": "/uk/scenarios/ne-biitesia-ser-ostriv",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-09-working-definition-of-life",
+		"materialId": "material.ada-machine-requiem-09-working-definition-of-life",
+		"locale": "uk",
+		"path": "/uk/scenarios/ne-biitesia-ser-roboche-vyznachennia-zhyttia",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-11-assault",
+		"materialId": "material.ada-machine-requiem-11-assault",
+		"locale": "uk",
+		"path": "/uk/scenarios/ne-biitesia-ser-shturm",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-08-vault-111",
+		"materialId": "material.ada-machine-requiem-08-vault-111",
+		"locale": "uk",
+		"path": "/uk/scenarios/ne-biitesia-ser-skhovyshche-111",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-04-vault-81",
+		"materialId": "material.ada-machine-requiem-04-vault-81",
+		"locale": "uk",
+		"path": "/uk/scenarios/ne-biitesia-ser-skhovyshche-81",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-12-death-of-my-world",
+		"materialId": "material.ada-machine-requiem-12-death-of-my-world",
+		"locale": "uk",
+		"path": "/uk/scenarios/ne-biitesia-ser-smert-moho-svitu",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-10-commonwealth-assembles",
+		"materialId": "material.ada-machine-requiem-10-commonwealth-assembles",
+		"locale": "uk",
+		"path": "/uk/scenarios/ne-biitesia-ser-spivdruzhnist-zbyraietsia",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.ada-machine-requiem-06-weapons-for-all",
+		"materialId": "material.ada-machine-requiem-06-weapons-for-all",
+		"locale": "uk",
+		"path": "/uk/scenarios/ne-biitesia-ser-zbroia-dlia-vsikh",
+		"legacyUrls": []
+	},
+	{
 		"kind": "series",
 		"id": "series.constitution-runtime",
 		"seriesId": "series.constitution-runtime",
 		"locale": "uk",
 		"path": "/uk/series/konstytutsiia-shcho-vykonuietsia",
+		"legacyUrls": []
+	},
+	{
+		"kind": "series",
+		"id": "series.ada-machine-requiem",
+		"seriesId": "series.ada-machine-requiem",
+		"locale": "uk",
+		"path": "/uk/series/ne-biitesia-ser-mashynnyi-rekviem-ady",
 		"legacyUrls": []
 	},
 	{
