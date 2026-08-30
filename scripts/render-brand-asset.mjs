@@ -21,7 +21,7 @@ export function renderBrandAsset(sourceDataUrl, sourceDigest) {
 export function renderFaviconAsset(sourceDataUrl, sourceDigest) {
 	return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" data-source-sha256="${sourceDigest}">
 \t<title>IRON CREED</title>
-\t<desc>Optically enlarged IC monogram with red signal chevrons</desc>
+\t<desc>Optically enlarged faceted IC monogram</desc>
 \t<rect x="4" y="4" width="120" height="120" rx="24" fill="#eef1f0" />
 \t<image href="${sourceDataUrl}" x="8" y="3" width="112" height="122" preserveAspectRatio="xMidYMid meet" />
 </svg>

@@ -25,9 +25,15 @@ documentation, an oversized file, a mismatched digest, a dirty source release,
 an unpinned or drifted gitlink, or an unmanaged non-empty destination
 repository. Branch updates are fast-forward only.
 
-The Code Constitution submodule is fixed to one full commit in the publication
-policy. `.gitmodules` contains only its public HTTPS URL; no credential helper,
-embedded token, or mutable branch is part of the release contract.
+The Code Constitution and Repository Licensing Policy submodules are each fixed
+to one full commit in the publication policy. `.gitmodules` contains only their
+public HTTPS URLs; no credential helper, embedded token, or mutable branch is
+part of the release contract.
+
+Public WARDEN prebuild and postbuild phases run against the sealed VOX surface.
+They do not receive access to editorial source, deployment identity, or
+publisher credentials. Historical integrity verification still covers every
+published historical test before either public phase begins.
 
 Hosted Sites runtime secrets are not required by this source distribution. A
 repository write token should not be placed in client-side code or a public

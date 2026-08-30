@@ -13,6 +13,8 @@ if [[ ! -x "${vinext}" ]]; then
   exit 69
 fi
 
+node "${SITES_PROJECT_ROOT}/constitutional-guard/run.mjs" prebuild
 npm --prefix "${SITES_PROJECT_ROOT}" run sitemaps:check
 "${vinext}" build
 "${script_dir}/validate-artifact.sh"
+node "${SITES_PROJECT_ROOT}/constitutional-guard/run.mjs" postbuild

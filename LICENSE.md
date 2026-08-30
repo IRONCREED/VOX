@@ -12,10 +12,15 @@ version 1.0.0, pinned at commit
 | Original articles, prose, documentation, publication sources, and non-brand editorial material | [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) |
 | Original source code, scripts, tests, examples, reusable schemas, and templates                | MIT License (text below)                                                                                     |
 | Names, logos, trade marks, characters, game worlds, brand assets, and visual identity          | No licence granted; all rights reserved                                                                      |
+| Anthem recording and other audio under `public/audio/`                                         | No licence granted; all rights reserved                                                                      |
 | Third-party material and dependencies                                                          | Their original licences and notices                                                                          |
 
 This is not a project-wide dual licence. The applicable licence depends on the
 type and exact location of the material.
+
+The pinned `repository-licensing-policy` Git submodule remains a separately
+versioned work governed by its own licence and notices. It documents the policy
+source without replacing this repository-specific map.
 
 ## Priority
 

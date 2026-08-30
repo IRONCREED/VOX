@@ -7,20 +7,22 @@ to audit how a release is controlled.
 
 ## Application layers
 
-| Path                       | Public responsibility                                                  |
-| -------------------------- | ---------------------------------------------------------------------- |
-| `app/`                     | Localized routes, metadata, manifest, robots policy, and public API    |
-| `src/content-catalog/`     | Typed reads from the sealed public corpus projection                   |
-| `src/interface-system/`    | Components, templates, behaviors, and visual contracts                 |
-| `src/site-navigation/`     | Build identity and navigation behavior                                 |
-| `worker/`                  | Cloudflare-compatible request entry point and route normalization      |
-| `content/config/`          | Public interface copy, categories, hints, and navigation configuration |
-| `semantic-core/dist/site/` | Generated public runtime data for the released corpus                  |
-| `tests/`                   | Public source and rendered-artifact checks                             |
-| `scripts/sitemaps.mjs`     | Deterministic localized route and question sitemap generation          |
-| `code-constitution/`       | Pinned universal Code Constitution Git submodule                       |
-| `governance/`              | Adopted Profile, acts registry, and project legislation                |
-| `constitutional-guard/`    | IRON WARDEN runner, integrity manifest, and historical checks          |
+| Path                           | Public responsibility                                                    |
+| ------------------------------ | ------------------------------------------------------------------------ |
+| `app/`                         | Localized routes, metadata, manifest, robots policy, and public API      |
+| `src/content-catalog/`         | Typed reads from the sealed public corpus projection                     |
+| `src/interface-system/`        | Components, templates, behaviors, and visual contracts                   |
+| `src/site-navigation/`         | Build identity and navigation behavior                                   |
+| `worker/`                      | Cloudflare-compatible request entry point and route normalization        |
+| `content/config/`              | Public interface copy, categories, hints, navigation, and audio metadata |
+| `public/audio/`                | User-initiated same-origin anthem asset                                  |
+| `semantic-core/dist/site/`     | Generated public runtime data for the released corpus                    |
+| `tests/`                       | Public source and rendered-artifact checks                               |
+| `scripts/sitemaps.mjs`         | Deterministic localized route and question sitemap generation            |
+| `code-constitution/`           | Pinned universal Code Constitution Git submodule                         |
+| `repository-licensing-policy/` | Pinned Repository Licensing Policy Git submodule                         |
+| `governance/`                  | Adopted Profile, acts registry, and project legislation                  |
+| `constitutional-guard/`        | IRON WARDEN runner, integrity history, and canonical/public checks       |
 
 The live editorial source, reusable entity registries, material intake,
 operational prompts, attestations, internal reports, and the Custom GPT
@@ -34,7 +36,13 @@ The exporter then copies only paths named by `publication-policy.json`, creates
 a public package manifest, scans for restricted paths and secret forms, checks
 English public documentation, and writes a digest manifest. Publication creates
 an atomic Git commit from that verified directory and the policy-pinned
-Constitution gitlink.
+two policy-pinned gitlinks.
+
+The WARDEN runner detects `VOX-PUBLICATION.json`. In a VOX checkout it executes
+the dedicated public prebuild and postbuild suites while always verifying the
+full immutable historical manifest. In the canonical checkout it executes the
+canonical current and active historical release checks. This preserves one
+public command surface without requiring private editorial records.
 
 TheWorldOfCanon is a separate archival projection. A VOX publication neither
 mutates nor implicitly authorizes a TheWorldOfCanon pull request.

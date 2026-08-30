@@ -33,7 +33,7 @@ test('the semantic core is the single bilingual publication source', async () =>
 	]);
 
 	assert.equal(corpus.id, 'corpus.ironcreed');
-	assert.equal(siteManifest.contentVersion, '1.9.0');
+	assert.equal(siteManifest.contentVersion, '1.10.0');
 	assert.equal(siteManifest.sourceCommit, gptManifest.sourceCommit);
 	assert.equal(siteManifest.contentDigest, gptManifest.contentDigest);
 	assert.equal(siteManifest.schemaVersion, gptManifest.schemaVersion);
@@ -139,7 +139,7 @@ test('the site consumes the checked projection and exposes a dedicated corpus in
 	assert.match(navigation, /build-identity__index/);
 	assert.doesNotMatch(navigation, /EntityIndexTree/);
 	assert.match(buildScript, /run build:check/);
-	assert.equal(packageManifest.version, '1.8.0');
+	assert.equal(packageManifest.version, '1.9.0');
 });
 
 test('the entity index links only through canonical material associations', async () => {
@@ -182,18 +182,29 @@ test('the entity index links only through canonical material associations', asyn
 });
 
 test('governance records and attests the active release', async () => {
-	const [acts, profile, act, lifecycle, voxAct, policy, template, promptIndex, attestation] =
-		await Promise.all([
-			readJson('governance/acts.json'),
-			readText('governance/PROFILE.md'),
-			readText('governance/legislation/SEMANTIC_CORE_AND_ENTITY_INDEX_2026-08-11.md'),
-			readText('governance/legislation/CONTENT_LIFECYCLE_2026-08-11.md'),
-			readText('governance/legislation/VOX_PUBLIC_SOURCE_2026-08-14.md'),
-			readJson('vox/publication-policy.json'),
-			readText('semantic-core/docs/article-publication-template-v4.txt'),
-			readText('governance/prompts/README.md'),
-			readJson('governance/attestations/interface-anthem-release-2026-08-30.json'),
-		]);
+	const [
+		acts,
+		profile,
+		act,
+		lifecycle,
+		voxAct,
+		policy,
+		template,
+		promptIndex,
+		attestation,
+		siteManifest,
+	] = await Promise.all([
+		readJson('governance/acts.json'),
+		readText('governance/PROFILE.md'),
+		readText('governance/legislation/SEMANTIC_CORE_AND_ENTITY_INDEX_2026-08-11.md'),
+		readText('governance/legislation/CONTENT_LIFECYCLE_2026-08-11.md'),
+		readText('governance/legislation/VOX_PUBLIC_SOURCE_2026-08-14.md'),
+		readJson('vox/publication-policy.json'),
+		readText('semantic-core/docs/article-publication-template-v4.txt'),
+		readText('governance/prompts/README.md'),
+		readJson('governance/attestations/about-services-public-warden-release-2026-08-30.json'),
+		readJson('semantic-core/dist/site/manifest.json'),
+	]);
 	assert.match(profile, /Редакция: `0\.7\.0`/);
 	assert.match(profile, /`\/semantic-core\/corpus\/`/);
 	assert.match(profile, /CC BY-SA 4\.0/);
@@ -224,7 +235,7 @@ test('governance records and attests the active release', async () => {
 	assert.match(lifecycle, /Каждый новый production/);
 	assert.match(voxAct, /Каждый новый production/);
 	assert.equal(policy.destination.repository, 'VOX');
-	assert.equal(policy.revision, '2.2.0');
+	assert.equal(policy.revision, '2.3.0');
 	assert.match(lifecycle, /record\.revision/);
 	assert.match(lifecycle, /sitemaps:build/);
 	assert.match(promptIndex, /MATERIAL_DEPRECATE_OR_DELETE\.md/);
@@ -237,13 +248,13 @@ test('governance records and attests the active release', async () => {
 	);
 	assert.equal(
 		acts.acts.find((entry) => entry.id === 'icw-act-vox-public-source-001')?.revision,
-		'2.2.0',
+		'2.3.0',
 	);
 	assert.equal(attestation.constitutionImpact.status, 'reviewed-no-change');
 	assert.equal(attestation.profileImpact.status, 'reviewed-no-change');
-	assert.equal(attestation.contentImpact.contentVersion, '1.9.0');
-	assert.equal(attestation.release.siteVersion, '1.8.0');
-	assert.equal(attestation.release.sourceCommit, '1bb58ee673d9bd4f35eaa2c7e4ede429f577206f');
+	assert.equal(attestation.contentImpact.contentVersion, '1.10.0');
+	assert.equal(attestation.release.siteVersion, '1.9.0');
+	assert.equal(attestation.release.sourceCommit, siteManifest.sourceCommit);
 	assert.equal(attestation.release.questionCount, 455);
 	assert.equal(attestation.release.sitemapCount, 4);
 	assert.equal(attestation.release.generalUrlsPerLocale, 35);
@@ -284,7 +295,11 @@ test('the anthem is a user-initiated persistent service of the locale shell', as
 	assert.equal(audio.activeTrackId, 'track.iron-creed-anthem');
 	assert.equal(audio.tracks.length, 1);
 	assert.equal(audio.tracks[0].shareUrl, 'https://suno.com/s/oGZyvvf6rdWiYHPb');
-	assert.ok(audio.tracks[0].sources.every((source) => source.src.startsWith('https://')));
+	assert.equal(audio.tracks[0].delivery, 'same-origin');
+	assert.deepEqual(audio.tracks[0].sources, [
+		{ src: '/audio/iron-creed-anthem.m4a', type: 'audio/mp4' },
+	]);
+	await access(path.join(projectRoot, 'public/audio/iron-creed-anthem.m4a'));
 	assert.match(layout, /<SiteAudioProvider>\{children\}<\/SiteAudioProvider>/);
 	assert.match(provider, /preload="none"/);
 	assert.match(provider, /await player\.play\(\)/);
@@ -294,18 +309,57 @@ test('the anthem is a user-initiated persistent service of the locale shell', as
 	assert.equal(copy.uk.anthemPlay, 'Увімкнути гімн');
 	assert.equal(copy.en.anthemPlay, 'Play the anthem');
 	const privacy = pages.find((entry) => entry.id === 'page.privacy-policy');
-	assert.equal(privacy.revision, 3);
-	assert.match(privacy.body.en.join(' '), /requests[\s\S]*directly from Suno/i);
+	assert.equal(privacy.revision, 4);
+	assert.match(privacy.body.en.join(' '), /same-origin site asset/i);
+	assert.doesNotMatch(privacy.body.en.join(' '), /requests[\s\S]*directly from Suno/i);
 	for (const [id, revision] of [
-		['icw-act-development-001', '1.6.0'],
-		['icw-act-site-experience-001', '1.7.0'],
-		['icw-act-patterns-001', '0.14.0'],
+		['icw-act-development-001', '1.7.0'],
+		['icw-act-site-experience-001', '1.8.0'],
+		['icw-act-patterns-001', '0.15.0'],
 	]) {
 		assert.equal(acts.acts.find((entry) => entry.id === id)?.revision, revision);
 	}
 	assert.match(siteAct, /ICW-UX06/);
 	assert.match(development, /пользовательского действия/);
 	assert.match(patterns, /ICW-PAT19/);
+	assert.match(patterns, /ICW-PAT20/);
+});
+
+test('the about page publishes one structured service story without invented evidence', async () => {
+	const [pages, policy, gitmodules, runner] = await Promise.all([
+		readJson('semantic-core/corpus/pages/registry.json'),
+		readJson('vox/publication-policy.json'),
+		readText('vox/public-source/.gitmodules'),
+		readText('constitutional-guard/run.mjs'),
+	]);
+	const about = pages.find((entry) => entry.id === 'page.about');
+	assert.equal(about.revision, 4);
+	assert.equal(about.aboutStory.lifecycle.steps.length, 4);
+	assert.equal(about.aboutStory.lifecycle.examples.length, 2);
+	assert.equal(about.aboutStory.sections.length, 7);
+	assert.deepEqual(
+		about.aboutStory.sections
+			.filter((entry) => entry.status === 'placeholder')
+			.map((entry) => entry.id),
+		['projects', 'testimonials'],
+	);
+	assert.ok(
+		about.aboutStory.sections
+			.filter((entry) => entry.status === 'placeholder')
+			.every((entry) => entry.entries.length === 0 && !entry.link),
+	);
+	assert.deepEqual(
+		policy.gitlinks.map((entry) => entry.path),
+		['code-constitution', 'repository-licensing-policy'],
+	);
+	assert.match(gitmodules, /\[submodule "repository-licensing-policy"\]/);
+	assert.match(runner, /IRON_WARDEN_SURFACE/);
+	await access(
+		path.join(projectRoot, 'constitutional-guard/tests/public/prebuild/current-public.test.mjs'),
+	);
+	await access(
+		path.join(projectRoot, 'constitutional-guard/tests/public/postbuild/current-public.test.mjs'),
+	);
 });
 
 test('the retired reading mode is absent from current source and projections', async () => {

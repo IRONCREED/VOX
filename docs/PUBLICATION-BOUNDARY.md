@@ -7,16 +7,17 @@ from the allowlist means exclusion; discretion at publish time is not a policy.
 ## Included
 
 - application, component, template, worker, and adapter source code;
-- public interface configuration, brand assets, and generated XML sitemaps
-  required by the build;
+- public interface configuration, reserved brand assets, the user-initiated
+  same-origin anthem asset, and generated XML sitemaps required by the build;
 - the deterministic sitemap generator and its non-mutating verification mode;
 - the sealed `site` runtime projection;
 - public build, formatting, linting, type-checking, and test configuration;
 - the adopted project Constitution wrapper, Founding Profile, acts registry,
   and project Legislation;
-- IRON WARDEN source, immutable historical tests, integrity manifest, and its
-  stable testing interface;
+- IRON WARDEN source, immutable historical tests, integrity manifest, stable
+  testing interface, and executable public prebuild/postbuild suites;
 - the universal Code Constitution as a full-SHA-pinned Git submodule;
+- the Repository Licensing Policy as a separate full-SHA-pinned Git submodule;
 - the immutable machine-readable publication policy and digest manifest;
 - the licensing map, notices, and English public documentation.
 
@@ -51,5 +52,5 @@ is not accepted as a separate release if its VOX publication has not succeeded.
 
 Original code is distributed under MIT. Original non-brand editorial material
 and documentation use CC BY-SA 4.0. Names, marks, characters, worlds, brand
-assets, and visual identity remain reserved. Third-party terms and file-level
-notices take priority.
+assets, visual identity, and the anthem audio asset remain reserved. Third-party
+terms, submodule licences, and file-level notices take priority.

@@ -1,6 +1,6 @@
 import { spawn } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { readdir, readFile } from 'node:fs/promises';
+import { access, readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -64,15 +64,26 @@ async function verifyHistoricalIntegrity(manifest) {
 	}
 }
 
-async function currentTestsForPhase(phase) {
-	const directory = path.join(guardRoot, 'tests', phase);
+async function isPublicProjection() {
+	try {
+		await access(path.join(projectRoot, 'VOX-PUBLICATION.json'));
+		return true;
+	} catch {
+		return false;
+	}
+}
+
+async function currentTestsForPhase(phase, publicProjection) {
+	const directory = publicProjection
+		? path.join(guardRoot, 'tests', 'public', phase)
+		: path.join(guardRoot, 'tests', phase);
 	return (await readdir(directory))
 		.filter((name) => name.endsWith('.test.mjs'))
 		.toSorted()
 		.map((name) => path.join(directory, name));
 }
 
-async function runTests(testFiles, phase) {
+async function runTests(testFiles, phase, publicProjection) {
 	if (testFiles.length === 0) {
 		throw new Error(`No ${phase} tests were collected.`);
 	}
@@ -85,6 +96,7 @@ async function runTests(testFiles, phase) {
 			env: {
 				...process.env,
 				IRON_WARDEN_PROJECT_ROOT: projectRoot,
+				IRON_WARDEN_SURFACE: publicProjection ? 'public' : 'canonical',
 			},
 			stdio: 'inherit',
 		});
@@ -103,13 +115,15 @@ async function runTests(testFiles, phase) {
 	});
 }
 
-async function runPhase(phase, manifest) {
-	const historicalTests = manifest.historicalTests
-		.filter((entry) => entry.phase === phase && (entry.status ?? 'active') === 'active')
-		.map((entry) => path.join(guardRoot, entry.path));
-	const currentTests = await currentTestsForPhase(phase);
+async function runPhase(phase, manifest, publicProjection) {
+	const historicalTests = publicProjection
+		? []
+		: manifest.historicalTests
+				.filter((entry) => entry.phase === phase && (entry.status ?? 'active') === 'active')
+				.map((entry) => path.join(guardRoot, entry.path));
+	const currentTests = await currentTestsForPhase(phase, publicProjection);
 
-	await runTests([...historicalTests, ...currentTests], phase);
+	await runTests([...historicalTests, ...currentTests], phase, publicProjection);
 }
 
 async function main() {
@@ -120,13 +134,14 @@ async function main() {
 
 	const manifest = await loadManifest();
 	await verifyHistoricalIntegrity(manifest);
+	const publicProjection = await isPublicProjection();
 
 	if (phase === 'prebuild' || phase === 'all') {
-		await runPhase('prebuild', manifest);
+		await runPhase('prebuild', manifest, publicProjection);
 	}
 
 	if (phase === 'postbuild' || phase === 'all') {
-		await runPhase('postbuild', manifest);
+		await runPhase('postbuild', manifest, publicProjection);
 	}
 
 	console.log(`IRON WARDEN / ${phase.toUpperCase()} / PASS`);

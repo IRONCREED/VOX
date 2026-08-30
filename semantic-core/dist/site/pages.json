@@ -11,7 +11,169 @@
 		"body": "IRON CREED is a recurring Zhovten Games character. His identity and role in the game remain classified for now; further details will be disclosed later.\n\nOutside the game, Credo is a personified technocrat—not a caricature dreaming of world domination, but a figure who treats every problem as an engineering system of conditions, constraints, failures, tests, and consequences.\n\nWithin the studio’s IT practice, he personifies the development process itself, joining code, research, scenarios, and publications into one traceable circuit. IRON CREED is therefore a character, a working voice, and a recurring figure across the project at once.",
 		"pageType": "about",
 		"status": "published",
-		"conversationViewId": "view.about.iron-creed"
+		"conversationViewId": "view.about.iron-creed",
+		"aboutStory": {
+			"transition": {
+				"eyebrow": "IRON CREED / ENGINEERING PRACTICE",
+				"title": "So, what do we actually do?",
+				"body": "Credo gives this process a voice, but the character stands for practical engineering work inside Zhovten Games: we build, structure, and maintain systems that must remain understandable after the next change.\n\nThe materials follow the same cycle. An idea begins in the studio, acquires a research or technical form, and is then adapted for IRON CREED with public routes, questions, relationships, and checks. The site presents not the drafting conversation, but its next verifiable edition."
+			},
+			"lifecycle": {
+				"eyebrow": "MATERIAL CYCLE",
+				"title": "From a studio idea to a verifiable publication",
+				"summary": "Zhovten Games remains the point of origin; IRON CREED becomes the public engineering adaptation, and verification results return to the next working cycle.",
+				"steps": [
+					{
+						"id": "studio",
+						"order": 1,
+						"title": "Zhovten Games",
+						"description": "An idea, problem, or research question emerges from the studio’s work."
+					},
+					{
+						"id": "research",
+						"order": 2,
+						"title": "Research and record",
+						"description": "Sources, reasoning, and the edition receive a durable form, including a Zenodo record where appropriate."
+					},
+					{
+						"id": "adaptation",
+						"order": 3,
+						"title": "IRON CREED adaptation",
+						"description": "The material is rebuilt for the site, translated, and connected to the semantic index."
+					},
+					{
+						"id": "verification",
+						"order": 4,
+						"title": "Verification and the next change",
+						"description": "WARDEN, indexes, and release rules verify the result; the findings return to the studio."
+					}
+				],
+				"examples": [
+					{
+						"id": "code-constitution",
+						"source": {
+							"label": "Code Constitution · Zenodo",
+							"href": "https://doi.org/10.5281/zenodo.21894242"
+						},
+						"result": {
+							"label": "The Constitution That Runs series",
+							"href": "/en/series/the-constitution-that-runs"
+						}
+					},
+					{
+						"id": "literate-programming",
+						"source": {
+							"label": "Literate Programming review · Zenodo",
+							"href": "https://doi.org/10.5281/zenodo.20608558"
+						},
+						"result": {
+							"label": "Why Documentation Matters",
+							"href": "/en/programming/why-documentation-matters"
+						}
+					}
+				]
+			},
+			"sections": [
+				{
+					"id": "devops-method",
+					"order": 1,
+					"kind": "service",
+					"status": "active",
+					"title": "DevOps as a way of working",
+					"summary": "We think in systems, build manageable infrastructure, and design change so that every release leaves the system stronger.",
+					"body": "For us, DevOps is how the entire engineering effort is organised: from the first architectural decision through deployment, observability, and the next change. We build websites, applications, infrastructure, and the tooling around them by joining development, automation, testing, security, and environment control into one process.\n\nA project is treated as a system of data, dependencies, rules, states, and verifiable transitions. This makes it possible to evolve a product without accumulating arbitrary decisions and to retain a clear picture of how it works today and how it may change tomorrow.",
+					"entries": []
+				},
+				{
+					"id": "corporate-knowledge",
+					"order": 2,
+					"kind": "service",
+					"status": "active",
+					"title": "Turning company data into working context for LLMs",
+					"summary": "We create a private corporate knowledge repository, build a structured company profile, and connect it to the LLM system chosen by the client.",
+					"body": "Companies accumulate far more knowledge than they can use effectively: documentation, internal rules, decision history, product material, technical specifications, correspondence, procedures, and the experience of individual specialists.\n\nWe assemble these sources into a managed private boundary, define the data structure, entity relationships, and access rules, and then form a coherent organisational profile. The LLM receives relevant corporate context from that profile and can work with it through chat, a specialised interface, or an integration with existing systems.\n\nThe model remains the client’s choice. Knowledge architecture is separated from a specific AI provider, allowing the system to evolve with the technology without repeatedly rebuilding the corporate knowledge base.",
+					"flow": [
+						"Data sources",
+						"Private repository",
+						"Company profile",
+						"LLM",
+						"Working interface"
+					],
+					"entries": []
+				},
+				{
+					"id": "ai-ready-websites",
+					"order": 3,
+					"kind": "service",
+					"status": "active",
+					"title": "A website that can be read by more than people",
+					"summary": "We build a structured index of a site’s materials, entities, and relationships so that search and AI systems can understand its meaning more accurately.",
+					"body": "A traditional website is designed primarily around pages and human navigation. AI systems need additional structure: explicit entities, relationships, metadata, stable routes, and an intelligible map of the available corpus.\n\nWe create a machine-readable index of the entire site. It can include materials, categories, questions, concepts, authors, sources, products, services, and the relationships between them. Ordinary content therefore acquires an additional semantic layer.\n\nThis improves indexing, AI-agent access, corpus search, and the later connection of dedicated LLM interfaces. IRON CREED uses this approach for its own corpus: public content has a structured index and explicit relationships between individual entities.",
+					"link": {
+						"label": "Open the corpus index",
+						"href": "/en/pages/corpus-index"
+					},
+					"entries": []
+				},
+				{
+					"id": "warden",
+					"order": 4,
+					"kind": "service",
+					"status": "active",
+					"title": "WARDEN — an independent project verification boundary",
+					"summary": "We build a test system alongside the product to verify its behaviour, structure, and critical invariants before a change reaches production.",
+					"body": "Product development creates change. WARDEN creates an independent mechanism for checking it. Each project defines properties the system must preserve: route availability, data structure, security rules, configuration integrity, build correctness, regression absence, and other critical conditions.\n\nWARDEN runs automated checks, records the results, and can block a release when the established criteria are not met. The checks live alongside the main code and evolve with it. The team gains a separate control boundary that asks one simple question before a significant change: does the system still preserve the properties on which it was built?",
+					"link": {
+						"label": "Open the public WARDEN",
+						"href": "https://github.com/IRONCREED/VOX/tree/main/constitutional-guard"
+					},
+					"entries": []
+				},
+				{
+					"id": "projects",
+					"order": 5,
+					"kind": "portfolio",
+					"status": "placeholder",
+					"title": "Systems already at work",
+					"summary": "We work with web projects, internal systems, automation, infrastructure, and products that require long-term engineering support.",
+					"body": "Our experience covers the creation and development of websites and web applications, support for existing systems, operational automation, security, infrastructure work, and experimental AI solutions. Future cases will show the problem, the system created, the approach applied, and the state of the product after implementation—not merely a final interface screenshot.",
+					"placeholder": "The library of verified public case studies is being prepared.",
+					"entries": []
+				},
+				{
+					"id": "testimonials",
+					"order": 6,
+					"kind": "testimonials",
+					"status": "placeholder",
+					"title": "What changes after implementation",
+					"summary": "The best engineering result is visible when a system becomes clearer, more predictable, and easier to evolve.",
+					"body": "This section will contain only authorised direct feedback about a specific effect: release stability, fewer manual operations, infrastructure transparency, information retrieval speed, control quality, or the ability to evolve a product safely. Every testimonial will include an approved identity format, role, company, and work context.",
+					"placeholder": "Testimonials will be published after client approval.",
+					"entries": []
+				},
+				{
+					"id": "contact",
+					"order": 7,
+					"kind": "contact",
+					"status": "active",
+					"title": "Describe the system that needs to be built or brought under control",
+					"summary": "We will examine the problem, current architecture, and constraints, then propose the next practical step.",
+					"body": "A short description of the project, its current state, and the outcome you want is enough to begin. It may be a new product, an existing website, a corporate knowledge base, an AI integration, automation, an infrastructure problem, or a system that has already become more complex than its documentation.\n\nAfter the initial review, we will identify which parts require development, audit, restructuring, or a separate control boundary and propose a practical format for the next stage.",
+					"fields": [
+						"Name",
+						"Email",
+						"Company",
+						"Project type",
+						"Problem description"
+					],
+					"link": {
+						"label": "Send an enquiry",
+						"href": "https://www.linkedin.com/company/zhovten-games/"
+					},
+					"entries": []
+				}
+			]
+		}
 	},
 	{
 		"id": "page.about.uk",
@@ -25,7 +187,169 @@
 		"body": "IRON CREED — наскрізний персонаж Zhovten Games. Його особистість і роль у грі поки засекречені; подробиці буде оприлюднено пізніше.\n\nПоза грою Кредо — персоніфікований образ технократа: не карикатурного претендента на світове панування, а суб’єкта, який розглядає кожну проблему як інженерну систему — через умови, обмеження, відмови, перевірки й наслідки.\n\nВ ІТ-напрямі студії він уособлює сам процес розроблення: пов’язує код, дослідження, сценарії та публікації в один простежуваний контур. Тому IRON CREED одночасно є персонажем, робочим голосом і наскрізною фігурою проєкту.",
 		"pageType": "about",
 		"status": "published",
-		"conversationViewId": "view.about.iron-creed"
+		"conversationViewId": "view.about.iron-creed",
+		"aboutStory": {
+			"transition": {
+				"eyebrow": "IRON CREED / ІНЖЕНЕРНА ПРАКТИКА",
+				"title": "Так от чим, власне, ми займаємося",
+				"body": "Кредо надає цьому процесу голос, але за персонажем стоїть практична інженерна робота Zhovten Games: ми створюємо, структуруємо й підтримуємо системи, які мають залишатися зрозумілими після наступної зміни.\n\nМатеріали проходять той самий цикл. Ідея спершу виникає в студії, отримує дослідницьку або технічну форму, а потім адаптується для IRON CREED — з публічними маршрутами, питаннями, зв’язками та перевірками. Сайт показує не чернеткову розмову, а наступну перевірювану редакцію."
+			},
+			"lifecycle": {
+				"eyebrow": "ЦИКЛ МАТЕРІАЛУ",
+				"title": "Від студійної ідеї до перевірюваної публікації",
+				"summary": "Zhovten Games залишається місцем походження; IRON CREED стає публічною інженерною адаптацією, а результати перевірки повертаються в наступний цикл роботи.",
+				"steps": [
+					{
+						"id": "studio",
+						"order": 1,
+						"title": "Zhovten Games",
+						"description": "Ідея, задача або дослідницьке питання виникає в роботі студії."
+					},
+					{
+						"id": "research",
+						"order": 2,
+						"title": "Дослідження й фіксація",
+						"description": "Джерела, аргументи й версія отримують довготривалу форму — зокрема запис Zenodo, коли він доречний."
+					},
+					{
+						"id": "adaptation",
+						"order": 3,
+						"title": "Адаптація IRON CREED",
+						"description": "Матеріал перебудовується для читання на сайті, перекладається та входить до семантичного індексу."
+					},
+					{
+						"id": "verification",
+						"order": 4,
+						"title": "Перевірка й наступна зміна",
+						"description": "WARDEN, індекси та випускні правила перевіряють результат; висновки повертаються до студії."
+					}
+				],
+				"examples": [
+					{
+						"id": "code-constitution",
+						"source": {
+							"label": "Конституція коду · Zenodo",
+							"href": "https://doi.org/10.5281/zenodo.21894242"
+						},
+						"result": {
+							"label": "Серія «Конституція, що виконується»",
+							"href": "/uk/series/konstytutsiia-shcho-vykonuietsia"
+						}
+					},
+					{
+						"id": "literate-programming",
+						"source": {
+							"label": "Огляд літературного програмування · Zenodo",
+							"href": "https://doi.org/10.5281/zenodo.20608558"
+						},
+						"result": {
+							"label": "«Навіщо потрібна документація»",
+							"href": "/uk/programming/navishcho-potribna-dokumentatsiia"
+						}
+					}
+				]
+			},
+			"sections": [
+				{
+					"id": "devops-method",
+					"order": 1,
+					"kind": "service",
+					"status": "active",
+					"title": "DevOps як метод життя",
+					"summary": "Мислимо системами, будуємо керовану інфраструктуру та проєктуємо зміни так, щоб кожен наступний реліз робив систему сильнішою.",
+					"body": "Для нас DevOps — це спосіб організації всієї інженерної роботи: від першого архітектурного рішення до розгортання, спостереження за системою та наступної зміни. Ми створюємо сайти, застосунки, інфраструктуру й інструменти навколо них, поєднуючи розробку, автоматизацію, тестування, безпеку та контроль середовища в єдиний процес.\n\nПроєкт розглядається як система даних, залежностей, правил, станів і перевірюваних переходів між ними. Такий підхід дозволяє розвивати продукт без накопичення хаотичних рішень і зберігати зрозумілу картину того, як він працює сьогодні та як може змінюватися завтра.",
+					"entries": []
+				},
+				{
+					"id": "corporate-knowledge",
+					"order": 2,
+					"kind": "service",
+					"status": "active",
+					"title": "Перетворюємо дані компанії на робочий контекст для LLM",
+					"summary": "Створюємо закритий репозиторій корпоративних знань, формуємо структурований профіль компанії та підключаємо його до LLM-системи, яку обирає клієнт.",
+					"body": "Компанії накопичують значно більше знань, ніж здатні ефективно використовувати: документацію, внутрішні правила, історію рішень, матеріали про продукти, технічні специфікації, переписки, процедури та досвід окремих спеціалістів.\n\nМи збираємо ці джерела в керований закритий контур, визначаємо структуру даних, зв’язки між сутностями та правила доступу, після чого формуємо цілісний профіль організації. На його основі LLM отримує релевантний корпоративний контекст і може працювати з ним через чат, спеціалізований інтерфейс або інтеграцію з наявними системами.\n\nМодель залишається вибором клієнта. Архітектура знань відокремлюється від конкретного постачальника AI, тому система може розвиватися разом із технологіями без повторної перебудови корпоративної бази знань.",
+					"flow": [
+						"Джерела даних",
+						"Закритий репозиторій",
+						"Профіль компанії",
+						"LLM",
+						"Робочий інтерфейс"
+					],
+					"entries": []
+				},
+				{
+					"id": "ai-ready-websites",
+					"order": 3,
+					"kind": "service",
+					"status": "active",
+					"title": "Сайт, який можуть читати не тільки люди",
+					"summary": "Будуємо структурований індекс матеріалів, сутностей і зв’язків сайту, щоб пошукові та AI-системи точніше розуміли його зміст.",
+					"body": "Традиційний сайт орієнтується передусім на сторінки та навігацію для людини. AI-системам потрібна додаткова структура: чіткі сутності, взаємозв’язки, метадані, стабільні маршрути та зрозуміла карта доступного корпусу.\n\nМи створюємо машинно-читабельний індекс усього змісту сайту. До нього можуть входити матеріали, категорії, питання, поняття, автори, джерела, продукти, послуги та зв’язки між ними. Звичайний контент таким чином отримує додатковий семантичний шар.\n\nЦе спрощує індексацію, роботу AI-агентів, пошук по корпусу та подальше підключення власних LLM-інтерфейсів. IRON CREED використовує цей підхід для власного корпусу: публічний контент має структурований індекс і зв’язки між окремими сутностями.",
+					"link": {
+						"label": "Відкрити індекс корпусу",
+						"href": "/uk/pages/corpus-index"
+					},
+					"entries": []
+				},
+				{
+					"id": "warden",
+					"order": 4,
+					"kind": "service",
+					"status": "active",
+					"title": "WARDEN — незалежний контур перевірки проєкту",
+					"summary": "Будуємо систему тестування поряд із продуктом, яка перевіряє його поведінку, структуру та критичні інваріанти до потрапляння змін у production.",
+					"body": "Розробка продукту створює зміни. WARDEN створює незалежний механізм їх перевірки. Для кожного проєкту визначаються властивості, які система повинна зберігати: доступність маршрутів, структура даних, правила безпеки, цілісність конфігурації, коректність збірки, відсутність регресій та інші критичні умови.\n\nWARDEN запускає автоматизовані перевірки, фіксує результати та може блокувати реліз, якщо встановлені критерії не виконані. Перевірки існують поруч із основним кодом і розвиваються разом із ним. Команда отримує окремий контрольний контур, який перед значною зміною відповідає на просте питання: чи зберігає система властивості, на яких її було побудовано.",
+					"link": {
+						"label": "Відкрити публічний WARDEN",
+						"href": "https://github.com/IRONCREED/VOX/tree/main/constitutional-guard"
+					},
+					"entries": []
+				},
+				{
+					"id": "projects",
+					"order": 5,
+					"kind": "portfolio",
+					"status": "placeholder",
+					"title": "Системи, які вже працюють",
+					"summary": "Працюємо з вебпроєктами, внутрішніми системами, автоматизацією, інфраструктурою та продуктами, які потребують довгострокового інженерного супроводу.",
+					"body": "Наш досвід охоплює створення й розвиток сайтів і вебзастосунків, підтримку наявних систем, автоматизацію операційних процесів, безпеку, інфраструктурні задачі та експериментальні AI-рішення. Майбутні кейси показуватимуть задачу, створену систему, застосований підхід і стан продукту після впровадження — не лише фінальний скриншот.",
+					"placeholder": "Бібліотека перевірених публічних кейсів готується.",
+					"entries": []
+				},
+				{
+					"id": "testimonials",
+					"order": 6,
+					"kind": "testimonials",
+					"status": "placeholder",
+					"title": "Що змінюється після впровадження",
+					"summary": "Найкращий результат інженерної роботи проявляється в тому, що система стає зрозумілішою, передбачуванішою та простішою в розвитку.",
+					"body": "Тут з’являтимуться лише дозволені прямі відгуки про конкретний ефект роботи: стабільність релізів, зменшення ручних операцій, прозорість інфраструктури, швидкість пошуку інформації, якість контролю або можливість безпечно розвивати продукт. Кожен відгук матиме погоджену ідентифікацію, роль, компанію та контекст виконаної роботи.",
+					"placeholder": "Відгуки буде опубліковано після погодження з клієнтами.",
+					"entries": []
+				},
+				{
+					"id": "contact",
+					"order": 7,
+					"kind": "contact",
+					"status": "active",
+					"title": "Опишіть систему, яку потрібно побудувати або привести до ладу",
+					"summary": "Розберемо задачу, поточну архітектуру та обмеження й запропонуємо наступний практичний крок.",
+					"body": "Нам достатньо короткого опису проєкту, його поточного стану та результату, якого ви хочете досягти. Це може бути новий продукт, наявний сайт, корпоративна база знань, AI-інтеграція, автоматизація, інфраструктурна проблема або система, яка вже стала складнішою за документацію до неї.\n\nПісля первинного розбору ми визначимо, які частини задачі потребують розробки, аудиту, структуризації або окремого контрольного контуру, та запропонуємо формат подальшої роботи.",
+					"fields": [
+						"Ім’я",
+						"Email",
+						"Компанія",
+						"Тип проєкту",
+						"Опис задачі"
+					],
+					"link": {
+						"label": "Надіслати запит",
+						"href": "https://www.linkedin.com/company/zhovten-games/"
+					},
+					"entries": []
+				}
+			]
+		}
 	},
 	{
 		"id": "page.ai-policy.en",
@@ -88,7 +412,7 @@
 		"description": "The public licensing map for IRON CREED editorial material, code, branding, and third-party components.",
 		"shortLabel": "Licences",
 		"eyebrow": "IRON CREED / LICENSING MAP",
-		"body": "Effective date: **20 August 2026**. This map adapts the shared [Repository Licensing Policy](https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy) version 1.0.0, pinned at commit `6e4c2627717c079827ed4aa9044a5346b3ea3ddb`.\n\n## 1. Default map\n\n| Scope | Licence |\n| --- | --- |\n| Original articles, prose, documentation, publication sources, and non-brand editorial material | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |\n| Original source code, scripts, tests, examples, reusable schemas, and templates | [MIT](https://opensource.org/license/mit) |\n| Names, logos, trade marks, characters, brand assets, and visual identity | No licence granted; all rights reserved |\n| Third-party material and dependencies | Their original licences and notices |\n\nThis map is not a project-wide dual licence. The applicable licence depends on the type and exact location of the material.\n\n## 2. Specific notices\n\nA file-, subtree-, or material-specific notice takes precedence over the default map within its scope. The licence stated in a particular Zenodo record governs that archived edition. Local overrides cannot weaken third-party obligations.\n\n## 3. Precedence\n\n1. Mandatory third-party terms and notices.\n2. File-level SPDX identifiers and specific notices.\n3. Subtree licences and material-specific terms.\n4. Express project-specific overrides.\n5. The default map above.\n\n## 4. Attribution\n\nFor CC BY-SA 4.0 material, identify the author or authors and title, link to the canonical page or DOI, indicate changes, and preserve the same licence for the adapted edition. The MIT licence requires preservation of its copyright and permission notice in copies of the code.\n\n## 5. Branding\n\nPublication of code or an article does not grant permission to use the names `IRON CREED` or `Zhovten Games`, logos, the crest, characters, the game world, or the visual identity in a way that implies endorsement, partnership, or official origin.\n\n## 6. Limitation\n\nThis page is an operational licensing map, not legal advice. Jurisdiction-specific questions, employment-related ownership, trade marks, or complex third-party dependencies require professional legal review.\n\n## 7. Public source and releases\n\nEvery production deployment of the site is accompanied by an update to [IRONCREED/VOX](https://github.com/IRONCREED/VOX). VOX contains only the verified allowlisted public projection: application code, required runtime data, the build and test contract, licensing notices, English explanatory documentation, the adopted project Constitution, Profile and Legislation, and the WARDEN source. The universal Code Constitution is included as a Git submodule pinned to full commit `6bdb3f85236a45254724e7dabee840b2c573f5da`. The editorial corpus, operational prompts, attestations, internal reports, and secrets are not published. `VOX-PUBLICATION.json` ties each snapshot to the exact canonical Sites commit and its gitlinks; that Sites commit, not the derived VOX repository, remains the canonical engineering state.",
+		"body": "Effective date: **30 August 2026**. This map adapts the shared [Repository Licensing Policy](https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy) version 1.0.0, pinned at commit `6e4c2627717c079827ed4aa9044a5346b3ea3ddb`.\n\n## 1. Default map\n\n| Scope | Licence |\n| --- | --- |\n| Original articles, prose, documentation, publication sources, and non-brand editorial material | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |\n| Original source code, scripts, tests, examples, reusable schemas, and templates | [MIT](https://opensource.org/license/mit) |\n| Names, logos, trade marks, characters, brand assets, and visual identity | No licence granted; all rights reserved |\n| Anthem recording and other audio under `public/audio/` | No licence granted; all rights reserved |\n| Third-party material and dependencies | Their original licences and notices |\n\nThis map is not a project-wide dual licence. The applicable licence depends on the type and exact location of the material.\n\n## 2. Specific notices\n\nA file-, subtree-, or material-specific notice takes precedence over the default map within its scope. The licence stated in a particular Zenodo record governs that archived edition. Local overrides cannot weaken third-party obligations.\n\n## 3. Precedence\n\n1. Mandatory third-party terms and notices.\n2. File-level SPDX identifiers and specific notices.\n3. Subtree licences and material-specific terms.\n4. Express project-specific overrides.\n5. The default map above.\n\n## 4. Attribution\n\nFor CC BY-SA 4.0 material, identify the author or authors and title, link to the canonical page or DOI, indicate changes, and preserve the same licence for the adapted edition. The MIT licence requires preservation of its copyright and permission notice in copies of the code.\n\n## 5. Branding and audio\n\nPublication of code or an article does not grant permission to use the names `IRON CREED` or `Zhovten Games`, logos, the crest, characters, the game world, or the visual identity in a way that implies endorsement, partnership, or official origin. The anthem copy is supplied only for playback as part of the site; no permission is granted to extract, redistribute, remix, or otherwise reuse it.\n\n## 6. Limitation\n\nThis page is an operational licensing map, not legal advice. Jurisdiction-specific questions, employment-related ownership, trade marks, or complex third-party dependencies require professional legal review.\n\n## 7. Public source and releases\n\nEvery production deployment of the site is accompanied by an update to [IRONCREED/VOX](https://github.com/IRONCREED/VOX). VOX contains only the verified allowlisted public projection: application code, required runtime data, the build and test contract, licensing notices, English explanatory documentation, the adopted project Constitution, Profile and Legislation, and the complete public WARDEN surface. The universal Code Constitution and Repository Licensing Policy are included as separate Git submodules pinned respectively to full commits `6bdb3f85236a45254724e7dabee840b2c573f5da` and `6e4c2627717c079827ed4aa9044a5346b3ea3ddb`. The editorial corpus, operational prompts, attestations, internal reports, and secrets are not published. `VOX-PUBLICATION.json` ties each snapshot to the exact canonical Sites commit and its gitlinks; that Sites commit, not the derived VOX repository, remains the canonical engineering state.",
 		"pageType": "policy",
 		"status": "published"
 	},
@@ -101,7 +425,7 @@
 		"description": "Публічна карта ліцензій для редакційних матеріалів, коду, бренду та сторонніх компонентів IRON CREED.",
 		"shortLabel": "Ліцензії",
 		"eyebrow": "IRON CREED / ЛІЦЕНЗІЙНА КАРТА",
-		"body": "Дата набрання чинності: **20 серпня 2026 року**. Ця карта адаптує спільну [Repository Licensing Policy](https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy) редакції 1.0.0, закріплену на commit `6e4c2627717c079827ed4aa9044a5346b3ea3ddb`.\n\n## 1. Типова карта\n\n| Область | Ліцензія |\n| --- | --- |\n| Оригінальні статті, проза, документація, публікаційні джерела та редакційні матеріали без брендингу | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |\n| Оригінальний вихідний код, скрипти, тести, приклади, багаторазові схеми й шаблони | [MIT](https://opensource.org/license/mit) |\n| Назви, логотипи, торговельні марки, персонажі, brand assets і візуальна ідентичність | Ліцензія не надається; усі права збережено |\n| Сторонні матеріали й залежності | Їхні вихідні ліцензії та повідомлення |\n\nЦя карта не є загальною подвійною ліцензією для всього проєкту. Ліцензія визначається типом і точним розташуванням матеріалу.\n\n## 2. Спеціальні повідомлення\n\nФайлове, subtree- або матеріал-специфічне повідомлення має перевагу над типовою картою для відповідної області. Ліцензія, зазначена в конкретному записі Zenodo, регулює архівовану редакцію цього матеріалу. Сторонні умови неможливо послабити локальним override.\n\n## 3. Порядок пріоритету\n\n1. Обов’язкові сторонні умови та повідомлення.\n2. Файлові SPDX-позначки й спеціальні повідомлення.\n3. Subtree-ліцензії та material-specific умови.\n4. Явні project-specific overrides.\n5. Типова карта вище.\n\n## 4. Атрибуція\n\nДля матеріалів CC BY-SA 4.0 вкажіть автора або авторів, назву, посилання на канонічну сторінку або DOI, позначте зміни та збережіть ту саму ліцензію для похідної редакції. Ліцензія MIT вимагає збереження copyright і permission notice у копіях коду.\n\n## 5. Бренд\n\nПублікація коду чи статті не надає права використовувати назви `IRON CREED` або `Zhovten Games`, логотипи, герб, персонажів, ігровий світ чи оформлення так, ніби існує схвалення, партнерство або офіційне походження.\n\n## 6. Обмеження\n\nЦя сторінка є операційною картою ліцензування, а не юридичною консультацією. Питання щодо юрисдикції, трудового авторства, торговельних марок або складних сторонніх залежностей потребують професійної правової перевірки.\n\n## 7. Публічний вихідний код і випуски\n\nКожне production-розгортання сайту супроводжується оновленням [IRONCREED/VOX](https://github.com/IRONCREED/VOX). VOX містить лише перевірену публічну проєкцію за жорстким білим списком: прикладний код, необхідні runtime-дані, build/test contract, ліцензійні повідомлення, англомовну пояснювальну документацію, прийняті проєктні Конституцію, Профіль і Законодавство та вихідний код WARDEN. Універсальна Конституція коду додається як git-submodule, закріплений на повному commit `6bdb3f85236a45254724e7dabee840b2c573f5da`. Редакційний корпус, операційні промпти, посвідчення, внутрішні звіти й секрети не публікуються. `VOX-PUBLICATION.json` пов’язує кожен знімок із точним канонічним Sites-комітом і переліком gitlinks; канонічним інженерним станом залишається цей Sites-коміт, а не похідний репозиторій VOX.",
+		"body": "Дата набрання чинності: **30 серпня 2026 року**. Ця карта адаптує спільну [Repository Licensing Policy](https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy) редакції 1.0.0, закріплену на commit `6e4c2627717c079827ed4aa9044a5346b3ea3ddb`.\n\n## 1. Типова карта\n\n| Область | Ліцензія |\n| --- | --- |\n| Оригінальні статті, проза, документація, публікаційні джерела та редакційні матеріали без брендингу | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |\n| Оригінальний вихідний код, скрипти, тести, приклади, багаторазові схеми й шаблони | [MIT](https://opensource.org/license/mit) |\n| Назви, логотипи, торговельні марки, персонажі, brand assets і візуальна ідентичність | Ліцензія не надається; усі права збережено |\n| Запис гімну та інше аудіо в `public/audio/` | Ліцензія не надається; усі права збережено |\n| Сторонні матеріали й залежності | Їхні вихідні ліцензії та повідомлення |\n\nЦя карта не є загальною подвійною ліцензією для всього проєкту. Ліцензія визначається типом і точним розташуванням матеріалу.\n\n## 2. Спеціальні повідомлення\n\nФайлове, subtree- або матеріал-специфічне повідомлення має перевагу над типовою картою для відповідної області. Ліцензія, зазначена в конкретному записі Zenodo, регулює архівовану редакцію цього матеріалу. Сторонні умови неможливо послабити локальним override.\n\n## 3. Порядок пріоритету\n\n1. Обов’язкові сторонні умови та повідомлення.\n2. Файлові SPDX-позначки й спеціальні повідомлення.\n3. Subtree-ліцензії та material-specific умови.\n4. Явні project-specific overrides.\n5. Типова карта вище.\n\n## 4. Атрибуція\n\nДля матеріалів CC BY-SA 4.0 вкажіть автора або авторів, назву, посилання на канонічну сторінку або DOI, позначте зміни та збережіть ту саму ліцензію для похідної редакції. Ліцензія MIT вимагає збереження copyright і permission notice у копіях коду.\n\n## 5. Бренд і аудіо\n\nПублікація коду чи статті не надає права використовувати назви `IRON CREED` або `Zhovten Games`, логотипи, герб, персонажів, ігровий світ чи оформлення так, ніби існує схвалення, партнерство або офіційне походження. Аудіокопія гімну надається лише для відтворення як частина сайту; права на вилучення, повторне поширення, ремікс або інше використання не надаються.\n\n## 6. Обмеження\n\nЦя сторінка є операційною картою ліцензування, а не юридичною консультацією. Питання щодо юрисдикції, трудового авторства, торговельних марок або складних сторонніх залежностей потребують професійної правової перевірки.\n\n## 7. Публічний вихідний код і випуски\n\nКожне production-розгортання сайту супроводжується оновленням [IRONCREED/VOX](https://github.com/IRONCREED/VOX). VOX містить лише перевірену публічну проєкцію за жорстким білим списком: прикладний код, необхідні runtime-дані, build/test contract, ліцензійні повідомлення, англомовну пояснювальну документацію, прийняті проєктні Конституцію, Профіль і Законодавство та повний публічний контур WARDEN. Універсальна Конституція коду та Repository Licensing Policy додаються окремими git-submodule, закріпленими відповідно на повних commit `6bdb3f85236a45254724e7dabee840b2c573f5da` і `6e4c2627717c079827ed4aa9044a5346b3ea3ddb`. Редакційний корпус, операційні промпти, посвідчення, внутрішні звіти й секрети не публікуються. `VOX-PUBLICATION.json` пов’язує кожен знімок із точним канонічним Sites-комітом і переліком gitlinks; канонічним інженерним станом залишається цей Sites-коміт, а не похідний репозиторій VOX.",
 		"pageType": "policy",
 		"status": "published"
 	},
@@ -114,7 +438,7 @@
 		"description": "The actual data-processing state of the IRON CREED website and the role of external infrastructure.",
 		"shortLabel": "Privacy",
 		"eyebrow": "IRON CREED / PRIVACY",
-		"body": "Effective date: **30 August 2026**.\n\n## 1. Who we are\n\nIRON CREED is a Zhovten Games project. The site publishes bilingual material and local interactive scenarios.\n\n## 2. Current processing state\n\nThe application has no user registration, first-party database, comments, analytics, advertising profile, or free-text AI input. The companion panel uses pre-approved answers and does not send text to an external LLM while a visitor browses the site.\n\n## 3. Local storage\n\nThe browser locally stores the selected colour theme, panel state, completion of the one-time welcome window, and acknowledgements of notices for specific materials. During the current session it also remembers that the loading screen has already been shown. These values remain on the device, are not sent to IRON CREED, and do not create an account.\n\n## 4. Technical logs\n\nHosting and security infrastructure may process ordinary network data such as IP address, browser type, request time, and security logs. Infrastructure operators process this data under their own terms to deliver, diagnose, and protect the service.\n\n## 5. External audio\n\nThe IRON CREED anthem is not loaded automatically. When you press play, the browser requests the audio file directly from Suno infrastructure; that operator may receive ordinary network data under its own terms. IRON CREED does not store listening history.\n\n## 6. External links\n\nLinks to GitHub, Zenodo, ORCID, InterDead, LinkedIn, and other sites open resources with their own privacy policies. IRON CREED does not control their subsequent processing.\n\n## 7. Feature changes\n\nAdding accounts, analytics, an external LLM, input forms, or server-side storage requires a prior update to this Policy and the project Legislation.\n\n## 8. Rights and contact\n\nDepending on jurisdiction, you may have rights of access, correction, deletion, restriction, or objection concerning personal data actually processed by the relevant operator. For project enquiries, use the [Zhovten Games LinkedIn page](https://www.linkedin.com/company/zhovten-games/).",
+		"body": "Effective date: **30 August 2026**.\n\n## 1. Who we are\n\nIRON CREED is a Zhovten Games project. The site publishes bilingual material and local interactive scenarios.\n\n## 2. Current processing state\n\nThe application has no user registration, first-party database, comments, analytics, advertising profile, or free-text AI input. The companion panel uses pre-approved answers and does not send text to an external LLM while a visitor browses the site.\n\n## 3. Local storage\n\nThe browser locally stores the selected colour theme, panel state, completion of the one-time welcome window, and acknowledgements of notices for specific materials. During the current session it also remembers that the loading screen has already been shown. These values remain on the device, are not sent to IRON CREED, and do not create an account.\n\n## 4. Technical logs\n\nHosting and security infrastructure may process ordinary network data such as IP address, browser type, request time, and security logs. Infrastructure operators process this data under their own terms to deliver, diagnose, and protect the service.\n\n## 5. Local audio\n\nThe IRON CREED anthem is not loaded automatically. After you press play, the browser receives a verified audio copy as a same-origin site asset: starting or stopping playback does not make a direct request to Suno, and IRON CREED does not store listening history. The original Suno publication remains linked as source attribution.\n\n## 6. External links\n\nLinks to GitHub, Zenodo, ORCID, InterDead, LinkedIn, and other sites open resources with their own privacy policies. IRON CREED does not control their subsequent processing.\n\n## 7. Feature changes\n\nAdding accounts, analytics, an external LLM, input forms, or server-side storage requires a prior update to this Policy and the project Legislation.\n\n## 8. Rights and contact\n\nDepending on jurisdiction, you may have rights of access, correction, deletion, restriction, or objection concerning personal data actually processed by the relevant operator. For project enquiries, use the [Zhovten Games LinkedIn page](https://www.linkedin.com/company/zhovten-games/).",
 		"pageType": "policy",
 		"status": "published"
 	},
@@ -127,7 +451,7 @@
 		"description": "Фактичний стан обробки даних на сайті IRON CREED та роль зовнішньої інфраструктури.",
 		"shortLabel": "Приватність",
 		"eyebrow": "IRON CREED / КОНФІДЕНЦІЙНІСТЬ",
-		"body": "Дата набрання чинності: **30 серпня 2026 року**.\n\n## 1. Хто ми\n\nIRON CREED є проєктом Zhovten Games. Сайт публікує двомовні матеріали та локальні інтерактивні сценарії.\n\n## 2. Поточний стан обробки даних\n\nЗастосунок не має реєстрації користувачів, власної бази даних, коментарів, аналітики, рекламного профілювання або форми вільного введення для ШІ. Панель компаньйона працює з наперед затвердженими відповідями й не надсилає текст зовнішній LLM під час перегляду.\n\n## 3. Локальне зберігання\n\nБраузер локально зберігає вибір колірної теми, стан панелі, факт проходження одноразового вітального вікна та підтвердження попереджень про вміст конкретних матеріалів. У межах поточного сеансу він також запам’ятовує, що завантажувальний екран уже було показано. Ці значення залишаються на пристрої, не передаються IRON CREED і не утворюють облікового запису.\n\n## 4. Технічні журнали\n\nХостингова й захисна інфраструктура може обробляти стандартні мережеві дані, зокрема IP-адресу, тип браузера, час запиту та журнали безпеки. Така обробка виконується операторами інфраструктури за їхніми умовами для доставки, діагностики та захисту сервісу.\n\n## 5. Зовнішнє аудіо\n\nГімн IRON CREED не завантажується автоматично. Коли ви натискаєте кнопку відтворення, браузер напряму запитує аудіофайл в інфраструктури Suno; цей оператор може отримати стандартні мережеві дані за власними умовами. IRON CREED не зберігає історію прослуховування.\n\n## 6. Зовнішні посилання\n\nПереходи на GitHub, Zenodo, ORCID, InterDead, LinkedIn та інші сайти відкривають ресурси, що мають власні політики конфіденційності. IRON CREED не контролює їхню подальшу обробку даних.\n\n## 7. Зміна функцій\n\nПідключення облікових записів, аналітики, зовнішньої LLM, форм введення або серверного зберігання вимагатиме попереднього оновлення цієї Політики й проєктного Законодавства.\n\n## 8. Права й контакт\n\nЗалежно від юрисдикції ви можете мати права на доступ, виправлення, видалення, обмеження або заперечення щодо персональних даних, які фактично обробляє відповідний оператор. Для звернень до проєкту використовуйте [сторінку Zhovten Games у LinkedIn](https://www.linkedin.com/company/zhovten-games/).",
+		"body": "Дата набрання чинності: **30 серпня 2026 року**.\n\n## 1. Хто ми\n\nIRON CREED є проєктом Zhovten Games. Сайт публікує двомовні матеріали та локальні інтерактивні сценарії.\n\n## 2. Поточний стан обробки даних\n\nЗастосунок не має реєстрації користувачів, власної бази даних, коментарів, аналітики, рекламного профілювання або форми вільного введення для ШІ. Панель компаньйона працює з наперед затвердженими відповідями й не надсилає текст зовнішній LLM під час перегляду.\n\n## 3. Локальне зберігання\n\nБраузер локально зберігає вибір колірної теми, стан панелі, факт проходження одноразового вітального вікна та підтвердження попереджень про вміст конкретних матеріалів. У межах поточного сеансу він також запам’ятовує, що завантажувальний екран уже було показано. Ці значення залишаються на пристрої, не передаються IRON CREED і не утворюють облікового запису.\n\n## 4. Технічні журнали\n\nХостингова й захисна інфраструктура може обробляти стандартні мережеві дані, зокрема IP-адресу, тип браузера, час запиту та журнали безпеки. Така обробка виконується операторами інфраструктури за їхніми умовами для доставки, діагностики та захисту сервісу.\n\n## 5. Локальне аудіо\n\nГімн IRON CREED не завантажується автоматично. Після натискання кнопки відтворення браузер отримує перевірену аудіокопію як ресурс того самого сайту: запуск і зупинка не створюють прямого запиту до Suno, а IRON CREED не зберігає історію прослуховування. Посилання на вихідну публікацію Suno зберігається як атрибуція джерела.\n\n## 6. Зовнішні посилання\n\nПереходи на GitHub, Zenodo, ORCID, InterDead, LinkedIn та інші сайти відкривають ресурси, що мають власні політики конфіденційності. IRON CREED не контролює їхню подальшу обробку даних.\n\n## 7. Зміна функцій\n\nПідключення облікових записів, аналітики, зовнішньої LLM, форм введення або серверного зберігання вимагатиме попереднього оновлення цієї Політики й проєктного Законодавства.\n\n## 8. Права й контакт\n\nЗалежно від юрисдикції ви можете мати права на доступ, виправлення, видалення, обмеження або заперечення щодо персональних даних, які фактично обробляє відповідний оператор. Для звернень до проєкту використовуйте [сторінку Zhovten Games у LinkedIn](https://www.linkedin.com/company/zhovten-games/).",
 		"pageType": "policy",
 		"status": "published"
 	},

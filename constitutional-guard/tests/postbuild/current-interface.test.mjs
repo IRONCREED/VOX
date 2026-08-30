@@ -285,6 +285,16 @@ test('the build, policies, and four localized search maps are public', async () 
 	assert.match(aboutHtml, /identity and role in the game remain classified/);
 	assert.match(aboutHtml, /personified engineering process/);
 	assert.doesNotMatch(aboutHtml, /military medical-AI prototype/);
+	assert.match(aboutHtml, /So, what do we actually do\?/);
+	assert.match(aboutHtml, /From a studio idea to a verifiable publication/);
+	assert.match(aboutHtml, /DevOps as a way of working/);
+	assert.match(aboutHtml, /A website that can be read by more than people/);
+	assert.match(aboutHtml, /The library of verified public case studies is being prepared/);
+	assert.match(aboutHtml, /Testimonials will be published after client approval/);
+	assert.match(
+		aboutHtml,
+		/href="https:\/\/github\.com\/IRONCREED\/VOX\/tree\/main\/constitutional-guard"/,
+	);
 	assert.match(aboutHtml, /OpenAI GPT/);
 	assert.match(aboutHtml, /https:\/\/interdead\.phantom-draft\.com\//);
 	assert.match(aboutHtml, /AI companion/);
@@ -346,7 +356,7 @@ test('the canonical monogram, welcome dialog, social links, and loader copy shar
 	assert.equal(response.status, 200);
 	const html = await response.text();
 
-	assert.match(html, /data-brand-state="ic-monogram-2026"/);
+	assert.match(html, /data-brand-state="ic-faceted-monogram-2026"/);
 	assert.match(html, /src="\/brand\/iron-creed-mark\.svg"/);
 	assert.match(html, /class="brand-mark brand-mark--header"/);
 	assert.match(html, /class="brand-mark brand-mark--loader"/);
@@ -381,7 +391,10 @@ test('the header exposes the persistent opt-in anthem player after the theme con
 	);
 	assert.match(enHtml, /aria-label="Play the anthem: IRON CREED"/);
 	assert.match(enHtml, /<audio[^>]*aria-hidden="true"[^>]*preload="none"/);
-	assert.match(enHtml, /https:\/\/cdn1\.suno\.ai\/21d23ef4-802c-47c2-a30d-2578decc08e1\.mp3/);
+	assert.match(enHtml, /src="\/audio\/iron-creed-anthem\.m4a"/);
+	assert.doesNotMatch(enHtml, /cdn1\.suno\.ai/);
 	assert.doesNotMatch(enHtml, /autoplay/);
-	assert.match(await privacyResponse.text(), /requests[\s\S]*directly from Suno/i);
+	const privacyHtml = await privacyResponse.text();
+	assert.match(privacyHtml, /same-origin site asset/i);
+	assert.doesNotMatch(privacyHtml, /requests[\s\S]*directly from Suno/i);
 });

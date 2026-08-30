@@ -1,7 +1,7 @@
 {
 	"schemaVersion": "2.0.0",
 	"id": "icw-vox-public-source-001",
-	"revision": "2.2.0",
+	"revision": "2.3.0",
 	"destination": {
 		"owner": "IRONCREED",
 		"repository": "VOX",
@@ -9,8 +9,8 @@
 	},
 	"outputDirectory": "work/vox-export",
 	"managedMarker": "VOX-PUBLICATION.json",
-	"maximumFileBytes": 2500000,
-	"maximumTotalBytes": 12000000,
+	"maximumFileBytes": 8000000,
+	"maximumTotalBytes": 24000000,
 	"trees": [
 		{
 			"source": "app",
@@ -40,7 +40,7 @@
 		{
 			"source": "public",
 			"destination": "public",
-			"extensions": [".png", ".svg", ".xml"]
+			"extensions": [".m4a", ".png", ".svg", ".xml"]
 		},
 		{
 			"source": "semantic-core/dist/site",
@@ -196,6 +196,11 @@
 			"path": "code-constitution",
 			"repository": "https://github.com/FOP-Oksana-Dubinetska/code-constitution.git",
 			"commit": "6bdb3f85236a45254724e7dabee840b2c573f5da"
+		},
+		{
+			"path": "repository-licensing-policy",
+			"repository": "https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy.git",
+			"commit": "6e4c2627717c079827ed4aa9044a5346b3ea3ddb"
 		}
 	],
 	"generatedFiles": ["package.json", "VOX-PUBLICATION.json"],

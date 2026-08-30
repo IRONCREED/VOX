@@ -23,7 +23,7 @@
 			"id": "icw-act-development-001",
 			"path": "governance/legislation/DEVELOPMENT.md",
 			"language": "ru",
-			"revision": "1.6.0",
+			"revision": "1.7.0",
 			"status": "active",
 			"classes": ["Z01", "Z02", "Z07", "Z08", "Z09", "Z11"]
 		},
@@ -31,7 +31,7 @@
 			"id": "icw-act-site-experience-001",
 			"path": "governance/legislation/SITE_EXPERIENCE.md",
 			"language": "ru",
-			"revision": "1.7.0",
+			"revision": "1.8.0",
 			"status": "active",
 			"classes": ["Z02", "Z09", "Z11"]
 		},
@@ -39,7 +39,7 @@
 			"id": "icw-act-patterns-001",
 			"path": "governance/legislation/PATTERNS.md",
 			"language": "ru",
-			"revision": "0.14.0",
+			"revision": "0.15.0",
 			"status": "active",
 			"classes": ["Z12"]
 		},
@@ -122,7 +122,7 @@
 			"id": "icw-act-vox-public-source-001",
 			"path": "governance/legislation/VOX_PUBLIC_SOURCE_2026-08-14.md",
 			"language": "ru",
-			"revision": "2.2.0",
+			"revision": "2.3.0",
 			"status": "active",
 			"classes": ["Z02", "Z07", "Z08", "Z09", "Z11", "Z12"]
 		}

@@ -6,11 +6,11 @@ released interface, the adopted project governance and IRON WARDEN audit
 surface, build and test configuration, licensing notices, and English public
 documentation.
 
-- Website version: `1.8.0`
-- Public corpus version: `1.9.0`
-- Application source commit: `63a6428b9299ef96034c9542bd8baf01c754eb5c`
-- Corpus projection source commit: `1bb58ee673d9bd4f35eaa2c7e4ede429f577206f`
-- Public content digest: `4d6b8da46904a86210d973f3bea74894860ed65460084e1e53caf98832e3b344`
+- Website version: `1.9.0`
+- Public corpus version: `1.10.0`
+- Application source commit: `d6c5af49c6980e27437ac90a8e55d0090d03e1aa`
+- Corpus projection source commit: `25ec8d156bd9db43839a777c59075aff816a27aa`
+- Public content digest: `c1b2acb83b0c2d327552d919637c0bcfa49e948ae18d49162940dde9398d86ce`
 - Production site: <https://ironcreed-credo.ironcreed.chatgpt.site>
 
 The private Sites repository remains the canonical engineering source. VOX is a
@@ -58,13 +58,20 @@ standalone questions become stable retrieval and navigation units. This avoids
 fabricating thin derivative pages and lets a search system move from a precise
 question back to the complete set of source materials that actually address it.
 
-The universal Code Constitution is a pinned Git submodule at
-`code-constitution`. `CONSTITUTION.md`, `governance/PROFILE.md`, the project
-legislation, its acts registry, and `constitutional-guard/` expose the adopted
-project rules and their verifier. `npm run guard:integrity` verifies the
-published WARDEN history; full prebuild and postbuild enforcement remains bound
-to the canonical source tree because the private editorial corpus is not part
-of VOX.
+The universal Code Constitution and the Repository Licensing Policy are pinned
+Git submodules at `code-constitution` and `repository-licensing-policy`.
+`CONSTITUTION.md`, `governance/PROFILE.md`, the project legislation, its acts
+registry, and `constitutional-guard/` expose the adopted project rules and their
+verifier.
+
+The public repository includes a complete executable WARDEN surface:
+`npm run guard:prebuild`, `npm run guard:postbuild`, `npm run guard`, and
+`npm run guard:integrity`. Public prebuild and postbuild checks enforce the
+sealed runtime projection, release marker, same-origin media, brand, build, and
+publication boundary. The private canonical tree runs a broader test set over
+the editorial sources that are intentionally absent from VOX; the runner
+selects the appropriate current checks without weakening the immutable history
+integrity check.
 
 ## Public documentation
 

@@ -289,6 +289,54 @@ export interface PublicEntityRelatedEntry {
 
 export type ContentPageType = 'about' | 'corpus-index' | 'policy';
 
+export interface AboutStoryLink {
+	label: string;
+	href: string;
+}
+
+export interface AboutStoryEntry {
+	id: string;
+	title: string;
+	body: string;
+	meta?: string;
+	link?: AboutStoryLink;
+}
+
+export interface AboutStorySection {
+	id: string;
+	order: number;
+	kind: 'service' | 'portfolio' | 'testimonials' | 'contact';
+	status: 'active' | 'placeholder';
+	title: string;
+	summary: string;
+	body: string;
+	flow?: string[];
+	fields?: string[];
+	placeholder?: string;
+	link?: AboutStoryLink;
+	entries: AboutStoryEntry[];
+}
+
+export interface LocalizedAboutStory {
+	transition: {
+		eyebrow: string;
+		title: string;
+		body: string;
+	};
+	lifecycle: {
+		eyebrow: string;
+		title: string;
+		summary: string;
+		steps: Array<{ id: string; order: number; title: string; description: string }>;
+		examples: Array<{
+			id: string;
+			source: AboutStoryLink;
+			result: AboutStoryLink;
+		}>;
+	};
+	sections: AboutStorySection[];
+}
+
 export interface LocalizedContentPage {
 	id: string;
 	pageId: string;
@@ -302,6 +350,7 @@ export interface LocalizedContentPage {
 	pageType: ContentPageType;
 	status: PublicationStatus;
 	conversationViewId?: string;
+	aboutStory?: LocalizedAboutStory;
 }
 
 export type HintSource =

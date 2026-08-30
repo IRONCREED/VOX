@@ -8,6 +8,7 @@ import type {
 } from '../../content-catalog/domain/content-model';
 import type { BuildIdentity } from '../../site-navigation/application/build-identity';
 import { ArticleBody } from '../components/article-body';
+import { AboutStory } from '../components/about-story';
 import { CompanionPanel } from '../components/companion-panel';
 import { QuipCollection } from '../components/quip-collection';
 import { SiteShell } from './site-shell';
@@ -84,6 +85,10 @@ export function ContentPageTemplate({
 					) : null}
 					<ArticleBody body={page.body} />
 				</article>
+
+				{page.pageType === 'about' && page.aboutStory ? (
+					<AboutStory story={page.aboutStory} />
+				) : null}
 
 				<QuipCollection locale={locale} nextLabel={copy.nextQuip} />
 			</main>

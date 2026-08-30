@@ -1,8 +1,8 @@
 {
 	"corpusId": "corpus.ironcreed",
 	"schemaVersion": 1,
-	"contentVersion": "1.9.0",
-	"sourceCommit": "1bb58ee673d9bd4f35eaa2c7e4ede429f577206f",
-	"contentDigest": "4d6b8da46904a86210d973f3bea74894860ed65460084e1e53caf98832e3b344",
+	"contentVersion": "1.10.0",
+	"sourceCommit": "25ec8d156bd9db43839a777c59075aff816a27aa",
+	"contentDigest": "c1b2acb83b0c2d327552d919637c0bcfa49e948ae18d49162940dde9398d86ce",
 	"target": "site"
 }

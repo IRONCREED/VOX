@@ -16,7 +16,7 @@ export function BrandMark({ variant }: BrandMarkProps) {
 			aria-hidden="true"
 			className={`brand-mark brand-mark--${variant}`}
 			data-brand-resource={BRAND_MARK_SRC}
-			data-brand-state="ic-monogram-2026"
+			data-brand-state="ic-faceted-monogram-2026"
 			draggable="false"
 			src={BRAND_MARK_SRC}
 		/>

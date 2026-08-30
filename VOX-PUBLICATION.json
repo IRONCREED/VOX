@@ -1,17 +1,17 @@
 {
 	"schemaVersion": "2.0.0",
 	"managedBy": "icw-vox-public-source-001",
-	"policyRevision": "2.2.0",
+	"policyRevision": "2.3.0",
 	"repository": "IRONCREED/VOX",
 	"branch": "main",
-	"siteVersion": "1.8.0",
-	"contentVersion": "1.9.0",
-	"applicationSourceCommit": "63a6428b9299ef96034c9542bd8baf01c754eb5c",
-	"applicationSourceCommittedAt": "2026-08-30T00:31:58+02:00",
+	"siteVersion": "1.9.0",
+	"contentVersion": "1.10.0",
+	"applicationSourceCommit": "d6c5af49c6980e27437ac90a8e55d0090d03e1aa",
+	"applicationSourceCommittedAt": "2026-08-30T06:27:52-05:00",
 	"worktreeDirty": false,
-	"corpusSourceCommit": "1bb58ee673d9bd4f35eaa2c7e4ede429f577206f",
-	"contentDigest": "4d6b8da46904a86210d973f3bea74894860ed65460084e1e53caf98832e3b344",
-	"fileCount": 175,
+	"corpusSourceCommit": "25ec8d156bd9db43839a777c59075aff816a27aa",
+	"contentDigest": "c1b2acb83b0c2d327552d919637c0bcfa49e948ae18d49162940dde9398d86ce",
+	"fileCount": 181,
 	"files": [
 		{
 			"path": ".gitignore",
@@ -23,8 +23,8 @@
 		{
 			"path": ".gitmodules",
 			"mode": "100644",
-			"bytes": 128,
-			"sha256": "49b7973742d08f293e9391e3a8592258290455f206b7aa32b1d3a264cc652e62",
+			"bytes": 286,
+			"sha256": "2436187ff4090a0ada38ddc8ab5b0c57634a976723d649d06417f9ac72a6d524",
 			"licence": "MIT"
 		},
 		{
@@ -413,10 +413,24 @@
 			"licence": "MIT"
 		},
 		{
+			"path": "constitutional-guard/history/icw-hist-0040-about-services-public-warden.test.mjs",
+			"mode": "100644",
+			"bytes": 3115,
+			"sha256": "b79918170d3443a8f70d0d5f8e709e7e2e08fc5ef7d53f82e950e85d9143f809",
+			"licence": "MIT"
+		},
+		{
+			"path": "constitutional-guard/history/icw-hist-0041-about-services-public-warden-pages.test.mjs",
+			"mode": "100644",
+			"bytes": 1860,
+			"sha256": "18ad938efecd2c1999a053a2bbd598e4667ec637220a343d05cedc61fb52d026",
+			"licence": "MIT"
+		},
+		{
 			"path": "constitutional-guard/history/manifest.json",
 			"mode": "100644",
-			"bytes": 10650,
-			"sha256": "8dd7d933fb5c8dc5db96dd15375037c91fdeec865223120e4479f6b7a11b4934",
+			"bytes": 11209,
+			"sha256": "216148c8a7fd8aa256482d85a6027fe740ac260970f27adeba3791e340c6a4a5",
 			"licence": "MIT"
 		},
 		{
@@ -436,8 +450,8 @@
 		{
 			"path": "constitutional-guard/run.mjs",
 			"mode": "100644",
-			"bytes": 4182,
-			"sha256": "b51f42f5c43eb56eab57e5518de4dc2d05afa0d99c74458b5b229f4d8d94b156",
+			"bytes": 4699,
+			"sha256": "c436bff2c499c6a250672690196b750a2aefc1e571437ec07098a1f1fc0b9c4d",
 			"licence": "MIT"
 		},
 		{
@@ -450,22 +464,36 @@
 		{
 			"path": "constitutional-guard/tests/postbuild/current-interface.test.mjs",
 			"mode": "100644",
-			"bytes": 16669,
-			"sha256": "b9d0c8d075df9fbfaca071a1a8c93cac8718068410582baacaff9c6723f615cc",
+			"bytes": 17346,
+			"sha256": "02325d8e630a1a0a91a9801983527d609a6e57ec8e899a84d57d128c54f8d678",
 			"licence": "MIT"
 		},
 		{
 			"path": "constitutional-guard/tests/prebuild/current-architecture.test.mjs",
 			"mode": "100644",
-			"bytes": 13094,
-			"sha256": "f977771b0aca4f455401698de1a33fdc7636c27a0679a0d7ab981bcdc4fd6a59",
+			"bytes": 14882,
+			"sha256": "e1f2b9bdfc7c1b891694aea5a2bca9061aa3b51a4a0cf63294329e9ca04f99e1",
+			"licence": "MIT"
+		},
+		{
+			"path": "constitutional-guard/tests/public/postbuild/current-public.test.mjs",
+			"mode": "100644",
+			"bytes": 2078,
+			"sha256": "874e979f2f6b7d743c5cb6e94ccbb84ef02920981de57fd272d7ca61567cf31f",
+			"licence": "MIT"
+		},
+		{
+			"path": "constitutional-guard/tests/public/prebuild/current-public.test.mjs",
+			"mode": "100644",
+			"bytes": 4001,
+			"sha256": "4ee3b09bc8f1b1eb59d387f499a3156d1750383298c3b5f2dc23dfce3b85824c",
 			"licence": "MIT"
 		},
 		{
 			"path": "content/config/audio.json",
 			"mode": "100644",
-			"bytes": 511,
-			"sha256": "714461efe795bae5b9f09eb2c6b1a58181b65c63b98773b2cd1285e1b877ddaf",
+			"bytes": 398,
+			"sha256": "33b364312c3ff768e019420974cef1a71889665d7f9bcb46de264f51afe43e41",
 			"licence": "MIT"
 		},
 		{
@@ -520,15 +548,15 @@
 		{
 			"path": "docs/ARCHITECTURE.md",
 			"mode": "100644",
-			"bytes": 3711,
-			"sha256": "5be64222e1b90e55d223128a46fd43cc276f5029695e95f55b31cb418428cf7e",
+			"bytes": 4401,
+			"sha256": "48874621ac23e04e64fd6c2f522775bcce3b9b0a59213c47aee2ad6e0104ae39",
 			"licence": "CC-BY-SA-4.0"
 		},
 		{
 			"path": "docs/PUBLICATION-BOUNDARY.md",
 			"mode": "100644",
-			"bytes": 2578,
-			"sha256": "ee6685dc496728fe5cdbb64e4bf45271c380b3f899e2b5d194954898b3e38125",
+			"bytes": 2797,
+			"sha256": "18cc2442a32828edb5639c5f91734d87c0854def76332a4ed2045c17f21ed137",
 			"licence": "CC-BY-SA-4.0"
 		},
 		{
@@ -541,8 +569,8 @@
 		{
 			"path": "docs/SECURITY.md",
 			"mode": "100644",
-			"bytes": 1470,
-			"sha256": "a6006e3be09806ac48ed8f162736e81afb26686a95e2bab0ba87ce7ba57ebecd",
+			"bytes": 1802,
+			"sha256": "f7d166f85e4a96068ebfc9bf3d81c48e088059168998efbd87e09727fad58335",
 			"licence": "CC-BY-SA-4.0"
 		},
 		{
@@ -556,7 +584,7 @@
 			"path": "governance/acts.json",
 			"mode": "100644",
 			"bytes": 3576,
-			"sha256": "8bbae9e1ae3e37d589b16434574bdef467adf86aedb4efe071558f810d57259c",
+			"sha256": "6a5a9684239c5c123550571024fea976e92a8df44c94bc1f4065e461570c7479",
 			"licence": "MIT"
 		},
 		{
@@ -590,8 +618,8 @@
 		{
 			"path": "governance/legislation/DEVELOPMENT.md",
 			"mode": "100644",
-			"bytes": 57325,
-			"sha256": "72cba88cc8811a93872423ec3e54b70123b9ccdc5a28f11ef2d9cf7132ae4969",
+			"bytes": 58341,
+			"sha256": "7feddc723e6d03cbcd5f099765c055a84c6ca1eb3bb96b1245f8605820c8adc8",
 			"licence": "CC-BY-SA-4.0"
 		},
 		{
@@ -618,8 +646,8 @@
 		{
 			"path": "governance/legislation/PATTERNS.md",
 			"mode": "100644",
-			"bytes": 46600,
-			"sha256": "cec5b76b20c591f9b18c662b3230076601b1273ec4349cbcbe19832d72394143",
+			"bytes": 49623,
+			"sha256": "25d4ddf90b60826dfb3942baeef5856f2c8da791bc76abb6b12f5f0077a8bf2b",
 			"licence": "CC-BY-SA-4.0"
 		},
 		{
@@ -632,8 +660,8 @@
 		{
 			"path": "governance/legislation/SITE_EXPERIENCE.md",
 			"mode": "100644",
-			"bytes": 69728,
-			"sha256": "3a8f37d13ab64520468d00ae12a3eeea7a4eac9bb69d02791533193847a1d318",
+			"bytes": 71316,
+			"sha256": "1cafc337eb325a06b76cacf1f15787030b654f5e689d15e518deb71f12e5c237",
 			"licence": "CC-BY-SA-4.0"
 		},
 		{
@@ -646,8 +674,8 @@
 		{
 			"path": "governance/legislation/VOX_PUBLIC_SOURCE_2026-08-14.md",
 			"mode": "100644",
-			"bytes": 18372,
-			"sha256": "2e49accd6e38baacb09ee62403e56b42bf35747fd533b069dd74cfb692381a15",
+			"bytes": 19444,
+			"sha256": "e5d38edade08d36417379751506bdc80c1f96dedb1b5141a53f12110520ab602",
 			"licence": "CC-BY-SA-4.0"
 		},
 		{
@@ -660,8 +688,8 @@
 		{
 			"path": "LICENSE.md",
 			"mode": "100644",
-			"bytes": 3333,
-			"sha256": "5db0aad7ce638368e1db95de9d8e7ac917b186af4c9a45c620c41391617ec831",
+			"bytes": 3755,
+			"sha256": "e8772273e7106370d509998846767bb5278a06d9a5b5ca85af5ad8b7c5a80476",
 			"licence": "notice"
 		},
 		{
@@ -674,22 +702,22 @@
 		{
 			"path": "NOTICE.md",
 			"mode": "100644",
-			"bytes": 733,
-			"sha256": "beeef98fc0ac65063178d9b30ea90495b708645b030a8af83fbc4d6d59311009",
+			"bytes": 1148,
+			"sha256": "f7ba9401547d806500c9b2efbf531812f2d975acef26338fc2e9b84cc1c3f660",
 			"licence": "notice"
 		},
 		{
 			"path": "package-lock.json",
 			"mode": "100644",
 			"bytes": 332111,
-			"sha256": "58ae7399c07ed696d80fa274491c300e262a1e238b0fb9739f8a98c2db8bbeaa",
+			"sha256": "1b346ec3ee988ed474eebac2581ea8842a0e4f8fee3f827915896be4deb0e91a",
 			"licence": "MIT"
 		},
 		{
 			"path": "package.json",
 			"mode": "100644",
-			"bytes": 2017,
-			"sha256": "a90ec320a929dc1d8d3326b38d3b8ad559f339e3c442393cb5a0603ab509efda",
+			"bytes": 2176,
+			"sha256": "51d2d081916c7a554219610f9731aa52d0d7e9bd5656a256e1b6c699d11cf953",
 			"licence": "MIT"
 		},
 		{
@@ -707,17 +735,24 @@
 			"licence": "MIT"
 		},
 		{
+			"path": "public/audio/iron-creed-anthem.m4a",
+			"mode": "100644",
+			"bytes": 7443301,
+			"sha256": "2562da5b8aca1e548e77b8f6c6adfb33d54137a9c3b70192c22b9004bd532f5a",
+			"licence": "all-rights-reserved-audio"
+		},
+		{
 			"path": "public/brand/iron-creed-mark.svg",
 			"mode": "100644",
-			"bytes": 480309,
-			"sha256": "ed214a2864dfbf90c1ebc7fd3c8cedc80debc812b1db409b5ea3b53806510470",
+			"bytes": 558373,
+			"sha256": "6ed97b79958aee9a9cd3cc5fbedc5c2481c7f2493a65072f77de750c8715f597",
 			"licence": "all-rights-reserved-brand"
 		},
 		{
 			"path": "public/favicon.svg",
 			"mode": "100644",
-			"bytes": 480461,
-			"sha256": "3838bcc10d5e24db8c1838a3b45957191328dc977d27d4bf328d78668ed4086b",
+			"bytes": 558508,
+			"sha256": "fda7a2e5e10e1839318b7b6d6df363acf11268cf92a7b3943254edd2ece9b407",
 			"licence": "all-rights-reserved-brand"
 		},
 		{
@@ -786,29 +821,29 @@
 		{
 			"path": "publication-policy.json",
 			"mode": "100644",
-			"bytes": 5595,
-			"sha256": "497d13dab5de4bd19b2f21f9a6793b11a1283cd87eb6ce8b49d3f878f5880966",
+			"bytes": 5803,
+			"sha256": "be615e7151608a223f6c8f8d472520d53279ba78ef0eb76d0d00f9b4493dde8e",
 			"licence": "MIT"
 		},
 		{
 			"path": "README.md",
 			"mode": "100644",
-			"bytes": 3762,
-			"sha256": "b114440fcd56fd4051bce03d0f535e5d4bd10e8d8ee4465b07a5130e6ab260c0",
+			"bytes": 4175,
+			"sha256": "b34239c4f14d0a2cfba6ccb7acdf6d406691b3827048de9c84ed93ca64fe4713",
 			"licence": "CC-BY-SA-4.0"
 		},
 		{
 			"path": "scripts/build-public.sh",
 			"mode": "100755",
-			"bytes": 474,
-			"sha256": "147bf25271d313e12c9a4e28cbae8fd4959db698e0586bf432a7f8fc6a9c1ddc",
+			"bytes": 609,
+			"sha256": "481fec47040e22d8a9fe7338276e4751adafb67d189839db72574eb565d9bf50",
 			"licence": "MIT"
 		},
 		{
 			"path": "scripts/render-brand-asset.mjs",
 			"mode": "100644",
-			"bytes": 2342,
-			"sha256": "2a1fc66d5041a80aad4307a9ff6011864487038fed999bc5b6784f194138e399",
+			"bytes": 2325,
+			"sha256": "1aab0e0c5cbf1f98673a8df7695278adcfa4fe90eea8ad5e0442ee860b0b0209",
 			"licence": "MIT"
 		},
 		{
@@ -842,8 +877,8 @@
 		{
 			"path": "semantic-core/dist/site/manifest.json",
 			"mode": "100644",
-			"bytes": 251,
-			"sha256": "5b85a88456f67f8b429afce8f95ee9b49edd0e29e0c355a15292ae006292c519",
+			"bytes": 252,
+			"sha256": "258bc9b10a9399b002fe03a7992f0d9c25b0357e9f63a358f76f8b06a68398da",
 			"licence": "CC-BY-SA-4.0"
 		},
 		{
@@ -856,8 +891,8 @@
 		{
 			"path": "semantic-core/dist/site/pages.json",
 			"mode": "100644",
-			"bytes": 31818,
-			"sha256": "22e9b6abcd9dff41b4c1a832ed03aff4b70a945ae4bbae5d3e79945eb2a86af4",
+			"bytes": 57803,
+			"sha256": "56ec252a76800ebe82e0632c5481ac3d82c30382112571f151b60ed702172fb0",
 			"licence": "CC-BY-SA-4.0"
 		},
 		{
@@ -919,8 +954,8 @@
 		{
 			"path": "src/content-catalog/domain/content-model.ts",
 			"mode": "100644",
-			"bytes": 6681,
-			"sha256": "4c8a6e6fc232b281a5ab5019613d4e7d811d1b76ef1b4c789ffd56f023091a9d",
+			"bytes": 7630,
+			"sha256": "1a07ad6141cd9915c338aa5ebee0471d5137f922446eb38536173f953de63524",
 			"licence": "MIT"
 		},
 		{
@@ -933,8 +968,15 @@
 		{
 			"path": "src/interface-system/brand/iron-creed-ic.png",
 			"mode": "100644",
-			"bytes": 360017,
-			"sha256": "5d33da30f09726d44fe668d381320e8c41aee0ab3875560443aa9955a85eda5b",
+			"bytes": 418564,
+			"sha256": "f3a3c8036b3a1b5d55df4aacd5b1bb06f985888a88b5e50cd287944a05d51d8d",
+			"licence": "MIT"
+		},
+		{
+			"path": "src/interface-system/components/about-story.tsx",
+			"mode": "100644",
+			"bytes": 3233,
+			"sha256": "a11f3f2e561a9febb3d0c386d121084606801ca69418bb84c323d1cf76b51bf7",
 			"licence": "MIT"
 		},
 		{
@@ -961,8 +1003,8 @@
 		{
 			"path": "src/interface-system/components/brand-mark.tsx",
 			"mode": "100644",
-			"bytes": 653,
-			"sha256": "46b005c381dbb759981a25f7f00bbc01fc0978352f791f6927448c262e1dc6eb",
+			"bytes": 661,
+			"sha256": "7d1b34f5f7dea6a17412847a670aae8227d31bb2d486d13ee8bb010c598b7a18",
 			"licence": "MIT"
 		},
 		{
@@ -1108,8 +1150,8 @@
 		{
 			"path": "src/interface-system/iron-creed-interface.css",
 			"mode": "100644",
-			"bytes": 91345,
-			"sha256": "258d84292602b0a3d86a03e54cfae3e03439e1dd6ac311b631d626cef4b9e7de",
+			"bytes": 97289,
+			"sha256": "050b834dc756034d48241cb1092becce1aab052a741bcdb278edc983b02447fc",
 			"licence": "MIT"
 		},
 		{
@@ -1136,8 +1178,8 @@
 		{
 			"path": "src/interface-system/templates/content-page-template.tsx",
 			"mode": "100644",
-			"bytes": 2655,
-			"sha256": "168217b305449f93a4ae13194d44aa3e878e13b0a7d113ab455b838f4ceeb6f1",
+			"bytes": 2824,
+			"sha256": "fc4c2950532d12294e18449dee5208b406bd865096e6bf7d33c18ba471a416e4",
 			"licence": "MIT"
 		},
 		{
@@ -1199,15 +1241,15 @@
 		{
 			"path": "tests/rendered-html.test.mjs",
 			"mode": "100644",
-			"bytes": 917,
-			"sha256": "8af7cafb0511ea1e4eae77c78b9ba5dccbc06fb695bfaca852f1dcfb63184f7d",
+			"bytes": 1313,
+			"sha256": "c04410de3bc44a847646f7c9ba62149241ace5178bd572caf01f0bb686881078",
 			"licence": "MIT"
 		},
 		{
 			"path": "tests/source/public-contract.test.mjs",
 			"mode": "100644",
-			"bytes": 2148,
-			"sha256": "7ee35069f330aa670d1af904b8564f35979083358adc57fabf294ab60a5eb2aa",
+			"bytes": 2606,
+			"sha256": "1e8fe3f413237f32f34745b3d9620b981eb943505aaf9308434c76d6694fc5c4",
 			"licence": "MIT"
 		},
 		{
@@ -1239,12 +1281,17 @@
 			"licence": "MIT"
 		}
 	],
-	"gitlinkCount": 1,
+	"gitlinkCount": 2,
 	"gitlinks": [
 		{
 			"path": "code-constitution",
 			"repository": "https://github.com/FOP-Oksana-Dubinetska/code-constitution.git",
 			"commit": "6bdb3f85236a45254724e7dabee840b2c573f5da"
+		},
+		{
+			"path": "repository-licensing-policy",
+			"repository": "https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy.git",
+			"commit": "6e4c2627717c079827ed4aa9044a5346b3ea3ddb"
 		}
 	]
 }

@@ -41,7 +41,10 @@ test('the public repository exposes governance enforcement but excludes private 
 	assert.ok(paths.includes('governance/PROFILE.md'));
 	assert.ok(paths.includes('governance/acts.json'));
 	assert.ok(paths.includes('constitutional-guard/run.mjs'));
+	assert.ok(paths.includes('constitutional-guard/tests/public/prebuild/current-public.test.mjs'));
+	assert.ok(paths.includes('constitutional-guard/tests/public/postbuild/current-public.test.mjs'));
 	assert.ok(paths.includes('scripts/sitemaps.mjs'));
+	assert.ok(paths.includes('public/audio/iron-creed-anthem.m4a'));
 	assert.ok(paths.includes('public/sitemap.xml'));
 	assert.ok(paths.includes('public/sitemaps/uk/questions.xml'));
 	assert.ok(paths.includes('public/sitemaps/en/questions.xml'));
@@ -50,6 +53,11 @@ test('the public repository exposes governance enforcement but excludes private 
 			path: 'code-constitution',
 			repository: 'https://github.com/FOP-Oksana-Dubinetska/code-constitution.git',
 			commit: '6bdb3f85236a45254724e7dabee840b2c573f5da',
+		},
+		{
+			path: 'repository-licensing-policy',
+			repository: 'https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy.git',
+			commit: '6e4c2627717c079827ed4aa9044a5346b3ea3ddb',
 		},
 	]);
 });
