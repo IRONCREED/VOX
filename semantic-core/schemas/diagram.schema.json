@@ -1,0 +1,129 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://it.zhovten.games/schemas/semantic-core/diagram.schema.json",
+	"title": "IRON CREED diagram declaration",
+	"type": "object",
+	"required": [
+		"source",
+		"projection",
+		"renderer",
+		"preset",
+		"representations",
+		"nodes",
+		"relations"
+	],
+	"properties": {
+		"source": { "type": "string", "pattern": "^[a-z][a-z0-9]*(?:[.-][a-z0-9]+)+$" },
+		"projection": {
+			"enum": [
+				"flow",
+				"lifecycle",
+				"gate",
+				"lineage",
+				"topology",
+				"navigator",
+				"warden",
+				"matrix",
+				"comparison",
+				"hero"
+			]
+		},
+		"renderer": { "enum": ["graph", "matrix", "svg"] },
+		"preset": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+		"direction": { "enum": ["RIGHT", "DOWN", "LEFT", "UP"] },
+		"representations": {
+			"type": "array",
+			"items": { "enum": ["interactive", "publication"] },
+			"minItems": 1,
+			"uniqueItems": true
+		},
+		"mode": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+		"activeEntityIds": {
+			"type": "array",
+			"items": { "type": "string" },
+			"uniqueItems": true
+		},
+		"nodes": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"type": "object",
+				"required": ["id", "role", "label"],
+				"properties": {
+					"id": { "type": "string", "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$" },
+					"entityId": { "type": "string" },
+					"role": {
+						"enum": [
+							"artifact",
+							"actor",
+							"process",
+							"decision",
+							"state",
+							"source",
+							"boundary",
+							"human-decision"
+						]
+					},
+					"label": { "$ref": "#/$defs/localized" },
+					"description": { "$ref": "#/$defs/localized" },
+					"accent": { "enum": ["active", "confirmed", "rejected", "human", "neutral"] },
+					"group": { "type": "string" }
+				},
+				"additionalProperties": false
+			}
+		},
+		"relations": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": ["id", "from", "to", "type"],
+				"properties": {
+					"id": { "type": "string" },
+					"relationId": { "type": "string" },
+					"from": { "type": "string" },
+					"to": { "type": "string" },
+					"type": {
+						"enum": [
+							"requires",
+							"produces",
+							"validates",
+							"rejects",
+							"derives",
+							"supersedes",
+							"executes",
+							"returns",
+							"references"
+						]
+					},
+					"label": { "$ref": "#/$defs/localized" }
+				},
+				"additionalProperties": false
+			}
+		},
+		"layoutOverrides": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": ["nodeId", "x", "y"],
+				"properties": {
+					"nodeId": { "type": "string" },
+					"x": { "type": "number" },
+					"y": { "type": "number" }
+				},
+				"additionalProperties": false
+			}
+		}
+	},
+	"additionalProperties": false,
+	"$defs": {
+		"localized": {
+			"type": "object",
+			"required": ["uk", "en"],
+			"properties": {
+				"uk": { "type": "string", "minLength": 1 },
+				"en": { "type": "string", "minLength": 1 }
+			},
+			"additionalProperties": false
+		}
+	}
+}

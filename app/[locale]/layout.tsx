@@ -8,6 +8,7 @@ import { SiteAudioProvider } from '../../src/interface-system/components/site-au
 import { ThemeBootstrap } from '../../src/interface-system/components/theme-bootstrap';
 import { getSiteOrigin } from '../../src/site-metadata/site-origin';
 import '../globals.css';
+import '@xyflow/react/dist/style.css';
 import '../../src/interface-system/iron-creed-interface.css';
 
 const geistSans = Geist({

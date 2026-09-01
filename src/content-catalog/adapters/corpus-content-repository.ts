@@ -3,6 +3,7 @@ import hintsSource from '../../../content/config/hints.json';
 import interfaceSource from '../../../content/config/interface.json';
 import navigationSource from '../../../content/config/navigation.json';
 import entitiesSource from '../../../semantic-core/dist/site/entities.json';
+import assetsSource from '../../../semantic-core/dist/site/assets.json';
 import manifestSource from '../../../semantic-core/dist/site/manifest.json';
 import materialsSource from '../../../semantic-core/dist/site/materials.json';
 import pagesSource from '../../../semantic-core/dist/site/pages.json';
@@ -32,6 +33,7 @@ import {
 	type SystemNavigationDefinition,
 	type TagDefinition,
 } from '../domain/content-model';
+import type { LocalizedDiagramAsset } from '../../diagram-system/domain/diagram-model';
 
 interface LocalizedText {
 	uk: string;
@@ -92,6 +94,7 @@ const questions = questionsSource as CorpusQuestion[];
 const views = viewsSource as CorpusView[];
 const entities = entitiesSource as PublicEntityIndexEntry[];
 const manifest = manifestSource as CorpusManifest;
+const diagramAssets = assetsSource as LocalizedDiagramAsset[];
 
 function assertProjection(): void {
 	if (
@@ -111,6 +114,7 @@ function assertProjection(): void {
 	const pageIds = new Set(contentPages.map((page) => page.pageId));
 	const materialIds = new Set(articles.map((article) => article.materialId));
 	const seriesIds = new Set(materialSeries.map((series) => series.seriesId));
+	const assetIds = new Set(diagramAssets.map((asset) => asset.id));
 
 	for (const series of materialSeries) {
 		const routeId = `${series.locale}/series/${series.slug}`;
@@ -141,6 +145,11 @@ function assertProjection(): void {
 		}
 		for (const tagId of article.tags) {
 			if (!tagIds.has(tagId)) throw new Error(`Material "${article.materialId}" has unknown tag.`);
+		}
+		for (const asset of article.assets ?? []) {
+			if (!assetIds.has(asset.id)) {
+				throw new Error(`Material "${article.materialId}" references an unknown asset.`);
+			}
 		}
 		if (article.series) {
 			const series = materialSeries.find(

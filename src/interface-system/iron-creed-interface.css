@@ -23,6 +23,18 @@ html[data-sidebar='collapsed'] {
 	box-sizing: border-box;
 }
 
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -4791,6 +4803,251 @@ html[data-theme='dark'] *::-webkit-scrollbar-track {
 
 	.protocol-folder__document {
 		transform: perspective(900px) rotateX(54deg) rotateZ(22deg);
+	}
+}
+
+/* DIAGRAM SYSTEM / semantic-core → projection → layout → renderer → publication */
+.diagram-brief,
+.ic-diagram {
+	margin: clamp(28px, 5vw, 64px) 0;
+	border: 1px solid var(--line-strong);
+	border-radius: 12px;
+	background:
+		linear-gradient(135deg, var(--cyan-soft), transparent 42%),
+		repeating-linear-gradient(90deg, transparent 0 31px, var(--line-soft) 31px 32px),
+		var(--paper-soft);
+	box-shadow: 0 18px 42px rgba(24, 33, 43, 0.09);
+	overflow: hidden;
+}
+
+.diagram-brief {
+	display: grid;
+	grid-template-columns: minmax(132px, 0.28fr) minmax(0, 1fr);
+}
+
+.diagram-brief > header,
+.ic-diagram > header {
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	justify-content: center;
+	padding: 22px;
+	border-right: 1px solid var(--line);
+}
+
+.diagram-brief > header small,
+.ic-diagram > header small,
+.ic-diagram figcaption small,
+.ic-diagram-node small,
+.ic-diagram-matrix__row--head {
+	color: var(--muted);
+	font-family: var(--font-geist-mono), monospace;
+	font-size: 0.66rem;
+	font-weight: 700;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+
+.diagram-brief > header strong,
+.ic-diagram > header strong {
+	font-family: var(--font-geist-mono), monospace;
+	font-size: clamp(1rem, 1.6vw, 1.3rem);
+}
+
+.diagram-brief > div {
+	padding: clamp(22px, 4vw, 38px);
+	color: var(--ink-soft);
+	line-height: 1.72;
+}
+
+.diagram-brief > div strong:first-child {
+	color: var(--ink);
+}
+
+.ic-diagram > header {
+	border-right: 0;
+	border-bottom: 1px solid var(--line);
+}
+
+.ic-diagram-graph {
+	width: 100%;
+	height: min(68vh, 720px);
+	min-height: 420px;
+	background: color-mix(in srgb, var(--paper) 92%, var(--ink) 8%);
+}
+
+.ic-diagram-graph[data-interactive='false'] .react-flow__pane {
+	cursor: default;
+}
+
+.ic-diagram-node {
+	width: 220px;
+	min-height: 92px;
+	display: flex;
+	gap: 6px;
+	flex-direction: column;
+	justify-content: center;
+	padding: 14px 18px;
+	border: 1px solid var(--line-strong);
+	border-left: 4px solid var(--muted);
+	border-radius: 7px;
+	color: var(--ink);
+	background: var(--paper-soft);
+	box-shadow: 0 10px 24px rgba(24, 33, 43, 0.13);
+}
+
+.ic-diagram-node[data-accent='active'] {
+	border-left-color: var(--cyan);
+}
+
+.ic-diagram-node[data-accent='confirmed'] {
+	border-left-color: var(--amber);
+}
+
+.ic-diagram-node[data-accent='rejected'] {
+	border-left-color: #c94242;
+}
+
+.ic-diagram-node[data-accent='human'] {
+	border-color: var(--ink);
+	border-left-color: var(--paper-soft);
+	box-shadow:
+		inset 0 0 0 1px var(--ink),
+		0 10px 24px rgba(24, 33, 43, 0.13);
+}
+
+.ic-diagram-node[data-selected='true'] {
+	outline: 2px solid var(--cyan);
+	outline-offset: 4px;
+}
+
+.ic-diagram-node strong {
+	font-size: 0.95rem;
+	line-height: 1.25;
+}
+
+.ic-diagram-node span {
+	color: var(--ink-soft);
+	font-size: 0.76rem;
+	line-height: 1.35;
+}
+
+.ic-diagram .react-flow__edge-path {
+	stroke: var(--muted);
+	stroke-width: 1.6;
+}
+
+.ic-diagram .ic-diagram-edge--active .react-flow__edge-path {
+	stroke: var(--cyan);
+	stroke-width: 2.6;
+}
+
+.ic-diagram .ic-diagram-edge--rejects .react-flow__edge-path {
+	stroke: #c94242;
+	stroke-dasharray: 4 5;
+}
+
+.ic-diagram .ic-diagram-edge--references .react-flow__edge-path,
+.ic-diagram .ic-diagram-edge--derives .react-flow__edge-path {
+	stroke-dasharray: 9 5;
+}
+
+.ic-diagram .ic-diagram-edge--validates .react-flow__edge-path,
+.ic-diagram .ic-diagram-edge--supersedes .react-flow__edge-path {
+	stroke: var(--amber);
+}
+
+.ic-diagram-loading {
+	min-height: 420px;
+	background: linear-gradient(105deg, transparent 42%, var(--cyan-soft), transparent 58%);
+	background-size: 200% 100%;
+	animation: ic-diagram-loading 1.4s linear infinite;
+}
+
+@keyframes ic-diagram-loading {
+	to {
+		background-position: -200% 0;
+	}
+}
+
+.ic-diagram-matrix {
+	display: grid;
+	padding: clamp(16px, 3vw, 32px);
+	overflow-x: auto;
+}
+
+.ic-diagram-matrix__row {
+	min-width: 620px;
+	display: grid;
+	grid-template-columns: minmax(180px, 1fr) minmax(120px, 0.55fr) minmax(220px, 1fr);
+	border-top: 1px solid var(--line);
+}
+
+.ic-diagram-matrix__row > * {
+	padding: 14px;
+	border-left: 1px solid var(--line-soft);
+}
+
+.ic-diagram-matrix__row > :last-child {
+	border-right: 1px solid var(--line-soft);
+}
+
+.ic-diagram-matrix__row:last-child {
+	border-bottom: 1px solid var(--line);
+}
+
+.ic-diagram figcaption {
+	display: flex;
+	gap: 12px;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 16px 22px;
+	border-top: 1px solid var(--line);
+	color: var(--ink-soft);
+	font-size: 0.82rem;
+	line-height: 1.45;
+}
+
+html[data-theme='dark'] .diagram-brief,
+html[data-theme='dark'] .ic-diagram,
+html[data-theme='dark'] .ic-diagram-node {
+	box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+}
+
+@media (max-width: 700px) {
+	.diagram-brief {
+		grid-template-columns: 1fr;
+	}
+
+	.diagram-brief > header {
+		border-right: 0;
+		border-bottom: 1px solid var(--line);
+	}
+
+	.ic-diagram-graph,
+	.ic-diagram-loading {
+		height: 66vh;
+		min-height: 360px;
+	}
+
+	.ic-diagram figcaption {
+		flex-direction: column;
+	}
+}
+
+@media print {
+	.ic-diagram-graph {
+		height: 620px;
+	}
+
+	.ic-diagram .react-flow__controls {
+		display: none;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.ic-diagram-loading {
+		animation: none;
 	}
 }
 

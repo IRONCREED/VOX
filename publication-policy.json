@@ -1,7 +1,7 @@
 {
 	"schemaVersion": "2.0.0",
 	"id": "icw-vox-public-source-001",
-	"revision": "2.3.0",
+	"revision": "2.4.0",
 	"destination": {
 		"owner": "IRONCREED",
 		"repository": "VOX",
@@ -131,6 +131,23 @@
 		{
 			"source": "tests/rendered-html.test.mjs",
 			"destination": "tests/rendered-html.test.mjs"
+		},
+		{
+			"source": "playwright.diagram.config.ts",
+			"destination": "playwright.diagram.config.ts"
+		},
+		{
+			"source": "tests/diagrams/publication-export.spec.ts",
+			"destination": "tests/diagrams/publication-export.spec.ts"
+		},
+		{
+			"source": "semantic-core/schemas/diagram.schema.json",
+			"destination": "semantic-core/schemas/diagram.schema.json"
+		},
+		{
+			"source": "semantic-core/docs/diagram-system.md",
+			"destination": "docs/DIAGRAM-SYSTEM.md",
+			"language": "en"
 		},
 		{
 			"source": "tsconfig.json",

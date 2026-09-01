@@ -1,3 +1,5 @@
+import type { LocalizedDiagramAsset } from '../../diagram-system/domain/diagram-model';
+
 export const SUPPORTED_LOCALES = ['uk', 'en'] as const;
 
 export type Locale = (typeof SUPPORTED_LOCALES)[number];
@@ -72,6 +74,7 @@ export interface ArticleMetadata {
 	series: ArticleSeriesMembership | null;
 	presentationMode: 'standard' | 'scenario-log';
 	ageRestriction: AgeRestriction;
+	assets?: LocalizedDiagramAsset[];
 }
 
 export interface AgeRestriction {

@@ -199,7 +199,11 @@ export function ArticlePageTemplate({
 						<small>IRON CREED / {article.translationKey.toUpperCase()}</small>
 						<h2 id="article-body-title">{copy.articleBody}</h2>
 					</header>
-					<ArticleBody body={article.body} variant={article.presentationMode} />
+					<ArticleBody
+						assets={article.assets}
+						body={article.body}
+						variant={article.presentationMode}
+					/>
 
 					{hints.length > 0 ? (
 						<div className="article-hints">

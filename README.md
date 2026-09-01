@@ -6,11 +6,11 @@ released interface, the adopted project governance and IRON WARDEN audit
 surface, build and test configuration, licensing notices, and English public
 documentation.
 
-- Website version: `1.9.0`
-- Public corpus version: `1.10.0`
-- Application source commit: `d6c5af49c6980e27437ac90a8e55d0090d03e1aa`
-- Corpus projection source commit: `25ec8d156bd9db43839a777c59075aff816a27aa`
-- Public content digest: `c1b2acb83b0c2d327552d919637c0bcfa49e948ae18d49162940dde9398d86ce`
+- Website version: `1.10.0`
+- Public corpus version: `1.11.0`
+- Application source commit: `3144fa6923bf253236c48ab3e7de76e05dea9c9d`
+- Corpus projection source commit: `e81641b4799a7fa4ea5ce588a69f6b161e7e7b39`
+- Public content digest: `71d0b0abbf341d7c2f3cd48215844fc0512f42798712967f34f1d0c9effd196e`
 - Production site: <https://ironcreed-credo.ironcreed.chatgpt.site>
 
 The private Sites repository remains the canonical engineering source. VOX is a

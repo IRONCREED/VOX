@@ -1,8 +1,11 @@
 import type { ReactNode } from 'react';
+import type { LocalizedDiagramAsset } from '../../diagram-system/domain/diagram-model';
+import { DiagramAssetSlot } from '../../diagram-system/components/diagram-asset-slot';
 
 interface ArticleBodyProps {
 	body: string;
 	variant?: 'standard' | 'scenario-log';
+	assets?: LocalizedDiagramAsset[];
 }
 
 type MarkdownBlock =
@@ -253,7 +256,13 @@ function renderInline(source: string, keyPrefix = 'inline'): ReactNode[] {
 	});
 }
 
-export function ArticleBody({ body, variant = 'standard' }: ArticleBodyProps) {
+function graphicSlotId(content: string): string | undefined {
+	return /^(?:\*\*)?(?:Графічний слот|Graphic slot)\s+(G\d{2})\b/i
+		.exec(content)?.[1]
+		?.toUpperCase();
+}
+
+export function ArticleBody({ body, variant = 'standard', assets = [] }: ArticleBodyProps) {
 	const blocks = parseBlocks(body);
 
 	return (
@@ -322,6 +331,19 @@ export function ArticleBody({ body, variant = 'standard' }: ArticleBodyProps) {
 				}
 
 				if (block.kind === 'blockquote') {
+					const slotId = graphicSlotId(block.content);
+					if (slotId) {
+						const suffix = `.${slotId.toLowerCase()}`;
+						const asset = assets.find((candidate) => candidate.id.endsWith(suffix));
+						return (
+							<DiagramAssetSlot
+								asset={asset}
+								brief={renderInline(block.content, 'diagram-brief-' + index)}
+								key={'diagram-slot-' + index}
+								slotId={slotId}
+							/>
+						);
+					}
 					return (
 						<blockquote key={'blockquote-' + index}>
 							{renderInline(block.content, 'blockquote-' + index)}

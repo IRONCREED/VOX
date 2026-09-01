@@ -96,3 +96,25 @@ test('private editorial and operational source remains outside VOX', async () =>
 		await assert.rejects(access(path.join(projectRoot, relativePath)));
 	}
 });
+
+test('the public diagram runtime is reproducible without exporting editorial source', async () => {
+	const [packageManifest, assets, schema, documentation, articleBody] = await Promise.all([
+		readJson('package.json'),
+		readJson('semantic-core/dist/site/assets.json'),
+		readJson('semantic-core/schemas/diagram.schema.json'),
+		readText('docs/DIAGRAM-SYSTEM.md'),
+		readText('src/interface-system/components/article-body.tsx'),
+	]);
+	assert.equal(packageManifest.dependencies['@xyflow/react'], '12.11.6');
+	assert.equal(packageManifest.dependencies.elkjs, '0.12.0');
+	assert.equal(
+		packageManifest.scripts['diagram:export'],
+		'playwright test --config=playwright.diagram.config.ts',
+	);
+	assert.equal(assets.length, 114);
+	assert.equal(assets.filter((asset) => asset.assetType === 'diagram').length, 0);
+	assert.ok(schema.properties.projection.enum.includes('warden'));
+	assert.match(documentation, /canonical record is an `asset\.\*` entity/);
+	assert.match(articleBody, /DiagramAssetSlot/);
+	await assert.rejects(access(path.join(projectRoot, 'semantic-core/corpus/assets/registry.json')));
+});
