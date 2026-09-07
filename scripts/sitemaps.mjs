@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const projectRoot = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const supportedLocales = ['uk', 'en'];
-const fallbackOrigin = 'https://ironcreed-credo.ironcreed.chatgpt.site';
+const fallbackOrigin = 'https://web.zhovten.games';
 
 function escapeXml(value) {
 	return String(value)

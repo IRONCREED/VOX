@@ -15511,5 +15511,750 @@
 		},
 		"provenance": "editorial",
 		"standalone": true
+	},
+	{
+		"id": "q.pattern.regulated-availability",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Що означає патерн «регульована доступність» у зображеннях тіла?",
+			"en": "What does the “regulated availability” pattern mean in images of the body?"
+		},
+		"answer": {
+			"uk": "Це авторська модель композиції, у якій тіло показане разом із межею його видимості. Схрещення ніг може спрямовувати увагу до перетину й позначати приховане продовження. Модель описує культурне прочитання образу; доступність у її назві не означає згоду людини або право спостерігача на контакт.",
+			"en": "It is an authorial model of a composition that presents a body together with a boundary of visibility. Crossed legs may direct attention to their intersection and mark a concealed continuation. The model describes a cultural reading of an image; availability in its name implies neither personal consent nor an observer’s entitlement to contact."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"definition",
+				"visibility-boundary",
+				"authorial-model",
+				"consent-limit"
+			]
+		},
+		"aliases": [
+			"regulated-availability"
+		],
+		"sourceRefs": [],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.pattern.crossed-legs-etiquette",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Як етикет пов’язав схрещування жіночих ніг із контролем видимості тіла?",
+			"en": "How did etiquette connect women’s crossed legs with control over bodily visibility?"
+		},
+		"answer": {
+			"uk": "Приписи щодо спідниці, колін і ступні обмежували видимість тіла та формували засвоєний спосіб триматися. Емілі Пост у 1922 році описувала перехід від заборони схрещувати коліна до дозволу за визначених умов. Це свідчення конкретного європейсько-американського середовища; воно не доводить єдиного походження пози або універсальності її сексуального прочитання.",
+			"en": "Prescriptions concerning skirts, knees, and feet regulated bodily visibility and taught a way of carrying oneself. In 1922, Emily Post described a transition from prohibiting crossed knees to permitting them under specified conditions. This documents a particular European-American setting; it establishes neither a single origin of the pose nor a universal sexual reading."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"historical-evidence",
+				"learned-conduct",
+				"scope"
+			]
+		},
+		"aliases": [
+			"crossed-legs-etiquette"
+		],
+		"sourceRefs": [
+			"source.post.etiquette-1922"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.pattern.concealment-attention",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Як приховування частини тіла може організувати увагу в сексуалізованому зображенні?",
+			"en": "How can concealing part of a body organise attention in a sexualised image?"
+		},
+		"answer": {
+			"uk": "Видима лінія може завершуватися на межі, яка одночасно закриває продовження й позначає його існування. У моделі регульованої доступності перетин ніг виконує саме цю композиційну функцію. Ракурс, одяг і культурний досвід змінюють прочитання. Схема не встановлює виміряного маршруту погляду чи закону, за яким кожне приховування посилює бажання.",
+			"en": "A visible line can terminate at a boundary that both conceals its continuation and marks its existence. In regulated availability, the crossing of the legs performs that compositional function. Angle, clothing, and cultural experience change the reading. The diagram establishes neither a measured gaze route nor a rule that every concealment intensifies desire."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"boundary",
+				"attention",
+				"context",
+				"evidence-limit"
+			]
+		},
+		"aliases": [
+			"concealment-attention"
+		],
+		"sourceRefs": [],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.pattern.crossed-legs-variants",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Як відрізняється композиція схрещених щиколоток, колін і ніг у положенні стоячи?",
+			"en": "How do crossed ankles, crossed knees, and a standing leg cross differ compositionally?"
+		},
+		"answer": {
+			"uk": "Схрещені щиколотки можуть акцентувати компактність; коліно поверх коліна поєднує перетин перед тазом із показом стегна й гомілки; схрещування стоячи додає асиметрію опори та зміщення таза. Зміст визначає весь образ. Дані про contrapposto стосуються спорідненої пози й не є прямим експериментальним доказом привабливості кожного із цих варіантів.",
+			"en": "Crossed ankles may emphasise compactness; knee over knee combines a crossing in front of the pelvis with thigh and calf display; a standing cross adds asymmetric support and pelvic displacement. Meaning comes from the whole image. Contrapposto findings concern a related posture and are not direct experimental proof of each variant’s attractiveness."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"three-variants",
+				"composition",
+				"contrapposto-limit"
+			]
+		},
+		"aliases": [
+			"crossed-legs-variants"
+		],
+		"sourceRefs": [
+			"source.pazhoohi.contrapposto-2020"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.pattern.crossed-legs-mutation",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Чому схрещування ніг зберігає візуальну функцію, коли практичне приховування стає необов’язковим?",
+			"en": "Why do crossed legs retain a visual function when practical concealment becomes optional?"
+		},
+		"answer": {
+			"uk": "У постановці жест може зберігати впізнавану форму закриття й організовувати вісь тіла, контакт ніг та напрямні лінії. Попереднє правило пристойності залишається культурною цитатою. У купальнику або іншому демонстраційному образі практична функція змінюється, а засвоєний код продовжує працювати. Це інтерпретація репрезентації, яку перевіряють за конкретним контекстом.",
+			"en": "In a staged image, the gesture can retain the recognisable form of closure while organising the body’s axis, leg contact, and guiding lines. The earlier convention of propriety survives as a cultural quotation. In swimwear or another display-oriented image, the practical function changes while the learned code remains available. This interpretation must be assessed in context."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"retained-form",
+				"changed-function",
+				"cultural-quotation"
+			]
+		},
+		"aliases": [
+			"crossed-legs-mutation"
+		],
+		"sourceRefs": [],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.pattern.crossed-legs-size",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Як розмір і пропорції тіла змінюють композиційну роботу схрещених ніг?",
+			"en": "How do body size and proportions change the compositional work of crossed legs?"
+		},
+		"answer": {
+			"uk": "Залежно від пропорцій, пози та ракурсу зображення може акцентувати довгі відокремлені лінії або контакт і взаємодію об’ємів. Мід-сайз і плюс-сайз репрезентація розширює набір таких акцентів. Це формальний авторський висновок; прямого порівняльного експерименту зі схрещуванням ніг у всіх групах матеріал не наводить. Розмір сам по собі не визначає ні привабливості, ні змісту образу.",
+			"en": "Depending on proportions, posture, and angle, an image can emphasise long separated lines or contact between volumes. Mid-size and plus-size representation expands these available accents. This is an authorial formal inference; the article supplies no direct crossed-leg experiment across all groups. Size alone determines neither attractiveness nor the image’s meaning."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"line-and-volume",
+				"proportions",
+				"formal-inference",
+				"no-ranking"
+			]
+		},
+		"aliases": [
+			"crossed-legs-size"
+		],
+		"sourceRefs": [],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.pattern.representation-objectification",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Як ширша сексуальна репрезентація тіл може співіснувати з об’єктивацією?",
+			"en": "How can broader sexual representation of bodies coexist with objectification?"
+		},
+		"answer": {
+			"uk": "Більше тіл може отримати місце в образах бажаності, тоді як оцінювання людини залишається зосередженим на зовнішності. Самопред’явлення та нав’язане оцінювання розрізняють за авторством, контролем і контекстом. Дослідження body-positive зображень дають різні результати залежно від стимулів і дизайну; жоден окремий результат не встановлює універсального ефекту сексуалізації.",
+			"en": "More bodies can enter images of desirability while evaluation of the person remains concentrated on appearance. Authorship, control, and context distinguish self-presentation from imposed evaluation. Studies of body-positive imagery produce different results depending on stimuli and design; no single result establishes a universal effect of sexualisation."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"inclusion",
+				"objectification",
+				"authorship",
+				"study-boundary"
+			]
+		},
+		"aliases": [
+			"representation-objectification"
+		],
+		"sourceRefs": [
+			"source.dimichele.sexybodypositive-2023",
+			"source.vendemia.body-positive-2021"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.pattern.runway-representation-scope",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Чому дані модних показів не описують усю розмірну репрезентацію в медіа?",
+			"en": "Why do runway data not describe all size representation in media?"
+		},
+		"answer": {
+			"uk": "Підрахунок образів на визначених показах описує саме цей корпус. Він не вимірює всіх моделей, рекламних кампаній, користувацьких зображень або споживачів. Тому вузький розмірний стандарт подіуму може співіснувати з ширшим набором тіл в інших медіа. Порівняння потребує узгоджених вибірок, періодів і визначень розмірних груп.",
+			"en": "Counting looks in specified shows describes that sample. It does not measure all models, campaigns, user-generated images, or consumers. A narrow runway standard can therefore coexist with broader bodily representation elsewhere. Comparisons require compatible samples, periods, and size-group definitions."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"sample",
+				"unit-of-count",
+				"parallel-contexts"
+			]
+		},
+		"aliases": [
+			"runway-representation-scope"
+		],
+		"sourceRefs": [
+			"source.vogue.size-inclusivity-fw2026"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.pattern.pose-intention-limit",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Чому зі схрещених ніг не можна встановити сексуальний намір або згоду людини?",
+			"en": "Why can crossed legs not establish a person’s sexual intention or consent?"
+		},
+		"answer": {
+			"uk": "Одна й та сама поза може виникати через зручність, звичку, одяг, температуру чи крісло. Культурне прочитання описує роботу знака для спостерігача й не надає доступу до внутрішнього стану людини. Намір і згода потребують окремого висловлення та контексту взаємодії; інтерпретація зображення їх не замінює.",
+			"en": "The same pose may result from comfort, habit, clothing, temperature, or a chair. A cultural reading describes how a sign works for an observer and provides no access to the person’s internal state. Intention and consent require separate communication and interaction context; interpreting an image cannot substitute for them."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"ordinary-causes",
+				"interpretation",
+				"consent-limit"
+			]
+		},
+		"aliases": [
+			"pose-intention-limit"
+		],
+		"sourceRefs": [],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.cloudflare.crawler-surface-policy",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Що таке Crawler Surface Policy і чим вона відрізняється від глобальної блокади crawler-а?",
+			"en": "What is Crawler Surface Policy, and how does it differ from globally blocking a crawler?"
+		},
+		"answer": {
+			"uk": "Це policy, яка поєднує identity автоматизованого клієнта з класом запитуваного URL. У кейсі crawler блокується на транзакційній поверхні WooCommerce, тоді як публічні сторінки залишаються поза цим block-правилом. Глобальна блокада identity поширювала б заборону на всі URL. Інші WAF-правила й origin зберігають вплив на остаточну відповідь.",
+			"en": "It is a policy combining an automated client’s identity with the requested URL class. In this case, crawlers are blocked on WooCommerce’s transactional surface while public pages remain outside that block rule. A global identity block would cover every URL. Other WAF rules and the origin still affect the final response."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"identity",
+				"surface",
+				"global-block",
+				"final-response"
+			]
+		},
+		"aliases": [
+			"crawler-surface-policy"
+		],
+		"sourceRefs": [
+			"source.ironcreed.cloudflare-case-001"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.cloudflare.verified-crawler-scope",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Чому verified або корисний crawler не повинен автоматично мати доступ до всіх URL сайту?",
+			"en": "Why should a verified or useful crawler not automatically have access to every site URL?"
+		},
+		"answer": {
+			"uk": "Підтвердження походження й корисність для індексації не визначають допустимість кожної операції. Кошик, account або службовий endpoint можуть створювати зайве навантаження без індексної цінності. Verified automation також включає сервіси, які не є crawler-ами цього кейсу. Рішення має враховувати призначення клієнта й поверхні; User-Agent fallback сам по собі не підтверджує identity.",
+			"en": "Authenticated origin and indexing value do not determine whether every operation is appropriate. Cart, account, or operational endpoints may generate load without indexing value. Verified automation also includes services outside this case’s crawler class. Decisions must consider both client purpose and surface; a User-Agent fallback alone does not verify identity."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"verification",
+				"purpose",
+				"surface",
+				"spoofable-ua"
+			]
+		},
+		"aliases": [
+			"verified-crawler-scope"
+		],
+		"sourceRefs": [
+			"source.cloudflare.verified-bots"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.cloudflare.woocommerce-transactional-surface",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Які URL WooCommerce доцільно розглядати як transactional hard-deny surface для crawler-ів?",
+			"en": "Which WooCommerce URLs are candidates for a transactional hard-deny surface for crawlers?"
+		},
+		"answer": {
+			"uk": "Початкові кандидати — кошик, checkout, account і операції add-to-cart, remove_item та wc-ajax. Потрібно перевірити реальні slug-и, вкладені шляхи, мовні префікси й семантику query. Підрядок параметра може збігтися всередині іншого значення. Фільтри, фасетна навігація та пошук потребують окремого SEO-рішення для hostname.",
+			"en": "Initial candidates are cart, checkout, account, and add-to-cart, remove_item, and wc-ajax operations. Verify actual slugs, descendant paths, language prefixes, and query semantics. A parameter substring may match inside another value. Filters, faceted navigation, and search need a separate hostname-specific SEO decision."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"paths",
+				"queries",
+				"localized-slugs",
+				"seo-limit"
+			]
+		},
+		"aliases": [
+			"woocommerce-transactional-surface"
+		],
+		"sourceRefs": [
+			"source.ironcreed.cloudflare-case-001"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.cloudflare.identity-surface-separation",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Як розділяти crawler identity і request surface у Cloudflare WAF policy?",
+			"en": "How should crawler identity and request surface be separated in a Cloudflare WAF policy?"
+		},
+		"answer": {
+			"uk": "Identity задають окремою умовою категорій або явних сигнальних User-Agent, а surface — окремою умовою шляхів і параметрів. Блокада вимагає їхнього одночасного збігу через and. Усередині кожної групи альтернативи поєднуються через or. Дужки й негативні приклади мають доводити, що public content та звичайні відвідувачі не потрапили під цю конкретну заборону.",
+			"en": "Express identity as a separate category or explicit User-Agent condition and surface as a separate path-and-parameter condition. Blocking requires both through and; alternatives within each group use or. Parentheses and negative examples should demonstrate that public content and ordinary visitors remain outside this particular restriction."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"boolean-composition",
+				"parentheses",
+				"negative-cases"
+			]
+		},
+		"aliases": [
+			"identity-surface-separation"
+		],
+		"sourceRefs": [
+			"source.cloudflare.verified-bots",
+			"source.ironcreed.cloudflare-case-001"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.cloudflare.fleet-profiles-exceptions",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Як керувати різними Cloudflare policy для кількох сайтів через profiles і hostname exceptions?",
+			"en": "How can profiles and hostname exceptions manage different Cloudflare policies across several sites?"
+		},
+		"answer": {
+			"uk": "Явний inventory перелічує зони. Кожна зона вибирає profile, додає або вимикає policy та за потреби має inline rule з умовою hostname. Compiler отримує окремий effective state для кожної зони. Зміна однієї commerce-зони не повинна поширювати commerce policy на всі інші; це перевіряють планом і загальним dry-run.",
+			"en": "An explicit inventory lists zones. Each selects a profile, adds or disables policies, and may contain an inline hostname-specific rule. The compiler produces a separate effective state for every zone. Changing one commerce zone should not assign commerce policy to all others; plans and a fleet dry-run check that boundary."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"inventory",
+				"composition",
+				"hostname",
+				"isolation"
+			]
+		},
+		"aliases": [
+			"fleet-profiles-exceptions"
+		],
+		"sourceRefs": [
+			"source.ironcreed.cloudflare-case-001"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.cloudflare.security-deployment-stages",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Чому security deployment проходить через compile → diff → dry-run → apply → smoke → audit?",
+			"en": "Why should security deployment follow compile → diff → dry-run → apply → smoke → audit?"
+		},
+		"answer": {
+			"uk": "Етапи перевіряють різні твердження: compile — модель, diff/plan — відмінності від live state, dry-run — обсяг fleet, apply — явний запис, smoke — поведінку запитів, audit — відповідність desired state. Snapshot перед записом і readback після нього зберігають докази. Case 001 має readback, а site-specific edge smoke залишається окремою deployment-перевіркою.",
+			"en": "The stages test different claims: compile checks the model; diff/plan compares live state; dry-run checks fleet scope; apply writes explicitly; smoke tests request behaviour; audit checks desired state. Pre-write snapshots and post-write readback preserve evidence. Case 001 implements readback, while site-specific edge smoke remains a separate deployment check."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"stage-contracts",
+				"evidence",
+				"readback-vs-smoke"
+			]
+		},
+		"aliases": [
+			"security-deployment-stages"
+		],
+		"sourceRefs": [
+			"source.ironcreed.cloudflare-case-001"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.cloudflare.read-write-token-separation",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Навіщо розділяти read-only і write API tokens в автоматизації Cloudflare?",
+			"en": "Why separate read-only and write API tokens in Cloudflare automation?"
+		},
+		"answer": {
+			"uk": "Читання стану не потребує права змінювати WAF. Окремі scopes і environment variables зменшують повноваження щоденної діагностики. Write-token завантажують перед переглянутою операцією та вилучають після неї. Прапорець --apply доповнює розділення credentials; сам по собі він не змінює прав токена й не захищає від усіх помилок.",
+			"en": "Inspecting state does not require permission to modify WAF. Separate scopes and environment variables reduce the authority of routine diagnostics. Load a write token before a reviewed operation and unset it afterwards. The --apply flag complements credential separation; it neither changes token permissions nor prevents every mistake."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"least-authority",
+				"credential-scope",
+				"explicit-write"
+			]
+		},
+		"aliases": [
+			"read-write-token-separation"
+		],
+		"sourceRefs": [
+			"source.cloudflare.api-permissions",
+			"source.ironcreed.cloudflare-case-001"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.cloudflare.api-token-wsl",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Як створити й безпечно зберігати Cloudflare API token для локальної роботи через WSL?",
+			"en": "How can a Cloudflare API token be created and stored safely for local work through WSL?"
+		},
+		"answer": {
+			"uk": "Створіть custom token у профілі Cloudflare, обмежте його потрібними зонами та операціями. Для Case 001 read-token потребує Zone Read і Zone WAF Read; write-token — Zone Read і Zone WAF Edit. У Bash вводьте значення через read -rsp, щоб не залишати його в історії. Для зберігання використовуйте менеджер секретів або файл поза checkout із правами 600 у каталозі 700. Після роботи unset write-token; після витоку відкличте й замініть його. Цей договір придатний для майбутніх матеріалів серії.",
+			"en": "Create a custom token in your Cloudflare profile and restrict it to required zones and operations. Case 001 uses Zone Read plus Zone WAF Read for reading, and Zone Read plus Zone WAF Edit for writing. In Bash, enter values with read -rsp to avoid command history. Store them in a secrets manager or outside the checkout in a 600-permission file within a 700-permission directory. Unset the write token after use; revoke and replace it after exposure. This contract is reusable by future series articles."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"create-token",
+				"scope",
+				"wsl-input",
+				"storage",
+				"rotation"
+			]
+		},
+		"aliases": [
+			"api-token-wsl"
+		],
+		"sourceRefs": [
+			"source.cloudflare.create-api-token",
+			"source.cloudflare.api-permissions",
+			"source.microsoft.wsl-install"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.cloudflare.physical-rule-budget",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Як працювати з обмеженою кількістю Cloudflare Custom Rules, зберігаючи окремі логічні policy?",
+			"en": "How can a limited Cloudflare Custom Rule budget be used while keeping logical policies separate?"
+		},
+		"answer": {
+			"uk": "Зберігайте логічні policy окремими файлами, а сумісні прості правила з однаковою дією й physical_group поєднуйте на етапі compilation. Бюджет враховує також unmanaged rules. Групування може вплинути на порядок, тому потрібен перегляд плану; довільні action_parameters не можна вважати підтриманими без реалізації й перевірки. Значення 5 у fixture є параметром прикладу, який звіряють із конкретною зоною.",
+			"en": "Keep logical policies in separate files and merge compatible simple rules with the same action and physical_group during compilation. Count unmanaged rules in the budget too. Grouping can affect order, so review the plan; arbitrary action_parameters are not supported merely by assumption. The fixture’s value of 5 is an example parameter to check against the actual zone."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"logical-vs-physical",
+				"budget",
+				"order",
+				"supported-actions"
+			]
+		},
+		"aliases": [
+			"physical-rule-budget"
+		],
+		"sourceRefs": [
+			"source.cloudflare.custom-rules",
+			"source.ironcreed.cloudflare-case-001"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.cloudflare.configuration-drift",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Що означає configuration drift для кількох Cloudflare zones і як його виявити?",
+			"en": "What is configuration drift across Cloudflare zones, and how can it be detected?"
+		},
+		"answer": {
+			"uk": "Drift — відмінність live state від очікуваного результату compilation для конкретної зони. Audit читає кожну зону inventory й порівнює керований стан у межах моделі; різні profiles можуть законно мати різні правила. Виявлення drift не є дозволом на його автоматичне виправлення. Порівняння також не доводить, що сама desired policy безпомилкова.",
+			"en": "Drift is divergence between live state and the compiled expectation for a particular zone. Audit reads the inventory and compares state within the model; different profiles may legitimately produce different rules. Detecting drift does not authorise automatic remediation. A comparison also cannot prove that the desired policy itself is correct."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"expected-state",
+				"per-zone",
+				"read-only",
+				"policy-validity"
+			]
+		},
+		"aliases": [
+			"configuration-drift"
+		],
+		"sourceRefs": [
+			"source.ironcreed.cloudflare-case-001"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.cloudflare.public-repository-boundary",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Які дані Cloudflare-інфраструктури можна зберігати в публічному monorepo, а які мають залишатися локальними?",
+			"en": "Which Cloudflare infrastructure data can belong in a public monorepo, and which should remain local?"
+		},
+		"answer": {
+			"uk": "У цьому проєкті публікуються engine, тести, безпечні fixtures, демонстраційні policy й нормативні посилання. Tokens, клієнтський inventory, zone IDs, приватні hostname overlays і production snapshots виключені. Zone ID не є секретом автентифікації, але належить до захищеної операційної карти цього кейсу. Приклади використовують зарезервовані домени; .gitignore доповнює перевірку фактично tracked файлів та історії.",
+			"en": "This project publishes the engine, tests, safe fixtures, demonstration policies, and normative references. Tokens, client inventory, zone IDs, private hostname overlays, and production snapshots are excluded. A zone ID is not an authentication secret, but belongs to this case’s protected operational map. Examples use reserved domains; .gitignore complements checks of tracked files and history."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"allowed-content",
+				"private-state",
+				"zone-id-distinction",
+				"history"
+			]
+		},
+		"aliases": [
+			"public-repository-boundary"
+		],
+		"sourceRefs": [
+			"source.ironcreed.cloudflare-case-001"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
+	},
+	{
+		"id": "q.cloudflare.telemetry-write-boundary",
+		"kind": "question",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"text": {
+			"uk": "Чому crawler telemetry можна автоматизувати, а security writes слід залишати явною дією оператора?",
+			"en": "Why can crawler telemetry be automated while security writes remain explicit operator actions?"
+		},
+		"answer": {
+			"uk": "Telemetry формує спостереження й кандидатні пояснення; WAF-запис змінює доступність сайта для людей та інтеграцій. Між ними потрібні policy diff, тести, план і людське рішення. Аналітичний LLM-шар працює без write-token, а approved apply проходить окремий шлях із доказами та перевіркою. Це розділяє право запропонувати зміну й право її виконати.",
+			"en": "Telemetry produces observations and candidate explanations; a WAF write changes availability for people and integrations. A policy diff, tests, plan, and human decision separate the two. An analytical LLM layer has no write token, while approved apply follows a separate path with evidence and verification. This separates authority to propose from authority to execute."
+		},
+		"answerContract": {
+			"shape": "thesis-mechanism-example-limit",
+			"mustAddress": [
+				"observation",
+				"availability",
+				"human-review",
+				"no-llm-write-token"
+			]
+		},
+		"aliases": [
+			"telemetry-write-boundary"
+		],
+		"sourceRefs": [
+			"source.ironcreed.cloudflare-case-001"
+		],
+		"presentation": {
+			"motion": "reveal"
+		},
+		"provenance": "authorial-material-and-editorial-adaptation",
+		"standalone": true
 	}
 ]

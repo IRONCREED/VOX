@@ -15,7 +15,7 @@
 			"id": "icw-profile-001",
 			"path": "governance/PROFILE.md",
 			"language": "ru",
-			"revision": "0.7.0",
+			"revision": "0.8.0",
 			"status": "active",
 			"classes": []
 		},
@@ -25,15 +25,26 @@
 			"language": "ru",
 			"revision": "1.7.0",
 			"status": "active",
-			"classes": ["Z01", "Z02", "Z07", "Z08", "Z09", "Z11"]
+			"classes": [
+				"Z01",
+				"Z02",
+				"Z07",
+				"Z08",
+				"Z09",
+				"Z11"
+			]
 		},
 		{
 			"id": "icw-act-site-experience-001",
 			"path": "governance/legislation/SITE_EXPERIENCE.md",
 			"language": "ru",
-			"revision": "1.9.0",
+			"revision": "1.10.0",
 			"status": "active",
-			"classes": ["Z02", "Z09", "Z11"]
+			"classes": [
+				"Z02",
+				"Z09",
+				"Z11"
+			]
 		},
 		{
 			"id": "icw-act-patterns-001",
@@ -41,7 +52,9 @@
 			"language": "ru",
 			"revision": "0.16.0",
 			"status": "active",
-			"classes": ["Z12"]
+			"classes": [
+				"Z12"
+			]
 		},
 		{
 			"id": "icw-act-interface-corrections-001",
@@ -49,7 +62,12 @@
 			"language": "ru",
 			"revision": "1.0.0",
 			"status": "active",
-			"classes": ["Z02", "Z09", "Z11", "Z12"]
+			"classes": [
+				"Z02",
+				"Z09",
+				"Z11",
+				"Z12"
+			]
 		},
 		{
 			"id": "icw-act-interface-stabilization-001",
@@ -57,7 +75,12 @@
 			"language": "ru",
 			"revision": "1.0.0",
 			"status": "active",
-			"classes": ["Z02", "Z09", "Z11", "Z12"]
+			"classes": [
+				"Z02",
+				"Z09",
+				"Z11",
+				"Z12"
+			]
 		},
 		{
 			"id": "icw-act-content-foundation-001",
@@ -65,7 +88,12 @@
 			"language": "ru",
 			"revision": "2.1.0",
 			"status": "active",
-			"classes": ["Z02", "Z09", "Z11", "Z12"]
+			"classes": [
+				"Z02",
+				"Z09",
+				"Z11",
+				"Z12"
+			]
 		},
 		{
 			"id": "icw-act-brand-pulse-001",
@@ -74,7 +102,12 @@
 			"revision": "1.0.0",
 			"status": "superseded",
 			"supersededBy": "icw-act-interface-refinement-001",
-			"classes": ["Z02", "Z09", "Z11", "Z12"]
+			"classes": [
+				"Z02",
+				"Z09",
+				"Z11",
+				"Z12"
+			]
 		},
 		{
 			"id": "icw-act-brand-fidelity-001",
@@ -83,7 +116,12 @@
 			"revision": "1.0.0",
 			"status": "superseded",
 			"supersededBy": "icw-act-interface-refinement-001",
-			"classes": ["Z02", "Z09", "Z11", "Z12"]
+			"classes": [
+				"Z02",
+				"Z09",
+				"Z11",
+				"Z12"
+			]
 		},
 		{
 			"id": "icw-act-interface-refinement-001",
@@ -91,7 +129,12 @@
 			"language": "ru",
 			"revision": "1.0.0",
 			"status": "active",
-			"classes": ["Z02", "Z09", "Z11", "Z12"]
+			"classes": [
+				"Z02",
+				"Z09",
+				"Z11",
+				"Z12"
+			]
 		},
 		{
 			"id": "icw-act-palantir-corpus-001",
@@ -100,15 +143,29 @@
 			"revision": "1.0.0",
 			"status": "superseded",
 			"supersededBy": "icw-act-semantic-core-001",
-			"classes": ["Z02", "Z07", "Z08", "Z09", "Z11", "Z12"]
+			"classes": [
+				"Z02",
+				"Z07",
+				"Z08",
+				"Z09",
+				"Z11",
+				"Z12"
+			]
 		},
 		{
 			"id": "icw-act-semantic-core-001",
 			"path": "governance/legislation/SEMANTIC_CORE_AND_ENTITY_INDEX_2026-08-11.md",
 			"language": "ru",
-			"revision": "1.8.0",
+			"revision": "1.10.0",
 			"status": "active",
-			"classes": ["Z02", "Z07", "Z08", "Z09", "Z11", "Z12"]
+			"classes": [
+				"Z02",
+				"Z07",
+				"Z08",
+				"Z09",
+				"Z11",
+				"Z12"
+			]
 		},
 		{
 			"id": "icw-act-content-lifecycle-001",
@@ -116,15 +173,29 @@
 			"language": "ru",
 			"revision": "2.4.0",
 			"status": "active",
-			"classes": ["Z02", "Z07", "Z08", "Z09", "Z11", "Z12"]
+			"classes": [
+				"Z02",
+				"Z07",
+				"Z08",
+				"Z09",
+				"Z11",
+				"Z12"
+			]
 		},
 		{
 			"id": "icw-act-vox-public-source-001",
 			"path": "governance/legislation/VOX_PUBLIC_SOURCE_2026-08-14.md",
 			"language": "ru",
-			"revision": "2.4.0",
+			"revision": "2.4.1",
 			"status": "active",
-			"classes": ["Z02", "Z07", "Z08", "Z09", "Z11", "Z12"]
+			"classes": [
+				"Z02",
+				"Z07",
+				"Z08",
+				"Z09",
+				"Z11",
+				"Z12"
+			]
 		},
 		{
 			"id": "icw-act-diagram-system-001",
@@ -132,7 +203,14 @@
 			"language": "ru",
 			"revision": "1.0.0",
 			"status": "active",
-			"classes": ["Z02", "Z07", "Z08", "Z09", "Z11", "Z12"]
+			"classes": [
+				"Z02",
+				"Z07",
+				"Z08",
+				"Z09",
+				"Z11",
+				"Z12"
+			]
 		}
 	]
 }

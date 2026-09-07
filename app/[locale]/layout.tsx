@@ -27,12 +27,6 @@ const socialPreview = new URL('/og.png', getSiteOrigin());
 export const metadata: Metadata = {
 	applicationName: 'IRON CREED',
 	description: siteDescription,
-	icons: {
-		icon: BRAND_FAVICON_SRC,
-		shortcut: BRAND_FAVICON_SRC,
-		apple: BRAND_FAVICON_SRC,
-	},
-	manifest: '/manifest.webmanifest',
 	metadataBase: getSiteOrigin(),
 	openGraph: {
 		description: siteDescription,
@@ -88,6 +82,13 @@ export default async function LocaleLayout({
 	return (
 		<html lang={locale} suppressHydrationWarning>
 			<head>
+				{/* Keep browser resources on the current domain: metadataBase can be a different publication origin. */}
+				<link rel="icon" href={BRAND_FAVICON_SRC} sizes="any" type="image/svg+xml" />
+				<link rel="icon" href="/favicon-32.png?v=20260906" sizes="32x32" type="image/png" />
+				<link rel="icon" href="/favicon-48.png?v=20260906" sizes="48x48" type="image/png" />
+				<link rel="shortcut icon" href="/favicon.ico?v=20260906" />
+				<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260906" sizes="180x180" />
+				<link rel="manifest" href="/manifest.webmanifest" />
 				<ThemeBootstrap />
 			</head>
 			<body className={`${geistSans.variable} ${geistMono.variable}`}>

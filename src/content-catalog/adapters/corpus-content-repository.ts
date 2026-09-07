@@ -379,6 +379,12 @@ export function getAllPublishedPageRoutes(): LocalizedContentPage[] {
 	return contentPages.filter((page) => page.status === 'published');
 }
 
+export function getProjectPages(locale: Locale): LocalizedContentPage[] {
+	return getPublishedContentPages(locale)
+		.filter((page) => ['about', 'material-cycle', 'anthem'].includes(page.pageType))
+		.toSorted((left, right) => left.order - right.order);
+}
+
 export function getPolicyPages(locale: Locale): LocalizedContentPage[] {
 	return getPublishedContentPages(locale).filter((page) => page.pageType === 'policy');
 }
@@ -420,6 +426,7 @@ export function toSeriesSummary(series: LocalizedSeries): ArticleSummary {
 		tags: [...tags],
 		href: getSeriesHref(series),
 		publishedAt: series.updatedAt,
+		catalogPriority: series.catalogPriority,
 		folderSheets: series.folderSheets,
 		latestTitle: series.latestTitle,
 		partCount: series.materialIds.length,
@@ -439,6 +446,7 @@ export function getPublishedCatalogEntries(
 	const series = getPublishedSeries(locale, query).map(toSeriesSummary);
 	return [...standalone, ...series].toSorted(
 		(left, right) =>
+			(right.catalogPriority ?? 0) - (left.catalogPriority ?? 0) ||
 			Date.parse(right.publishedAt) - Date.parse(left.publishedAt) ||
 			left.title.localeCompare(right.title),
 	);

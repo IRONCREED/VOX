@@ -686,5 +686,69 @@
 			"uk": "горе",
 			"en": "grief"
 		}
+	},
+	{
+		"id": "visual-culture",
+		"order": 870,
+		"labels": {
+			"uk": "візуальна культура",
+			"en": "visual culture"
+		}
+	},
+	{
+		"id": "body-representation",
+		"order": 880,
+		"labels": {
+			"uk": "репрезентація тіла",
+			"en": "body representation"
+		}
+	},
+	{
+		"id": "cloudflare",
+		"order": 890,
+		"labels": {
+			"uk": "Cloudflare",
+			"en": "Cloudflare"
+		}
+	},
+	{
+		"id": "devops",
+		"order": 900,
+		"labels": {
+			"uk": "DevOps",
+			"en": "DevOps"
+		}
+	},
+	{
+		"id": "security",
+		"order": 910,
+		"labels": {
+			"uk": "безпека",
+			"en": "security"
+		}
+	},
+	{
+		"id": "fleet-management",
+		"order": 920,
+		"labels": {
+			"uk": "керування мережею сайтів",
+			"en": "fleet management"
+		}
+	},
+	{
+		"id": "woocommerce",
+		"order": 930,
+		"labels": {
+			"uk": "WooCommerce",
+			"en": "WooCommerce"
+		}
+	},
+	{
+		"id": "crawler-policy",
+		"order": 940,
+		"labels": {
+			"uk": "доступ crawler-ів",
+			"en": "crawler policy"
+		}
 	}
 ]

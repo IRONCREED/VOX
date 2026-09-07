@@ -1,242 +1,275 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/</loc>
-		<lastmod>2026-08-29</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/" />
+		<loc>https://web.zhovten.games/uk/</loc>
+		<lastmod>2026-09-07</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/programming</loc>
-		<lastmod>2026-08-02</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/programming" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/programming" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/programming" />
+		<loc>https://web.zhovten.games/uk/programming</loc>
+		<lastmod>2026-09-06</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/programming" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/programming" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/programming" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/research</loc>
-		<lastmod>2026-08-29</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/research" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research" />
+		<loc>https://web.zhovten.games/uk/research</loc>
+		<lastmod>2026-09-07</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/research" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/research" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/research" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios</loc>
+		<loc>https://web.zhovten.games/uk/scenarios</loc>
+		<lastmod>2026-09-06</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/scenarios" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/scenarios" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/scenarios" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/pages/about</loc>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/pages/about" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/pages/about" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/pages/about" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/pages/ai-policy</loc>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/pages/ai-policy" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/pages/ai-policy" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/pages/ai-policy" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/pages/anthem</loc>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/pages/anthem" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/pages/anthem" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/pages/anthem" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/pages/corpus-index</loc>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/pages/corpus-index" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/pages/corpus-index" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/pages/corpus-index" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/pages/licensing</loc>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/pages/licensing" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/pages/licensing" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/pages/licensing" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/pages/material-cycle</loc>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/pages/material-cycle" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/pages/material-cycle" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/pages/material-cycle" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/pages/privacy-policy</loc>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/pages/privacy-policy" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/pages/privacy-policy" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/pages/privacy-policy" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/pages/terms-of-use</loc>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/pages/terms-of-use" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/pages/terms-of-use" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/pages/terms-of-use" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-mekhanist</loc>
 		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/scenarios" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-mekhanist" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/scenarios/do-not-be-afraid-sir-mechanist" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-mekhanist" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/about</loc>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/about" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/pages/about" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/about" />
-	</url>
-	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/ai-policy</loc>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/ai-policy" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/pages/ai-policy" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/ai-policy" />
-	</url>
-	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/corpus-index</loc>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/corpus-index" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/pages/corpus-index" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/corpus-index" />
-	</url>
-	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/licensing</loc>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/licensing" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/pages/licensing" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/licensing" />
-	</url>
-	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/privacy-policy</loc>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/privacy-policy" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/pages/privacy-policy" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/privacy-policy" />
-	</url>
-	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/terms-of-use</loc>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/terms-of-use" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/pages/terms-of-use" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/pages/terms-of-use" />
-	</url>
-	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-mekhanist</loc>
+		<loc>https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-druha-zbirka</loc>
 		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-mekhanist" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/scenarios/do-not-be-afraid-sir-mechanist" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-mekhanist" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-druha-zbirka" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/scenarios/do-not-be-afraid-sir-second-assembly" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-druha-zbirka" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-druha-zbirka</loc>
+		<loc>https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-skhovyshche-81</loc>
 		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-druha-zbirka" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/scenarios/do-not-be-afraid-sir-second-assembly" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-druha-zbirka" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-skhovyshche-81" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/scenarios/do-not-be-afraid-sir-vault-81" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-skhovyshche-81" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-skhovyshche-81</loc>
+		<loc>https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-ostriv</loc>
 		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-skhovyshche-81" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/scenarios/do-not-be-afraid-sir-vault-81" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-skhovyshche-81" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-ostriv" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/scenarios/do-not-be-afraid-sir-island" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-ostriv" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-ostriv</loc>
+		<loc>https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-zbroia-dlia-vsikh</loc>
 		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-ostriv" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/scenarios/do-not-be-afraid-sir-island" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-ostriv" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-zbroia-dlia-vsikh" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/scenarios/do-not-be-afraid-sir-weapons-for-all" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-zbroia-dlia-vsikh" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-zbroia-dlia-vsikh</loc>
+		<loc>https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-konsylium</loc>
 		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-zbroia-dlia-vsikh" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/scenarios/do-not-be-afraid-sir-weapons-for-all" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-zbroia-dlia-vsikh" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-konsylium" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/scenarios/do-not-be-afraid-sir-consilium" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-konsylium" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-konsylium</loc>
+		<loc>https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-skhovyshche-111</loc>
 		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-konsylium" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/scenarios/do-not-be-afraid-sir-consilium" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-konsylium" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-skhovyshche-111" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/scenarios/do-not-be-afraid-sir-vault-111" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-skhovyshche-111" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-skhovyshche-111</loc>
+		<loc>https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-roboche-vyznachennia-zhyttia</loc>
 		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-skhovyshche-111" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/scenarios/do-not-be-afraid-sir-vault-111" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-skhovyshche-111" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-roboche-vyznachennia-zhyttia" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/scenarios/do-not-be-afraid-sir-working-definition-of-life" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-roboche-vyznachennia-zhyttia" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-roboche-vyznachennia-zhyttia</loc>
+		<loc>https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-spivdruzhnist-zbyraietsia</loc>
 		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-roboche-vyznachennia-zhyttia" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/scenarios/do-not-be-afraid-sir-working-definition-of-life" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-roboche-vyznachennia-zhyttia" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-spivdruzhnist-zbyraietsia" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/scenarios/do-not-be-afraid-sir-commonwealth-assembles" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-spivdruzhnist-zbyraietsia" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-spivdruzhnist-zbyraietsia</loc>
+		<loc>https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-shturm</loc>
+		<lastmod>2026-09-06</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-shturm" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/scenarios/do-not-be-afraid-sir-assault" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-shturm" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-smert-moho-svitu</loc>
 		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-spivdruzhnist-zbyraietsia" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/scenarios/do-not-be-afraid-sir-commonwealth-assembles" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-spivdruzhnist-zbyraietsia" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-smert-moho-svitu" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/scenarios/do-not-be-afraid-sir-death-of-my-world" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser-smert-moho-svitu" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-shturm</loc>
+		<loc>https://web.zhovten.games/uk/research/tilo-iak-tymchasova-konstruktsiia</loc>
 		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-shturm" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/scenarios/do-not-be-afraid-sir-assault" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-shturm" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/research/tilo-iak-tymchasova-konstruktsiia" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/research/body-as-temporary-construction" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/research/tilo-iak-tymchasova-konstruktsiia" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-smert-moho-svitu</loc>
+		<loc>https://web.zhovten.games/uk/programming/cloudflare-001-crawler-surface-policy</loc>
+		<lastmod>2026-09-06</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/programming/cloudflare-001-crawler-surface-policy" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/programming/cloudflare-001-crawler-surface-policy" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/programming/cloudflare-001-crawler-surface-policy" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku</loc>
+		<lastmod>2026-09-02</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/research/connect-america-how-article-vii-bootstraps-a-republic" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok</loc>
+		<lastmod>2026-09-02</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/research/what-america-trusts-how-article-vi-assembles-the-supreme-order" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro</loc>
+		<lastmod>2026-09-02</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/research/update-america-how-article-v-changes-the-constitutional-kernel" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu</loc>
+		<lastmod>2026-09-02</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/research/link-america-how-article-iv-turns-the-states-into-a-federal-network" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia</loc>
+		<lastmod>2026-09-02</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/research/adjudicate-america-how-article-iii-turns-conflict-into-enforceable-judgment" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu</loc>
+		<lastmod>2026-09-02</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/research/execute-america-how-article-ii-turns-a-decision-into-action" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon</loc>
+		<lastmod>2026-09-02</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/research/write-america-how-article-i-turns-intent-into-general-law" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon" />
+	</url>
+	<url>
+		<loc>https://web.zhovten.games/uk/scenarios/ne-biitesia-ser</loc>
 		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-smert-moho-svitu" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/scenarios/do-not-be-afraid-sir-death-of-my-world" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser-smert-moho-svitu" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/scenarios/do-not-be-afraid-sir" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/scenarios/ne-biitesia-ser" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/tilo-iak-tymchasova-konstruktsiia</loc>
-		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/tilo-iak-tymchasova-konstruktsiia" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/research/body-as-temporary-construction" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/tilo-iak-tymchasova-konstruktsiia" />
+		<loc>https://web.zhovten.games/uk/research/vid-tila-do-syhnalu</loc>
+		<lastmod>2026-09-02</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/research/vid-tila-do-syhnalu" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/research/from-body-to-signal" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/research/vid-tila-do-syhnalu" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku</loc>
-		<lastmod>2026-08-29</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/research/connect-america-how-article-vii-bootstraps-a-republic" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku" />
+		<loc>https://web.zhovten.games/uk/research/rehulovana-dostupnist</loc>
+		<lastmod>2026-09-07</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/research/rehulovana-dostupnist" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/research/regulated-availability" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/research/rehulovana-dostupnist" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok</loc>
-		<lastmod>2026-08-29</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/research/what-america-trusts-how-article-vi-assembles-the-supreme-order" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok" />
+		<loc>https://web.zhovten.games/uk/programming/navishcho-potribna-dokumentatsiia</loc>
+		<lastmod>2026-09-02</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/programming/navishcho-potribna-dokumentatsiia" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/programming/why-documentation-matters" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/programming/navishcho-potribna-dokumentatsiia" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro</loc>
-		<lastmod>2026-08-29</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/research/update-america-how-article-v-changes-the-constitutional-kernel" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro" />
+		<loc>https://web.zhovten.games/uk/series/ne-biitesia-ser-mashynnyi-rekviem-ady</loc>
+		<lastmod>2026-09-06</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/series/ne-biitesia-ser-mashynnyi-rekviem-ady" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/series/do-not-be-afraid-sir-adas-machine-requiem" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/series/ne-biitesia-ser-mashynnyi-rekviem-ady" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu</loc>
-		<lastmod>2026-08-29</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/research/link-america-how-article-iv-turns-the-states-into-a-federal-network" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu" />
+		<loc>https://web.zhovten.games/uk/series/velykyi-i-zhakhlyvyi-cloudflare</loc>
+		<lastmod>2026-09-06</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/series/velykyi-i-zhakhlyvyi-cloudflare" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/series/the-great-and-terrible-cloudflare" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/series/velykyi-i-zhakhlyvyi-cloudflare" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia</loc>
-		<lastmod>2026-08-29</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/research/adjudicate-america-how-article-iii-turns-conflict-into-enforceable-judgment" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia" />
+		<loc>https://web.zhovten.games/uk/series/konstytutsiia-shcho-vykonuietsia</loc>
+		<lastmod>2026-09-02</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/series/konstytutsiia-shcho-vykonuietsia" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/series/the-constitution-that-runs" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/series/konstytutsiia-shcho-vykonuietsia" />
 	</url>
 	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu</loc>
-		<lastmod>2026-08-29</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/research/execute-america-how-article-ii-turns-a-decision-into-action" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu" />
-	</url>
-	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon</loc>
-		<lastmod>2026-08-29</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/research/write-america-how-article-i-turns-intent-into-general-law" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon" />
-	</url>
-	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser</loc>
-		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/scenarios/do-not-be-afraid-sir" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/scenarios/ne-biitesia-ser" />
-	</url>
-	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/vid-tila-do-syhnalu</loc>
-		<lastmod>2026-08-02</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/vid-tila-do-syhnalu" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/research/from-body-to-signal" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/research/vid-tila-do-syhnalu" />
-	</url>
-	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/programming/navishcho-potribna-dokumentatsiia</loc>
-		<lastmod>2026-08-02</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/programming/navishcho-potribna-dokumentatsiia" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/programming/why-documentation-matters" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/programming/navishcho-potribna-dokumentatsiia" />
-	</url>
-	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/series/ne-biitesia-ser-mashynnyi-rekviem-ady</loc>
-		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/series/ne-biitesia-ser-mashynnyi-rekviem-ady" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/series/do-not-be-afraid-sir-adas-machine-requiem" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/series/ne-biitesia-ser-mashynnyi-rekviem-ady" />
-	</url>
-	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/series/konstytutsiia-shcho-vykonuietsia</loc>
-		<lastmod>2026-08-29</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/series/konstytutsiia-shcho-vykonuietsia" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/series/the-constitution-that-runs" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/series/konstytutsiia-shcho-vykonuietsia" />
-	</url>
-	<url>
-		<loc>https://ironcreed-credo.ironcreed.chatgpt.site/uk/series/psykhobiosotsialni-paterny</loc>
-		<lastmod>2026-08-20</lastmod>
-		<xhtml:link rel="alternate" hreflang="uk" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/series/psykhobiosotsialni-paterny" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://ironcreed-credo.ironcreed.chatgpt.site/en/series/psychobiosocial-patterns" />
-		<xhtml:link rel="alternate" hreflang="x-default" href="https://ironcreed-credo.ironcreed.chatgpt.site/uk/series/psykhobiosotsialni-paterny" />
+		<loc>https://web.zhovten.games/uk/series/psykhobiosotsialni-paterny</loc>
+		<lastmod>2026-09-07</lastmod>
+		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/series/psykhobiosotsialni-paterny" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/series/psychobiosocial-patterns" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/series/psykhobiosotsialni-paterny" />
 	</url>
 </urlset>

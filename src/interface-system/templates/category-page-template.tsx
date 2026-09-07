@@ -9,6 +9,7 @@ import type { BuildIdentity } from '../../site-navigation/application/build-iden
 import { MaterialFeed } from '../components/material-feed';
 import { QuipCollection } from '../components/quip-collection';
 import { SiteShell } from './site-shell';
+import { SectionIcon } from '../components/section-icon';
 
 interface CategoryModel {
 	id: string;
@@ -53,7 +54,10 @@ export function CategoryPageTemplate({
 			<main className="knowledge-panel knowledge-panel--listing" id="main">
 				<header className="listing-introduction">
 					<small>IRON CREED / {category.id.toUpperCase()}</small>
-					<h1>{category.label}</h1>
+					<h1 className="section-heading">
+						<SectionIcon sectionId={category.id} variant="heading" />
+						<span>{category.label}</span>
+					</h1>
 					<div className="title-rule" />
 					<p>{category.description}</p>
 				</header>

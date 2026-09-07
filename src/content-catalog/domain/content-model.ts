@@ -99,6 +99,7 @@ export interface LocalizedArticle extends ArticleMetadata {
 }
 
 export interface ArticleSummary {
+	catalogPriority?: number;
 	id: string;
 	kind: 'material' | 'series';
 	materialId?: string;
@@ -118,6 +119,7 @@ export interface ArticleSummary {
 }
 
 export interface LocalizedSeries {
+	catalogPriority?: number;
 	id: string;
 	seriesId: string;
 	translationKey: string;
@@ -211,6 +213,8 @@ export interface InterfaceCopy {
 	closeHint: string;
 	policyDirectory: string;
 	nextQuip: string;
+	previousSlide: string;
+	nextSlide: string;
 	corpusIndex: string;
 	corpusIndexDescription: string;
 	entityKind: string;
@@ -290,7 +294,7 @@ export interface PublicEntityRelatedEntry {
 	href: string;
 }
 
-export type ContentPageType = 'about' | 'corpus-index' | 'policy';
+export type ContentPageType = 'about' | 'material-cycle' | 'anthem' | 'corpus-index' | 'policy';
 
 export interface AboutStoryLink {
 	label: string;
@@ -308,7 +312,7 @@ export interface AboutStoryEntry {
 export interface AboutStorySection {
 	id: string;
 	order: number;
-	kind: 'service' | 'portfolio' | 'testimonials' | 'contact';
+	kind: 'service' | 'portfolio' | 'profiles' | 'testimonials' | 'contact';
 	status: 'active' | 'placeholder';
 	title: string;
 	summary: string;
@@ -321,28 +325,34 @@ export interface AboutStorySection {
 }
 
 export interface LocalizedAboutStory {
+	identityHintLabel: string;
 	transition: {
 		eyebrow: string;
 		title: string;
 		body: string;
 	};
-	lifecycle: {
-		eyebrow: string;
-		title: string;
-		summary: string;
-		steps: Array<{ id: string; order: number; title: string; description: string }>;
-		examples: Array<{
-			id: string;
-			source: AboutStoryLink;
-			result: AboutStoryLink;
-		}>;
-	};
 	sections: AboutStorySection[];
+}
+
+export interface LocalizedMaterialCycle {
+	tableLabels: string[];
+	eyebrow: string;
+	title: string;
+	summary: string;
+	steps: Array<{ id: string; order: number; title: string; description: string }>;
+	examples: Array<{
+		id: string;
+		initiator: string;
+		source: AboutStoryLink;
+		result: AboutStoryLink;
+	}>;
+	conclusion: string;
 }
 
 export interface LocalizedContentPage {
 	id: string;
 	pageId: string;
+	order: number;
 	locale: Locale;
 	slug: string;
 	title: string;
@@ -354,6 +364,7 @@ export interface LocalizedContentPage {
 	status: PublicationStatus;
 	conversationViewId?: string;
 	aboutStory?: LocalizedAboutStory;
+	materialCycle?: LocalizedMaterialCycle;
 }
 
 export type HintSource =

@@ -9,6 +9,7 @@ import type { BuildIdentity } from '../../site-navigation/application/build-iden
 import { MaterialFeed } from '../components/material-feed';
 import { QuipCollection } from '../components/quip-collection';
 import { SiteShell } from './site-shell';
+import { SectionIcon } from '../components/section-icon';
 
 interface HomePageTemplateProps {
 	activeTagId?: string;
@@ -45,7 +46,10 @@ export function HomePageTemplate({
 			<main className="knowledge-panel knowledge-panel--listing" id="main">
 				<header className="listing-introduction">
 					<small>IRON CREED / KNOWLEDGE SYSTEM</small>
-					<h1>{copy.homeTitle}</h1>
+					<h1 className="section-heading">
+						<SectionIcon sectionId="home" variant="heading" />
+						<span>{copy.homeTitle}</span>
+					</h1>
 					<div className="title-rule" />
 					<p>{copy.homeDescription}</p>
 				</header>

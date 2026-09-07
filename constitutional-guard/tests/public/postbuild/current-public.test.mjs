@@ -6,14 +6,20 @@ import { createCompiledSiteDriver } from '../../../testing-interface/site-driver
 
 const projectRoot = process.env.IRON_WARDEN_PROJECT_ROOT;
 
-test('the public build renders the service story and real WARDEN route', async () => {
+test('the public build renders the service story, attributed portfolio, and real WARDEN route', async () => {
 	const site = await createCompiledSiteDriver();
 	const response = await site.request('/en/pages/about');
 	assert.equal(response.status, 200);
 	const html = await response.text();
 
-	assert.match(html, /So, what do we actually do\?/);
-	assert.match(html, /From a studio idea to a verifiable publication/);
+	assert.match(html, /Who is IRON CREED\?/);
+	assert.match(html, /IRON CREED — the personified engineering process of Zhovten Games/);
+	assert.match(html, /href="\/en\/pages\/material-cycle"/);
+	assert.match(html, /href="\/en\/pages\/anthem"/);
+	assert.doesNotMatch(html, /class="about-cycle"/);
+	const cycle = await site.request('/en/pages/material-cycle');
+	assert.equal(cycle.status, 200);
+	assert.match(await cycle.text(), /From a working question to a verifiable publication/);
 	assert.match(html, /DevOps as a way of working/);
 	assert.match(html, /Turning company data into working context for LLMs/);
 	assert.match(html, /WARDEN — an independent project verification boundary/);
@@ -21,8 +27,15 @@ test('the public build renders the service story and real WARDEN route', async (
 		html,
 		/href="https:\/\/github\.com\/IRONCREED\/VOX\/tree\/main\/constitutional-guard"/,
 	);
-	assert.match(html, /The library of verified public case studies is being prepared/);
-	assert.match(html, /Testimonials will be published after client approval/);
+	assert.match(html, /EMBO Studio · long-term infrastructure support/);
+	assert.match(html, /Academic typesetting → an in-house publishing pipeline/);
+	assert.match(html, /Shifton, Zipy, and 200\+ high-density cases/);
+	assert.match(html, /Public team profiles/);
+	assert.match(html, /href="https:\/\/www\.linkedin\.com\/company\/IRONCREED"/);
+	assert.doesNotMatch(html, /Project type|Problem description/);
+	assert.match(html, /reviews from all platforms/);
+	assert.match(html, /available on request/);
+	assert.doesNotMatch(html, /href="https:\/\/freelancehunt\.com/);
 	assert.doesNotMatch(html, />link</i);
 });
 

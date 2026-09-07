@@ -1,4 +1,4 @@
-const FALLBACK_SITE_ORIGIN = 'https://ironcreed-credo.ironcreed.chatgpt.site';
+const FALLBACK_SITE_ORIGIN = 'https://web.zhovten.games';
 
 export function getSiteOrigin(): URL {
 	const configuredOrigin = process.env.NEXT_PUBLIC_SITE_ORIGIN;

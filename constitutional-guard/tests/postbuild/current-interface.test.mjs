@@ -4,6 +4,41 @@ import { createCompiledSiteDriver } from '../../testing-interface/site-driver.mj
 
 const withoutReactMarkers = (html) => html.replaceAll('<!-- -->', '');
 
+test('section artwork and raster favicons resolve from the deployed site origin', async () => {
+	const site = await createCompiledSiteDriver();
+	for (const locale of ['uk', 'en']) {
+		const home = await (await site.request(`/${locale}/`)).text();
+		for (const icon of ['tent', 'observer', 'code', 'microscope', 'branches', 'book']) {
+			assert.ok(home.includes(`src="/brand/navigation/${icon}-96.png"`));
+		}
+		assert.match(home, /section-icon--heading/);
+		assert.match(home, /href="\/favicon-32\.png\?v=20260906"/);
+		assert.match(home, /href="\/favicon\.ico\?v=20260906"/);
+	}
+	for (const asset of [
+		'/favicon-32.png?v=20260906',
+		'/favicon.ico?v=20260906',
+		'/brand/navigation/tent-96.png',
+	]) {
+		const response = await site.request(asset);
+		assert.equal(response.status, 200, asset);
+		const bytes = new Uint8Array(await response.arrayBuffer());
+		assert.ok(bytes.length > 100, asset);
+		assert.deepEqual(
+			[...bytes.slice(0, asset.includes('.ico') ? 4 : 8)],
+			asset.includes('.ico') ? [0, 0, 1, 0] : [137, 80, 78, 71, 13, 10, 26, 10],
+		);
+	}
+	for (const [route, phrase, retained] of [
+		['/uk/scenarios/ne-biitesia-ser-shturm', 'Хороший пес', 'Силову установку пробило'],
+		['/en/scenarios/do-not-be-afraid-sir-assault', 'Good dog', 'Its power plant was breached'],
+	]) {
+		const html = await (await site.request(route)).text();
+		assert.ok(!html.includes(phrase));
+		assert.ok(html.includes(retained));
+	}
+});
+
 test('material API clamps an exhausted page to the addressable catalog', async () => {
 	const site = await createCompiledSiteDriver();
 	const response = await site.request('/api/materials?locale=uk&page=99');
@@ -12,9 +47,9 @@ test('material API clamps an exhausted page to the addressable catalog', async (
 	const payload = await response.json();
 	assert.equal(payload.page, 3);
 	assert.equal(payload.pageSize, 2);
-	assert.equal(payload.totalItems, 5);
+	assert.equal(payload.totalItems, 6);
 	assert.equal(payload.totalPages, 3);
-	assert.equal(payload.items.length, 1);
+	assert.equal(payload.items.length, 2);
 	assert.ok(payload.items.every((item) => item.href.startsWith('/uk/')));
 });
 
@@ -73,17 +108,22 @@ test('one material series replaces its seven parts in catalog listings', async (
 
 	const homeHtml = await homeResponse.text();
 	assert.match(homeHtml, /href="\/en\/series\/the-constitution-that-runs"/);
-	assert.match(homeHtml, /href="\/en\/series\/do-not-be-afraid-sir-adas-machine-requiem"/);
+	const nextHomeResponse = await site.request('/en/?page=2');
+	assert.equal(nextHomeResponse.status, 200);
+	const nextHomeHtml = await nextHomeResponse.text();
+	assert.match(homeHtml, /href="\/en\/series\/the-great-and-terrible-cloudflare"/);
+	assert.match(nextHomeHtml, /href="\/en\/series\/psychobiosocial-patterns"/);
 	assert.match(homeHtml, /material-card--series/);
 	assert.match(homeHtml, /protocol-folder__back/);
 	assert.match(homeHtml, /protocol-folder__sheet--1/);
 	assert.match(homeHtml, /protocol-folder__sheet--2/);
 	const plainHomeHtml = withoutReactMarkers(homeHtml);
 	assert.match(plainHomeHtml, /Research · Material series · 7/);
-	assert.match(plainHomeHtml, /Scenarios · Material series · 12/);
+	assert.match(withoutReactMarkers(nextHomeHtml), /Scenarios · Material series · 12/);
+	assert.match(plainHomeHtml, /Programming · Material series · 1/);
 
 	const researchHtml = await researchResponse.text();
-	assert.match(researchHtml, /The “Body as a Temporary Construction” Pattern/);
+	assert.match(researchHtml, /The “Regulated Availability” Pattern/);
 	assert.equal((researchHtml.match(/data-catalog-id=/g) ?? []).length, 2);
 	assert.equal(
 		(researchHtml.match(/data-catalog-id="series\.psychobiosocial-patterns"/g) ?? []).length,
@@ -223,7 +263,7 @@ test('the complete entity index has its own localized content page', async () =>
 	assert.match(ukHtml, /Індекс корпусу/);
 	assert.match(ukHtml, /aria-label="Тип сутності"/);
 	assert.match(ukHtml, /value="question"/);
-	assert.match(ukHtml, />578<\/small>/);
+	assert.match(ukHtml, />645<\/small>/);
 	assert.match(ukHtml, /value="page"/);
 
 	assert.equal(enResponse.status, 200);
@@ -232,6 +272,7 @@ test('the complete entity index has its own localized content page', async () =>
 	assert.match(enHtml, /All kinds/);
 	assert.match(enHtml, /q\.documentation\.documentation-memory/);
 	assert.match(enHtml, /page\.about/);
+	assert.match(enHtml, /concept\.iron-creed/);
 	assert.doesNotMatch(enHtml, /Ordinary mode/);
 	assert.doesNotMatch(enHtml, /page-directory/);
 
@@ -285,12 +326,28 @@ test('the build, policies, and four localized search maps are public', async () 
 	assert.match(aboutHtml, /identity and role in the game remain classified/);
 	assert.match(aboutHtml, /personified engineering process/);
 	assert.doesNotMatch(aboutHtml, /military medical-AI prototype/);
-	assert.match(aboutHtml, /So, what do we actually do\?/);
-	assert.match(aboutHtml, /From a studio idea to a verifiable publication/);
+	assert.match(aboutHtml, /Who is IRON CREED\?/);
+	assert.match(aboutHtml, /IRON CREED — the personified engineering process of Zhovten Games/);
+	const cycleHtml = await (await site.request('/en/pages/material-cycle')).text();
+	assert.match(cycleHtml, /From a working question to a verifiable publication/);
+	assert.doesNotMatch(aboutHtml, /about-cycle__steps/);
 	assert.match(aboutHtml, /DevOps as a way of working/);
 	assert.match(aboutHtml, /A website that can be read by more than people/);
-	assert.match(aboutHtml, /The library of verified public case studies is being prepared/);
-	assert.match(aboutHtml, /Testimonials will be published after client approval/);
+	assert.match(aboutHtml, /EMBO Studio · long-term infrastructure support/);
+	assert.match(aboutHtml, /Shifton, Zipy, and 200\+ high-density cases/);
+	assert.match(aboutHtml, /Public team profiles/);
+	assert.match(aboutHtml, /href="https:\/\/www\.linkedin\.com\/in\/oksanadubinetska\/"/);
+	assert.match(aboutHtml, /href="https:\/\/www\.linkedin\.com\/in\/pan-canon\/"/);
+	assert.match(aboutHtml, /Sam Starling/);
+	assert.match(aboutHtml, /href="https:\/\/www\.linkedin\.com\/company\/IRONCREED"/);
+	assert.doesNotMatch(aboutHtml, /Project type|Problem description/);
+	assert.match(aboutHtml, /I hired Semen for a project for my client/);
+	assert.match(aboutHtml, /The work was done with an understanding of the matter/);
+	assert.match(aboutHtml, /Thank you\. The work is done/);
+	assert.doesNotMatch(aboutHtml, /Ruslan|Руслан|Pan Canon/);
+	assert.match(aboutHtml, /original reviews on specific platforms are available on request/);
+	assert.doesNotMatch(aboutHtml, /href="https:\/\/freelancehunt\.com/);
+	assert.doesNotMatch(aboutHtml, /Testimonials will be published after client approval/);
 	assert.match(
 		aboutHtml,
 		/href="https:\/\/github\.com\/IRONCREED\/VOX\/tree\/main\/constitutional-guard"/,
@@ -319,12 +376,12 @@ test('the build, policies, and four localized search maps are public', async () 
 	for (const response of [ukSiteMap, ukQuestionMap, enSiteMap, enQuestionMap]) {
 		assert.equal(response.status, 200);
 	}
-	assert.equal(((await ukSiteMap.text()).match(/<url>/g) ?? []).length, 35);
-	assert.equal(((await enSiteMap.text()).match(/<url>/g) ?? []).length, 35);
+	assert.equal(((await ukSiteMap.text()).match(/<url>/g) ?? []).length, 40);
+	assert.equal(((await enSiteMap.text()).match(/<url>/g) ?? []).length, 40);
 	const ukQuestions = await ukQuestionMap.text();
 	const enQuestions = await enQuestionMap.text();
-	assert.equal((ukQuestions.match(/<url>/g) ?? []).length, 455);
-	assert.equal((enQuestions.match(/<url>/g) ?? []).length, 455);
+	assert.equal((ukQuestions.match(/<url>/g) ?? []).length, 476);
+	assert.equal((enQuestions.match(/<url>/g) ?? []).length, 476);
 	assert.match(enQuestions, /\/en\/questions\/q\.ada\.why-not-stop-sir/);
 	assert.doesNotMatch(enQuestions, /\?question=/);
 });

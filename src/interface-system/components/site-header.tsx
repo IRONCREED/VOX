@@ -78,8 +78,6 @@ export function SiteHeader({
 					<HeaderActionDock actions={contextActions} />
 				</div>
 			</div>
-
-			<div aria-hidden="true" className="header-reserved" />
 		</header>
 	);
 }

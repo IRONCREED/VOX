@@ -9,7 +9,9 @@ import type {
 interface ContextualHintProps {
 	closeLabel: string;
 	hint: ContextualHintModel;
-	prefix: string;
+	prefix?: string;
+	triggerLabel?: string;
+	variant?: 'card' | 'inline';
 }
 
 const MAX_HINT_LENGTH = 2400;
@@ -51,7 +53,17 @@ function sanitizedMarkup(html: string): string {
 
 async function resolveHintSource(source: HintSource, signal: AbortSignal): Promise<string> {
 	if (source.kind === 'text') {
-		return sanitizedMarkup(source.text.slice(0, MAX_HINT_LENGTH));
+		const container = document.createElement('span');
+		for (const [index, paragraph] of source.text
+			.slice(0, MAX_HINT_LENGTH)
+			.split(/\n{2,}/)
+			.entries()) {
+			if (index > 0) {
+				container.append(document.createElement('br'), document.createElement('br'));
+			}
+			container.append(document.createTextNode(paragraph.trim()));
+		}
+		return container.innerHTML;
 	}
 
 	if (source.kind === 'html') {
@@ -94,7 +106,13 @@ async function resolveHintSource(source: HintSource, signal: AbortSignal): Promi
 	return sanitizedMarkup(target.innerHTML.slice(0, MAX_HINT_LENGTH));
 }
 
-export function ContextualHint({ closeLabel, hint, prefix }: ContextualHintProps) {
+export function ContextualHint({
+	closeLabel,
+	hint,
+	prefix,
+	triggerLabel,
+	variant = 'card',
+}: ContextualHintProps) {
 	const panelId = useId();
 	const [isOpen, setIsOpen] = useState(false);
 	const [status, setStatus] = useState<'idle' | 'loading' | 'ready' | 'error'>('idle');
@@ -147,10 +165,11 @@ export function ContextualHint({ closeLabel, hint, prefix }: ContextualHintProps
 	}, [isOpen]);
 
 	return (
-		<span className={`contextual-hint${isOpen ? ' is-open' : ''}`}>
+		<span className={`contextual-hint contextual-hint--${variant}${isOpen ? ' is-open' : ''}`}>
 			<button
 				aria-controls={panelId}
 				aria-expanded={isOpen}
+				aria-label={variant === 'inline' ? hint.label : undefined}
 				onClick={() => {
 					if (!isOpen && status !== 'ready') {
 						setStatus('loading');
@@ -159,11 +178,11 @@ export function ContextualHint({ closeLabel, hint, prefix }: ContextualHintProps
 				}}
 				type="button"
 			>
-				<span>{prefix}</span>
-				<strong>{hint.label}</strong>
+				{variant === 'card' && prefix ? <span>{prefix}</span> : null}
+				<strong>{triggerLabel ?? hint.label}</strong>
 			</button>
 			{isOpen ? (
-				<span className="contextual-hint__panel" id={panelId} role="note">
+				<span aria-label={hint.label} className="contextual-hint__panel" id={panelId} role="note">
 					<button
 						aria-label={closeLabel}
 						className="contextual-hint__close"

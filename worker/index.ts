@@ -25,6 +25,39 @@ interface ExecutionContext {
 	passThroughOnException(): void;
 }
 
+async function normalizeHtmlDocument(response: Response, requestMethod: string): Promise<Response> {
+	const contentType = response.headers.get('content-type') ?? '';
+	if (requestMethod === 'HEAD' || !/^text\/html\b/i.test(contentType) || response.body === null) {
+		return response;
+	}
+
+	const html = await response.text();
+	const lowerCaseHtml = html.toLowerCase();
+	const htmlCloseTag = '</html>';
+	const bodyCloseTag = '</body>';
+	const htmlClose = lowerCaseHtml.lastIndexOf(htmlCloseTag);
+	const bodyClose = lowerCaseHtml.lastIndexOf(bodyCloseTag, htmlClose);
+	let normalizedHtml = html;
+
+	if (htmlClose >= 0 && bodyClose >= 0) {
+		const trailer = html.slice(htmlClose + htmlCloseTag.length);
+		normalizedHtml =
+			html.slice(0, bodyClose) + trailer + html.slice(bodyClose, htmlClose + htmlCloseTag.length);
+	}
+
+	const headers = new Headers(response.headers);
+	headers.delete('content-encoding');
+	headers.delete('content-length');
+	headers.delete('etag');
+	headers.delete('transfer-encoding');
+
+	return new Response(normalizedHtml, {
+		status: response.status,
+		statusText: response.statusText,
+		headers,
+	});
+}
+
 // Image security config. SVG sources with .svg extension auto-skip the
 // optimization endpoint on the client side (served directly, no proxy).
 // To route SVGs through the optimizer (with security headers), set
@@ -69,10 +102,12 @@ const worker = {
 		if (isLocaleLanding && (request.method === 'GET' || request.method === 'HEAD')) {
 			const internalUrl = new URL(url);
 			internalUrl.pathname = internalUrl.pathname.slice(0, -1);
-			return handler.fetch(new Request(internalUrl, request), env, ctx);
+			const response = await handler.fetch(new Request(internalUrl, request), env, ctx);
+			return normalizeHtmlDocument(response, request.method);
 		}
 
-		return handler.fetch(request, env, ctx);
+		const response = await handler.fetch(request, env, ctx);
+		return normalizeHtmlDocument(response, request.method);
 	},
 };
 

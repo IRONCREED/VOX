@@ -9,9 +9,13 @@ import {
 	type Edge,
 	type Node,
 } from '@xyflow/react';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { layoutDiagram } from '../application/layout-diagram';
-import type { DiagramDeclaration, DiagramNodeDeclaration } from '../domain/diagram-model';
+import type {
+	DiagramDeclaration,
+	DiagramDirection,
+	DiagramNodeDeclaration,
+} from '../domain/diagram-model';
 import { DiagramNode } from './diagram-node';
 
 interface GraphDiagramProps {
@@ -19,21 +23,52 @@ interface GraphDiagramProps {
 	interactive: boolean;
 }
 
+interface DiagramLayoutState {
+	diagram: DiagramDeclaration;
+	direction: DiagramDirection;
+	positions: Map<string, { x: number; y: number }>;
+}
+
 const nodeTypes = { diagramNode: DiagramNode };
 
 function GraphDiagramSurface({ diagram, interactive }: GraphDiagramProps) {
-	const [positions, setPositions] = useState<Map<string, { x: number; y: number }>>(new Map());
+	const containerRef = useRef<HTMLDivElement>(null);
+	const [compactLayout, setCompactLayout] = useState<boolean | null>(null);
+	const [layoutState, setLayoutState] = useState<DiagramLayoutState | null>(null);
 	const [focusedNode, setFocusedNode] = useState<string | null>(null);
+	const layoutDirection: DiagramDirection =
+		diagram.direction === 'RIGHT' && compactLayout ? 'DOWN' : (diagram.direction ?? 'RIGHT');
+	const positions =
+		layoutState?.diagram === diagram && layoutState.direction === layoutDirection
+			? layoutState.positions
+			: null;
 
 	useEffect(() => {
+		const container = containerRef.current;
+		if (!container) return;
+		const updateLayoutMode = () => setCompactLayout(container.clientWidth < 860);
+		updateLayoutMode();
+		const observer = new ResizeObserver(updateLayoutMode);
+		observer.observe(container);
+		return () => observer.disconnect();
+	}, []);
+
+	useEffect(() => {
+		if (compactLayout === null) return;
 		let active = true;
-		void layoutDiagram(diagram).then((layout) => {
-			if (active) setPositions(new Map(layout.map((node) => [node.id, node])));
+		void layoutDiagram({ ...diagram, direction: layoutDirection }).then((layout) => {
+			if (active) {
+				setLayoutState({
+					diagram,
+					direction: layoutDirection,
+					positions: new Map(layout.map((node) => [node.id, node])),
+				});
+			}
 		});
 		return () => {
 			active = false;
 		};
-	}, [diagram]);
+	}, [compactLayout, diagram, layoutDirection]);
 
 	const relatedEdges = useMemo(
 		() =>
@@ -44,11 +79,12 @@ function GraphDiagramSurface({ diagram, interactive }: GraphDiagramProps) {
 			),
 		[diagram.relations, focusedNode],
 	);
+
 	const nodes: Node[] = diagram.nodes.map((node: DiagramNodeDeclaration) => ({
 		id: node.id,
 		type: 'diagramNode',
-		position: positions.get(node.id) ?? { x: 0, y: 0 },
-		data: { ...node },
+		position: positions?.get(node.id) ?? { x: 0, y: 0 },
+		data: { ...node, layoutDirection },
 		draggable: false,
 		selectable: interactive,
 		focusable: interactive,
@@ -65,13 +101,17 @@ function GraphDiagramSurface({ diagram, interactive }: GraphDiagramProps) {
 	}));
 
 	return (
-		<>
-			<div className="ic-diagram-graph" data-interactive={interactive ? 'true' : 'false'}>
+		<div
+			className="ic-diagram-graph"
+			data-interactive={interactive ? 'true' : 'false'}
+			ref={containerRef}
+		>
+			{positions ? (
 				<ReactFlow
 					edges={edges}
 					elementsSelectable={interactive}
 					fitView
-					fitViewOptions={{ padding: 0.18 }}
+					fitViewOptions={{ maxZoom: 0.92, padding: 0.18 }}
 					minZoom={0.28}
 					nodes={nodes}
 					nodeTypes={nodeTypes}
@@ -86,22 +126,10 @@ function GraphDiagramSurface({ diagram, interactive }: GraphDiagramProps) {
 					<Background gap={24} size={1} />
 					{interactive ? <Controls showInteractive={false} /> : null}
 				</ReactFlow>
-			</div>
-			<div className="sr-only">
-				<ul>
-					{diagram.nodes.map((node) => (
-						<li
-							key={node.id}
-						>{`${node.role}: ${node.label}${node.description ? `. ${node.description}` : ''}`}</li>
-					))}
-				</ul>
-				<ul>
-					{diagram.relations.map((relation) => (
-						<li key={relation.id}>{`${relation.from} ${relation.type} ${relation.to}`}</li>
-					))}
-				</ul>
-			</div>
-		</>
+			) : (
+				<div aria-busy="true" className="ic-diagram-loading" />
+			)}
+		</div>
 	);
 }
 

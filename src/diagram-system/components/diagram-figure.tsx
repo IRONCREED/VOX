@@ -33,6 +33,23 @@ export function DiagramFigure({ asset }: { asset: LocalizedDiagramAsset }) {
 			) : (
 				<GraphDiagram diagram={asset.diagram} interactive={interactive} />
 			)}
+			<div className="ic-diagram-transcript sr-only">
+				<p>{asset.publication.alt}</p>
+				<ul>
+					{asset.diagram.nodes.map((node) => (
+						<li key={node.id}>
+							{`${node.role}: ${node.label}${node.description ? `. ${node.description}` : ''}`}
+						</li>
+					))}
+				</ul>
+				<ul>
+					{asset.diagram.relations.map((relation) => (
+						<li key={relation.id}>
+							{`${relation.from} ${relation.type} ${relation.to}${relation.label ? `: ${relation.label}` : ''}`}
+						</li>
+					))}
+				</ul>
+			</div>
 			<figcaption>
 				<span>{asset.publication.caption}</span>
 				<small>{asset.publication.provenance}</small>

@@ -8,6 +8,7 @@ import {
 	getInterfaceCopy,
 	getNavigation,
 	getPolicyPages,
+	getProjectPages,
 	getPublicEntityIndex,
 	getTranslatedContentPage,
 } from '../../../../src/content-catalog/adapters/corpus-content-repository';
@@ -78,7 +79,12 @@ export default async function ContentPage({ params }: ContentPageProps) {
 		buildIdentity: getBuildIdentity(),
 		copy: getInterfaceCopy(locale),
 		locale,
-		navigation: getNavigation(locale, undefined, false, page.pageId),
+		navigation: getNavigation(
+			locale,
+			undefined,
+			false,
+			['material-cycle', 'anthem'].includes(page.pageType) ? 'page.about' : page.pageId,
+		),
 		page,
 		translatedPage,
 	};
@@ -94,6 +100,7 @@ export default async function ContentPage({ params }: ContentPageProps) {
 				page.conversationViewId ? getCompanionScenario(page.conversationViewId, locale) : undefined
 			}
 			policyPages={getPolicyPages(locale)}
+			projectPages={getProjectPages(locale)}
 		/>
 	);
 }

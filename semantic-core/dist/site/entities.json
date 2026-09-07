@@ -1,10 +1,504 @@
 [
 	{
+		"id": "asset.constitution-runtime-06-article-ii.g02",
+		"kind": "asset",
+		"locale": "en",
+		"label": "activation of executive authority",
+		"summary": "Presidential authority arises from mandate, eligibility, term, and oath.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-06-article-ii"
+		],
+		"pageIds": [],
+		"href": "/en/research/execute-america-how-article-ii-turns-a-decision-into-action?entity=asset.constitution-runtime-06-article-ii.g02#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-03-article-v.g03",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Amendment life cycle",
+		"summary": "Normative force arises upon ratification by three fourths of the states, official attestation reports the completed process, and material migration proceeds as a separate stage.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-03-article-v"
+		],
+		"pageIds": [],
+		"href": "/en/research/update-america-how-article-v-changes-the-constitutional-kernel?entity=asset.constitution-runtime-03-article-v.g03#article-body"
+	},
+	{
+		"id": "asset.why-documentation.g02",
+		"kind": "asset",
+		"locale": "en",
+		"label": "anatomy of a decision",
+		"summary": "Documentation connects intent, the chosen decision, implementation, verification, and future reconsideration.",
+		"status": "published",
+		"materialIds": [
+			"material.why-documentation"
+		],
+		"pageIds": [],
+		"href": "/en/programming/why-documentation-matters?entity=asset.why-documentation.g02#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-02-article-vi.g02",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Architecture of the second build",
+		"summary": "The established revision forms the root of trust, prior obligations undergo continuity review, and norms and public roles receive a traceable foundation.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-02-article-vi"
+		],
+		"pageIds": [],
+		"href": "/en/research/what-america-trusts-how-article-vi-assembles-the-supreme-order?entity=asset.constitution-runtime-02-article-vi.g02#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-03-article-v.g04",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Article V’s special limits",
+		"summary": "A supermajority undergoes an additional check for the temporary pre-1808 restriction and the individual consent of a state deprived of equal suffrage in the Senate.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-03-article-v"
+		],
+		"pageIds": [],
+		"href": "/en/research/update-america-how-article-v-changes-the-constitutional-kernel?entity=asset.constitution-runtime-03-article-v.g04#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-07-article-i.g05",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Authority over a shared resource",
+		"summary": "An enacted law creates a bounded appropriation with purpose, amount, period, accountable actor, and public journal; execution returns a receipt.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-07-article-i"
+		],
+		"pageIds": [],
+		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law?entity=asset.constitution-runtime-07-article-i.g05#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-02-article-vi.g04",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Binding a public role",
+		"summary": "The holder takes an oath or affirmation to support an exact revision, while a religious test is excluded as a federal qualification.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-02-article-vi"
+		],
+		"pageIds": [],
+		"href": "/en/research/what-america-trusts-how-article-vi-assembles-the-supreme-order?entity=asset.constitution-runtime-02-article-vi.g04#article-body"
+	},
+	{
+		"id": "asset.from-body-to-signal.g02",
+		"kind": "asset",
+		"locale": "en",
+		"label": "body as archive",
+		"summary": "From catastrophe embodied as a monster to catastrophe inhabiting human flesh.",
+		"status": "published",
+		"materialIds": [
+			"material.from-body-to-signal"
+		],
+		"pageIds": [],
+		"href": "/en/research/from-body-to-signal?entity=asset.from-body-to-signal.g02#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-01-article-vii.g03",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Bootstrap lifecycle",
+		"summary": "The proposal crosses the threshold of nine ratifications, expands the set of participants, and then transitions to operating institutions.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-01-article-vii"
+		],
+		"pageIds": [],
+		"href": "/en/research/connect-america-how-article-vii-bootstraps-a-republic?entity=asset.constitution-runtime-01-article-vii.g03#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g03",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Boundary of visibility",
+		"summary": "Leg lines direct the gaze towards a crossing beyond which their continuation is concealed.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=asset.regulated-availability.g03#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g05",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Case 001 operating cycle",
+		"summary": "Explicit inventory leads to compilation, live-state inspection, a plan preserving the unmanaged portion, a separate operator decision, and result verification.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g05#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g02",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Changing permission",
+		"summary": "A prohibited gesture becomes permissible under controlled conditions and can subsequently acquire the meaning of elegance.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=asset.regulated-availability.g02#article-body"
+	},
+	{
+		"id": "asset.from-body-to-signal.g04",
+		"kind": "asset",
+		"locale": "en",
+		"label": "channel typology",
+		"summary": "Speech, hearing, vision, and signal function as channels of harm.",
+		"status": "published",
+		"materialIds": [
+			"material.from-body-to-signal"
+		],
+		"pageIds": [],
+		"href": "/en/research/from-body-to-signal?entity=asset.from-body-to-signal.g04#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g06",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Commerce fixture",
+		"summary": "Two profile policies and one zone policy form three logical components.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g06#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-07-article-i.g04",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Competence and derivative means",
+		"summary": "A legislative end passes through granted power, review of necessary and proper means, and direct constitutional prohibitions before voting.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-07-article-i"
+		],
+		"pageIds": [],
+		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law?entity=asset.constitution-runtime-07-article-i.g04#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-06-article-ii.g04",
+		"kind": "asset",
+		"locale": "en",
+		"label": "complete execution route",
+		"summary": "The executive power verifies the judgment, constrains the order, and returns a receipt of factual execution to the court.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-06-article-ii"
+		],
+		"pageIds": [],
+		"href": "/en/research/execute-america-how-article-ii-turns-a-decision-into-action?entity=asset.constitution-runtime-06-article-ii.g04#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-05-article-iii.g02",
+		"kind": "asset",
+		"locale": "en",
+		"label": "concrete-dispute gate",
+		"summary": "The judicial route begins with a concrete case or controversy, verifies a jurisdictional basis, and forms an evidentiary record.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-05-article-iii"
+		],
+		"pageIds": [],
+		"href": "/en/research/adjudicate-america-how-article-iii-turns-conflict-into-enforceable-judgment?entity=asset.constitution-runtime-05-article-iii.g02#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g09",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Credential separation",
+		"summary": "A read token supports observation; a write token together with an explicit decision opens the apply path.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g09#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g11",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Cultural mutation",
+		"summary": "Discipline, aestheticisation, and independent use of the sign are connected as stages in the authorial reconstruction.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=asset.regulated-availability.g11#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-07-article-i.g07",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Cumulative architecture of seven articles",
+		"summary": "Ratification launches a trusted and amendable order; federation, legislation, and adjudication produce sources for bounded execution, and the receipt returns to the resolution circuit.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-07-article-i"
+		],
+		"pageIds": [],
+		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law?entity=asset.constitution-runtime-07-article-i.g07#article-body"
+	},
+	{
+		"id": "asset.from-body-to-signal.g06",
+		"kind": "asset",
+		"locale": "en",
+		"label": "damaged mediation",
+		"summary": "War fragments the systems through which information is trusted and understood.",
+		"status": "published",
+		"materialIds": [
+			"material.from-body-to-signal"
+		],
+		"pageIds": [],
+		"href": "/en/research/from-body-to-signal?entity=asset.from-body-to-signal.g06#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g02",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Decision components",
+		"summary": "Identity, URL class, profile, and local conditions converge in the zone’s effective policy.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g02#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g12",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Detecting drift",
+		"summary": "Live state and compiled desired state meet in a comparison returning either agreement or divergence.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g12#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g04",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Display and boundary",
+		"summary": "Visible legs and a closed central area converge in one composition.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=asset.regulated-availability.g04#article-body"
+	},
+	{
+		"id": "asset.why-documentation.g04",
+		"kind": "asset",
+		"locale": "en",
+		"label": "documentation in the AI loop",
+		"summary": "AI creates a candidate from a constrained assignment; a human, the review process, tests, and the decision log determine whether it is accepted.",
+		"status": "published",
+		"materialIds": [
+			"material.why-documentation"
+		],
+		"pageIds": [],
+		"href": "/en/programming/why-documentation-matters?entity=asset.why-documentation.g04#article-body"
+	},
+	{
+		"id": "asset.from-body-to-signal.g03",
+		"kind": "asset",
+		"locale": "en",
+		"label": "environment as agent",
+		"summary": "A damaged landscape organises risk through routes, infrastructure, and partial knowledge.",
+		"status": "published",
+		"materialIds": [
+			"material.from-body-to-signal"
+		],
+		"pageIds": [],
+		"href": "/en/research/from-body-to-signal?entity=asset.from-body-to-signal.g03#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g07",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Expanding participation",
+		"summary": "A recognisable gesture and broader size representation create an opportunity to participate in the same visual vocabulary.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=asset.regulated-availability.g07#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g11",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Fleet control",
+		"summary": "Zones are checked sequentially; changes are limited by assigned policies, and an error terminates rollout.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g11#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-07-article-i.g03",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Four presentment routes",
+		"summary": "An enrolled bill becomes law by signature, expiration of ten days, or override of an ordinary veto; a pocket veto ends the route without law.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-07-article-i"
+		],
+		"pageIds": [],
+		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law?entity=asset.constitution-runtime-07-article-i.g03#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g01",
+		"kind": "asset",
+		"locale": "en",
+		"label": "From discipline to sign",
+		"summary": "Movement control, gender coding, concealment, directed attention, and aestheticisation form the proposed historical model.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=asset.regulated-availability.g01#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g01",
+		"kind": "asset",
+		"locale": "en",
+		"label": "From incident to policy",
+		"summary": "Observed load opens two options: a global identity block or a restriction on a particular surface; this case selects the latter.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g01#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g04",
+		"kind": "asset",
+		"locale": "en",
+		"label": "From profile to effective state",
+		"summary": "Profile policies, additional policies, disabled policies, and inline rules determine logical rules; the compiler turns them into physical rules.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g04#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g14",
+		"kind": "asset",
+		"locale": "en",
+		"label": "From telemetry to authorised change",
+		"summary": "Telemetry opens a proposal; tests, plan, and human review precede explicit apply and verification.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g14#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g03",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Identity and surface",
+		"summary": "A request is blocked only when both the selected crawler identity and the transactional surface match.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g03#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-04-article-iv.g02",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Interstate recognition pipeline",
+		"summary": "The receiving state verifies the artifact’s provenance, integrity, revision, competence, and operative status before applying an effect appropriate to its class.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-04-article-iv"
+		],
+		"pageIds": [],
+		"href": "/en/research/link-america-how-article-iv-turns-the-states-into-a-federal-network?entity=asset.constitution-runtime-04-article-iv.g02#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-05-article-iii.g05",
+		"kind": "asset",
+		"locale": "en",
+		"label": "judgment lineage",
+		"summary": "Appellate review creates a new judgment with traceable provenance and does not overwrite the previous state.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-05-article-iii"
+		],
+		"pageIds": [],
+		"href": "/en/research/adjudicate-america-how-article-iii-turns-conflict-into-enforceable-judgment?entity=asset.constitution-runtime-05-article-iii.g05#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-05-article-iii.g03",
+		"kind": "asset",
+		"locale": "en",
+		"label": "jurisdiction routing",
+		"summary": "A jurisdictional category defines the admissible route, and a particular court acts only within its proved mandate.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-05-article-iii"
+		],
+		"pageIds": [],
+		"href": "/en/research/adjudicate-america-how-article-iii-turns-conflict-into-enforceable-judgment?entity=asset.constitution-runtime-05-article-iii.g03#article-body"
+	},
+	{
+		"id": "asset.from-body-to-signal.g05",
+		"kind": "asset",
+		"locale": "en",
+		"label": "language as selector",
+		"summary": "Language links biological exposure, geopolitical hierarchy, and selective control.",
+		"status": "published",
+		"materialIds": [
+			"material.from-body-to-signal"
+		],
+		"pageIds": [],
+		"href": "/en/research/from-body-to-signal?entity=asset.from-body-to-signal.g05#article-body"
+	},
+	{
 		"id": "asset.from-body-to-signal.g01",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G01",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "lead image",
+		"summary": "Fear moves from monster to body, environment, and signal.",
 		"status": "published",
 		"materialIds": [
 			"material.from-body-to-signal"
@@ -13,24 +507,11 @@
 		"href": "/en/research/from-body-to-signal?entity=asset.from-body-to-signal.g01#article-body"
 	},
 	{
-		"id": "asset.why-documentation.g01",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G01",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.why-documentation"
-		],
-		"pageIds": [],
-		"href": "/en/programming/why-documentation-matters?entity=asset.why-documentation.g01#article-body"
-	},
-	{
 		"id": "asset.constitution-runtime-01-article-vii.g01",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G01",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "lead image",
+		"summary": "Nine connected nodes bootstrap a shared constitutional system.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-01-article-vii"
@@ -42,8 +523,8 @@
 		"id": "asset.constitution-runtime-02-article-vi.g01",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G01",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "lead image",
+		"summary": "A connected constitutional system verifies the provenance of obligations, norms, and public authority.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-02-article-vi"
@@ -55,8 +536,8 @@
 		"id": "asset.constitution-runtime-03-article-v.g01",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G01",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "lead image",
+		"summary": "A constitutional system adopts an exact amendment through a supermajority, updates its root of trust, and conducts a separate technical transition.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-03-article-v"
@@ -68,8 +549,8 @@
 		"id": "asset.constitution-runtime-04-article-iv.g01",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G01",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "lead image",
+		"summary": "Autonomous states preserve their own state, recognize specified acts of one another, and change federal topology through a common order.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-04-article-iv"
@@ -81,8 +562,8 @@
 		"id": "asset.constitution-runtime-05-article-iii.g01",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G01",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "lead image",
+		"summary": "Article III turns a concrete dispute into a traceable judgment and hands it to a separate executive circuit.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-05-article-iii"
@@ -94,8 +575,8 @@
 		"id": "asset.constitution-runtime-06-article-ii.g01",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G01",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "lead image",
+		"summary": "Article II turns an operative judgment into a bounded action and returns proof of execution.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-06-article-ii"
@@ -107,8 +588,8 @@
 		"id": "asset.constitution-runtime-07-article-i.g01",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G01",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "lead image",
+		"summary": "Article I turns a proposal into law through competence, two independent consents, one exact text, and a verifiable presentment route.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-07-article-i"
@@ -117,310 +598,37 @@
 		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law?entity=asset.constitution-runtime-07-article-i.g01#article-body"
 	},
 	{
-		"id": "asset.from-body-to-signal.g02",
+		"id": "asset.regulated-availability.g09",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G02",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "Limit of inference",
+		"summary": "Pose, code, and context permit an interpretation of an image; the transition from that interpretation to an inference of consent is blocked.",
 		"status": "published",
 		"materialIds": [
-			"material.from-body-to-signal"
+			"material.regulated-availability"
 		],
 		"pageIds": [],
-		"href": "/en/research/from-body-to-signal?entity=asset.from-body-to-signal.g02#article-body"
+		"href": "/en/research/regulated-availability?entity=asset.regulated-availability.g09#article-body"
 	},
 	{
-		"id": "asset.why-documentation.g02",
+		"id": "asset.cloudflare-001-crawler-surface-policy.g07",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G02",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "Logical → physical",
+		"summary": "Several logical block policies form one physical block rule; challenge remains a separate group.",
 		"status": "published",
 		"materialIds": [
-			"material.why-documentation"
+			"material.cloudflare-001-crawler-surface-policy"
 		],
 		"pageIds": [],
-		"href": "/en/programming/why-documentation-matters?entity=asset.why-documentation.g02#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-01-article-vii.g02",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G02",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-01-article-vii"
-		],
-		"pageIds": [],
-		"href": "/en/research/connect-america-how-article-vii-bootstraps-a-republic?entity=asset.constitution-runtime-01-article-vii.g02#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-02-article-vi.g02",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G02",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-02-article-vi"
-		],
-		"pageIds": [],
-		"href": "/en/research/what-america-trusts-how-article-vi-assembles-the-supreme-order?entity=asset.constitution-runtime-02-article-vi.g02#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-03-article-v.g02",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G02",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-03-article-v"
-		],
-		"pageIds": [],
-		"href": "/en/research/update-america-how-article-v-changes-the-constitutional-kernel?entity=asset.constitution-runtime-03-article-v.g02#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-04-article-iv.g02",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G02",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-04-article-iv"
-		],
-		"pageIds": [],
-		"href": "/en/research/link-america-how-article-iv-turns-the-states-into-a-federal-network?entity=asset.constitution-runtime-04-article-iv.g02#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-05-article-iii.g02",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G02",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-05-article-iii"
-		],
-		"pageIds": [],
-		"href": "/en/research/adjudicate-america-how-article-iii-turns-conflict-into-enforceable-judgment?entity=asset.constitution-runtime-05-article-iii.g02#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-06-article-ii.g02",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G02",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-06-article-ii"
-		],
-		"pageIds": [],
-		"href": "/en/research/execute-america-how-article-ii-turns-a-decision-into-action?entity=asset.constitution-runtime-06-article-ii.g02#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-07-article-i.g02",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G02",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-07-article-i"
-		],
-		"pageIds": [],
-		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law?entity=asset.constitution-runtime-07-article-i.g02#article-body"
-	},
-	{
-		"id": "asset.from-body-to-signal.g03",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G03",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.from-body-to-signal"
-		],
-		"pageIds": [],
-		"href": "/en/research/from-body-to-signal?entity=asset.from-body-to-signal.g03#article-body"
-	},
-	{
-		"id": "asset.why-documentation.g03",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G03",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.why-documentation"
-		],
-		"pageIds": [],
-		"href": "/en/programming/why-documentation-matters?entity=asset.why-documentation.g03#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-01-article-vii.g03",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G03",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-01-article-vii"
-		],
-		"pageIds": [],
-		"href": "/en/research/connect-america-how-article-vii-bootstraps-a-republic?entity=asset.constitution-runtime-01-article-vii.g03#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-02-article-vi.g03",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G03",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-02-article-vi"
-		],
-		"pageIds": [],
-		"href": "/en/research/what-america-trusts-how-article-vi-assembles-the-supreme-order?entity=asset.constitution-runtime-02-article-vi.g03#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-03-article-v.g03",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G03",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-03-article-v"
-		],
-		"pageIds": [],
-		"href": "/en/research/update-america-how-article-v-changes-the-constitutional-kernel?entity=asset.constitution-runtime-03-article-v.g03#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-04-article-iv.g03",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G03",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-04-article-iv"
-		],
-		"pageIds": [],
-		"href": "/en/research/link-america-how-article-iv-turns-the-states-into-a-federal-network?entity=asset.constitution-runtime-04-article-iv.g03#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-05-article-iii.g03",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G03",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-05-article-iii"
-		],
-		"pageIds": [],
-		"href": "/en/research/adjudicate-america-how-article-iii-turns-conflict-into-enforceable-judgment?entity=asset.constitution-runtime-05-article-iii.g03#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-06-article-ii.g03",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G03",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-06-article-ii"
-		],
-		"pageIds": [],
-		"href": "/en/research/execute-america-how-article-ii-turns-a-decision-into-action?entity=asset.constitution-runtime-06-article-ii.g03#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-07-article-i.g03",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G03",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-07-article-i"
-		],
-		"pageIds": [],
-		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law?entity=asset.constitution-runtime-07-article-i.g03#article-body"
-	},
-	{
-		"id": "asset.from-body-to-signal.g04",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G04",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.from-body-to-signal"
-		],
-		"pageIds": [],
-		"href": "/en/research/from-body-to-signal?entity=asset.from-body-to-signal.g04#article-body"
-	},
-	{
-		"id": "asset.why-documentation.g04",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G04",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.why-documentation"
-		],
-		"pageIds": [],
-		"href": "/en/programming/why-documentation-matters?entity=asset.why-documentation.g04#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-01-article-vii.g04",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G04",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-01-article-vii"
-		],
-		"pageIds": [],
-		"href": "/en/research/connect-america-how-article-vii-bootstraps-a-republic?entity=asset.constitution-runtime-01-article-vii.g04#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-02-article-vi.g04",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G04",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-02-article-vi"
-		],
-		"pageIds": [],
-		"href": "/en/research/what-america-trusts-how-article-vi-assembles-the-supreme-order?entity=asset.constitution-runtime-02-article-vi.g04#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-03-article-v.g04",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G04",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-03-article-v"
-		],
-		"pageIds": [],
-		"href": "/en/research/update-america-how-article-v-changes-the-constitutional-kernel?entity=asset.constitution-runtime-03-article-v.g04#article-body"
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g07#article-body"
 	},
 	{
 		"id": "asset.constitution-runtime-04-article-iv.g04",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G04",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "New-state admission transaction",
+		"summary": "Congress confirms the exact admission artifact, affected states separately consent to boundary changes, and the new state then receives equal standing.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-04-article-iv"
@@ -429,89 +637,11 @@
 		"href": "/en/research/link-america-how-article-iv-turns-the-states-into-a-federal-network?entity=asset.constitution-runtime-04-article-iv.g04#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-05-article-iii.g04",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G04",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-05-article-iii"
-		],
-		"pageIds": [],
-		"href": "/en/research/adjudicate-america-how-article-iii-turns-conflict-into-enforceable-judgment?entity=asset.constitution-runtime-05-article-iii.g04#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-06-article-ii.g04",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G04",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-06-article-ii"
-		],
-		"pageIds": [],
-		"href": "/en/research/execute-america-how-article-ii-turns-a-decision-into-action?entity=asset.constitution-runtime-06-article-ii.g04#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-07-article-i.g04",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G04",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-07-article-i"
-		],
-		"pageIds": [],
-		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law?entity=asset.constitution-runtime-07-article-i.g04#article-body"
-	},
-	{
-		"id": "asset.from-body-to-signal.g05",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G05",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.from-body-to-signal"
-		],
-		"pageIds": [],
-		"href": "/en/research/from-body-to-signal?entity=asset.from-body-to-signal.g05#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-01-article-vii.g05",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G05",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-01-article-vii"
-		],
-		"pageIds": [],
-		"href": "/en/research/connect-america-how-article-vii-bootstraps-a-republic?entity=asset.constitution-runtime-01-article-vii.g05#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-02-article-vi.g05",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G05",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-02-article-vi"
-		],
-		"pageIds": [],
-		"href": "/en/research/what-america-trusts-how-article-vi-assembles-the-supreme-order?entity=asset.constitution-runtime-02-article-vi.g05#article-body"
-	},
-	{
 		"id": "asset.constitution-runtime-03-article-v.g05",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G05",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "Normative and technical transition lines",
+		"summary": "A ratified amendment remains in force after a runtime failure; the system enters a safe state and continues recovery without silently returning to the former constitutional revision.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-03-article-v"
@@ -520,11 +650,50 @@
 		"href": "/en/research/update-america-how-article-v-changes-the-constitutional-kernel?entity=asset.constitution-runtime-03-article-v.g05#article-body"
 	},
 	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g08",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Ownership boundary",
+		"summary": "The prefix defines ownership; managed rules are replaced, while the remainder enters the plan with its relative order preserved.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g08#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g10",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Pattern components",
+		"summary": "Four compositional components converge in the model of regulated availability.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=asset.regulated-availability.g10#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g13",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Portable pipeline",
+		"summary": "Local configuration and fixtures lead to compile, plan, dry-run, operator review, apply, readback, and audit; site-specific edge smoke remains a separate deployment check.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g13#article-body"
+	},
+	{
 		"id": "asset.constitution-runtime-04-article-iv.g05",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G05",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "Protective function without permanent redistribution of authority",
+		"summary": "Federal protection receives a verified constitutional trigger and a constrained plan, then ends under a condition defined in advance.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-04-article-iv"
@@ -533,24 +702,11 @@
 		"href": "/en/research/link-america-how-article-iv-turns-the-states-into-a-federal-network?entity=asset.constitution-runtime-04-article-iv.g05#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-05-article-iii.g05",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G05",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-05-article-iii"
-		],
-		"pageIds": [],
-		"href": "/en/research/adjudicate-america-how-article-iii-turns-conflict-into-enforceable-judgment?entity=asset.constitution-runtime-05-article-iii.g05#article-body"
-	},
-	{
 		"id": "asset.constitution-runtime-06-article-ii.g05",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G05",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "provenance of official authority",
+		"summary": "Office, candidate, appointment, and commission form distinct links in the provenance of authority.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-06-article-ii"
@@ -559,37 +715,37 @@
 		"href": "/en/research/execute-america-how-article-ii-turns-a-decision-into-action?entity=asset.constitution-runtime-06-article-ii.g05#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-07-article-i.g05",
+		"id": "asset.constitution-runtime-05-article-iii.g04",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G05",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "provenance of the judgment",
+		"summary": "A judgment connects proved facts with operative law while preserving the provenance of every conclusion and the boundaries of restoration.",
 		"status": "published",
 		"materialIds": [
-			"material.constitution-runtime-07-article-i"
+			"material.constitution-runtime-05-article-iii"
 		],
 		"pageIds": [],
-		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law?entity=asset.constitution-runtime-07-article-i.g05#article-body"
+		"href": "/en/research/adjudicate-america-how-article-iii-turns-conflict-into-enforceable-judgment?entity=asset.constitution-runtime-05-article-iii.g04#article-body"
 	},
 	{
-		"id": "asset.from-body-to-signal.g06",
+		"id": "asset.constitution-runtime-01-article-vii.g05",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G06",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "question navigator",
+		"summary": "A conversational route through Article VII, from the experience of connection to the limits of the software model.",
 		"status": "published",
 		"materialIds": [
-			"material.from-body-to-signal"
+			"material.constitution-runtime-01-article-vii"
 		],
 		"pageIds": [],
-		"href": "/en/research/from-body-to-signal?entity=asset.from-body-to-signal.g06#article-body"
+		"href": "/en/research/connect-america-how-article-vii-bootstraps-a-republic?entity=asset.constitution-runtime-01-article-vii.g05#article-body"
 	},
 	{
 		"id": "asset.constitution-runtime-02-article-vi.g06",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G06",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "question navigator",
+		"summary": "A conversational route through Article VI, from the connected system to the limits of executable supremacy.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-02-article-vi"
@@ -598,76 +754,11 @@
 		"href": "/en/research/what-america-trusts-how-article-vi-assembles-the-supreme-order?entity=asset.constitution-runtime-02-article-vi.g06#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-03-article-v.g06",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G06",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-03-article-v"
-		],
-		"pageIds": [],
-		"href": "/en/research/update-america-how-article-v-changes-the-constitutional-kernel?entity=asset.constitution-runtime-03-article-v.g06#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-04-article-iv.g06",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G06",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-04-article-iv"
-		],
-		"pageIds": [],
-		"href": "/en/research/link-america-how-article-iv-turns-the-states-into-a-federal-network?entity=asset.constitution-runtime-04-article-iv.g06#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-05-article-iii.g06",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G06",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-05-article-iii"
-		],
-		"pageIds": [],
-		"href": "/en/research/adjudicate-america-how-article-iii-turns-conflict-into-enforceable-judgment?entity=asset.constitution-runtime-05-article-iii.g06#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-06-article-ii.g06",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G06",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-06-article-ii"
-		],
-		"pageIds": [],
-		"href": "/en/research/execute-america-how-article-ii-turns-a-decision-into-action?entity=asset.constitution-runtime-06-article-ii.g06#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-07-article-i.g06",
-		"kind": "asset",
-		"locale": "en",
-		"label": "Graphic slot G06",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-07-article-i"
-		],
-		"pageIds": [],
-		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law?entity=asset.constitution-runtime-07-article-i.g06#article-body"
-	},
-	{
 		"id": "asset.constitution-runtime-03-article-v.g07",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G07",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "question navigator",
+		"summary": "A conversational route through Article V, from the constitutional root in force to the limits of safe self-updating.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-03-article-v"
@@ -679,8 +770,8 @@
 		"id": "asset.constitution-runtime-04-article-iv.g07",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G07",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "question navigator",
+		"summary": "A conversational route through Article IV, from autonomous jurisdictions and recognition of acts to changes in federal topology and the limits of software adaptation.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-04-article-iv"
@@ -692,8 +783,8 @@
 		"id": "asset.constitution-runtime-05-article-iii.g07",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G07",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "question navigator",
+		"summary": "A conversational route through Article III, from an independent court and a concrete dispute to judgment, review, execution, and the limits of software adaptation.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-05-article-iii"
@@ -702,11 +793,219 @@
 		"href": "/en/research/adjudicate-america-how-article-iii-turns-conflict-into-enforceable-judgment?entity=asset.constitution-runtime-05-article-iii.g07#article-body"
 	},
 	{
+		"id": "asset.constitution-runtime-07-article-i.g08",
+		"kind": "asset",
+		"locale": "en",
+		"label": "question navigator",
+		"summary": "A conversation route from the provenance of law to the final assessment of the seven-article software adaptation.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-07-article-i"
+		],
+		"pageIds": [],
+		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law?entity=asset.constitution-runtime-07-article-i.g08#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-02-article-vi.g03",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Resolution of a direct conflict",
+		"summary": "A federal claim undergoes provenance review and displaces a state rule only when a direct conflict in a shared scope has been proved.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-02-article-vi"
+		],
+		"pageIds": [],
+		"href": "/en/research/what-america-trusts-how-article-vi-assembles-the-supreme-order?entity=asset.constitution-runtime-02-article-vi.g03#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g05",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Retained form, changed function",
+		"summary": "Etiquette’s regulation of visibility becomes staged image composition through the recognisable form of crossing.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=asset.regulated-availability.g05#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-04-article-iv.g03",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Review of a citizen’s interstate standing",
+		"summary": "A distinction between a resident and a citizen of another state is permissible only after the protected activity has been classified and a substantial reason for the restriction has been verified.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-04-article-iv"
+		],
+		"pageIds": [],
+		"href": "/en/research/link-america-how-article-iv-turns-the-states-into-a-federal-network?entity=asset.constitution-runtime-04-article-iv.g03#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-06-article-ii.g06",
+		"kind": "asset",
+		"locale": "en",
+		"label": "shared power",
+		"summary": "Independent Senate confirmation completes a shared power, while a treaty’s domestic effect determines the next route.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-06-article-ii"
+		],
+		"pageIds": [],
+		"href": "/en/research/execute-america-how-article-ii-turns-a-decision-into-action?entity=asset.constitution-runtime-06-article-ii.g06#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g06",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Silhouette guiding line",
+		"summary": "The sequence from pelvis to foot represents a compositional route, not anatomical causation.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=asset.regulated-availability.g06#article-body"
+	},
+	{
+		"id": "asset.why-documentation.g01",
+		"kind": "asset",
+		"locale": "en",
+		"label": "source portrait: The Los Alamos Primer",
+		"summary": "LA-1 as Project Y’s shared point of entry: the document transfers knowledge without replacing human moral judgment.",
+		"status": "published",
+		"materialIds": [
+			"material.why-documentation"
+		],
+		"pageIds": [],
+		"href": "/en/programming/why-documentation-matters?entity=asset.why-documentation.g01#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-04-article-iv.g06",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Sources of invariants in the fourth suite",
+		"summary": "WARDEN distinguishes the original text, a subsequent amendment, judicial and statutory implementation, and engineering rules, then tests forty-two scenarios of federal behavior.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-04-article-iv"
+		],
+		"pageIds": [],
+		"href": "/en/research/link-america-how-article-iv-turns-the-states-into-a-federal-network?entity=asset.constitution-runtime-04-article-iv.g06#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-06-article-ii.g03",
+		"kind": "asset",
+		"locale": "en",
+		"label": "succession lineage",
+		"summary": "The Twenty-Fifth Amendment distinguishes succession to the office from temporary exercise of its powers.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-06-article-ii"
+		],
+		"pageIds": [],
+		"href": "/en/research/execute-america-how-article-ii-turns-a-decision-into-action?entity=asset.constitution-runtime-06-article-ii.g03#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g08",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Systems of representation",
+		"summary": "An expanded bodily vocabulary in some media settings coexists with a narrow standard in the studied runway sample.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=asset.regulated-availability.g08#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-01-article-vii.g02",
+		"kind": "asset",
+		"locale": "en",
+		"label": "The establishment threshold under Article VII",
+		"summary": "State ratifying conventions accumulate nine unique acts of consent, after which the transition to the federal system begins.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-01-article-vii"
+		],
+		"pageIds": [],
+		"href": "/en/research/connect-america-how-article-vii-bootstraps-a-republic?entity=asset.constitution-runtime-01-article-vii.g02#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-03-article-v.g06",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Three sources of test invariants",
+		"summary": "WARDEN separately tests the literal rules of Article V, official attestation, and the engineering transition, then compares the new root with the runtime’s actual state.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-03-article-v"
+		],
+		"pageIds": [],
+		"href": "/en/research/update-america-how-article-v-changes-the-constitutional-kernel?entity=asset.constitution-runtime-03-article-v.g06#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-07-article-i.g02",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Two independent Houses and one revision",
+		"summary": "The House and Senate vote separately on exact revisions; only identical text may proceed to presentment.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-07-article-i"
+		],
+		"pageIds": [],
+		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law?entity=asset.constitution-runtime-07-article-i.g02#article-body"
+	},
+	{
+		"id": "asset.why-documentation.g03",
+		"kind": "asset",
+		"locale": "en",
+		"label": "two projections of WEB",
+		"summary": "A single WEB file produces readable documentation through WEAVE and machine code through TANGLE.",
+		"status": "published",
+		"materialIds": [
+			"material.why-documentation"
+		],
+		"pageIds": [],
+		"href": "/en/programming/why-documentation-matters?entity=asset.why-documentation.g03#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-03-article-v.g02",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Two proposal routes and two ratification modes",
+		"summary": "An amendment comes from two thirds of both houses of Congress or from a convention called on applications from two thirds of the states; Congress selects one ratification mode in advance.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-03-article-v"
+		],
+		"pageIds": [],
+		"href": "/en/research/update-america-how-article-v-changes-the-constitutional-kernel?entity=asset.constitution-runtime-03-article-v.g02#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-01-article-vii.g04",
+		"kind": "asset",
+		"locale": "en",
+		"label": "WARDEN as an external test circuit",
+		"summary": "WARDEN compares normative invariants with the executable model and returns discrepancies for review.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-01-article-vii"
+		],
+		"pageIds": [],
+		"href": "/en/research/connect-america-how-article-vii-bootstraps-a-republic?entity=asset.constitution-runtime-01-article-vii.g04#article-body"
+	},
+	{
 		"id": "asset.constitution-runtime-06-article-ii.g07",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G07",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "WARDEN for the executive circuit",
+		"summary": "WARDEN verifies provenance of authority, order boundaries, and proof of execution across 124 scenarios.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-06-article-ii"
@@ -715,30 +1014,56 @@
 		"href": "/en/research/execute-america-how-article-ii-turns-a-decision-into-action?entity=asset.constitution-runtime-06-article-ii.g07#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-07-article-i.g07",
+		"id": "asset.constitution-runtime-07-article-i.g06",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G07",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "WARDEN matrix",
+		"summary": "WARDEN maps 151 Article I scenarios to the literal text, amendments, doctrine, and engineering invariants.",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-07-article-i"
 		],
 		"pageIds": [],
-		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law?entity=asset.constitution-runtime-07-article-i.g07#article-body"
+		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law?entity=asset.constitution-runtime-07-article-i.g06#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-07-article-i.g08",
+		"id": "asset.constitution-runtime-05-article-iii.g06",
 		"kind": "asset",
 		"locale": "en",
-		"label": "Graphic slot G08",
-		"summary": "Editorial request from the authorial Markdown; no file has been added yet.",
+		"label": "WARDEN panel",
+		"summary": "WARDEN confirms seventy invariants of the judicial circuit and stops before establishing facts or deciding the merits of the dispute.",
 		"status": "published",
 		"materialIds": [
-			"material.constitution-runtime-07-article-i"
+			"material.constitution-runtime-05-article-iii"
 		],
 		"pageIds": [],
-		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law?entity=asset.constitution-runtime-07-article-i.g08#article-body"
+		"href": "/en/research/adjudicate-america-how-article-iii-turns-conflict-into-enforceable-judgment?entity=asset.constitution-runtime-05-article-iii.g06#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-02-article-vi.g05",
+		"kind": "asset",
+		"locale": "en",
+		"label": "WARDEN verifies the provenance of a decision",
+		"summary": "Ten scenarios compare text, engineering premises, and executable behavior while preserving a trace for every result.",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-02-article-vi"
+		],
+		"pageIds": [],
+		"href": "/en/research/what-america-trusts-how-article-vi-assembles-the-supreme-order?entity=asset.constitution-runtime-02-article-vi.g05#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g10",
+		"kind": "asset",
+		"locale": "en",
+		"label": "Write boundary",
+		"summary": "Plan and budget checks precede the snapshot; ruleset write is followed by readback, and a mismatch stops the operation.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g10#article-body"
 	},
 	{
 		"id": "claim.channel-can-carry-harm",
@@ -857,6 +1182,19 @@
 		"href": "/en/research/connect-america-how-article-vii-bootstraps-a-republic?entity=concept.code-constitution#article-body"
 	},
 	{
+		"id": "concept.crawler-surface-policy",
+		"kind": "concept",
+		"locale": "en",
+		"label": "Crawler Surface Policy",
+		"summary": "It is a policy combining an automated client’s identity with the requested URL class. In this case, crawlers are blocked on WooCommerce’s transactional surface while public pages remain outside that block rule. A global identity block would cover every URL. Other WAF rules and the origin still affect the final response.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=concept.crawler-surface-policy#article-body"
+	},
+	{
 		"id": "concept.documentation",
 		"kind": "concept",
 		"locale": "en",
@@ -896,6 +1234,19 @@
 		"href": "/en/research/from-body-to-signal?entity=concept.infection-model#article-body"
 	},
 	{
+		"id": "concept.iron-creed",
+		"kind": "concept",
+		"locale": "en",
+		"label": "IRON CREED",
+		"summary": "A recurring Zhovten Games character, working voice, and personified engineering process that connects code, research, scenarios, and publications into one traceable circuit.",
+		"status": "published",
+		"materialIds": [],
+		"pageIds": [
+			"page.about"
+		],
+		"href": "/en/pages/about?entity=concept.iron-creed#article-body"
+	},
+	{
 		"id": "concept.literate-programming",
 		"kind": "concept",
 		"locale": "en",
@@ -920,6 +1271,19 @@
 		],
 		"pageIds": [],
 		"href": "/en/programming/why-documentation-matters?entity=concept.prompt-literate-workflow#article-body"
+	},
+	{
+		"id": "concept.regulated-availability",
+		"kind": "concept",
+		"locale": "en",
+		"label": "Regulated availability",
+		"summary": "It is an authorial model of a composition that presents a body together with a boundary of visibility. Crossed legs may direct attention to their intersection and mark a concealed continuation. The model describes a cultural reading of an image; availability in its name implies neither personal consent nor an observer’s entitlement to contact.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=concept.regulated-availability#article-body"
 	},
 	{
 		"id": "concept.signal-as-vector",
@@ -998,6 +1362,19 @@
 		],
 		"pageIds": [],
 		"href": "/en/research/adjudicate-america-how-article-iii-turns-conflict-into-enforceable-judgment"
+	},
+	{
+		"id": "material.cloudflare-001-crawler-surface-policy",
+		"kind": "material",
+		"locale": "en",
+		"label": "Case 001. Cloudflare Crawler Surface Policy: Controlling Bot Access to URLs",
+		"summary": "A 22-site case: crawler identity and URL surface, profiles, explicit writes, drift, and a portable PHP tool.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy"
 	},
 	{
 		"id": "material.constitution-runtime-01-article-vii",
@@ -1221,6 +1598,19 @@
 		"href": "/en/research/body-as-temporary-construction"
 	},
 	{
+		"id": "material.regulated-availability",
+		"kind": "material",
+		"locale": "en",
+		"label": "The “Regulated Availability” Pattern: Women’s Crossed Legs as a Sexual Code",
+		"summary": "How visibility control, composition, and cultural learning turn crossed legs into a sign; size representation and the limits of inferring intention.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability"
+	},
+	{
 		"id": "material.constitution-runtime-03-article-v",
 		"kind": "material",
 		"locale": "en",
@@ -1277,7 +1667,7 @@
 		"kind": "page",
 		"locale": "en",
 		"label": "About IRON CREED",
-		"summary": "IRON CREED is a currently classified recurring character and a personified engineering process connecting code, research, scenarios, and publications.",
+		"summary": "IRON CREED is a currently classified recurring character of [Zhovten Games](https://zhovten.games/) and a personified engineering process connecting code, research, scenarios, and publications.",
 		"status": "published",
 		"materialIds": [],
 		"pageIds": [
@@ -1297,6 +1687,19 @@
 			"page.ai-policy"
 		],
 		"href": "/en/pages/ai-policy"
+	},
+	{
+		"id": "page.anthem",
+		"kind": "page",
+		"locale": "en",
+		"label": "Anthem",
+		"summary": "IRON CREED",
+		"status": "published",
+		"materialIds": [],
+		"pageIds": [
+			"page.anthem"
+		],
+		"href": "/en/pages/anthem"
 	},
 	{
 		"id": "page.corpus-index",
@@ -1323,6 +1726,19 @@
 			"page.licensing"
 		],
 		"href": "/en/pages/licensing"
+	},
+	{
+		"id": "page.material-cycle",
+		"kind": "page",
+		"locale": "en",
+		"label": "Material cycle",
+		"summary": "Many materials progress from a working question through research and public adaptation to the next verified change. The starting point may be Zhovten Games, a client IT case, or an independent engineering observation.",
+		"status": "published",
+		"materialIds": [],
+		"pageIds": [
+			"page.material-cycle"
+		],
+		"href": "/en/pages/material-cycle"
 	},
 	{
 		"id": "page.privacy-policy",
@@ -1521,6 +1937,32 @@
 		"href": "/en/questions/q.horror.infection-card"
 	},
 	{
+		"id": "q.cloudflare.api-token-wsl",
+		"kind": "question",
+		"locale": "en",
+		"label": "How can a Cloudflare API token be created and stored safely for local work through WSL?",
+		"summary": "Create a custom token in your Cloudflare profile and restrict it to required zones and operations. Case 001 uses Zone Read plus Zone WAF Read for reading, and Zone Read plus Zone WAF Edit for writing. In Bash, enter values with read -rsp to avoid command history. Store them in a secrets manager or outside the checkout in a 600-permission file within a 700-permission directory. Unset the write token after use; revoke and replace it after exposure. This contract is reusable by future series articles.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.cloudflare.api-token-wsl"
+	},
+	{
+		"id": "q.cloudflare.physical-rule-budget",
+		"kind": "question",
+		"locale": "en",
+		"label": "How can a limited Cloudflare Custom Rule budget be used while keeping logical policies separate?",
+		"summary": "Keep logical policies in separate files and merge compatible simple rules with the same action and physical_group during compilation. Count unmanaged rules in the budget too. Grouping can affect order, so review the plan; arbitrary action_parameters are not supported merely by assumption. The fixture’s value of 5 is an example parameter to check against the actual zone.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.cloudflare.physical-rule-budget"
+	},
+	{
 		"id": "q.constitution.article-iv.autonomous-state.material-absorption",
 		"kind": "question",
 		"locale": "en",
@@ -1586,6 +2028,32 @@
 		"href": "/en/questions/q.constitution.article-ii.distributed-executive.software-controllers"
 	},
 	{
+		"id": "q.pattern.representation-objectification",
+		"kind": "question",
+		"locale": "en",
+		"label": "How can broader sexual representation of bodies coexist with objectification?",
+		"summary": "More bodies can enter images of desirability while evaluation of the person remains concentrated on appearance. Authorship, control, and context distinguish self-presentation from imposed evaluation. Studies of body-positive imagery produce different results depending on stimuli and design; no single result establishes a universal effect of sexualisation.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.pattern.representation-objectification"
+	},
+	{
+		"id": "q.pattern.concealment-attention",
+		"kind": "question",
+		"locale": "en",
+		"label": "How can concealing part of a body organise attention in a sexualised image?",
+		"summary": "A visible line can terminate at a boundary that both conceals its continuation and marks its existence. In regulated availability, the crossing of the legs performs that compositional function. Angle, clothing, and cultural experience change the reading. The diagram establishes neither a measured gaze route nor a rule that every concealment intensifies desire.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.pattern.concealment-attention"
+	},
+	{
 		"id": "q.horror.war-without-battlefield",
 		"kind": "question",
 		"locale": "en",
@@ -1610,6 +2078,19 @@
 		],
 		"pageIds": [],
 		"href": "/en/questions/q.documentation.project-application"
+	},
+	{
+		"id": "q.cloudflare.fleet-profiles-exceptions",
+		"kind": "question",
+		"locale": "en",
+		"label": "How can profiles and hostname exceptions manage different Cloudflare policies across several sites?",
+		"summary": "An explicit inventory lists zones. Each selects a profile, adds or disables policies, and may contain an inline hostname-specific rule. The compiler produces a separate effective state for every zone. Changing one commerce zone should not assign commerce policy to all others; plans and a fleet dry-run check that boundary.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.cloudflare.fleet-profiles-exceptions"
 	},
 	{
 		"id": "q.constitution.article-v.root-replacement.self-reference",
@@ -1675,6 +2156,19 @@
 		],
 		"pageIds": [],
 		"href": "/en/questions/q.horror.signal-channel"
+	},
+	{
+		"id": "q.pattern.crossed-legs-etiquette",
+		"kind": "question",
+		"locale": "en",
+		"label": "How did etiquette connect women’s crossed legs with control over bodily visibility?",
+		"summary": "Prescriptions concerning skirts, knees, and feet regulated bodily visibility and taught a way of carrying oneself. In 1922, Emily Post described a transition from prohibiting crossed knees to permitting them under specified conditions. This documents a particular European-American setting; it establishes neither a single origin of the pose nor a universal sexual reading.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.pattern.crossed-legs-etiquette"
 	},
 	{
 		"id": "q.constitution.article-i.seven-article-conclusion.research-impact",
@@ -1805,6 +2299,32 @@
 		],
 		"pageIds": [],
 		"href": "/en/questions/q.constitution.article-v.entrenchment"
+	},
+	{
+		"id": "q.pattern.crossed-legs-size",
+		"kind": "question",
+		"locale": "en",
+		"label": "How do body size and proportions change the compositional work of crossed legs?",
+		"summary": "Depending on proportions, posture, and angle, an image can emphasise long separated lines or contact between volumes. Mid-size and plus-size representation expands these available accents. This is an authorial formal inference; the article supplies no direct crossed-leg experiment across all groups. Size alone determines neither attractiveness nor the image’s meaning.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.pattern.crossed-legs-size"
+	},
+	{
+		"id": "q.pattern.crossed-legs-variants",
+		"kind": "question",
+		"locale": "en",
+		"label": "How do crossed ankles, crossed knees, and a standing leg cross differ compositionally?",
+		"summary": "Crossed ankles may emphasise compactness; knee over knee combines a crossing in front of the pelvis with thigh and calf display; a standing cross adds asymmetric support and pelvic displacement. Meaning comes from the whole image. Contrapposto findings concern a related posture and are not direct experimental proof of each variant’s attractiveness.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.pattern.crossed-legs-variants"
 	},
 	{
 		"id": "q.documentation.modern-graphs",
@@ -3263,6 +3783,19 @@
 		"href": "/en/questions/q.constitution.article-vi.continuity.unverified-claim"
 	},
 	{
+		"id": "q.cloudflare.identity-surface-separation",
+		"kind": "question",
+		"locale": "en",
+		"label": "How should crawler identity and request surface be separated in a Cloudflare WAF policy?",
+		"summary": "Express identity as a separate category or explicit User-Agent condition and surface as a separate path-and-parameter condition. Blocking requires both through and; alternatives within each group use or. Parentheses and negative examples should demonstrate that public content and ordinary visitors remain outside this particular restriction.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.cloudflare.identity-surface-separation"
+	},
+	{
 		"id": "q.documentation.project-ci",
 		"kind": "question",
 		"locale": "en",
@@ -3831,6 +4364,19 @@
 		"href": "/en/questions/q.ada.life-definition"
 	},
 	{
+		"id": "q.pattern.regulated-availability",
+		"kind": "question",
+		"locale": "en",
+		"label": "What does the “regulated availability” pattern mean in images of the body?",
+		"summary": "It is an authorial model of a composition that presents a body together with a boundary of visibility. Crossed legs may direct attention to their intersection and mark a concealed continuation. The model describes a cultural reading of an image; availability in its name implies neither personal consent nor an observer’s entitlement to contact.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.pattern.regulated-availability"
+	},
+	{
 		"id": "q.constitution.article-iv.artifact-recognition.digest-authentication",
 		"kind": "question",
 		"locale": "en",
@@ -3972,6 +4518,32 @@
 		],
 		"pageIds": [],
 		"href": "/en/questions/q.documentation.project-retire"
+	},
+	{
+		"id": "q.cloudflare.configuration-drift",
+		"kind": "question",
+		"locale": "en",
+		"label": "What is configuration drift across Cloudflare zones, and how can it be detected?",
+		"summary": "Drift is divergence between live state and the compiled expectation for a particular zone. Audit reads the inventory and compares state within the model; different profiles may legitimately produce different rules. Detecting drift does not authorise automatic remediation. A comparison also cannot prove that the desired policy itself is correct.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.cloudflare.configuration-drift"
+	},
+	{
+		"id": "q.cloudflare.crawler-surface-policy",
+		"kind": "question",
+		"locale": "en",
+		"label": "What is Crawler Surface Policy, and how does it differ from globally blocking a crawler?",
+		"summary": "It is a policy combining an automated client’s identity with the requested URL class. In this case, crawlers are blocked on WooCommerce’s transactional surface while public pages remain outside that block rule. A global identity block would cover every URL. Other WAF rules and the origin still affect the final response.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.cloudflare.crawler-surface-policy"
 	},
 	{
 		"id": "q.iron-creed.game",
@@ -4938,6 +5510,19 @@
 		"href": "/en/questions/q.constitution.article-v.entrenchment.pre-1808"
 	},
 	{
+		"id": "q.cloudflare.public-repository-boundary",
+		"kind": "question",
+		"locale": "en",
+		"label": "Which Cloudflare infrastructure data can belong in a public monorepo, and which should remain local?",
+		"summary": "This project publishes the engine, tests, safe fixtures, demonstration policies, and normative references. Tokens, client inventory, zone IDs, private hostname overlays, and production snapshots are excluded. A zone ID is not an authentication secret, but belongs to this case’s protected operational map. Examples use reserved domains; .gitignore complements checks of tracked files and history.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.cloudflare.public-repository-boundary"
+	},
+	{
 		"id": "q.constitution.article-v.attestation.root-fields",
 		"kind": "question",
 		"locale": "en",
@@ -5900,6 +6485,19 @@
 		"href": "/en/questions/q.constitution.article-vii.warden.text-derived-tests"
 	},
 	{
+		"id": "q.cloudflare.woocommerce-transactional-surface",
+		"kind": "question",
+		"locale": "en",
+		"label": "Which WooCommerce URLs are candidates for a transactional hard-deny surface for crawlers?",
+		"summary": "Initial candidates are cart, checkout, account, and add-to-cart, remove_item, and wc-ajax operations. Verify actual slugs, descendant paths, language prefixes, and query semantics. A parameter substring may match inside another value. Filters, faceted navigation, and search need a separate hostname-specific SEO decision.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.cloudflare.woocommerce-transactional-surface"
+	},
+	{
 		"id": "q.constitution.article-v.entrenchment.classification-authority",
 		"kind": "question",
 		"locale": "en",
@@ -6017,6 +6615,19 @@
 		"href": "/en/questions/q.constitution.article-ii.mandate.self-appointment"
 	},
 	{
+		"id": "q.cloudflare.telemetry-write-boundary",
+		"kind": "question",
+		"locale": "en",
+		"label": "Why can crawler telemetry be automated while security writes remain explicit operator actions?",
+		"summary": "Telemetry produces observations and candidate explanations; a WAF write changes availability for people and integrations. A policy diff, tests, plan, and human decision separate the two. An analytical LLM layer has no write token, while approved apply follows a separate path with evidence and verification. This separates authority to propose from authority to execute.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.cloudflare.telemetry-write-boundary"
+	},
+	{
 		"id": "q.constitution.article-vi.root.article-vii-dependency",
 		"kind": "question",
 		"locale": "en",
@@ -6028,6 +6639,19 @@
 		],
 		"pageIds": [],
 		"href": "/en/questions/q.constitution.article-vi.root.article-vii-dependency"
+	},
+	{
+		"id": "q.pattern.pose-intention-limit",
+		"kind": "question",
+		"locale": "en",
+		"label": "Why can crossed legs not establish a person’s sexual intention or consent?",
+		"summary": "The same pose may result from comfort, habit, clothing, temperature, or a chair. A cultural reading describes how a sign works for an observer and provides no access to the person’s internal state. Intention and consent require separate communication and interaction context; interpreting an image cannot substitute for them.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.pattern.pose-intention-limit"
 	},
 	{
 		"id": "q.constitution.article-iii.jurisdiction-routing.incoming-packet",
@@ -6179,6 +6803,19 @@
 		"href": "/en/questions/q.documentation.code-limits"
 	},
 	{
+		"id": "q.pattern.crossed-legs-mutation",
+		"kind": "question",
+		"locale": "en",
+		"label": "Why do crossed legs retain a visual function when practical concealment becomes optional?",
+		"summary": "In a staged image, the gesture can retain the recognisable form of closure while organising the body’s axis, leg contact, and guiding lines. The earlier convention of propriety survives as a cultural quotation. In swimwear or another display-oriented image, the practical function changes while the learned code remains available. This interpretation must be assessed in context.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.pattern.crossed-legs-mutation"
+	},
+	{
 		"id": "q.constitution.article-v.adaptability.explicit-gaps",
 		"kind": "question",
 		"locale": "en",
@@ -6203,6 +6840,19 @@
 		],
 		"pageIds": [],
 		"href": "/en/questions/q.constitution.article-i.appropriations.credentials"
+	},
+	{
+		"id": "q.pattern.runway-representation-scope",
+		"kind": "question",
+		"locale": "en",
+		"label": "Why do runway data not describe all size representation in media?",
+		"summary": "Counting looks in specified shows describes that sample. It does not measure all models, campaigns, user-generated images, or consumers. A narrow runway standard can therefore coexist with broader bodily representation elsewhere. Comparisons require compatible samples, periods, and size-group definitions.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.pattern.runway-representation-scope"
 	},
 	{
 		"id": "q.constitution.article-vi.warden.test-limit",
@@ -7252,6 +7902,32 @@
 		"href": "/en/questions/q.constitution.article-iv.warden.article-iii-handoff"
 	},
 	{
+		"id": "q.cloudflare.read-write-token-separation",
+		"kind": "question",
+		"locale": "en",
+		"label": "Why separate read-only and write API tokens in Cloudflare automation?",
+		"summary": "Inspecting state does not require permission to modify WAF. Separate scopes and environment variables reduce the authority of routine diagnostics. Load a write token before a reviewed operation and unset it afterwards. The --apply flag complements credential separation; it neither changes token permissions nor prevents every mistake.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.cloudflare.read-write-token-separation"
+	},
+	{
+		"id": "q.cloudflare.verified-crawler-scope",
+		"kind": "question",
+		"locale": "en",
+		"label": "Why should a verified or useful crawler not automatically have access to every site URL?",
+		"summary": "Authenticated origin and indexing value do not determine whether every operation is appropriate. Cart, account, or operational endpoints may generate load without indexing value. Verified automation also includes services outside this case’s crawler class. Decisions must consider both client purpose and surface; a User-Agent fallback alone does not verify identity.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.cloudflare.verified-crawler-scope"
+	},
+	{
 		"id": "q.constitution.article-iv.superseded-clause.historical-corpus",
 		"kind": "question",
 		"locale": "en",
@@ -7263,6 +7939,19 @@
 		],
 		"pageIds": [],
 		"href": "/en/questions/q.constitution.article-iv.superseded-clause.historical-corpus"
+	},
+	{
+		"id": "q.cloudflare.security-deployment-stages",
+		"kind": "question",
+		"locale": "en",
+		"label": "Why should security deployment follow compile → diff → dry-run → apply → smoke → audit?",
+		"summary": "The stages test different claims: compile checks the model; diff/plan compares live state; dry-run checks fleet scope; apply writes explicitly; smoke tests request behaviour; audit checks desired state. Pre-write snapshots and post-write readback preserve evidence. Case 001 implements readback, while site-specific edge smoke remains a separate deployment check.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/questions/q.cloudflare.security-deployment-stages"
 	},
 	{
 		"id": "q.constitution.article-v.entrenchment.historical-check",
@@ -7335,7 +8024,8 @@
 		"summary": "A series about repeatable constructions in which body, mind, and social regime form one temporary mechanism.",
 		"status": "published",
 		"materialIds": [
-			"material.body-as-temporary-construction"
+			"material.body-as-temporary-construction",
+			"material.regulated-availability"
 		],
 		"pageIds": [],
 		"href": "/en/series/psychobiosocial-patterns"
@@ -7358,6 +8048,45 @@
 		],
 		"pageIds": [],
 		"href": "/en/series/the-constitution-that-runs"
+	},
+	{
+		"id": "series.cloudflare-operations",
+		"kind": "series",
+		"locale": "en",
+		"label": "The Great and Terrible Cloudflare",
+		"summary": "Cloudflare Operations: cases about policy, security, and controlled site-fleet operations with reviewable code.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/series/the-great-and-terrible-cloudflare"
+	},
+	{
+		"id": "source.dimichele.sexybodypositive-2023",
+		"kind": "source",
+		"locale": "en",
+		"label": "#SexyBodyPositive: When Sexualization Does Not Undermine Young Women’s Body Image",
+		"summary": "https://doi.org/10.3390/ijerph20020991",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=source.dimichele.sexybodypositive-2023#article-body"
+	},
+	{
+		"id": "source.pazhoohi.contrapposto-2020",
+		"kind": "source",
+		"locale": "en",
+		"label": "Becoming sexy: Contrapposto pose increases attractiveness ratings and modulates observers’ brain activity",
+		"summary": "https://doi.org/10.1016/j.biopsycho.2020.107842",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=source.pazhoohi.contrapposto-2020#article-body"
 	},
 	{
 		"id": "source.fallout4",
@@ -7408,6 +8137,71 @@
 		],
 		"pageIds": [],
 		"href": "/en/research/body-as-temporary-construction?entity=source.silent-hill-origins#article-body"
+	},
+	{
+		"id": "source.cloudflare.api-permissions",
+		"kind": "source",
+		"locale": "en",
+		"label": "Cloudflare — API token permissions",
+		"summary": "https://developers.cloudflare.com/fundamentals/api/reference/permissions/",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=source.cloudflare.api-permissions#article-body"
+	},
+	{
+		"id": "source.cloudflare.create-api-token",
+		"kind": "source",
+		"locale": "en",
+		"label": "Cloudflare — create an API token",
+		"summary": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=source.cloudflare.create-api-token#article-body"
+	},
+	{
+		"id": "source.cloudflare.rulesets-api",
+		"kind": "source",
+		"locale": "en",
+		"label": "Cloudflare — Rulesets API",
+		"summary": "https://developers.cloudflare.com/ruleset-engine/rulesets-api/",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=source.cloudflare.rulesets-api#article-body"
+	},
+	{
+		"id": "source.cloudflare.verified-bots",
+		"kind": "source",
+		"locale": "en",
+		"label": "Cloudflare — verified bots and categories",
+		"summary": "https://developers.cloudflare.com/bots/concepts/bot/verified-bots/",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=source.cloudflare.verified-bots#article-body"
+	},
+	{
+		"id": "source.cloudflare.custom-rules",
+		"kind": "source",
+		"locale": "en",
+		"label": "Cloudflare — WAF Custom Rules",
+		"summary": "https://developers.cloudflare.com/waf/custom-rules/",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=source.cloudflare.custom-rules#article-body"
 	},
 	{
 		"id": "source.zenodo.code-constitution",
@@ -7474,6 +8268,19 @@
 		"href": "/en/programming/why-documentation-matters?entity=source.knuth-literate-programming#article-body"
 	},
 	{
+		"id": "source.post.etiquette-1922",
+		"kind": "source",
+		"locale": "en",
+		"label": "Emily Post — Etiquette (1922)",
+		"summary": "https://www.gutenberg.org/files/14314/14314-h/14314-h.htm",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=source.post.etiquette-1922#article-body"
+	},
+	{
 		"id": "source.gao.patriot-dhahran",
 		"kind": "source",
 		"locale": "en",
@@ -7485,6 +8292,19 @@
 		],
 		"pageIds": [],
 		"href": "/en/scenarios/do-not-be-afraid-sir-mechanist?entity=source.gao.patriot-dhahran#article-body"
+	},
+	{
+		"id": "source.ironcreed.cloudflare-case-001",
+		"kind": "source",
+		"locale": "en",
+		"label": "IRONCREED — Cloudflare Case 001 source",
+		"summary": "https://github.com/IRONCREED/cloudflare/tree/main/cases/001-crawler-surface-policy",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=source.ironcreed.cloudflare-case-001#article-body"
 	},
 	{
 		"id": "source.zenodo.literate-programming",
@@ -7500,6 +8320,19 @@
 		"href": "/en/programming/why-documentation-matters?entity=source.zenodo.literate-programming#article-body"
 	},
 	{
+		"id": "source.microsoft.wsl-install",
+		"kind": "source",
+		"locale": "en",
+		"label": "Microsoft — install WSL",
+		"summary": "https://learn.microsoft.com/en-us/windows/wsl/install",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/en/programming/cloudflare-001-crawler-surface-policy?entity=source.microsoft.wsl-install#article-body"
+	},
+	{
 		"id": "source.therac25.levenson-turner",
 		"kind": "source",
 		"locale": "en",
@@ -7511,6 +8344,19 @@
 		],
 		"pageIds": [],
 		"href": "/en/scenarios/do-not-be-afraid-sir-mechanist?entity=source.therac25.levenson-turner#article-body"
+	},
+	{
+		"id": "source.vendemia.body-positive-2021",
+		"kind": "source",
+		"locale": "en",
+		"label": "Objectifying the body positive movement",
+		"summary": "https://doi.org/10.1016/j.bodyim.2021.03.017",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=source.vendemia.body-positive-2021#article-body"
 	},
 	{
 		"id": "source.openai.safety-checks",
@@ -7578,6 +8424,19 @@
 		"href": "/en/programming/why-documentation-matters?entity=source.los-alamos-primer#article-body"
 	},
 	{
+		"id": "source.met.evening-dress-1920s",
+		"kind": "source",
+		"locale": "en",
+		"label": "The Met — 1920s evening dress",
+		"summary": "https://www.metmuseum.org/art/collection/search/155941",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=source.met.evening-dress-1920s#article-body"
+	},
+	{
 		"id": "source.kamasutra.doniger-kakar",
 		"kind": "source",
 		"locale": "en",
@@ -7591,11 +8450,245 @@
 		"href": "/en/research/body-as-temporary-construction?entity=source.kamasutra.doniger-kakar#article-body"
 	},
 	{
+		"id": "source.vogue.size-inclusivity-fw2026",
+		"kind": "source",
+		"locale": "en",
+		"label": "Vogue Business — Fall/Winter 2026 Size Inclusivity Report",
+		"summary": "https://www.vogue.com/article/the-vogue-business-fall-winter-2026-size-inclusivity-report",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/en/research/regulated-availability?entity=source.vogue.size-inclusivity-fw2026#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g06",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Commerce fixture",
+		"summary": "Дві policy профілю та окрема policy зони утворюють три логічні складники.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g06#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g03",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Identity та surface",
+		"summary": "Запит блокується лише при одночасному збігу потрібної crawler identity та transactional surface.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g03#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-06-article-ii.g03",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "lineage наступництва",
+		"summary": "XXV поправка розрізняє наступництво посади та тимчасове виконання повноважень",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-06-article-ii"
+		],
+		"pageIds": [],
+		"href": "/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu?entity=asset.constitution-runtime-06-article-ii.g03#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-05-article-iii.g05",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "lineage судового рішення",
+		"summary": "Апеляційний перегляд створює нове рішення з простежуваним походженням і не переписує попередній стан",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-05-article-iii"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia?entity=asset.constitution-runtime-05-article-iii.g05#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g07",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Logical → physical",
+		"summary": "Кілька логічних block-policy утворюють одне physical block-rule; challenge залишається окремою групою.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g07#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-06-article-ii.g06",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "shared power",
+		"summary": "Незалежне підтвердження Сенату завершує спільне повноваження, а внутрішня дія договору визначає наступний маршрут",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-06-article-ii"
+		],
+		"pageIds": [],
+		"href": "/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu?entity=asset.constitution-runtime-06-article-ii.g06#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-06-article-ii.g07",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "WARDEN виконавчого контуру",
+		"summary": "WARDEN перевіряє походження повноваження, межі наказу та доказ виконання у 124 сценаріях",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-06-article-ii"
+		],
+		"pageIds": [],
+		"href": "/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu?entity=asset.constitution-runtime-06-article-ii.g07#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-02-article-vi.g05",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "WARDEN перевіряє походження рішення",
+		"summary": "Десять сценаріїв зіставляють текст, інженерні передумови та виконувану поведінку, зберігаючи трасування кожного результату",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-02-article-vi"
+		],
+		"pageIds": [],
+		"href": "/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok?entity=asset.constitution-runtime-02-article-vi.g05#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-01-article-vii.g04",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "WARDEN як зовнішній випробувальний контур",
+		"summary": "WARDEN зіставляє нормативні інваріанти з виконуваною моделлю та повертає розбіжності на перегляд",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-01-article-vii"
+		],
+		"pageIds": [],
+		"href": "/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku?entity=asset.constitution-runtime-01-article-vii.g04#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-06-article-ii.g02",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "активація виконавчого повноваження",
+		"summary": "Президентське повноваження виникає з мандата, придатності, строку та присяги",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-06-article-ii"
+		],
+		"pageIds": [],
+		"href": "/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu?entity=asset.constitution-runtime-06-article-ii.g02#article-body"
+	},
+	{
+		"id": "asset.why-documentation.g02",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "анатомія рішення",
+		"summary": "Документація пов’язує намір, ухвалене рішення, реалізацію, перевірку й майбутній перегляд",
+		"status": "published",
+		"materialIds": [
+			"material.why-documentation"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/navishcho-potribna-dokumentatsiia?entity=asset.why-documentation.g02#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-02-article-vi.g02",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Архітектура другої збірки",
+		"summary": "Установлена редакція утворює корінь довіри, попередні зобов’язання проходять перевірку наступності, а норми й публічні ролі отримують простежувану основу",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-02-article-vi"
+		],
+		"pageIds": [],
+		"href": "/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok?entity=asset.constitution-runtime-02-article-vi.g02#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g12",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Виявлення drift",
+		"summary": "Live state й compiled desired state сходяться в порівнянні, яке повертає збіг або розбіжність.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g12#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g14",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Від telemetry до дозволеної зміни",
+		"summary": "Telemetry відкриває пропозицію; тести, plan і людське review передують explicit apply та перевірці.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g14#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g01",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Від дисципліни до знака",
+		"summary": "Контроль руху, гендерне маркування, приховування, спрямування уваги та естетизація утворюють запропоновану історичну модель.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=asset.regulated-availability.g01#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g01",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Від інциденту до policy",
+		"summary": "Спостереження за навантаженням відкриває два варіанти: глобальну заборону identity та обмеження конкретної поверхні; кейс обирає другий варіант.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g01#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g04",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Від профілю до effective state",
+		"summary": "Profile policies, additional policies, disabled policies та inline rules визначають logical rules; compiler перетворює їх на physical rules.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g04#article-body"
+	},
+	{
 		"id": "asset.from-body-to-signal.g01",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G01",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "головне зображення",
+		"summary": "Страх рухається від монстра до тіла, середовища та сигналу",
 		"status": "published",
 		"materialIds": [
 			"material.from-body-to-signal"
@@ -7604,24 +8697,11 @@
 		"href": "/uk/research/vid-tila-do-syhnalu?entity=asset.from-body-to-signal.g01#article-body"
 	},
 	{
-		"id": "asset.why-documentation.g01",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G01",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.why-documentation"
-		],
-		"pageIds": [],
-		"href": "/uk/programming/navishcho-potribna-dokumentatsiia?entity=asset.why-documentation.g01#article-body"
-	},
-	{
 		"id": "asset.constitution-runtime-01-article-vii.g01",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G01",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "головне зображення",
+		"summary": "Дев’ять підключених вузлів запускають спільну конституційну систему",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-01-article-vii"
@@ -7633,8 +8713,8 @@
 		"id": "asset.constitution-runtime-02-article-vi.g01",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G01",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "головне зображення",
+		"summary": "Підключена конституційна система перевіряє походження зобов’язань, норм і публічних повноважень",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-02-article-vi"
@@ -7646,8 +8726,8 @@
 		"id": "asset.constitution-runtime-03-article-v.g01",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G01",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "головне зображення",
+		"summary": "Конституційна система ухвалює точну поправку кваліфікованою більшістю, оновлює корінь довіри й окремо проводить технічний перехід",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-03-article-v"
@@ -7659,8 +8739,8 @@
 		"id": "asset.constitution-runtime-04-article-iv.g01",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G01",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "головне зображення",
+		"summary": "Автономні штати зберігають власний стан, визнають визначені акти один одного та змінюють федеративну топологію через спільний порядок",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-04-article-iv"
@@ -7672,8 +8752,8 @@
 		"id": "asset.constitution-runtime-05-article-iii.g01",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G01",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "головне зображення",
+		"summary": "Стаття III перетворює конкретний спір на простежуване рішення та передає його окремому виконавчому контуру",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-05-article-iii"
@@ -7685,8 +8765,8 @@
 		"id": "asset.constitution-runtime-06-article-ii.g01",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G01",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "головне зображення",
+		"summary": "Стаття II перетворює чинне рішення на обмежену дію та повертає доказ виконання",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-06-article-ii"
@@ -7698,8 +8778,8 @@
 		"id": "asset.constitution-runtime-07-article-i.g01",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G01",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "головне зображення",
+		"summary": "Стаття I перетворює пропозицію на закон через компетенцію, дві незалежні згоди, одну точну редакцію та перевірюваний маршрут представлення",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-07-article-i"
@@ -7708,63 +8788,24 @@
 		"href": "/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon?entity=asset.constitution-runtime-07-article-i.g01#article-body"
 	},
 	{
-		"id": "asset.from-body-to-signal.g02",
+		"id": "asset.cloudflare-001-crawler-surface-policy.g08",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G02",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "Границя ownership",
+		"summary": "Prefix визначає ownership; managed rules замінюються, решта переходить у план із збереженням взаємного порядку.",
 		"status": "published",
 		"materialIds": [
-			"material.from-body-to-signal"
+			"material.cloudflare-001-crawler-surface-policy"
 		],
 		"pageIds": [],
-		"href": "/uk/research/vid-tila-do-syhnalu?entity=asset.from-body-to-signal.g02#article-body"
-	},
-	{
-		"id": "asset.why-documentation.g02",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G02",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.why-documentation"
-		],
-		"pageIds": [],
-		"href": "/uk/programming/navishcho-potribna-dokumentatsiia?entity=asset.why-documentation.g02#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-01-article-vii.g02",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G02",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-01-article-vii"
-		],
-		"pageIds": [],
-		"href": "/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku?entity=asset.constitution-runtime-01-article-vii.g02#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-02-article-vi.g02",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G02",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-02-article-vi"
-		],
-		"pageIds": [],
-		"href": "/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok?entity=asset.constitution-runtime-02-article-vi.g02#article-body"
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g08#article-body"
 	},
 	{
 		"id": "asset.constitution-runtime-03-article-v.g02",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G02",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "Два шляхи пропозиції й два режими ратифікації",
+		"summary": "Поправка надходить від двох третин обох палат Конгресу або від конвенту, скликаного за заявами двох третин штатів; Конгрес заздалегідь обирає один режим ратифікації",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-03-article-v"
@@ -7773,50 +8814,11 @@
 		"href": "/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro?entity=asset.constitution-runtime-03-article-v.g02#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-04-article-iv.g02",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G02",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-04-article-iv"
-		],
-		"pageIds": [],
-		"href": "/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu?entity=asset.constitution-runtime-04-article-iv.g02#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-05-article-iii.g02",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G02",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-05-article-iii"
-		],
-		"pageIds": [],
-		"href": "/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia?entity=asset.constitution-runtime-05-article-iii.g02#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-06-article-ii.g02",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G02",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-06-article-ii"
-		],
-		"pageIds": [],
-		"href": "/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu?entity=asset.constitution-runtime-06-article-ii.g02#article-body"
-	},
-	{
 		"id": "asset.constitution-runtime-07-article-i.g02",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G02",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "Дві незалежні палати й одна редакція",
+		"summary": "Палата представників і Сенат окремо голосують за точні редакції; до представлення допускається лише однаковий текст",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-07-article-i"
@@ -7825,24 +8827,11 @@
 		"href": "/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon?entity=asset.constitution-runtime-07-article-i.g02#article-body"
 	},
 	{
-		"id": "asset.from-body-to-signal.g03",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G03",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.from-body-to-signal"
-		],
-		"pageIds": [],
-		"href": "/uk/research/vid-tila-do-syhnalu?entity=asset.from-body-to-signal.g03#article-body"
-	},
-	{
 		"id": "asset.why-documentation.g03",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G03",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "дві проєкції WEB",
+		"summary": "Єдиний WEB-файл породжує читабельну документацію через WEAVE і машинний код через TANGLE",
 		"status": "published",
 		"materialIds": [
 			"material.why-documentation"
@@ -7851,115 +8840,37 @@
 		"href": "/uk/programming/navishcho-potribna-dokumentatsiia?entity=asset.why-documentation.g03#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-01-article-vii.g03",
+		"id": "asset.constitution-runtime-04-article-iv.g06",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G03",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-01-article-vii"
-		],
-		"pageIds": [],
-		"href": "/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku?entity=asset.constitution-runtime-01-article-vii.g03#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-02-article-vi.g03",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G03",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-02-article-vi"
-		],
-		"pageIds": [],
-		"href": "/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok?entity=asset.constitution-runtime-02-article-vi.g03#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-03-article-v.g03",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G03",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-03-article-v"
-		],
-		"pageIds": [],
-		"href": "/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro?entity=asset.constitution-runtime-03-article-v.g03#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-04-article-iv.g03",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G03",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "Джерела інваріантів четвертої батареї",
+		"summary": "WARDEN розрізняє вихідний текст, наступну поправку, судово-законодавчу реалізацію та інженерні правила, а далі перевіряє 42 сценарії федеративної поведінки",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-04-article-iv"
 		],
 		"pageIds": [],
-		"href": "/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu?entity=asset.constitution-runtime-04-article-iv.g03#article-body"
+		"href": "/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu?entity=asset.constitution-runtime-04-article-iv.g06#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-05-article-iii.g03",
+		"id": "asset.why-documentation.g01",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G03",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "діаграма-портрет: The Los Alamos Primer",
+		"summary": "LA-1 як спільна точка входу до Project Y: документ передає знання, але не підміняє людське моральне судження",
 		"status": "published",
 		"materialIds": [
-			"material.constitution-runtime-05-article-iii"
+			"material.why-documentation"
 		],
 		"pageIds": [],
-		"href": "/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia?entity=asset.constitution-runtime-05-article-iii.g03#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-06-article-ii.g03",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G03",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-06-article-ii"
-		],
-		"pageIds": [],
-		"href": "/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu?entity=asset.constitution-runtime-06-article-ii.g03#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-07-article-i.g03",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G03",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-07-article-i"
-		],
-		"pageIds": [],
-		"href": "/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon?entity=asset.constitution-runtime-07-article-i.g03#article-body"
-	},
-	{
-		"id": "asset.from-body-to-signal.g04",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G04",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.from-body-to-signal"
-		],
-		"pageIds": [],
-		"href": "/uk/research/vid-tila-do-syhnalu?entity=asset.from-body-to-signal.g04#article-body"
+		"href": "/uk/programming/navishcho-potribna-dokumentatsiia?entity=asset.why-documentation.g01#article-body"
 	},
 	{
 		"id": "asset.why-documentation.g04",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G04",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "документація в ШІ-контурі",
+		"summary": "ШІ створює кандидата на основі обмеженого завдання; людина, рев’ю, тести й журнал рішень визначають його прийняття",
 		"status": "published",
 		"materialIds": [
 			"material.why-documentation"
@@ -7968,89 +8879,63 @@
 		"href": "/uk/programming/navishcho-potribna-dokumentatsiia?entity=asset.why-documentation.g04#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-01-article-vii.g04",
+		"id": "asset.constitution-runtime-01-article-vii.g03",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G04",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "Життєвий цикл запуску",
+		"summary": "Проєкт долає поріг дев’яти ратифікацій, розширює коло учасників, а потім переходить до робочих установ",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-01-article-vii"
 		],
 		"pageIds": [],
-		"href": "/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku?entity=asset.constitution-runtime-01-article-vii.g04#article-body"
+		"href": "/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku?entity=asset.constitution-runtime-01-article-vii.g03#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-02-article-vi.g04",
+		"id": "asset.constitution-runtime-03-article-v.g03",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G04",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-02-article-vi"
-		],
-		"pageIds": [],
-		"href": "/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok?entity=asset.constitution-runtime-02-article-vi.g04#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-03-article-v.g04",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G04",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "Життєвий цикл поправки",
+		"summary": "Нормативна сила виникає після ратифікації трьома чвертями штатів, офіційне засвідчення повідомляє про завершений процес, а фактична міграція проходить окремою стадією",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-03-article-v"
 		],
 		"pageIds": [],
-		"href": "/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro?entity=asset.constitution-runtime-03-article-v.g04#article-body"
+		"href": "/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro?entity=asset.constitution-runtime-03-article-v.g03#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-04-article-iv.g04",
+		"id": "asset.constitution-runtime-04-article-iv.g05",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G04",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "Захисна функція без постійного перерозподілу влади",
+		"summary": "Федеральний захист отримує підтверджений конституційний тригер і обмежений план, після чого завершується за заздалегідь установленим критерієм",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-04-article-iv"
 		],
 		"pageIds": [],
-		"href": "/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu?entity=asset.constitution-runtime-04-article-iv.g04#article-body"
+		"href": "/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu?entity=asset.constitution-runtime-04-article-iv.g05#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-05-article-iii.g04",
+		"id": "asset.regulated-availability.g02",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G04",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "Зміна допустимого",
+		"summary": "Заборонений жест переходить у дозволений за умов контролю, а згодом може отримати значення елегантності.",
 		"status": "published",
 		"materialIds": [
-			"material.constitution-runtime-05-article-iii"
+			"material.regulated-availability"
 		],
 		"pageIds": [],
-		"href": "/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia?entity=asset.constitution-runtime-05-article-iii.g04#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-06-article-ii.g04",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G04",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-06-article-ii"
-		],
-		"pageIds": [],
-		"href": "/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu?entity=asset.constitution-runtime-06-article-ii.g04#article-body"
+		"href": "/uk/research/rehulovana-dostupnist?entity=asset.regulated-availability.g02#article-body"
 	},
 	{
 		"id": "asset.constitution-runtime-07-article-i.g04",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G04",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "Компетенція та похідний засіб",
+		"summary": "Законодавча мета проходить через надане повноваження, перевірку необхідного й належного засобу та прямі конституційні заборони до голосування",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-07-article-i"
@@ -8059,11 +8944,128 @@
 		"href": "/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon?entity=asset.constitution-runtime-07-article-i.g04#article-body"
 	},
 	{
+		"id": "asset.constitution-runtime-04-article-iv.g02",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Конвеєр міжюрисдикційного визнання",
+		"summary": "Штат, що приймає, перевіряє походження, цілісність, редакцію, компетенцію й чинний статус артефакту, після чого застосовує ефект, відповідний до його класу",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-04-article-iv"
+		],
+		"pageIds": [],
+		"href": "/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu?entity=asset.constitution-runtime-04-article-iv.g02#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g11",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Контроль fleet",
+		"summary": "Зони проходять перевірку послідовно; зміна обмежується призначеною policy, а помилка завершує rollout.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g11#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g08",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Контури репрезентації",
+		"summary": "Розширення тілесного словника в окремих медійних середовищах співіснує з вузьким стандартом у дослідженому корпусі модних показів.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=asset.regulated-availability.g08#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g11",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Культурна мутація",
+		"summary": "Дисципліна, її естетизація та самостійне використання знака пов’язані як етапи авторської реконструкції.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=asset.regulated-availability.g11#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-05-article-iii.g03",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "маршрутизація юрисдикції",
+		"summary": "Юрисдикційна категорія визначає допустимий маршрут, а конкретний суд діє лише в межах доведеного мандата",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-05-article-iii"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia?entity=asset.constitution-runtime-05-article-iii.g03#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-07-article-i.g06",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "матриця WARDEN",
+		"summary": "WARDEN зіставляє 151 сценарій статті I з буквальним текстом, поправками, доктриною та інженерними інваріантами",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-07-article-i"
+		],
+		"pageIds": [],
+		"href": "/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon?entity=asset.constitution-runtime-07-article-i.g06#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g03",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Межа видимості",
+		"summary": "Лінії ніг спрямовують погляд до перетину, за яким продовження закрите.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=asset.regulated-availability.g03#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g09",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Межа висновку",
+		"summary": "Поза разом із кодом і контекстом допускає інтерпретацію образу; перехід від неї до висновку про згоду заблокований.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=asset.regulated-availability.g09#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g10",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Межа запису",
+		"summary": "Перевірка плану й бюджету передує snapshot; після ruleset write йде readback, а невідповідність зупиняє операцію.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g10#article-body"
+	},
+	{
 		"id": "asset.from-body-to-signal.g05",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G05",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "мова як селектор",
+		"summary": "Мова поєднує біологічний вплив, геополітичну ієрархію та вибірковий контроль",
 		"status": "published",
 		"materialIds": [
 			"material.from-body-to-signal"
@@ -8075,8 +9077,8 @@
 		"id": "asset.constitution-runtime-01-article-vii.g05",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G05",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "навігатор питань",
+		"summary": "Маршрут розмови про статтю VII від досвіду підключення до меж програмної моделі",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-01-article-vii"
@@ -8085,102 +9087,11 @@
 		"href": "/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku?entity=asset.constitution-runtime-01-article-vii.g05#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-02-article-vi.g05",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G05",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-02-article-vi"
-		],
-		"pageIds": [],
-		"href": "/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok?entity=asset.constitution-runtime-02-article-vi.g05#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-03-article-v.g05",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G05",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-03-article-v"
-		],
-		"pageIds": [],
-		"href": "/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro?entity=asset.constitution-runtime-03-article-v.g05#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-04-article-iv.g05",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G05",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-04-article-iv"
-		],
-		"pageIds": [],
-		"href": "/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu?entity=asset.constitution-runtime-04-article-iv.g05#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-05-article-iii.g05",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G05",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-05-article-iii"
-		],
-		"pageIds": [],
-		"href": "/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia?entity=asset.constitution-runtime-05-article-iii.g05#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-06-article-ii.g05",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G05",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-06-article-ii"
-		],
-		"pageIds": [],
-		"href": "/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu?entity=asset.constitution-runtime-06-article-ii.g05#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-07-article-i.g05",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G05",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-07-article-i"
-		],
-		"pageIds": [],
-		"href": "/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon?entity=asset.constitution-runtime-07-article-i.g05#article-body"
-	},
-	{
-		"id": "asset.from-body-to-signal.g06",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G06",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.from-body-to-signal"
-		],
-		"pageIds": [],
-		"href": "/uk/research/vid-tila-do-syhnalu?entity=asset.from-body-to-signal.g06#article-body"
-	},
-	{
 		"id": "asset.constitution-runtime-02-article-vi.g06",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G06",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "навігатор питань",
+		"summary": "Маршрут розмови про статтю VI від підключеної системи до меж виконуваного верховенства",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-02-article-vi"
@@ -8189,76 +9100,11 @@
 		"href": "/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok?entity=asset.constitution-runtime-02-article-vi.g06#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-03-article-v.g06",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G06",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-03-article-v"
-		],
-		"pageIds": [],
-		"href": "/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro?entity=asset.constitution-runtime-03-article-v.g06#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-04-article-iv.g06",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G06",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-04-article-iv"
-		],
-		"pageIds": [],
-		"href": "/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu?entity=asset.constitution-runtime-04-article-iv.g06#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-05-article-iii.g06",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G06",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-05-article-iii"
-		],
-		"pageIds": [],
-		"href": "/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia?entity=asset.constitution-runtime-05-article-iii.g06#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-06-article-ii.g06",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G06",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-06-article-ii"
-		],
-		"pageIds": [],
-		"href": "/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu?entity=asset.constitution-runtime-06-article-ii.g06#article-body"
-	},
-	{
-		"id": "asset.constitution-runtime-07-article-i.g06",
-		"kind": "asset",
-		"locale": "uk",
-		"label": "Графічний слот G06",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
-		"status": "published",
-		"materialIds": [
-			"material.constitution-runtime-07-article-i"
-		],
-		"pageIds": [],
-		"href": "/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon?entity=asset.constitution-runtime-07-article-i.g06#article-body"
-	},
-	{
 		"id": "asset.constitution-runtime-03-article-v.g07",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G07",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "навігатор питань",
+		"summary": "Маршрут розмови про статтю V від чинного конституційного кореня до меж безпечного самооновлення",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-03-article-v"
@@ -8270,8 +9116,8 @@
 		"id": "asset.constitution-runtime-04-article-iv.g07",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G07",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "навігатор питань",
+		"summary": "Маршрут розмови про статтю IV від автономних юрисдикцій і визнання актів до зміни федеративної топології та меж програмної адаптації",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-04-article-iv"
@@ -8283,8 +9129,8 @@
 		"id": "asset.constitution-runtime-05-article-iii.g07",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G07",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "навігатор питань",
+		"summary": "Маршрут розмови про статтю III від незалежного суду та конкретного спору до рішення, перегляду, виконання й меж програмної адаптації",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-05-article-iii"
@@ -8293,24 +9139,24 @@
 		"href": "/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia?entity=asset.constitution-runtime-05-article-iii.g07#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-06-article-ii.g07",
+		"id": "asset.constitution-runtime-07-article-i.g08",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G07",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "навігатор питань",
+		"summary": "Маршрут розмови від походження закону до підсумкової оцінки програмної адаптації семи статей",
 		"status": "published",
 		"materialIds": [
-			"material.constitution-runtime-06-article-ii"
+			"material.constitution-runtime-07-article-i"
 		],
 		"pageIds": [],
-		"href": "/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu?entity=asset.constitution-runtime-06-article-ii.g07#article-body"
+		"href": "/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon?entity=asset.constitution-runtime-07-article-i.g08#article-body"
 	},
 	{
 		"id": "asset.constitution-runtime-07-article-i.g07",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G07",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "Накопичувальна архітектура семи статей",
+		"summary": "Ратифікація запускає довірений і змінюваний порядок; федерація, законодавство й суд створюють джерела для обмеженого виконання, а квитанція повертається до контуру вирішення",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-07-article-i"
@@ -8319,17 +9165,368 @@
 		"href": "/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon?entity=asset.constitution-runtime-07-article-i.g07#article-body"
 	},
 	{
-		"id": "asset.constitution-runtime-07-article-i.g08",
+		"id": "asset.regulated-availability.g06",
 		"kind": "asset",
 		"locale": "uk",
-		"label": "Графічний слот G08",
-		"summary": "Редакційне завдання з авторського Markdown; файл ще не додано.",
+		"label": "Напрямна силуету",
+		"summary": "Послідовність від таза до ступні показує композиційний маршрут, а не анатомічну причинність.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=asset.regulated-availability.g06#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-03-article-v.g05",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Нормативна й технічна лінії переходу",
+		"summary": "Ратифікована поправка зберігає силу в разі збою runtime; система входить у безпечний стан і продовжує відновлення без прихованого повернення конституційної редакції",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-03-article-v"
+		],
+		"pageIds": [],
+		"href": "/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro?entity=asset.constitution-runtime-03-article-v.g05#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-05-article-iii.g06",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "панель WARDEN",
+		"summary": "WARDEN підтверджує сімдесят інваріантів судового контуру та зупиняється перед встановленням фактів і вирішенням суті спору",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-05-article-iii"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia?entity=asset.constitution-runtime-05-article-iii.g06#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-04-article-iv.g03",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Перевірка міжштатного становища громадянина",
+		"summary": "Розрізнення між резидентом і громадянином іншого штату допустиме лише після класифікації захищеної діяльності та перевірки істотної причини обмеження",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-04-article-iv"
+		],
+		"pageIds": [],
+		"href": "/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu?entity=asset.constitution-runtime-04-article-iv.g03#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g13",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Переносимий pipeline",
+		"summary": "Локальна конфігурація й fixtures ведуть до compile, plan, dry-run, рішення оператора, apply, readback та audit; site-specific edge smoke є окремою перевіркою deployment.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g13#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-02-article-vi.g04",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Пов’язування публічної ролі",
+		"summary": "Носій складає присягу або урочисте підтвердження на підтримку точної редакції, а релігійний тест не допускається як федеральна кваліфікація",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-02-article-vi"
+		],
+		"pageIds": [],
+		"href": "/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok?entity=asset.constitution-runtime-02-article-vi.g04#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-06-article-ii.g04",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "повний виконавчий маршрут",
+		"summary": "Виконавча влада перевіряє рішення, обмежує наказ і повертає суду квитанцію фактичного виконання",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-06-article-ii"
+		],
+		"pageIds": [],
+		"href": "/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu?entity=asset.constitution-runtime-06-article-ii.g04#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g04",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Показ і межа",
+		"summary": "Демонстрація ніг і закриття центральної ділянки сходяться в одній композиції.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=asset.regulated-availability.g04#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-01-article-vii.g02",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Поріг установлення за статтею VII",
+		"summary": "Ратифікаційні конвенти штатів накопичують дев’ять унікальних згод, після чого починається перехід до федеральної системи",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-01-article-vii"
+		],
+		"pageIds": [],
+		"href": "/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku?entity=asset.constitution-runtime-01-article-vii.g02#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-06-article-ii.g05",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "походження посадового повноваження",
+		"summary": "Посада, кандидат, призначення та комісія утворюють різні ланки повноваження",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-06-article-ii"
+		],
+		"pageIds": [],
+		"href": "/uk/research/vykonaty-ameryku-yak-stattia-ii-peretvoriuie-rishennia-na-diiu?entity=asset.constitution-runtime-06-article-ii.g05#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-05-article-iii.g04",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "походження рішення",
+		"summary": "Судове рішення поєднує доведені факти з чинним правом, зберігаючи походження кожного висновку та межі відновлення",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-05-article-iii"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia?entity=asset.constitution-runtime-05-article-iii.g04#article-body"
+	},
+	{
+		"id": "asset.from-body-to-signal.g06",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "пошкоджене опосередкування",
+		"summary": "Війна фрагментує системи, через які інформації довіряють і надають значення",
+		"status": "published",
+		"materialIds": [
+			"material.from-body-to-signal"
+		],
+		"pageIds": [],
+		"href": "/uk/research/vid-tila-do-syhnalu?entity=asset.from-body-to-signal.g06#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-07-article-i.g05",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Право розпорядження спільним ресурсом",
+		"summary": "Ухвалений закон створює обмежене асигнування з метою, сумою, строком, відповідальним і публічним журналом; виконання повертає квитанцію",
 		"status": "published",
 		"materialIds": [
 			"material.constitution-runtime-07-article-i"
 		],
 		"pageIds": [],
-		"href": "/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon?entity=asset.constitution-runtime-07-article-i.g08#article-body"
+		"href": "/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon?entity=asset.constitution-runtime-07-article-i.g05#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g05",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Робочий цикл Case 001",
+		"summary": "Явний inventory веде до compilation, читання live state, плану зі збереженою unmanaged-частиною, окремого рішення оператора й перевірки результату.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g05#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-02-article-vi.g03",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Розв’язання прямого конфлікту",
+		"summary": "Федеральна вимога проходить перевірку походження та витісняє штатну норму лише за доведеного прямого конфлікту у спільній сфері",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-02-article-vi"
+		],
+		"pageIds": [],
+		"href": "/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok?entity=asset.constitution-runtime-02-article-vi.g03#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g09",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Розділення credentials",
+		"summary": "Read-token обслуговує спостереження, write-token разом із явним рішенням відкриває apply.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g09#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g07",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Розширення кола носіїв",
+		"summary": "Впізнаваний жест і ширша розмірна репрезентація утворюють можливість участі в тому самому візуальному словнику.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=asset.regulated-availability.g07#article-body"
+	},
+	{
+		"id": "asset.from-body-to-signal.g03",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "середовище як агент",
+		"summary": "Пошкоджений ландшафт організує ризик через маршрути, інфраструктуру та часткове знання",
+		"status": "published",
+		"materialIds": [
+			"material.from-body-to-signal"
+		],
+		"pageIds": [],
+		"href": "/uk/research/vid-tila-do-syhnalu?entity=asset.from-body-to-signal.g03#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g10",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Склад патерна",
+		"summary": "Чотири композиційні складники сходяться в моделі регульованої доступності.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=asset.regulated-availability.g10#article-body"
+	},
+	{
+		"id": "asset.cloudflare-001-crawler-surface-policy.g02",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Склад рішення",
+		"summary": "Identity, клас URL, profile і локальні умови сходяться в effective policy зони.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=asset.cloudflare-001-crawler-surface-policy.g02#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-03-article-v.g04",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Спеціальні межі статті V",
+		"summary": "Кваліфікована більшість проходить додаткову перевірку тимчасового обмеження до 1808 року й індивідуальної згоди штату в разі позбавлення рівного представництва в Сенаті",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-03-article-v"
+		],
+		"pageIds": [],
+		"href": "/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro?entity=asset.constitution-runtime-03-article-v.g04#article-body"
+	},
+	{
+		"id": "asset.from-body-to-signal.g04",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "типологія каналів",
+		"summary": "Мовлення, слух, зір і сигнал функціонують як канали ураження",
+		"status": "published",
+		"materialIds": [
+			"material.from-body-to-signal"
+		],
+		"pageIds": [],
+		"href": "/uk/research/vid-tila-do-syhnalu?entity=asset.from-body-to-signal.g04#article-body"
+	},
+	{
+		"id": "asset.from-body-to-signal.g02",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "тіло як архів",
+		"summary": "Від катастрофи, втіленої в монстрі, до катастрофи, що оселяється в людській плоті",
+		"status": "published",
+		"materialIds": [
+			"material.from-body-to-signal"
+		],
+		"pageIds": [],
+		"href": "/uk/research/vid-tila-do-syhnalu?entity=asset.from-body-to-signal.g02#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-04-article-iv.g04",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Транзакція приєднання нового штату",
+		"summary": "Конгрес підтверджує точний артефакт приєднання, заторкнуті штати окремо погоджуються зі зміною кордонів, після чого новий штат отримує рівне становище",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-04-article-iv"
+		],
+		"pageIds": [],
+		"href": "/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu?entity=asset.constitution-runtime-04-article-iv.g04#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-03-article-v.g06",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Три джерела тестових інваріантів",
+		"summary": "WARDEN окремо перевіряє буквальні правила статті V, офіційне засвідчення й інженерний перехід, а далі зіставляє новий root із фактичним станом runtime",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-03-article-v"
+		],
+		"pageIds": [],
+		"href": "/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro?entity=asset.constitution-runtime-03-article-v.g06#article-body"
+	},
+	{
+		"id": "asset.regulated-availability.g05",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Форма зберігається, функція змінюється",
+		"summary": "Етикетне регулювання видимості переходить у постановочну організацію образу через впізнавану форму схрещення.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=asset.regulated-availability.g05#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-07-article-i.g03",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "Чотири маршрути представлення",
+		"summary": "Узгоджений законопроєкт стає законом через підпис, сплив десяти днів або подолання звичайного вето; pocket veto завершує маршрут без закону",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-07-article-i"
+		],
+		"pageIds": [],
+		"href": "/uk/research/napysaty-ameryku-yak-stattya-i-peretvoryuye-namir-na-zahalnyy-zakon?entity=asset.constitution-runtime-07-article-i.g03#article-body"
+	},
+	{
+		"id": "asset.constitution-runtime-05-article-iii.g02",
+		"kind": "asset",
+		"locale": "uk",
+		"label": "шлюз конкретного спору",
+		"summary": "Судовий маршрут починається з конкретної справи або спору, перевіряє юрисдикційну підставу та формує доказовий запис",
+		"status": "published",
+		"materialIds": [
+			"material.constitution-runtime-05-article-iii"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rozsudyty-ameryku-yak-stattia-iii-peretvoriuie-konflikt-na-vykonuvane-rishennia?entity=asset.constitution-runtime-05-article-iii.g02#article-body"
 	},
 	{
 		"id": "claim.constitution-runtime-separates-authority",
@@ -8414,6 +9611,32 @@
 		],
 		"pageIds": [],
 		"href": "/uk/research/vid-tila-do-syhnalu?entity=claim.horror-relocates-fear#article-body"
+	},
+	{
+		"id": "concept.crawler-surface-policy",
+		"kind": "concept",
+		"locale": "uk",
+		"label": "Crawler Surface Policy",
+		"summary": "Це policy, яка поєднує identity автоматизованого клієнта з класом запитуваного URL. У кейсі crawler блокується на транзакційній поверхні WooCommerce, тоді як публічні сторінки залишаються поза цим block-правилом. Глобальна блокада identity поширювала б заборону на всі URL. Інші WAF-правила й origin зберігають вплив на остаточну відповідь.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=concept.crawler-surface-policy#article-body"
+	},
+	{
+		"id": "concept.iron-creed",
+		"kind": "concept",
+		"locale": "uk",
+		"label": "IRON CREED",
+		"summary": "Наскрізний персонаж Zhovten Games, робочий голос і персоніфікований інженерний процес, що пов’язує код, дослідження, сценарії та публікації в один простежуваний контур.",
+		"status": "published",
+		"materialIds": [],
+		"pageIds": [
+			"page.about"
+		],
+		"href": "/uk/pages/about?entity=concept.iron-creed#article-body"
 	},
 	{
 		"id": "concept.prompt-literate-workflow",
@@ -8539,6 +9762,19 @@
 		"href": "/uk/research/vid-tila-do-syhnalu?entity=concept.war-damaged-communication#article-body"
 	},
 	{
+		"id": "concept.regulated-availability",
+		"kind": "concept",
+		"locale": "uk",
+		"label": "Регульована доступність",
+		"summary": "Це авторська модель композиції, у якій тіло показане разом із межею його видимості. Схрещення ніг може спрямовувати увагу до перетину й позначати приховане продовження. Модель описує культурне прочитання образу; доступність у її назві не означає згоду людини або право спостерігача на контакт.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=concept.regulated-availability#article-body"
+	},
+	{
 		"id": "concept.environment-as-regime",
 		"kind": "concept",
 		"locale": "uk",
@@ -8615,6 +9851,19 @@
 		],
 		"pageIds": [],
 		"href": "/uk/research/zviazaty-ameryku-yak-stattia-iv-peretvoriuie-shtaty-na-federatyvnu-merezhu"
+	},
+	{
+		"id": "material.cloudflare-001-crawler-surface-policy",
+		"kind": "material",
+		"locale": "uk",
+		"label": "Кейс №1. Cloudflare Crawler Surface Policy: контроль доступу ботів до URL",
+		"summary": "Кейс із 22 сайтів: поєднання crawler identity та URL surface, profiles, явний write-path, drift і переносимий PHP-інструмент.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy"
 	},
 	{
 		"id": "material.why-documentation",
@@ -8812,6 +10061,19 @@
 		"href": "/uk/research/onovyty-ameryku-yak-stattia-v-zminiuie-konstytutsiine-iadro"
 	},
 	{
+		"id": "material.regulated-availability",
+		"kind": "material",
+		"locale": "uk",
+		"label": "Патерн «Регульована доступність»: схрещування жіночих ніг як сексуальний код",
+		"summary": "Як контроль видимості, композиція й культурне навчання перетворюють схрещені ноги на знак; розмірна репрезентація та межі висновку про намір.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist"
+	},
+	{
 		"id": "material.body-as-temporary-construction",
 		"kind": "material",
 		"locale": "uk",
@@ -8862,6 +10124,19 @@
 		],
 		"pageIds": [],
 		"href": "/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok"
+	},
+	{
+		"id": "page.anthem",
+		"kind": "page",
+		"locale": "uk",
+		"label": "Гімн",
+		"summary": "IRON CREED",
+		"status": "published",
+		"materialIds": [],
+		"pageIds": [
+			"page.anthem"
+		],
+		"href": "/uk/pages/anthem"
 	},
 	{
 		"id": "page.corpus-index",
@@ -8920,7 +10195,7 @@
 		"kind": "page",
 		"locale": "uk",
 		"label": "Про проєкт",
-		"summary": "IRON CREED — поки засекречений наскрізний персонаж і персоніфікований інженерний процес, що пов’язує код, дослідження, сценарії та публікації.",
+		"summary": "IRON CREED — поки засекречений наскрізний персонаж студії [Zhovten Games](https://zhovten.games/) та персоніфікований інженерний процес, що пов’язує код, дослідження, сценарії й публікації.",
 		"status": "published",
 		"materialIds": [],
 		"pageIds": [
@@ -8940,6 +10215,19 @@
 			"page.terms-of-use"
 		],
 		"href": "/uk/pages/terms-of-use"
+	},
+	{
+		"id": "page.material-cycle",
+		"kind": "page",
+		"locale": "uk",
+		"label": "Цикл матеріалу",
+		"summary": "Багато матеріалів проходять шлях від робочого питання до дослідження, публічної адаптації та наступної перевіреної зміни. Ініціатором може бути Zhovten Games, клієнтський ІТ-кейс або самостійне інженерне спостереження.",
+		"status": "published",
+		"materialIds": [],
+		"pageIds": [
+			"page.material-cycle"
+		],
+		"href": "/uk/pages/material-cycle"
 	},
 	{
 		"id": "protocol.infection-case-card",
@@ -9436,6 +10724,19 @@
 		],
 		"pageIds": [],
 		"href": "/uk/questions/q.documentation.boundaries-occam"
+	},
+	{
+		"id": "q.cloudflare.read-write-token-separation",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Навіщо розділяти read-only і write API tokens в автоматизації Cloudflare?",
+		"summary": "Читання стану не потребує права змінювати WAF. Окремі scopes і environment variables зменшують повноваження щоденної діагностики. Write-token завантажують перед переглянутою операцією та вилучають після неї. Прапорець --apply доповнює розділення credentials; сам по собі він не змінює прав токена й не захищає від усіх помилок.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.cloudflare.read-write-token-separation"
 	},
 	{
 		"id": "q.constitution.article-ii.adaptability",
@@ -9978,6 +11279,19 @@
 		"href": "/uk/questions/q.constitution.article-ii.judgment-execution.receipt-handoff"
 	},
 	{
+		"id": "q.cloudflare.telemetry-write-boundary",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Чому crawler telemetry можна автоматизувати, а security writes слід залишати явною дією оператора?",
+		"summary": "Telemetry формує спостереження й кандидатні пояснення; WAF-запис змінює доступність сайта для людей та інтеграцій. Між ними потрібні policy diff, тести, план і людське рішення. Аналітичний LLM-шар працює без write-token, а approved apply проходить окремий шлях із доказами та перевіркою. Це розділяє право запропонувати зміну й право її виконати.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.cloudflare.telemetry-write-boundary"
+	},
+	{
 		"id": "q.constitution.article-vi.root.article-vii-dependency",
 		"kind": "question",
 		"locale": "uk",
@@ -10134,6 +11448,19 @@
 		"href": "/uk/questions/q.constitution.article-vi.supremacy.partial-displacement"
 	},
 	{
+		"id": "q.cloudflare.security-deployment-stages",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Чому security deployment проходить через compile → diff → dry-run → apply → smoke → audit?",
+		"summary": "Етапи перевіряють різні твердження: compile — модель, diff/plan — відмінності від live state, dry-run — обсяг fleet, apply — явний запис, smoke — поведінку запитів, audit — відповідність desired state. Snapshot перед записом і readback після нього зберігають докази. Case 001 має readback, а site-specific edge smoke залишається окремою deployment-перевіркою.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.cloudflare.security-deployment-stages"
+	},
+	{
 		"id": "q.constitution.article-iii.judicial-boundary.independence",
 		"kind": "question",
 		"locale": "uk",
@@ -10158,6 +11485,19 @@
 		],
 		"pageIds": [],
 		"href": "/uk/questions/q.constitution.article-ii.treaties.senators-present"
+	},
+	{
+		"id": "q.cloudflare.verified-crawler-scope",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Чому verified або корисний crawler не повинен автоматично мати доступ до всіх URL сайту?",
+		"summary": "Підтвердження походження й корисність для індексації не визначають допустимість кожної операції. Кошик, account або службовий endpoint можуть створювати зайве навантаження без індексної цінності. Verified automation також включає сервіси, які не є crawler-ами цього кейсу. Рішення має враховувати призначення клієнта й поверхні; User-Agent fallback сам по собі не підтверджує identity.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.cloudflare.verified-crawler-scope"
 	},
 	{
 		"id": "q.constitution.article-v.entrenchment.historical-check",
@@ -10361,6 +11701,19 @@
 		"href": "/uk/questions/q.constitution.article-i.warden.justice-limit"
 	},
 	{
+		"id": "q.pattern.runway-representation-scope",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Чому дані модних показів не описують усю розмірну репрезентацію в медіа?",
+		"summary": "Підрахунок образів на визначених показах описує саме цей корпус. Він не вимірює всіх моделей, рекламних кампаній, користувацьких зображень або споживачів. Тому вузький розмірний стандарт подіуму може співіснувати з ширшим набором тіл в інших медіа. Порівняння потребує узгоджених вибірок, періодів і визначень розмірних груп.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.pattern.runway-representation-scope"
+	},
+	{
 		"id": "q.constitution.article-i.independent-consents.decorative-separation",
 		"kind": "question",
 		"locale": "uk",
@@ -10476,6 +11829,19 @@
 		],
 		"pageIds": [],
 		"href": "/uk/questions/q.constitution.article-i.presentment.return-veto"
+	},
+	{
+		"id": "q.pattern.pose-intention-limit",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Чому зі схрещених ніг не можна встановити сексуальний намір або згоду людини?",
+		"summary": "Одна й та сама поза може виникати через зручність, звичку, одяг, температуру чи крісло. Культурне прочитання описує роботу знака для спостерігача й не надає доступу до внутрішнього стану людини. Намір і згода потребують окремого висловлення та контексту взаємодії; інтерпретація зображення їх не замінює.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.pattern.pose-intention-limit"
 	},
 	{
 		"id": "q.constitution.article-v.exact-artifact.substantive-edit",
@@ -11102,6 +12468,19 @@
 		"href": "/uk/questions/q.documentation.modern-environment"
 	},
 	{
+		"id": "q.pattern.crossed-legs-mutation",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Чому схрещування ніг зберігає візуальну функцію, коли практичне приховування стає необов’язковим?",
+		"summary": "У постановці жест може зберігати впізнавану форму закриття й організовувати вісь тіла, контакт ніг та напрямні лінії. Попереднє правило пристойності залишається культурною цитатою. У купальнику або іншому демонстраційному образі практична функція змінюється, а засвоєний код продовжує працювати. Це інтерпретація репрезентації, яку перевіряють за конкретним контекстом.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.pattern.crossed-legs-mutation"
+	},
+	{
 		"id": "q.horror.body-historical-strike",
 		"kind": "question",
 		"locale": "uk",
@@ -11606,6 +12985,32 @@
 		"href": "/uk/questions/q.documentation.code-readable"
 	},
 	{
+		"id": "q.cloudflare.configuration-drift",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Що означає configuration drift для кількох Cloudflare zones і як його виявити?",
+		"summary": "Drift — відмінність live state від очікуваного результату compilation для конкретної зони. Audit читає кожну зону inventory й порівнює керований стан у межах моделі; різні profiles можуть законно мати різні правила. Виявлення drift не є дозволом на його автоматичне виправлення. Порівняння також не доводить, що сама desired policy безпомилкова.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.cloudflare.configuration-drift"
+	},
+	{
+		"id": "q.pattern.regulated-availability",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Що означає патерн «регульована доступність» у зображеннях тіла?",
+		"summary": "Це авторська модель композиції, у якій тіло показане разом із межею його видимості. Схрещення ніг може спрямовувати увагу до перетину й позначати приховане продовження. Модель описує культурне прочитання образу; доступність у її назві не означає згоду людини або право спостерігача на контакт.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.pattern.regulated-availability"
+	},
+	{
 		"id": "q.constitution.article-iii.bounded-remedy.denial-of-relief",
 		"kind": "question",
 		"locale": "uk",
@@ -11682,6 +13087,19 @@
 		],
 		"pageIds": [],
 		"href": "/uk/questions/q.constitution.article-iv.warden"
+	},
+	{
+		"id": "q.cloudflare.crawler-surface-policy",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Що таке Crawler Surface Policy і чим вона відрізняється від глобальної блокади crawler-а?",
+		"summary": "Це policy, яка поєднує identity автоматизованого клієнта з класом запитуваного URL. У кейсі crawler блокується на транзакційній поверхні WooCommerce, тоді як публічні сторінки залишаються поза цим block-правилом. Глобальна блокада identity поширювала б заборону на всі URL. Інші WAF-правила й origin зберігають вплив на остаточну відповідь.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.cloudflare.crawler-surface-policy"
 	},
 	{
 		"id": "q.documentation.documentation-memory",
@@ -12412,6 +13830,19 @@
 		"href": "/uk/questions/q.pattern.scale-power"
 	},
 	{
+		"id": "q.pattern.crossed-legs-variants",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Як відрізняється композиція схрещених щиколоток, колін і ніг у положенні стоячи?",
+		"summary": "Схрещені щиколотки можуть акцентувати компактність; коліно поверх коліна поєднує перетин перед тазом із показом стегна й гомілки; схрещування стоячи додає асиметрію опори та зміщення таза. Зміст визначає весь образ. Дані про contrapposto стосуються спорідненої пози й не є прямим експериментальним доказом привабливості кожного із цих варіантів.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.pattern.crossed-legs-variants"
+	},
+	{
 		"id": "q.horror.war-trust",
 		"kind": "question",
 		"locale": "uk",
@@ -12488,6 +13919,19 @@
 		],
 		"pageIds": [],
 		"href": "/uk/questions/q.constitution.article-i.seven-article-conclusion.research-impact"
+	},
+	{
+		"id": "q.pattern.crossed-legs-etiquette",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Як етикет пов’язав схрещування жіночих ніг із контролем видимості тіла?",
+		"summary": "Приписи щодо спідниці, колін і ступні обмежували видимість тіла та формували засвоєний спосіб триматися. Емілі Пост у 1922 році описувала перехід від заборони схрещувати коліна до дозволу за визначених умов. Це свідчення конкретного європейсько-американського середовища; воно не доводить єдиного походження пози або універсальності її сексуального прочитання.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.pattern.crossed-legs-etiquette"
 	},
 	{
 		"id": "q.documentation.web-single-source",
@@ -12631,6 +14075,19 @@
 		],
 		"pageIds": [],
 		"href": "/uk/questions/q.horror.environment-risk"
+	},
+	{
+		"id": "q.cloudflare.fleet-profiles-exceptions",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Як керувати різними Cloudflare policy для кількох сайтів через profiles і hostname exceptions?",
+		"summary": "Явний inventory перелічує зони. Кожна зона вибирає profile, додає або вимикає policy та за потреби має inline rule з умовою hostname. Compiler отримує окремий effective state для кожної зони. Зміна однієї commerce-зони не повинна поширювати commerce policy на всі інші; це перевіряють планом і загальним dry-run.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.cloudflare.fleet-profiles-exceptions"
 	},
 	{
 		"id": "q.constitution.article-vii.experience.map-perception",
@@ -12971,6 +14428,32 @@
 		"href": "/uk/questions/q.documentation.knuth-debugging"
 	},
 	{
+		"id": "q.cloudflare.physical-rule-budget",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Як працювати з обмеженою кількістю Cloudflare Custom Rules, зберігаючи окремі логічні policy?",
+		"summary": "Зберігайте логічні policy окремими файлами, а сумісні прості правила з однаковою дією й physical_group поєднуйте на етапі compilation. Бюджет враховує також unmanaged rules. Групування може вплинути на порядок, тому потрібен перегляд плану; довільні action_parameters не можна вважати підтриманими без реалізації й перевірки. Значення 5 у fixture є параметром прикладу, який звіряють із конкретною зоною.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.cloudflare.physical-rule-budget"
+	},
+	{
+		"id": "q.pattern.concealment-attention",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Як приховування частини тіла може організувати увагу в сексуалізованому зображенні?",
+		"summary": "Видима лінія може завершуватися на межі, яка одночасно закриває продовження й позначає його існування. У моделі регульованої доступності перетин ніг виконує саме цю композиційну функцію. Ракурс, одяг і культурний досвід змінюють прочитання. Схема не встановлює виміряного маршруту погляду чи закону, за яким кожне приховування посилює бажання.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.pattern.concealment-attention"
+	},
+	{
 		"id": "q.constitution.article-v.root-replacement.change-level",
 		"kind": "question",
 		"locale": "uk",
@@ -13073,6 +14556,32 @@
 		],
 		"pageIds": [],
 		"href": "/uk/questions/q.constitution.article-vii.software-model.invalid-event"
+	},
+	{
+		"id": "q.cloudflare.identity-surface-separation",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Як розділяти crawler identity і request surface у Cloudflare WAF policy?",
+		"summary": "Identity задають окремою умовою категорій або явних сигнальних User-Agent, а surface — окремою умовою шляхів і параметрів. Блокада вимагає їхнього одночасного збігу через and. Усередині кожної групи альтернативи поєднуються через or. Дужки й негативні приклади мають доводити, що public content та звичайні відвідувачі не потрапили під цю конкретну заборону.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.cloudflare.identity-surface-separation"
+	},
+	{
+		"id": "q.pattern.crossed-legs-size",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Як розмір і пропорції тіла змінюють композиційну роботу схрещених ніг?",
+		"summary": "Залежно від пропорцій, пози та ракурсу зображення може акцентувати довгі відокремлені лінії або контакт і взаємодію об’ємів. Мід-сайз і плюс-сайз репрезентація розширює набір таких акцентів. Це формальний авторський висновок; прямого порівняльного експерименту зі схрещуванням ніг у всіх групах матеріал не наводить. Розмір сам по собі не визначає ні привабливості, ні змісту образу.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.pattern.crossed-legs-size"
 	},
 	{
 		"id": "q.documentation.code-voltage",
@@ -13309,6 +14818,19 @@
 		"href": "/uk/questions/q.constitution.article-vi.public-role"
 	},
 	{
+		"id": "q.cloudflare.api-token-wsl",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Як створити й безпечно зберігати Cloudflare API token для локальної роботи через WSL?",
+		"summary": "Створіть custom token у профілі Cloudflare, обмежте його потрібними зонами та операціями. Для Case 001 read-token потребує Zone Read і Zone WAF Read; write-token — Zone Read і Zone WAF Edit. У Bash вводьте значення через read -rsp, щоб не залишати його в історії. Для зберігання використовуйте менеджер секретів або файл поза checkout із правами 600 у каталозі 700. Після роботи unset write-token; після витоку відкличте й замініть його. Цей договір придатний для майбутніх матеріалів серії.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.cloudflare.api-token-wsl"
+	},
+	{
 		"id": "q.constitution.article-v.entrenchment",
 		"kind": "question",
 		"locale": "uk",
@@ -13398,6 +14920,19 @@
 		],
 		"pageIds": [],
 		"href": "/uk/questions/q.constitution.article-v.root-replacement.self-reference"
+	},
+	{
+		"id": "q.pattern.representation-objectification",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Як ширша сексуальна репрезентація тіл може співіснувати з об’єктивацією?",
+		"summary": "Більше тіл може отримати місце в образах бажаності, тоді як оцінювання людини залишається зосередженим на зовнішності. Самопред’явлення та нав’язане оцінювання розрізняють за авторством, контролем і контекстом. Дослідження body-positive зображень дають різні результати залежно від стимулів і дизайну; жоден окремий результат не встановлює універсального ефекту сексуалізації.",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.pattern.representation-objectification"
 	},
 	{
 		"id": "q.constitution.article-iv.recognition-execution.local-means",
@@ -13660,6 +15195,19 @@
 		"href": "/uk/questions/q.constitution.article-v.root-replacement.lineage"
 	},
 	{
+		"id": "q.cloudflare.woocommerce-transactional-surface",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Які URL WooCommerce доцільно розглядати як transactional hard-deny surface для crawler-ів?",
+		"summary": "Початкові кандидати — кошик, checkout, account і операції add-to-cart, remove_item та wc-ajax. Потрібно перевірити реальні slug-и, вкладені шляхи, мовні префікси й семантику query. Підрядок параметра може збігтися всередині іншого значення. Фільтри, фасетна навігація та пошук потребують окремого SEO-рішення для hostname.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.cloudflare.woocommerce-transactional-surface"
+	},
+	{
 		"id": "q.constitution.article-i.adaptability.institutional-inversion",
 		"kind": "question",
 		"locale": "uk",
@@ -13840,6 +15388,19 @@
 		],
 		"pageIds": [],
 		"href": "/uk/questions/q.constitution.article-iii.criminal-safeguards.sixth-amendment"
+	},
+	{
+		"id": "q.cloudflare.public-repository-boundary",
+		"kind": "question",
+		"locale": "uk",
+		"label": "Які дані Cloudflare-інфраструктури можна зберігати в публічному monorepo, а які мають залишатися локальними?",
+		"summary": "У цьому проєкті публікуються engine, тести, безпечні fixtures, демонстраційні policy й нормативні посилання. Tokens, клієнтський inventory, zone IDs, приватні hostname overlays і production snapshots виключені. Zone ID не є секретом автентифікації, але належить до захищеної операційної карти цього кейсу. Приклади використовують зарезервовані домени; .gitignore доповнює перевірку фактично tracked файлів та історії.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/questions/q.cloudflare.public-repository-boundary"
 	},
 	{
 		"id": "q.constitution.article-vi.connected-trust.capabilities",
@@ -14895,6 +16456,19 @@
 		"href": "/uk/questions/q.constitution.article-iv.superseded-clause.original-function"
 	},
 	{
+		"id": "series.cloudflare-operations",
+		"kind": "series",
+		"locale": "uk",
+		"label": "Великий і жахливий Cloudflare",
+		"summary": "Cloudflare Operations: кейси про policy, безпеку й керовану експлуатацію мережі сайтів із перевірюваним кодом.",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/series/velykyi-i-zhakhlyvyi-cloudflare"
+	},
+	{
 		"id": "series.constitution-runtime",
 		"kind": "series",
 		"locale": "uk",
@@ -14945,7 +16519,8 @@
 		"summary": "Серія про повторювані конструкції, у яких тіло, психіка й соціальний режим утворюють один тимчасовий механізм.",
 		"status": "published",
 		"materialIds": [
-			"material.body-as-temporary-construction"
+			"material.body-as-temporary-construction",
+			"material.regulated-availability"
 		],
 		"pageIds": [],
 		"href": "/uk/series/psykhobiosotsialni-paterny"
@@ -14962,6 +16537,19 @@
 		],
 		"pageIds": [],
 		"href": "/uk/research/tilo-iak-tymchasova-konstruktsiia?entity=source.kamasutra.doniger-kakar#article-body"
+	},
+	{
+		"id": "source.dimichele.sexybodypositive-2023",
+		"kind": "source",
+		"locale": "uk",
+		"label": "#SexyBodyPositive: образ тіла молодих жінок",
+		"summary": "https://doi.org/10.3390/ijerph20020991",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=source.dimichele.sexybodypositive-2023#article-body"
 	},
 	{
 		"id": "source.fallout4",
@@ -15014,6 +16602,84 @@
 		"href": "/uk/research/tilo-iak-tymchasova-konstruktsiia?entity=source.silent-hill-origins#article-body"
 	},
 	{
+		"id": "source.cloudflare.api-permissions",
+		"kind": "source",
+		"locale": "uk",
+		"label": "Cloudflare — permissions API tokens",
+		"summary": "https://developers.cloudflare.com/fundamentals/api/reference/permissions/",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=source.cloudflare.api-permissions#article-body"
+	},
+	{
+		"id": "source.cloudflare.rulesets-api",
+		"kind": "source",
+		"locale": "uk",
+		"label": "Cloudflare — Rulesets API",
+		"summary": "https://developers.cloudflare.com/ruleset-engine/rulesets-api/",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=source.cloudflare.rulesets-api#article-body"
+	},
+	{
+		"id": "source.cloudflare.verified-bots",
+		"kind": "source",
+		"locale": "uk",
+		"label": "Cloudflare — verified bots і категорії",
+		"summary": "https://developers.cloudflare.com/bots/concepts/bot/verified-bots/",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=source.cloudflare.verified-bots#article-body"
+	},
+	{
+		"id": "source.cloudflare.custom-rules",
+		"kind": "source",
+		"locale": "uk",
+		"label": "Cloudflare — WAF Custom Rules",
+		"summary": "https://developers.cloudflare.com/waf/custom-rules/",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=source.cloudflare.custom-rules#article-body"
+	},
+	{
+		"id": "source.cloudflare.create-api-token",
+		"kind": "source",
+		"locale": "uk",
+		"label": "Cloudflare — створення API token",
+		"summary": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=source.cloudflare.create-api-token#article-body"
+	},
+	{
+		"id": "source.pazhoohi.contrapposto-2020",
+		"kind": "source",
+		"locale": "uk",
+		"label": "Contrapposto: оцінки привабливості та активність мозку",
+		"summary": "https://doi.org/10.1016/j.biopsycho.2020.107842",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=source.pazhoohi.contrapposto-2020#article-body"
+	},
+	{
 		"id": "source.dictionarycom.reverse-cowgirl-history",
 		"kind": "source",
 		"locale": "uk",
@@ -15040,6 +16706,19 @@
 		"href": "/uk/scenarios/ne-biitesia-ser-mekhanist?entity=source.gao.patriot-dhahran#article-body"
 	},
 	{
+		"id": "source.ironcreed.cloudflare-case-001",
+		"kind": "source",
+		"locale": "uk",
+		"label": "IRONCREED — код Cloudflare Case 001",
+		"summary": "https://github.com/IRONCREED/cloudflare/tree/main/cases/001-crawler-surface-policy",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=source.ironcreed.cloudflare-case-001#article-body"
+	},
+	{
 		"id": "source.zenodo.literate-programming",
 		"kind": "source",
 		"locale": "uk",
@@ -15051,6 +16730,32 @@
 		],
 		"pageIds": [],
 		"href": "/uk/programming/navishcho-potribna-dokumentatsiia?entity=source.zenodo.literate-programming#article-body"
+	},
+	{
+		"id": "source.met.evening-dress-1920s",
+		"kind": "source",
+		"locale": "uk",
+		"label": "Met — вечірня сукня 1920-х років",
+		"summary": "https://www.metmuseum.org/art/collection/search/155941",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=source.met.evening-dress-1920s#article-body"
+	},
+	{
+		"id": "source.microsoft.wsl-install",
+		"kind": "source",
+		"locale": "uk",
+		"label": "Microsoft — встановлення WSL",
+		"summary": "https://learn.microsoft.com/en-us/windows/wsl/install",
+		"status": "published",
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"pageIds": [],
+		"href": "/uk/programming/cloudflare-001-crawler-surface-policy?entity=source.microsoft.wsl-install#article-body"
 	},
 	{
 		"id": "source.therac25.levenson-turner",
@@ -15131,6 +16836,19 @@
 		"href": "/uk/programming/navishcho-potribna-dokumentatsiia?entity=source.los-alamos-primer#article-body"
 	},
 	{
+		"id": "source.vogue.size-inclusivity-fw2026",
+		"kind": "source",
+		"locale": "uk",
+		"label": "Vogue Business — розмірна інклюзивність FW2026",
+		"summary": "https://www.vogue.com/article/the-vogue-business-fall-winter-2026-size-inclusivity-report",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=source.vogue.size-inclusivity-fw2026#article-body"
+	},
+	{
 		"id": "source.knuth-literate-programming",
 		"kind": "source",
 		"locale": "uk",
@@ -15142,6 +16860,19 @@
 		],
 		"pageIds": [],
 		"href": "/uk/programming/navishcho-potribna-dokumentatsiia?entity=source.knuth-literate-programming#article-body"
+	},
+	{
+		"id": "source.post.etiquette-1922",
+		"kind": "source",
+		"locale": "uk",
+		"label": "Емілі Пост — Etiquette (1922)",
+		"summary": "https://www.gutenberg.org/files/14314/14314-h/14314-h.htm",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=source.post.etiquette-1922#article-body"
 	},
 	{
 		"id": "source.zenodo.code-constitution",
@@ -15180,5 +16911,18 @@
 		],
 		"pageIds": [],
 		"href": "/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku?entity=source.archives.us-constitution#article-body"
+	},
+	{
+		"id": "source.vendemia.body-positive-2021",
+		"kind": "source",
+		"locale": "uk",
+		"label": "Сексуалізація та цифрова модифікація body-positive зображень",
+		"summary": "https://doi.org/10.1016/j.bodyim.2021.03.017",
+		"status": "published",
+		"materialIds": [
+			"material.regulated-availability"
+		],
+		"pageIds": [],
+		"href": "/uk/research/rehulovana-dostupnist?entity=source.vendemia.body-positive-2021#article-body"
 	}
 ]

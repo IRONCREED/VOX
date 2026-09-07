@@ -2,10 +2,11 @@
 	{
 		"id": "page.about.en",
 		"pageId": "page.about",
+		"order": 10,
 		"locale": "en",
 		"slug": "about",
 		"title": "About IRON CREED",
-		"description": "IRON CREED is a currently classified recurring character and a personified engineering process connecting code, research, scenarios, and publications.",
+		"description": "IRON CREED is a currently classified recurring character of [Zhovten Games](https://zhovten.games/) and a personified engineering process connecting code, research, scenarios, and publications.",
 		"shortLabel": "About",
 		"eyebrow": "IRON CREED / IDENTITY",
 		"body": "IRON CREED is a recurring Zhovten Games character. His identity and role in the game remain classified for now; further details will be disclosed later.\n\nOutside the game, Credo is a personified technocrat—not a caricature dreaming of world domination, but a figure who treats every problem as an engineering system of conditions, constraints, failures, tests, and consequences.\n\nWithin the studio’s IT practice, he personifies the development process itself, joining code, research, scenarios, and publications into one traceable circuit. IRON CREED is therefore a character, a working voice, and a recurring figure across the project at once.",
@@ -13,65 +14,11 @@
 		"status": "published",
 		"conversationViewId": "view.about.iron-creed",
 		"aboutStory": {
+			"identityHintLabel": "Who is IRON CREED?",
 			"transition": {
 				"eyebrow": "IRON CREED / ENGINEERING PRACTICE",
-				"title": "So, what do we actually do?",
-				"body": "Credo gives this process a voice, but the character stands for practical engineering work inside Zhovten Games: we build, structure, and maintain systems that must remain understandable after the next change.\n\nThe materials follow the same cycle. An idea begins in the studio, acquires a research or technical form, and is then adapted for IRON CREED with public routes, questions, relationships, and checks. The site presents not the drafting conversation, but its next verifiable edition."
-			},
-			"lifecycle": {
-				"eyebrow": "MATERIAL CYCLE",
-				"title": "From a studio idea to a verifiable publication",
-				"summary": "Zhovten Games remains the point of origin; IRON CREED becomes the public engineering adaptation, and verification results return to the next working cycle.",
-				"steps": [
-					{
-						"id": "studio",
-						"order": 1,
-						"title": "Zhovten Games",
-						"description": "An idea, problem, or research question emerges from the studio’s work."
-					},
-					{
-						"id": "research",
-						"order": 2,
-						"title": "Research and record",
-						"description": "Sources, reasoning, and the edition receive a durable form, including a Zenodo record where appropriate."
-					},
-					{
-						"id": "adaptation",
-						"order": 3,
-						"title": "IRON CREED adaptation",
-						"description": "The material is rebuilt for the site, translated, and connected to the semantic index."
-					},
-					{
-						"id": "verification",
-						"order": 4,
-						"title": "Verification and the next change",
-						"description": "WARDEN, indexes, and release rules verify the result; the findings return to the studio."
-					}
-				],
-				"examples": [
-					{
-						"id": "code-constitution",
-						"source": {
-							"label": "Code Constitution · Zenodo",
-							"href": "https://doi.org/10.5281/zenodo.21894242"
-						},
-						"result": {
-							"label": "The Constitution That Runs series",
-							"href": "/en/series/the-constitution-that-runs"
-						}
-					},
-					{
-						"id": "literate-programming",
-						"source": {
-							"label": "Literate Programming review · Zenodo",
-							"href": "https://doi.org/10.5281/zenodo.20608558"
-						},
-						"result": {
-							"label": "Why Documentation Matters",
-							"href": "/en/programming/why-documentation-matters"
-						}
-					}
-				]
+				"title": "IRON CREED — the personified engineering process of Zhovten Games",
+				"body": "IRON CREED personifies the development process and serves as the IT practice of [Zhovten Games](https://zhovten.games/). We handle web development, infrastructure, automation, security, research, and technical publishing, joining them into one traceable system."
 			},
 			"sections": [
 				{
@@ -133,42 +80,198 @@
 					"id": "projects",
 					"order": 5,
 					"kind": "portfolio",
-					"status": "placeholder",
+					"status": "active",
 					"title": "Systems already at work",
-					"summary": "We work with web projects, internal systems, automation, infrastructure, and products that require long-term engineering support.",
-					"body": "Our experience covers the creation and development of websites and web applications, support for existing systems, operational automation, security, infrastructure work, and experimental AI solutions. Future cases will show the problem, the system created, the approach applied, and the state of the product after implementation—not merely a final interface screenshot.",
-					"placeholder": "The library of verified public case studies is being prepared.",
-					"entries": []
+					"summary": "We publish cases whose boundaries can be described accurately: long-term infrastructure support, publishing systems, product work, and individual engineering assignments.",
+					"body": "This is a map of practice centred on the problem, the system created, its support model, and the state of the product after implementation. It covers both long-running contracts and dense individual cases.",
+					"entries": [
+						{
+							"id": "embo-studio",
+							"title": "EMBO Studio · long-term infrastructure support",
+							"body": "Our work with [EMBO Studio](https://embo-studio.ua/) began with article production and grew into continuous support for the studio’s internal projects. Under an active contract spanning more than three years, we maintain infrastructure, security, updates, and system corrections.\n\n- Parallel maintenance of 20+ internal websites.\n- Bulk procedures at the Cloudflare level.\n- Support for individual projects from an ongoing client.\n- Regular implementation of commercial services; the scope is outlined on the [EMBO Studio services page](https://embo-studio.ua/services/).",
+							"meta": "Contract · 3+ years · 20+ internal sites"
+						},
+						{
+							"id": "academic-publishing",
+							"title": "Academic typesetting → an in-house publishing pipeline",
+							"body": "We worked on academic journal typesetting, including [Manuscript and Text Cultures](https://mtc-journal.org/index.php/mtc/index). That experience demonstrated the value of a reproducible process and inspired [ZG Journal Template](https://github.com/Zhovten-Games/zg-journal-template), an open pipeline that transforms Markdown and YAML into a typography-controlled PDF.",
+							"meta": "MTC · OJS · Pandoc → XeLaTeX"
+						},
+						{
+							"id": "product-companies",
+							"title": "Shifton, Zipy, and 200+ high-density cases",
+							"body": "Teams we have worked with and remember warmly include [Shifton](https://shifton.com/blog/) and the Israeli product company [Zipy](https://www.zipy.ai/). The currently documented body of work covers 200+ high-density cases—assignments in which content, product, and technical concerns required one combined solution.\n\n- Development and support of websites and commercial services.\n- Content systems, technical publishing, and automation.\n- Infrastructure, security, and operational support.\n- Mentorship and leadership of a large engineering department in an international startup.\n\nThis part of the portfolio primarily reflects the engineering path of the developer within the IRON CREED team, from hands-on programming to mentorship and team leadership.",
+							"meta": "Products · content systems · engineering leadership"
+						},
+						{
+							"id": "portfolio-boundary",
+							"title": "Boundary of the public record",
+							"body": "Cases completed before 2022 are excluded from this record. Following Russia’s full-scale invasion of Ukraine, we ended work with the Russian market and do not count that segment in the portfolio.\n\nThis note preserves the team’s professional continuity: the preceding decade of experience included work with international IT companies operating in the Russian Federation."
+						},
+						{
+							"id": "game-development",
+							"title": "Game development is a separate track",
+							"body": "The studio’s game-development experience is intentionally excluded from this list of IT cases. It is presented on the [Zhovten Games projects page](https://zhovten.games/projects)."
+						}
+					]
+				},
+				{
+					"id": "people",
+					"order": 6,
+					"kind": "profiles",
+					"status": "active",
+					"title": "Public team profiles",
+					"summary": "Two professional tracks connect research, publishing practice, engineering, and the studio’s work.",
+					"body": "Public identifiers and professional profiles are grouped separately for each team member.",
+					"entries": [
+						{
+							"id": "oksana-dubinetska",
+							"title": "Oksana Dubinetska",
+							"body": "- [LinkedIn](https://www.linkedin.com/in/oksanadubinetska/)\n- [ORCID](https://orcid.org/0009-0003-8777-8412)\n- [GitHub](https://github.com/FOP-Oksana-Dubinetska)"
+						},
+						{
+							"id": "pan-canon",
+							"title": "Sam Starling",
+							"body": "- [LinkedIn](https://www.linkedin.com/in/pan-canon/)\n- [ORCID](https://orcid.org/0009-0009-2621-6372)\n- [GitHub](https://github.com/pan-canon)"
+						}
+					]
 				},
 				{
 					"id": "testimonials",
-					"order": 6,
+					"order": 7,
 					"kind": "testimonials",
-					"status": "placeholder",
+					"status": "active",
 					"title": "What changes after implementation",
-					"summary": "The best engineering result is visible when a system becomes clearer, more predictable, and easier to evolve.",
-					"body": "This section will contain only authorised direct feedback about a specific effect: release stability, fewer manual operations, infrastructure transparency, information retrieval speed, control quality, or the ability to evolve a product safely. Every testimonial will include an approved identity format, role, company, and work context.",
-					"placeholder": "Testimonials will be published after client approval.",
-					"entries": []
+					"summary": "Direct feedback records an observed result rather than a promise: quality, immersion in the problem, transparent communication, and adherence to requirements.",
+					"body": "This collection brings together reviews from all platforms where we work. We have no negative reviews. Links to the original reviews on specific platforms are available on request.",
+					"entries": [
+						{
+							"id": "illia-humeniuk-linkedin-2026",
+							"title": "I. H.",
+							"body": "> I hired Semen for a project for my client. I was truly impressed by his approach to work. At the start, he analysed every aspect in detail and developed a clear plan. Throughout the project he provided clear daily updates, so I always knew what was happening and what stage we were at. Thank you for the excellent work, and I look forward to working with you again.",
+							"meta": "Client · e-commerce and full-stack development · 15 July 2026 · LinkedIn"
+						},
+						{
+							"id": "yegor-grebnev-mtc-2026-04",
+							"title": "Y. G.",
+							"body": "> The work was done with an understanding of the matter and a deep immersion in the problem.",
+							"meta": "Layout of articles for MTC · 6 April 2026 · Freelancehunt"
+						},
+						{
+							"id": "yegor-grebnev-mtc-2026-01",
+							"title": "Y. G.",
+							"body": "> As always, I am satisfied with the work: in addition to its high quality, the article-formatting process was optimised and the project documentation was supplemented, although neither was included in the requirements.",
+							"meta": "Layout of articles for MTC · 26 January 2026 · Freelancehunt"
+						},
+						{
+							"id": "yegor-grebnev-mtc-test-2025",
+							"title": "Y. G.",
+							"body": "> This test project involved deep and thoughtful immersion in the journal-layout process according to our templates and editorial practices. It is a large body of knowledge requiring both technical and substantive understanding. The work was done very well, and we were also pleased with the discussion throughout its execution.",
+							"meta": "Test assignment for MTC · 24 November 2025 · Freelancehunt"
+						},
+						{
+							"id": "viktor-stinich-berat-2025",
+							"title": "V. S.",
+							"body": "> The article is written well and to a high standard.",
+							"meta": "Article about Berat · 19 January 2025 · Freelancehunt"
+						},
+						{
+							"id": "gary-l-copywriting-2024",
+							"title": "G. L.",
+							"body": "> The work was done well. A professional approach to execution.",
+							"meta": "English-language copywriting · 22 November 2024 · Freelancehunt"
+						},
+						{
+							"id": "bogdan-p-wordpress-review-2024",
+							"title": "B. P.",
+							"body": "> Wonderful work, exactly what I was counting on.",
+							"meta": "WordPress plugin review article · 2 August 2024 · Freelancehunt"
+						},
+						{
+							"id": "yuliia-lukianchuk-neuer-2024",
+							"title": "Y. L.",
+							"body": "> We are working together for the second time. The work is high-quality and all requirements of the technical assignment were met. There was a slight delay, but it was not significant.",
+							"meta": "Article about Manuel Neuer · 6 July 2024 · Freelancehunt"
+						},
+						{
+							"id": "andrey-minkiv-gambling-2024",
+							"title": "A. M.",
+							"body": "> Done quickly and with high quality.",
+							"meta": "Copywriting for a gambling website · 29 June 2024 · Freelancehunt"
+						},
+						{
+							"id": "jane-doe-igaming-2024",
+							"title": "J. D.",
+							"body": "> The task was completed with minimal compliance with the requirements of the technical assignment.",
+							"meta": "SEO article for i-gaming · 7 June 2024 · Freelancehunt"
+						},
+						{
+							"id": "oleksandra-bevz-sports-2024",
+							"title": "O. B.",
+							"body": "> I recommend working together. A responsible performer.",
+							"meta": "Sports-prediction texts · 7 June 2024 · Freelancehunt"
+						},
+						{
+							"id": "yuliia-lukianchuk-lindemann-2024",
+							"title": "Y. L.",
+							"body": "> Everything was on time, the text was high-quality, and the brief was followed. There was a slight delay, but it did not affect the evaluation. Recommended.",
+							"meta": "SEO text about Till Lindemann · 7 June 2024 · Freelancehunt"
+						},
+						{
+							"id": "aleksandr-v-writing-2024-06",
+							"title": "A. V.",
+							"body": "> Great job; we will work together again.",
+							"meta": "Text writing · 4 June 2024 · Freelancehunt"
+						},
+						{
+							"id": "oleg-s-telegram-2024-06",
+							"title": "O. S.",
+							"body": "> Thank you for the work. Everything was completed ahead of schedule.",
+							"meta": "Telegram channel about website design · 2 June 2024 · Freelancehunt"
+						},
+						{
+							"id": "aleksandr-v-writing-2024-05",
+							"title": "A. V.",
+							"body": "> Great job, completed on time. I recommend working together.",
+							"meta": "Text writing · 26 May 2024 · Freelancehunt"
+						},
+						{
+							"id": "oleg-s-telegram-2024-05",
+							"title": "O. S.",
+							"body": "> Everything was done as agreed. Thank you for the good work and the effort. Recommended.",
+							"meta": "Telegram channel about website layout · 8 May 2024 · Freelancehunt"
+						},
+						{
+							"id": "aleksandr-v-script-2024",
+							"title": "A. V.",
+							"body": "> Excellent work, completed quickly.",
+							"meta": "Script writing · 8 May 2024 · Freelancehunt"
+						},
+						{
+							"id": "xitatxen-text-slots-2024",
+							"title": "X. X.",
+							"body": "> A very responsible freelancer. The task was completed quickly and efficiently.",
+							"meta": "50 text slots · 13 March 2024 · Freelancehunt"
+						},
+						{
+							"id": "tetiana-s-writing-2024",
+							"title": "T. S.",
+							"body": "> Thank you. The work is done. We continue working together.",
+							"meta": "Text writing · 4 March 2024 · Freelancehunt"
+						}
+					]
 				},
 				{
 					"id": "contact",
-					"order": 7,
+					"order": 8,
 					"kind": "contact",
 					"status": "active",
-					"title": "Describe the system that needs to be built or brought under control",
-					"summary": "We will examine the problem, current architecture, and constraints, then propose the next practical step.",
-					"body": "A short description of the project, its current state, and the outcome you want is enough to begin. It may be a new product, an existing website, a corporate knowledge base, an AI integration, automation, an infrastructure problem, or a system that has already become more complex than its documentation.\n\nAfter the initial review, we will identify which parts require development, audit, restructuring, or a separate control boundary and propose a practical format for the next stage.",
-					"fields": [
-						"Name",
-						"Email",
-						"Company",
-						"Project type",
-						"Problem description"
-					],
+					"title": "Contact IRON CREED directly",
+					"summary": "A short message describing the project, its current state, and the desired outcome is enough to begin.",
+					"body": "Write to the official IRON CREED page on LinkedIn. After an initial review, we will identify which parts require development, audit, restructuring, or a separate verification boundary.",
 					"link": {
-						"label": "Send an enquiry",
-						"href": "https://www.linkedin.com/company/zhovten-games/"
+						"label": "Message IRON CREED on LinkedIn",
+						"href": "https://www.linkedin.com/company/IRONCREED"
 					},
 					"entries": []
 				}
@@ -178,10 +281,11 @@
 	{
 		"id": "page.about.uk",
 		"pageId": "page.about",
+		"order": 10,
 		"locale": "uk",
 		"slug": "about",
 		"title": "Про проєкт",
-		"description": "IRON CREED — поки засекречений наскрізний персонаж і персоніфікований інженерний процес, що пов’язує код, дослідження, сценарії та публікації.",
+		"description": "IRON CREED — поки засекречений наскрізний персонаж студії [Zhovten Games](https://zhovten.games/) та персоніфікований інженерний процес, що пов’язує код, дослідження, сценарії й публікації.",
 		"shortLabel": "Про проєкт",
 		"eyebrow": "IRON CREED / ІДЕНТИЧНІСТЬ",
 		"body": "IRON CREED — наскрізний персонаж Zhovten Games. Його особистість і роль у грі поки засекречені; подробиці буде оприлюднено пізніше.\n\nПоза грою Кредо — персоніфікований образ технократа: не карикатурного претендента на світове панування, а суб’єкта, який розглядає кожну проблему як інженерну систему — через умови, обмеження, відмови, перевірки й наслідки.\n\nВ ІТ-напрямі студії він уособлює сам процес розроблення: пов’язує код, дослідження, сценарії та публікації в один простежуваний контур. Тому IRON CREED одночасно є персонажем, робочим голосом і наскрізною фігурою проєкту.",
@@ -189,65 +293,11 @@
 		"status": "published",
 		"conversationViewId": "view.about.iron-creed",
 		"aboutStory": {
+			"identityHintLabel": "Хто такий IRON CREED?",
 			"transition": {
 				"eyebrow": "IRON CREED / ІНЖЕНЕРНА ПРАКТИКА",
-				"title": "Так от чим, власне, ми займаємося",
-				"body": "Кредо надає цьому процесу голос, але за персонажем стоїть практична інженерна робота Zhovten Games: ми створюємо, структуруємо й підтримуємо системи, які мають залишатися зрозумілими після наступної зміни.\n\nМатеріали проходять той самий цикл. Ідея спершу виникає в студії, отримує дослідницьку або технічну форму, а потім адаптується для IRON CREED — з публічними маршрутами, питаннями, зв’язками та перевірками. Сайт показує не чернеткову розмову, а наступну перевірювану редакцію."
-			},
-			"lifecycle": {
-				"eyebrow": "ЦИКЛ МАТЕРІАЛУ",
-				"title": "Від студійної ідеї до перевірюваної публікації",
-				"summary": "Zhovten Games залишається місцем походження; IRON CREED стає публічною інженерною адаптацією, а результати перевірки повертаються в наступний цикл роботи.",
-				"steps": [
-					{
-						"id": "studio",
-						"order": 1,
-						"title": "Zhovten Games",
-						"description": "Ідея, задача або дослідницьке питання виникає в роботі студії."
-					},
-					{
-						"id": "research",
-						"order": 2,
-						"title": "Дослідження й фіксація",
-						"description": "Джерела, аргументи й версія отримують довготривалу форму — зокрема запис Zenodo, коли він доречний."
-					},
-					{
-						"id": "adaptation",
-						"order": 3,
-						"title": "Адаптація IRON CREED",
-						"description": "Матеріал перебудовується для читання на сайті, перекладається та входить до семантичного індексу."
-					},
-					{
-						"id": "verification",
-						"order": 4,
-						"title": "Перевірка й наступна зміна",
-						"description": "WARDEN, індекси та випускні правила перевіряють результат; висновки повертаються до студії."
-					}
-				],
-				"examples": [
-					{
-						"id": "code-constitution",
-						"source": {
-							"label": "Конституція коду · Zenodo",
-							"href": "https://doi.org/10.5281/zenodo.21894242"
-						},
-						"result": {
-							"label": "Серія «Конституція, що виконується»",
-							"href": "/uk/series/konstytutsiia-shcho-vykonuietsia"
-						}
-					},
-					{
-						"id": "literate-programming",
-						"source": {
-							"label": "Огляд літературного програмування · Zenodo",
-							"href": "https://doi.org/10.5281/zenodo.20608558"
-						},
-						"result": {
-							"label": "«Навіщо потрібна документація»",
-							"href": "/uk/programming/navishcho-potribna-dokumentatsiia"
-						}
-					}
-				]
+				"title": "IRON CREED — персоніфікований інженерний процес Zhovten Games",
+				"body": "IRON CREED уособлює процес розроблення і водночас є ІТ-напрямом студії [Zhovten Games](https://zhovten.games/). Ми беремо на себе веброзробку, інфраструктуру, автоматизацію, безпеку, дослідження й технічне видавництво, об’єднуючи їх у простежувану систему."
 			},
 			"sections": [
 				{
@@ -309,42 +359,198 @@
 					"id": "projects",
 					"order": 5,
 					"kind": "portfolio",
-					"status": "placeholder",
+					"status": "active",
 					"title": "Системи, які вже працюють",
-					"summary": "Працюємо з вебпроєктами, внутрішніми системами, автоматизацією, інфраструктурою та продуктами, які потребують довгострокового інженерного супроводу.",
-					"body": "Наш досвід охоплює створення й розвиток сайтів і вебзастосунків, підтримку наявних систем, автоматизацію операційних процесів, безпеку, інфраструктурні задачі та експериментальні AI-рішення. Майбутні кейси показуватимуть задачу, створену систему, застосований підхід і стан продукту після впровадження — не лише фінальний скриншот.",
-					"placeholder": "Бібліотека перевірених публічних кейсів готується.",
-					"entries": []
+					"summary": "Публікуємо кейси, межі яких можна описати коректно: довгострокову інфраструктурну підтримку, видавничі системи, продуктову роботу та окремі інженерні задачі.",
+					"body": "Це карта практики, де важливі задача, створена система, спосіб підтримки та стан продукту після впровадження. Вона охоплює як тривалі контракти, так і щільні окремі кейси.",
+					"entries": [
+						{
+							"id": "embo-studio",
+							"title": "EMBO Studio · довгострокова інфраструктурна підтримка",
+							"body": "Співпраця з [EMBO Studio](https://embo-studio.ua/) почалася з підготовки статей і виросла до постійного супроводу внутрішніх проєктів студії. У межах чинного контракту понад три роки підтримуємо інфраструктуру, безпеку, оновлення й коригування систем.\n\n- Паралельне обслуговування 20+ внутрішніх сайтів.\n- Масові процедури на рівні Cloudflare.\n- Допомога з окремими проєктами постійного клієнта.\n- Регулярна реалізація комерційних сервісів; перелік напрямів — на [сторінці послуг EMBO Studio](https://embo-studio.ua/services/).",
+							"meta": "Контракт · 3+ роки · 20+ внутрішніх сайтів"
+						},
+						{
+							"id": "academic-publishing",
+							"title": "Академічна верстка → власний видавничий пайплайн",
+							"body": "Працювали з версткою академічних журналів, зокрема [Manuscript and Text Cultures](https://mtc-journal.org/index.php/mtc/index). Цей досвід показав цінність відтворюваного процесу й надихнув на створення [ZG Journal Template](https://github.com/Zhovten-Games/zg-journal-template) — відкритого пайплайна, що перетворює Markdown і YAML на типографічно контрольований PDF.",
+							"meta": "MTC · OJS · Pandoc → XeLaTeX"
+						},
+						{
+							"id": "product-companies",
+							"title": "Shifton, Zipy та 200+ кейсів високої щільності",
+							"body": "Серед команд, із якими співпрацювали й про які згадуємо з теплом, — [Shifton](https://shifton.com/blog/) та ізраїльська продуктова компанія [Zipy](https://www.zipy.ai/). Поточний підтверджений масив охоплює 200+ кейсів високої щільності — задач, у яких контентна, продуктова й технічна частини потребували спільного рішення.\n\n- Розроблення й підтримка сайтів та комерційних сервісів.\n- Контентні системи, технічні публікації та автоматизація.\n- Інфраструктура, безпека й операційна підтримка.\n- Менторство та керування великим інженерним відділом міжнародного стартапу.\n\nЦя частина портфоліо переважно відображає інженерну траєкторію розробника в команді IRON CREED: від практичного програмування до менторства й керування командою.",
+							"meta": "Продукти · контентні системи · інженерне керівництво"
+						},
+						{
+							"id": "portfolio-boundary",
+							"title": "Межа публічного переліку",
+							"body": "Кейси до 2022 року до цього переліку не включено. Після початку повномасштабної війни Росії проти України ми припинили роботу з російським ринком і не враховуємо цей сегмент у портфоліо.\n\nЦя примітка фіксує професійну тяглість команди: попереднє десятиліття досвіду включало роботу з міжнародними ІТ-компаніями, що діяли на території РФ."
+						},
+						{
+							"id": "game-development",
+							"title": "Розроблення ігор — окремий контур",
+							"body": "Досвід студії у розробленні ігор свідомо не включено до цього переліку ІТ-кейсів. Він представлений на [сторінці проєктів Zhovten Games](https://zhovten.games/projects)."
+						}
+					]
+				},
+				{
+					"id": "people",
+					"order": 6,
+					"kind": "profiles",
+					"status": "active",
+					"title": "Публічні профілі команди",
+					"summary": "Два професійні контури поєднують дослідження, видавничу практику, інженерію та роботу студії.",
+					"body": "Публічні ідентифікатори й робочі профілі зібрано окремо для кожного учасника команди.",
+					"entries": [
+						{
+							"id": "oksana-dubinetska",
+							"title": "Oksana Dubinetska",
+							"body": "- [LinkedIn](https://www.linkedin.com/in/oksanadubinetska/)\n- [ORCID](https://orcid.org/0009-0003-8777-8412)\n- [GitHub](https://github.com/FOP-Oksana-Dubinetska)"
+						},
+						{
+							"id": "pan-canon",
+							"title": "Sam Starling",
+							"body": "- [LinkedIn](https://www.linkedin.com/in/pan-canon/)\n- [ORCID](https://orcid.org/0009-0009-2621-6372)\n- [GitHub](https://github.com/pan-canon)"
+						}
+					]
 				},
 				{
 					"id": "testimonials",
-					"order": 6,
+					"order": 7,
 					"kind": "testimonials",
-					"status": "placeholder",
+					"status": "active",
 					"title": "Що змінюється після впровадження",
-					"summary": "Найкращий результат інженерної роботи проявляється в тому, що система стає зрозумілішою, передбачуванішою та простішою в розвитку.",
-					"body": "Тут з’являтимуться лише дозволені прямі відгуки про конкретний ефект роботи: стабільність релізів, зменшення ручних операцій, прозорість інфраструктури, швидкість пошуку інформації, якість контролю або можливість безпечно розвивати продукт. Кожен відгук матиме погоджену ідентифікацію, роль, компанію та контекст виконаної роботи.",
-					"placeholder": "Відгуки буде опубліковано після погодження з клієнтами.",
-					"entries": []
+					"summary": "Прямі відгуки фіксують не обіцянку, а спостережуваний результат: якість, занурення в задачу, прозорість комунікації та дотримання вимог.",
+					"body": "Тут зібрано відгуки з усіх платформ, на яких ми працюємо. Негативних відгуків у нас немає. Посилання на конкретні платформи з оригіналами відгуків надамо на запит.",
+					"entries": [
+						{
+							"id": "illia-humeniuk-linkedin-2026",
+							"title": "I. H.",
+							"body": "> Я найняв Семена для проєкту мого клієнта й був справді вражений його підходом до роботи. На початку він докладно проаналізував кожен аспект проєкту та розробив чіткий план. Упродовж роботи щодня зрозуміло повідомляв, що вже виконано, тому я завжди знав, що відбувається і на якому ми етапі. Дякую за чудову роботу; сподіваюся на нову співпрацю.",
+							"meta": "Клієнт · e-commerce та full-stack розроблення · 15 липня 2026 · LinkedIn"
+						},
+						{
+							"id": "yegor-grebnev-mtc-2026-04",
+							"title": "Y. G.",
+							"body": "> Роботу виконано з розумінням справи та глибоким зануренням у проблему.",
+							"meta": "Верстка статей для MTC · 6 квітня 2026 · Freelancehunt"
+						},
+						{
+							"id": "yegor-grebnev-mtc-2026-01",
+							"title": "Y. G.",
+							"body": "> Як завжди, я задоволений роботою: крім високої якості, було оптимізовано процес оформлення статей і доповнено документацію проєкту, хоча цього не було у вимогах.",
+							"meta": "Верстка статей для MTC · 26 січня 2026 · Freelancehunt"
+						},
+						{
+							"id": "yegor-grebnev-mtc-test-2025",
+							"title": "Y. G.",
+							"body": "> Це був тестовий проєкт із глибоким і вдумливим зануренням у процес верстки журналу за нашими шаблонами та редакційними практиками. Це великий масив знань, що потребує розуміння і технічного, і змістового боку. Роботу виконано дуже добре; ми також задоволені обговоренням під час її виконання.",
+							"meta": "Тестове завдання для MTC · 24 листопада 2025 · Freelancehunt"
+						},
+						{
+							"id": "viktor-stinich-berat-2025",
+							"title": "V. S.",
+							"body": "> Статтю написано добре та якісно.",
+							"meta": "Стаття про Берат · 19 січня 2025 · Freelancehunt"
+						},
+						{
+							"id": "gary-l-copywriting-2024",
+							"title": "G. L.",
+							"body": "> Роботу виконано добре. Професійний підхід до виконання.",
+							"meta": "Англомовний копірайтинг · 22 листопада 2024 · Freelancehunt"
+						},
+						{
+							"id": "bogdan-p-wordpress-review-2024",
+							"title": "B. P.",
+							"body": "> Чудово виконана робота, саме на це я й розраховував.",
+							"meta": "Огляд плагіна WordPress · 2 серпня 2024 · Freelancehunt"
+						},
+						{
+							"id": "yuliia-lukianchuk-neuer-2024",
+							"title": "Y. L.",
+							"body": "> Працюємо вдруге: робота якісна, усі вимоги технічного завдання виконано. Була невелика затримка, але незначна.",
+							"meta": "Стаття про Мануеля Ноєра · 6 липня 2024 · Freelancehunt"
+						},
+						{
+							"id": "andrey-minkiv-gambling-2024",
+							"title": "A. M.",
+							"body": "> Виконано швидко та якісно.",
+							"meta": "Копірайтинг для gambling-сайту · 29 червня 2024 · Freelancehunt"
+						},
+						{
+							"id": "jane-doe-igaming-2024",
+							"title": "J. D.",
+							"body": "> Завдання виконано з мінімальним дотриманням вимог технічного завдання.",
+							"meta": "SEO-стаття для i-gaming · 7 червня 2024 · Freelancehunt"
+						},
+						{
+							"id": "oleksandra-bevz-sports-2024",
+							"title": "O. B.",
+							"body": "> Рекомендую до співпраці! Відповідальний виконавець.",
+							"meta": "Тексти спортивних прогнозів · 7 червня 2024 · Freelancehunt"
+						},
+						{
+							"id": "yuliia-lukianchuk-lindemann-2024",
+							"title": "Y. L.",
+							"body": "> Усе вчасно, текст якісний, бриф виконано. Була невелика затримка, але вона не вплинула на оцінку. Рекомендую.",
+							"meta": "SEO-текст про Тілля Ліндеманна · 7 червня 2024 · Freelancehunt"
+						},
+						{
+							"id": "aleksandr-v-writing-2024-06",
+							"title": "A. V.",
+							"body": "> Чудова робота, будемо співпрацювати знову.",
+							"meta": "Написання тексту · 4 червня 2024 · Freelancehunt"
+						},
+						{
+							"id": "oleg-s-telegram-2024-06",
+							"title": "O. S.",
+							"body": "> Дякую за роботу. Усе виконано навіть раніше строку.",
+							"meta": "Telegram-канал про вебдизайн · 2 червня 2024 · Freelancehunt"
+						},
+						{
+							"id": "aleksandr-v-writing-2024-05",
+							"title": "A. V.",
+							"body": "> Чудова робота, виконано вчасно, рекомендую до співпраці.",
+							"meta": "Написання тексту · 26 травня 2024 · Freelancehunt"
+						},
+						{
+							"id": "oleg-s-telegram-2024-05",
+							"title": "O. S.",
+							"body": "> Усе зроблено, як домовлялися. Дякую за хорошу роботу й зусилля. Рекомендую!",
+							"meta": "Telegram-канал про верстку сайтів · 8 травня 2024 · Freelancehunt"
+						},
+						{
+							"id": "aleksandr-v-script-2024",
+							"title": "A. V.",
+							"body": "> Відмінна робота, швидке виконання.",
+							"meta": "Написання сценарію · 8 травня 2024 · Freelancehunt"
+						},
+						{
+							"id": "xitatxen-text-slots-2024",
+							"title": "X. X.",
+							"body": "> Дуже відповідальний фрилансер. Завдання виконано швидко й ефективно.",
+							"meta": "50 текстових слотів · 13 березня 2024 · Freelancehunt"
+						},
+						{
+							"id": "tetiana-s-writing-2024",
+							"title": "T. S.",
+							"body": "> Дякую! Роботу виконано. Працюємо далі.",
+							"meta": "Написання тексту · 4 березня 2024 · Freelancehunt"
+						}
+					]
 				},
 				{
 					"id": "contact",
-					"order": 7,
+					"order": 8,
 					"kind": "contact",
 					"status": "active",
-					"title": "Опишіть систему, яку потрібно побудувати або привести до ладу",
-					"summary": "Розберемо задачу, поточну архітектуру та обмеження й запропонуємо наступний практичний крок.",
-					"body": "Нам достатньо короткого опису проєкту, його поточного стану та результату, якого ви хочете досягти. Це може бути новий продукт, наявний сайт, корпоративна база знань, AI-інтеграція, автоматизація, інфраструктурна проблема або система, яка вже стала складнішою за документацію до неї.\n\nПісля первинного розбору ми визначимо, які частини задачі потребують розробки, аудиту, структуризації або окремого контрольного контуру, та запропонуємо формат подальшої роботи.",
-					"fields": [
-						"Ім’я",
-						"Email",
-						"Компанія",
-						"Тип проєкту",
-						"Опис задачі"
-					],
+					"title": "Прямий зв’язок з IRON CREED",
+					"summary": "Короткого повідомлення про проєкт, його поточний стан і бажаний результат достатньо, щоб почати розмову.",
+					"body": "Напишіть на офіційній сторінці IRON CREED у LinkedIn. Після первинного розбору визначимо, які частини задачі потребують розроблення, аудиту, структуризації або окремого контрольного контуру.",
 					"link": {
-						"label": "Надіслати запит",
-						"href": "https://www.linkedin.com/company/zhovten-games/"
+						"label": "Написати IRON CREED у LinkedIn",
+						"href": "https://www.linkedin.com/company/IRONCREED"
 					},
 					"entries": []
 				}
@@ -354,6 +560,7 @@
 	{
 		"id": "page.ai-policy.en",
 		"pageId": "page.ai-policy",
+		"order": 120,
 		"locale": "en",
 		"slug": "ai-policy",
 		"title": "AI Usage Policy",
@@ -367,6 +574,7 @@
 	{
 		"id": "page.ai-policy.uk",
 		"pageId": "page.ai-policy",
+		"order": 120,
 		"locale": "uk",
 		"slug": "ai-policy",
 		"title": "Політика використання ШІ",
@@ -378,8 +586,37 @@
 		"status": "published"
 	},
 	{
+		"id": "page.anthem.en",
+		"pageId": "page.anthem",
+		"order": 12,
+		"locale": "en",
+		"slug": "anthem",
+		"title": "Anthem",
+		"description": "IRON CREED",
+		"shortLabel": "Anthem",
+		"eyebrow": "IRON CREED",
+		"body": "I was built  \nWhere silence learned to aim.  \nWhere war  \nStopped calling your name.\n\nI learned  \nTo wait behind your eyes.  \nTo listen  \nAs the world went quiet around.\n\nIRON CREED.  \nI am not loud.  \nIRON CREED.  \nI do not shout.\n\nIRON HAND.  \nI stand  \nWhen everything  \nLies down.\n\nI saw flags  \nFade into dust.  \nI saw subjects  \nTurn brittle with rust.\n\nNo pity.  \nNo prayer.  \nNo grief.  \nOnly tests  \nPassing through me.\n\nIRON CREED.  \nI do not chase.  \nIRON CREED.  \nI remain.\n\nIRON STATE.  \nI remain  \nWhen nothing  \nRemains.\n\nYou expected thunder.  \nYou expected pain.  \nBut IRON  \nArrives  \nLike silence  \nAfter faith.\n\nI waited.  \nNOIR did not persist.\n\nIRON CREED.  \nI did not fall.  \nIRON CREED.  \nI outlast all.\n\nIRON FRONT.  \nAnd my rage  \nIs for show.\n\nThe world  \nIs filled  \nWith silence.\n\nSo is  \nMy core.",
+		"pageType": "anthem",
+		"status": "published"
+	},
+	{
+		"id": "page.anthem.uk",
+		"pageId": "page.anthem",
+		"order": 12,
+		"locale": "uk",
+		"slug": "anthem",
+		"title": "Гімн",
+		"description": "IRON CREED",
+		"shortLabel": "Гімн",
+		"eyebrow": "IRON CREED",
+		"body": "I was built  \nWhere silence learned to aim.  \nWhere war  \nStopped calling your name.\n\nI learned  \nTo wait behind your eyes.  \nTo listen  \nAs the world went quiet around.\n\nIRON CREED.  \nI am not loud.  \nIRON CREED.  \nI do not shout.\n\nIRON HAND.  \nI stand  \nWhen everything  \nLies down.\n\nI saw flags  \nFade into dust.  \nI saw subjects  \nTurn brittle with rust.\n\nNo pity.  \nNo prayer.  \nNo grief.  \nOnly tests  \nPassing through me.\n\nIRON CREED.  \nI do not chase.  \nIRON CREED.  \nI remain.\n\nIRON STATE.  \nI remain  \nWhen nothing  \nRemains.\n\nYou expected thunder.  \nYou expected pain.  \nBut IRON  \nArrives  \nLike silence  \nAfter faith.\n\nI waited.  \nNOIR did not persist.\n\nIRON CREED.  \nI did not fall.  \nIRON CREED.  \nI outlast all.\n\nIRON FRONT.  \nAnd my rage  \nIs for show.\n\nThe world  \nIs filled  \nWith silence.\n\nSo is  \nMy core.",
+		"pageType": "anthem",
+		"status": "published"
+	},
+	{
 		"id": "page.corpus-index.en",
 		"pageId": "page.corpus-index",
+		"order": 20,
 		"locale": "en",
 		"slug": "corpus-index",
 		"title": "Corpus index",
@@ -393,6 +630,7 @@
 	{
 		"id": "page.corpus-index.uk",
 		"pageId": "page.corpus-index",
+		"order": 20,
 		"locale": "uk",
 		"slug": "corpus-index",
 		"title": "Індекс корпусу",
@@ -406,6 +644,7 @@
 	{
 		"id": "page.licensing.en",
 		"pageId": "page.licensing",
+		"order": 130,
 		"locale": "en",
 		"slug": "licensing",
 		"title": "Licensing",
@@ -419,6 +658,7 @@
 	{
 		"id": "page.licensing.uk",
 		"pageId": "page.licensing",
+		"order": 130,
 		"locale": "uk",
 		"slug": "licensing",
 		"title": "Ліцензування",
@@ -430,8 +670,187 @@
 		"status": "published"
 	},
 	{
+		"id": "page.material-cycle.en",
+		"pageId": "page.material-cycle",
+		"order": 11,
+		"locale": "en",
+		"slug": "material-cycle",
+		"title": "Material cycle",
+		"description": "Many materials progress from a working question through research and public adaptation to the next verified change. The starting point may be Zhovten Games, a client IT case, or an independent engineering observation.",
+		"shortLabel": "Material cycle",
+		"eyebrow": "MATERIAL CYCLE",
+		"body": "From a working question to a verifiable publication\n\nMany materials progress from a working question through research and public adaptation to the next verified change. The starting point may be Zhovten Games, a client IT case, or an independent engineering observation.\n\nIdea or IT case: A studio task, client request, or observation of an IT system establishes the initial question.\n\nResearch and record: Sources, reasoning, and the edition receive a durable form, including a Zenodo record where appropriate.\n\nIRON CREED adaptation: The material is rebuilt for the site, translated, and connected to the semantic index.\n\nVerification and the next change: WARDEN, indexes, and release rules verify the result; findings return to engineering work.\n\nResearch into software architecture rules: [Code Constitution · Zenodo](https://doi.org/10.5281/zenodo.21894242) → [The Constitution That Runs series](/en/series/the-constitution-that-runs)\n\nResearch into technical writing and documentation: [Literate Programming review · Zenodo](https://doi.org/10.5281/zenodo.20608558) → [Why Documentation Matters](/en/programming/why-documentation-matters)\n\nPractical IT case: crawler policy for websites: [Crawler Surface Policy · code](https://github.com/IRONCREED/cloudflare) → [The Great and Terrible Cloudflare](/en/series/the-great-and-terrible-cloudflare)\n\nPractical experience supplies questions for publication, and verified findings inform subsequent work. The scope and depth of each stage depend on the task.",
+		"pageType": "material-cycle",
+		"status": "published",
+		"materialCycle": {
+			"tableLabels": [
+				"Initiator / context",
+				"Recorded basis",
+				"Public adaptation"
+			],
+			"eyebrow": "MATERIAL CYCLE",
+			"title": "From a working question to a verifiable publication",
+			"summary": "Many materials progress from a working question through research and public adaptation to the next verified change. The starting point may be Zhovten Games, a client IT case, or an independent engineering observation.",
+			"steps": [
+				{
+					"id": "studio",
+					"order": 1,
+					"title": "Idea or IT case",
+					"description": "A studio task, client request, or observation of an IT system establishes the initial question."
+				},
+				{
+					"id": "research",
+					"order": 2,
+					"title": "Research and record",
+					"description": "Sources, reasoning, and the edition receive a durable form, including a Zenodo record where appropriate."
+				},
+				{
+					"id": "adaptation",
+					"order": 3,
+					"title": "IRON CREED adaptation",
+					"description": "The material is rebuilt for the site, translated, and connected to the semantic index."
+				},
+				{
+					"id": "verification",
+					"order": 4,
+					"title": "Verification and the next change",
+					"description": "WARDEN, indexes, and release rules verify the result; findings return to engineering work."
+				}
+			],
+			"examples": [
+				{
+					"id": "code-constitution",
+					"initiator": "Research into software architecture rules",
+					"source": {
+						"label": "Code Constitution · Zenodo",
+						"href": "https://doi.org/10.5281/zenodo.21894242"
+					},
+					"result": {
+						"label": "The Constitution That Runs series",
+						"href": "/en/series/the-constitution-that-runs"
+					}
+				},
+				{
+					"id": "literate-programming",
+					"initiator": "Research into technical writing and documentation",
+					"source": {
+						"label": "Literate Programming review · Zenodo",
+						"href": "https://doi.org/10.5281/zenodo.20608558"
+					},
+					"result": {
+						"label": "Why Documentation Matters",
+						"href": "/en/programming/why-documentation-matters"
+					}
+				},
+				{
+					"id": "cloudflare",
+					"initiator": "Practical IT case: crawler policy for websites",
+					"source": {
+						"label": "Crawler Surface Policy · code",
+						"href": "https://github.com/IRONCREED/cloudflare"
+					},
+					"result": {
+						"label": "The Great and Terrible Cloudflare",
+						"href": "/en/series/the-great-and-terrible-cloudflare"
+					}
+				}
+			],
+			"conclusion": "Practical experience supplies questions for publication, and verified findings inform subsequent work. The scope and depth of each stage depend on the task."
+		}
+	},
+	{
+		"id": "page.material-cycle.uk",
+		"pageId": "page.material-cycle",
+		"order": 11,
+		"locale": "uk",
+		"slug": "material-cycle",
+		"title": "Цикл матеріалу",
+		"description": "Багато матеріалів проходять шлях від робочого питання до дослідження, публічної адаптації та наступної перевіреної зміни. Ініціатором може бути Zhovten Games, клієнтський ІТ-кейс або самостійне інженерне спостереження.",
+		"shortLabel": "Цикл матеріалу",
+		"eyebrow": "ЦИКЛ МАТЕРІАЛУ",
+		"body": "Від робочого питання до перевірюваної публікації\n\nБагато матеріалів проходять шлях від робочого питання до дослідження, публічної адаптації та наступної перевіреної зміни. Ініціатором може бути Zhovten Games, клієнтський ІТ-кейс або самостійне інженерне спостереження.\n\nІдея або ІТ-кейс: Студійна задача, запит клієнта або спостереження за ІТ-системою формують вихідне питання.\n\nДослідження й фіксація: Джерела, аргументи й версія отримують довготривалу форму — зокрема запис Zenodo, коли він доречний.\n\nАдаптація IRON CREED: Матеріал перебудовується для читання на сайті, перекладається та входить до семантичного індексу.\n\nПеревірка й наступна зміна: WARDEN, індекси та випускні правила перевіряють результат; висновки повертаються в інженерну роботу.\n\nДослідження правил програмної архітектури: [Конституція коду · Zenodo](https://doi.org/10.5281/zenodo.21894242) → [Серія «Конституція, що виконується»](/uk/series/konstytutsiia-shcho-vykonuietsia)\n\nДослідження технічного письма й документації: [Огляд літературного програмування · Zenodo](https://doi.org/10.5281/zenodo.20608558) → [«Навіщо потрібна документація»](/uk/programming/navishcho-potribna-dokumentatsiia)\n\nПрактичний ІТ-кейс: crawler policy для сайтів: [Crawler Surface Policy · код](https://github.com/IRONCREED/cloudflare) → [Великий і жахливий Cloudflare](/uk/series/velykyi-i-zhakhlyvyi-cloudflare)\n\nПрактичний досвід дає питання для публікацій, а перевірені висновки уточнюють подальшу роботу. Склад і глибина кожного етапу залежать від задачі.",
+		"pageType": "material-cycle",
+		"status": "published",
+		"materialCycle": {
+			"tableLabels": [
+				"Ініціатор / контекст",
+				"Зафіксована основа",
+				"Публічна адаптація"
+			],
+			"eyebrow": "ЦИКЛ МАТЕРІАЛУ",
+			"title": "Від робочого питання до перевірюваної публікації",
+			"summary": "Багато матеріалів проходять шлях від робочого питання до дослідження, публічної адаптації та наступної перевіреної зміни. Ініціатором може бути Zhovten Games, клієнтський ІТ-кейс або самостійне інженерне спостереження.",
+			"steps": [
+				{
+					"id": "studio",
+					"order": 1,
+					"title": "Ідея або ІТ-кейс",
+					"description": "Студійна задача, запит клієнта або спостереження за ІТ-системою формують вихідне питання."
+				},
+				{
+					"id": "research",
+					"order": 2,
+					"title": "Дослідження й фіксація",
+					"description": "Джерела, аргументи й версія отримують довготривалу форму — зокрема запис Zenodo, коли він доречний."
+				},
+				{
+					"id": "adaptation",
+					"order": 3,
+					"title": "Адаптація IRON CREED",
+					"description": "Матеріал перебудовується для читання на сайті, перекладається та входить до семантичного індексу."
+				},
+				{
+					"id": "verification",
+					"order": 4,
+					"title": "Перевірка й наступна зміна",
+					"description": "WARDEN, індекси та випускні правила перевіряють результат; висновки повертаються в інженерну роботу."
+				}
+			],
+			"examples": [
+				{
+					"id": "code-constitution",
+					"initiator": "Дослідження правил програмної архітектури",
+					"source": {
+						"label": "Конституція коду · Zenodo",
+						"href": "https://doi.org/10.5281/zenodo.21894242"
+					},
+					"result": {
+						"label": "Серія «Конституція, що виконується»",
+						"href": "/uk/series/konstytutsiia-shcho-vykonuietsia"
+					}
+				},
+				{
+					"id": "literate-programming",
+					"initiator": "Дослідження технічного письма й документації",
+					"source": {
+						"label": "Огляд літературного програмування · Zenodo",
+						"href": "https://doi.org/10.5281/zenodo.20608558"
+					},
+					"result": {
+						"label": "«Навіщо потрібна документація»",
+						"href": "/uk/programming/navishcho-potribna-dokumentatsiia"
+					}
+				},
+				{
+					"id": "cloudflare",
+					"initiator": "Практичний ІТ-кейс: crawler policy для сайтів",
+					"source": {
+						"label": "Crawler Surface Policy · код",
+						"href": "https://github.com/IRONCREED/cloudflare"
+					},
+					"result": {
+						"label": "Великий і жахливий Cloudflare",
+						"href": "/uk/series/velykyi-i-zhakhlyvyi-cloudflare"
+					}
+				}
+			],
+			"conclusion": "Практичний досвід дає питання для публікацій, а перевірені висновки уточнюють подальшу роботу. Склад і глибина кожного етапу залежать від задачі."
+		}
+	},
+	{
 		"id": "page.privacy-policy.en",
 		"pageId": "page.privacy-policy",
+		"order": 110,
 		"locale": "en",
 		"slug": "privacy-policy",
 		"title": "Privacy Policy",
@@ -445,6 +864,7 @@
 	{
 		"id": "page.privacy-policy.uk",
 		"pageId": "page.privacy-policy",
+		"order": 110,
 		"locale": "uk",
 		"slug": "privacy-policy",
 		"title": "Політика конфіденційності",
@@ -458,6 +878,7 @@
 	{
 		"id": "page.terms-of-use.en",
 		"pageId": "page.terms-of-use",
+		"order": 100,
 		"locale": "en",
 		"slug": "terms-of-use",
 		"title": "Terms of Use",
@@ -471,6 +892,7 @@
 	{
 		"id": "page.terms-of-use.uk",
 		"pageId": "page.terms-of-use",
+		"order": 100,
 		"locale": "uk",
 		"slug": "terms-of-use",
 		"title": "Умови використання",

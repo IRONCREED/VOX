@@ -256,8 +256,12 @@ function renderInline(source: string, keyPrefix = 'inline'): ReactNode[] {
 	});
 }
 
+export function InlineMarkdown({ source }: { source: string }) {
+	return <>{renderInline(source)}</>;
+}
+
 function graphicSlotId(content: string): string | undefined {
-	return /^(?:\*\*)?(?:Графічний слот|Graphic slot)\s+(G\d{2})\b/i
+	return /^(?:[_*]{1,2})?(?:Графічний слот|Graphic slot|Visual slot|Схема|Diagram|Figure)\s+(G\d{2})\b/i
 		.exec(content)?.[1]
 		?.toUpperCase();
 }
@@ -348,6 +352,20 @@ export function ArticleBody({ body, variant = 'standard', assets = [] }: Article
 						<blockquote key={'blockquote-' + index}>
 							{renderInline(block.content, 'blockquote-' + index)}
 						</blockquote>
+					);
+				}
+
+				const slotId = block.kind === 'paragraph' ? graphicSlotId(block.content) : undefined;
+				if (slotId) {
+					const suffix = `.${slotId.toLowerCase()}`;
+					const asset = assets.find((candidate) => candidate.id.endsWith(suffix));
+					return (
+						<DiagramAssetSlot
+							asset={asset}
+							brief={renderInline(block.content, 'diagram-brief-' + index)}
+							key={'diagram-slot-' + index}
+							slotId={slotId}
+						/>
 					);
 				}
 

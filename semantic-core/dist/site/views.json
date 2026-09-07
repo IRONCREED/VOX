@@ -3432,5 +3432,178 @@
 				"order": 10
 			}
 		]
+	},
+	{
+		"id": "view.pattern.regulated-availability",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.regulated-availability",
+		"invitation": {
+			"uk": "Перевірте, як поза стає знаком і де закінчується право її тлумачити.",
+			"en": "Examine how a pose becomes a sign and where interpretation reaches its limit."
+		},
+		"entryQuestionIds": [
+			"q.pattern.regulated-availability",
+			"q.pattern.crossed-legs-variants",
+			"q.pattern.crossed-legs-mutation",
+			"q.pattern.crossed-legs-size",
+			"q.pattern.representation-objectification",
+			"q.pattern.runway-representation-scope",
+			"q.pattern.pose-intention-limit"
+		],
+		"nodes": [
+			"q.pattern.regulated-availability",
+			"q.pattern.crossed-legs-etiquette",
+			"q.pattern.concealment-attention",
+			"q.pattern.crossed-legs-variants",
+			"q.pattern.crossed-legs-mutation",
+			"q.pattern.crossed-legs-size",
+			"q.pattern.representation-objectification",
+			"q.pattern.runway-representation-scope",
+			"q.pattern.pose-intention-limit"
+		],
+		"edges": [
+			{
+				"from": "q.pattern.regulated-availability",
+				"to": "q.pattern.crossed-legs-etiquette",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {
+					"uk": "Історичне підґрунтя моделі.",
+					"en": "Historical grounding of the model."
+				}
+			},
+			{
+				"from": "q.pattern.regulated-availability",
+				"to": "q.pattern.concealment-attention",
+				"type": "expands",
+				"order": 10,
+				"usageNote": {
+					"uk": "Механізм уваги й межі доказу.",
+					"en": "Attention mechanism and limits of evidence."
+				}
+			},
+			{
+				"from": "q.pattern.crossed-legs-mutation",
+				"to": "q.pattern.crossed-legs-size",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {
+					"uk": "Зміна носія візуального коду.",
+					"en": "Changing the bearer of a visual code."
+				}
+			},
+			{
+				"from": "q.pattern.representation-objectification",
+				"to": "q.pattern.runway-representation-scope",
+				"type": "challenges",
+				"order": 30,
+				"usageNote": {
+					"uk": "Перевірити масштаб висновку про репрезентацію.",
+					"en": "Check the scope of claims about representation."
+				}
+			}
+		]
+	},
+	{
+		"id": "view.cloudflare.case-001",
+		"kind": "view",
+		"schemaVersion": 1,
+		"status": "published",
+		"visibility": "public",
+		"revision": 1,
+		"materialId": "material.cloudflare-001-crawler-surface-policy",
+		"invitation": {
+			"uk": "Перевірте identity, поверхню, межу запису та докази зміни policy.",
+			"en": "Examine identity, surface, write authority, and evidence of a policy change."
+		},
+		"entryQuestionIds": [
+			"q.cloudflare.crawler-surface-policy",
+			"q.cloudflare.fleet-profiles-exceptions",
+			"q.cloudflare.security-deployment-stages",
+			"q.cloudflare.api-token-wsl",
+			"q.cloudflare.configuration-drift",
+			"q.cloudflare.public-repository-boundary",
+			"q.cloudflare.telemetry-write-boundary"
+		],
+		"nodes": [
+			"q.cloudflare.crawler-surface-policy",
+			"q.cloudflare.verified-crawler-scope",
+			"q.cloudflare.woocommerce-transactional-surface",
+			"q.cloudflare.identity-surface-separation",
+			"q.cloudflare.fleet-profiles-exceptions",
+			"q.cloudflare.security-deployment-stages",
+			"q.cloudflare.read-write-token-separation",
+			"q.cloudflare.api-token-wsl",
+			"q.cloudflare.physical-rule-budget",
+			"q.cloudflare.configuration-drift",
+			"q.cloudflare.public-repository-boundary",
+			"q.cloudflare.telemetry-write-boundary"
+		],
+		"edges": [
+			{
+				"from": "q.cloudflare.crawler-surface-policy",
+				"to": "q.cloudflare.verified-crawler-scope",
+				"type": "expands",
+				"order": 0,
+				"usageNote": {
+					"uk": "Перевірити межі verified identity.",
+					"en": "Check the scope of verified identity."
+				}
+			},
+			{
+				"from": "q.cloudflare.crawler-surface-policy",
+				"to": "q.cloudflare.woocommerce-transactional-surface",
+				"type": "applies",
+				"order": 10,
+				"usageNote": {
+					"uk": "Визначити транзакційну поверхню.",
+					"en": "Identify the transactional surface."
+				}
+			},
+			{
+				"from": "q.cloudflare.crawler-surface-policy",
+				"to": "q.cloudflare.identity-surface-separation",
+				"type": "expands",
+				"order": 20,
+				"usageNote": {
+					"uk": "Побудувати одночасний Boolean-збіг.",
+					"en": "Build the conjunctive Boolean match."
+				}
+			},
+			{
+				"from": "q.cloudflare.fleet-profiles-exceptions",
+				"to": "q.cloudflare.physical-rule-budget",
+				"type": "expands",
+				"order": 30,
+				"usageNote": {
+					"uk": "Перевірити фізичний бюджет композиції.",
+					"en": "Check the physical budget of the composition."
+				}
+			},
+			{
+				"from": "q.cloudflare.security-deployment-stages",
+				"to": "q.cloudflare.read-write-token-separation",
+				"type": "requires",
+				"order": 40,
+				"usageNote": {
+					"uk": "Розділення повноважень для запису.",
+					"en": "Separate authority for the write operation."
+				}
+			},
+			{
+				"from": "q.cloudflare.api-token-wsl",
+				"to": "q.cloudflare.read-write-token-separation",
+				"type": "expands",
+				"order": 50,
+				"usageNote": {
+					"uk": "Уточнити призначення окремих токенів.",
+					"en": "Explain the roles of separate tokens."
+				}
+			}
+		]
 	}
 ]

@@ -33,13 +33,15 @@ test('the semantic core is the single bilingual publication source', async () =>
 	]);
 
 	assert.equal(corpus.id, 'corpus.ironcreed');
-	assert.equal(siteManifest.contentVersion, '1.11.0');
+	assert.equal(siteManifest.contentVersion, '1.16.0');
 	assert.equal(siteManifest.sourceCommit, gptManifest.sourceCommit);
 	assert.equal(siteManifest.contentDigest, gptManifest.contentDigest);
 	assert.equal(siteManifest.schemaVersion, gptManifest.schemaVersion);
 	assert.deepEqual(
 		new Set(materials.map((item) => item.materialId)),
 		new Set([
+			'material.regulated-availability',
+			'material.cloudflare-001-crawler-surface-policy',
 			'material.from-body-to-signal',
 			'material.why-documentation',
 			'material.constitution-runtime-01-article-vii',
@@ -64,16 +66,17 @@ test('the semantic core is the single bilingual publication source', async () =>
 			'material.ada-machine-requiem-12-death-of-my-world',
 		]),
 	);
-	assert.equal(materials.length, 44);
-	assert.equal(series.length, 6);
+	assert.equal(materials.length, 48);
+	assert.equal(series.length, 8);
 	assert.equal(series.filter((item) => item.materialIds.length === 7).length, 2);
 	assert.equal(series.filter((item) => item.materialIds.length === 1).length, 2);
+	assert.equal(series.filter((item) => item.materialIds.length === 2).length, 2);
 	assert.equal(series.filter((item) => item.materialIds.length === 12).length, 2);
-	assert.equal(pages.length, 12);
-	assert.equal(tags.length, 86);
-	assert.equal(urls.length, 62);
-	assert.equal(entities.filter((item) => item.locale === 'uk').length, 578);
-	assert.equal(entities.filter((item) => item.locale === 'en').length, 578);
+	assert.equal(pages.length, 16);
+	assert.equal(tags.length, 94);
+	assert.equal(urls.length, 72);
+	assert.equal(entities.filter((item) => item.locale === 'uk').length, 645);
+	assert.equal(entities.filter((item) => item.locale === 'en').length, 645);
 	assert.ok(entities.every((item) => item.status === 'published'));
 	assert.deepEqual(
 		categories.map((category) => category.id),
@@ -96,7 +99,7 @@ test('all questions are standalone and views alone own navigation', async () => 
 		readJson('semantic-core/corpus/views/registry.json'),
 		readJson('semantic-core/corpus/protocols/registry.json'),
 	]);
-	assert.equal(questions.length, 455);
+	assert.equal(questions.length, 476);
 	for (const question of questions) {
 		assert.equal(question.standalone, true, `${question.id} is not standalone`);
 		for (const forbidden of ['parentId', 'children', 'depth', 'materialId']) {
@@ -110,7 +113,7 @@ test('all questions are standalone and views alone own navigation', async () => 
 		);
 		assert.equal(new Set(normalized).size, normalized.length, `${locale} contains a duplicate`);
 	}
-	assert.equal(views.length, 23);
+	assert.equal(views.length, 25);
 	assert.ok(views.every((view) => view.entryQuestionIds.length > 0 && view.nodes.length > 0));
 	assert.deepEqual(views.find((view) => view.id === 'view.about.iron-creed')?.entryQuestionIds, [
 		'q.iron-creed.model',
@@ -139,7 +142,7 @@ test('the site consumes the checked projection and exposes a dedicated corpus in
 	assert.match(navigation, /build-identity__index/);
 	assert.doesNotMatch(navigation, /EntityIndexTree/);
 	assert.match(buildScript, /run build:check/);
-	assert.equal(packageManifest.version, '1.10.0');
+	assert.equal(packageManifest.version, '1.15.0');
 });
 
 test('the entity index links only through canonical material associations', async () => {
@@ -179,6 +182,11 @@ test('the entity index links only through canonical material associations', asyn
 	);
 	assert.equal(modelQuestion.href, '/en/questions/q.iron-creed.model');
 	assert.deepEqual(modelQuestion.pageIds, ['page.about']);
+	const ironCreed = entities.find(
+		(entry) => entry.locale === 'en' && entry.id === 'concept.iron-creed',
+	);
+	assert.equal(ironCreed.href, '/en/pages/about?entity=concept.iron-creed#article-body');
+	assert.deepEqual(ironCreed.pageIds, ['page.about']);
 });
 
 test('governance records and attests the active release', async () => {
@@ -202,10 +210,10 @@ test('governance records and attests the active release', async () => {
 		readJson('vox/publication-policy.json'),
 		readText('semantic-core/docs/article-publication-template-v4.txt'),
 		readText('governance/prompts/README.md'),
-		readJson('governance/attestations/diagram-system-release-2026-09-01.json'),
+		readJson('governance/attestations/project-pages-public-release-2026-09-07.json'),
 		readJson('semantic-core/dist/site/manifest.json'),
 	]);
-	assert.match(profile, /Редакция: `0\.7\.0`/);
+	assert.match(profile, /Редакция: `0\.8\.0`/);
 	assert.match(profile, /`\/semantic-core\/corpus\/`/);
 	assert.match(profile, /CC BY-SA 4\.0/);
 	assert.ok(
@@ -235,7 +243,7 @@ test('governance records and attests the active release', async () => {
 	assert.match(lifecycle, /Каждый новый production/);
 	assert.match(voxAct, /Каждый новый production/);
 	assert.equal(policy.destination.repository, 'VOX');
-	assert.equal(policy.revision, '2.4.0');
+	assert.equal(policy.revision, '2.4.1');
 	assert.match(lifecycle, /record\.revision/);
 	assert.match(lifecycle, /sitemaps:build/);
 	assert.match(promptIndex, /MATERIAL_DEPRECATE_OR_DELETE\.md/);
@@ -248,17 +256,20 @@ test('governance records and attests the active release', async () => {
 	);
 	assert.equal(
 		acts.acts.find((entry) => entry.id === 'icw-act-vox-public-source-001')?.revision,
-		'2.4.0',
+		'2.4.1',
 	);
 	assert.equal(attestation.constitutionImpact.status, 'reviewed-no-change');
-	assert.equal(attestation.profileImpact.status, 'reviewed-no-change');
-	assert.equal(attestation.contentImpact.contentVersion, '1.11.0');
-	assert.equal(attestation.release.siteVersion, '1.10.0');
+	assert.equal(attestation.profileImpact.status, 'amended');
+	assert.equal(attestation.contentImpact.contentVersion, '1.16.0');
+	assert.equal(attestation.release.siteVersion, '1.15.0');
 	assert.equal(attestation.release.sourceCommit, siteManifest.sourceCommit);
-	assert.equal(attestation.release.questionCount, 455);
+	assert.equal(attestation.release.questionCount, 476);
 	assert.equal(attestation.release.sitemapCount, 4);
-	assert.equal(attestation.release.generalUrlsPerLocale, 35);
-	assert.equal(attestation.release.questionUrlsPerLocale, 455);
+	assert.equal(attestation.release.generalUrlsPerLocale, 40);
+	assert.equal(attestation.release.questionUrlsPerLocale, 476);
+	assert.equal(attestation.release.diagramCount, 82);
+	assert.equal(attestation.release.localizedDiagramCount, 164);
+	assert.equal(attestation.release.entitiesPerLocale, 645);
 	for (const document of attestation.documents) {
 		assert.equal(typeof document.path, 'string');
 		assert.match(document.sha256, /^[a-f0-9]{64}$/);
@@ -314,7 +325,7 @@ test('the anthem is a user-initiated persistent service of the locale shell', as
 	assert.doesNotMatch(privacy.body.en.join(' '), /requests[\s\S]*directly from Suno/i);
 	for (const [id, revision] of [
 		['icw-act-development-001', '1.7.0'],
-		['icw-act-site-experience-001', '1.9.0'],
+		['icw-act-site-experience-001', '1.10.0'],
 		['icw-act-patterns-001', '0.16.0'],
 	]) {
 		assert.equal(acts.acts.find((entry) => entry.id === id)?.revision, revision);
@@ -325,7 +336,7 @@ test('the anthem is a user-initiated persistent service of the locale shell', as
 	assert.match(patterns, /ICW-PAT20/);
 });
 
-test('the about page publishes one structured service story without invented evidence', async () => {
+test('the about page publishes an attributable portfolio and direct contact route', async () => {
 	const [pages, policy, gitmodules, runner] = await Promise.all([
 		readJson('semantic-core/corpus/pages/registry.json'),
 		readJson('vox/publication-policy.json'),
@@ -333,21 +344,40 @@ test('the about page publishes one structured service story without invented evi
 		readText('constitutional-guard/run.mjs'),
 	]);
 	const about = pages.find((entry) => entry.id === 'page.about');
-	assert.equal(about.revision, 4);
-	assert.equal(about.aboutStory.lifecycle.steps.length, 4);
-	assert.equal(about.aboutStory.lifecycle.examples.length, 2);
-	assert.equal(about.aboutStory.sections.length, 7);
+	assert.equal(about.revision, 9);
+	assert.deepEqual(about.conceptIds, ['concept.iron-creed']);
+	assert.equal(about.aboutStory.identityHintLabel.en, 'Who is IRON CREED?');
+	const cycle = pages.find((entry) => entry.id === 'page.material-cycle').materialCycle;
+	assert.equal(about.aboutStory.lifecycle, undefined);
+	assert.equal(cycle.steps.length, 4);
+	assert.equal(cycle.examples.length, 3);
+	assert.equal(about.aboutStory.sections.length, 8);
 	assert.deepEqual(
 		about.aboutStory.sections
 			.filter((entry) => entry.status === 'placeholder')
 			.map((entry) => entry.id),
-		['projects', 'testimonials'],
+		[],
 	);
-	assert.ok(
-		about.aboutStory.sections
-			.filter((entry) => entry.status === 'placeholder')
-			.every((entry) => entry.entries.length === 0 && !entry.link),
-	);
+	const projects = about.aboutStory.sections.find((entry) => entry.id === 'projects');
+	assert.equal(projects.status, 'active');
+	assert.equal(projects.entries.length, 5);
+	assert.match(JSON.stringify(projects), /20\+ внутрішніх сайтів/);
+	assert.match(JSON.stringify(projects), /zg-journal-template/);
+	assert.match(JSON.stringify(projects), /200\+ high-density cases/);
+	const testimonials = about.aboutStory.sections.find((entry) => entry.id === 'testimonials');
+	assert.equal(testimonials.status, 'active');
+	assert.equal(testimonials.entries.length, 19);
+	assert.ok(testimonials.entries.every((entry) => /^[A-Z]\. [A-Z]\.$/.test(entry.title.en)));
+	assert.match(JSON.stringify(testimonials), /Freelancehunt/);
+	assert.match(JSON.stringify(testimonials), /15 July 2026/);
+	const people = about.aboutStory.sections.find((entry) => entry.id === 'people');
+	assert.equal(people.kind, 'profiles');
+	assert.equal(people.entries.length, 2);
+	assert.equal(people.entries.find((entry) => entry.id === 'pan-canon').title.en, 'Sam Starling');
+	assert.doesNotMatch(JSON.stringify(testimonials), /Ruslan|Руслан/);
+	const contact = about.aboutStory.sections.find((entry) => entry.id === 'contact');
+	assert.equal(contact.fields, undefined);
+	assert.equal(contact.link.href.en, 'https://www.linkedin.com/company/IRONCREED');
 	assert.deepEqual(
 		policy.gitlinks.map((entry) => entry.path),
 		['code-constitution', 'repository-licensing-policy'],

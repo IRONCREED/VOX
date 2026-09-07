@@ -1,23 +1,41 @@
+import type { CSSProperties } from 'react';
 import type { DiagramDeclaration } from '../domain/diagram-model';
 
 export function MatrixDiagram({ diagram }: { diagram: DiagramDeclaration }) {
+	const sources = diagram.nodes.filter((node) => node.role === 'source');
+	const rows = diagram.nodes.filter((node) => node.role !== 'source');
+	const columnCount = Math.max(sources.length, 1);
+	const gridStyle = {
+		'--ic-matrix-columns': columnCount,
+	} as CSSProperties;
+
 	return (
-		<div className="ic-diagram-matrix" role="table">
+		<div className="ic-diagram-matrix" role="table" style={gridStyle}>
 			<div className="ic-diagram-matrix__row ic-diagram-matrix__row--head" role="row">
-				<span role="columnheader">Node</span>
-				<span role="columnheader">Role</span>
-				<span role="columnheader">Relations</span>
+				<span aria-hidden="true" />
+				{sources.map((source) => (
+					<strong key={source.id} role="columnheader">
+						{source.label}
+					</strong>
+				))}
 			</div>
-			{diagram.nodes.map((node) => (
-				<div className="ic-diagram-matrix__row" key={node.id} role="row">
-					<strong role="cell">{node.label}</strong>
-					<span role="cell">{node.role}</span>
-					<span role="cell">
-						{diagram.relations
-							.filter((relation) => relation.from === node.id || relation.to === node.id)
-							.map((relation) => relation.type)
-							.join(' · ') || '—'}
-					</span>
+			{rows.map((row) => (
+				<div className="ic-diagram-matrix__row" key={row.id} role="row">
+					<strong role="rowheader">{row.label}</strong>
+					{sources.map((source) => {
+						const relation = diagram.relations.find(
+							(candidate) => candidate.from === source.id && candidate.to === row.id,
+						);
+						return (
+							<span
+								data-relation-type={relation?.type ?? 'none'}
+								key={`${row.id}-${source.id}`}
+								role="cell"
+							>
+								{relation?.label ?? relation?.type ?? '—'}
+							</span>
+						);
+					})}
 				</div>
 			))}
 		</div>

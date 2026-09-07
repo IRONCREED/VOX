@@ -1,6 +1,6 @@
 # IRON CREED diagram system
 
-Status: normative implementation guide for release `1.10.0`.
+Status: normative implementation guide for release `1.11.0`.
 
 ## Contract
 
@@ -13,9 +13,11 @@ The canonical record is an `asset.*` entity in
 dependencies, not data formats. Exported SVG, WebP and PNG files are derived
 representations and may always be rebuilt.
 
-This release creates the infrastructure only. Existing 57 assets remain
-`editorial-request` records; no brief has been silently converted into a
-diagram and no coordinates have been invented.
+The 57 authorial graphic assignments are implemented as bilingual canonical
+projections. Their titles, publication descriptions and accessibility text are
+derived from the corresponding material; their entities and relations are
+declared in the registry. No renderer coordinates are stored in the canonical
+source.
 
 ## Declaration
 
@@ -70,18 +72,20 @@ never enables editing or drag persistence on a public article. Publication
 representation uses a stable viewport, deterministic ELK settings, no editing
 controls and required localized `alt`, `title`, caption and provenance.
 
-All article Markdown blockquotes beginning with the localized label
-`Graphic slot G##` are already rendered as styled asset briefs. When the
-corresponding asset is promoted to `diagram`, the same article slot renders the
-canonical diagram without changing the article body.
+Article Markdown blocks beginning with the English labels `Graphic slot G##`,
+`Visual slot G##`, `Diagram G##`, or `Figure G##`, as well as their Ukrainian
+equivalents, resolve the matching canonical asset. A diagram replaces the
+authorial brief in place without changing the article body. The server response
+retains a complete text transcript of its nodes and relations before the
+interactive renderer loads.
 
 ## Series
 
-A series should prefer one shared system asset with multiple modes and
-projections. Constitution Runtime may introduce
-`asset.constitution-runtime.system`; Articles VII–I then select a projection,
-mode, active entities and local labels. Shared nodes and relations are never
-copied between article assets.
+A series should prefer one shared semantic source with multiple modes and
+projections. All Constitution Runtime assets use
+`series.constitution-runtime` as their common source; Articles VII–I select a
+projection, mode, active canonical entities and local labels. Nodes that
+already exist in the corpus reference their stable entity IDs.
 
 ## Creating an asset
 

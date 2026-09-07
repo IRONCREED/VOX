@@ -59,7 +59,7 @@ test('the public player uses one verified same-origin audio asset', async () => 
 	assert.doesNotMatch(privacy.body, /requests the audio file directly from Suno/);
 });
 
-test('the public release exposes the new brand, services story, and reusable placeholders', async () => {
+test('the public release exposes the brand, service story, portfolio, and profiles', async () => {
 	const [pages, brand, component] = await Promise.all([
 		readJson('semantic-core/dist/site/pages.json'),
 		readFile(path.join(projectRoot, 'public/brand/iron-creed-mark.svg')),
@@ -67,21 +67,28 @@ test('the public release exposes the new brand, services story, and reusable pla
 	]);
 
 	const about = pages.find((entry) => entry.id === 'page.about.en');
-	assert.equal(about.aboutStory.sections.length, 7);
+	assert.equal(about.aboutStory.sections.length, 8);
+	assert.equal(about.aboutStory.sections.find((entry) => entry.id === 'projects').status, 'active');
 	assert.equal(
-		about.aboutStory.sections.find((entry) => entry.id === 'projects').status,
-		'placeholder',
+		about.aboutStory.sections.find((entry) => entry.id === 'projects').entries.length,
+		5,
 	);
-	assert.deepEqual(
-		about.aboutStory.sections.find((entry) => entry.id === 'testimonials').entries,
-		[],
-	);
+	assert.equal(about.aboutStory.sections.find((entry) => entry.id === 'people').entries.length, 2);
+	const testimonials = about.aboutStory.sections.find((entry) => entry.id === 'testimonials');
+	assert.equal(testimonials.entries.length, 19);
+	assert.equal(testimonials.link, undefined);
+	assert.match(testimonials.body, /reviews from all platforms/);
+	assert.match(testimonials.body, /available on request/);
 	assert.equal(
 		about.aboutStory.sections.find((entry) => entry.id === 'warden').link.href,
 		'https://github.com/IRONCREED/VOX/tree/main/constitutional-guard',
 	);
 	assert.ok(brand.byteLength > 100_000);
 	assert.match(component, /about-service__entries/);
+	assert.match(
+		await readText('src/interface-system/components/material-cycle.tsx'),
+		/about-cycle__conclusion/,
+	);
 	await access(path.join(projectRoot, 'public/favicon.svg'));
 });
 
@@ -111,8 +118,9 @@ test('the public diagram runtime is reproducible without exporting editorial sou
 		packageManifest.scripts['diagram:export'],
 		'playwright test --config=playwright.diagram.config.ts',
 	);
-	assert.equal(assets.length, 114);
-	assert.equal(assets.filter((asset) => asset.assetType === 'diagram').length, 0);
+	assert.equal(assets.length, 164);
+	assert.equal(assets.filter((asset) => asset.assetType === 'diagram').length, 164);
+	assert.ok(assets.every((asset) => asset.publication?.alt && asset.publication?.provenance));
 	assert.ok(schema.properties.projection.enum.includes('warden'));
 	assert.match(documentation, /canonical record is an `asset\.\*` entity/);
 	assert.match(articleBody, /DiagramAssetSlot/);

@@ -19,10 +19,16 @@ export default function manifest(): MetadataRoute.Manifest {
 				purpose: 'any',
 			},
 			{
-				src: BRAND_FAVICON_SRC,
-				sizes: 'any',
-				type: 'image/svg+xml',
-				purpose: 'maskable',
+				src: '/favicon-192.png?v=20260906',
+				sizes: '192x192',
+				type: 'image/png',
+				purpose: 'any',
+			},
+			{
+				src: '/favicon-512.png?v=20260906',
+				sizes: '512x512',
+				type: 'image/png',
+				purpose: 'any',
 			},
 		],
 	};

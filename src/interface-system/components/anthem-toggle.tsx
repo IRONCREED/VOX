@@ -7,11 +7,13 @@ export function AnthemToggle({
 	pauseLabel,
 	playLabel,
 	unavailableLabel,
+	showLabel = false,
 }: {
 	loadingLabel: string;
 	pauseLabel: string;
 	playLabel: string;
 	unavailableLabel: string;
+	showLabel?: boolean;
 }) {
 	const { activeTrack, status, toggle } = useSiteAudio();
 	const isLoading = status === 'loading';
@@ -29,7 +31,7 @@ export function AnthemToggle({
 		<button
 			aria-label={`${actionLabel}: ${activeTrack.title}`}
 			aria-pressed={isActive}
-			className="anthem-toggle"
+			className={`anthem-toggle${showLabel ? ' anthem-toggle--labelled' : ''}`}
 			onClick={() => void toggle()}
 			title={`${actionLabel}: ${activeTrack.title}`}
 			type="button"
@@ -44,6 +46,7 @@ export function AnthemToggle({
 					<i />
 				)}
 			</span>
+			{showLabel ? <span>{actionLabel}</span> : null}
 		</button>
 	);
 }

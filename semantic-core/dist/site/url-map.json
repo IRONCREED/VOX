@@ -3,6 +3,7 @@
 		"kind": "page",
 		"id": "page.about",
 		"pageId": "page.about",
+		"order": 10,
 		"locale": "en",
 		"path": "/en/pages/about",
 		"legacyUrls": []
@@ -11,14 +12,25 @@
 		"kind": "page",
 		"id": "page.ai-policy",
 		"pageId": "page.ai-policy",
+		"order": 120,
 		"locale": "en",
 		"path": "/en/pages/ai-policy",
 		"legacyUrls": []
 	},
 	{
 		"kind": "page",
+		"id": "page.anthem",
+		"pageId": "page.anthem",
+		"order": 12,
+		"locale": "en",
+		"path": "/en/pages/anthem",
+		"legacyUrls": []
+	},
+	{
+		"kind": "page",
 		"id": "page.corpus-index",
 		"pageId": "page.corpus-index",
+		"order": 20,
 		"locale": "en",
 		"path": "/en/pages/corpus-index",
 		"legacyUrls": []
@@ -27,14 +39,25 @@
 		"kind": "page",
 		"id": "page.licensing",
 		"pageId": "page.licensing",
+		"order": 130,
 		"locale": "en",
 		"path": "/en/pages/licensing",
 		"legacyUrls": []
 	},
 	{
 		"kind": "page",
+		"id": "page.material-cycle",
+		"pageId": "page.material-cycle",
+		"order": 11,
+		"locale": "en",
+		"path": "/en/pages/material-cycle",
+		"legacyUrls": []
+	},
+	{
+		"kind": "page",
 		"id": "page.privacy-policy",
 		"pageId": "page.privacy-policy",
+		"order": 110,
 		"locale": "en",
 		"path": "/en/pages/privacy-policy",
 		"legacyUrls": []
@@ -43,8 +66,17 @@
 		"kind": "page",
 		"id": "page.terms-of-use",
 		"pageId": "page.terms-of-use",
+		"order": 100,
 		"locale": "en",
 		"path": "/en/pages/terms-of-use",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.cloudflare-001-crawler-surface-policy",
+		"materialId": "material.cloudflare-001-crawler-surface-policy",
+		"locale": "en",
+		"path": "/en/programming/cloudflare-001-crawler-surface-policy",
 		"legacyUrls": []
 	},
 	{
@@ -101,6 +133,14 @@
 		"materialId": "material.constitution-runtime-04-article-iv",
 		"locale": "en",
 		"path": "/en/research/link-america-how-article-iv-turns-the-states-into-a-federal-network",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.regulated-availability",
+		"materialId": "material.regulated-availability",
+		"locale": "en",
+		"path": "/en/research/regulated-availability",
 		"legacyUrls": []
 	},
 	{
@@ -248,9 +288,18 @@
 		"legacyUrls": []
 	},
 	{
+		"kind": "series",
+		"id": "series.cloudflare-operations",
+		"seriesId": "series.cloudflare-operations",
+		"locale": "en",
+		"path": "/en/series/the-great-and-terrible-cloudflare",
+		"legacyUrls": []
+	},
+	{
 		"kind": "page",
 		"id": "page.about",
 		"pageId": "page.about",
+		"order": 10,
 		"locale": "uk",
 		"path": "/uk/pages/about",
 		"legacyUrls": []
@@ -259,14 +308,25 @@
 		"kind": "page",
 		"id": "page.ai-policy",
 		"pageId": "page.ai-policy",
+		"order": 120,
 		"locale": "uk",
 		"path": "/uk/pages/ai-policy",
 		"legacyUrls": []
 	},
 	{
 		"kind": "page",
+		"id": "page.anthem",
+		"pageId": "page.anthem",
+		"order": 12,
+		"locale": "uk",
+		"path": "/uk/pages/anthem",
+		"legacyUrls": []
+	},
+	{
+		"kind": "page",
 		"id": "page.corpus-index",
 		"pageId": "page.corpus-index",
+		"order": 20,
 		"locale": "uk",
 		"path": "/uk/pages/corpus-index",
 		"legacyUrls": []
@@ -275,14 +335,25 @@
 		"kind": "page",
 		"id": "page.licensing",
 		"pageId": "page.licensing",
+		"order": 130,
 		"locale": "uk",
 		"path": "/uk/pages/licensing",
 		"legacyUrls": []
 	},
 	{
 		"kind": "page",
+		"id": "page.material-cycle",
+		"pageId": "page.material-cycle",
+		"order": 11,
+		"locale": "uk",
+		"path": "/uk/pages/material-cycle",
+		"legacyUrls": []
+	},
+	{
+		"kind": "page",
 		"id": "page.privacy-policy",
 		"pageId": "page.privacy-policy",
+		"order": 110,
 		"locale": "uk",
 		"path": "/uk/pages/privacy-policy",
 		"legacyUrls": []
@@ -291,8 +362,17 @@
 		"kind": "page",
 		"id": "page.terms-of-use",
 		"pageId": "page.terms-of-use",
+		"order": 100,
 		"locale": "uk",
 		"path": "/uk/pages/terms-of-use",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.cloudflare-001-crawler-surface-policy",
+		"materialId": "material.cloudflare-001-crawler-surface-policy",
+		"locale": "uk",
+		"path": "/uk/programming/cloudflare-001-crawler-surface-policy",
 		"legacyUrls": []
 	},
 	{
@@ -333,6 +413,14 @@
 		"materialId": "material.constitution-runtime-01-article-vii",
 		"locale": "uk",
 		"path": "/uk/research/pidkliuchyty-ameryku-yak-stattia-vii-zapuskaie-respubliku",
+		"legacyUrls": []
+	},
+	{
+		"kind": "material",
+		"id": "material.regulated-availability",
+		"materialId": "material.regulated-availability",
+		"locale": "uk",
+		"path": "/uk/research/rehulovana-dostupnist",
 		"legacyUrls": []
 	},
 	{
@@ -493,6 +581,14 @@
 		"seriesId": "series.psychobiosocial-patterns",
 		"locale": "uk",
 		"path": "/uk/series/psykhobiosotsialni-paterny",
+		"legacyUrls": []
+	},
+	{
+		"kind": "series",
+		"id": "series.cloudflare-operations",
+		"seriesId": "series.cloudflare-operations",
+		"locale": "uk",
+		"path": "/uk/series/velykyi-i-zhakhlyvyi-cloudflare",
 		"legacyUrls": []
 	}
 ]

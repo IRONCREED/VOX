@@ -17,6 +17,7 @@ import {
 	SIDEBAR_WIDTH_STORAGE_KEY,
 } from '../sidebar-contract';
 import { SocialLinks } from './social-links';
+import { SectionIcon } from './section-icon';
 
 interface NavigationLink {
 	href: string;
@@ -211,7 +212,7 @@ export function SiteNavigation({
 					item.disabled ? (
 						<span aria-disabled="true" className="navigation-item is-disabled" key={item.id}>
 							<span aria-hidden="true" className="nav-icon">
-								{item.icon}
+								<SectionIcon sectionId={item.id} />
 							</span>
 							<span>{item.label}</span>
 							{item.badge ? <small>{item.badge}</small> : null}
@@ -224,7 +225,7 @@ export function SiteNavigation({
 							key={item.id}
 						>
 							<span aria-hidden="true" className="nav-icon">
-								{item.icon}
+								<SectionIcon sectionId={item.id} />
 							</span>
 							<span>{item.label}</span>
 						</Link>

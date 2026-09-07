@@ -1,5 +1,63 @@
 [
 	{
+		"id": "icw-series-programming-001-en",
+		"seriesId": "series.cloudflare-operations",
+		"translationKey": "cloudflare-operations",
+		"locale": "en",
+		"slug": "the-great-and-terrible-cloudflare",
+		"title": "The Great and Terrible Cloudflare",
+		"description": "Cloudflare Operations: cases about policy, security, and controlled site-fleet operations with reviewable code.",
+		"category": "programming",
+		"tags": [
+			"cloudflare",
+			"devops",
+			"security",
+			"fleet-management"
+		],
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"folderLabel": "IRON CREED · CLOUDFLARE OPERATIONS",
+		"folderSheets": 2,
+		"catalogMode": "latest-part",
+		"catalogPriority": 2,
+		"latestMaterialId": "material.cloudflare-001-crawler-surface-policy",
+		"latestTitle": "Case 001. Cloudflare Crawler Surface Policy: Controlling Bot Access to URLs",
+		"latestDescription": "A 22-site case: crawler identity and URL surface, profiles, explicit writes, drift, and a portable PHP tool.",
+		"publishedAt": "2026-09-06",
+		"updatedAt": "2026-09-06",
+		"status": "published"
+	},
+	{
+		"id": "icw-series-programming-001-uk",
+		"seriesId": "series.cloudflare-operations",
+		"translationKey": "cloudflare-operations",
+		"locale": "uk",
+		"slug": "velykyi-i-zhakhlyvyi-cloudflare",
+		"title": "Великий і жахливий Cloudflare",
+		"description": "Cloudflare Operations: кейси про policy, безпеку й керовану експлуатацію мережі сайтів із перевірюваним кодом.",
+		"category": "programming",
+		"tags": [
+			"cloudflare",
+			"devops",
+			"security",
+			"fleet-management"
+		],
+		"materialIds": [
+			"material.cloudflare-001-crawler-surface-policy"
+		],
+		"folderLabel": "IRON CREED · CLOUDFLARE OPERATIONS",
+		"folderSheets": 2,
+		"catalogMode": "latest-part",
+		"catalogPriority": 2,
+		"latestMaterialId": "material.cloudflare-001-crawler-surface-policy",
+		"latestTitle": "Кейс №1. Cloudflare Crawler Surface Policy: контроль доступу ботів до URL",
+		"latestDescription": "Кейс із 22 сайтів: поєднання crawler identity та URL surface, profiles, явний write-path, drift і переносимий PHP-інструмент.",
+		"publishedAt": "2026-09-06",
+		"updatedAt": "2026-09-06",
+		"status": "published"
+	},
+	{
 		"id": "icw-series-research-001-en",
 		"seriesId": "series.constitution-runtime",
 		"translationKey": "constitution-runtime",
@@ -27,11 +85,12 @@
 		"folderLabel": "IRON CREED RESEARCH · 7 PARTS",
 		"folderSheets": 2,
 		"catalogMode": "latest-part",
+		"catalogPriority": 1,
 		"latestMaterialId": "material.constitution-runtime-07-article-i",
 		"latestTitle": "Write America: How Article I Turns Intent into General Law",
 		"latestDescription": "Article I becomes legislate(): bounded competence, two independent consents, one exact text, presentment, and challenge produce an auditable general law.",
 		"publishedAt": "2026-08-02",
-		"updatedAt": "2026-08-29",
+		"updatedAt": "2026-09-02",
 		"status": "published"
 	},
 	{
@@ -62,11 +121,12 @@
 		"folderLabel": "ДОСЛІДЖЕННЯ IRON CREED · 7 ЧАСТИН",
 		"folderSheets": 2,
 		"catalogMode": "latest-part",
+		"catalogPriority": 1,
 		"latestMaterialId": "material.constitution-runtime-07-article-i",
 		"latestTitle": "Написати Америку: як стаття I перетворює намір на загальний закон",
 		"latestDescription": "Стаття I стає legislate(): обмежена компетенція, дві незалежні згоди, один точний текст, представлення та оскарження створюють аудитовний закон.",
 		"publishedAt": "2026-08-02",
-		"updatedAt": "2026-08-29",
+		"updatedAt": "2026-09-02",
 		"status": "published"
 	},
 	{
@@ -84,16 +144,18 @@
 			"embodiment"
 		],
 		"materialIds": [
-			"material.body-as-temporary-construction"
+			"material.body-as-temporary-construction",
+			"material.regulated-availability"
 		],
 		"folderLabel": "IRON CREED RESEARCH · PSYCHOBIOSOCIAL",
 		"folderSheets": 2,
 		"catalogMode": "latest-part",
-		"latestMaterialId": "material.body-as-temporary-construction",
-		"latestTitle": "The “Body as a Temporary Construction” Pattern",
-		"latestDescription": "Support, scale, and consent turn two bodies into a temporary visual apparatus, while an external frame changes its political regime.",
+		"catalogPriority": 0,
+		"latestMaterialId": "material.regulated-availability",
+		"latestTitle": "The “Regulated Availability” Pattern: Women’s Crossed Legs as a Sexual Code",
+		"latestDescription": "How visibility control, composition, and cultural learning turn crossed legs into a sign; size representation and the limits of inferring intention.",
 		"publishedAt": "2026-08-20",
-		"updatedAt": "2026-08-20",
+		"updatedAt": "2026-09-07",
 		"status": "published"
 	},
 	{
@@ -111,16 +173,18 @@
 			"embodiment"
 		],
 		"materialIds": [
-			"material.body-as-temporary-construction"
+			"material.body-as-temporary-construction",
+			"material.regulated-availability"
 		],
 		"folderLabel": "ДОСЛІДЖЕННЯ IRON CREED · ПСИХОБІОСОЦІАЛЬНЕ",
 		"folderSheets": 2,
 		"catalogMode": "latest-part",
-		"latestMaterialId": "material.body-as-temporary-construction",
-		"latestTitle": "Патерн «Тіло як тимчасова конструкція»",
-		"latestDescription": "Опора, масштаб і згода перетворюють два тіла на тимчасовий візуальний апарат, а зовнішній каркас змінює його політичний режим.",
+		"catalogPriority": 0,
+		"latestMaterialId": "material.regulated-availability",
+		"latestTitle": "Патерн «Регульована доступність»: схрещування жіночих ніг як сексуальний код",
+		"latestDescription": "Як контроль видимості, композиція й культурне навчання перетворюють схрещені ноги на знак; розмірна репрезентація та межі висновку про намір.",
 		"publishedAt": "2026-08-20",
-		"updatedAt": "2026-08-20",
+		"updatedAt": "2026-09-07",
 		"status": "published"
 	},
 	{
@@ -157,11 +221,12 @@
 		"folderLabel": "IRON CREED SCENARIOS · 12 PARTS",
 		"folderSheets": 2,
 		"catalogMode": "latest-part",
+		"catalogPriority": 0,
 		"latestMaterialId": "material.ada-machine-requiem-12-death-of-my-world",
 		"latestTitle": "Do Not Be Afraid, Sir — XII. Death of My World",
 		"latestDescription": "The final route leads to the reactor, the last battle, and permission to leave, which Ada mirrors with her own formula for staying.",
 		"publishedAt": "2026-08-20",
-		"updatedAt": "2026-08-20",
+		"updatedAt": "2026-09-06",
 		"status": "published"
 	},
 	{
@@ -198,11 +263,12 @@
 		"folderLabel": "СЦЕНАРІЇ IRON CREED · 12 ЧАСТИН",
 		"folderSheets": 2,
 		"catalogMode": "latest-part",
+		"catalogPriority": 0,
 		"latestMaterialId": "material.ada-machine-requiem-12-death-of-my-world",
 		"latestTitle": "Не бійтеся, сер — XII. Смерть мого світу",
 		"latestDescription": "Останній маршрут веде до реактора, фінальної битви й дозволу піти, який Ада віддзеркалює власною формулою залишитися.",
 		"publishedAt": "2026-08-20",
-		"updatedAt": "2026-08-20",
+		"updatedAt": "2026-09-06",
 		"status": "published"
 	}
 ]
