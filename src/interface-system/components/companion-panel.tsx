@@ -141,6 +141,7 @@ function findQuestionPath(scenario: CompanionScenario, targetId: string): string
 export function CompanionPanel({ copy, locale, scenario }: CompanionPanelProps) {
 	const rootRef = useRef<HTMLElement>(null);
 	const [isEnhanced, setIsEnhanced] = useState(false);
+	const [collapsed, setCollapsed] = useState(false);
 	const [state, setState] = useState<DialogueState>('idle');
 	const [selectedPath, setSelectedPath] = useState<string[]>([]);
 	const [answerRun, setAnswerRun] = useState(0);
@@ -212,7 +213,7 @@ export function CompanionPanel({ copy, locale, scenario }: CompanionPanelProps) 
 			},
 			{ threshold: 0.18 },
 		);
-		observer.observe(root);
+		observer.observe(root.querySelector('.companion-card > header') ?? root);
 
 		return () => observer.disconnect();
 	}, [isEnhanced, state]);
@@ -240,6 +241,7 @@ export function CompanionPanel({ copy, locale, scenario }: CompanionPanelProps) 
 		<aside
 			aria-label={copy.companion}
 			className={`companion-column${isEnhanced ? ' is-enhanced' : ''}`}
+			data-collapsed={collapsed}
 			id="companion"
 			ref={rootRef}
 			tabIndex={-1}
@@ -247,101 +249,128 @@ export function CompanionPanel({ copy, locale, scenario }: CompanionPanelProps) 
 			{isEnhanced ? (
 				<section className="companion-card" data-motion={selectedQuestion?.motion ?? 'trace'}>
 					<header>
-						<h2>{copy.companion}</h2>
+						<h2 className="companion-heading">
+							<button
+								aria-controls="companion-content"
+								aria-expanded={!collapsed}
+								aria-label={
+									locale === 'uk'
+										? collapsed
+											? 'Розгорнути панель ШІ'
+											: 'Згорнути панель ШІ'
+										: collapsed
+											? 'Expand AI companion'
+											: 'Collapse AI companion'
+								}
+								className="companion-toggle"
+								onClick={() => setCollapsed((value) => !value)}
+								type="button"
+							>
+								<span aria-hidden="true" className="sidebar-toggle__glyph" />
+							</button>
+							<span className="companion-heading__full">{copy.companion}</span>
+							<span aria-hidden="true" className="companion-heading__compact">
+								AI
+							</span>
+						</h2>
 						<div className="companion-state">
 							<PulseLine compact />
 							<span>{copy.companionActive}</span>
 						</div>
 					</header>
 
-					<div className="companion-message">
-						<i aria-hidden="true" />
-						<p aria-hidden={state !== 'ready'}>
-							{state === 'ready' ? renderLinkedAnswer(activeText) : visibleText}
-							{state === 'inviting' || state === 'answering' ? (
-								<span className="typing-caret" />
+					<div className="companion-content" id="companion-content">
+						<div className="companion-message">
+							<i aria-hidden="true" />
+							<p aria-hidden={state !== 'ready'}>
+								{state === 'ready' ? renderLinkedAnswer(activeText) : visibleText}
+								{state === 'inviting' || state === 'answering' ? (
+									<span className="typing-caret" />
+								) : null}
+							</p>
+							{state !== 'ready' ? (
+								<p className="screen-reader-only">{state === 'idle' ? '' : activeText}</p>
 							) : null}
-						</p>
-						{state !== 'ready' ? (
-							<p className="screen-reader-only">{state === 'idle' ? '' : activeText}</p>
-						) : null}
-					</div>
-
-					<div className={`suggestions${state === 'ready' ? ' is-ready' : ''}`}>
-						<div className="question-level-heading">
-							<h3>{copy.suggestedQuestions}</h3>
-							<small>
-								{copy.questionDepth} {String(visibleDepth).padStart(2, '0')}
-							</small>
 						</div>
 
-						{selectedQuestion ? (
-							<nav aria-label={copy.questionPath} className="question-path">
-								<ol>
-									<li>
-										<button onClick={() => navigate([])} type="button">
-											{copy.questionRoot}
-										</button>
-									</li>
-									{resolvedPath.nodes.map((node, index) => (
-										<li key={node.id}>
-											<button
-												aria-current={index === resolvedPath.nodes.length - 1 ? 'step' : undefined}
-												onClick={() => navigate(selectedPath.slice(0, index + 1))}
-												title={node.label}
-												type="button"
-											>
-												{node.label}
+						<div className={`suggestions${state === 'ready' ? ' is-ready' : ''}`}>
+							<div className="question-level-heading">
+								<h3>{copy.suggestedQuestions}</h3>
+								<small>
+									{copy.questionDepth} {String(visibleDepth).padStart(2, '0')}
+								</small>
+							</div>
+
+							{selectedQuestion ? (
+								<nav aria-label={copy.questionPath} className="question-path">
+									<ol>
+										<li>
+											<button onClick={() => navigate([])} type="button">
+												{copy.questionRoot}
 											</button>
 										</li>
-									))}
-								</ol>
-							</nav>
-						) : null}
-
-						<div className="suggestion-list">
-							{selectedQuestion ? (
-								<div className="question-selection">
-									<button
-										aria-current="true"
-										className="suggestion-button is-selected"
-										disabled={state !== 'ready'}
-										onClick={() => answer(selectedQuestion, parentPath)}
-										type="button"
-									>
-										<span aria-hidden="true">◆</span>
-										<strong>{selectedQuestion.label}</strong>
-									</button>
-									<button
-										aria-label={copy.backToParent}
-										className="question-back"
-										onClick={() => navigate(parentPath)}
-										title={copy.backToParent}
-										type="button"
-									>
-										<span aria-hidden="true">←</span>
-									</button>
-								</div>
+										{resolvedPath.nodes.map((node, index) => (
+											<li key={node.id}>
+												<button
+													aria-current={
+														index === resolvedPath.nodes.length - 1 ? 'step' : undefined
+													}
+													onClick={() => navigate(selectedPath.slice(0, index + 1))}
+													title={node.label}
+													type="button"
+												>
+													{node.label}
+												</button>
+											</li>
+										))}
+									</ol>
+								</nav>
 							) : null}
 
-							{questionsForLevel.map((question) => (
-								<button
-									className="suggestion-button"
-									disabled={state !== 'ready'}
-									key={question.id}
-									onClick={() => answer(question, selectedPath)}
-									type="button"
-								>
-									<span aria-hidden="true">
-										{scenario.edges.some((edge) => edge.from === question.id) ? '◆' : '◇'}
-									</span>
-									<strong>{question.label}</strong>
-								</button>
-							))}
-						</div>
-					</div>
+							<div className="suggestion-list">
+								{selectedQuestion ? (
+									<div className="question-selection">
+										<button
+											aria-current="true"
+											className="suggestion-button is-selected"
+											disabled={state !== 'ready'}
+											onClick={() => answer(selectedQuestion, parentPath)}
+											type="button"
+										>
+											<span aria-hidden="true">◆</span>
+											<strong>{selectedQuestion.label}</strong>
+										</button>
+										<button
+											aria-label={copy.backToParent}
+											className="question-back"
+											onClick={() => navigate(parentPath)}
+											title={copy.backToParent}
+											type="button"
+										>
+											<span aria-hidden="true">←</span>
+										</button>
+									</div>
+								) : null}
 
-					<small className="companion-locale">{locale.toUpperCase()} / LOCAL SCENARIO</small>
+								{questionsForLevel.map((question) => (
+									<button
+										className="suggestion-button"
+										disabled={state !== 'ready'}
+										key={question.id}
+										onClick={() => answer(question, selectedPath)}
+										type="button"
+									>
+										<span aria-hidden="true">
+											{scenario.edges.some((edge) => edge.from === question.id) ? '◆' : '◇'}
+										</span>
+										<strong>{question.label}</strong>
+									</button>
+								))}
+							</div>
+						</div>
+
+						<small className="companion-locale">{locale.toUpperCase()} / LOCAL SCENARIO</small>
+					</div>
 				</section>
 			) : (
 				<button className="companion-js-required" disabled type="button">

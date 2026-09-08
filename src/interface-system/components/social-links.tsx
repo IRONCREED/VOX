@@ -25,11 +25,12 @@ interface SocialLinksProps {
 }
 
 export function SocialLinks({ label, locale, variant = 'sidebar' }: SocialLinksProps) {
+	const links = variant === 'modal' ? SOCIAL_LINKS.toReversed() : SOCIAL_LINKS;
 	return (
 		<section aria-label={label} className={`social-links social-links--${variant}`} lang={locale}>
 			<strong>{label}</strong>
 			<ul>
-				{SOCIAL_LINKS.map((link) => (
+				{links.map((link) => (
 					<li key={link.href}>
 						<a href={link.href} rel="noreferrer noopener" target="_blank">
 							<i aria-hidden="true">{link.mark}</i>

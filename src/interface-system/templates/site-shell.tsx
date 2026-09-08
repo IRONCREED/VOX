@@ -10,6 +10,7 @@ import {
 	getPolicyPages,
 } from '../../content-catalog/adapters/corpus-content-repository';
 import type { BuildIdentity } from '../../site-navigation/application/build-identity';
+import { InlineMarkdown } from '../components/article-body';
 import { LoadingGate } from '../components/loading-gate';
 import type { HeaderContextActions } from '../components/header-action-dock';
 import { SiteHeader } from '../components/site-header';
@@ -61,7 +62,7 @@ export function SiteShell({
 					copy={copy}
 					locale={locale}
 					welcome={{
-						description: aboutPage.description,
+						description: <InlineMarkdown source={aboutPage.description} />,
 						href: getContentPageHref(aboutPage),
 					}}
 				/>

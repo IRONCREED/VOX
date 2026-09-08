@@ -6,9 +6,9 @@ released interface, the adopted project governance and IRON WARDEN audit
 surface, build and test configuration, licensing notices, and English public
 documentation.
 
-- Website version: `1.15.0`
+- Website version: `1.16.0`
 - Public corpus version: `1.16.0`
-- Application source commit: `6539f03633612af7abf8ef9e0656b4d13b8502dc`
+- Application source commit: `042a82c7c29ac9a288397507fb6b6c556a7afac9`
 - Corpus projection source commit: `ae24873cbde3e41d1270d7b01220f2ff537d89f7`
 - Public content digest: `2247070a7d413792b654dee3ebcf30253a03ae6699702018cc0b6c44d21d2008`
 - Production site: <https://ironcreed-credo.ironcreed.chatgpt.site>

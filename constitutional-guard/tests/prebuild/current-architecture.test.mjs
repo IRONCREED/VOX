@@ -142,7 +142,7 @@ test('the site consumes the checked projection and exposes a dedicated corpus in
 	assert.match(navigation, /build-identity__index/);
 	assert.doesNotMatch(navigation, /EntityIndexTree/);
 	assert.match(buildScript, /run build:check/);
-	assert.equal(packageManifest.version, '1.15.0');
+	assert.equal(packageManifest.version, '1.16.0');
 });
 
 test('the entity index links only through canonical material associations', async () => {
@@ -210,7 +210,7 @@ test('governance records and attests the active release', async () => {
 		readJson('vox/publication-policy.json'),
 		readText('semantic-core/docs/article-publication-template-v4.txt'),
 		readText('governance/prompts/README.md'),
-		readJson('governance/attestations/project-pages-public-release-2026-09-07.json'),
+		readJson('governance/attestations/responsive-panels-release-2026-09-07.json'),
 		readJson('semantic-core/dist/site/manifest.json'),
 	]);
 	assert.match(profile, /Редакция: `0\.8\.0`/);
@@ -259,9 +259,9 @@ test('governance records and attests the active release', async () => {
 		'2.4.1',
 	);
 	assert.equal(attestation.constitutionImpact.status, 'reviewed-no-change');
-	assert.equal(attestation.profileImpact.status, 'amended');
+	assert.equal(attestation.profileImpact.status, 'reviewed-no-change');
 	assert.equal(attestation.contentImpact.contentVersion, '1.16.0');
-	assert.equal(attestation.release.siteVersion, '1.15.0');
+	assert.equal(attestation.release.siteVersion, '1.16.0');
 	assert.equal(attestation.release.sourceCommit, siteManifest.sourceCommit);
 	assert.equal(attestation.release.questionCount, 476);
 	assert.equal(attestation.release.sitemapCount, 4);
@@ -325,7 +325,7 @@ test('the anthem is a user-initiated persistent service of the locale shell', as
 	assert.doesNotMatch(privacy.body.en.join(' '), /requests[\s\S]*directly from Suno/i);
 	for (const [id, revision] of [
 		['icw-act-development-001', '1.7.0'],
-		['icw-act-site-experience-001', '1.10.0'],
+		['icw-act-site-experience-001', '1.11.0'],
 		['icw-act-patterns-001', '0.16.0'],
 	]) {
 		assert.equal(acts.acts.find((entry) => entry.id === id)?.revision, revision);

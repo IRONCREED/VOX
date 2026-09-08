@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import type { InterfaceCopy, Locale } from '../../content-catalog/domain/content-model';
 import { ModalDialog } from './modal-dialog';
 import { SocialLinks } from './social-links';
@@ -10,7 +10,7 @@ const WELCOME_STORAGE_KEY = 'ironcreed:welcome-seen:v1';
 const LOADER_COMPLETE_EVENT = 'ironcreed:loading-gate-complete';
 
 interface WelcomeContent {
-	description: string;
+	description: ReactNode;
 	href: string;
 }
 
@@ -102,6 +102,7 @@ export function SiteModalLayer({ contentNotice, copy, locale, welcome }: SiteMod
 					</>
 				}
 				eyebrow="IRON CREED / SYSTEM ENTRY"
+				initialFocus="title"
 				onCancel={finishWelcome}
 				open={activeModal === 'welcome'}
 				title={copy.welcomeTitle}

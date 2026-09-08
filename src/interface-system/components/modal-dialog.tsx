@@ -9,6 +9,7 @@ interface ModalDialogProps {
 	eyebrow: string;
 	onCancel?: () => void;
 	open: boolean;
+	initialFocus?: 'title';
 	title: string;
 }
 
@@ -18,18 +19,23 @@ export function ModalDialog({
 	eyebrow,
 	onCancel,
 	open,
+	initialFocus,
 	title,
 }: ModalDialogProps) {
 	const dialogRef = useRef<HTMLDialogElement>(null);
 	const titleId = useId();
+	const titleRef = useRef<HTMLHeadingElement>(null);
 
 	useEffect(() => {
 		const dialog = dialogRef.current;
 		if (!dialog) return;
 
-		if (open && !dialog.open) dialog.showModal();
+		if (open && !dialog.open) {
+			dialog.showModal();
+			if (initialFocus === 'title') titleRef.current?.focus({ preventScroll: true });
+		}
 		if (!open && dialog.open) dialog.close();
-	}, [open]);
+	}, [open, initialFocus]);
 
 	return (
 		<dialog
@@ -44,7 +50,9 @@ export function ModalDialog({
 			<div className="site-modal__signal" />
 			<header>
 				<small>{eyebrow}</small>
-				<h2 id={titleId}>{title}</h2>
+				<h2 id={titleId} ref={titleRef} tabIndex={initialFocus === 'title' ? -1 : undefined}>
+					{title}
+				</h2>
 			</header>
 			<div className="site-modal__body">{children}</div>
 			<footer>{actions}</footer>
