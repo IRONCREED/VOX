@@ -25,8 +25,8 @@ export function SectionIcon({
 			className={`section-icon section-icon--${variant}`}
 			draggable="false"
 			height={96}
-			src={`/brand/navigation/${icon}-96.png`}
-			srcSet={`/brand/navigation/${icon}-96.png 96w, /brand/navigation/${icon}-192.png 192w`}
+			src={`/brand/navigation/${icon}-cyan-96.png`}
+			srcSet={`/brand/navigation/${icon}-cyan-96.png 96w, /brand/navigation/${icon}-cyan-192.png 192w`}
 			sizes={
 				variant === 'heading' ? '(max-width: 960px) 48px, (max-width: 1520px) 5vw, 76px' : '31px'
 			}

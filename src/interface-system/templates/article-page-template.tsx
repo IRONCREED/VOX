@@ -140,7 +140,6 @@ export function ArticlePageTemplate({
 							</Link>
 						) : null}
 						<h1>{article.title}</h1>
-						<div className="title-rule" />
 						<p>{article.description}</p>
 						<div className="article-publication-meta">
 							<span>{article.type}</span>

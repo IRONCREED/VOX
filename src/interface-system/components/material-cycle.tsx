@@ -15,6 +15,7 @@ export function MaterialCycle({ cycle }: { cycle: LocalizedMaterialCycle }) {
 			</ol>
 			<div className="material-cycle-table article-document">
 				<table>
+					<caption>{cycle.examplesCaption}</caption>
 					<thead>
 						<tr>
 							{cycle.tableLabels.map((label) => (

@@ -679,10 +679,11 @@
 		"description": "Many materials progress from a working question through research and public adaptation to the next verified change. The starting point may be Zhovten Games, a client IT case, or an independent engineering observation.",
 		"shortLabel": "Material cycle",
 		"eyebrow": "MATERIAL CYCLE",
-		"body": "From a working question to a verifiable publication\n\nMany materials progress from a working question through research and public adaptation to the next verified change. The starting point may be Zhovten Games, a client IT case, or an independent engineering observation.\n\nIdea or IT case: A studio task, client request, or observation of an IT system establishes the initial question.\n\nResearch and record: Sources, reasoning, and the edition receive a durable form, including a Zenodo record where appropriate.\n\nIRON CREED adaptation: The material is rebuilt for the site, translated, and connected to the semantic index.\n\nVerification and the next change: WARDEN, indexes, and release rules verify the result; findings return to engineering work.\n\nResearch into software architecture rules: [Code Constitution · Zenodo](https://doi.org/10.5281/zenodo.21894242) → [The Constitution That Runs series](/en/series/the-constitution-that-runs)\n\nResearch into technical writing and documentation: [Literate Programming review · Zenodo](https://doi.org/10.5281/zenodo.20608558) → [Why Documentation Matters](/en/programming/why-documentation-matters)\n\nPractical IT case: crawler policy for websites: [Crawler Surface Policy · code](https://github.com/IRONCREED/cloudflare) → [The Great and Terrible Cloudflare](/en/series/the-great-and-terrible-cloudflare)\n\nPractical experience supplies questions for publication, and verified findings inform subsequent work. The scope and depth of each stage depend on the task.",
+		"body": "From a working question to a verifiable publication\n\nMany materials progress from a working question through research and public adaptation to the next verified change. The starting point may be Zhovten Games, a client IT case, or an independent engineering observation.\n\nIdea or IT case: A studio task, client request, or observation of an IT system establishes the initial question.\n\nResearch and record: Sources, reasoning, and the edition receive a durable form, including a Zenodo record where appropriate.\n\nIRON CREED adaptation: The material is rebuilt for the site, translated, and connected to the semantic index.\n\nVerification and the next change: WARDEN, indexes, and release rules verify the result; findings return to engineering work.\n\nExamples of the material cycle in chronological order.\n\nResearch into technical writing and documentation: [Literate Programming review · Zenodo](https://doi.org/10.5281/zenodo.20608558) → [Why Documentation Matters](/en/programming/why-documentation-matters)\n\nResearch into software architecture rules: [Code Constitution · Zenodo](https://doi.org/10.5281/zenodo.21894242) → [The Constitution That Runs series](/en/series/the-constitution-that-runs)\n\nPractical IT case: crawler policy for websites: [Crawler Surface Policy · code](https://github.com/IRONCREED/cloudflare) → [The Great and Terrible Cloudflare](/en/series/the-great-and-terrible-cloudflare)\n\nPractical experience supplies questions for publication, and verified findings inform subsequent work. The scope and depth of each stage depend on the task.",
 		"pageType": "material-cycle",
 		"status": "published",
 		"materialCycle": {
+			"examplesCaption": "Examples of the material cycle in chronological order.",
 			"tableLabels": [
 				"Initiator / context",
 				"Recorded basis",
@@ -719,18 +720,6 @@
 			],
 			"examples": [
 				{
-					"id": "code-constitution",
-					"initiator": "Research into software architecture rules",
-					"source": {
-						"label": "Code Constitution · Zenodo",
-						"href": "https://doi.org/10.5281/zenodo.21894242"
-					},
-					"result": {
-						"label": "The Constitution That Runs series",
-						"href": "/en/series/the-constitution-that-runs"
-					}
-				},
-				{
 					"id": "literate-programming",
 					"initiator": "Research into technical writing and documentation",
 					"source": {
@@ -740,6 +729,18 @@
 					"result": {
 						"label": "Why Documentation Matters",
 						"href": "/en/programming/why-documentation-matters"
+					}
+				},
+				{
+					"id": "code-constitution",
+					"initiator": "Research into software architecture rules",
+					"source": {
+						"label": "Code Constitution · Zenodo",
+						"href": "https://doi.org/10.5281/zenodo.21894242"
+					},
+					"result": {
+						"label": "The Constitution That Runs series",
+						"href": "/en/series/the-constitution-that-runs"
 					}
 				},
 				{
@@ -768,10 +769,11 @@
 		"description": "Багато матеріалів проходять шлях від робочого питання до дослідження, публічної адаптації та наступної перевіреної зміни. Ініціатором може бути Zhovten Games, клієнтський ІТ-кейс або самостійне інженерне спостереження.",
 		"shortLabel": "Цикл матеріалу",
 		"eyebrow": "ЦИКЛ МАТЕРІАЛУ",
-		"body": "Від робочого питання до перевірюваної публікації\n\nБагато матеріалів проходять шлях від робочого питання до дослідження, публічної адаптації та наступної перевіреної зміни. Ініціатором може бути Zhovten Games, клієнтський ІТ-кейс або самостійне інженерне спостереження.\n\nІдея або ІТ-кейс: Студійна задача, запит клієнта або спостереження за ІТ-системою формують вихідне питання.\n\nДослідження й фіксація: Джерела, аргументи й версія отримують довготривалу форму — зокрема запис Zenodo, коли він доречний.\n\nАдаптація IRON CREED: Матеріал перебудовується для читання на сайті, перекладається та входить до семантичного індексу.\n\nПеревірка й наступна зміна: WARDEN, індекси та випускні правила перевіряють результат; висновки повертаються в інженерну роботу.\n\nДослідження правил програмної архітектури: [Конституція коду · Zenodo](https://doi.org/10.5281/zenodo.21894242) → [Серія «Конституція, що виконується»](/uk/series/konstytutsiia-shcho-vykonuietsia)\n\nДослідження технічного письма й документації: [Огляд літературного програмування · Zenodo](https://doi.org/10.5281/zenodo.20608558) → [«Навіщо потрібна документація»](/uk/programming/navishcho-potribna-dokumentatsiia)\n\nПрактичний ІТ-кейс: crawler policy для сайтів: [Crawler Surface Policy · код](https://github.com/IRONCREED/cloudflare) → [Великий і жахливий Cloudflare](/uk/series/velykyi-i-zhakhlyvyi-cloudflare)\n\nПрактичний досвід дає питання для публікацій, а перевірені висновки уточнюють подальшу роботу. Склад і глибина кожного етапу залежать від задачі.",
+		"body": "Від робочого питання до перевірюваної публікації\n\nБагато матеріалів проходять шлях від робочого питання до дослідження, публічної адаптації та наступної перевіреної зміни. Ініціатором може бути Zhovten Games, клієнтський ІТ-кейс або самостійне інженерне спостереження.\n\nІдея або ІТ-кейс: Студійна задача, запит клієнта або спостереження за ІТ-системою формують вихідне питання.\n\nДослідження й фіксація: Джерела, аргументи й версія отримують довготривалу форму — зокрема запис Zenodo, коли він доречний.\n\nАдаптація IRON CREED: Матеріал перебудовується для читання на сайті, перекладається та входить до семантичного індексу.\n\nПеревірка й наступна зміна: WARDEN, індекси та випускні правила перевіряють результат; висновки повертаються в інженерну роботу.\n\nПриклади проходження циклу матеріалу в хронологічному порядку.\n\nДослідження технічного письма й документації: [Огляд літературного програмування · Zenodo](https://doi.org/10.5281/zenodo.20608558) → [«Навіщо потрібна документація»](/uk/programming/navishcho-potribna-dokumentatsiia)\n\nДослідження правил програмної архітектури: [Конституція коду · Zenodo](https://doi.org/10.5281/zenodo.21894242) → [Серія «Конституція, що виконується»](/uk/series/konstytutsiia-shcho-vykonuietsia)\n\nПрактичний ІТ-кейс: crawler policy для сайтів: [Crawler Surface Policy · код](https://github.com/IRONCREED/cloudflare) → [Великий і жахливий Cloudflare](/uk/series/velykyi-i-zhakhlyvyi-cloudflare)\n\nПрактичний досвід дає питання для публікацій, а перевірені висновки уточнюють подальшу роботу. Склад і глибина кожного етапу залежать від задачі.",
 		"pageType": "material-cycle",
 		"status": "published",
 		"materialCycle": {
+			"examplesCaption": "Приклади проходження циклу матеріалу в хронологічному порядку.",
 			"tableLabels": [
 				"Ініціатор / контекст",
 				"Зафіксована основа",
@@ -808,18 +810,6 @@
 			],
 			"examples": [
 				{
-					"id": "code-constitution",
-					"initiator": "Дослідження правил програмної архітектури",
-					"source": {
-						"label": "Конституція коду · Zenodo",
-						"href": "https://doi.org/10.5281/zenodo.21894242"
-					},
-					"result": {
-						"label": "Серія «Конституція, що виконується»",
-						"href": "/uk/series/konstytutsiia-shcho-vykonuietsia"
-					}
-				},
-				{
 					"id": "literate-programming",
 					"initiator": "Дослідження технічного письма й документації",
 					"source": {
@@ -829,6 +819,18 @@
 					"result": {
 						"label": "«Навіщо потрібна документація»",
 						"href": "/uk/programming/navishcho-potribna-dokumentatsiia"
+					}
+				},
+				{
+					"id": "code-constitution",
+					"initiator": "Дослідження правил програмної архітектури",
+					"source": {
+						"label": "Конституція коду · Zenodo",
+						"href": "https://doi.org/10.5281/zenodo.21894242"
+					},
+					"result": {
+						"label": "Серія «Конституція, що виконується»",
+						"href": "/uk/series/konstytutsiia-shcho-vykonuietsia"
 					}
 				},
 				{

@@ -335,6 +335,7 @@ export interface LocalizedAboutStory {
 }
 
 export interface LocalizedMaterialCycle {
+	examplesCaption: string;
 	tableLabels: string[];
 	eyebrow: string;
 	title: string;

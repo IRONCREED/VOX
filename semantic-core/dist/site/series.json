@@ -25,7 +25,7 @@
 		"latestTitle": "Case 001. Cloudflare Crawler Surface Policy: Controlling Bot Access to URLs",
 		"latestDescription": "A 22-site case: crawler identity and URL surface, profiles, explicit writes, drift, and a portable PHP tool.",
 		"publishedAt": "2026-09-06",
-		"updatedAt": "2026-09-06",
+		"updatedAt": "2026-09-08",
 		"status": "published"
 	},
 	{
@@ -54,7 +54,7 @@
 		"latestTitle": "Кейс №1. Cloudflare Crawler Surface Policy: контроль доступу ботів до URL",
 		"latestDescription": "Кейс із 22 сайтів: поєднання crawler identity та URL surface, profiles, явний write-path, drift і переносимий PHP-інструмент.",
 		"publishedAt": "2026-09-06",
-		"updatedAt": "2026-09-06",
+		"updatedAt": "2026-09-08",
 		"status": "published"
 	},
 	{

@@ -38,7 +38,7 @@
 			"id": "icw-act-site-experience-001",
 			"path": "governance/legislation/SITE_EXPERIENCE.md",
 			"language": "ru",
-			"revision": "1.11.0",
+			"revision": "1.12.0",
 			"status": "active",
 			"classes": [
 				"Z02",
@@ -186,7 +186,7 @@
 			"id": "icw-act-vox-public-source-001",
 			"path": "governance/legislation/VOX_PUBLIC_SOURCE_2026-08-14.md",
 			"language": "ru",
-			"revision": "2.4.1",
+			"revision": "2.4.2",
 			"status": "active",
 			"classes": [
 				"Z02",

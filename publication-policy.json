@@ -1,7 +1,7 @@
 {
 	"schemaVersion": "2.0.0",
 	"id": "icw-vox-public-source-001",
-	"revision": "2.4.1",
+	"revision": "2.4.2",
 	"destination": {
 		"owner": "IRONCREED",
 		"repository": "VOX",
@@ -10,7 +10,7 @@
 	"outputDirectory": "work/vox-export",
 	"managedMarker": "VOX-PUBLICATION.json",
 	"maximumFileBytes": 8000000,
-	"maximumTotalBytes": 24000000,
+	"maximumTotalBytes": 26000000,
 	"trees": [
 		{
 			"source": "app",

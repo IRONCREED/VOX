@@ -421,16 +421,6 @@ a:focus-visible {
 	font-weight: 760;
 }
 
-.primary-navigation a.active::before {
-	content: '';
-	position: absolute;
-	left: 45px;
-	right: calc(100% - 92px);
-	top: 0;
-	border-top: 2px solid var(--cyan);
-	box-shadow: 31px 0 0 -1px var(--cyan);
-}
-
 .nav-icon {
 	width: 31px;
 	height: 31px;
@@ -649,12 +639,6 @@ a:focus-visible {
 	line-height: 1.08;
 	letter-spacing: -0.045em;
 	font-weight: 660;
-}
-
-.title-rule {
-	width: 38px;
-	margin: 33px 0 28px;
-	border-top: 3px solid var(--cyan);
 }
 
 .article-copy p {
@@ -1435,11 +1419,6 @@ a:focus-visible {
 		font-size: 9px;
 	}
 
-	.primary-navigation a.active::before {
-		left: 12px;
-		right: 65px;
-	}
-
 	.nav-icon {
 		width: 24px;
 		height: 24px;
@@ -2014,16 +1993,6 @@ html[data-layout-controls='ready'] .sidebar-toggle {
 	font-weight: 760;
 }
 
-.navigation-item.is-active::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 45px;
-	width: 47px;
-	border-top: 2px solid var(--cyan);
-	box-shadow: 31px 0 0 -1px var(--cyan);
-}
-
 .navigation-item.is-disabled {
 	cursor: not-allowed;
 	opacity: 0.56;
@@ -2119,12 +2088,6 @@ html[data-sidebar='collapsed'] .navigation-item {
 	justify-content: center;
 	gap: 0;
 	padding: 0;
-}
-
-html[data-sidebar='collapsed'] .navigation-item.is-active::before {
-	left: 14px;
-	width: 30px;
-	box-shadow: 17px 0 0 -1px var(--cyan);
 }
 
 .build-identity {
@@ -4688,17 +4651,6 @@ html[data-theme='dark'] *::-webkit-scrollbar-track {
 		display: block;
 	}
 
-	.navigation-item.is-active::before {
-		left: 12px;
-		width: 52px;
-	}
-
-	html[data-sidebar='collapsed'] .navigation-item.is-active::before {
-		left: 12px;
-		width: 52px;
-		box-shadow: 31px 0 0 -1px var(--cyan);
-	}
-
 	.navigation-item.is-disabled small {
 		margin-left: 3px;
 	}
@@ -5998,7 +5950,17 @@ html[data-theme='dark'] .ic-diagram {
 	flex: 0 0 auto;
 	margin: 0 0 28px;
 	padding: 24px 0;
-	border-block: 1px solid var(--line);
+	border-top: 0;
+	border-bottom: 1px solid var(--line);
+}
+
+.project-directory + .about-cycle,
+.project-directory + .about-story > .about-cycle:first-child {
+	border-top: 0;
+}
+
+.knowledge-panel h1 {
+	margin-bottom: 28px;
 }
 .anthem-controls {
 	margin: 0 0 24px;
@@ -6018,6 +5980,12 @@ html[data-theme='dark'] .ic-diagram {
 .material-cycle-table table {
 	width: 100%;
 	border-collapse: collapse;
+}
+.material-cycle-table caption {
+	padding: 0 16px 18px;
+	text-align: left;
+	font-size: 16px;
+	line-height: 1.6;
 }
 .material-cycle-table th,
 .material-cycle-table td {
@@ -6039,6 +6007,39 @@ html[data-theme='dark'] .ic-diagram {
 }
 
 @media (min-width: 1321px) {
+	.interface-shell {
+		/* Clipping without a scroll container lets the companion stick to the viewport. */
+		overflow: clip;
+	}
+
+	.companion-column {
+		position: sticky;
+		top: 103px;
+		align-self: start;
+		height: calc(100dvh - 111px);
+		overflow: hidden;
+	}
+
+	.companion-card {
+		height: 100%;
+	}
+
+	.companion-card > header {
+		flex: 0 0 auto;
+	}
+
+	.companion-content {
+		min-height: 0;
+		overflow: hidden auto;
+		overscroll-behavior-y: contain;
+		scrollbar-gutter: stable;
+	}
+
+	.companion-content:focus-visible {
+		outline: 2px solid var(--cyan);
+		outline-offset: 3px;
+	}
+
 	.companion-toggle {
 		display: inline-flex;
 	}

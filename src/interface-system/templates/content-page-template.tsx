@@ -86,7 +86,6 @@ export function ContentPageTemplate({
 						<SectionIcon sectionId={isProjectPage ? 'about' : page.pageType} variant="heading" />
 						<span>{page.title}</span>
 					</h1>
-					<div className="title-rule" />
 					{page.pageType !== 'anthem' ? (
 						<p className={identityHint ? 'content-page-header__identity' : undefined}>
 							{identityHint && identityRemainder !== undefined ? (

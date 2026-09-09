@@ -9,7 +9,7 @@
 			"phase": "prebuild",
 			"sha256": "500eaaf6c1e0c39bfa9168accd4d3cf744c21c735a74fbbd8d574c65177df846",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0002",
@@ -17,7 +17,7 @@
 			"phase": "prebuild",
 			"sha256": "cfeae6973be767cc010c565243f1e78530184d1c030201d7f586e5237e1679e1",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0003",
@@ -41,7 +41,7 @@
 			"phase": "prebuild",
 			"sha256": "3bc7d4acab9d97df26bb1161699c239cad6235fc4bd7ecbdee947706b3104a3e",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0006",
@@ -63,7 +63,7 @@
 			"phase": "prebuild",
 			"sha256": "e65af83116d3ab6022d6eaa32adc325089cb354549c521950eb7a9167a2febb4",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0009",
@@ -79,7 +79,7 @@
 			"phase": "prebuild",
 			"sha256": "1f3245aa3a5ce48767c3893fb99c1dad88c3ea683b63bad13e15fbf1964f3af7",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0011",
@@ -95,7 +95,7 @@
 			"phase": "prebuild",
 			"sha256": "b2f68ce233dd7fe62444de5471375bf81bdc6aad6f49a86d1a471587b664fb54",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0013",
@@ -111,7 +111,7 @@
 			"phase": "prebuild",
 			"sha256": "2ea7b8eb38ab25876bbdb4a839c8d81195fb459a7621aa42b5d51a2f80c8b2f8",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0015",
@@ -127,7 +127,7 @@
 			"phase": "prebuild",
 			"sha256": "0611ba4061c85ac143f0fea89e46242013fff83f9af5e041dde362cc281816c2",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0017",
@@ -143,7 +143,7 @@
 			"phase": "prebuild",
 			"sha256": "119e10f4e7ed3f9937590c986024333ae3c3cf1e269264557059dc487f762203",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0019",
@@ -159,7 +159,7 @@
 			"phase": "prebuild",
 			"sha256": "207eddb7760c5b4bdeb81e5777b8e7034490ba2040b41c7cc502ffda2129ce27",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0021",
@@ -175,7 +175,7 @@
 			"phase": "prebuild",
 			"sha256": "704da7f0d095c388b1caf57641cd27dd0f091efeb89967d7ba18895c08a38181",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0023",
@@ -191,7 +191,7 @@
 			"phase": "prebuild",
 			"sha256": "e76722fdd7d5919bdbbacc01a66b1c84e9e2337443b07afe8d49f3ff56c1867e",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0025",
@@ -199,7 +199,7 @@
 			"phase": "prebuild",
 			"sha256": "ba9f137d709bb6eaf1732251ee36f677d1b6af7be9e04451c52b6de677da6bfb",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0026",
@@ -215,7 +215,7 @@
 			"phase": "prebuild",
 			"sha256": "6fef57f0b1cf62c1f372d48e7791a8bdd28411ac7389442a39b3edfd77353577",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0028",
@@ -231,7 +231,7 @@
 			"phase": "prebuild",
 			"sha256": "4624f9bdff5ef94dd8ae79c244567167d43aed4c270eed8d21f6b03f71f7aa02",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0030",
@@ -247,7 +247,7 @@
 			"phase": "prebuild",
 			"sha256": "58d3c938d19732ed7eb277c57dc1a3a67244524f1fc90e6b4d57ac418a8543f4",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0032",
@@ -255,7 +255,7 @@
 			"phase": "prebuild",
 			"sha256": "b545b9e197cbdaedeedb49d176776adec455ab2d101b773543534f1059757eeb",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0033",
@@ -271,7 +271,7 @@
 			"phase": "prebuild",
 			"sha256": "5335eccc09c14340939d9439a9d64e8375b4b08f3f6b424c88934405c8905693",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0035",
@@ -287,7 +287,7 @@
 			"phase": "prebuild",
 			"sha256": "2475b6e1213e21286c679d762f60bca0f765030d0b0a465ad05547b2396c828f",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0037",
@@ -303,7 +303,7 @@
 			"phase": "prebuild",
 			"sha256": "666a58831f44874625046ceed8cb61cb5152810ee6a5c0c4ba447d49673e1b9f",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0039",
@@ -319,7 +319,7 @@
 			"phase": "prebuild",
 			"sha256": "b79918170d3443a8f70d0d5f8e709e7e2e08fc5ef7d53f82e950e85d9143f809",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0041",
@@ -335,7 +335,7 @@
 			"phase": "prebuild",
 			"sha256": "cbc743ca8582571a65352c4326fd023c69e750a9c78235be451e14271e673ff2",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0043",
@@ -351,7 +351,7 @@
 			"phase": "prebuild",
 			"sha256": "baf4b729b5e99693a85799baf4977cd6830d0824126283171be80cb149482c7b",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0045",
@@ -367,7 +367,7 @@
 			"phase": "prebuild",
 			"sha256": "4a1ef5794476f0f6f9640f6df4f54a15b39a31c0c1654eec433cb01f189e661b",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0047",
@@ -383,7 +383,7 @@
 			"phase": "prebuild",
 			"sha256": "23eb841463e1bd57003979e3b54960c0a0f3821b6e2760e0831249dece113260",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0049",
@@ -399,7 +399,7 @@
 			"phase": "prebuild",
 			"sha256": "b546b51a9fe4403f59a987d02823b802e0e7fde53ced203ab70d31357db40338",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0052",
@@ -407,7 +407,7 @@
 			"phase": "prebuild",
 			"sha256": "8ee08fbf7cfd17453f0ab21a32880cba76f545920d0fb01ad7b7b606754a24a6",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0053",
@@ -422,13 +422,22 @@
 			"phase": "prebuild",
 			"sha256": "b1c82b774ef8fcbc5c571590a7ed6e5e4bd494c9cdbf99dc96504c348e5b5af3",
 			"status": "superseded",
-			"supersededBy": "ICW-HIST-0055"
+			"supersededBy": "ICW-HIST-0056"
 		},
 		{
 			"id": "ICW-HIST-0055",
 			"path": "history/icw-hist-0055-responsive-panels.test.mjs",
 			"phase": "prebuild",
-			"sha256": "b3386936ad71e830408cf104a93ab10ca4ba33c1e705a36e7a9aa3b5b211174c"
+			"sha256": "b3386936ad71e830408cf104a93ab10ca4ba33c1e705a36e7a9aa3b5b211174c",
+			"status": "superseded",
+			"supersededBy": "ICW-HIST-0056"
+		},
+		{
+			"id": "ICW-HIST-0056",
+			"path": "history/icw-hist-0056-navigation-companion-content.test.mjs",
+			"phase": "prebuild",
+			"sha256": "b39f5cc084823f84f67f77146c638360a8ad835f219a1edbdca441b626203b5c",
+			"status": "active"
 		}
 	],
 	"protectedInterfaces": [

@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	<url>
 		<loc>https://web.zhovten.games/en/</loc>
-		<lastmod>2026-09-07</lastmod>
+		<lastmod>2026-09-08</lastmod>
 		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/" />
 		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/" />
 		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/" />
 	</url>
 	<url>
 		<loc>https://web.zhovten.games/en/programming</loc>
-		<lastmod>2026-09-06</lastmod>
+		<lastmod>2026-09-08</lastmod>
 		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/programming" />
 		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/programming" />
 		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/programming" />
@@ -162,7 +162,7 @@
 	</url>
 	<url>
 		<loc>https://web.zhovten.games/en/programming/cloudflare-001-crawler-surface-policy</loc>
-		<lastmod>2026-09-06</lastmod>
+		<lastmod>2026-09-08</lastmod>
 		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/programming/cloudflare-001-crawler-surface-policy" />
 		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/programming/cloudflare-001-crawler-surface-policy" />
 		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/programming/cloudflare-001-crawler-surface-policy" />
@@ -253,7 +253,7 @@
 	</url>
 	<url>
 		<loc>https://web.zhovten.games/en/series/the-great-and-terrible-cloudflare</loc>
-		<lastmod>2026-09-06</lastmod>
+		<lastmod>2026-09-08</lastmod>
 		<xhtml:link rel="alternate" hreflang="uk" href="https://web.zhovten.games/uk/series/velykyi-i-zhakhlyvyi-cloudflare" />
 		<xhtml:link rel="alternate" hreflang="en" href="https://web.zhovten.games/en/series/the-great-and-terrible-cloudflare" />
 		<xhtml:link rel="alternate" hreflang="x-default" href="https://web.zhovten.games/uk/series/velykyi-i-zhakhlyvyi-cloudflare" />

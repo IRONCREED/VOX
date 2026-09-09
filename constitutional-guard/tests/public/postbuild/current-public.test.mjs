@@ -3,6 +3,7 @@ import { access } from 'node:fs/promises';
 import path from 'node:path';
 import test from 'node:test';
 import { createCompiledSiteDriver } from '../../../testing-interface/site-driver.mjs';
+import '../../postbuild/content-corrections.test.mjs';
 
 const projectRoot = process.env.IRON_WARDEN_PROJECT_ROOT;
 

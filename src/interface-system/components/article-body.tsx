@@ -11,7 +11,7 @@ interface ArticleBodyProps {
 type MarkdownBlock =
 	| {
 			kind: 'heading';
-			level: 2 | 3;
+			level: 1 | 2 | 3 | 4 | 5 | 6;
 			content: string;
 	  }
 	| {
@@ -136,7 +136,7 @@ function parseBlocks(source: string): MarkdownBlock[] {
 			continue;
 		}
 
-		const heading = /^(##|###)\s+(.+)$/.exec(line);
+		const heading = /^(#{1,6})\s+(.+)$/.exec(line);
 		const unorderedItem = /^-\s+(.+)$/.exec(line);
 		const orderedItem = /^\d+\.\s+(.+)$/.exec(line);
 		const quotedLine = /^>\s?(.*)$/.exec(line);
@@ -145,7 +145,7 @@ function parseBlocks(source: string): MarkdownBlock[] {
 			flushAll();
 			blocks.push({
 				kind: 'heading',
-				level: heading[1] === '##' ? 2 : 3,
+				level: heading[1].length as 1 | 2 | 3 | 4 | 5 | 6,
 				content: heading[2],
 			});
 			continue;
@@ -268,6 +268,10 @@ function graphicSlotId(content: string): string | undefined {
 
 export function ArticleBody({ body, variant = 'standard', assets = [] }: ArticleBodyProps) {
 	const blocks = parseBlocks(body);
+	// The page template owns h1; a Markdown document title starts its body at h2.
+	const headingOffset = blocks.some((block) => block.kind === 'heading' && block.level === 1)
+		? 1
+		: 0;
 
 	return (
 		<div
@@ -277,11 +281,13 @@ export function ArticleBody({ body, variant = 'standard', assets = [] }: Article
 		>
 			{blocks.map((block, index) => {
 				if (block.kind === 'heading') {
-					return block.level === 2 ? (
-						<h2 key={block.content + '-' + index}>{renderInline(block.content)}</h2>
-					) : (
-						<h3 key={block.content + '-' + index}>{renderInline(block.content)}</h3>
-					);
+					const Heading = `h${Math.min(6, Math.max(2, block.level + headingOffset))}` as
+						| 'h2'
+						| 'h3'
+						| 'h4'
+						| 'h5'
+						| 'h6';
+					return <Heading key={block.content + '-' + index}>{renderInline(block.content)}</Heading>;
 				}
 
 				if (block.kind === 'list') {

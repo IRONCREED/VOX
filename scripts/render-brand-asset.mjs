@@ -88,7 +88,7 @@ for (const name of ['tent', 'observer', 'code', 'microscope', 'branches', 'book'
 			.png()
 			.toBuffer();
 		expectedAssets.set(
-			path.join(projectRoot, 'public/brand/navigation', `${name}-${size}.png`),
+			path.join(projectRoot, 'public/brand/navigation', `${name}-cyan-${size}.png`),
 			asset,
 		);
 	}

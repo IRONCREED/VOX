@@ -50,7 +50,6 @@ export function HomePageTemplate({
 						<SectionIcon sectionId="home" variant="heading" />
 						<span>{copy.homeTitle}</span>
 					</h1>
-					<div className="title-rule" />
 					<p>{copy.homeDescription}</p>
 				</header>
 

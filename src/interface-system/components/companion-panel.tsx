@@ -140,6 +140,7 @@ function findQuestionPath(scenario: CompanionScenario, targetId: string): string
 
 export function CompanionPanel({ copy, locale, scenario }: CompanionPanelProps) {
 	const rootRef = useRef<HTMLElement>(null);
+	const contentRef = useRef<HTMLDivElement>(null);
 	const [isEnhanced, setIsEnhanced] = useState(false);
 	const [collapsed, setCollapsed] = useState(false);
 	const [state, setState] = useState<DialogueState>('idle');
@@ -230,11 +231,13 @@ export function CompanionPanel({ copy, locale, scenario }: CompanionPanelProps) 
 		setSelectedPath(cycleTarget >= 0 ? path.slice(0, cycleTarget + 1) : [...path, question.id]);
 		setAnswerRun((current) => current + 1);
 		setState('answering');
+		contentRef.current?.scrollTo({ top: 0 });
 	}
 
 	function navigate(path: string[]) {
 		setSelectedPath(path);
 		setState('ready');
+		contentRef.current?.scrollTo({ top: 0 });
 	}
 
 	return (
@@ -279,7 +282,14 @@ export function CompanionPanel({ copy, locale, scenario }: CompanionPanelProps) 
 						</div>
 					</header>
 
-					<div className="companion-content" id="companion-content">
+					<div
+						aria-label={copy.companion}
+						className="companion-content"
+						id="companion-content"
+						ref={contentRef}
+						role="region"
+						tabIndex={0}
+					>
 						<div className="companion-message">
 							<i aria-hidden="true" />
 							<p aria-hidden={state !== 'ready'}>

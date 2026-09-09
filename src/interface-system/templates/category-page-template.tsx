@@ -58,7 +58,6 @@ export function CategoryPageTemplate({
 						<SectionIcon sectionId={category.id} variant="heading" />
 						<span>{category.label}</span>
 					</h1>
-					<div className="title-rule" />
 					<p>{category.description}</p>
 				</header>
 

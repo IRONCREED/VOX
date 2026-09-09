@@ -65,7 +65,6 @@ export function CorpusIndexPageTemplate({
 				<header className="content-page-header">
 					<small>{page.eyebrow}</small>
 					<h1>{page.title}</h1>
-					<div className="title-rule" />
 					<p>{page.description}</p>
 				</header>
 

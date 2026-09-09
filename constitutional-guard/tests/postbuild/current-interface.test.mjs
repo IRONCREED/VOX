@@ -9,7 +9,7 @@ test('section artwork and raster favicons resolve from the deployed site origin'
 	for (const locale of ['uk', 'en']) {
 		const home = await (await site.request(`/${locale}/`)).text();
 		for (const icon of ['tent', 'observer', 'code', 'microscope', 'branches', 'book']) {
-			assert.ok(home.includes(`src="/brand/navigation/${icon}-96.png"`));
+			assert.ok(home.includes(`src="/brand/navigation/${icon}-cyan-96.png"`));
 		}
 		assert.match(home, /section-icon--heading/);
 		assert.match(home, /href="\/favicon-32\.png\?v=20260906"/);
@@ -18,7 +18,7 @@ test('section artwork and raster favicons resolve from the deployed site origin'
 	for (const asset of [
 		'/favicon-32.png?v=20260906',
 		'/favicon.ico?v=20260906',
-		'/brand/navigation/tent-96.png',
+		'/brand/navigation/tent-cyan-96.png',
 	]) {
 		const response = await site.request(asset);
 		assert.equal(response.status, 200, asset);
