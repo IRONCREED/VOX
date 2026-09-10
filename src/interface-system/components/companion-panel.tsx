@@ -143,6 +143,7 @@ export function CompanionPanel({ copy, locale, scenario }: CompanionPanelProps) 
 	const contentRef = useRef<HTMLDivElement>(null);
 	const [isEnhanced, setIsEnhanced] = useState(false);
 	const [collapsed, setCollapsed] = useState(false);
+	const [headerPassed, setHeaderPassed] = useState(false);
 	const [state, setState] = useState<DialogueState>('idle');
 	const [selectedPath, setSelectedPath] = useState<string[]>([]);
 	const [answerRun, setAnswerRun] = useState(0);
@@ -185,6 +186,36 @@ export function CompanionPanel({ copy, locale, scenario }: CompanionPanelProps) 
 		const update = window.setTimeout(() => setIsEnhanced(true), 0);
 		return () => window.clearTimeout(update);
 	}, []);
+
+	useEffect(() => {
+		const root = rootRef.current;
+		const header = document.querySelector<HTMLElement>('.system-header');
+		if (!isEnhanced || !root || !header) return;
+
+		const wideLayout = window.matchMedia('(min-width: 1321px)');
+		let animationFrame = 0;
+		const updateAnchor = () => {
+			animationFrame = 0;
+			const nextHeaderPassed = wideLayout.matches && header.getBoundingClientRect().bottom <= 7;
+			setHeaderPassed(nextHeaderPassed);
+		};
+		const scheduleUpdate = () => {
+			if (animationFrame !== 0) return;
+			animationFrame = window.requestAnimationFrame(updateAnchor);
+		};
+
+		updateAnchor();
+		window.addEventListener('scroll', scheduleUpdate, { passive: true });
+		window.addEventListener('resize', scheduleUpdate);
+		wideLayout.addEventListener('change', scheduleUpdate);
+
+		return () => {
+			window.cancelAnimationFrame(animationFrame);
+			window.removeEventListener('scroll', scheduleUpdate);
+			window.removeEventListener('resize', scheduleUpdate);
+			wideLayout.removeEventListener('change', scheduleUpdate);
+		};
+	}, [isEnhanced]);
 
 	useEffect(() => {
 		if (!isEnhanced) return;
@@ -245,6 +276,7 @@ export function CompanionPanel({ copy, locale, scenario }: CompanionPanelProps) 
 			aria-label={copy.companion}
 			className={`companion-column${isEnhanced ? ' is-enhanced' : ''}`}
 			data-collapsed={collapsed}
+			data-header-passed={headerPassed}
 			id="companion"
 			ref={rootRef}
 			tabIndex={-1}

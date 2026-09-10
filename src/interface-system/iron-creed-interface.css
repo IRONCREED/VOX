@@ -6014,10 +6014,14 @@ html[data-theme='dark'] .ic-diagram {
 
 	.companion-column {
 		position: sticky;
-		top: 103px;
+		top: 7px;
 		align-self: start;
 		height: calc(100dvh - 111px);
 		overflow: hidden;
+	}
+
+	.companion-column[data-header-passed='true'] {
+		height: calc(100dvh - 14px);
 	}
 
 	.companion-card {
