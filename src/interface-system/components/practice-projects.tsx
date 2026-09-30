@@ -1,15 +1,25 @@
-import type { LocalizedAboutStory } from '../../content-catalog/domain/content-model';
+import type { Locale, LocalizedAboutStory } from '../../content-catalog/domain/content-model';
 import { ArticleBody } from './article-body';
 import { PracticeMap } from './practice-map';
 
-export function PracticeProjects({ story }: { story: LocalizedAboutStory }) {
+export function PracticeProjects({
+	story,
+	locale,
+}: {
+	story: LocalizedAboutStory;
+	locale: Locale;
+}) {
 	const map = story.practiceMap;
 	if (!map) return null;
-	const projects = story.sections.find((section) => section.kind === 'portfolio')?.entries ?? [];
+	const portfolio = story.sections.find((section) => section.kind === 'portfolio');
+	const projects = portfolio?.entries ?? [];
+	const collator = new Intl.Collator(locale, { sensitivity: 'base', numeric: true });
 	const testimonials = story.sections.find((section) => section.kind === 'testimonials');
 	const reviews = testimonials?.entries ?? [];
 	const groups = map.countries.map((country) => {
-		const entries = projects.filter((entry) => entry.countryCode === country.code);
+		const entries = projects
+			.filter((entry) => entry.countryCode === country.code)
+			.toSorted((left, right) => collator.compare(left.title, right.title));
 		return {
 			code: country.code,
 			clientCount: new Set(entries.map((entry) => entry.clientId)).size,
@@ -56,7 +66,9 @@ export function PracticeProjects({ story }: { story: LocalizedAboutStory }) {
 			countries={map.countries}
 			labels={map.labels}
 			groups={groups}
-			reviewNote={<ArticleBody body={testimonials?.body ?? ''} />}
+			reviewNote={
+				<ArticleBody body={[testimonials?.body, portfolio?.body].filter(Boolean).join('\n\n')} />
+			}
 		/>
 	);
 }

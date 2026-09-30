@@ -33,7 +33,7 @@ test('the semantic core is the single bilingual publication source', async () =>
 	]);
 
 	assert.equal(corpus.id, 'corpus.ironcreed');
-	assert.equal(siteManifest.contentVersion, '1.18.0');
+	assert.equal(siteManifest.contentVersion, '1.18.1');
 	assert.equal(siteManifest.sourceCommit, gptManifest.sourceCommit);
 	assert.equal(siteManifest.contentDigest, gptManifest.contentDigest);
 	assert.equal(siteManifest.schemaVersion, gptManifest.schemaVersion);
@@ -142,7 +142,7 @@ test('the site consumes the checked projection and exposes a dedicated corpus in
 	assert.match(navigation, /build-identity__index/);
 	assert.doesNotMatch(navigation, /EntityIndexTree/);
 	assert.match(buildScript, /run build:check/);
-	assert.equal(packageManifest.version, '1.19.0');
+	assert.equal(packageManifest.version, '1.19.1');
 });
 
 test('the entity index links only through canonical material associations', async () => {
@@ -210,7 +210,7 @@ test('governance records and attests the active release', async () => {
 		readJson('vox/publication-policy.json'),
 		readText('semantic-core/docs/article-publication-template-v4.txt'),
 		readText('governance/prompts/README.md'),
-		readJson('governance/attestations/brand-practice-map-release-2026-09-29.json'),
+		readJson('governance/attestations/practice-map-refinement-release-2026-09-30.json'),
 		readJson('semantic-core/dist/site/manifest.json'),
 	]);
 	assert.match(profile, /Редакция: `0\.8\.1`/);
@@ -259,9 +259,9 @@ test('governance records and attests the active release', async () => {
 		'2.5.0',
 	);
 	assert.equal(attestation.constitutionImpact.status, 'reviewed-no-change');
-	assert.equal(attestation.profileImpact.status, 'editorial-amendment');
-	assert.equal(attestation.contentImpact.contentVersion, '1.18.0');
-	assert.equal(attestation.release.siteVersion, '1.19.0');
+	assert.equal(attestation.profileImpact.status, 'reviewed-no-change');
+	assert.equal(attestation.contentImpact.contentVersion, '1.18.1');
+	assert.equal(attestation.release.siteVersion, '1.19.1');
 	assert.equal(attestation.release.sourceCommit, siteManifest.sourceCommit);
 	assert.equal(attestation.release.questionCount, 476);
 	assert.equal(attestation.release.sitemapCount, 4);
@@ -325,7 +325,7 @@ test('the anthem is a user-initiated persistent service of the locale shell', as
 	assert.doesNotMatch(privacy.body.en.join(' '), /requests[\s\S]*directly from Suno/i);
 	for (const [id, revision] of [
 		['icw-act-development-001', '1.8.0'],
-		['icw-act-site-experience-001', '1.14.0'],
+		['icw-act-site-experience-001', '1.14.1'],
 		['icw-act-patterns-001', '0.17.0'],
 	]) {
 		assert.equal(acts.acts.find((entry) => entry.id === id)?.revision, revision);
@@ -344,7 +344,7 @@ test('the about page publishes an attributable portfolio and direct contact rout
 		readText('constitutional-guard/run.mjs'),
 	]);
 	const about = pages.find((entry) => entry.id === 'page.about');
-	assert.equal(about.revision, 10);
+	assert.equal(about.revision, 11);
 	assert.deepEqual(about.conceptIds, ['concept.iron-creed']);
 	assert.equal(about.aboutStory.identityHintLabel.en, 'Who is IRONCREED?');
 	const cycle = pages.find((entry) => entry.id === 'page.material-cycle').materialCycle;

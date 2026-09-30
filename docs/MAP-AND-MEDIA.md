@@ -21,3 +21,14 @@ logo; the six editorial covers were adapted from owner-supplied artwork, with
 the brand spelling corrected and the original topics retained. The page
 metadata registry is `content/config/social-previews.json`. Cover mappings use
 stable material and series IDs and never replace publication prose.
+
+Projects are sorted alphabetically within each country using the active locale.
+Activating a marker scrolls and focuses the selected projects, respecting reduced
+motion. The compact note has three paragraphs: original review-source statement,
+200+ cases and mapped work since 2019, and separate studio game projects.
+
+The geometry generator transfers the original Crimea polygon from Natural
+Earth's default de facto Russia feature to Ukraine and dissolves the internal
+border. Other countries and the coastline are preserved. The United States
+includes its contiguous area, Alaska and Hawaii. The geographic source test
+checks representative locations, other features and total area.

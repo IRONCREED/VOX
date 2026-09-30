@@ -4,14 +4,14 @@
 	"policyRevision": "2.5.0",
 	"repository": "IRONCREED/VOX",
 	"branch": "main",
-	"siteVersion": "1.19.0",
-	"contentVersion": "1.18.0",
-	"applicationSourceCommit": "c3bf71d7d3220414484659030a85a0ae525366fe",
-	"applicationSourceCommittedAt": "2026-09-29T21:01:15-04:00",
+	"siteVersion": "1.19.1",
+	"contentVersion": "1.18.1",
+	"applicationSourceCommit": "cb5bb97426d20150cdb2b2f2f6ad1b1e2e7e62b8",
+	"applicationSourceCommittedAt": "2026-09-30T09:36:48+02:00",
 	"worktreeDirty": false,
-	"corpusSourceCommit": "aedf9edf7c60849b1333a892af0b4b665b98b81d",
-	"contentDigest": "1561301c090bf6cc7a56e15f9df1bd9c44d1c09eb015d83437da7c8a8eb98a55",
-	"fileCount": 258,
+	"corpusSourceCommit": "33ac75fe8271e8da5563b5e99268074cc19920ba",
+	"contentDigest": "3c59ee78eb51ffae6acb55af5881f7a9b6fa656da460db1f4952155422bec12e",
+	"fileCount": 259,
 	"files": [
 		{
 			"path": ".gitignore",
@@ -560,10 +560,17 @@
 			"licence": "MIT"
 		},
 		{
+			"path": "constitutional-guard/history/icw-hist-0062-practice-map-refinement.test.mjs",
+			"mode": "100644",
+			"bytes": 6335,
+			"sha256": "17c17b01a786cc3771cac3d6d25177bb0be9eb0d5f6af6f64276907e74377c52",
+			"licence": "MIT"
+		},
+		{
 			"path": "constitutional-guard/history/manifest.json",
 			"mode": "100644",
-			"bytes": 16353,
-			"sha256": "17efec4b1a8da69f3eb37f421fcf34dfe70d6e5422e5fe9e3795f07944470777",
+			"bytes": 16624,
+			"sha256": "8af8a83a8bbba950f47add593cedbc12cad2616934200354915eab3829dc5811",
 			"licence": "MIT"
 		},
 		{
@@ -604,8 +611,8 @@
 		{
 			"path": "constitutional-guard/tests/postbuild/current-interface.test.mjs",
 			"mode": "100644",
-			"bytes": 20308,
-			"sha256": "f123845e3fcefed962f9d6c3fd8315707f588641448526411e90d5bacfec2f9f",
+			"bytes": 20599,
+			"sha256": "f5c9540e50abbfde6f229413d8e446926f1c3902952aa33713faf1fec6be9d07",
 			"licence": "MIT"
 		},
 		{
@@ -632,8 +639,8 @@
 		{
 			"path": "constitutional-guard/tests/prebuild/current-architecture.test.mjs",
 			"mode": "100644",
-			"bytes": 16860,
-			"sha256": "e5d5af807d009cfd8f616d2a12443d83879dfe07aadb927f76aa295c3c3830ad",
+			"bytes": 16864,
+			"sha256": "61fc043d0ff815f8415805d8f188dd7ce2b8fc2222a50a14740de05c8e6c1511",
 			"licence": "MIT"
 		},
 		{
@@ -730,8 +737,8 @@
 		{
 			"path": "docs/MAP-AND-MEDIA.md",
 			"mode": "100644",
-			"bytes": 1441,
-			"sha256": "610a6cd8fe62b195a86878188300015a02fa5d0cb8970955f52bfae3908d25bb",
+			"bytes": 2127,
+			"sha256": "afd97ad08aae6dd1cff0977d1c540f862d9eec184c667c3e5e83180cca9e46d9",
 			"licence": "CC-BY-SA-4.0"
 		},
 		{
@@ -766,7 +773,7 @@
 			"path": "governance/acts.json",
 			"mode": "100644",
 			"bytes": 4143,
-			"sha256": "5521daa819e8bd779d1c3845d18cc6eafc120cee62583c753aaf06b08c5934b2",
+			"sha256": "ac2a75105fdaf77e1ed309238659087ed5a69afec418ad24e1bef61dbff0a676",
 			"licence": "MIT"
 		},
 		{
@@ -849,8 +856,8 @@
 		{
 			"path": "governance/legislation/SITE_EXPERIENCE.md",
 			"mode": "100644",
-			"bytes": 84052,
-			"sha256": "ccab822c75eab18162e00b4b8c7e25a675f1243f7a787ec6ddc6a70b28589542",
+			"bytes": 85538,
+			"sha256": "b0c91e7410730855511fd4bf82605f18bbacbc1bedcc7f047b5387e7cbe4cf2b",
 			"licence": "CC-BY-SA-4.0"
 		},
 		{
@@ -899,14 +906,14 @@
 			"path": "package-lock.json",
 			"mode": "100644",
 			"bytes": 344143,
-			"sha256": "575518a2dfd1ab560011f7eeacca41dab41d30cda88493efcf391ab6fbfa5a87",
+			"sha256": "49642e4d0f926e03a4603acf043c1d8076901d5a6027a8bcf6e11123308e312b",
 			"licence": "MIT"
 		},
 		{
 			"path": "package.json",
 			"mode": "100644",
 			"bytes": 2554,
-			"sha256": "cea1ca54a3b2e2339b4fe963d006e2b27fac66de3a41263725d334bfab3f7f99",
+			"sha256": "6107c2da8b2cb2bde6fc7f5a7f04af19e66705c0298c366ef34fa1679ddbbd0c",
 			"licence": "MIT"
 		},
 		{
@@ -1193,14 +1200,14 @@
 			"path": "README.md",
 			"mode": "100644",
 			"bytes": 4176,
-			"sha256": "8f2f885950d1d803c8eb5851698364cd8d7fd0bec011f5b38efabe704dbf6455",
+			"sha256": "edf506aeba7f5392c05c687b00fd4744220a0aace7f0341f1e3b25b1cd8e3cd2",
 			"licence": "CC-BY-SA-4.0"
 		},
 		{
 			"path": "scripts/build-practice-map.mjs",
 			"mode": "100644",
-			"bytes": 1468,
-			"sha256": "2478035b5a7e400937c465f40131ab138917b5fc60969edab4c77b165f7ee209",
+			"bytes": 2947,
+			"sha256": "8112bc49a17a444cb3565afe233992a822eceba5b83e8ae562d4858b033beaf2",
 			"licence": "MIT"
 		},
 		{
@@ -1256,7 +1263,7 @@
 			"path": "semantic-core/dist/site/manifest.json",
 			"mode": "100644",
 			"bytes": 252,
-			"sha256": "cb2dcc9b66d789080150be217e5d8642351987c49480ccbec617452461719669",
+			"sha256": "326dc7a6dd870808b0a62f9af8bb145734d1d0bdd8ea0748ba561b831b022a6e",
 			"licence": "CC-BY-SA-4.0"
 		},
 		{
@@ -1269,8 +1276,8 @@
 		{
 			"path": "semantic-core/dist/site/pages.json",
 			"mode": "100644",
-			"bytes": 103278,
-			"sha256": "fddf1384d5aca00bcdb6239c54c93c26bcc47685a7607191df3a34aa72ac65ed",
+			"bytes": 101989,
+			"sha256": "0d3d216797976d2ecd73dfd015c23b48aa82615e12eef267d1767030f9a068b2",
 			"licence": "CC-BY-SA-4.0"
 		},
 		{
@@ -1458,8 +1465,8 @@
 		{
 			"path": "src/interface-system/components/about-story.tsx",
 			"mode": "100644",
-			"bytes": 3922,
-			"sha256": "b7f61f33b6480643c8f403819e7c4eb2efaa3693a869aad18b609de5ee959d68",
+			"bytes": 4054,
+			"sha256": "4506b0ce4a53793cd665e6268a819b9d30aa920afe5ba32d56e853ba22494198",
 			"licence": "MIT"
 		},
 		{
@@ -1556,15 +1563,15 @@
 		{
 			"path": "src/interface-system/components/practice-map.tsx",
 			"mode": "100644",
-			"bytes": 4825,
-			"sha256": "90e361a6a89fd3c48b088766e94cdbc7466ed6e35c4087b808045c6616073408",
+			"bytes": 5370,
+			"sha256": "9153442646be21f413dc62686a2f948504853be21824e2c4b0595ebae1093984",
 			"licence": "MIT"
 		},
 		{
 			"path": "src/interface-system/components/practice-projects.tsx",
 			"mode": "100644",
-			"bytes": 2192,
-			"sha256": "dcb935171d6296998afa8f607c4e0c40c1c600233f07ae5884b28101d5f6efe5",
+			"bytes": 2473,
+			"sha256": "47ad1e169cdd368f53341307d4a3b599c6524f6ac69466cc06ed696d444556bf",
 			"licence": "MIT"
 		},
 		{
@@ -1661,8 +1668,8 @@
 		{
 			"path": "src/interface-system/geography/world-countries.json",
 			"mode": "100644",
-			"bytes": 144351,
-			"sha256": "0e58999fdaa1a887e7c949f305904ed72536727930242cc5cfb62ddec01c0a25",
+			"bytes": 144216,
+			"sha256": "0860f49f1703fddcf7f4712eda0f97f0d2fe8de5cf4eae9bdec31fea35cb31f3",
 			"licence": "public-domain-Natural-Earth"
 		},
 		{
@@ -1675,8 +1682,8 @@
 		{
 			"path": "src/interface-system/practice-map.css",
 			"mode": "100644",
-			"bytes": 4137,
-			"sha256": "2c7e599f3623896b265d7ef90c9512cb091dab3f2c3aaa215ee3902bd7a8ebcb",
+			"bytes": 4570,
+			"sha256": "87781c9d188a8dda8277e5e8caeae1120f4eedb24e654cc95b71071b608202bc",
 			"licence": "MIT"
 		},
 		{
@@ -1703,8 +1710,8 @@
 		{
 			"path": "src/interface-system/templates/content-page-template.tsx",
 			"mode": "100644",
-			"bytes": 5538,
-			"sha256": "cce05bd9c5726b55e17c9ebc9a6f4d8cbf94c42d969e3162306f3e8f509e5d75",
+			"bytes": 5560,
+			"sha256": "9f2b1e4e42c23977fbeaf9a4a8eed6d57c9320a1033e6a991e0cf25ca54172e1",
 			"licence": "MIT"
 		},
 		{

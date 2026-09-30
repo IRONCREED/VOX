@@ -335,6 +335,13 @@ test('the build, policies, and four localized search maps are public', async () 
 	assert.match(aboutHtml, /A website that can be read by more than people/);
 	assert.match(aboutHtml, /EMBO Studio · long-term infrastructure support/);
 	assert.match(aboutHtml, /200\+ high-density cases/);
+	assert.match(aboutHtml, /since 2019/);
+	const mapNote = aboutHtml.match(
+		/class="practice-map__caption"><div class="article-body">([\s\S]*?)<\/div><\/div>/,
+	);
+	assert.ok(mapNote);
+	assert.equal((mapNote[1].match(/<p>/g) ?? []).length, 3);
+	assert.doesNotMatch(mapNote[1], /<ul>|<ol>/);
 	assert.match(aboutHtml, /Public team profiles/);
 	assert.match(aboutHtml, /href="https:\/\/www\.linkedin\.com\/in\/oksanadubinetska\/"/);
 	assert.match(aboutHtml, /href="https:\/\/www\.linkedin\.com\/in\/pan-canon\/"/);

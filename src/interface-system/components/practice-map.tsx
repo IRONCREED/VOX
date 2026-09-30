@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useSyncExternalStore, type ReactNode } from 'react';
+import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 import type { PracticeCountry, PracticeMapCopy } from '../../content-catalog/domain/content-model';
 import world from '../geography/world-countries.json';
 
@@ -29,6 +29,19 @@ export function PracticeMap({
 		() => false,
 	);
 	const [selected, setSelected] = useState(countries[0].code);
+	const [scrollRequest, setScrollRequest] = useState(0);
+	const resultsRef = useRef<HTMLDivElement>(null);
+	useEffect(() => {
+		if (scrollRequest === 0) return;
+		const results = resultsRef.current;
+		results?.focus({ preventScroll: true });
+		results?.scrollIntoView({
+			block: 'start',
+			behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+				? 'instant'
+				: 'smooth',
+		});
+	}, [scrollRequest]);
 	const active = countries.find((country) => country.code === selected);
 	const visibleGroups = groups.filter((group) => selected === 'all' || group.code === selected);
 	const selectedClients = visibleGroups.reduce((sum, group) => sum + group.clientCount, 0);
@@ -84,7 +97,10 @@ export function PracticeMap({
 							title={label}
 							aria-pressed={selected === country.code}
 							aria-controls="practice-results"
-							onClick={() => setSelected(country.code)}
+							onClick={() => {
+								setSelected(country.code);
+								setScrollRequest((request) => request + 1);
+							}}
 						>
 							<span>{country.code}</span>
 							<strong>{count}</strong>
@@ -122,7 +138,7 @@ export function PracticeMap({
 					))}
 				</div>
 			) : null}
-			<div id="practice-results" className="practice-map__results">
+			<div id="practice-results" className="practice-map__results" ref={resultsRef} tabIndex={-1}>
 				{enhanced ? (
 					<p className="practice-map__selection" role="status">
 						<strong>{active?.label ?? labels.allCountries}</strong>

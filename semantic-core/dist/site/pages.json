@@ -138,7 +138,7 @@
 					"status": "active",
 					"title": "Clients, projects and reviews",
 					"summary": "Choose a country to explore the work and client reviews.",
-					"body": "Each marker counts distinct clients. Repeat assignments from one client are grouped together.\n\nThe team’s documented experience covers 200+ high-density cases combining content, product and technical work.\n\n- Development and support of websites and commercial services.\n- Content systems, technical publishing, and automation.\n- Infrastructure, security, and operational support.\n- Mentorship and leadership of a large engineering department in an international startup.\n\nThis part of the portfolio primarily reflects the engineering path of the developer within the IRONCREED team, from hands-on programming to mentorship and team leadership.\n\nThe studio’s game-development experience is intentionally excluded from this list of IT cases. It is presented on the [Zhovten Games projects page](https://zhovten.games/projects).",
+					"body": "The team’s documented experience covers 200+ high-density cases combining content, product and technical work. The map presents cases we have worked on since 2019.\n\nThe studio’s game-development experience is intentionally excluded from this list of IT cases. It is presented on the [Zhovten Games projects page](https://zhovten.games/projects).",
 					"entries": [
 						{
 							"id": "embo-studio",
@@ -662,7 +662,7 @@
 					"status": "active",
 					"title": "Клієнти, проєкти та відгуки",
 					"summary": "Оберіть країну, щоб побачити виконані роботи та відгуки клієнтів.",
-					"body": "Кожна позначка рахує окремих клієнтів. Повторні роботи одного замовника зібрані разом.\n\nЗадокументований досвід команди охоплює понад 200 насичених кейсів: контент, продукт і технічна робота в межах одного рішення.\n\n- Розроблення й підтримка сайтів та комерційних сервісів.\n- Контентні системи, технічні публікації та автоматизація.\n- Інфраструктура, безпека й операційна підтримка.\n- Менторство та керування великим інженерним відділом міжнародного стартапу.\n\nЦя частина портфоліо переважно відображає інженерну траєкторію розробника в команді IRONCREED: від практичного програмування до менторства й керування командою.\n\nДосвід студії у розробленні ігор свідомо не включено до цього переліку ІТ-кейсів. Він представлений на [сторінці проєктів Zhovten Games](https://zhovten.games/projects).",
+					"body": "Задокументований досвід команди охоплює понад 200 насичених кейсів: контент, продукт і технічна робота в межах одного рішення. На карті представлені кейси, над якими ми працювали з 2019 року.\n\nДосвід студії у розробленні ігор свідомо не включено до цього переліку ІТ-кейсів. Він представлений на [сторінці проєктів Zhovten Games](https://zhovten.games/projects).",
 					"entries": [
 						{
 							"id": "embo-studio",

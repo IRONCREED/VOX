@@ -162,6 +162,7 @@ export function ContentPageTemplate({
 
 				{page.pageType === 'about' && page.aboutStory ? (
 					<AboutStory
+						locale={locale}
 						nextSlideLabel={copy.nextSlide}
 						previousSlideLabel={copy.previousSlide}
 						story={page.aboutStory}

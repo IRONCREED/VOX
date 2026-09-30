@@ -118,6 +118,14 @@
 	padding: 0;
 	font-size: 0.875rem;
 }
+.practice-map__caption .article-body p {
+	margin: 0 0 0.75rem;
+	font-size: inherit;
+	line-height: 1.6;
+}
+.practice-map__results {
+	scroll-margin-top: 1rem;
+}
 .practice-map__results > section[hidden] {
 	display: none;
 }
@@ -151,8 +159,15 @@
 	overflow-wrap: anywhere;
 }
 .practice-project__content .article-body {
+	padding: 0;
 	font-size: 1rem;
 	line-height: 1.7;
+}
+.practice-project__content .article-body > :last-child {
+	margin-bottom: 0;
+}
+.practice-project__meta {
+	margin: 0 0 0.75rem;
 }
 .practice-project__review {
 	margin: 1.25rem 0 0;
@@ -196,6 +211,12 @@
 		min-height: 2rem;
 		padding: 0.2rem;
 		font-size: 0.75rem;
+	}
+	.practice-project__content .article-body > :last-child {
+		margin-bottom: 0;
+	}
+	.practice-project__meta {
+		margin: 0 0 0.75rem;
 	}
 	.practice-project__review {
 		padding: 0.75rem;

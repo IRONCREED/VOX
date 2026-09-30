@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type {
 	AboutStoryLink,
+	Locale,
 	LocalizedAboutStory,
 } from '../../content-catalog/domain/content-model';
 import { AboutCardSlider } from './about-card-slider';
@@ -24,12 +25,13 @@ function StoryLink({ link, className }: { link: AboutStoryLink; className?: stri
 }
 
 interface AboutStoryProps {
+	locale: Locale;
 	nextSlideLabel: string;
 	previousSlideLabel: string;
 	story: LocalizedAboutStory;
 }
 
-export function AboutStory({ nextSlideLabel, previousSlideLabel, story }: AboutStoryProps) {
+export function AboutStory({ locale, nextSlideLabel, previousSlideLabel, story }: AboutStoryProps) {
 	return (
 		<section className="about-story">
 			<section className="about-cycle about-cycle--combined" aria-labelledby="about-cycle-title">
@@ -55,9 +57,12 @@ export function AboutStory({ nextSlideLabel, previousSlideLabel, story }: AboutS
 								<p>{section.summary}</p>
 							</header>
 							{section.kind === 'portfolio' && story.practiceMap ? (
-								<PracticeProjects story={story} />
+								<PracticeProjects story={story} locale={locale} />
 							) : null}
-							{section.kind !== 'testimonials' ? <ArticleBody body={section.body} /> : null}
+							{section.kind !== 'testimonials' &&
+							!(section.kind === 'portfolio' && story.practiceMap) ? (
+								<ArticleBody body={section.body} />
+							) : null}
 
 							{section.flow ? (
 								<ol className="about-service__flow">
