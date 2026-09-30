@@ -7,9 +7,11 @@ import { BRAND_FAVICON_SRC } from '../../src/interface-system/components/brand-m
 import { SiteAudioProvider } from '../../src/interface-system/components/site-audio-provider';
 import { ThemeBootstrap } from '../../src/interface-system/components/theme-bootstrap';
 import { getSiteOrigin } from '../../src/site-metadata/site-origin';
+import { getSocialPreview } from '../../src/site-metadata/social-preview';
 import '../globals.css';
 import '@xyflow/react/dist/style.css';
 import '../../src/interface-system/iron-creed-interface.css';
+import '../../src/interface-system/practice-map.css';
 
 const geistSans = Geist({
 	subsets: ['latin'],
@@ -22,24 +24,17 @@ const geistMono = Geist_Mono({
 });
 
 const siteDescription = 'Architecture, memory, and formal systems inside software.';
-const socialPreview = new URL('/og.png', getSiteOrigin());
+const socialPreview = getSocialPreview();
 
 export const metadata: Metadata = {
-	applicationName: 'IRON CREED',
+	applicationName: 'IRONCREED',
 	description: siteDescription,
 	metadataBase: getSiteOrigin(),
 	openGraph: {
 		description: siteDescription,
-		images: [
-			{
-				alt: 'IRON CREED — architecture, memory, and formal systems',
-				height: 630,
-				url: socialPreview,
-				width: 1200,
-			},
-		],
-		siteName: 'IRON CREED',
-		title: 'IRON CREED',
+		images: [socialPreview],
+		siteName: 'IRONCREED',
+		title: 'IRONCREED',
 		type: 'website',
 	},
 	robots: {
@@ -49,8 +44,8 @@ export const metadata: Metadata = {
 	twitter: {
 		card: 'summary_large_image',
 		description: siteDescription,
-		images: [socialPreview],
-		title: 'IRON CREED',
+		images: [socialPreview.url],
+		title: 'IRONCREED',
 	},
 };
 

@@ -2250,10 +2250,10 @@
 		"schemaVersion": 1,
 		"status": "published",
 		"visibility": "public",
-		"revision": 1,
+		"revision": 2,
 		"text": {
-			"uk": "На основі якої моделі сформовано ШІ-асистента IRON CREED?",
-			"en": "Which model is the IRON CREED AI assistant based on?"
+			"uk": "На основі якої моделі сформовано ШІ-асистента IRONCREED?",
+			"en": "Which model is the IRONCREED AI assistant based on?"
 		},
 		"answer": {
 			"uk": "Асистента сформовано на основі моделей OpenAI GPT. Публічна панель цього сайту відтворює заздалегідь затверджені відповіді з корпусу й не викликає зовнішню модель під час перегляду.",
@@ -2284,10 +2284,10 @@
 		"schemaVersion": 1,
 		"status": "published",
 		"visibility": "public",
-		"revision": 1,
+		"revision": 2,
 		"text": {
-			"uk": "Що це за гра, персонажем якої є IRON CREED?",
-			"en": "What is the game in which IRON CREED appears?"
+			"uk": "Що це за гра, персонажем якої є IRONCREED?",
+			"en": "What is the game in which IRONCREED appears?"
 		},
 		"answer": {
 			"uk": "Подробиці з’являться пізніше. Стежте за сайтом https://interdead.phantom-draft.com/",

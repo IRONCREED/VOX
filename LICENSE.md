@@ -1,4 +1,4 @@
-# IRON CREED licensing map
+# IRONCREED licensing map
 
 Effective date: 13 August 2026.
 
@@ -32,7 +32,7 @@ source without replacing this repository-specific map.
 5. The default map above.
 
 Publishing source code or editorial material does not grant permission to use
-the names `IRON CREED` or `Zhovten Games`, their logos, characters, worlds, or
+the names `IRONCREED` or `Zhovten Games`, their logos, characters, worlds, or
 visual presentation in a way that suggests endorsement, partnership, or
 official origin.
 
@@ -57,3 +57,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Map geometry under `src/interface-system/geography/` derives from public-domain
+Natural Earth data. Social preview artwork under `public/media/social/` is
+reserved visual identity; no licence is granted to those images.

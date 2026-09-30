@@ -1,0 +1,203 @@
+.about-service > .practice-map {
+	grid-column: 1 / -1;
+}
+.practice-map {
+	min-width: 0;
+	width: 100%;
+	color: var(--ink);
+}
+.practice-map__canvas {
+	position: relative;
+	width: 100%;
+	margin: 0 0 1rem;
+	border: 1px solid var(--line);
+	border-radius: 4px;
+	background: var(--paper);
+}
+.practice-map__canvas svg {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.practice-map__country {
+	fill: #e1e8e9;
+	stroke: #fcfcfc;
+	stroke-width: 0.65;
+}
+.practice-map__country[data-client='true'] {
+	fill: #3e8997;
+}
+.practice-map__country[data-selected='true'] {
+	fill: #00bad7;
+}
+.practice-map__leader {
+	stroke: #087689;
+	stroke-width: 1;
+}
+.practice-map__marker {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.35rem;
+	min-width: 2.75rem;
+	min-height: 2.75rem;
+	padding: 0.4rem;
+	transform: translate(-50%, -50%);
+	border: 1px solid #176575;
+	border-radius: 4px;
+	background: #fcfcfc;
+	color: #12383f;
+	font-family: var(--font-geist-mono), monospace;
+	font-size: 0.875rem;
+	line-height: 1.2;
+	text-decoration: none;
+	cursor: pointer;
+}
+.practice-map__marker[aria-pressed='true'],
+.practice-map__marker:hover {
+	background: #087689;
+	color: #fff;
+}
+.practice-map__marker:focus-visible,
+.practice-map__filters button:focus-visible,
+.practice-project summary:focus-visible {
+	outline: 3px solid #00a2bd;
+	outline-offset: 3px;
+}
+.practice-map__filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin: 1.25rem 0;
+}
+.practice-map__filters button {
+	display: flex;
+	align-items: center;
+	gap: 0.65rem;
+	min-height: 2.75rem;
+	padding: 0.55rem 0.85rem;
+	border: 1px solid var(--line);
+	border-radius: 4px;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	font-size: 0.875rem;
+	cursor: pointer;
+}
+.practice-map__filters button[aria-pressed='true'] {
+	border-color: #087689;
+	background: #087689;
+	color: #fff;
+}
+.practice-map__filters span {
+	font-weight: 700;
+}
+.practice-map__selection {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.5rem;
+	margin: 1rem 0;
+}
+.practice-map__selection strong {
+	font-size: 1.125rem;
+}
+.practice-map__selection span,
+.practice-map__caption,
+.practice-project__meta,
+.practice-project__review figcaption {
+	font-size: 0.875rem;
+	line-height: 1.6;
+}
+.practice-map__caption {
+	margin: 0.75rem 0;
+}
+.practice-map__caption .article-body {
+	padding: 0;
+	font-size: 0.875rem;
+}
+.practice-map__results > section[hidden] {
+	display: none;
+}
+.practice-project {
+	margin: 0 0 0.75rem;
+	border: 1px solid var(--line);
+	border-radius: 4px;
+}
+.practice-project summary {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 1rem;
+	font-size: 1rem;
+	font-weight: 650;
+	line-height: 1.5;
+	list-style: none;
+	cursor: pointer;
+}
+.practice-project summary::-webkit-details-marker {
+	display: none;
+}
+.practice-project[open] summary > span:last-child {
+	transform: rotate(45deg);
+}
+.practice-project__content {
+	padding: 0 1rem 1rem;
+	font-size: 1rem;
+	line-height: 1.7;
+	overflow-wrap: anywhere;
+}
+.practice-project__content .article-body {
+	font-size: 1rem;
+	line-height: 1.7;
+}
+.practice-project__review {
+	margin: 1.25rem 0 0;
+	padding: 1rem;
+	border-left: 3px solid #087689;
+	background: rgb(8 118 137 / 6%);
+}
+.practice-project__review blockquote {
+	margin: 0.75rem 0 0;
+	padding: 0;
+	border: 0;
+}
+.practice-project__review-count {
+	display: block;
+	margin-top: 0.35rem;
+	color: var(--ink-soft);
+	font-size: 0.8rem;
+	font-weight: 400;
+}
+[data-theme='dark'] .practice-map__country {
+	fill: #29343a;
+	stroke: #13191c;
+}
+[data-theme='dark'] .practice-map__country[data-client='true'] {
+	fill: #327d8c;
+}
+[data-theme='dark'] .practice-map__country[data-selected='true'] {
+	fill: #13c3dd;
+}
+[data-theme='dark'] .practice-map__marker {
+	border-color: #398b99;
+	background: #15292e;
+	color: #e5f8fb;
+}
+[data-theme='dark'] .practice-map__marker[aria-pressed='true'] {
+	background: #087689;
+}
+@media (max-width: 700px) {
+	.practice-map__marker {
+		min-width: 2rem;
+		min-height: 2rem;
+		padding: 0.2rem;
+		font-size: 0.75rem;
+	}
+	.practice-project__review {
+		padding: 0.75rem;
+	}
+}

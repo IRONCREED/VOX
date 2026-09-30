@@ -101,7 +101,7 @@ export function SiteModalLayer({ contentNotice, copy, locale, welcome }: SiteMod
 						</button>
 					</>
 				}
-				eyebrow="IRON CREED / SYSTEM ENTRY"
+				eyebrow="IRONCREED / SYSTEM ENTRY"
 				initialFocus="title"
 				onCancel={finishWelcome}
 				open={activeModal === 'welcome'}

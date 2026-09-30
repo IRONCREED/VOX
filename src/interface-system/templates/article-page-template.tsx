@@ -195,7 +195,7 @@ export function ArticlePageTemplate({
 					id="article-body"
 				>
 					<header>
-						<small>IRON CREED / {article.translationKey.toUpperCase()}</small>
+						<small>IRONCREED / {article.translationKey.toUpperCase()}</small>
 						<h2 id="article-body-title">{copy.articleBody}</h2>
 					</header>
 					<ArticleBody

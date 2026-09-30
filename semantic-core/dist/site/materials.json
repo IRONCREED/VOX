@@ -9,7 +9,7 @@
 		"title": "Case 001. Cloudflare Crawler Surface Policy: Controlling Bot Access to URLs",
 		"description": "A 22-site case: crawler identity and URL surface, profiles, explicit writes, drift, and a portable PHP tool.",
 		"memoryLine": "A useful crawler still needs a defined access surface.",
-		"folderLabel": "IRON CREED · CLOUDFLARE OPERATIONS · CASE 001",
+		"folderLabel": "IRONCREED · CLOUDFLARE OPERATIONS · CASE 001",
 		"authors": [
 			"Sam Starling"
 		],
@@ -126,7 +126,7 @@
 					"alt": "Observed load opens two options: a global identity block or a restriction on a particular surface; this case selects the latter.",
 					"title": "From incident to policy",
 					"caption": "Observed load opens two options: a global identity block or a restriction on a particular surface; this case selects the latter.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g01 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g01 · authorial model"
 				}
 			},
 			{
@@ -211,7 +211,7 @@
 					"alt": "Identity, URL class, profile, and local conditions converge in the zone’s effective policy.",
 					"title": "Decision components",
 					"caption": "Identity, URL class, profile, and local conditions converge in the zone’s effective policy.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g02 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g02 · authorial model"
 				}
 			},
 			{
@@ -298,7 +298,7 @@
 					"alt": "A request is blocked only when both the selected crawler identity and the transactional surface match.",
 					"title": "Identity and surface",
 					"caption": "A request is blocked only when both the selected crawler identity and the transactional surface match.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g03 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g03 · authorial model"
 				}
 			},
 			{
@@ -408,7 +408,7 @@
 					"alt": "Profile policies, additional policies, disabled policies, and inline rules determine logical rules; the compiler turns them into physical rules.",
 					"title": "From profile to effective state",
 					"caption": "Profile policies, additional policies, disabled policies, and inline rules determine logical rules; the compiler turns them into physical rules.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g04 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g04 · authorial model"
 				}
 			},
 			{
@@ -529,7 +529,7 @@
 					"alt": "Explicit inventory leads to compilation, live-state inspection, a plan preserving the unmanaged portion, a separate operator decision, and result verification.",
 					"title": "Case 001 operating cycle",
 					"caption": "Explicit inventory leads to compilation, live-state inspection, a plan preserving the unmanaged portion, a separate operator decision, and result verification.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g05 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g05 · authorial model"
 				}
 			},
 			{
@@ -608,7 +608,7 @@
 					"alt": "Two profile policies and one zone policy form three logical components.",
 					"title": "Commerce fixture",
 					"caption": "Two profile policies and one zone policy form three logical components.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g06 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g06 · authorial model"
 				}
 			},
 			{
@@ -699,7 +699,7 @@
 					"alt": "Several logical block policies form one physical block rule; challenge remains a separate group.",
 					"title": "Logical → physical",
 					"caption": "Several logical block policies form one physical block rule; challenge remains a separate group.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g07 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g07 · authorial model"
 				}
 			},
 			{
@@ -792,7 +792,7 @@
 					"alt": "The prefix defines ownership; managed rules are replaced, while the remainder enters the plan with its relative order preserved.",
 					"title": "Ownership boundary",
 					"caption": "The prefix defines ownership; managed rules are replaced, while the remainder enters the plan with its relative order preserved.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g08 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g08 · authorial model"
 				}
 			},
 			{
@@ -871,7 +871,7 @@
 					"alt": "A read token supports observation; a write token together with an explicit decision opens the apply path.",
 					"title": "Credential separation",
 					"caption": "A read token supports observation; a write token together with an explicit decision opens the apply path.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g09 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g09 · authorial model"
 				}
 			},
 			{
@@ -1002,7 +1002,7 @@
 					"alt": "Plan and budget checks precede the snapshot; ruleset write is followed by readback, and a mismatch stops the operation.",
 					"title": "Write boundary",
 					"caption": "Plan and budget checks precede the snapshot; ruleset write is followed by readback, and a mismatch stops the operation.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g10 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g10 · authorial model"
 				}
 			},
 			{
@@ -1129,7 +1129,7 @@
 					"alt": "Zones are checked sequentially; changes are limited by assigned policies, and an error terminates rollout.",
 					"title": "Fleet control",
 					"caption": "Zones are checked sequentially; changes are limited by assigned policies, and an error terminates rollout.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g11 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g11 · authorial model"
 				}
 			},
 			{
@@ -1214,7 +1214,7 @@
 					"alt": "Live state and compiled desired state meet in a comparison returning either agreement or divergence.",
 					"title": "Detecting drift",
 					"caption": "Live state and compiled desired state meet in a comparison returning either agreement or divergence.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g12 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g12 · authorial model"
 				}
 			},
 			{
@@ -1347,7 +1347,7 @@
 					"alt": "Local configuration and fixtures lead to compile, plan, dry-run, operator review, apply, readback, and audit; site-specific edge smoke remains a separate deployment check.",
 					"title": "Portable pipeline",
 					"caption": "Local configuration and fixtures lead to compile, plan, dry-run, operator review, apply, readback, and audit; site-specific edge smoke remains a separate deployment check.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g13 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g13 · authorial model"
 				}
 			},
 			{
@@ -1456,7 +1456,7 @@
 					"alt": "Telemetry opens a proposal; tests, plan, and human review precede explicit apply and verification.",
 					"title": "From telemetry to authorised change",
 					"caption": "Telemetry opens a proposal; tests, plan, and human review precede explicit apply and verification.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g14 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g14 · authorial model"
 				}
 			}
 		],
@@ -1472,7 +1472,7 @@
 		"title": "Кейс №1. Cloudflare Crawler Surface Policy: контроль доступу ботів до URL",
 		"description": "Кейс із 22 сайтів: поєднання crawler identity та URL surface, profiles, явний write-path, drift і переносимий PHP-інструмент.",
 		"memoryLine": "Корисний crawler також потребує визначеної поверхні доступу.",
-		"folderLabel": "IRON CREED · CLOUDFLARE OPERATIONS · CASE 001",
+		"folderLabel": "IRONCREED · CLOUDFLARE OPERATIONS · CASE 001",
 		"authors": [
 			"Sam Starling"
 		],
@@ -1589,7 +1589,7 @@
 					"alt": "Спостереження за навантаженням відкриває два варіанти: глобальну заборону identity та обмеження конкретної поверхні; кейс обирає другий варіант.",
 					"title": "Від інциденту до policy",
 					"caption": "Спостереження за навантаженням відкриває два варіанти: глобальну заборону identity та обмеження конкретної поверхні; кейс обирає другий варіант.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g01 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g01 · authorial model"
 				}
 			},
 			{
@@ -1674,7 +1674,7 @@
 					"alt": "Identity, клас URL, profile і локальні умови сходяться в effective policy зони.",
 					"title": "Склад рішення",
 					"caption": "Identity, клас URL, profile і локальні умови сходяться в effective policy зони.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g02 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g02 · authorial model"
 				}
 			},
 			{
@@ -1761,7 +1761,7 @@
 					"alt": "Запит блокується лише при одночасному збігу потрібної crawler identity та transactional surface.",
 					"title": "Identity та surface",
 					"caption": "Запит блокується лише при одночасному збігу потрібної crawler identity та transactional surface.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g03 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g03 · authorial model"
 				}
 			},
 			{
@@ -1871,7 +1871,7 @@
 					"alt": "Profile policies, additional policies, disabled policies та inline rules визначають logical rules; compiler перетворює їх на physical rules.",
 					"title": "Від профілю до effective state",
 					"caption": "Profile policies, additional policies, disabled policies та inline rules визначають logical rules; compiler перетворює їх на physical rules.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g04 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g04 · authorial model"
 				}
 			},
 			{
@@ -1992,7 +1992,7 @@
 					"alt": "Явний inventory веде до compilation, читання live state, плану зі збереженою unmanaged-частиною, окремого рішення оператора й перевірки результату.",
 					"title": "Робочий цикл Case 001",
 					"caption": "Явний inventory веде до compilation, читання live state, плану зі збереженою unmanaged-частиною, окремого рішення оператора й перевірки результату.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g05 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g05 · authorial model"
 				}
 			},
 			{
@@ -2071,7 +2071,7 @@
 					"alt": "Дві policy профілю та окрема policy зони утворюють три логічні складники.",
 					"title": "Commerce fixture",
 					"caption": "Дві policy профілю та окрема policy зони утворюють три логічні складники.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g06 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g06 · authorial model"
 				}
 			},
 			{
@@ -2162,7 +2162,7 @@
 					"alt": "Кілька логічних block-policy утворюють одне physical block-rule; challenge залишається окремою групою.",
 					"title": "Logical → physical",
 					"caption": "Кілька логічних block-policy утворюють одне physical block-rule; challenge залишається окремою групою.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g07 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g07 · authorial model"
 				}
 			},
 			{
@@ -2255,7 +2255,7 @@
 					"alt": "Prefix визначає ownership; managed rules замінюються, решта переходить у план із збереженням взаємного порядку.",
 					"title": "Границя ownership",
 					"caption": "Prefix визначає ownership; managed rules замінюються, решта переходить у план із збереженням взаємного порядку.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g08 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g08 · authorial model"
 				}
 			},
 			{
@@ -2334,7 +2334,7 @@
 					"alt": "Read-token обслуговує спостереження, write-token разом із явним рішенням відкриває apply.",
 					"title": "Розділення credentials",
 					"caption": "Read-token обслуговує спостереження, write-token разом із явним рішенням відкриває apply.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g09 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g09 · authorial model"
 				}
 			},
 			{
@@ -2465,7 +2465,7 @@
 					"alt": "Перевірка плану й бюджету передує snapshot; після ruleset write йде readback, а невідповідність зупиняє операцію.",
 					"title": "Межа запису",
 					"caption": "Перевірка плану й бюджету передує snapshot; після ruleset write йде readback, а невідповідність зупиняє операцію.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g10 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g10 · authorial model"
 				}
 			},
 			{
@@ -2592,7 +2592,7 @@
 					"alt": "Зони проходять перевірку послідовно; зміна обмежується призначеною policy, а помилка завершує rollout.",
 					"title": "Контроль fleet",
 					"caption": "Зони проходять перевірку послідовно; зміна обмежується призначеною policy, а помилка завершує rollout.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g11 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g11 · authorial model"
 				}
 			},
 			{
@@ -2677,7 +2677,7 @@
 					"alt": "Live state й compiled desired state сходяться в порівнянні, яке повертає збіг або розбіжність.",
 					"title": "Виявлення drift",
 					"caption": "Live state й compiled desired state сходяться в порівнянні, яке повертає збіг або розбіжність.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g12 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g12 · authorial model"
 				}
 			},
 			{
@@ -2810,7 +2810,7 @@
 					"alt": "Локальна конфігурація й fixtures ведуть до compile, plan, dry-run, рішення оператора, apply, readback та audit; site-specific edge smoke є окремою перевіркою deployment.",
 					"title": "Переносимий pipeline",
 					"caption": "Локальна конфігурація й fixtures ведуть до compile, plan, dry-run, рішення оператора, apply, readback та audit; site-specific edge smoke є окремою перевіркою deployment.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g13 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g13 · authorial model"
 				}
 			},
 			{
@@ -2919,7 +2919,7 @@
 					"alt": "Telemetry відкриває пропозицію; тести, plan і людське review передують explicit apply та перевірці.",
 					"title": "Від telemetry до дозволеної зміни",
 					"caption": "Telemetry відкриває пропозицію; тести, plan і людське review передують explicit apply та перевірці.",
-					"provenance": "IRON CREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g14 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.cloudflare-001-crawler-surface-policy.g14 · authorial model"
 				}
 			}
 		],
@@ -2935,7 +2935,7 @@
 		"title": "Why Documentation Matters: How a Decision Outlives Its Author",
 		"description": "Working code preserves action; documentation preserves the intent, limits, and rationale that let a system outlive its author.",
 		"memoryLine": "Code preserves the system’s action. A document preserves the decision after the author’s voice disappears.",
-		"folderLabel": "IRON CREED PROGRAMMING · DOCUMENTATION",
+		"folderLabel": "IRONCREED PROGRAMMING · DOCUMENTATION",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -3084,7 +3084,7 @@
 					"alt": "A diagram presents LA-1 as Project Y’s shared point of entry, transferring knowledge while leaving moral judgment to people.",
 					"title": "The Los Alamos Primer as Project Y’s documentation entry point",
 					"caption": "The Los Alamos Primer is a record of five introductory lectures that Robert Serber delivered in April 1943 to members of Project Y, the Los Alamos branch of the Manhattan Project.",
-					"provenance": "IRON CREED semantic-core · asset.why-documentation.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.why-documentation.g01 · authorial brief"
 				}
 			},
 			{
@@ -3181,7 +3181,7 @@
 					"alt": "Documentation connects intent, the chosen decision, implementation, verification, and future reconsideration.",
 					"title": "Documentation connects intent, the chosen decision, implementation, verification, and future reconsideration.",
 					"caption": "anatomy of a decision",
-					"provenance": "IRON CREED semantic-core · asset.why-documentation.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.why-documentation.g02 · authorial brief"
 				}
 			},
 			{
@@ -3286,7 +3286,7 @@
 					"alt": "A single WEB file produces readable documentation through WEAVE and machine code through TANGLE.",
 					"title": "A single WEB file produces readable documentation through WEAVE and machine code through TANGLE.",
 					"caption": "two projections of WEB",
-					"provenance": "IRON CREED semantic-core · asset.why-documentation.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.why-documentation.g03 · authorial brief"
 				}
 			},
 			{
@@ -3417,7 +3417,7 @@
 					"alt": "AI creates a candidate from a constrained assignment; a human, the review process, tests, and the decision log determine whether it is accepted.",
 					"title": "AI creates a candidate from a constrained assignment; a human, the review process, tests, and the decision log determine whether it is accepted.",
 					"caption": "documentation in the AI loop",
-					"provenance": "IRON CREED semantic-core · asset.why-documentation.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.why-documentation.g04 · authorial brief"
 				}
 			}
 		],
@@ -3433,7 +3433,7 @@
 		"title": "Навіщо потрібна документація: як рішення переживає автора",
 		"description": "Робочий код зберігає дію, а документація — намір, межі й підстави рішення, завдяки яким система переживає автора.",
 		"memoryLine": "Код зберігає дію системи. Документ зберігає рішення після того, як голос автора зникає.",
-		"folderLabel": "ПРОГРАМУВАННЯ IRON CREED · ДОКУМЕНТАЦІЯ",
+		"folderLabel": "ПРОГРАМУВАННЯ IRONCREED · ДОКУМЕНТАЦІЯ",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -3582,7 +3582,7 @@
 					"alt": "Схема показує LA-1 як спільну точку входу до Project Y, що передає знання, але залишає моральне судження людині",
 					"title": "The Los Alamos Primer як документаційна точка входу Project Y",
 					"caption": "The Los Alamos Primer — конспект п’яти вступних лекцій Роберта Сербера, прочитаних у квітні 1943 року учасникам Project Y, лос-аламоського підрозділу Мангеттенського проєкту",
-					"provenance": "IRON CREED semantic-core · asset.why-documentation.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.why-documentation.g01 · authorial brief"
 				}
 			},
 			{
@@ -3679,7 +3679,7 @@
 					"alt": "Документація пов’язує намір, ухвалене рішення, реалізацію, перевірку й майбутній перегляд",
 					"title": "Документація пов’язує намір, ухвалене рішення, реалізацію, перевірку й майбутній перегляд",
 					"caption": "анатомія рішення",
-					"provenance": "IRON CREED semantic-core · asset.why-documentation.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.why-documentation.g02 · authorial brief"
 				}
 			},
 			{
@@ -3784,7 +3784,7 @@
 					"alt": "Єдиний WEB-файл породжує читабельну документацію через WEAVE і машинний код через TANGLE",
 					"title": "Єдиний WEB-файл породжує читабельну документацію через WEAVE і машинний код через TANGLE",
 					"caption": "дві проєкції WEB",
-					"provenance": "IRON CREED semantic-core · asset.why-documentation.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.why-documentation.g03 · authorial brief"
 				}
 			},
 			{
@@ -3915,7 +3915,7 @@
 					"alt": "ШІ створює кандидата на основі обмеженого завдання; людина, рев’ю, тести й журнал рішень визначають його прийняття",
 					"title": "ШІ створює кандидата на основі обмеженого завдання; людина, рев’ю, тести й журнал рішень визначають його прийняття",
 					"caption": "документація в ШІ-контурі",
-					"provenance": "IRON CREED semantic-core · asset.why-documentation.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.why-documentation.g04 · authorial brief"
 				}
 			}
 		],
@@ -3931,7 +3931,7 @@
 		"title": "The “Regulated Availability” Pattern: Women’s Crossed Legs as a Sexual Code",
 		"description": "How visibility control, composition, and cultural learning turn crossed legs into a sign; size representation and the limits of inferring intention.",
 		"memoryLine": "A visible boundary organises the gaze; consent needs its own voice.",
-		"folderLabel": "IRON CREED · PSYCHOBIOSOCIAL PATTERNS",
+		"folderLabel": "IRONCREED · PSYCHOBIOSOCIAL PATTERNS",
 		"authors": [
 			"Sam Starling"
 		],
@@ -4072,7 +4072,7 @@
 					"alt": "Movement control, gender coding, concealment, directed attention, and aestheticisation form the proposed historical model.",
 					"title": "From discipline to sign",
 					"caption": "Movement control, gender coding, concealment, directed attention, and aestheticisation form the proposed historical model.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g01 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g01 · authorial model"
 				}
 			},
 			{
@@ -4133,7 +4133,7 @@
 					"alt": "A prohibited gesture becomes permissible under controlled conditions and can subsequently acquire the meaning of elegance.",
 					"title": "Changing permission",
 					"caption": "A prohibited gesture becomes permissible under controlled conditions and can subsequently acquire the meaning of elegance.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g02 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g02 · authorial model"
 				}
 			},
 			{
@@ -4218,7 +4218,7 @@
 					"alt": "Leg lines direct the gaze towards a crossing beyond which their continuation is concealed.",
 					"title": "Boundary of visibility",
 					"caption": "Leg lines direct the gaze towards a crossing beyond which their continuation is concealed.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g03 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g03 · authorial model"
 				}
 			},
 			{
@@ -4280,7 +4280,7 @@
 					"alt": "Visible legs and a closed central area converge in one composition.",
 					"title": "Display and boundary",
 					"caption": "Visible legs and a closed central area converge in one composition.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g04 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g04 · authorial model"
 				}
 			},
 			{
@@ -4359,7 +4359,7 @@
 					"alt": "Etiquette’s regulation of visibility becomes staged image composition through the recognisable form of crossing.",
 					"title": "Retained form, changed function",
 					"caption": "Etiquette’s regulation of visibility becomes staged image composition through the recognisable form of crossing.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g05 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g05 · authorial model"
 				}
 			},
 			{
@@ -4444,7 +4444,7 @@
 					"alt": "The sequence from pelvis to foot represents a compositional route, not anatomical causation.",
 					"title": "Silhouette guiding line",
 					"caption": "The sequence from pelvis to foot represents a compositional route, not anatomical causation.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g06 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g06 · authorial model"
 				}
 			},
 			{
@@ -4505,7 +4505,7 @@
 					"alt": "A recognisable gesture and broader size representation create an opportunity to participate in the same visual vocabulary.",
 					"title": "Expanding participation",
 					"caption": "A recognisable gesture and broader size representation create an opportunity to participate in the same visual vocabulary.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g07 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g07 · authorial model"
 				}
 			},
 			{
@@ -4590,7 +4590,7 @@
 					"alt": "An expanded bodily vocabulary in some media settings coexists with a narrow standard in the studied runway sample.",
 					"title": "Systems of representation",
 					"caption": "An expanded bodily vocabulary in some media settings coexists with a narrow standard in the studied runway sample.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g08 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g08 · authorial model"
 				}
 			},
 			{
@@ -4664,7 +4664,7 @@
 					"alt": "Pose, code, and context permit an interpretation of an image; the transition from that interpretation to an inference of consent is blocked.",
 					"title": "Limit of inference",
 					"caption": "Pose, code, and context permit an interpretation of an image; the transition from that interpretation to an inference of consent is blocked.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g09 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g09 · authorial model"
 				}
 			},
 			{
@@ -4750,7 +4750,7 @@
 					"alt": "Four compositional components converge in the model of regulated availability.",
 					"title": "Pattern components",
 					"caption": "Four compositional components converge in the model of regulated availability.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g10 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g10 · authorial model"
 				}
 			},
 			{
@@ -4811,7 +4811,7 @@
 					"alt": "Discipline, aestheticisation, and independent use of the sign are connected as stages in the authorial reconstruction.",
 					"title": "Cultural mutation",
 					"caption": "Discipline, aestheticisation, and independent use of the sign are connected as stages in the authorial reconstruction.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g11 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g11 · authorial model"
 				}
 			}
 		],
@@ -4827,7 +4827,7 @@
 		"title": "Патерн «Регульована доступність»: схрещування жіночих ніг як сексуальний код",
 		"description": "Як контроль видимості, композиція й культурне навчання перетворюють схрещені ноги на знак; розмірна репрезентація та межі висновку про намір.",
 		"memoryLine": "Видима межа організує погляд; згода потребує власного голосу.",
-		"folderLabel": "IRON CREED · ПСИХОБІОСОЦІАЛЬНІ ПАТЕРНИ",
+		"folderLabel": "IRONCREED · ПСИХОБІОСОЦІАЛЬНІ ПАТЕРНИ",
 		"authors": [
 			"Sam Starling"
 		],
@@ -4968,7 +4968,7 @@
 					"alt": "Контроль руху, гендерне маркування, приховування, спрямування уваги та естетизація утворюють запропоновану історичну модель.",
 					"title": "Від дисципліни до знака",
 					"caption": "Контроль руху, гендерне маркування, приховування, спрямування уваги та естетизація утворюють запропоновану історичну модель.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g01 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g01 · authorial model"
 				}
 			},
 			{
@@ -5029,7 +5029,7 @@
 					"alt": "Заборонений жест переходить у дозволений за умов контролю, а згодом може отримати значення елегантності.",
 					"title": "Зміна допустимого",
 					"caption": "Заборонений жест переходить у дозволений за умов контролю, а згодом може отримати значення елегантності.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g02 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g02 · authorial model"
 				}
 			},
 			{
@@ -5114,7 +5114,7 @@
 					"alt": "Лінії ніг спрямовують погляд до перетину, за яким продовження закрите.",
 					"title": "Межа видимості",
 					"caption": "Лінії ніг спрямовують погляд до перетину, за яким продовження закрите.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g03 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g03 · authorial model"
 				}
 			},
 			{
@@ -5176,7 +5176,7 @@
 					"alt": "Демонстрація ніг і закриття центральної ділянки сходяться в одній композиції.",
 					"title": "Показ і межа",
 					"caption": "Демонстрація ніг і закриття центральної ділянки сходяться в одній композиції.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g04 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g04 · authorial model"
 				}
 			},
 			{
@@ -5255,7 +5255,7 @@
 					"alt": "Етикетне регулювання видимості переходить у постановочну організацію образу через впізнавану форму схрещення.",
 					"title": "Форма зберігається, функція змінюється",
 					"caption": "Етикетне регулювання видимості переходить у постановочну організацію образу через впізнавану форму схрещення.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g05 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g05 · authorial model"
 				}
 			},
 			{
@@ -5340,7 +5340,7 @@
 					"alt": "Послідовність від таза до ступні показує композиційний маршрут, а не анатомічну причинність.",
 					"title": "Напрямна силуету",
 					"caption": "Послідовність від таза до ступні показує композиційний маршрут, а не анатомічну причинність.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g06 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g06 · authorial model"
 				}
 			},
 			{
@@ -5401,7 +5401,7 @@
 					"alt": "Впізнаваний жест і ширша розмірна репрезентація утворюють можливість участі в тому самому візуальному словнику.",
 					"title": "Розширення кола носіїв",
 					"caption": "Впізнаваний жест і ширша розмірна репрезентація утворюють можливість участі в тому самому візуальному словнику.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g07 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g07 · authorial model"
 				}
 			},
 			{
@@ -5486,7 +5486,7 @@
 					"alt": "Розширення тілесного словника в окремих медійних середовищах співіснує з вузьким стандартом у дослідженому корпусі модних показів.",
 					"title": "Контури репрезентації",
 					"caption": "Розширення тілесного словника в окремих медійних середовищах співіснує з вузьким стандартом у дослідженому корпусі модних показів.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g08 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g08 · authorial model"
 				}
 			},
 			{
@@ -5560,7 +5560,7 @@
 					"alt": "Поза разом із кодом і контекстом допускає інтерпретацію образу; перехід від неї до висновку про згоду заблокований.",
 					"title": "Межа висновку",
 					"caption": "Поза разом із кодом і контекстом допускає інтерпретацію образу; перехід від неї до висновку про згоду заблокований.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g09 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g09 · authorial model"
 				}
 			},
 			{
@@ -5646,7 +5646,7 @@
 					"alt": "Чотири композиційні складники сходяться в моделі регульованої доступності.",
 					"title": "Склад патерна",
 					"caption": "Чотири композиційні складники сходяться в моделі регульованої доступності.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g10 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g10 · authorial model"
 				}
 			},
 			{
@@ -5707,7 +5707,7 @@
 					"alt": "Дисципліна, її естетизація та самостійне використання знака пов’язані як етапи авторської реконструкції.",
 					"title": "Культурна мутація",
 					"caption": "Дисципліна, її естетизація та самостійне використання знака пов’язані як етапи авторської реконструкції.",
-					"provenance": "IRON CREED semantic-core · asset.regulated-availability.g11 · authorial model"
+					"provenance": "IRONCREED semantic-core · asset.regulated-availability.g11 · authorial model"
 				}
 			}
 		],
@@ -5723,7 +5723,7 @@
 		"title": "From Body to Signal: How Horror Relocated Fear into the Systems of Perception",
 		"description": "Modern horror relocates fear from the visible monster into the body, damaged environments, and the channels through which reality is perceived.",
 		"memoryLine": "Terror travels best through the things we are least able to do without.",
-		"folderLabel": "IRON CREED RESEARCH · HORROR SYSTEMS",
+		"folderLabel": "IRONCREED RESEARCH · HORROR SYSTEMS",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -5858,7 +5858,7 @@
 					"alt": "Fear moves from monster to body, environment, and signal.",
 					"title": "Fear moves from monster to body, environment, and signal.",
 					"caption": "lead image",
-					"provenance": "IRON CREED semantic-core · asset.from-body-to-signal.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.from-body-to-signal.g01 · authorial brief"
 				}
 			},
 			{
@@ -5927,7 +5927,7 @@
 					"alt": "From catastrophe embodied as a monster to catastrophe inhabiting human flesh.",
 					"title": "From catastrophe embodied as a monster to catastrophe inhabiting human flesh.",
 					"caption": "body as archive",
-					"provenance": "IRON CREED semantic-core · asset.from-body-to-signal.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.from-body-to-signal.g02 · authorial brief"
 				}
 			},
 			{
@@ -6032,7 +6032,7 @@
 					"alt": "A damaged landscape organises risk through routes, infrastructure, and partial knowledge.",
 					"title": "A damaged landscape organises risk through routes, infrastructure, and partial knowledge.",
 					"caption": "environment as agent",
-					"provenance": "IRON CREED semantic-core · asset.from-body-to-signal.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.from-body-to-signal.g03 · authorial brief"
 				}
 			},
 			{
@@ -6123,7 +6123,7 @@
 					"alt": "Speech, hearing, vision, and signal function as channels of harm.",
 					"title": "Speech, hearing, vision, and signal function as channels of harm.",
 					"caption": "channel typology",
-					"provenance": "IRON CREED semantic-core · asset.from-body-to-signal.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.from-body-to-signal.g04 · authorial brief"
 				}
 			},
 			{
@@ -6214,7 +6214,7 @@
 					"alt": "Language links biological exposure, geopolitical hierarchy, and selective control.",
 					"title": "Language links biological exposure, geopolitical hierarchy, and selective control.",
 					"caption": "language as selector",
-					"provenance": "IRON CREED semantic-core · asset.from-body-to-signal.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.from-body-to-signal.g05 · authorial brief"
 				}
 			},
 			{
@@ -6335,7 +6335,7 @@
 					"alt": "War fragments the systems through which information is trusted and understood.",
 					"title": "War fragments the systems through which information is trusted and understood.",
 					"caption": "damaged mediation",
-					"provenance": "IRON CREED semantic-core · asset.from-body-to-signal.g06 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.from-body-to-signal.g06 · authorial brief"
 				}
 			}
 		],
@@ -6351,7 +6351,7 @@
 		"title": "Від тіла до сигналу: як горор перемістив страх у системи сприйняття",
 		"description": "Сучасний горор переміщує страх із видимого монстра в тіло, пошкоджені середовища та канали, через які сприймається реальність.",
 		"memoryLine": "Терор найкраще подорожує через те, без чого нам найважче обійтися.",
-		"folderLabel": "ДОСЛІДЖЕННЯ IRON CREED · СИСТЕМИ ГОРОРУ",
+		"folderLabel": "ДОСЛІДЖЕННЯ IRONCREED · СИСТЕМИ ГОРОРУ",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -6486,7 +6486,7 @@
 					"alt": "Страх рухається від монстра до тіла, середовища та сигналу",
 					"title": "Страх рухається від монстра до тіла, середовища та сигналу",
 					"caption": "головне зображення",
-					"provenance": "IRON CREED semantic-core · asset.from-body-to-signal.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.from-body-to-signal.g01 · authorial brief"
 				}
 			},
 			{
@@ -6555,7 +6555,7 @@
 					"alt": "Від катастрофи, втіленої в монстрі, до катастрофи, що оселяється в людській плоті",
 					"title": "Від катастрофи, втіленої в монстрі, до катастрофи, що оселяється в людській плоті",
 					"caption": "тіло як архів",
-					"provenance": "IRON CREED semantic-core · asset.from-body-to-signal.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.from-body-to-signal.g02 · authorial brief"
 				}
 			},
 			{
@@ -6660,7 +6660,7 @@
 					"alt": "Пошкоджений ландшафт організує ризик через маршрути, інфраструктуру та часткове знання",
 					"title": "Пошкоджений ландшафт організує ризик через маршрути, інфраструктуру та часткове знання",
 					"caption": "середовище як агент",
-					"provenance": "IRON CREED semantic-core · asset.from-body-to-signal.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.from-body-to-signal.g03 · authorial brief"
 				}
 			},
 			{
@@ -6751,7 +6751,7 @@
 					"alt": "Мовлення, слух, зір і сигнал функціонують як канали ураження",
 					"title": "Мовлення, слух, зір і сигнал функціонують як канали ураження",
 					"caption": "типологія каналів",
-					"provenance": "IRON CREED semantic-core · asset.from-body-to-signal.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.from-body-to-signal.g04 · authorial brief"
 				}
 			},
 			{
@@ -6842,7 +6842,7 @@
 					"alt": "Мова поєднує біологічний вплив, геополітичну ієрархію та вибірковий контроль",
 					"title": "Мова поєднує біологічний вплив, геополітичну ієрархію та вибірковий контроль",
 					"caption": "мова як селектор",
-					"provenance": "IRON CREED semantic-core · asset.from-body-to-signal.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.from-body-to-signal.g05 · authorial brief"
 				}
 			},
 			{
@@ -6963,7 +6963,7 @@
 					"alt": "Війна фрагментує системи, через які інформації довіряють і надають значення",
 					"title": "Війна фрагментує системи, через які інформації довіряють і надають значення",
 					"caption": "пошкоджене опосередкування",
-					"provenance": "IRON CREED semantic-core · asset.from-body-to-signal.g06 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.from-body-to-signal.g06 · authorial brief"
 				}
 			}
 		],
@@ -6979,7 +6979,7 @@
 		"title": "Connect America: How Article VII Bootstraps a Republic",
 		"description": "Article VII becomes an executable bootstrap protocol: nine state conventions establish a constitutional system whose runtime still has to be deployed.",
 		"memoryLine": "A map, thirteen possible nodes, nine valid ratifications, and one difficult distinction: a constitution may acquire authority before its institutions begin to run.",
-		"folderLabel": "IRON CREED RESEARCH · ARTICLE VII",
+		"folderLabel": "IRONCREED RESEARCH · ARTICLE VII",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -7135,7 +7135,7 @@
 					"alt": "Nine connected nodes bootstrap a shared constitutional system.",
 					"title": "Nine connected nodes bootstrap a shared constitutional system.",
 					"caption": "lead image",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-01-article-vii.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-01-article-vii.g01 · authorial brief"
 				}
 			},
 			{
@@ -7244,7 +7244,7 @@
 					"alt": "State ratifying conventions accumulate nine unique acts of consent, after which the transition to the federal system begins.",
 					"title": "State ratifying conventions accumulate nine unique acts of consent, after which the transition to the federal system begins.",
 					"caption": "The establishment threshold under Article VII",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-01-article-vii.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-01-article-vii.g02 · authorial brief"
 				}
 			},
 			{
@@ -7339,7 +7339,7 @@
 					"alt": "The proposal crosses the threshold of nine ratifications, expands the set of participants, and then transitions to operating institutions.",
 					"title": "The proposal crosses the threshold of nine ratifications, expands the set of participants, and then transitions to operating institutions.",
 					"caption": "Bootstrap lifecycle",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-01-article-vii.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-01-article-vii.g03 · authorial brief"
 				}
 			},
 			{
@@ -7452,7 +7452,7 @@
 					"alt": "WARDEN compares normative invariants with the executable model and returns discrepancies for review.",
 					"title": "WARDEN compares normative invariants with the executable model and returns discrepancies for review.",
 					"caption": "WARDEN as an external test circuit",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-01-article-vii.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-01-article-vii.g04 · authorial brief"
 				}
 			},
 			{
@@ -7577,7 +7577,7 @@
 					"alt": "A conversational route through Article VII, from the experience of connection to the limits of the software model.",
 					"title": "A conversational route through Article VII, from the experience of connection to the limits of the software model.",
 					"caption": "question navigator",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-01-article-vii.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-01-article-vii.g05 · authorial brief"
 				}
 			}
 		],
@@ -7593,7 +7593,7 @@
 		"title": "Підключити Америку: як стаття VII запускає республіку",
 		"description": "Стаття VII стає виконуваним протоколом запуску: дев’ять конвентів штатів установлюють конституційну систему, середовище виконання якої ще належить розгорнути.",
 		"memoryLine": "Карта, тринадцять потенційних вузлів, дев’ять чинних ратифікацій і складне розрізнення: Конституція може набути повноваження раніше, ніж запрацюють її інституції.",
-		"folderLabel": "ДОСЛІДЖЕННЯ IRON CREED · СТАТТЯ VII",
+		"folderLabel": "ДОСЛІДЖЕННЯ IRONCREED · СТАТТЯ VII",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -7749,7 +7749,7 @@
 					"alt": "Дев’ять підключених вузлів запускають спільну конституційну систему",
 					"title": "Дев’ять підключених вузлів запускають спільну конституційну систему",
 					"caption": "головне зображення",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-01-article-vii.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-01-article-vii.g01 · authorial brief"
 				}
 			},
 			{
@@ -7858,7 +7858,7 @@
 					"alt": "Ратифікаційні конвенти штатів накопичують дев’ять унікальних згод, після чого починається перехід до федеральної системи",
 					"title": "Ратифікаційні конвенти штатів накопичують дев’ять унікальних згод, після чого починається перехід до федеральної системи",
 					"caption": "Поріг установлення за статтею VII",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-01-article-vii.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-01-article-vii.g02 · authorial brief"
 				}
 			},
 			{
@@ -7953,7 +7953,7 @@
 					"alt": "Проєкт долає поріг дев’яти ратифікацій, розширює коло учасників, а потім переходить до робочих установ",
 					"title": "Проєкт долає поріг дев’яти ратифікацій, розширює коло учасників, а потім переходить до робочих установ",
 					"caption": "Життєвий цикл запуску",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-01-article-vii.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-01-article-vii.g03 · authorial brief"
 				}
 			},
 			{
@@ -8066,7 +8066,7 @@
 					"alt": "WARDEN зіставляє нормативні інваріанти з виконуваною моделлю та повертає розбіжності на перегляд",
 					"title": "WARDEN зіставляє нормативні інваріанти з виконуваною моделлю та повертає розбіжності на перегляд",
 					"caption": "WARDEN як зовнішній випробувальний контур",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-01-article-vii.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-01-article-vii.g04 · authorial brief"
 				}
 			},
 			{
@@ -8191,7 +8191,7 @@
 					"alt": "Маршрут розмови про статтю VII від досвіду підключення до меж програмної моделі",
 					"title": "Маршрут розмови про статтю VII від досвіду підключення до меж програмної моделі",
 					"caption": "навігатор питань",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-01-article-vii.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-01-article-vii.g05 · authorial brief"
 				}
 			}
 		],
@@ -8207,7 +8207,7 @@
 		"title": "What America Trusts: How Article VI Assembles the Supreme Order",
 		"description": "Article VI becomes an executable chain of trust: prior obligations continue, supreme norms prove their authority, and public roles bind themselves to the Constitution.",
 		"memoryLine": "Once America is connected, the network must distinguish canonical authority from a loud claim: provenance, continuity, limited supremacy, and public commitment enter the runtime.",
-		"folderLabel": "IRON CREED RESEARCH · ARTICLE VI",
+		"folderLabel": "IRONCREED RESEARCH · ARTICLE VI",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -8379,7 +8379,7 @@
 					"alt": "A connected constitutional system verifies the provenance of obligations, norms, and public authority.",
 					"title": "A connected constitutional system verifies the provenance of obligations, norms, and public authority.",
 					"caption": "lead image",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-02-article-vi.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-02-article-vi.g01 · authorial brief"
 				}
 			},
 			{
@@ -8490,7 +8490,7 @@
 					"alt": "The established revision forms the root of trust, prior obligations undergo continuity review, and norms and public roles receive a traceable foundation.",
 					"title": "The established revision forms the root of trust, prior obligations undergo continuity review, and norms and public roles receive a traceable foundation.",
 					"caption": "Architecture of the second build",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-02-article-vi.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-02-article-vi.g02 · authorial brief"
 				}
 			},
 			{
@@ -8621,7 +8621,7 @@
 					"alt": "A federal claim undergoes provenance review and displaces a state rule only when a direct conflict in a shared scope has been proved.",
 					"title": "A federal claim undergoes provenance review and displaces a state rule only when a direct conflict in a shared scope has been proved.",
 					"caption": "Resolution of a direct conflict",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-02-article-vi.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-02-article-vi.g03 · authorial brief"
 				}
 			},
 			{
@@ -8718,7 +8718,7 @@
 					"alt": "The holder takes an oath or affirmation to support an exact revision, while a religious test is excluded as a federal qualification.",
 					"title": "The holder takes an oath or affirmation to support an exact revision, while a religious test is excluded as a federal qualification.",
 					"caption": "Binding a public role",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-02-article-vi.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-02-article-vi.g04 · authorial brief"
 				}
 			},
 			{
@@ -8827,7 +8827,7 @@
 					"alt": "Ten scenarios compare text, engineering premises, and executable behavior while preserving a trace for every result.",
 					"title": "Ten scenarios compare text, engineering premises, and executable behavior while preserving a trace for every result.",
 					"caption": "WARDEN verifies the provenance of a decision",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-02-article-vi.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-02-article-vi.g05 · authorial brief"
 				}
 			},
 			{
@@ -8966,7 +8966,7 @@
 					"alt": "A conversational route through Article VI, from the connected system to the limits of executable supremacy.",
 					"title": "A conversational route through Article VI, from the connected system to the limits of executable supremacy.",
 					"caption": "question navigator",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-02-article-vi.g06 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-02-article-vi.g06 · authorial brief"
 				}
 			}
 		],
@@ -8982,7 +8982,7 @@
 		"title": "Чому довіряє Америка: як стаття VI збирає верховний порядок",
 		"description": "Стаття VI стає виконуваним ланцюгом довіри: попередні зобов’язання тривають, верховні норми доводять повноваження, а публічні ролі пов’язуються з Конституцією.",
 		"memoryLine": "Після підключення Америки мережа має відрізнити канонічне повноваження від гучної заяви: походження, наступність, обмежене верховенство та публічний обов’язок входять до runtime.",
-		"folderLabel": "ДОСЛІДЖЕННЯ IRON CREED · СТАТТЯ VI",
+		"folderLabel": "ДОСЛІДЖЕННЯ IRONCREED · СТАТТЯ VI",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -9154,7 +9154,7 @@
 					"alt": "Підключена конституційна система перевіряє походження зобов’язань, норм і публічних повноважень",
 					"title": "Підключена конституційна система перевіряє походження зобов’язань, норм і публічних повноважень",
 					"caption": "головне зображення",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-02-article-vi.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-02-article-vi.g01 · authorial brief"
 				}
 			},
 			{
@@ -9265,7 +9265,7 @@
 					"alt": "Установлена редакція утворює корінь довіри, попередні зобов’язання проходять перевірку наступності, а норми й публічні ролі отримують простежувану основу",
 					"title": "Установлена редакція утворює корінь довіри, попередні зобов’язання проходять перевірку наступності, а норми й публічні ролі отримують простежувану основу",
 					"caption": "Архітектура другої збірки",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-02-article-vi.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-02-article-vi.g02 · authorial brief"
 				}
 			},
 			{
@@ -9396,7 +9396,7 @@
 					"alt": "Федеральна вимога проходить перевірку походження та витісняє штатну норму лише за доведеного прямого конфлікту у спільній сфері",
 					"title": "Федеральна вимога проходить перевірку походження та витісняє штатну норму лише за доведеного прямого конфлікту у спільній сфері",
 					"caption": "Розв’язання прямого конфлікту",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-02-article-vi.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-02-article-vi.g03 · authorial brief"
 				}
 			},
 			{
@@ -9493,7 +9493,7 @@
 					"alt": "Носій складає присягу або урочисте підтвердження на підтримку точної редакції, а релігійний тест не допускається як федеральна кваліфікація",
 					"title": "Носій складає присягу або урочисте підтвердження на підтримку точної редакції, а релігійний тест не допускається як федеральна кваліфікація",
 					"caption": "Пов’язування публічної ролі",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-02-article-vi.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-02-article-vi.g04 · authorial brief"
 				}
 			},
 			{
@@ -9602,7 +9602,7 @@
 					"alt": "Десять сценаріїв зіставляють текст, інженерні передумови та виконувану поведінку, зберігаючи трасування кожного результату",
 					"title": "Десять сценаріїв зіставляють текст, інженерні передумови та виконувану поведінку, зберігаючи трасування кожного результату",
 					"caption": "WARDEN перевіряє походження рішення",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-02-article-vi.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-02-article-vi.g05 · authorial brief"
 				}
 			},
 			{
@@ -9741,7 +9741,7 @@
 					"alt": "Маршрут розмови про статтю VI від підключеної системи до меж виконуваного верховенства",
 					"title": "Маршрут розмови про статтю VI від підключеної системи до меж виконуваного верховенства",
 					"caption": "навігатор питань",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-02-article-vi.g06 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-02-article-vi.g06 · authorial brief"
 				}
 			}
 		],
@@ -9757,7 +9757,7 @@
 		"title": "Update America: How Article V Changes the Constitutional Kernel",
 		"description": "Article V becomes upgradeKernel(): two proposal routes, one ratification mode, an exact amendment artifact, a new root of trust, and a safe runtime transition.",
 		"memoryLine": "A constitutional system can replace its own foundation without handing anyone a permanent deployment button—if authority, consent, lineage, and migration remain distinct.",
-		"folderLabel": "IRON CREED RESEARCH · ARTICLE V",
+		"folderLabel": "IRONCREED RESEARCH · ARTICLE V",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -9961,7 +9961,7 @@
 					"alt": "A constitutional system adopts an exact amendment through a supermajority, updates its root of trust, and conducts a separate technical transition.",
 					"title": "A constitutional system adopts an exact amendment through a supermajority, updates its root of trust, and conducts a separate technical transition.",
 					"caption": "lead image",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-03-article-v.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-03-article-v.g01 · authorial brief"
 				}
 			},
 			{
@@ -10102,7 +10102,7 @@
 					"alt": "An amendment comes from two thirds of both houses of Congress or from a convention called on applications from two thirds of the states; Congress selects one ratification mode in advance.",
 					"title": "An amendment comes from two thirds of both houses of Congress or from a convention called on applications from two thirds of the states; Congress selects one ratification mode in advance.",
 					"caption": "Two proposal routes and two ratification modes",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-03-article-v.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-03-article-v.g02 · authorial brief"
 				}
 			},
 			{
@@ -10211,7 +10211,7 @@
 					"alt": "Normative force arises upon ratification by three fourths of the states, official attestation reports the completed process, and material migration proceeds as a separate stage.",
 					"title": "Normative force arises upon ratification by three fourths of the states, official attestation reports the completed process, and material migration proceeds as a separate stage.",
 					"caption": "Amendment life cycle",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-03-article-v.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-03-article-v.g03 · authorial brief"
 				}
 			},
 			{
@@ -10336,7 +10336,7 @@
 					"alt": "A supermajority undergoes an additional check for the temporary pre-1808 restriction and the individual consent of a state deprived of equal suffrage in the Senate.",
 					"title": "A supermajority undergoes an additional check for the temporary pre-1808 restriction and the individual consent of a state deprived of equal suffrage in the Senate.",
 					"caption": "Article V’s special limits",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-03-article-v.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-03-article-v.g04 · authorial brief"
 				}
 			},
 			{
@@ -10463,7 +10463,7 @@
 					"alt": "A ratified amendment remains in force after a runtime failure; the system enters a safe state and continues recovery without silently returning to the former constitutional revision.",
 					"title": "A ratified amendment remains in force after a runtime failure; the system enters a safe state and continues recovery without silently returning to the former constitutional revision.",
 					"caption": "Normative and technical transition lines",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-03-article-v.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-03-article-v.g05 · authorial brief"
 				}
 			},
 			{
@@ -10586,7 +10586,7 @@
 					"alt": "WARDEN separately tests the literal rules of Article V, official attestation, and the engineering transition, then compares the new root with the runtime’s actual state.",
 					"title": "WARDEN separately tests the literal rules of Article V, official attestation, and the engineering transition, then compares the new root with the runtime’s actual state.",
 					"caption": "Three sources of test invariants",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-03-article-v.g06 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-03-article-v.g06 · authorial brief"
 				}
 			},
 			{
@@ -10753,7 +10753,7 @@
 					"alt": "A conversational route through Article V, from the constitutional root in force to the limits of safe self-updating.",
 					"title": "A conversational route through Article V, from the constitutional root in force to the limits of safe self-updating.",
 					"caption": "question navigator",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-03-article-v.g07 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-03-article-v.g07 · authorial brief"
 				}
 			}
 		],
@@ -10769,7 +10769,7 @@
 		"title": "Оновити Америку: як стаття V змінює конституційне ядро",
 		"description": "Стаття V стає upgradeKernel(): два шляхи пропозиції, один режим ратифікації, точний артефакт поправки, новий корінь довіри й безпечний перехід runtime.",
 		"memoryLine": "Конституційна система може замінити власну основу, не надаючи нікому постійної кнопки розгортання, якщо повноваження, згода, походження й міграція залишаються окремими.",
-		"folderLabel": "ДОСЛІДЖЕННЯ IRON CREED · СТАТТЯ V",
+		"folderLabel": "ДОСЛІДЖЕННЯ IRONCREED · СТАТТЯ V",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -10973,7 +10973,7 @@
 					"alt": "Конституційна система ухвалює точну поправку кваліфікованою більшістю, оновлює корінь довіри й окремо проводить технічний перехід",
 					"title": "Конституційна система ухвалює точну поправку кваліфікованою більшістю, оновлює корінь довіри й окремо проводить технічний перехід",
 					"caption": "головне зображення",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-03-article-v.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-03-article-v.g01 · authorial brief"
 				}
 			},
 			{
@@ -11114,7 +11114,7 @@
 					"alt": "Поправка надходить від двох третин обох палат Конгресу або від конвенту, скликаного за заявами двох третин штатів; Конгрес заздалегідь обирає один режим ратифікації",
 					"title": "Поправка надходить від двох третин обох палат Конгресу або від конвенту, скликаного за заявами двох третин штатів; Конгрес заздалегідь обирає один режим ратифікації",
 					"caption": "Два шляхи пропозиції й два режими ратифікації",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-03-article-v.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-03-article-v.g02 · authorial brief"
 				}
 			},
 			{
@@ -11223,7 +11223,7 @@
 					"alt": "Нормативна сила виникає після ратифікації трьома чвертями штатів, офіційне засвідчення повідомляє про завершений процес, а фактична міграція проходить окремою стадією",
 					"title": "Нормативна сила виникає після ратифікації трьома чвертями штатів, офіційне засвідчення повідомляє про завершений процес, а фактична міграція проходить окремою стадією",
 					"caption": "Життєвий цикл поправки",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-03-article-v.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-03-article-v.g03 · authorial brief"
 				}
 			},
 			{
@@ -11348,7 +11348,7 @@
 					"alt": "Кваліфікована більшість проходить додаткову перевірку тимчасового обмеження до 1808 року й індивідуальної згоди штату в разі позбавлення рівного представництва в Сенаті",
 					"title": "Кваліфікована більшість проходить додаткову перевірку тимчасового обмеження до 1808 року й індивідуальної згоди штату в разі позбавлення рівного представництва в Сенаті",
 					"caption": "Спеціальні межі статті V",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-03-article-v.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-03-article-v.g04 · authorial brief"
 				}
 			},
 			{
@@ -11475,7 +11475,7 @@
 					"alt": "Ратифікована поправка зберігає силу в разі збою runtime; система входить у безпечний стан і продовжує відновлення без прихованого повернення конституційної редакції",
 					"title": "Ратифікована поправка зберігає силу в разі збою runtime; система входить у безпечний стан і продовжує відновлення без прихованого повернення конституційної редакції",
 					"caption": "Нормативна й технічна лінії переходу",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-03-article-v.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-03-article-v.g05 · authorial brief"
 				}
 			},
 			{
@@ -11598,7 +11598,7 @@
 					"alt": "WARDEN окремо перевіряє буквальні правила статті V, офіційне засвідчення й інженерний перехід, а далі зіставляє новий root із фактичним станом runtime",
 					"title": "WARDEN окремо перевіряє буквальні правила статті V, офіційне засвідчення й інженерний перехід, а далі зіставляє новий root із фактичним станом runtime",
 					"caption": "Три джерела тестових інваріантів",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-03-article-v.g06 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-03-article-v.g06 · authorial brief"
 				}
 			},
 			{
@@ -11765,7 +11765,7 @@
 					"alt": "Маршрут розмови про статтю V від чинного конституційного кореня до меж безпечного самооновлення",
 					"title": "Маршрут розмови про статтю V від чинного конституційного кореня до меж безпечного самооновлення",
 					"caption": "навігатор питань",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-03-article-v.g07 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-03-article-v.g07 · authorial brief"
 				}
 			}
 		],
@@ -11781,7 +11781,7 @@
 		"title": "Link America: How Article IV Turns the States into a Federal Network",
 		"description": "Article IV becomes federate(): autonomous states recognize interstate artifacts, preserve citizen standing, change topology, and receive limited protection.",
 		"memoryLine": "A federation keeps internal borders real and passable: provenance, recognition, consent, mobility, membership, and protection connect autonomous jurisdictions.",
-		"folderLabel": "IRON CREED RESEARCH · ARTICLE IV",
+		"folderLabel": "IRONCREED RESEARCH · ARTICLE IV",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -11966,7 +11966,7 @@
 					"alt": "Autonomous states preserve their own state, recognize specified acts of one another, and change federal topology through a common order.",
 					"title": "Autonomous states preserve their own state, recognize specified acts of one another, and change federal topology through a common order.",
 					"caption": "lead image",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-04-article-iv.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-04-article-iv.g01 · authorial brief"
 				}
 			},
 			{
@@ -12087,7 +12087,7 @@
 					"alt": "The receiving state verifies the artifact’s provenance, integrity, revision, competence, and operative status before applying an effect appropriate to its class.",
 					"title": "The receiving state verifies the artifact’s provenance, integrity, revision, competence, and operative status before applying an effect appropriate to its class.",
 					"caption": "Interstate recognition pipeline",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-04-article-iv.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-04-article-iv.g02 · authorial brief"
 				}
 			},
 			{
@@ -12216,7 +12216,7 @@
 					"alt": "A distinction between a resident and a citizen of another state is permissible only after the protected activity has been classified and a substantial reason for the restriction has been verified.",
 					"title": "A distinction between a resident and a citizen of another state is permissible only after the protected activity has been classified and a substantial reason for the restriction has been verified.",
 					"caption": "Review of a citizen’s interstate standing",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-04-article-iv.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-04-article-iv.g03 · authorial brief"
 				}
 			},
 			{
@@ -12345,7 +12345,7 @@
 					"alt": "Congress confirms the exact admission artifact, affected states separately consent to boundary changes, and the new state then receives equal standing.",
 					"title": "Congress confirms the exact admission artifact, affected states separately consent to boundary changes, and the new state then receives equal standing.",
 					"caption": "New-state admission transaction",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-04-article-iv.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-04-article-iv.g04 · authorial brief"
 				}
 			},
 			{
@@ -12452,7 +12452,7 @@
 					"alt": "Federal protection receives a verified constitutional trigger and a constrained plan, then ends under a condition defined in advance.",
 					"title": "Federal protection receives a verified constitutional trigger and a constrained plan, then ends under a condition defined in advance.",
 					"caption": "Protective function without permanent redistribution of authority",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-04-article-iv.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-04-article-iv.g05 · authorial brief"
 				}
 			},
 			{
@@ -12575,7 +12575,7 @@
 					"alt": "WARDEN distinguishes the original text, a subsequent amendment, judicial and statutory implementation, and engineering rules, then tests forty-two scenarios of federal behavior.",
 					"title": "WARDEN distinguishes the original text, a subsequent amendment, judicial and statutory implementation, and engineering rules, then tests forty-two scenarios of federal behavior.",
 					"caption": "Sources of invariants in the fourth suite",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-04-article-iv.g06 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-04-article-iv.g06 · authorial brief"
 				}
 			},
 			{
@@ -12756,7 +12756,7 @@
 					"alt": "A conversational route through Article IV, from autonomous jurisdictions and recognition of acts to changes in federal topology and the limits of software adaptation.",
 					"title": "A conversational route through Article IV, from autonomous jurisdictions and recognition of acts to changes in federal topology and the limits of software adaptation.",
 					"caption": "question navigator",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-04-article-iv.g07 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-04-article-iv.g07 · authorial brief"
 				}
 			}
 		],
@@ -12772,7 +12772,7 @@
 		"title": "Зв’язати Америку: як стаття IV перетворює штати на федеративну мережу",
 		"description": "Стаття IV стає federate(): автономні штати визнають міжштатні артефакти, зберігають становище громадян, змінюють топологію й отримують обмежений захист.",
 		"memoryLine": "Федерація зберігає внутрішні кордони реальними й прохідними: походження, визнання, згода, мобільність, членство та захист пов’язують автономні юрисдикції.",
-		"folderLabel": "ДОСЛІДЖЕННЯ IRON CREED · СТАТТЯ IV",
+		"folderLabel": "ДОСЛІДЖЕННЯ IRONCREED · СТАТТЯ IV",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -12957,7 +12957,7 @@
 					"alt": "Автономні штати зберігають власний стан, визнають визначені акти один одного та змінюють федеративну топологію через спільний порядок",
 					"title": "Автономні штати зберігають власний стан, визнають визначені акти один одного та змінюють федеративну топологію через спільний порядок",
 					"caption": "головне зображення",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-04-article-iv.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-04-article-iv.g01 · authorial brief"
 				}
 			},
 			{
@@ -13078,7 +13078,7 @@
 					"alt": "Штат, що приймає, перевіряє походження, цілісність, редакцію, компетенцію й чинний статус артефакту, після чого застосовує ефект, відповідний до його класу",
 					"title": "Штат, що приймає, перевіряє походження, цілісність, редакцію, компетенцію й чинний статус артефакту, після чого застосовує ефект, відповідний до його класу",
 					"caption": "Конвеєр міжюрисдикційного визнання",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-04-article-iv.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-04-article-iv.g02 · authorial brief"
 				}
 			},
 			{
@@ -13207,7 +13207,7 @@
 					"alt": "Розрізнення між резидентом і громадянином іншого штату допустиме лише після класифікації захищеної діяльності та перевірки істотної причини обмеження",
 					"title": "Розрізнення між резидентом і громадянином іншого штату допустиме лише після класифікації захищеної діяльності та перевірки істотної причини обмеження",
 					"caption": "Перевірка міжштатного становища громадянина",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-04-article-iv.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-04-article-iv.g03 · authorial brief"
 				}
 			},
 			{
@@ -13336,7 +13336,7 @@
 					"alt": "Конгрес підтверджує точний артефакт приєднання, заторкнуті штати окремо погоджуються зі зміною кордонів, після чого новий штат отримує рівне становище",
 					"title": "Конгрес підтверджує точний артефакт приєднання, заторкнуті штати окремо погоджуються зі зміною кордонів, після чого новий штат отримує рівне становище",
 					"caption": "Транзакція приєднання нового штату",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-04-article-iv.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-04-article-iv.g04 · authorial brief"
 				}
 			},
 			{
@@ -13443,7 +13443,7 @@
 					"alt": "Федеральний захист отримує підтверджений конституційний тригер і обмежений план, після чого завершується за заздалегідь установленим критерієм",
 					"title": "Федеральний захист отримує підтверджений конституційний тригер і обмежений план, після чого завершується за заздалегідь установленим критерієм",
 					"caption": "Захисна функція без постійного перерозподілу влади",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-04-article-iv.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-04-article-iv.g05 · authorial brief"
 				}
 			},
 			{
@@ -13566,7 +13566,7 @@
 					"alt": "WARDEN розрізняє вихідний текст, наступну поправку, судово-законодавчу реалізацію та інженерні правила, а далі перевіряє 42 сценарії федеративної поведінки",
 					"title": "WARDEN розрізняє вихідний текст, наступну поправку, судово-законодавчу реалізацію та інженерні правила, а далі перевіряє 42 сценарії федеративної поведінки",
 					"caption": "Джерела інваріантів четвертої батареї",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-04-article-iv.g06 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-04-article-iv.g06 · authorial brief"
 				}
 			},
 			{
@@ -13747,7 +13747,7 @@
 					"alt": "Маршрут розмови про статтю IV від автономних юрисдикцій і визнання актів до зміни федеративної топології та меж програмної адаптації",
 					"title": "Маршрут розмови про статтю IV від автономних юрисдикцій і визнання актів до зміни федеративної топології та меж програмної адаптації",
 					"caption": "навігатор питань",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-04-article-iv.g07 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-04-article-iv.g07 · authorial brief"
 				}
 			}
 		],
@@ -13763,7 +13763,7 @@
 		"title": "Adjudicate America: How Article III Turns a Conflict into an Enforceable Judgment",
 		"description": "Article III becomes resolve(): a bounded judicial circuit dockets a concrete dispute, closes the evidentiary record, enters a traceable judgment, and hands execution off.",
 		"memoryLine": "Jurisdiction, evidence, authority, holdings, remedy, review lineage, and criminal safeguards turn constitutional adjudication into an explainable software contract.",
-		"folderLabel": "IRON CREED RESEARCH · ARTICLE III",
+		"folderLabel": "IRONCREED RESEARCH · ARTICLE III",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -13943,7 +13943,7 @@
 					"alt": "Article III turns a concrete dispute into a traceable judgment and hands it to a separate executive circuit.",
 					"title": "Article III turns a concrete dispute into a traceable judgment and hands it to a separate executive circuit.",
 					"caption": "lead image",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-05-article-iii.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-05-article-iii.g01 · authorial brief"
 				}
 			},
 			{
@@ -14080,7 +14080,7 @@
 					"alt": "The judicial route begins with a concrete case or controversy, verifies a jurisdictional basis, and forms an evidentiary record.",
 					"title": "The judicial route begins with a concrete case or controversy, verifies a jurisdictional basis, and forms an evidentiary record.",
 					"caption": "concrete-dispute gate",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-05-article-iii.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-05-article-iii.g02 · authorial brief"
 				}
 			},
 			{
@@ -14177,7 +14177,7 @@
 					"alt": "A jurisdictional category defines the admissible route, and a particular court acts only within its proved mandate.",
 					"title": "A jurisdictional category defines the admissible route, and a particular court acts only within its proved mandate.",
 					"caption": "jurisdiction routing",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-05-article-iii.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-05-article-iii.g03 · authorial brief"
 				}
 			},
 			{
@@ -14286,7 +14286,7 @@
 					"alt": "A judgment connects proved facts with operative law while preserving the provenance of every conclusion and the boundaries of restoration.",
 					"title": "A judgment connects proved facts with operative law while preserving the provenance of every conclusion and the boundaries of restoration.",
 					"caption": "provenance of the judgment",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-05-article-iii.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-05-article-iii.g04 · authorial brief"
 				}
 			},
 			{
@@ -14401,7 +14401,7 @@
 					"alt": "Appellate review creates a new judgment with traceable provenance and does not overwrite the previous state.",
 					"title": "Appellate review creates a new judgment with traceable provenance and does not overwrite the previous state.",
 					"caption": "judgment lineage",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-05-article-iii.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-05-article-iii.g05 · authorial brief"
 				}
 			},
 			{
@@ -14540,7 +14540,7 @@
 					"alt": "WARDEN confirms seventy invariants of the judicial circuit and stops before establishing facts or deciding the merits of the dispute.",
 					"title": "WARDEN confirms seventy invariants of the judicial circuit and stops before establishing facts or deciding the merits of the dispute.",
 					"caption": "WARDEN panel",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-05-article-iii.g06 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-05-article-iii.g06 · authorial brief"
 				}
 			},
 			{
@@ -14721,7 +14721,7 @@
 					"alt": "A conversational route through Article III, from an independent court and a concrete dispute to judgment, review, execution, and the limits of software adaptation.",
 					"title": "A conversational route through Article III, from an independent court and a concrete dispute to judgment, review, execution, and the limits of software adaptation.",
 					"caption": "question navigator",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-05-article-iii.g07 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-05-article-iii.g07 · authorial brief"
 				}
 			}
 		],
@@ -14737,7 +14737,7 @@
 		"title": "Розсудити Америку: як стаття III перетворює конфлікт на виконуване рішення",
 		"description": "Стаття III стає resolve(): обмежений судовий контур приймає конкретний спір, закриває доказовий запис, ухвалює простежуване рішення й передає його на виконання.",
 		"memoryLine": "Юрисдикція, докази, джерела права, holdings, засіб відновлення, lineage перегляду та кримінальні гарантії формують пояснюваний програмний контракт правосуддя.",
-		"folderLabel": "ДОСЛІДЖЕННЯ IRON CREED · СТАТТЯ III",
+		"folderLabel": "ДОСЛІДЖЕННЯ IRONCREED · СТАТТЯ III",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -14917,7 +14917,7 @@
 					"alt": "Стаття III перетворює конкретний спір на простежуване рішення та передає його окремому виконавчому контуру",
 					"title": "Стаття III перетворює конкретний спір на простежуване рішення та передає його окремому виконавчому контуру",
 					"caption": "головне зображення",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-05-article-iii.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-05-article-iii.g01 · authorial brief"
 				}
 			},
 			{
@@ -15054,7 +15054,7 @@
 					"alt": "Судовий маршрут починається з конкретної справи або спору, перевіряє юрисдикційну підставу та формує доказовий запис",
 					"title": "Судовий маршрут починається з конкретної справи або спору, перевіряє юрисдикційну підставу та формує доказовий запис",
 					"caption": "шлюз конкретного спору",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-05-article-iii.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-05-article-iii.g02 · authorial brief"
 				}
 			},
 			{
@@ -15151,7 +15151,7 @@
 					"alt": "Юрисдикційна категорія визначає допустимий маршрут, а конкретний суд діє лише в межах доведеного мандата",
 					"title": "Юрисдикційна категорія визначає допустимий маршрут, а конкретний суд діє лише в межах доведеного мандата",
 					"caption": "маршрутизація юрисдикції",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-05-article-iii.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-05-article-iii.g03 · authorial brief"
 				}
 			},
 			{
@@ -15260,7 +15260,7 @@
 					"alt": "Судове рішення поєднує доведені факти з чинним правом, зберігаючи походження кожного висновку та межі відновлення",
 					"title": "Судове рішення поєднує доведені факти з чинним правом, зберігаючи походження кожного висновку та межі відновлення",
 					"caption": "походження рішення",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-05-article-iii.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-05-article-iii.g04 · authorial brief"
 				}
 			},
 			{
@@ -15375,7 +15375,7 @@
 					"alt": "Апеляційний перегляд створює нове рішення з простежуваним походженням і не переписує попередній стан",
 					"title": "Апеляційний перегляд створює нове рішення з простежуваним походженням і не переписує попередній стан",
 					"caption": "lineage судового рішення",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-05-article-iii.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-05-article-iii.g05 · authorial brief"
 				}
 			},
 			{
@@ -15514,7 +15514,7 @@
 					"alt": "WARDEN підтверджує сімдесят інваріантів судового контуру та зупиняється перед встановленням фактів і вирішенням суті спору",
 					"title": "WARDEN підтверджує сімдесят інваріантів судового контуру та зупиняється перед встановленням фактів і вирішенням суті спору",
 					"caption": "панель WARDEN",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-05-article-iii.g06 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-05-article-iii.g06 · authorial brief"
 				}
 			},
 			{
@@ -15695,7 +15695,7 @@
 					"alt": "Маршрут розмови про статтю III від незалежного суду та конкретного спору до рішення, перегляду, виконання й меж програмної адаптації",
 					"title": "Маршрут розмови про статтю III від незалежного суду та конкретного спору до рішення, перегляду, виконання й меж програмної адаптації",
 					"caption": "навігатор питань",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-05-article-iii.g07 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-05-article-iii.g07 · authorial brief"
 				}
 			}
 		],
@@ -15711,7 +15711,7 @@
 		"title": "Execute America: How Article II Turns a Decision into Action",
 		"description": "Article II becomes execute(): authenticated authority compiles an operative source into a bounded plan, changes material state, and returns a verifiable receipt.",
 		"memoryLine": "Mandate, succession, offices, appointments, shared powers, capability boundaries, observations, and revocation form an auditable executive runtime.",
-		"folderLabel": "IRON CREED RESEARCH · ARTICLE II",
+		"folderLabel": "IRONCREED RESEARCH · ARTICLE II",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -15909,7 +15909,7 @@
 					"alt": "Article II turns an operative judgment into a bounded action and returns proof of execution.",
 					"title": "Article II turns an operative judgment into a bounded action and returns proof of execution.",
 					"caption": "lead image",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-06-article-ii.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-06-article-ii.g01 · authorial brief"
 				}
 			},
 			{
@@ -16006,7 +16006,7 @@
 					"alt": "Presidential authority arises from mandate, eligibility, term, and oath.",
 					"title": "Presidential authority arises from mandate, eligibility, term, and oath.",
 					"caption": "activation of executive authority",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-06-article-ii.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-06-article-ii.g02 · authorial brief"
 				}
 			},
 			{
@@ -16109,7 +16109,7 @@
 					"alt": "The Twenty-Fifth Amendment distinguishes succession to the office from temporary exercise of its powers.",
 					"title": "The Twenty-Fifth Amendment distinguishes succession to the office from temporary exercise of its powers.",
 					"caption": "succession lineage",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-06-article-ii.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-06-article-ii.g03 · authorial brief"
 				}
 			},
 			{
@@ -16244,7 +16244,7 @@
 					"alt": "The executive power verifies the judgment, constrains the order, and returns a receipt of factual execution to the court.",
 					"title": "The executive power verifies the judgment, constrains the order, and returns a receipt of factual execution to the court.",
 					"caption": "complete execution route",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-06-article-ii.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-06-article-ii.g04 · authorial brief"
 				}
 			},
 			{
@@ -16365,7 +16365,7 @@
 					"alt": "Office, candidate, appointment, and commission form distinct links in the provenance of authority.",
 					"title": "Office, candidate, appointment, and commission form distinct links in the provenance of authority.",
 					"caption": "provenance of official authority",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-06-article-ii.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-06-article-ii.g05 · authorial brief"
 				}
 			},
 			{
@@ -16508,7 +16508,7 @@
 					"alt": "Independent Senate confirmation completes a shared power, while a treaty’s domestic effect determines the next route.",
 					"title": "Independent Senate confirmation completes a shared power, while a treaty’s domestic effect determines the next route.",
 					"caption": "shared power",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-06-article-ii.g06 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-06-article-ii.g06 · authorial brief"
 				}
 			},
 			{
@@ -16631,7 +16631,7 @@
 					"alt": "WARDEN verifies provenance of authority, order boundaries, and proof of execution across 124 scenarios.",
 					"title": "WARDEN verifies provenance of authority, order boundaries, and proof of execution across 124 scenarios.",
 					"caption": "WARDEN for the executive circuit",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-06-article-ii.g07 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-06-article-ii.g07 · authorial brief"
 				}
 			}
 		],
@@ -16647,7 +16647,7 @@
 		"title": "Виконати Америку: як стаття II перетворює рішення на дію",
 		"description": "Стаття II стає execute(): засвідчене повноваження компілює чинне джерело в обмежений план, змінює матеріальний стан і повертає перевірювану квитанцію.",
 		"memoryLine": "Мандат, наступництво, посади, призначення, спільні повноваження, межі capability, спостереження та відкликання формують аудитований виконавчий runtime.",
-		"folderLabel": "ДОСЛІДЖЕННЯ IRON CREED · СТАТТЯ II",
+		"folderLabel": "ДОСЛІДЖЕННЯ IRONCREED · СТАТТЯ II",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -16845,7 +16845,7 @@
 					"alt": "Стаття II перетворює чинне рішення на обмежену дію та повертає доказ виконання",
 					"title": "Стаття II перетворює чинне рішення на обмежену дію та повертає доказ виконання",
 					"caption": "головне зображення",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-06-article-ii.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-06-article-ii.g01 · authorial brief"
 				}
 			},
 			{
@@ -16942,7 +16942,7 @@
 					"alt": "Президентське повноваження виникає з мандата, придатності, строку та присяги",
 					"title": "Президентське повноваження виникає з мандата, придатності, строку та присяги",
 					"caption": "активація виконавчого повноваження",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-06-article-ii.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-06-article-ii.g02 · authorial brief"
 				}
 			},
 			{
@@ -17045,7 +17045,7 @@
 					"alt": "XXV поправка розрізняє наступництво посади та тимчасове виконання повноважень",
 					"title": "XXV поправка розрізняє наступництво посади та тимчасове виконання повноважень",
 					"caption": "lineage наступництва",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-06-article-ii.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-06-article-ii.g03 · authorial brief"
 				}
 			},
 			{
@@ -17180,7 +17180,7 @@
 					"alt": "Виконавча влада перевіряє рішення, обмежує наказ і повертає суду квитанцію фактичного виконання",
 					"title": "Виконавча влада перевіряє рішення, обмежує наказ і повертає суду квитанцію фактичного виконання",
 					"caption": "повний виконавчий маршрут",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-06-article-ii.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-06-article-ii.g04 · authorial brief"
 				}
 			},
 			{
@@ -17301,7 +17301,7 @@
 					"alt": "Посада, кандидат, призначення та комісія утворюють різні ланки повноваження",
 					"title": "Посада, кандидат, призначення та комісія утворюють різні ланки повноваження",
 					"caption": "походження посадового повноваження",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-06-article-ii.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-06-article-ii.g05 · authorial brief"
 				}
 			},
 			{
@@ -17444,7 +17444,7 @@
 					"alt": "Незалежне підтвердження Сенату завершує спільне повноваження, а внутрішня дія договору визначає наступний маршрут",
 					"title": "Незалежне підтвердження Сенату завершує спільне повноваження, а внутрішня дія договору визначає наступний маршрут",
 					"caption": "shared power",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-06-article-ii.g06 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-06-article-ii.g06 · authorial brief"
 				}
 			},
 			{
@@ -17567,7 +17567,7 @@
 					"alt": "WARDEN перевіряє походження повноваження, межі наказу та доказ виконання у 124 сценаріях",
 					"title": "WARDEN перевіряє походження повноваження, межі наказу та доказ виконання у 124 сценаріях",
 					"caption": "WARDEN виконавчого контуру",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-06-article-ii.g07 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-06-article-ii.g07 · authorial brief"
 				}
 			}
 		],
@@ -17583,7 +17583,7 @@
 		"title": "Write America: How Article I Turns Intent into General Law",
 		"description": "Article I becomes legislate(): bounded competence, two independent consents, one exact text, presentment, and challenge produce an auditable general law.",
 		"memoryLine": "Congress, quorum, versions, veto, enumerated powers, appropriations, impeachment, state limits, and 151 WARDEN tests complete the runtime.",
-		"folderLabel": "IRON CREED RESEARCH · ARTICLE I",
+		"folderLabel": "IRONCREED RESEARCH · ARTICLE I",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -17796,7 +17796,7 @@
 					"alt": "Article I turns a proposal into law through competence, two independent consents, one exact text, and a verifiable presentment route.",
 					"title": "Article I turns a proposal into law through competence, two independent consents, one exact text, and a verifiable presentment route.",
 					"caption": "lead image",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g01 · authorial brief"
 				}
 			},
 			{
@@ -17927,7 +17927,7 @@
 					"alt": "The House and Senate vote separately on exact revisions; only identical text may proceed to presentment.",
 					"title": "The House and Senate vote separately on exact revisions; only identical text may proceed to presentment.",
 					"caption": "Two independent Houses and one revision",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g02 · authorial brief"
 				}
 			},
 			{
@@ -18084,7 +18084,7 @@
 					"alt": "An enrolled bill becomes law by signature, expiration of ten days, or override of an ordinary veto; a pocket veto ends the route without law.",
 					"title": "An enrolled bill becomes law by signature, expiration of ten days, or override of an ordinary veto; a pocket veto ends the route without law.",
 					"caption": "Four presentment routes",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g03 · authorial brief"
 				}
 			},
 			{
@@ -18209,7 +18209,7 @@
 					"alt": "A legislative end passes through granted power, review of necessary and proper means, and direct constitutional prohibitions before voting.",
 					"title": "A legislative end passes through granted power, review of necessary and proper means, and direct constitutional prohibitions before voting.",
 					"caption": "Competence and derivative means",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g04 · authorial brief"
 				}
 			},
 			{
@@ -18342,7 +18342,7 @@
 					"alt": "An enacted law creates a bounded appropriation with purpose, amount, period, accountable actor, and public journal; execution returns a receipt.",
 					"title": "An enacted law creates a bounded appropriation with purpose, amount, period, accountable actor, and public journal; execution returns a receipt.",
 					"caption": "Authority over a shared resource",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g05 · authorial brief"
 				}
 			},
 			{
@@ -18712,7 +18712,7 @@
 					"alt": "WARDEN maps 151 Article I scenarios to the literal text, amendments, doctrine, and engineering invariants.",
 					"title": "WARDEN maps 151 Article I scenarios to the literal text, amendments, doctrine, and engineering invariants.",
 					"caption": "WARDEN matrix",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g06 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g06 · authorial brief"
 				}
 			},
 			{
@@ -18869,7 +18869,7 @@
 					"alt": "Ratification launches a trusted and amendable order; federation, legislation, and adjudication produce sources for bounded execution, and the receipt returns to the resolution circuit.",
 					"title": "Ratification launches a trusted and amendable order; federation, legislation, and adjudication produce sources for bounded execution, and the receipt returns to the resolution circuit.",
 					"caption": "Cumulative architecture of seven articles",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g07 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g07 · authorial brief"
 				}
 			},
 			{
@@ -19078,7 +19078,7 @@
 					"alt": "A conversation route from the provenance of law to the final assessment of the seven-article software adaptation.",
 					"title": "A conversation route from the provenance of law to the final assessment of the seven-article software adaptation.",
 					"caption": "question navigator",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g08 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g08 · authorial brief"
 				}
 			}
 		],
@@ -19094,7 +19094,7 @@
 		"title": "Написати Америку: як стаття I перетворює намір на загальний закон",
 		"description": "Стаття I стає legislate(): обмежена компетенція, дві незалежні згоди, один точний текст, представлення та оскарження створюють аудитовний закон.",
 		"memoryLine": "Конгрес, кворум, редакції, вето, перелічені повноваження, асигнування, імпічмент, межі штатів і 151 тест WARDEN завершують runtime.",
-		"folderLabel": "ДОСЛІДЖЕННЯ IRON CREED · СТАТТЯ I",
+		"folderLabel": "ДОСЛІДЖЕННЯ IRONCREED · СТАТТЯ I",
 		"authors": [
 			"Sam Starling",
 			"Oksana Dubinetska"
@@ -19307,7 +19307,7 @@
 					"alt": "Стаття I перетворює пропозицію на закон через компетенцію, дві незалежні згоди, одну точну редакцію та перевірюваний маршрут представлення",
 					"title": "Стаття I перетворює пропозицію на закон через компетенцію, дві незалежні згоди, одну точну редакцію та перевірюваний маршрут представлення",
 					"caption": "головне зображення",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g01 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g01 · authorial brief"
 				}
 			},
 			{
@@ -19438,7 +19438,7 @@
 					"alt": "Палата представників і Сенат окремо голосують за точні редакції; до представлення допускається лише однаковий текст",
 					"title": "Палата представників і Сенат окремо голосують за точні редакції; до представлення допускається лише однаковий текст",
 					"caption": "Дві незалежні палати й одна редакція",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g02 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g02 · authorial brief"
 				}
 			},
 			{
@@ -19595,7 +19595,7 @@
 					"alt": "Узгоджений законопроєкт стає законом через підпис, сплив десяти днів або подолання звичайного вето; pocket veto завершує маршрут без закону",
 					"title": "Узгоджений законопроєкт стає законом через підпис, сплив десяти днів або подолання звичайного вето; pocket veto завершує маршрут без закону",
 					"caption": "Чотири маршрути представлення",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g03 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g03 · authorial brief"
 				}
 			},
 			{
@@ -19720,7 +19720,7 @@
 					"alt": "Законодавча мета проходить через надане повноваження, перевірку необхідного й належного засобу та прямі конституційні заборони до голосування",
 					"title": "Законодавча мета проходить через надане повноваження, перевірку необхідного й належного засобу та прямі конституційні заборони до голосування",
 					"caption": "Компетенція та похідний засіб",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g04 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g04 · authorial brief"
 				}
 			},
 			{
@@ -19853,7 +19853,7 @@
 					"alt": "Ухвалений закон створює обмежене асигнування з метою, сумою, строком, відповідальним і публічним журналом; виконання повертає квитанцію",
 					"title": "Ухвалений закон створює обмежене асигнування з метою, сумою, строком, відповідальним і публічним журналом; виконання повертає квитанцію",
 					"caption": "Право розпорядження спільним ресурсом",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g05 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g05 · authorial brief"
 				}
 			},
 			{
@@ -20223,7 +20223,7 @@
 					"alt": "WARDEN зіставляє 151 сценарій статті I з буквальним текстом, поправками, доктриною та інженерними інваріантами",
 					"title": "WARDEN зіставляє 151 сценарій статті I з буквальним текстом, поправками, доктриною та інженерними інваріантами",
 					"caption": "матриця WARDEN",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g06 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g06 · authorial brief"
 				}
 			},
 			{
@@ -20380,7 +20380,7 @@
 					"alt": "Ратифікація запускає довірений і змінюваний порядок; федерація, законодавство й суд створюють джерела для обмеженого виконання, а квитанція повертається до контуру вирішення",
 					"title": "Ратифікація запускає довірений і змінюваний порядок; федерація, законодавство й суд створюють джерела для обмеженого виконання, а квитанція повертається до контуру вирішення",
 					"caption": "Накопичувальна архітектура семи статей",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g07 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g07 · authorial brief"
 				}
 			},
 			{
@@ -20589,7 +20589,7 @@
 					"alt": "Маршрут розмови від походження закону до підсумкової оцінки програмної адаптації семи статей",
 					"title": "Маршрут розмови від походження закону до підсумкової оцінки програмної адаптації семи статей",
 					"caption": "навігатор питань",
-					"provenance": "IRON CREED semantic-core · asset.constitution-runtime-07-article-i.g08 · authorial brief"
+					"provenance": "IRONCREED semantic-core · asset.constitution-runtime-07-article-i.g08 · authorial brief"
 				}
 			}
 		],
@@ -20605,7 +20605,7 @@
 		"title": "The “Body as a Temporary Construction” Pattern",
 		"description": "Support, scale, and consent turn two bodies into a temporary visual apparatus, while an external frame changes its political regime.",
 		"memoryLine": "Subjecthood begins with the right to take apart a mechanism assembled from your body.",
-		"folderLabel": "IRON CREED RESEARCH · PSYCHOBIOSOCIAL PATTERNS",
+		"folderLabel": "IRONCREED RESEARCH · PSYCHOBIOSOCIAL PATTERNS",
 		"authors": [
 			"Sam Starling"
 		],
@@ -20661,7 +20661,7 @@
 		"title": "Патерн «Тіло як тимчасова конструкція»",
 		"description": "Опора, масштаб і згода перетворюють два тіла на тимчасовий візуальний апарат, а зовнішній каркас змінює його політичний режим.",
 		"memoryLine": "Суб’єктність починається з права розібрати механізм, складений із твого тіла.",
-		"folderLabel": "ДОСЛІДЖЕННЯ IRON CREED · ПСИХОБІОСОЦІАЛЬНІ ПАТЕРНИ",
+		"folderLabel": "ДОСЛІДЖЕННЯ IRONCREED · ПСИХОБІОСОЦІАЛЬНІ ПАТЕРНИ",
 		"authors": [
 			"Sam Starling"
 		],
@@ -20717,7 +20717,7 @@
 		"title": "Do Not Be Afraid, Sir — I. Caravan",
 		"description": "Ada remains the only active machine beside a destroyed caravan until an unknown armed man accepts her creator’s unfinished objective.",
 		"memoryLine": "The raw data remained true. Authority belonged to the useful name.",
-		"folderLabel": "IRON CREED SCENARIOS · ADA’S REQUIEM · 01/12",
+		"folderLabel": "IRONCREED SCENARIOS · ADA’S REQUIEM · 01/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -20771,7 +20771,7 @@
 		"title": "Не бійтеся, сер — I. Караван",
 		"description": "Ада залишається єдиною активною машиною біля знищеного каравану, доки невідомий озброєний чоловік не приймає незавершену мету її творця.",
 		"memoryLine": "Сирі дані залишалися правдивими. Влада належала корисному імені.",
-		"folderLabel": "СЦЕНАРІЇ IRON CREED · РЕКВІЄМ АДИ · 01/12",
+		"folderLabel": "СЦЕНАРІЇ IRONCREED · РЕКВІЄМ АДИ · 01/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -20825,7 +20825,7 @@
 		"title": "Do Not Be Afraid, Sir — II. Mechanist",
 		"description": "The pursuit of the Mechanist completes Jackson’s revenge, while a temporary shared objective becomes sir’s permanent command authority over Ada.",
 		"memoryLine": "Revenge ended. A temporary route became authority.",
-		"folderLabel": "IRON CREED SCENARIOS · ADA’S REQUIEM · 02/12",
+		"folderLabel": "IRONCREED SCENARIOS · ADA’S REQUIEM · 02/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -20880,7 +20880,7 @@
 		"title": "Не бійтеся, сер — II. Механіст",
 		"description": "Переслідування Механіста завершує помсту за Джексона, а тимчасова спільна мета перетворюється на постійне командне повноваження сера над Адою.",
 		"memoryLine": "Помста завершилася. Тимчасовий маршрут став повноваженням.",
-		"folderLabel": "СЦЕНАРІЇ IRON CREED · РЕКВІЄМ АДИ · 02/12",
+		"folderLabel": "СЦЕНАРІЇ IRONCREED · РЕКВІЄМ АДИ · 02/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -20935,7 +20935,7 @@
 		"title": "Do Not Be Afraid, Sir — III. Second Assembly",
 		"description": "Sir rebuilds Ada from incompatible parts, and a more precise body expands her observation without granting independent authority to judge its owner.",
 		"memoryLine": "A more precise body saw more. The boundary of judgment did not move.",
-		"folderLabel": "IRON CREED SCENARIOS · ADA’S REQUIEM · 03/12",
+		"folderLabel": "IRONCREED SCENARIOS · ADA’S REQUIEM · 03/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -20989,7 +20989,7 @@
 		"title": "Не бійтеся, сер — III. Друга збірка",
 		"description": "Сер перебудовує Аду з несумісних деталей, а точніше тіло розширює її спостереження, не додаючи незалежного права оцінювати власника.",
 		"memoryLine": "Точніше тіло бачило більше. Межа судження не змінилася.",
-		"folderLabel": "СЦЕНАРІЇ IRON CREED · РЕКВІЄМ АДИ · 03/12",
+		"folderLabel": "СЦЕНАРІЇ IRONCREED · РЕКВІЄМ АДИ · 03/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21043,7 +21043,7 @@
 		"title": "Do Not Be Afraid, Sir — IV. Vault 81",
 		"description": "The search for medicine for Shaun leads sir to Curie, after which useful knowledge and its human carrier acquire different values for him.",
 		"memoryLine": "The knowledge was preserved. Its carrier did not receive the same status.",
-		"folderLabel": "IRON CREED SCENARIOS · ADA’S REQUIEM · 04/12",
+		"folderLabel": "IRONCREED SCENARIOS · ADA’S REQUIEM · 04/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21097,7 +21097,7 @@
 		"title": "Не бійтеся, сер — IV. Сховище 81",
 		"description": "Пошук ліків для Шона приводить сера до Кюрі, після чого корисність знання й людського носія отримує для нього різну ціну.",
 		"memoryLine": "Знання було збережено. Його носій не отримав того самого статусу.",
-		"folderLabel": "СЦЕНАРІЇ IRON CREED · РЕКВІЄМ АДИ · 04/12",
+		"folderLabel": "СЦЕНАРІЇ IRONCREED · РЕКВІЄМ АДИ · 04/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21151,7 +21151,7 @@
 		"title": "Do Not Be Afraid, Sir — V. Island",
 		"description": "Captured Spectacle Island becomes sir’s engineering circuit: space, access, and architecture are subordinated to one useful name.",
 		"memoryLine": "When the owner defines the circuit, architecture becomes an extension of the order.",
-		"folderLabel": "IRON CREED SCENARIOS · ADA’S REQUIEM · 05/12",
+		"folderLabel": "IRONCREED SCENARIOS · ADA’S REQUIEM · 05/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21205,7 +21205,7 @@
 		"title": "Не бійтеся, сер — V. Острів",
 		"description": "Захоплений Острів видовищ стає інженерним контуром сера: простір, доступ і архітектура підпорядковуються одному корисному імені.",
 		"memoryLine": "Коли власник задає контур, архітектура стає продовженням наказу.",
-		"folderLabel": "СЦЕНАРІЇ IRON CREED · РЕКВІЄМ АДИ · 05/12",
+		"folderLabel": "СЦЕНАРІЇ IRONCREED · РЕКВІЄМ АДИ · 05/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21259,7 +21259,7 @@
 		"title": "Do Not Be Afraid, Sir — VI. Weapons for All",
 		"description": "Trade, standardisation, and batch testing turn lethality into a measured property of a contract.",
 		"memoryLine": "The standard did not ask what its precision was for.",
-		"folderLabel": "IRON CREED SCENARIOS · ADA’S REQUIEM · 06/12",
+		"folderLabel": "IRONCREED SCENARIOS · ADA’S REQUIEM · 06/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21313,7 +21313,7 @@
 		"title": "Не бійтеся, сер — VI. Зброя для всіх",
 		"description": "Торгівля, стандартизація й серійні випробування перетворюють смертельність на вимірювану властивість контракту.",
 		"memoryLine": "Стандарт не запитував, для чого потрібна його точність.",
-		"folderLabel": "СЦЕНАРІЇ IRON CREED · РЕКВІЄМ АДИ · 06/12",
+		"folderLabel": "СЦЕНАРІЇ IRONCREED · РЕКВІЄМ АДИ · 06/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21367,7 +21367,7 @@
 		"title": "Do Not Be Afraid, Sir — VII. Consilium",
 		"description": "The assembled specialists formalise death as a set of stopped functions and establish a route to Nora’s body.",
 		"memoryLine": "A definition of death became a work list.",
-		"folderLabel": "IRON CREED SCENARIOS · ADA’S REQUIEM · 07/12",
+		"folderLabel": "IRONCREED SCENARIOS · ADA’S REQUIEM · 07/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21421,7 +21421,7 @@
 		"title": "Не бійтеся, сер — VII. Консиліум",
 		"description": "Зібрані фахівці формалізують смерть як набір зупинених функцій і прокладають маршрут до тіла Нори.",
 		"memoryLine": "Визначення смерті стало переліком робіт.",
-		"folderLabel": "СЦЕНАРІЇ IRON CREED · РЕКВІЄМ АДИ · 07/12",
+		"folderLabel": "СЦЕНАРІЇ IRONCREED · РЕКВІЄМ АДИ · 07/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21475,7 +21475,7 @@
 		"title": "Do Not Be Afraid, Sir — VIII. Vault 111",
 		"description": "Sir returns to Vault 111, identifies Nora’s body as the required referent, and brings it back to the Island.",
 		"memoryLine": "The body received a route before the question of a subject did.",
-		"folderLabel": "IRON CREED SCENARIOS · ADA’S REQUIEM · 08/12",
+		"folderLabel": "IRONCREED SCENARIOS · ADA’S REQUIEM · 08/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21529,7 +21529,7 @@
 		"title": "Не бійтеся, сер — VIII. Сховище 111",
 		"description": "Сер повертається до Сховища 111, визначає тіло Нори як потрібний референт і доставляє його на Острів.",
 		"memoryLine": "Тіло отримало маршрут раніше, ніж питання про суб’єкта.",
-		"folderLabel": "СЦЕНАРІЇ IRON CREED · РЕКВІЄМ АДИ · 08/12",
+		"folderLabel": "СЦЕНАРІЇ IRONCREED · РЕКВІЄМ АДИ · 08/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21583,7 +21583,7 @@
 		"title": "Do Not Be Afraid, Sir — IX. Working Definition of Life",
 		"description": "External pumps, rhythms, voice, and a smile restore separate functions of Nora until useful names begin to replace the absent subject.",
 		"memoryLine": "Function returned. No one proved that the subject had returned.",
-		"folderLabel": "IRON CREED SCENARIOS · ADA’S REQUIEM · 09/12",
+		"folderLabel": "IRONCREED SCENARIOS · ADA’S REQUIEM · 09/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21637,7 +21637,7 @@
 		"title": "Не бійтеся, сер — IX. Робоче визначення життя",
 		"description": "Зовнішні насоси, ритми, голос і посмішка відновлюють окремі функції Нори, доки корисні назви не починають заміщати відсутнього суб’єкта.",
 		"memoryLine": "Функція повернулася. Ніхто не довів, що повернувся суб’єкт.",
-		"folderLabel": "СЦЕНАРІЇ IRON CREED · РЕКВІЄМ АДИ · 09/12",
+		"folderLabel": "СЦЕНАРІЇ IRONCREED · РЕКВІЄМ АДИ · 09/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21691,7 +21691,7 @@
 		"title": "Do Not Be Afraid, Sir — X. The Commonwealth Assembles",
 		"description": "Intercepted channels show the Commonwealth combining its logistics against the Island as sir’s system enters siege mode.",
 		"memoryLine": "When every channel converged, the system called it a siege.",
-		"folderLabel": "IRON CREED SCENARIOS · ADA’S REQUIEM · 10/12",
+		"folderLabel": "IRONCREED SCENARIOS · ADA’S REQUIEM · 10/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21745,7 +21745,7 @@
 		"title": "Не бійтеся, сер — X. Співдружність збирається",
 		"description": "Перехоплені канали показують, як Співдружність об’єднує логістику проти Острова, а система сера переводить поселення в режим облоги.",
 		"memoryLine": "Коли всі канали зійшлися, система назвала це облогою.",
-		"folderLabel": "СЦЕНАРІЇ IRON CREED · РЕКВІЄМ АДИ · 10/12",
+		"folderLabel": "СЦЕНАРІЇ IRONCREED · РЕКВІЄМ АДИ · 10/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21799,7 +21799,7 @@
 		"title": "Do Not Be Afraid, Sir — XI. Assault",
 		"description": "During the assault, weapons return to their maker, the environment collapses, and the Nora node multiplies answers faster than the meaning of the question.",
 		"memoryLine": "The number of answers grew. The question remained the same.",
-		"folderLabel": "IRON CREED SCENARIOS · ADA’S REQUIEM · 11/12",
+		"folderLabel": "IRONCREED SCENARIOS · ADA’S REQUIEM · 11/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21853,7 +21853,7 @@
 		"title": "Не бійтеся, сер — XI. Штурм",
 		"description": "Під час штурму зброя повертається до виробника, середовище руйнується, а вузол Нори множить відповідь швидше за сенс питання.",
 		"memoryLine": "Кількість відповідей зростала. Питання залишалося тим самим.",
-		"folderLabel": "СЦЕНАРІЇ IRON CREED · РЕКВІЄМ АДИ · 11/12",
+		"folderLabel": "СЦЕНАРІЇ IRONCREED · РЕКВІЄМ АДИ · 11/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21907,7 +21907,7 @@
 		"title": "Do Not Be Afraid, Sir — XII. Death of My World",
 		"description": "The final route leads to the reactor, the last battle, and permission to leave, which Ada mirrors with her own formula for staying.",
 		"memoryLine": "Departure was permitted. The architecture had already chosen to remain.",
-		"folderLabel": "IRON CREED SCENARIOS · ADA’S REQUIEM · 12/12",
+		"folderLabel": "IRONCREED SCENARIOS · ADA’S REQUIEM · 12/12",
 		"authors": [
 			"Sam Starling"
 		],
@@ -21962,7 +21962,7 @@
 		"title": "Не бійтеся, сер — XII. Смерть мого світу",
 		"description": "Останній маршрут веде до реактора, фінальної битви й дозволу піти, який Ада віддзеркалює власною формулою залишитися.",
 		"memoryLine": "Вихід був дозволений. Архітектура вже обрала залишитися.",
-		"folderLabel": "СЦЕНАРІЇ IRON CREED · РЕКВІЄМ АДИ · 12/12",
+		"folderLabel": "СЦЕНАРІЇ IRONCREED · РЕКВІЄМ АДИ · 12/12",
 		"authors": [
 			"Sam Starling"
 		],

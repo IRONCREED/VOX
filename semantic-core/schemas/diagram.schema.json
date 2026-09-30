@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://it.zhovten.games/schemas/semantic-core/diagram.schema.json",
-	"title": "IRON CREED diagram declaration",
+	"title": "IRONCREED diagram declaration",
 	"type": "object",
 	"required": [
 		"source",

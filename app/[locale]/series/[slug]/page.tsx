@@ -14,6 +14,7 @@ import {
 import { isLocale } from '../../../../src/content-catalog/domain/content-model';
 import { SeriesPageTemplate } from '../../../../src/interface-system/templates/series-page-template';
 import { getSiteOrigin } from '../../../../src/site-metadata/site-origin';
+import { getSocialPreview } from '../../../../src/site-metadata/social-preview';
 import { getBuildIdentity } from '../../../../src/site-navigation/application/build-identity';
 
 interface SeriesPageProps {
@@ -43,7 +44,9 @@ export async function generateMetadata({ params }: SeriesPageProps): Promise<Met
 		languages['x-default'] = new URL(getSeriesHref(ukSeries), origin);
 	}
 	if (enSeries) languages.en = new URL(getSeriesHref(enSeries), origin);
-	const title = `${series.title} — IRON CREED`;
+	const title = `${series.title} — IRONCREED`;
+
+	const socialPreview = getSocialPreview(series.seriesId);
 
 	return {
 		title,
@@ -52,14 +55,14 @@ export async function generateMetadata({ params }: SeriesPageProps): Promise<Met
 		openGraph: {
 			title,
 			description: series.description,
-			images: [],
+			images: [socialPreview],
 			type: 'website',
 			url: canonical,
 		},
 		twitter: {
-			card: 'summary',
+			card: 'summary_large_image',
 			description: series.description,
-			images: [],
+			images: [socialPreview.url],
 			title,
 		},
 	};

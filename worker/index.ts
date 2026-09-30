@@ -1,4 +1,4 @@
-/** Cloudflare Worker entry point for the IRON CREED site. */
+/** Cloudflare Worker entry point for the IRONCREED site. */
 import {
 	DEFAULT_DEVICE_SIZES,
 	DEFAULT_IMAGE_SIZES,

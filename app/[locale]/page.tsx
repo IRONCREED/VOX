@@ -11,6 +11,7 @@ import { isLocale } from '../../src/content-catalog/domain/content-model';
 import { HomePageTemplate } from '../../src/interface-system/templates/home-page-template';
 import { getBuildIdentity } from '../../src/site-navigation/application/build-identity';
 import { getSiteOrigin } from '../../src/site-metadata/site-origin';
+import { getSocialPreview } from '../../src/site-metadata/social-preview';
 
 interface HomePageProps {
 	params: Promise<{ locale: string }>;
@@ -26,8 +27,8 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
 	const copy = getInterfaceCopy(locale);
 	const origin = getSiteOrigin();
 	const canonical = new URL(`/${locale}/`, origin);
-	const socialPreview = new URL('/og.png', origin);
-	const title = `IRON CREED — ${copy.homeTitle}`;
+	const socialPreview = getSocialPreview();
+	const title = `IRONCREED — ${copy.homeTitle}`;
 
 	return {
 		title,
@@ -43,22 +44,15 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
 		openGraph: {
 			title,
 			description: copy.homeDescription,
-			images: [
-				{
-					alt: 'IRON CREED — architecture, memory, and formal systems',
-					height: 630,
-					url: socialPreview,
-					width: 1200,
-				},
-			],
-			siteName: 'IRON CREED',
+			images: [socialPreview],
+			siteName: 'IRONCREED',
 			type: 'website',
 			url: canonical,
 		},
 		twitter: {
 			card: 'summary_large_image',
 			description: copy.homeDescription,
-			images: [socialPreview],
+			images: [socialPreview.url],
 			title,
 		},
 	};

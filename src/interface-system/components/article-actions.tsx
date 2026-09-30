@@ -26,7 +26,7 @@ export function ArticleActions({
 				</span>
 				<span>
 					<small>{discussLabel}</small>
-					<strong>IRON CREED / DIALOGUE</strong>
+					<strong>IRONCREED / DIALOGUE</strong>
 				</span>
 				<i aria-hidden="true">↓</i>
 			</a>

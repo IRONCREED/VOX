@@ -326,20 +326,20 @@ test('the build, policies, and four localized search maps are public', async () 
 	assert.match(aboutHtml, /identity and role in the game remain classified/);
 	assert.match(aboutHtml, /personified engineering process/);
 	assert.doesNotMatch(aboutHtml, /military medical-AI prototype/);
-	assert.match(aboutHtml, /Who is IRON CREED\?/);
-	assert.match(aboutHtml, /IRON CREED — the personified engineering process of Zhovten Games/);
+	assert.match(aboutHtml, /Who is IRONCREED\?/);
+	assert.match(aboutHtml, /IRONCREED — the personified engineering process of Zhovten Games/);
 	const cycleHtml = await (await site.request('/en/pages/material-cycle')).text();
 	assert.match(cycleHtml, /From a working question to a verifiable publication/);
 	assert.doesNotMatch(aboutHtml, /about-cycle__steps/);
 	assert.match(aboutHtml, /DevOps as a way of working/);
 	assert.match(aboutHtml, /A website that can be read by more than people/);
 	assert.match(aboutHtml, /EMBO Studio · long-term infrastructure support/);
-	assert.match(aboutHtml, /Shifton, Zipy, and 200\+ high-density cases/);
+	assert.match(aboutHtml, /200\+ high-density cases/);
 	assert.match(aboutHtml, /Public team profiles/);
 	assert.match(aboutHtml, /href="https:\/\/www\.linkedin\.com\/in\/oksanadubinetska\/"/);
 	assert.match(aboutHtml, /href="https:\/\/www\.linkedin\.com\/in\/pan-canon\/"/);
 	assert.match(aboutHtml, /Sam Starling/);
-	assert.match(aboutHtml, /href="https:\/\/www\.linkedin\.com\/company\/IRONCREED"/);
+	assert.match(aboutHtml, /href="https:\/\/www\.linkedin\.com\/showcase\/ironcreed\/"/);
 	assert.doesNotMatch(aboutHtml, /Project type|Problem description/);
 	assert.match(aboutHtml, /I hired Semen for a project for my client/);
 	assert.match(aboutHtml, /The work was done with an understanding of the matter/);
@@ -421,11 +421,11 @@ test('the canonical monogram, welcome dialog, social links, and loader copy shar
 	assert.match(html, /I stand/);
 	assert.match(html, /When everything/);
 	assert.match(html, /Lies down\./);
-	assert.match(html, /Welcome to IRON CREED/);
-	assert.match(html, /IRON CREED is a currently classified recurring character/);
+	assert.match(html, /Welcome to IRONCREED/);
+	assert.match(html, /IRONCREED is a currently classified recurring character/);
 	assert.match(html, /href="https:\/\/t\.me\/\+6-ge0JXP25o4MTQy"/);
 	assert.match(html, /href="https:\/\/github\.com\/IRONCREED"/);
-	assert.match(html, /href="https:\/\/www\.linkedin\.com\/company\/IRONCREED"/);
+	assert.match(html, /href="https:\/\/www\.linkedin\.com\/showcase\/ironcreed\/"/);
 	assert.match(html, /class="social-links social-links--sidebar"/);
 	assert.match(html, /class="social-links social-links--modal"/);
 });
@@ -444,9 +444,9 @@ test('the header exposes the persistent opt-in anthem player after the theme con
 	const enHtml = withoutReactMarkers(await enResponse.text());
 	assert.match(
 		ukHtml,
-		/class="theme-switcher"[\s\S]*aria-label="Увімкнути гімн: IRON CREED"[^>]*class="anthem-toggle"/,
+		/class="theme-switcher"[\s\S]*aria-label="Увімкнути гімн: IRONCREED"[^>]*class="anthem-toggle"/,
 	);
-	assert.match(enHtml, /aria-label="Play the anthem: IRON CREED"/);
+	assert.match(enHtml, /aria-label="Play the anthem: IRONCREED"/);
 	assert.match(enHtml, /<audio[^>]*aria-hidden="true"[^>]*preload="none"/);
 	assert.match(enHtml, /src="\/audio\/iron-creed-anthem\.m4a"/);
 	assert.doesNotMatch(enHtml, /cdn1\.suno\.ai/);

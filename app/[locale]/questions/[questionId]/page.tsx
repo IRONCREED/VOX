@@ -14,6 +14,7 @@ import { isLocale } from '../../../../src/content-catalog/domain/content-model';
 import { CorpusIndexPageTemplate } from '../../../../src/interface-system/templates/corpus-index-page-template';
 import { getBuildIdentity } from '../../../../src/site-navigation/application/build-identity';
 import { getSiteOrigin } from '../../../../src/site-metadata/site-origin';
+import { getSocialPreview } from '../../../../src/site-metadata/social-preview';
 
 interface QuestionIndexPageProps {
 	params: Promise<{ locale: string; questionId: string }>;
@@ -33,7 +34,9 @@ export async function generateMetadata({ params }: QuestionIndexPageProps): Prom
 	if (!question) return {};
 	const otherLocale = locale === 'uk' ? 'en' : 'uk';
 	const canonical = new URL(getQuestionHref(locale, question.id), getSiteOrigin());
-	const title = `${question.label} — IRON CREED`;
+	const title = `${question.label} — IRONCREED`;
+	const socialPreview = getSocialPreview();
+
 	return {
 		title,
 		description: question.summary,
@@ -48,16 +51,16 @@ export async function generateMetadata({ params }: QuestionIndexPageProps): Prom
 		openGraph: {
 			title,
 			description: question.summary,
-			images: [],
+			images: [socialPreview],
 			type: 'article',
 			url: canonical,
 		},
 		robots: { index: true, follow: true },
 		twitter: {
-			card: 'summary',
+			card: 'summary_large_image',
 			title,
 			description: question.summary,
-			images: [],
+			images: [socialPreview.url],
 		},
 		other: {
 			'content-language-alternate': otherLocale,

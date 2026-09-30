@@ -45,7 +45,7 @@ export function HomePageTemplate({
 		>
 			<main className="knowledge-panel knowledge-panel--listing" id="main">
 				<header className="listing-introduction">
-					<small>IRON CREED / KNOWLEDGE SYSTEM</small>
+					<small>IRONCREED / KNOWLEDGE SYSTEM</small>
 					<h1 className="section-heading">
 						<SectionIcon sectionId="home" variant="heading" />
 						<span>{copy.homeTitle}</span>

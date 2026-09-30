@@ -53,7 +53,7 @@ export function CategoryPageTemplate({
 		>
 			<main className="knowledge-panel knowledge-panel--listing" id="main">
 				<header className="listing-introduction">
-					<small>IRON CREED / {category.id.toUpperCase()}</small>
+					<small>IRONCREED / {category.id.toUpperCase()}</small>
 					<h1 className="section-heading">
 						<SectionIcon sectionId={category.id} variant="heading" />
 						<span>{category.label}</span>

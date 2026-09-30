@@ -60,7 +60,7 @@ export function ContentPageTemplate({
 					source: { kind: 'text', text: page.body },
 				}
 			: undefined;
-	const identityTrigger = 'IRON CREED';
+	const identityTrigger = 'IRONCREED';
 	const identityRemainder =
 		identityHint && page.description.startsWith(identityTrigger)
 			? page.description.slice(identityTrigger.length)

@@ -68,7 +68,7 @@ export function SeriesPageTemplate({
 				</nav>
 
 				<header className="listing-introduction">
-					<small>IRON CREED / MATERIAL SERIES</small>
+					<small>IRONCREED / MATERIAL SERIES</small>
 					<h1>{series.title}</h1>
 					<p>{series.description}</p>
 				</header>

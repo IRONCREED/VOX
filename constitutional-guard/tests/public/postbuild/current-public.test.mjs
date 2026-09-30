@@ -13,8 +13,8 @@ test('the public build renders the service story, attributed portfolio, and real
 	assert.equal(response.status, 200);
 	const html = await response.text();
 
-	assert.match(html, /Who is IRON CREED\?/);
-	assert.match(html, /IRON CREED — the personified engineering process of Zhovten Games/);
+	assert.match(html, /Who is IRONCREED\?/);
+	assert.match(html, /IRONCREED — the personified engineering process of Zhovten Games/);
 	assert.match(html, /href="\/en\/pages\/material-cycle"/);
 	assert.match(html, /href="\/en\/pages\/anthem"/);
 	assert.doesNotMatch(html, /class="about-cycle"/);
@@ -30,9 +30,9 @@ test('the public build renders the service story, attributed portfolio, and real
 	);
 	assert.match(html, /EMBO Studio · long-term infrastructure support/);
 	assert.match(html, /Academic typesetting → an in-house publishing pipeline/);
-	assert.match(html, /Shifton, Zipy, and 200\+ high-density cases/);
+	assert.match(html, /200\+ high-density cases/);
 	assert.match(html, /Public team profiles/);
-	assert.match(html, /href="https:\/\/www\.linkedin\.com\/company\/IRONCREED"/);
+	assert.match(html, /href="https:\/\/www\.linkedin\.com\/showcase\/ironcreed\/"/);
 	assert.doesNotMatch(html, /Project type|Problem description/);
 	assert.match(html, /reviews from all platforms/);
 	assert.match(html, /available on request/);
@@ -60,3 +60,5 @@ test('the public build renders the faceted monogram and local anthem only', asyn
 
 	await access(path.join(projectRoot, 'dist/client/audio/iron-creed-anthem.m4a'));
 });
+
+import '../../postbuild/practice-map-metadata.test.mjs';

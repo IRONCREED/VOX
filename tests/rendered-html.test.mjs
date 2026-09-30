@@ -24,7 +24,7 @@ test('renders the released production metadata and local shell assets', async ()
 	assert.equal(response.status, 200);
 	assert.match(response.headers.get('content-type') ?? '', /^text\/html\b/i);
 	const html = await response.text();
-	assert.match(html, /<title>IRON CREED — Ця система житиме<\/title>/);
+	assert.match(html, /<title>IRONCREED — Ця система житиме<\/title>/);
 	assert.match(html, /<meta[^>]*name="robots"[^>]*content="follow, index"/);
 	assert.match(html, /<link[^>]*rel="canonical"[^>]*href="https:\/\/web\.zhovten\.games\/uk\/"/);
 	assert.match(html, /src="\/brand\/iron-creed-mark\.svg"/);
@@ -62,10 +62,18 @@ test('project pages preserve welcome links, directory routes and the no-JavaScri
 			assert.doesNotMatch(welcome, /\[Zhovten Games\]/);
 			assert.match(welcome, /<h2[^>]*tabindex="-1"/i);
 			assert.ok(
-				welcome.indexOf('https://www.linkedin.com/company/IRONCREED') <
+				welcome.indexOf('https://www.linkedin.com/showcase/ironcreed/') <
 					welcome.indexOf('https://github.com/IRONCREED'),
 			);
-			assert.ok(welcome.indexOf('https://github.com/IRONCREED') < welcome.indexOf('https://t.me/'));
+			assert.ok(
+				welcome.indexOf('https://www.facebook.com/ironcreed.fb') <
+					welcome.indexOf('https://www.linkedin.com/showcase/ironcreed/'),
+			);
+			assert.ok(
+				welcome.indexOf('https://www.linkedin.com/showcase/ironcreed/') <
+					welcome.indexOf('https://t.me/'),
+			);
+			assert.ok(welcome.indexOf('https://t.me/') < welcome.indexOf('https://github.com/IRONCREED'));
 			const directory = /<nav[^>]*class="policy-directory project-directory"[\s\S]*?<\/nav>/.exec(
 				html,
 			)?.[0];

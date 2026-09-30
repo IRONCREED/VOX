@@ -1,4 +1,4 @@
-# IRON CREED diagram system
+# IRONCREED diagram system
 
 Status: normative implementation guide for release `1.11.0`.
 
@@ -90,7 +90,7 @@ already exist in the corpus reference their stable entity IDs.
 ## Creating an asset
 
 1. Confirm the stable asset ID and existing source entity/view.
-2. Select a projection, renderer and IRON CREED preset.
+2. Select a projection, renderer and IRONCREED preset.
 3. Reference existing entities and canonical relations where available.
 4. Add only diagram-specific entities that have independent meaning.
 5. Supply both localizations and publication accessibility metadata.

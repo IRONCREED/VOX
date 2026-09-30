@@ -610,11 +610,11 @@
 		"schemaVersion": 1,
 		"status": "published",
 		"visibility": "public",
-		"revision": 1,
+		"revision": 2,
 		"pageId": "page.about",
 		"invitation": {
-			"uk": "IRON CREED зафіксував два доступні питання про власну ідентичність. Решта подробиць залишиться за межами цього випуску.",
-			"en": "IRON CREED has registered two available questions about his identity. Further details remain outside this release."
+			"uk": "IRONCREED зафіксував два доступні питання про власну ідентичність. Решта подробиць залишиться за межами цього випуску.",
+			"en": "IRONCREED has registered two available questions about his identity. Further details remain outside this release."
 		},
 		"entryQuestionIds": [
 			"q.iron-creed.model",

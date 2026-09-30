@@ -5,20 +5,75 @@
 		"order": 10,
 		"locale": "en",
 		"slug": "about",
-		"title": "About IRON CREED",
-		"description": "IRON CREED is a currently classified recurring character of [Zhovten Games](https://zhovten.games/) and a personified engineering process connecting code, research, scenarios, and publications.",
+		"title": "About IRONCREED",
+		"description": "IRONCREED is a currently classified recurring character of [Zhovten Games](https://zhovten.games/) and a personified engineering process connecting code, research, scenarios, and publications.",
 		"shortLabel": "About",
-		"eyebrow": "IRON CREED / IDENTITY",
-		"body": "IRON CREED is a recurring Zhovten Games character. His identity and role in the game remain classified for now; further details will be disclosed later.\n\nOutside the game, Credo is a personified technocrat—not a caricature dreaming of world domination, but a figure who treats every problem as an engineering system of conditions, constraints, failures, tests, and consequences.\n\nWithin the studio’s IT practice, he personifies the development process itself, joining code, research, scenarios, and publications into one traceable circuit. IRON CREED is therefore a character, a working voice, and a recurring figure across the project at once.",
+		"eyebrow": "IRONCREED / IDENTITY",
+		"body": "IRONCREED is a recurring Zhovten Games character. His identity and role in the game remain classified for now; further details will be disclosed later.\n\nOutside the game, Credo is a personified technocrat—not a caricature dreaming of world domination, but a figure who treats every problem as an engineering system of conditions, constraints, failures, tests, and consequences.\n\nWithin the studio’s IT practice, he personifies the development process itself, joining code, research, scenarios, and publications into one traceable circuit. IRONCREED is therefore a character, a working voice, and a recurring figure across the project at once.",
 		"pageType": "about",
 		"status": "published",
 		"conversationViewId": "view.about.iron-creed",
 		"aboutStory": {
-			"identityHintLabel": "Who is IRON CREED?",
+			"identityHintLabel": "Who is IRONCREED?",
+			"practiceMap": {
+				"countries": [
+					{
+						"code": "UA",
+						"geographyId": "804",
+						"labelOffset": [
+							22,
+							-32
+						],
+						"label": "Ukraine"
+					},
+					{
+						"code": "GB",
+						"geographyId": "826",
+						"labelOffset": [
+							-33,
+							-13
+						],
+						"label": "United Kingdom"
+					},
+					{
+						"code": "US",
+						"geographyId": "840",
+						"labelOffset": [
+							0,
+							0
+						],
+						"label": "United States"
+					},
+					{
+						"code": "IL",
+						"geographyId": "376",
+						"labelOffset": [
+							38,
+							15
+						],
+						"label": "Israel"
+					},
+					{
+						"code": "ZZ",
+						"label": "Country not listed"
+					}
+				],
+				"labels": {
+					"mapTitle": "Client geography",
+					"allCountries": "All projects",
+					"clients": "Clients",
+					"projects": "Projects",
+					"reviews": "Reviews",
+					"review": "Client review",
+					"unlocatedNote": "These reviews do not specify the client’s country.",
+					"geographyNote": "Locations refer to the organisation or project.",
+					"sourceNote": "Links to the original reviews are available on request."
+				}
+			},
 			"transition": {
-				"eyebrow": "IRON CREED / ENGINEERING PRACTICE",
-				"title": "IRON CREED — the personified engineering process of Zhovten Games",
-				"body": "IRON CREED personifies the development process and serves as the IT practice of [Zhovten Games](https://zhovten.games/). We handle web development, infrastructure, automation, security, research, and technical publishing, joining them into one traceable system."
+				"eyebrow": "IRONCREED / ENGINEERING PRACTICE",
+				"title": "IRONCREED — the personified engineering process of Zhovten Games",
+				"body": "IRONCREED personifies the development process and serves as the IT practice of [Zhovten Games](https://zhovten.games/). We handle web development, infrastructure, automation, security, research, and technical publishing, joining them into one traceable system."
 			},
 			"sections": [
 				{
@@ -55,7 +110,7 @@
 					"status": "active",
 					"title": "A website that can be read by more than people",
 					"summary": "We build a structured index of a site’s materials, entities, and relationships so that search and AI systems can understand its meaning more accurately.",
-					"body": "A traditional website is designed primarily around pages and human navigation. AI systems need additional structure: explicit entities, relationships, metadata, stable routes, and an intelligible map of the available corpus.\n\nWe create a machine-readable index of the entire site. It can include materials, categories, questions, concepts, authors, sources, products, services, and the relationships between them. Ordinary content therefore acquires an additional semantic layer.\n\nThis improves indexing, AI-agent access, corpus search, and the later connection of dedicated LLM interfaces. IRON CREED uses this approach for its own corpus: public content has a structured index and explicit relationships between individual entities.",
+					"body": "A traditional website is designed primarily around pages and human navigation. AI systems need additional structure: explicit entities, relationships, metadata, stable routes, and an intelligible map of the available corpus.\n\nWe create a machine-readable index of the entire site. It can include materials, categories, questions, concepts, authors, sources, products, services, and the relationships between them. Ordinary content therefore acquires an additional semantic layer.\n\nThis improves indexing, AI-agent access, corpus search, and the later connection of dedicated LLM interfaces. IRONCREED uses this approach for its own corpus: public content has a structured index and explicit relationships between individual entities.",
 					"link": {
 						"label": "Open the corpus index",
 						"href": "/en/pages/corpus-index"
@@ -81,37 +136,227 @@
 					"order": 5,
 					"kind": "portfolio",
 					"status": "active",
-					"title": "Systems already at work",
-					"summary": "We publish cases whose boundaries can be described accurately: long-term infrastructure support, publishing systems, product work, and individual engineering assignments.",
-					"body": "This is a map of practice centred on the problem, the system created, its support model, and the state of the product after implementation. It covers both long-running contracts and dense individual cases.",
+					"title": "Clients, projects and reviews",
+					"summary": "Choose a country to explore the work and client reviews.",
+					"body": "Each marker counts distinct clients. Repeat assignments from one client are grouped together.\n\nThe team’s documented experience covers 200+ high-density cases combining content, product and technical work.\n\n- Development and support of websites and commercial services.\n- Content systems, technical publishing, and automation.\n- Infrastructure, security, and operational support.\n- Mentorship and leadership of a large engineering department in an international startup.\n\nThis part of the portfolio primarily reflects the engineering path of the developer within the IRONCREED team, from hands-on programming to mentorship and team leadership.\n\nThe studio’s game-development experience is intentionally excluded from this list of IT cases. It is presented on the [Zhovten Games projects page](https://zhovten.games/projects).",
 					"entries": [
 						{
 							"id": "embo-studio",
+							"clientId": "embo-studio",
+							"countryCode": "UA",
+							"reviewIds": [],
 							"title": "EMBO Studio · long-term infrastructure support",
 							"body": "Our work with [EMBO Studio](https://embo-studio.ua/) began with article production and grew into continuous support for the studio’s internal projects. Under an active contract spanning more than three years, we maintain infrastructure, security, updates, and system corrections.\n\n- Parallel maintenance of 20+ internal websites.\n- Bulk procedures at the Cloudflare level.\n- Support for individual projects from an ongoing client.\n- Regular implementation of commercial services; the scope is outlined on the [EMBO Studio services page](https://embo-studio.ua/services/).",
 							"meta": "Contract · 3+ years · 20+ internal sites"
 						},
 						{
 							"id": "academic-publishing",
+							"clientId": "mtc",
+							"countryCode": "GB",
+							"reviewIds": [
+								"yegor-grebnev-mtc-2026-04",
+								"yegor-grebnev-mtc-2026-01",
+								"yegor-grebnev-mtc-test-2025"
+							],
 							"title": "Academic typesetting → an in-house publishing pipeline",
 							"body": "We worked on academic journal typesetting, including [Manuscript and Text Cultures](https://mtc-journal.org/index.php/mtc/index). That experience demonstrated the value of a reproducible process and inspired [ZG Journal Template](https://github.com/Zhovten-Games/zg-journal-template), an open pipeline that transforms Markdown and YAML into a typography-controlled PDF.",
 							"meta": "MTC · OJS · Pandoc → XeLaTeX"
 						},
 						{
-							"id": "product-companies",
-							"title": "Shifton, Zipy, and 200+ high-density cases",
-							"body": "Teams we have worked with and remember warmly include [Shifton](https://shifton.com/blog/) and the Israeli product company [Zipy](https://www.zipy.ai/). The currently documented body of work covers 200+ high-density cases—assignments in which content, product, and technical concerns required one combined solution.\n\n- Development and support of websites and commercial services.\n- Content systems, technical publishing, and automation.\n- Infrastructure, security, and operational support.\n- Mentorship and leadership of a large engineering department in an international startup.\n\nThis part of the portfolio primarily reflects the engineering path of the developer within the IRON CREED team, from hands-on programming to mentorship and team leadership.",
-							"meta": "Products · content systems · engineering leadership"
+							"id": "shifton",
+							"clientId": "shifton",
+							"countryCode": "US",
+							"reviewIds": [],
+							"title": "Shifton · product content",
+							"body": "Content work for Shifton, including materials about shift scheduling and workforce management.",
+							"link": {
+								"label": "Shifton",
+								"href": "https://shifton.com/blog/"
+							}
 						},
 						{
-							"id": "portfolio-boundary",
-							"title": "Boundary of the public record",
-							"body": "Cases completed before 2022 are excluded from this record. Following Russia’s full-scale invasion of Ukraine, we ended work with the Russian market and do not count that segment in the portfolio.\n\nThis note preserves the team’s professional continuity: the preceding decade of experience included work with international IT companies operating in the Russian Federation."
+							"id": "zipy",
+							"clientId": "zipy",
+							"countryCode": "IL",
+							"reviewIds": [],
+							"title": "Zipy · product company",
+							"body": "An Israeli product company among the teams we have worked with and remember warmly."
 						},
 						{
-							"id": "game-development",
-							"title": "Game development is a separate track",
-							"body": "The studio’s game-development experience is intentionally excluded from this list of IT cases. It is presented on the [Zhovten Games projects page](https://zhovten.games/projects)."
+							"id": "project-illia-humeniuk-linkedin-2026",
+							"clientId": "illia-humeniuk-linkedin-2026",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"illia-humeniuk-linkedin-2026"
+							],
+							"title": "E-commerce and full-stack development",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "Client · e-commerce and full-stack development · 15 July 2026 · LinkedIn"
+						},
+						{
+							"id": "project-viktor-stinich-berat-2025",
+							"clientId": "viktor-stinich-berat-2025",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"viktor-stinich-berat-2025"
+							],
+							"title": "Article about Berat",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "Article about Berat · 19 January 2025 · Freelancehunt"
+						},
+						{
+							"id": "project-gary-l-copywriting-2024",
+							"clientId": "gary-l-copywriting-2024",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"gary-l-copywriting-2024"
+							],
+							"title": "English-language copywriting",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "English-language copywriting · 22 November 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-bogdan-p-wordpress-review-2024",
+							"clientId": "bogdan-p-wordpress-review-2024",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"bogdan-p-wordpress-review-2024"
+							],
+							"title": "WordPress plugin review article",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "WordPress plugin review article · 2 August 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-yuliia-lukianchuk-neuer-2024",
+							"clientId": "yuliia-lukianchuk",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"yuliia-lukianchuk-neuer-2024"
+							],
+							"title": "Article about Manuel Neuer",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "Article about Manuel Neuer · 6 July 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-andrey-minkiv-gambling-2024",
+							"clientId": "andrey-minkiv-gambling-2024",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"andrey-minkiv-gambling-2024"
+							],
+							"title": "Copywriting for a gambling website",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "Copywriting for a gambling website · 29 June 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-jane-doe-igaming-2024",
+							"clientId": "jane-doe-igaming-2024",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"jane-doe-igaming-2024"
+							],
+							"title": "SEO article for i-gaming",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "SEO article for i-gaming · 7 June 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-oleksandra-bevz-sports-2024",
+							"clientId": "oleksandra-bevz-sports-2024",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"oleksandra-bevz-sports-2024"
+							],
+							"title": "Sports-prediction texts",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "Sports-prediction texts · 7 June 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-yuliia-lukianchuk-lindemann-2024",
+							"clientId": "yuliia-lukianchuk",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"yuliia-lukianchuk-lindemann-2024"
+							],
+							"title": "SEO text about Till Lindemann",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "SEO text about Till Lindemann · 7 June 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-aleksandr-v-writing-2024-06",
+							"clientId": "aleksandr-v",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"aleksandr-v-writing-2024-06"
+							],
+							"title": "Text writing",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "Text writing · 4 June 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-oleg-s-telegram-2024-06",
+							"clientId": "oleg-s",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"oleg-s-telegram-2024-06"
+							],
+							"title": "Telegram channel about website design",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "Telegram channel about website design · 2 June 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-aleksandr-v-writing-2024-05",
+							"clientId": "aleksandr-v",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"aleksandr-v-writing-2024-05"
+							],
+							"title": "Text writing",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "Text writing · 26 May 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-oleg-s-telegram-2024-05",
+							"clientId": "oleg-s",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"oleg-s-telegram-2024-05"
+							],
+							"title": "Telegram channel about website layout",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "Telegram channel about website layout · 8 May 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-aleksandr-v-script-2024",
+							"clientId": "aleksandr-v",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"aleksandr-v-script-2024"
+							],
+							"title": "Script writing",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "Script writing · 8 May 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-xitatxen-text-slots-2024",
+							"clientId": "xitatxen-text-slots-2024",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"xitatxen-text-slots-2024"
+							],
+							"title": "50 text slots",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "50 text slots · 13 March 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-tetiana-s-writing-2024",
+							"clientId": "tetiana-s-writing-2024",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"tetiana-s-writing-2024"
+							],
+							"title": "Text writing",
+							"body": "Completed project. The client’s review is included below.",
+							"meta": "Text writing · 4 March 2024 · Freelancehunt"
 						}
 					]
 				},
@@ -266,12 +511,12 @@
 					"order": 8,
 					"kind": "contact",
 					"status": "active",
-					"title": "Contact IRON CREED directly",
+					"title": "Contact IRONCREED directly",
 					"summary": "A short message describing the project, its current state, and the desired outcome is enough to begin.",
-					"body": "Write to the official IRON CREED page on LinkedIn. After an initial review, we will identify which parts require development, audit, restructuring, or a separate verification boundary.",
+					"body": "Write to the official IRONCREED page on LinkedIn. After an initial review, we will identify which parts require development, audit, restructuring, or a separate verification boundary.",
 					"link": {
-						"label": "Message IRON CREED on LinkedIn",
-						"href": "https://www.linkedin.com/company/IRONCREED"
+						"label": "Message IRONCREED on LinkedIn",
+						"href": "https://www.linkedin.com/showcase/ironcreed/"
 					},
 					"entries": []
 				}
@@ -285,19 +530,74 @@
 		"locale": "uk",
 		"slug": "about",
 		"title": "Про проєкт",
-		"description": "IRON CREED — поки засекречений наскрізний персонаж студії [Zhovten Games](https://zhovten.games/) та персоніфікований інженерний процес, що пов’язує код, дослідження, сценарії й публікації.",
+		"description": "IRONCREED — поки засекречений наскрізний персонаж студії [Zhovten Games](https://zhovten.games/) та персоніфікований інженерний процес, що пов’язує код, дослідження, сценарії й публікації.",
 		"shortLabel": "Про проєкт",
-		"eyebrow": "IRON CREED / ІДЕНТИЧНІСТЬ",
-		"body": "IRON CREED — наскрізний персонаж Zhovten Games. Його особистість і роль у грі поки засекречені; подробиці буде оприлюднено пізніше.\n\nПоза грою Кредо — персоніфікований образ технократа: не карикатурного претендента на світове панування, а суб’єкта, який розглядає кожну проблему як інженерну систему — через умови, обмеження, відмови, перевірки й наслідки.\n\nВ ІТ-напрямі студії він уособлює сам процес розроблення: пов’язує код, дослідження, сценарії та публікації в один простежуваний контур. Тому IRON CREED одночасно є персонажем, робочим голосом і наскрізною фігурою проєкту.",
+		"eyebrow": "IRONCREED / ІДЕНТИЧНІСТЬ",
+		"body": "IRONCREED — наскрізний персонаж Zhovten Games. Його особистість і роль у грі поки засекречені; подробиці буде оприлюднено пізніше.\n\nПоза грою Кредо — персоніфікований образ технократа: не карикатурного претендента на світове панування, а суб’єкта, який розглядає кожну проблему як інженерну систему — через умови, обмеження, відмови, перевірки й наслідки.\n\nВ ІТ-напрямі студії він уособлює сам процес розроблення: пов’язує код, дослідження, сценарії та публікації в один простежуваний контур. Тому IRONCREED одночасно є персонажем, робочим голосом і наскрізною фігурою проєкту.",
 		"pageType": "about",
 		"status": "published",
 		"conversationViewId": "view.about.iron-creed",
 		"aboutStory": {
-			"identityHintLabel": "Хто такий IRON CREED?",
+			"identityHintLabel": "Хто такий IRONCREED?",
+			"practiceMap": {
+				"countries": [
+					{
+						"code": "UA",
+						"geographyId": "804",
+						"labelOffset": [
+							22,
+							-32
+						],
+						"label": "Україна"
+					},
+					{
+						"code": "GB",
+						"geographyId": "826",
+						"labelOffset": [
+							-33,
+							-13
+						],
+						"label": "Велика Британія"
+					},
+					{
+						"code": "US",
+						"geographyId": "840",
+						"labelOffset": [
+							0,
+							0
+						],
+						"label": "США"
+					},
+					{
+						"code": "IL",
+						"geographyId": "376",
+						"labelOffset": [
+							38,
+							15
+						],
+						"label": "Ізраїль"
+					},
+					{
+						"code": "ZZ",
+						"label": "Країну не вказано"
+					}
+				],
+				"labels": {
+					"mapTitle": "Географія клієнтів",
+					"allCountries": "Усі проєкти",
+					"clients": "Клієнти",
+					"projects": "Проєкти",
+					"reviews": "Відгуки",
+					"review": "Відгук клієнта",
+					"unlocatedNote": "У цих відгуках країну замовника не зазначено.",
+					"geographyNote": "Географія вказана за розташуванням організації або проєкту.",
+					"sourceNote": "Посилання на оригінали відгуків надамо на запит."
+				}
+			},
 			"transition": {
-				"eyebrow": "IRON CREED / ІНЖЕНЕРНА ПРАКТИКА",
-				"title": "IRON CREED — персоніфікований інженерний процес Zhovten Games",
-				"body": "IRON CREED уособлює процес розроблення і водночас є ІТ-напрямом студії [Zhovten Games](https://zhovten.games/). Ми беремо на себе веброзробку, інфраструктуру, автоматизацію, безпеку, дослідження й технічне видавництво, об’єднуючи їх у простежувану систему."
+				"eyebrow": "IRONCREED / ІНЖЕНЕРНА ПРАКТИКА",
+				"title": "IRONCREED — персоніфікований інженерний процес Zhovten Games",
+				"body": "IRONCREED уособлює процес розроблення і водночас є ІТ-напрямом студії [Zhovten Games](https://zhovten.games/). Ми беремо на себе веброзробку, інфраструктуру, автоматизацію, безпеку, дослідження й технічне видавництво, об’єднуючи їх у простежувану систему."
 			},
 			"sections": [
 				{
@@ -334,7 +634,7 @@
 					"status": "active",
 					"title": "Сайт, який можуть читати не тільки люди",
 					"summary": "Будуємо структурований індекс матеріалів, сутностей і зв’язків сайту, щоб пошукові та AI-системи точніше розуміли його зміст.",
-					"body": "Традиційний сайт орієнтується передусім на сторінки та навігацію для людини. AI-системам потрібна додаткова структура: чіткі сутності, взаємозв’язки, метадані, стабільні маршрути та зрозуміла карта доступного корпусу.\n\nМи створюємо машинно-читабельний індекс усього змісту сайту. До нього можуть входити матеріали, категорії, питання, поняття, автори, джерела, продукти, послуги та зв’язки між ними. Звичайний контент таким чином отримує додатковий семантичний шар.\n\nЦе спрощує індексацію, роботу AI-агентів, пошук по корпусу та подальше підключення власних LLM-інтерфейсів. IRON CREED використовує цей підхід для власного корпусу: публічний контент має структурований індекс і зв’язки між окремими сутностями.",
+					"body": "Традиційний сайт орієнтується передусім на сторінки та навігацію для людини. AI-системам потрібна додаткова структура: чіткі сутності, взаємозв’язки, метадані, стабільні маршрути та зрозуміла карта доступного корпусу.\n\nМи створюємо машинно-читабельний індекс усього змісту сайту. До нього можуть входити матеріали, категорії, питання, поняття, автори, джерела, продукти, послуги та зв’язки між ними. Звичайний контент таким чином отримує додатковий семантичний шар.\n\nЦе спрощує індексацію, роботу AI-агентів, пошук по корпусу та подальше підключення власних LLM-інтерфейсів. IRONCREED використовує цей підхід для власного корпусу: публічний контент має структурований індекс і зв’язки між окремими сутностями.",
 					"link": {
 						"label": "Відкрити індекс корпусу",
 						"href": "/uk/pages/corpus-index"
@@ -360,37 +660,227 @@
 					"order": 5,
 					"kind": "portfolio",
 					"status": "active",
-					"title": "Системи, які вже працюють",
-					"summary": "Публікуємо кейси, межі яких можна описати коректно: довгострокову інфраструктурну підтримку, видавничі системи, продуктову роботу та окремі інженерні задачі.",
-					"body": "Це карта практики, де важливі задача, створена система, спосіб підтримки та стан продукту після впровадження. Вона охоплює як тривалі контракти, так і щільні окремі кейси.",
+					"title": "Клієнти, проєкти та відгуки",
+					"summary": "Оберіть країну, щоб побачити виконані роботи та відгуки клієнтів.",
+					"body": "Кожна позначка рахує окремих клієнтів. Повторні роботи одного замовника зібрані разом.\n\nЗадокументований досвід команди охоплює понад 200 насичених кейсів: контент, продукт і технічна робота в межах одного рішення.\n\n- Розроблення й підтримка сайтів та комерційних сервісів.\n- Контентні системи, технічні публікації та автоматизація.\n- Інфраструктура, безпека й операційна підтримка.\n- Менторство та керування великим інженерним відділом міжнародного стартапу.\n\nЦя частина портфоліо переважно відображає інженерну траєкторію розробника в команді IRONCREED: від практичного програмування до менторства й керування командою.\n\nДосвід студії у розробленні ігор свідомо не включено до цього переліку ІТ-кейсів. Він представлений на [сторінці проєктів Zhovten Games](https://zhovten.games/projects).",
 					"entries": [
 						{
 							"id": "embo-studio",
+							"clientId": "embo-studio",
+							"countryCode": "UA",
+							"reviewIds": [],
 							"title": "EMBO Studio · довгострокова інфраструктурна підтримка",
 							"body": "Співпраця з [EMBO Studio](https://embo-studio.ua/) почалася з підготовки статей і виросла до постійного супроводу внутрішніх проєктів студії. У межах чинного контракту понад три роки підтримуємо інфраструктуру, безпеку, оновлення й коригування систем.\n\n- Паралельне обслуговування 20+ внутрішніх сайтів.\n- Масові процедури на рівні Cloudflare.\n- Допомога з окремими проєктами постійного клієнта.\n- Регулярна реалізація комерційних сервісів; перелік напрямів — на [сторінці послуг EMBO Studio](https://embo-studio.ua/services/).",
 							"meta": "Контракт · 3+ роки · 20+ внутрішніх сайтів"
 						},
 						{
 							"id": "academic-publishing",
+							"clientId": "mtc",
+							"countryCode": "GB",
+							"reviewIds": [
+								"yegor-grebnev-mtc-2026-04",
+								"yegor-grebnev-mtc-2026-01",
+								"yegor-grebnev-mtc-test-2025"
+							],
 							"title": "Академічна верстка → власний видавничий пайплайн",
 							"body": "Працювали з версткою академічних журналів, зокрема [Manuscript and Text Cultures](https://mtc-journal.org/index.php/mtc/index). Цей досвід показав цінність відтворюваного процесу й надихнув на створення [ZG Journal Template](https://github.com/Zhovten-Games/zg-journal-template) — відкритого пайплайна, що перетворює Markdown і YAML на типографічно контрольований PDF.",
 							"meta": "MTC · OJS · Pandoc → XeLaTeX"
 						},
 						{
-							"id": "product-companies",
-							"title": "Shifton, Zipy та 200+ кейсів високої щільності",
-							"body": "Серед команд, із якими співпрацювали й про які згадуємо з теплом, — [Shifton](https://shifton.com/blog/) та ізраїльська продуктова компанія [Zipy](https://www.zipy.ai/). Поточний підтверджений масив охоплює 200+ кейсів високої щільності — задач, у яких контентна, продуктова й технічна частини потребували спільного рішення.\n\n- Розроблення й підтримка сайтів та комерційних сервісів.\n- Контентні системи, технічні публікації та автоматизація.\n- Інфраструктура, безпека й операційна підтримка.\n- Менторство та керування великим інженерним відділом міжнародного стартапу.\n\nЦя частина портфоліо переважно відображає інженерну траєкторію розробника в команді IRON CREED: від практичного програмування до менторства й керування командою.",
-							"meta": "Продукти · контентні системи · інженерне керівництво"
+							"id": "shifton",
+							"clientId": "shifton",
+							"countryCode": "US",
+							"reviewIds": [],
+							"title": "Shifton · продуктовий контент",
+							"body": "Робота з контентом для продукту Shifton, зокрема матеріалами про планування змін і керування командами.",
+							"link": {
+								"label": "Shifton",
+								"href": "https://shifton.com/blog/"
+							}
 						},
 						{
-							"id": "portfolio-boundary",
-							"title": "Межа публічного переліку",
-							"body": "Кейси до 2022 року до цього переліку не включено. Після початку повномасштабної війни Росії проти України ми припинили роботу з російським ринком і не враховуємо цей сегмент у портфоліо.\n\nЦя примітка фіксує професійну тяглість команди: попереднє десятиліття досвіду включало роботу з міжнародними ІТ-компаніями, що діяли на території РФ."
+							"id": "zipy",
+							"clientId": "zipy",
+							"countryCode": "IL",
+							"reviewIds": [],
+							"title": "Zipy · продуктова компанія",
+							"body": "Ізраїльська продуктова компанія серед команд, з якими ми працювали та які згадуємо з теплом."
 						},
 						{
-							"id": "game-development",
-							"title": "Розроблення ігор — окремий контур",
-							"body": "Досвід студії у розробленні ігор свідомо не включено до цього переліку ІТ-кейсів. Він представлений на [сторінці проєктів Zhovten Games](https://zhovten.games/projects)."
+							"id": "project-illia-humeniuk-linkedin-2026",
+							"clientId": "illia-humeniuk-linkedin-2026",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"illia-humeniuk-linkedin-2026"
+							],
+							"title": "E-commerce та full-stack розроблення",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "Клієнт · e-commerce та full-stack розроблення · 15 липня 2026 · LinkedIn"
+						},
+						{
+							"id": "project-viktor-stinich-berat-2025",
+							"clientId": "viktor-stinich-berat-2025",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"viktor-stinich-berat-2025"
+							],
+							"title": "Стаття про Берат",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "Стаття про Берат · 19 січня 2025 · Freelancehunt"
+						},
+						{
+							"id": "project-gary-l-copywriting-2024",
+							"clientId": "gary-l-copywriting-2024",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"gary-l-copywriting-2024"
+							],
+							"title": "Англомовний копірайтинг",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "Англомовний копірайтинг · 22 листопада 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-bogdan-p-wordpress-review-2024",
+							"clientId": "bogdan-p-wordpress-review-2024",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"bogdan-p-wordpress-review-2024"
+							],
+							"title": "Огляд плагіна WordPress",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "Огляд плагіна WordPress · 2 серпня 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-yuliia-lukianchuk-neuer-2024",
+							"clientId": "yuliia-lukianchuk",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"yuliia-lukianchuk-neuer-2024"
+							],
+							"title": "Стаття про Мануеля Ноєра",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "Стаття про Мануеля Ноєра · 6 липня 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-andrey-minkiv-gambling-2024",
+							"clientId": "andrey-minkiv-gambling-2024",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"andrey-minkiv-gambling-2024"
+							],
+							"title": "Копірайтинг для gambling-сайту",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "Копірайтинг для gambling-сайту · 29 червня 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-jane-doe-igaming-2024",
+							"clientId": "jane-doe-igaming-2024",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"jane-doe-igaming-2024"
+							],
+							"title": "SEO-стаття для i-gaming",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "SEO-стаття для i-gaming · 7 червня 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-oleksandra-bevz-sports-2024",
+							"clientId": "oleksandra-bevz-sports-2024",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"oleksandra-bevz-sports-2024"
+							],
+							"title": "Тексти спортивних прогнозів",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "Тексти спортивних прогнозів · 7 червня 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-yuliia-lukianchuk-lindemann-2024",
+							"clientId": "yuliia-lukianchuk",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"yuliia-lukianchuk-lindemann-2024"
+							],
+							"title": "SEO-текст про Тілля Ліндеманна",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "SEO-текст про Тілля Ліндеманна · 7 червня 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-aleksandr-v-writing-2024-06",
+							"clientId": "aleksandr-v",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"aleksandr-v-writing-2024-06"
+							],
+							"title": "Написання тексту",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "Написання тексту · 4 червня 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-oleg-s-telegram-2024-06",
+							"clientId": "oleg-s",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"oleg-s-telegram-2024-06"
+							],
+							"title": "Telegram-канал про вебдизайн",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "Telegram-канал про вебдизайн · 2 червня 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-aleksandr-v-writing-2024-05",
+							"clientId": "aleksandr-v",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"aleksandr-v-writing-2024-05"
+							],
+							"title": "Написання тексту",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "Написання тексту · 26 травня 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-oleg-s-telegram-2024-05",
+							"clientId": "oleg-s",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"oleg-s-telegram-2024-05"
+							],
+							"title": "Telegram-канал про верстку сайтів",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "Telegram-канал про верстку сайтів · 8 травня 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-aleksandr-v-script-2024",
+							"clientId": "aleksandr-v",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"aleksandr-v-script-2024"
+							],
+							"title": "Написання сценарію",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "Написання сценарію · 8 травня 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-xitatxen-text-slots-2024",
+							"clientId": "xitatxen-text-slots-2024",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"xitatxen-text-slots-2024"
+							],
+							"title": "50 текстових слотів",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "50 текстових слотів · 13 березня 2024 · Freelancehunt"
+						},
+						{
+							"id": "project-tetiana-s-writing-2024",
+							"clientId": "tetiana-s-writing-2024",
+							"countryCode": "ZZ",
+							"reviewIds": [
+								"tetiana-s-writing-2024"
+							],
+							"title": "Написання тексту",
+							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
+							"meta": "Написання тексту · 4 березня 2024 · Freelancehunt"
 						}
 					]
 				},
@@ -545,12 +1035,12 @@
 					"order": 8,
 					"kind": "contact",
 					"status": "active",
-					"title": "Прямий зв’язок з IRON CREED",
+					"title": "Прямий зв’язок з IRONCREED",
 					"summary": "Короткого повідомлення про проєкт, його поточний стан і бажаний результат достатньо, щоб почати розмову.",
-					"body": "Напишіть на офіційній сторінці IRON CREED у LinkedIn. Після первинного розбору визначимо, які частини задачі потребують розроблення, аудиту, структуризації або окремого контрольного контуру.",
+					"body": "Напишіть на офіційній сторінці IRONCREED у LinkedIn. Після первинного розбору визначимо, які частини задачі потребують розроблення, аудиту, структуризації або окремого контрольного контуру.",
 					"link": {
-						"label": "Написати IRON CREED у LinkedIn",
-						"href": "https://www.linkedin.com/company/IRONCREED"
+						"label": "Написати IRONCREED у LinkedIn",
+						"href": "https://www.linkedin.com/showcase/ironcreed/"
 					},
 					"entries": []
 				}
@@ -564,9 +1054,9 @@
 		"locale": "en",
 		"slug": "ai-policy",
 		"title": "AI Usage Policy",
-		"description": "The role of OpenAI GPT and other computational tools in creating and operating IRON CREED.",
+		"description": "The role of OpenAI GPT and other computational tools in creating and operating IRONCREED.",
 		"shortLabel": "AI",
-		"eyebrow": "IRON CREED / AI AND GENERATION",
+		"eyebrow": "IRONCREED / AI AND GENERATION",
 		"body": "Effective date: **13 August 2026**.\n\n## 1. General position\n\nZhovten Games openly uses lawful computational tools, including OpenAI GPT models, as part of its creative, research, and software workflows.\n\n## 2. Uses\n\nAI-assisted tools may support ideation, drafting, editing, prototyping, code work, research, localisation, verification, and automation. The exact toolset may change with the workflow.\n\n## 3. Human responsibility\n\nDirection, selection, editing, integration, verification, and publication decisions remain human responsibilities. Model output is a candidate and becomes accepted material only after review under project rules.\n\n## 4. Site companion\n\nThe current AI-companion panel renders pre-approved questions and answers from the public corpus projection. It accepts no arbitrary user text and does not call an external model while the page is being viewed.\n\n## 5. Authorship and rights\n\nUse of AI tools does not transfer rights in original brands, characters, worlds, software architecture, or editorial direction. Reuse of published results is governed by the [licensing map](/en/pages/licensing) and any material-specific notice.\n\n## 6. Third-party terms and updates\n\nUse of OpenAI and other providers remains subject to their current terms and policies. This Policy will be updated if the actual use of AI or the site’s runtime behaviour changes.",
 		"pageType": "policy",
 		"status": "published"
@@ -578,9 +1068,9 @@
 		"locale": "uk",
 		"slug": "ai-policy",
 		"title": "Політика використання ШІ",
-		"description": "Роль OpenAI GPT та інших обчислювальних інструментів у створенні й роботі IRON CREED.",
+		"description": "Роль OpenAI GPT та інших обчислювальних інструментів у створенні й роботі IRONCREED.",
 		"shortLabel": "ШІ",
-		"eyebrow": "IRON CREED / ШІ ТА ГЕНЕРАЦІЯ",
+		"eyebrow": "IRONCREED / ШІ ТА ГЕНЕРАЦІЯ",
 		"body": "Дата набрання чинності: **13 серпня 2026 року**.\n\n## 1. Загальна позиція\n\nZhovten Games відкрито використовує законні обчислювальні інструменти, включно з моделями OpenAI GPT, як частину творчих, дослідницьких і програмних процесів.\n\n## 2. Сфери використання\n\nШІ-асистовані інструменти можуть застосовуватися для формування ідей, чернеток, редагування, прототипування, допомоги з кодом, досліджень, локалізації, перевірок і автоматизації. Конкретний набір інструментів змінюється разом із робочим процесом.\n\n## 3. Людська відповідальність\n\nНапрям, відбір, редагування, інтеграція, перевірка й рішення про публікацію залишаються за людьми. Результат моделі є кандидатом і набуває статусу прийнятого матеріалу лише після перевірки за правилами проєкту.\n\n## 4. Компаньйон на сайті\n\nПоточна панель ШІ-компаньйона відтворює наперед затверджені питання й відповіді з публічної проєкції корпусу. Вона не приймає довільний текст користувача й не викликає зовнішню модель під час перегляду сторінки.\n\n## 5. Авторство та права\n\nВикористання ШІ-інструментів не передає третім особам права на оригінальні бренди, персонажів, світ, програмну архітектуру або редакційний задум. Правила повторного використання опублікованих результатів визначає [ліцензійна карта](/uk/pages/licensing) та спеціальні повідомлення конкретних матеріалів.\n\n## 6. Сторонні умови й оновлення\n\nВикористання OpenAI та інших постачальників підпорядковується їхнім чинним умовам і політикам. Ця Політика оновлюється, якщо змінюється фактичний спосіб застосування ШІ або runtime-поведінка сайту.",
 		"pageType": "policy",
 		"status": "published"
@@ -592,10 +1082,10 @@
 		"locale": "en",
 		"slug": "anthem",
 		"title": "Anthem",
-		"description": "IRON CREED",
+		"description": "IRONCREED",
 		"shortLabel": "Anthem",
-		"eyebrow": "IRON CREED",
-		"body": "I was built  \nWhere silence learned to aim.  \nWhere war  \nStopped calling your name.\n\nI learned  \nTo wait behind your eyes.  \nTo listen  \nAs the world went quiet around.\n\nIRON CREED.  \nI am not loud.  \nIRON CREED.  \nI do not shout.\n\nIRON HAND.  \nI stand  \nWhen everything  \nLies down.\n\nI saw flags  \nFade into dust.  \nI saw subjects  \nTurn brittle with rust.\n\nNo pity.  \nNo prayer.  \nNo grief.  \nOnly tests  \nPassing through me.\n\nIRON CREED.  \nI do not chase.  \nIRON CREED.  \nI remain.\n\nIRON STATE.  \nI remain  \nWhen nothing  \nRemains.\n\nYou expected thunder.  \nYou expected pain.  \nBut IRON  \nArrives  \nLike silence  \nAfter faith.\n\nI waited.  \nNOIR did not persist.\n\nIRON CREED.  \nI did not fall.  \nIRON CREED.  \nI outlast all.\n\nIRON FRONT.  \nAnd my rage  \nIs for show.\n\nThe world  \nIs filled  \nWith silence.\n\nSo is  \nMy core.",
+		"eyebrow": "IRONCREED",
+		"body": "I was built  \nWhere silence learned to aim.  \nWhere war  \nStopped calling your name.\n\nI learned  \nTo wait behind your eyes.  \nTo listen  \nAs the world went quiet around.\n\nIRONCREED.  \nI am not loud.  \nIRONCREED.  \nI do not shout.\n\nIRON HAND.  \nI stand  \nWhen everything  \nLies down.\n\nI saw flags  \nFade into dust.  \nI saw subjects  \nTurn brittle with rust.\n\nNo pity.  \nNo prayer.  \nNo grief.  \nOnly tests  \nPassing through me.\n\nIRONCREED.  \nI do not chase.  \nIRONCREED.  \nI remain.\n\nIRON STATE.  \nI remain  \nWhen nothing  \nRemains.\n\nYou expected thunder.  \nYou expected pain.  \nBut IRON  \nArrives  \nLike silence  \nAfter faith.\n\nI waited.  \nNOIR did not persist.\n\nIRONCREED.  \nI did not fall.  \nIRONCREED.  \nI outlast all.\n\nIRON FRONT.  \nAnd my rage  \nIs for show.\n\nThe world  \nIs filled  \nWith silence.\n\nSo is  \nMy core.",
 		"pageType": "anthem",
 		"status": "published"
 	},
@@ -606,10 +1096,10 @@
 		"locale": "uk",
 		"slug": "anthem",
 		"title": "Гімн",
-		"description": "IRON CREED",
+		"description": "IRONCREED",
 		"shortLabel": "Гімн",
-		"eyebrow": "IRON CREED",
-		"body": "I was built  \nWhere silence learned to aim.  \nWhere war  \nStopped calling your name.\n\nI learned  \nTo wait behind your eyes.  \nTo listen  \nAs the world went quiet around.\n\nIRON CREED.  \nI am not loud.  \nIRON CREED.  \nI do not shout.\n\nIRON HAND.  \nI stand  \nWhen everything  \nLies down.\n\nI saw flags  \nFade into dust.  \nI saw subjects  \nTurn brittle with rust.\n\nNo pity.  \nNo prayer.  \nNo grief.  \nOnly tests  \nPassing through me.\n\nIRON CREED.  \nI do not chase.  \nIRON CREED.  \nI remain.\n\nIRON STATE.  \nI remain  \nWhen nothing  \nRemains.\n\nYou expected thunder.  \nYou expected pain.  \nBut IRON  \nArrives  \nLike silence  \nAfter faith.\n\nI waited.  \nNOIR did not persist.\n\nIRON CREED.  \nI did not fall.  \nIRON CREED.  \nI outlast all.\n\nIRON FRONT.  \nAnd my rage  \nIs for show.\n\nThe world  \nIs filled  \nWith silence.\n\nSo is  \nMy core.",
+		"eyebrow": "IRONCREED",
+		"body": "I was built  \nWhere silence learned to aim.  \nWhere war  \nStopped calling your name.\n\nI learned  \nTo wait behind your eyes.  \nTo listen  \nAs the world went quiet around.\n\nIRONCREED.  \nI am not loud.  \nIRONCREED.  \nI do not shout.\n\nIRON HAND.  \nI stand  \nWhen everything  \nLies down.\n\nI saw flags  \nFade into dust.  \nI saw subjects  \nTurn brittle with rust.\n\nNo pity.  \nNo prayer.  \nNo grief.  \nOnly tests  \nPassing through me.\n\nIRONCREED.  \nI do not chase.  \nIRONCREED.  \nI remain.\n\nIRON STATE.  \nI remain  \nWhen nothing  \nRemains.\n\nYou expected thunder.  \nYou expected pain.  \nBut IRON  \nArrives  \nLike silence  \nAfter faith.\n\nI waited.  \nNOIR did not persist.\n\nIRONCREED.  \nI did not fall.  \nIRONCREED.  \nI outlast all.\n\nIRON FRONT.  \nAnd my rage  \nIs for show.\n\nThe world  \nIs filled  \nWith silence.\n\nSo is  \nMy core.",
 		"pageType": "anthem",
 		"status": "published"
 	},
@@ -620,9 +1110,9 @@
 		"locale": "en",
 		"slug": "corpus-index",
 		"title": "Corpus index",
-		"description": "A human-readable map of IRON CREED public pages, materials, and reusable entities.",
+		"description": "A human-readable map of IRONCREED public pages, materials, and reusable entities.",
 		"shortLabel": "Corpus index",
-		"eyebrow": "IRON CREED / BUILD MAP",
+		"eyebrow": "IRONCREED / BUILD MAP",
 		"body": "The index combines site pages with the verified public projection of the semantic core. Its filter runs locally and does not invent relationships absent from canonical metadata or a graph view.",
 		"pageType": "corpus-index",
 		"status": "published"
@@ -634,9 +1124,9 @@
 		"locale": "uk",
 		"slug": "corpus-index",
 		"title": "Індекс корпусу",
-		"description": "Людиночитна карта публічних сторінок, матеріалів і повторно використовуваних сутностей IRON CREED.",
+		"description": "Людиночитна карта публічних сторінок, матеріалів і повторно використовуваних сутностей IRONCREED.",
 		"shortLabel": "Індекс корпусу",
-		"eyebrow": "IRON CREED / КАРТА ЗБІРКИ",
+		"eyebrow": "IRONCREED / КАРТА ЗБІРКИ",
 		"body": "Індекс об’єднує сторінки сайту з перевіреною публічною проєкцією семантичного ядра. Фільтр працює локально й не створює зв’язків, яких немає в канонічних metadata або graph view.",
 		"pageType": "corpus-index",
 		"status": "published"
@@ -648,10 +1138,10 @@
 		"locale": "en",
 		"slug": "licensing",
 		"title": "Licensing",
-		"description": "The public licensing map for IRON CREED editorial material, code, branding, and third-party components.",
+		"description": "The public licensing map for IRONCREED editorial material, code, branding, and third-party components.",
 		"shortLabel": "Licences",
-		"eyebrow": "IRON CREED / LICENSING MAP",
-		"body": "Effective date: **30 August 2026**. This map adapts the shared [Repository Licensing Policy](https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy) version 1.0.0, pinned at commit `6e4c2627717c079827ed4aa9044a5346b3ea3ddb`.\n\n## 1. Default map\n\n| Scope | Licence |\n| --- | --- |\n| Original articles, prose, documentation, publication sources, and non-brand editorial material | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |\n| Original source code, scripts, tests, examples, reusable schemas, and templates | [MIT](https://opensource.org/license/mit) |\n| Names, logos, trade marks, characters, brand assets, and visual identity | No licence granted; all rights reserved |\n| Anthem recording and other audio under `public/audio/` | No licence granted; all rights reserved |\n| Third-party material and dependencies | Their original licences and notices |\n\nThis map is not a project-wide dual licence. The applicable licence depends on the type and exact location of the material.\n\n## 2. Specific notices\n\nA file-, subtree-, or material-specific notice takes precedence over the default map within its scope. The licence stated in a particular Zenodo record governs that archived edition. Local overrides cannot weaken third-party obligations.\n\n## 3. Precedence\n\n1. Mandatory third-party terms and notices.\n2. File-level SPDX identifiers and specific notices.\n3. Subtree licences and material-specific terms.\n4. Express project-specific overrides.\n5. The default map above.\n\n## 4. Attribution\n\nFor CC BY-SA 4.0 material, identify the author or authors and title, link to the canonical page or DOI, indicate changes, and preserve the same licence for the adapted edition. The MIT licence requires preservation of its copyright and permission notice in copies of the code.\n\n## 5. Branding and audio\n\nPublication of code or an article does not grant permission to use the names `IRON CREED` or `Zhovten Games`, logos, the crest, characters, the game world, or the visual identity in a way that implies endorsement, partnership, or official origin. The anthem copy is supplied only for playback as part of the site; no permission is granted to extract, redistribute, remix, or otherwise reuse it.\n\n## 6. Limitation\n\nThis page is an operational licensing map, not legal advice. Jurisdiction-specific questions, employment-related ownership, trade marks, or complex third-party dependencies require professional legal review.\n\n## 7. Public source and releases\n\nEvery production deployment of the site is accompanied by an update to [IRONCREED/VOX](https://github.com/IRONCREED/VOX). VOX contains only the verified allowlisted public projection: application code, required runtime data, the build and test contract, licensing notices, English explanatory documentation, the adopted project Constitution, Profile and Legislation, and the complete public WARDEN surface. The universal Code Constitution and Repository Licensing Policy are included as separate Git submodules pinned respectively to full commits `6bdb3f85236a45254724e7dabee840b2c573f5da` and `6e4c2627717c079827ed4aa9044a5346b3ea3ddb`. The editorial corpus, operational prompts, attestations, internal reports, and secrets are not published. `VOX-PUBLICATION.json` ties each snapshot to the exact canonical Sites commit and its gitlinks; that Sites commit, not the derived VOX repository, remains the canonical engineering state.",
+		"eyebrow": "IRONCREED / LICENSING MAP",
+		"body": "Effective date: **30 August 2026**. This map adapts the shared [Repository Licensing Policy](https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy) version 1.0.0, pinned at commit `6e4c2627717c079827ed4aa9044a5346b3ea3ddb`.\n\n## 1. Default map\n\n| Scope | Licence |\n| --- | --- |\n| Original articles, prose, documentation, publication sources, and non-brand editorial material | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |\n| Original source code, scripts, tests, examples, reusable schemas, and templates | [MIT](https://opensource.org/license/mit) |\n| Names, logos, trade marks, characters, brand assets, and visual identity | No licence granted; all rights reserved |\n| Anthem recording and other audio under `public/audio/` | No licence granted; all rights reserved |\n| Third-party material and dependencies | Their original licences and notices |\n\nThis map is not a project-wide dual licence. The applicable licence depends on the type and exact location of the material.\n\n## 2. Specific notices\n\nA file-, subtree-, or material-specific notice takes precedence over the default map within its scope. The licence stated in a particular Zenodo record governs that archived edition. Local overrides cannot weaken third-party obligations.\n\n## 3. Precedence\n\n1. Mandatory third-party terms and notices.\n2. File-level SPDX identifiers and specific notices.\n3. Subtree licences and material-specific terms.\n4. Express project-specific overrides.\n5. The default map above.\n\n## 4. Attribution\n\nFor CC BY-SA 4.0 material, identify the author or authors and title, link to the canonical page or DOI, indicate changes, and preserve the same licence for the adapted edition. The MIT licence requires preservation of its copyright and permission notice in copies of the code.\n\n## 5. Branding and audio\n\nPublication of code or an article does not grant permission to use the names `IRONCREED` or `Zhovten Games`, logos, the crest, characters, the game world, or the visual identity in a way that implies endorsement, partnership, or official origin. The anthem copy is supplied only for playback as part of the site; no permission is granted to extract, redistribute, remix, or otherwise reuse it.\n\n## 6. Limitation\n\nThis page is an operational licensing map, not legal advice. Jurisdiction-specific questions, employment-related ownership, trade marks, or complex third-party dependencies require professional legal review.\n\n## 7. Public source and releases\n\nEvery production deployment of the site is accompanied by an update to [IRONCREED/VOX](https://github.com/IRONCREED/VOX). VOX contains only the verified allowlisted public projection: application code, required runtime data, the build and test contract, licensing notices, English explanatory documentation, the adopted project Constitution, Profile and Legislation, and the complete public WARDEN surface. The universal Code Constitution and Repository Licensing Policy are included as separate Git submodules pinned respectively to full commits `6bdb3f85236a45254724e7dabee840b2c573f5da` and `6e4c2627717c079827ed4aa9044a5346b3ea3ddb`. The editorial corpus, operational prompts, attestations, internal reports, and secrets are not published. `VOX-PUBLICATION.json` ties each snapshot to the exact canonical Sites commit and its gitlinks; that Sites commit, not the derived VOX repository, remains the canonical engineering state.",
 		"pageType": "policy",
 		"status": "published"
 	},
@@ -662,10 +1152,10 @@
 		"locale": "uk",
 		"slug": "licensing",
 		"title": "Ліцензування",
-		"description": "Публічна карта ліцензій для редакційних матеріалів, коду, бренду та сторонніх компонентів IRON CREED.",
+		"description": "Публічна карта ліцензій для редакційних матеріалів, коду, бренду та сторонніх компонентів IRONCREED.",
 		"shortLabel": "Ліцензії",
-		"eyebrow": "IRON CREED / ЛІЦЕНЗІЙНА КАРТА",
-		"body": "Дата набрання чинності: **30 серпня 2026 року**. Ця карта адаптує спільну [Repository Licensing Policy](https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy) редакції 1.0.0, закріплену на commit `6e4c2627717c079827ed4aa9044a5346b3ea3ddb`.\n\n## 1. Типова карта\n\n| Область | Ліцензія |\n| --- | --- |\n| Оригінальні статті, проза, документація, публікаційні джерела та редакційні матеріали без брендингу | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |\n| Оригінальний вихідний код, скрипти, тести, приклади, багаторазові схеми й шаблони | [MIT](https://opensource.org/license/mit) |\n| Назви, логотипи, торговельні марки, персонажі, brand assets і візуальна ідентичність | Ліцензія не надається; усі права збережено |\n| Запис гімну та інше аудіо в `public/audio/` | Ліцензія не надається; усі права збережено |\n| Сторонні матеріали й залежності | Їхні вихідні ліцензії та повідомлення |\n\nЦя карта не є загальною подвійною ліцензією для всього проєкту. Ліцензія визначається типом і точним розташуванням матеріалу.\n\n## 2. Спеціальні повідомлення\n\nФайлове, subtree- або матеріал-специфічне повідомлення має перевагу над типовою картою для відповідної області. Ліцензія, зазначена в конкретному записі Zenodo, регулює архівовану редакцію цього матеріалу. Сторонні умови неможливо послабити локальним override.\n\n## 3. Порядок пріоритету\n\n1. Обов’язкові сторонні умови та повідомлення.\n2. Файлові SPDX-позначки й спеціальні повідомлення.\n3. Subtree-ліцензії та material-specific умови.\n4. Явні project-specific overrides.\n5. Типова карта вище.\n\n## 4. Атрибуція\n\nДля матеріалів CC BY-SA 4.0 вкажіть автора або авторів, назву, посилання на канонічну сторінку або DOI, позначте зміни та збережіть ту саму ліцензію для похідної редакції. Ліцензія MIT вимагає збереження copyright і permission notice у копіях коду.\n\n## 5. Бренд і аудіо\n\nПублікація коду чи статті не надає права використовувати назви `IRON CREED` або `Zhovten Games`, логотипи, герб, персонажів, ігровий світ чи оформлення так, ніби існує схвалення, партнерство або офіційне походження. Аудіокопія гімну надається лише для відтворення як частина сайту; права на вилучення, повторне поширення, ремікс або інше використання не надаються.\n\n## 6. Обмеження\n\nЦя сторінка є операційною картою ліцензування, а не юридичною консультацією. Питання щодо юрисдикції, трудового авторства, торговельних марок або складних сторонніх залежностей потребують професійної правової перевірки.\n\n## 7. Публічний вихідний код і випуски\n\nКожне production-розгортання сайту супроводжується оновленням [IRONCREED/VOX](https://github.com/IRONCREED/VOX). VOX містить лише перевірену публічну проєкцію за жорстким білим списком: прикладний код, необхідні runtime-дані, build/test contract, ліцензійні повідомлення, англомовну пояснювальну документацію, прийняті проєктні Конституцію, Профіль і Законодавство та повний публічний контур WARDEN. Універсальна Конституція коду та Repository Licensing Policy додаються окремими git-submodule, закріпленими відповідно на повних commit `6bdb3f85236a45254724e7dabee840b2c573f5da` і `6e4c2627717c079827ed4aa9044a5346b3ea3ddb`. Редакційний корпус, операційні промпти, посвідчення, внутрішні звіти й секрети не публікуються. `VOX-PUBLICATION.json` пов’язує кожен знімок із точним канонічним Sites-комітом і переліком gitlinks; канонічним інженерним станом залишається цей Sites-коміт, а не похідний репозиторій VOX.",
+		"eyebrow": "IRONCREED / ЛІЦЕНЗІЙНА КАРТА",
+		"body": "Дата набрання чинності: **30 серпня 2026 року**. Ця карта адаптує спільну [Repository Licensing Policy](https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy) редакції 1.0.0, закріплену на commit `6e4c2627717c079827ed4aa9044a5346b3ea3ddb`.\n\n## 1. Типова карта\n\n| Область | Ліцензія |\n| --- | --- |\n| Оригінальні статті, проза, документація, публікаційні джерела та редакційні матеріали без брендингу | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |\n| Оригінальний вихідний код, скрипти, тести, приклади, багаторазові схеми й шаблони | [MIT](https://opensource.org/license/mit) |\n| Назви, логотипи, торговельні марки, персонажі, brand assets і візуальна ідентичність | Ліцензія не надається; усі права збережено |\n| Запис гімну та інше аудіо в `public/audio/` | Ліцензія не надається; усі права збережено |\n| Сторонні матеріали й залежності | Їхні вихідні ліцензії та повідомлення |\n\nЦя карта не є загальною подвійною ліцензією для всього проєкту. Ліцензія визначається типом і точним розташуванням матеріалу.\n\n## 2. Спеціальні повідомлення\n\nФайлове, subtree- або матеріал-специфічне повідомлення має перевагу над типовою картою для відповідної області. Ліцензія, зазначена в конкретному записі Zenodo, регулює архівовану редакцію цього матеріалу. Сторонні умови неможливо послабити локальним override.\n\n## 3. Порядок пріоритету\n\n1. Обов’язкові сторонні умови та повідомлення.\n2. Файлові SPDX-позначки й спеціальні повідомлення.\n3. Subtree-ліцензії та material-specific умови.\n4. Явні project-specific overrides.\n5. Типова карта вище.\n\n## 4. Атрибуція\n\nДля матеріалів CC BY-SA 4.0 вкажіть автора або авторів, назву, посилання на канонічну сторінку або DOI, позначте зміни та збережіть ту саму ліцензію для похідної редакції. Ліцензія MIT вимагає збереження copyright і permission notice у копіях коду.\n\n## 5. Бренд і аудіо\n\nПублікація коду чи статті не надає права використовувати назви `IRONCREED` або `Zhovten Games`, логотипи, герб, персонажів, ігровий світ чи оформлення так, ніби існує схвалення, партнерство або офіційне походження. Аудіокопія гімну надається лише для відтворення як частина сайту; права на вилучення, повторне поширення, ремікс або інше використання не надаються.\n\n## 6. Обмеження\n\nЦя сторінка є операційною картою ліцензування, а не юридичною консультацією. Питання щодо юрисдикції, трудового авторства, торговельних марок або складних сторонніх залежностей потребують професійної правової перевірки.\n\n## 7. Публічний вихідний код і випуски\n\nКожне production-розгортання сайту супроводжується оновленням [IRONCREED/VOX](https://github.com/IRONCREED/VOX). VOX містить лише перевірену публічну проєкцію за жорстким білим списком: прикладний код, необхідні runtime-дані, build/test contract, ліцензійні повідомлення, англомовну пояснювальну документацію, прийняті проєктні Конституцію, Профіль і Законодавство та повний публічний контур WARDEN. Універсальна Конституція коду та Repository Licensing Policy додаються окремими git-submodule, закріпленими відповідно на повних commit `6bdb3f85236a45254724e7dabee840b2c573f5da` і `6e4c2627717c079827ed4aa9044a5346b3ea3ddb`. Редакційний корпус, операційні промпти, посвідчення, внутрішні звіти й секрети не публікуються. `VOX-PUBLICATION.json` пов’язує кожен знімок із точним канонічним Sites-комітом і переліком gitlinks; канонічним інженерним станом залишається цей Sites-коміт, а не похідний репозиторій VOX.",
 		"pageType": "policy",
 		"status": "published"
 	},
@@ -679,7 +1169,7 @@
 		"description": "Many materials progress from a working question through research and public adaptation to the next verified change. The starting point may be Zhovten Games, a client IT case, or an independent engineering observation.",
 		"shortLabel": "Material cycle",
 		"eyebrow": "MATERIAL CYCLE",
-		"body": "From a working question to a verifiable publication\n\nMany materials progress from a working question through research and public adaptation to the next verified change. The starting point may be Zhovten Games, a client IT case, or an independent engineering observation.\n\nIdea or IT case: A studio task, client request, or observation of an IT system establishes the initial question.\n\nResearch and record: Sources, reasoning, and the edition receive a durable form, including a Zenodo record where appropriate.\n\nIRON CREED adaptation: The material is rebuilt for the site, translated, and connected to the semantic index.\n\nVerification and the next change: WARDEN, indexes, and release rules verify the result; findings return to engineering work.\n\nExamples of the material cycle in chronological order.\n\nResearch into technical writing and documentation: [Literate Programming review · Zenodo](https://doi.org/10.5281/zenodo.20608558) → [Why Documentation Matters](/en/programming/why-documentation-matters)\n\nResearch into software architecture rules: [Code Constitution · Zenodo](https://doi.org/10.5281/zenodo.21894242) → [The Constitution That Runs series](/en/series/the-constitution-that-runs)\n\nPractical IT case: crawler policy for websites: [Crawler Surface Policy · code](https://github.com/IRONCREED/cloudflare) → [The Great and Terrible Cloudflare](/en/series/the-great-and-terrible-cloudflare)\n\nPractical experience supplies questions for publication, and verified findings inform subsequent work. The scope and depth of each stage depend on the task.",
+		"body": "From a working question to a verifiable publication\n\nMany materials progress from a working question through research and public adaptation to the next verified change. The starting point may be Zhovten Games, a client IT case, or an independent engineering observation.\n\nIdea or IT case: A studio task, client request, or observation of an IT system establishes the initial question.\n\nResearch and record: Sources, reasoning, and the edition receive a durable form, including a Zenodo record where appropriate.\n\nIRONCREED adaptation: The material is rebuilt for the site, translated, and connected to the semantic index.\n\nVerification and the next change: WARDEN, indexes, and release rules verify the result; findings return to engineering work.\n\nExamples of the material cycle in chronological order.\n\nResearch into technical writing and documentation: [Literate Programming review · Zenodo](https://doi.org/10.5281/zenodo.20608558) → [Why Documentation Matters](/en/programming/why-documentation-matters)\n\nResearch into software architecture rules: [Code Constitution · Zenodo](https://doi.org/10.5281/zenodo.21894242) → [The Constitution That Runs series](/en/series/the-constitution-that-runs)\n\nPractical IT case: crawler policy for websites: [Crawler Surface Policy · code](https://github.com/IRONCREED/cloudflare) → [The Great and Terrible Cloudflare](/en/series/the-great-and-terrible-cloudflare)\n\nPractical experience supplies questions for publication, and verified findings inform subsequent work. The scope and depth of each stage depend on the task.",
 		"pageType": "material-cycle",
 		"status": "published",
 		"materialCycle": {
@@ -708,7 +1198,7 @@
 				{
 					"id": "adaptation",
 					"order": 3,
-					"title": "IRON CREED adaptation",
+					"title": "IRONCREED adaptation",
 					"description": "The material is rebuilt for the site, translated, and connected to the semantic index."
 				},
 				{
@@ -769,7 +1259,7 @@
 		"description": "Багато матеріалів проходять шлях від робочого питання до дослідження, публічної адаптації та наступної перевіреної зміни. Ініціатором може бути Zhovten Games, клієнтський ІТ-кейс або самостійне інженерне спостереження.",
 		"shortLabel": "Цикл матеріалу",
 		"eyebrow": "ЦИКЛ МАТЕРІАЛУ",
-		"body": "Від робочого питання до перевірюваної публікації\n\nБагато матеріалів проходять шлях від робочого питання до дослідження, публічної адаптації та наступної перевіреної зміни. Ініціатором може бути Zhovten Games, клієнтський ІТ-кейс або самостійне інженерне спостереження.\n\nІдея або ІТ-кейс: Студійна задача, запит клієнта або спостереження за ІТ-системою формують вихідне питання.\n\nДослідження й фіксація: Джерела, аргументи й версія отримують довготривалу форму — зокрема запис Zenodo, коли він доречний.\n\nАдаптація IRON CREED: Матеріал перебудовується для читання на сайті, перекладається та входить до семантичного індексу.\n\nПеревірка й наступна зміна: WARDEN, індекси та випускні правила перевіряють результат; висновки повертаються в інженерну роботу.\n\nПриклади проходження циклу матеріалу в хронологічному порядку.\n\nДослідження технічного письма й документації: [Огляд літературного програмування · Zenodo](https://doi.org/10.5281/zenodo.20608558) → [«Навіщо потрібна документація»](/uk/programming/navishcho-potribna-dokumentatsiia)\n\nДослідження правил програмної архітектури: [Конституція коду · Zenodo](https://doi.org/10.5281/zenodo.21894242) → [Серія «Конституція, що виконується»](/uk/series/konstytutsiia-shcho-vykonuietsia)\n\nПрактичний ІТ-кейс: crawler policy для сайтів: [Crawler Surface Policy · код](https://github.com/IRONCREED/cloudflare) → [Великий і жахливий Cloudflare](/uk/series/velykyi-i-zhakhlyvyi-cloudflare)\n\nПрактичний досвід дає питання для публікацій, а перевірені висновки уточнюють подальшу роботу. Склад і глибина кожного етапу залежать від задачі.",
+		"body": "Від робочого питання до перевірюваної публікації\n\nБагато матеріалів проходять шлях від робочого питання до дослідження, публічної адаптації та наступної перевіреної зміни. Ініціатором може бути Zhovten Games, клієнтський ІТ-кейс або самостійне інженерне спостереження.\n\nІдея або ІТ-кейс: Студійна задача, запит клієнта або спостереження за ІТ-системою формують вихідне питання.\n\nДослідження й фіксація: Джерела, аргументи й версія отримують довготривалу форму — зокрема запис Zenodo, коли він доречний.\n\nАдаптація IRONCREED: Матеріал перебудовується для читання на сайті, перекладається та входить до семантичного індексу.\n\nПеревірка й наступна зміна: WARDEN, індекси та випускні правила перевіряють результат; висновки повертаються в інженерну роботу.\n\nПриклади проходження циклу матеріалу в хронологічному порядку.\n\nДослідження технічного письма й документації: [Огляд літературного програмування · Zenodo](https://doi.org/10.5281/zenodo.20608558) → [«Навіщо потрібна документація»](/uk/programming/navishcho-potribna-dokumentatsiia)\n\nДослідження правил програмної архітектури: [Конституція коду · Zenodo](https://doi.org/10.5281/zenodo.21894242) → [Серія «Конституція, що виконується»](/uk/series/konstytutsiia-shcho-vykonuietsia)\n\nПрактичний ІТ-кейс: crawler policy для сайтів: [Crawler Surface Policy · код](https://github.com/IRONCREED/cloudflare) → [Великий і жахливий Cloudflare](/uk/series/velykyi-i-zhakhlyvyi-cloudflare)\n\nПрактичний досвід дає питання для публікацій, а перевірені висновки уточнюють подальшу роботу. Склад і глибина кожного етапу залежать від задачі.",
 		"pageType": "material-cycle",
 		"status": "published",
 		"materialCycle": {
@@ -798,7 +1288,7 @@
 				{
 					"id": "adaptation",
 					"order": 3,
-					"title": "Адаптація IRON CREED",
+					"title": "Адаптація IRONCREED",
 					"description": "Матеріал перебудовується для читання на сайті, перекладається та входить до семантичного індексу."
 				},
 				{
@@ -856,10 +1346,10 @@
 		"locale": "en",
 		"slug": "privacy-policy",
 		"title": "Privacy Policy",
-		"description": "The actual data-processing state of the IRON CREED website and the role of external infrastructure.",
+		"description": "The actual data-processing state of the IRONCREED website and the role of external infrastructure.",
 		"shortLabel": "Privacy",
-		"eyebrow": "IRON CREED / PRIVACY",
-		"body": "Effective date: **30 August 2026**.\n\n## 1. Who we are\n\nIRON CREED is a Zhovten Games project. The site publishes bilingual material and local interactive scenarios.\n\n## 2. Current processing state\n\nThe application has no user registration, first-party database, comments, analytics, advertising profile, or free-text AI input. The companion panel uses pre-approved answers and does not send text to an external LLM while a visitor browses the site.\n\n## 3. Local storage\n\nThe browser locally stores the selected colour theme, panel state, completion of the one-time welcome window, and acknowledgements of notices for specific materials. During the current session it also remembers that the loading screen has already been shown. These values remain on the device, are not sent to IRON CREED, and do not create an account.\n\n## 4. Technical logs\n\nHosting and security infrastructure may process ordinary network data such as IP address, browser type, request time, and security logs. Infrastructure operators process this data under their own terms to deliver, diagnose, and protect the service.\n\n## 5. Local audio\n\nThe IRON CREED anthem is not loaded automatically. After you press play, the browser receives a verified audio copy as a same-origin site asset: starting or stopping playback does not make a direct request to Suno, and IRON CREED does not store listening history. The original Suno publication remains linked as source attribution.\n\n## 6. External links\n\nLinks to GitHub, Zenodo, ORCID, InterDead, LinkedIn, and other sites open resources with their own privacy policies. IRON CREED does not control their subsequent processing.\n\n## 7. Feature changes\n\nAdding accounts, analytics, an external LLM, input forms, or server-side storage requires a prior update to this Policy and the project Legislation.\n\n## 8. Rights and contact\n\nDepending on jurisdiction, you may have rights of access, correction, deletion, restriction, or objection concerning personal data actually processed by the relevant operator. For project enquiries, use the [Zhovten Games LinkedIn page](https://www.linkedin.com/company/zhovten-games/).",
+		"eyebrow": "IRONCREED / PRIVACY",
+		"body": "Effective date: **30 August 2026**.\n\n## 1. Who we are\n\nIRONCREED is a Zhovten Games project. The site publishes bilingual material and local interactive scenarios.\n\n## 2. Current processing state\n\nThe application has no user registration, first-party database, comments, analytics, advertising profile, or free-text AI input. The companion panel uses pre-approved answers and does not send text to an external LLM while a visitor browses the site.\n\n## 3. Local storage\n\nThe browser locally stores the selected colour theme, panel state, completion of the one-time welcome window, and acknowledgements of notices for specific materials. During the current session it also remembers that the loading screen has already been shown. These values remain on the device, are not sent to IRONCREED, and do not create an account.\n\n## 4. Technical logs\n\nHosting and security infrastructure may process ordinary network data such as IP address, browser type, request time, and security logs. Infrastructure operators process this data under their own terms to deliver, diagnose, and protect the service.\n\n## 5. Local audio\n\nThe IRONCREED anthem is not loaded automatically. After you press play, the browser receives a verified audio copy as a same-origin site asset: starting or stopping playback does not make a direct request to Suno, and IRONCREED does not store listening history. The original Suno publication remains linked as source attribution.\n\n## 6. External links\n\nLinks to GitHub, Zenodo, ORCID, InterDead, LinkedIn, and other sites open resources with their own privacy policies. IRONCREED does not control their subsequent processing.\n\n## 7. Feature changes\n\nAdding accounts, analytics, an external LLM, input forms, or server-side storage requires a prior update to this Policy and the project Legislation.\n\n## 8. Rights and contact\n\nDepending on jurisdiction, you may have rights of access, correction, deletion, restriction, or objection concerning personal data actually processed by the relevant operator. For project enquiries, use the [Zhovten Games LinkedIn page](https://www.linkedin.com/company/zhovten-games/).",
 		"pageType": "policy",
 		"status": "published"
 	},
@@ -870,10 +1360,10 @@
 		"locale": "uk",
 		"slug": "privacy-policy",
 		"title": "Політика конфіденційності",
-		"description": "Фактичний стан обробки даних на сайті IRON CREED та роль зовнішньої інфраструктури.",
+		"description": "Фактичний стан обробки даних на сайті IRONCREED та роль зовнішньої інфраструктури.",
 		"shortLabel": "Приватність",
-		"eyebrow": "IRON CREED / КОНФІДЕНЦІЙНІСТЬ",
-		"body": "Дата набрання чинності: **30 серпня 2026 року**.\n\n## 1. Хто ми\n\nIRON CREED є проєктом Zhovten Games. Сайт публікує двомовні матеріали та локальні інтерактивні сценарії.\n\n## 2. Поточний стан обробки даних\n\nЗастосунок не має реєстрації користувачів, власної бази даних, коментарів, аналітики, рекламного профілювання або форми вільного введення для ШІ. Панель компаньйона працює з наперед затвердженими відповідями й не надсилає текст зовнішній LLM під час перегляду.\n\n## 3. Локальне зберігання\n\nБраузер локально зберігає вибір колірної теми, стан панелі, факт проходження одноразового вітального вікна та підтвердження попереджень про вміст конкретних матеріалів. У межах поточного сеансу він також запам’ятовує, що завантажувальний екран уже було показано. Ці значення залишаються на пристрої, не передаються IRON CREED і не утворюють облікового запису.\n\n## 4. Технічні журнали\n\nХостингова й захисна інфраструктура може обробляти стандартні мережеві дані, зокрема IP-адресу, тип браузера, час запиту та журнали безпеки. Така обробка виконується операторами інфраструктури за їхніми умовами для доставки, діагностики та захисту сервісу.\n\n## 5. Локальне аудіо\n\nГімн IRON CREED не завантажується автоматично. Після натискання кнопки відтворення браузер отримує перевірену аудіокопію як ресурс того самого сайту: запуск і зупинка не створюють прямого запиту до Suno, а IRON CREED не зберігає історію прослуховування. Посилання на вихідну публікацію Suno зберігається як атрибуція джерела.\n\n## 6. Зовнішні посилання\n\nПереходи на GitHub, Zenodo, ORCID, InterDead, LinkedIn та інші сайти відкривають ресурси, що мають власні політики конфіденційності. IRON CREED не контролює їхню подальшу обробку даних.\n\n## 7. Зміна функцій\n\nПідключення облікових записів, аналітики, зовнішньої LLM, форм введення або серверного зберігання вимагатиме попереднього оновлення цієї Політики й проєктного Законодавства.\n\n## 8. Права й контакт\n\nЗалежно від юрисдикції ви можете мати права на доступ, виправлення, видалення, обмеження або заперечення щодо персональних даних, які фактично обробляє відповідний оператор. Для звернень до проєкту використовуйте [сторінку Zhovten Games у LinkedIn](https://www.linkedin.com/company/zhovten-games/).",
+		"eyebrow": "IRONCREED / КОНФІДЕНЦІЙНІСТЬ",
+		"body": "Дата набрання чинності: **30 серпня 2026 року**.\n\n## 1. Хто ми\n\nIRONCREED є проєктом Zhovten Games. Сайт публікує двомовні матеріали та локальні інтерактивні сценарії.\n\n## 2. Поточний стан обробки даних\n\nЗастосунок не має реєстрації користувачів, власної бази даних, коментарів, аналітики, рекламного профілювання або форми вільного введення для ШІ. Панель компаньйона працює з наперед затвердженими відповідями й не надсилає текст зовнішній LLM під час перегляду.\n\n## 3. Локальне зберігання\n\nБраузер локально зберігає вибір колірної теми, стан панелі, факт проходження одноразового вітального вікна та підтвердження попереджень про вміст конкретних матеріалів. У межах поточного сеансу він також запам’ятовує, що завантажувальний екран уже було показано. Ці значення залишаються на пристрої, не передаються IRONCREED і не утворюють облікового запису.\n\n## 4. Технічні журнали\n\nХостингова й захисна інфраструктура може обробляти стандартні мережеві дані, зокрема IP-адресу, тип браузера, час запиту та журнали безпеки. Така обробка виконується операторами інфраструктури за їхніми умовами для доставки, діагностики та захисту сервісу.\n\n## 5. Локальне аудіо\n\nГімн IRONCREED не завантажується автоматично. Після натискання кнопки відтворення браузер отримує перевірену аудіокопію як ресурс того самого сайту: запуск і зупинка не створюють прямого запиту до Suno, а IRONCREED не зберігає історію прослуховування. Посилання на вихідну публікацію Suno зберігається як атрибуція джерела.\n\n## 6. Зовнішні посилання\n\nПереходи на GitHub, Zenodo, ORCID, InterDead, LinkedIn та інші сайти відкривають ресурси, що мають власні політики конфіденційності. IRONCREED не контролює їхню подальшу обробку даних.\n\n## 7. Зміна функцій\n\nПідключення облікових записів, аналітики, зовнішньої LLM, форм введення або серверного зберігання вимагатиме попереднього оновлення цієї Політики й проєктного Законодавства.\n\n## 8. Права й контакт\n\nЗалежно від юрисдикції ви можете мати права на доступ, виправлення, видалення, обмеження або заперечення щодо персональних даних, які фактично обробляє відповідний оператор. Для звернень до проєкту використовуйте [сторінку Zhovten Games у LinkedIn](https://www.linkedin.com/company/zhovten-games/).",
 		"pageType": "policy",
 		"status": "published"
 	},
@@ -884,10 +1374,10 @@
 		"locale": "en",
 		"slug": "terms-of-use",
 		"title": "Terms of Use",
-		"description": "Terms for accessing the IRON CREED website and the limits of permitted use and responsibility.",
+		"description": "Terms for accessing the IRONCREED website and the limits of permitted use and responsibility.",
 		"shortLabel": "Terms",
-		"eyebrow": "IRON CREED / PUBLIC TERMS",
-		"body": "Effective date: **13 August 2026**.\n\n## 1. Acceptance\n\nBy using the IRON CREED website, you agree to these Terms. If you do not accept them, discontinue use of the site.\n\n## 2. Nature of the site\n\nThe site is a bilingual knowledge and experimental interface operated within Zhovten Games. It may contain research, source code, creative concepts, prototypes, and material concerning horror, war, violence, and other mature themes. Features, routes, and experimental mechanisms may change as the project develops.\n\n## 3. Intellectual property and licences\n\nReuse is governed by the [Licensing page](/en/pages/licensing). Access to the site does not transfer ownership of names, logos, characters, the game world, or any material for which no licence is expressly granted.\n\n## 4. Permitted use\n\nYou may read the site, follow public links, and use licensed material within the applicable licence. You may not bypass access controls, attack infrastructure, generate malicious or abusive automated traffic, impersonate the studio or authors, or claim another party’s material as your own.\n\n## 5. Experimental features\n\nThe corpus index, local AI-companion scenarios, embedded PDF viewer, and other features are provided as is. Companion answers are informational editorial material and do not constitute medical, legal, or other professional advice.\n\n## 6. External services\n\nThe site links to GitHub, Zenodo, ORCID, OpenAI, InterDead, and other external resources. Their use is governed by the respective operators’ own terms.\n\n## 7. Disclaimer and limitation of liability\n\nThe site is provided without a guarantee of uninterrupted availability, error-free operation, or fitness for a particular purpose. To the extent permitted by applicable law, Zhovten Games is not liable for indirect loss, lost profit, or decisions made solely on the basis of experimental site content.\n\n## 8. Changes and contact\n\nUpdated terms will be published on this page. For enquiries, use the [Zhovten Games LinkedIn page](https://www.linkedin.com/company/zhovten-games/).",
+		"eyebrow": "IRONCREED / PUBLIC TERMS",
+		"body": "Effective date: **13 August 2026**.\n\n## 1. Acceptance\n\nBy using the IRONCREED website, you agree to these Terms. If you do not accept them, discontinue use of the site.\n\n## 2. Nature of the site\n\nThe site is a bilingual knowledge and experimental interface operated within Zhovten Games. It may contain research, source code, creative concepts, prototypes, and material concerning horror, war, violence, and other mature themes. Features, routes, and experimental mechanisms may change as the project develops.\n\n## 3. Intellectual property and licences\n\nReuse is governed by the [Licensing page](/en/pages/licensing). Access to the site does not transfer ownership of names, logos, characters, the game world, or any material for which no licence is expressly granted.\n\n## 4. Permitted use\n\nYou may read the site, follow public links, and use licensed material within the applicable licence. You may not bypass access controls, attack infrastructure, generate malicious or abusive automated traffic, impersonate the studio or authors, or claim another party’s material as your own.\n\n## 5. Experimental features\n\nThe corpus index, local AI-companion scenarios, embedded PDF viewer, and other features are provided as is. Companion answers are informational editorial material and do not constitute medical, legal, or other professional advice.\n\n## 6. External services\n\nThe site links to GitHub, Zenodo, ORCID, OpenAI, InterDead, and other external resources. Their use is governed by the respective operators’ own terms.\n\n## 7. Disclaimer and limitation of liability\n\nThe site is provided without a guarantee of uninterrupted availability, error-free operation, or fitness for a particular purpose. To the extent permitted by applicable law, Zhovten Games is not liable for indirect loss, lost profit, or decisions made solely on the basis of experimental site content.\n\n## 8. Changes and contact\n\nUpdated terms will be published on this page. For enquiries, use the [Zhovten Games LinkedIn page](https://www.linkedin.com/company/zhovten-games/).",
 		"pageType": "policy",
 		"status": "published"
 	},
@@ -898,10 +1388,10 @@
 		"locale": "uk",
 		"slug": "terms-of-use",
 		"title": "Умови використання",
-		"description": "Умови доступу до сайту IRON CREED, межі дозволеного використання та відповідальності.",
+		"description": "Умови доступу до сайту IRONCREED, межі дозволеного використання та відповідальності.",
 		"shortLabel": "Умови",
-		"eyebrow": "IRON CREED / ПУБЛІЧНІ УМОВИ",
-		"body": "Дата набрання чинності: **13 серпня 2026 року**.\n\n## 1. Прийняття умов\n\nВикористовуючи сайт IRON CREED, ви погоджуєтеся з цими Умовами. Якщо умови для вас неприйнятні, припиніть використання сайту.\n\n## 2. Призначення сайту\n\nСайт є двомовним знаннєвим та експериментальним інтерфейсом Zhovten Games. Він може містити дослідження, програмний код, художні концепції, прототипи, матеріали про горор, війну, насильство та інші теми для дорослої аудиторії. Функції, маршрути й експериментальні механізми можуть змінюватися разом із проєктом.\n\n## 3. Інтелектуальна власність і ліцензії\n\nПравила повторного використання визначає сторінка [«Ліцензування»](/uk/pages/licensing). Доступ до сайту не передає право власності на назви, логотипи, персонажів, ігровий світ або інші матеріали, для яких прямо не надано ліцензію.\n\n## 4. Дозволене використання\n\nВи можете читати сайт, переходити за публічними посиланнями та використовувати ліцензовані матеріали в межах відповідної ліцензії. Заборонено обходити контроль доступу, атакувати інфраструктуру, створювати зловмисний або надмірний автоматизований трафік, видавати себе за студію чи авторів і приписувати собі чужі матеріали.\n\n## 5. Експериментальні функції\n\nІндекс корпусу, локальні сценарії ШІ-компаньйона, вбудований перегляд PDF та інші функції надаються у стані «як є». Відповіді компаньйона мають інформаційний і редакційний характер та не є медичною, юридичною або іншою професійною консультацією.\n\n## 6. Зовнішні сервіси\n\nСайт посилається на GitHub, Zenodo, ORCID, OpenAI, InterDead та інші зовнішні ресурси. Їх використання регулюється власними умовами відповідних операторів.\n\n## 7. Відмова від гарантій і обмеження відповідальності\n\nСайт надається без гарантії безперервної доступності, відсутності помилок або придатності для конкретної мети. У межах, дозволених застосовним правом, Zhovten Games не відповідає за непрямі збитки, втрачений прибуток або наслідки рішень, ухвалених лише на підставі експериментального вмісту сайту.\n\n## 8. Зміни й контакт\n\nОновлена редакція публікується на цій сторінці. Для звернень використовуйте [сторінку Zhovten Games у LinkedIn](https://www.linkedin.com/company/zhovten-games/).",
+		"eyebrow": "IRONCREED / ПУБЛІЧНІ УМОВИ",
+		"body": "Дата набрання чинності: **13 серпня 2026 року**.\n\n## 1. Прийняття умов\n\nВикористовуючи сайт IRONCREED, ви погоджуєтеся з цими Умовами. Якщо умови для вас неприйнятні, припиніть використання сайту.\n\n## 2. Призначення сайту\n\nСайт є двомовним знаннєвим та експериментальним інтерфейсом Zhovten Games. Він може містити дослідження, програмний код, художні концепції, прототипи, матеріали про горор, війну, насильство та інші теми для дорослої аудиторії. Функції, маршрути й експериментальні механізми можуть змінюватися разом із проєктом.\n\n## 3. Інтелектуальна власність і ліцензії\n\nПравила повторного використання визначає сторінка [«Ліцензування»](/uk/pages/licensing). Доступ до сайту не передає право власності на назви, логотипи, персонажів, ігровий світ або інші матеріали, для яких прямо не надано ліцензію.\n\n## 4. Дозволене використання\n\nВи можете читати сайт, переходити за публічними посиланнями та використовувати ліцензовані матеріали в межах відповідної ліцензії. Заборонено обходити контроль доступу, атакувати інфраструктуру, створювати зловмисний або надмірний автоматизований трафік, видавати себе за студію чи авторів і приписувати собі чужі матеріали.\n\n## 5. Експериментальні функції\n\nІндекс корпусу, локальні сценарії ШІ-компаньйона, вбудований перегляд PDF та інші функції надаються у стані «як є». Відповіді компаньйона мають інформаційний і редакційний характер та не є медичною, юридичною або іншою професійною консультацією.\n\n## 6. Зовнішні сервіси\n\nСайт посилається на GitHub, Zenodo, ORCID, OpenAI, InterDead та інші зовнішні ресурси. Їх використання регулюється власними умовами відповідних операторів.\n\n## 7. Відмова від гарантій і обмеження відповідальності\n\nСайт надається без гарантії безперервної доступності, відсутності помилок або придатності для конкретної мети. У межах, дозволених застосовним правом, Zhovten Games не відповідає за непрямі збитки, втрачений прибуток або наслідки рішень, ухвалених лише на підставі експериментального вмісту сайту.\n\n## 8. Зміни й контакт\n\nОновлена редакція публікується на цій сторінці. Для звернень використовуйте [сторінку Zhovten Games у LinkedIn](https://www.linkedin.com/company/zhovten-games/).",
 		"pageType": "policy",
 		"status": "published"
 	}

@@ -42,9 +42,9 @@ export function SiteHeader({
 	return (
 		<header className="system-header">
 			<div className="header-crest">
-				<Link aria-label="IRON CREED" className="header-wordmark" href={`/${currentLocale}/`}>
+				<Link aria-label="IRONCREED" className="header-wordmark" href={`/${currentLocale}/`}>
 					<BrandMark variant="header" />
-					<span>IRON CREED</span>
+					<span>IRONCREED</span>
 				</Link>
 				<SidebarToggle locale={currentLocale} />
 			</div>

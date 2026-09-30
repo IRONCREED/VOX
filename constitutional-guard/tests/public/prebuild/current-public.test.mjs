@@ -71,7 +71,7 @@ test('the public release exposes the brand, service story, portfolio, and profil
 	assert.equal(about.aboutStory.sections.find((entry) => entry.id === 'projects').status, 'active');
 	assert.equal(
 		about.aboutStory.sections.find((entry) => entry.id === 'projects').entries.length,
-		5,
+		20,
 	);
 	assert.equal(about.aboutStory.sections.find((entry) => entry.id === 'people').entries.length, 2);
 	const testimonials = about.aboutStory.sections.find((entry) => entry.id === 'testimonials');

@@ -13,6 +13,7 @@ import { isLocale, SUPPORTED_LOCALES } from '../../../src/content-catalog/domain
 import { CategoryPageTemplate } from '../../../src/interface-system/templates/category-page-template';
 import { getBuildIdentity } from '../../../src/site-navigation/application/build-identity';
 import { getSiteOrigin } from '../../../src/site-metadata/site-origin';
+import { getSocialPreview } from '../../../src/site-metadata/social-preview';
 
 interface CategoryPageProps {
 	params: Promise<{ locale: string; category: string }>;
@@ -41,7 +42,9 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 
 	const origin = getSiteOrigin();
 	const canonical = new URL(`/${locale}/${category.id}`, origin);
-	const title = `${category.label} — IRON CREED`;
+	const title = `${category.label} — IRONCREED`;
+
+	const socialPreview = getSocialPreview();
 
 	return {
 		title,
@@ -57,14 +60,14 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 		openGraph: {
 			title,
 			description: category.description,
-			images: [],
+			images: [socialPreview],
 			type: 'website',
 			url: canonical,
 		},
 		twitter: {
-			card: 'summary',
+			card: 'summary_large_image',
 			description: category.description,
-			images: [],
+			images: [socialPreview.url],
 			title,
 		},
 	};

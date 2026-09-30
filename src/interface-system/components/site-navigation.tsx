@@ -197,7 +197,7 @@ export function SiteNavigation({
 	}
 
 	return (
-		<aside aria-label="IRON CREED navigation" className="sidebar" ref={sidebarRef}>
+		<aside aria-label="IRONCREED navigation" className="sidebar" ref={sidebarRef}>
 			<nav
 				className="primary-navigation"
 				id="primary-navigation"

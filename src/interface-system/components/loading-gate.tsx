@@ -112,14 +112,14 @@ export function LoadingGate({ releaseId }: LoadingGateProps) {
 
 	return (
 		<div
-			aria-label="IRON CREED"
+			aria-label="IRONCREED"
 			aria-live="polite"
 			className={`loading-gate${isLeaving ? ' is-leaving' : ''}`}
 			role="status"
 		>
 			<div className="loading-gate__core">
 				<BrandMark variant="loader" />
-				<strong>IRON CREED</strong>
+				<strong>IRONCREED</strong>
 				<p ref={quoteRef}>
 					{loaderQuotes[0].map((line, index) => (
 						<span key={`${index}-${line}`}>{line}</span>

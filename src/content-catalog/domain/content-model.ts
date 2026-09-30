@@ -302,6 +302,9 @@ export interface AboutStoryLink {
 }
 
 export interface AboutStoryEntry {
+	clientId?: string;
+	countryCode?: string;
+	reviewIds?: string[];
 	id: string;
 	title: string;
 	body: string;
@@ -324,7 +327,25 @@ export interface AboutStorySection {
 	entries: AboutStoryEntry[];
 }
 
+export interface PracticeCountry {
+	code: string;
+	label: string;
+	geographyId?: string;
+	labelOffset?: number[];
+}
+export interface PracticeMapCopy {
+	mapTitle: string;
+	allCountries: string;
+	clients: string;
+	projects: string;
+	reviews: string;
+	review: string;
+	unlocatedNote: string;
+	geographyNote: string;
+	sourceNote: string;
+}
 export interface LocalizedAboutStory {
+	practiceMap?: { countries: PracticeCountry[]; labels: PracticeMapCopy };
 	identityHintLabel: string;
 	transition: {
 		eyebrow: string;

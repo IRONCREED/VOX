@@ -3,8 +3,8 @@ import { BRAND_FAVICON_SRC } from '../src/interface-system/components/brand-mark
 
 export default function manifest(): MetadataRoute.Manifest {
 	return {
-		name: 'IRON CREED',
-		short_name: 'IRON CREED',
+		name: 'IRONCREED',
+		short_name: 'IRONCREED',
 		description: 'Architecture, memory, and formal systems inside software.',
 		start_url: '/uk/',
 		display: 'standalone',

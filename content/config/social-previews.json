@@ -1,0 +1,77 @@
+{
+	"default": "ironcreed",
+	"covers": {
+		"adas-machine-requiem": {
+			"src": "/media/social/adas-machine-requiem.webp",
+			"width": 1200,
+			"height": 600,
+			"alt": "IRONCREED — Ada’s Machine Requiem"
+		},
+		"crawler-surface-policy": {
+			"src": "/media/social/crawler-surface-policy.webp",
+			"width": 1200,
+			"height": 600,
+			"alt": "IRONCREED — Crawler Surface Policy"
+		},
+		"ironcreed": {
+			"src": "/media/social/ironcreed.webp",
+			"width": 1200,
+			"height": 630,
+			"alt": "IRONCREED — Engineering · Research · Systems"
+		},
+		"language-as-infection": {
+			"src": "/media/social/language-as-infection.webp",
+			"width": 1200,
+			"height": 600,
+			"alt": "IRONCREED — Language as Infection"
+		},
+		"psychobiosocial-patterns": {
+			"src": "/media/social/psychobiosocial-patterns.webp",
+			"width": 1200,
+			"height": 600,
+			"alt": "IRONCREED — Psychobiosocial Patterns"
+		},
+		"the-constitution-that-runs": {
+			"src": "/media/social/the-constitution-that-runs.webp",
+			"width": 1200,
+			"height": 600,
+			"alt": "IRONCREED — The Constitution That Runs"
+		},
+		"why-documentation-matters": {
+			"src": "/media/social/why-documentation-matters.webp",
+			"width": 1200,
+			"height": 300,
+			"alt": "IRONCREED — Why Documentation Matters"
+		}
+	},
+	"entities": {
+		"material.why-documentation": "why-documentation-matters",
+		"material.from-body-to-signal": "language-as-infection",
+		"series.constitution-runtime": "the-constitution-that-runs",
+		"material.constitution-runtime-01-article-vii": "the-constitution-that-runs",
+		"material.constitution-runtime-02-article-vi": "the-constitution-that-runs",
+		"material.constitution-runtime-03-article-v": "the-constitution-that-runs",
+		"material.constitution-runtime-04-article-iv": "the-constitution-that-runs",
+		"material.constitution-runtime-05-article-iii": "the-constitution-that-runs",
+		"material.constitution-runtime-06-article-ii": "the-constitution-that-runs",
+		"material.constitution-runtime-07-article-i": "the-constitution-that-runs",
+		"series.psychobiosocial-patterns": "psychobiosocial-patterns",
+		"material.body-as-temporary-construction": "psychobiosocial-patterns",
+		"material.regulated-availability": "psychobiosocial-patterns",
+		"series.ada-machine-requiem": "adas-machine-requiem",
+		"material.do-not-be-afraid-sir": "adas-machine-requiem",
+		"material.ada-machine-requiem-02-mechanist": "adas-machine-requiem",
+		"material.ada-machine-requiem-03-second-assembly": "adas-machine-requiem",
+		"material.ada-machine-requiem-04-vault-81": "adas-machine-requiem",
+		"material.ada-machine-requiem-05-island": "adas-machine-requiem",
+		"material.ada-machine-requiem-06-weapons-for-all": "adas-machine-requiem",
+		"material.ada-machine-requiem-07-consilium": "adas-machine-requiem",
+		"material.ada-machine-requiem-08-vault-111": "adas-machine-requiem",
+		"material.ada-machine-requiem-09-working-definition-of-life": "adas-machine-requiem",
+		"material.ada-machine-requiem-10-commonwealth-assembles": "adas-machine-requiem",
+		"material.ada-machine-requiem-11-assault": "adas-machine-requiem",
+		"material.ada-machine-requiem-12-death-of-my-world": "adas-machine-requiem",
+		"series.cloudflare-operations": "crawler-surface-policy",
+		"material.cloudflare-001-crawler-surface-policy": "crawler-surface-policy"
+	}
+}

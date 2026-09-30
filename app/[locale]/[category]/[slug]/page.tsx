@@ -17,6 +17,7 @@ import { isLocale } from '../../../../src/content-catalog/domain/content-model';
 import { ArticlePageTemplate } from '../../../../src/interface-system/templates/article-page-template';
 import { getBuildIdentity } from '../../../../src/site-navigation/application/build-identity';
 import { getSiteOrigin } from '../../../../src/site-metadata/site-origin';
+import { getSocialPreview } from '../../../../src/site-metadata/social-preview';
 
 interface ArticlePageProps {
 	params: Promise<{ locale: string; category: string; slug: string }>;
@@ -54,7 +55,9 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 	if (enArticle) {
 		languages.en = new URL(getArticleHref(enArticle), origin);
 	}
-	const title = `${article.title} — IRON CREED`;
+	const title = `${article.title} — IRONCREED`;
+
+	const socialPreview = getSocialPreview(article.materialId);
 
 	return {
 		title,
@@ -66,14 +69,14 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 		openGraph: {
 			title,
 			description: article.description,
-			images: [],
+			images: [socialPreview],
 			type: 'article',
 			url: canonical,
 		},
 		twitter: {
-			card: 'summary',
+			card: 'summary_large_image',
 			description: article.description,
-			images: [],
+			images: [socialPreview.url],
 			title,
 		},
 	};

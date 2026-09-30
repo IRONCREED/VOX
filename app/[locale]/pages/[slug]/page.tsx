@@ -17,6 +17,7 @@ import { ContentPageTemplate } from '../../../../src/interface-system/templates/
 import { CorpusIndexPageTemplate } from '../../../../src/interface-system/templates/corpus-index-page-template';
 import { getBuildIdentity } from '../../../../src/site-navigation/application/build-identity';
 import { getSiteOrigin } from '../../../../src/site-metadata/site-origin';
+import { getSocialPreview } from '../../../../src/site-metadata/social-preview';
 
 interface ContentPageProps {
 	params: Promise<{ locale: string; slug: string }>;
@@ -45,7 +46,9 @@ export async function generateMetadata({ params }: ContentPageProps): Promise<Me
 		languages['x-default'] = new URL(getContentPageHref(ukPage), origin);
 	}
 	if (enPage) languages.en = new URL(getContentPageHref(enPage), origin);
-	const title = `${page.title} — IRON CREED`;
+	const title = `${page.title} — IRONCREED`;
+
+	const socialPreview = getSocialPreview(page.pageId);
 
 	return {
 		title,
@@ -54,14 +57,14 @@ export async function generateMetadata({ params }: ContentPageProps): Promise<Me
 		openGraph: {
 			title,
 			description: page.description,
-			images: [],
+			images: [socialPreview],
 			type: 'website',
 			url: canonical,
 		},
 		twitter: {
-			card: 'summary',
+			card: 'summary_large_image',
 			description: page.description,
-			images: [],
+			images: [socialPreview.url],
 			title,
 		},
 	};

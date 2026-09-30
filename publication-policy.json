@@ -1,7 +1,7 @@
 {
 	"schemaVersion": "2.0.0",
 	"id": "icw-vox-public-source-001",
-	"revision": "2.4.2",
+	"revision": "2.5.0",
 	"destination": {
 		"owner": "IRONCREED",
 		"repository": "VOX",
@@ -40,7 +40,7 @@
 		{
 			"source": "public",
 			"destination": "public",
-			"extensions": [".ico", ".m4a", ".png", ".svg", ".xml"]
+			"extensions": [".ico", ".m4a", ".png", ".svg", ".xml", ".webp"]
 		},
 		{
 			"source": "semantic-core/dist/site",
@@ -205,6 +205,15 @@
 		{
 			"source": "vox/public-docs/NOTICE.md",
 			"destination": "NOTICE.md",
+			"language": "en"
+		},
+		{
+			"source": "scripts/build-practice-map.mjs",
+			"destination": "scripts/build-practice-map.mjs"
+		},
+		{
+			"source": "vox/public-docs/MAP-AND-MEDIA.md",
+			"destination": "docs/MAP-AND-MEDIA.md",
 			"language": "en"
 		}
 	],

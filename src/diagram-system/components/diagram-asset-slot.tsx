@@ -15,7 +15,7 @@ export function DiagramAssetSlot({ asset, brief, slotId }: DiagramAssetSlotProps
 	return (
 		<aside className="diagram-brief" data-asset-id={asset?.id}>
 			<header>
-				<small>IRON CREED / ASSET</small>
+				<small>IRONCREED / ASSET</small>
 				<strong>{slotId}</strong>
 			</header>
 			<div>{brief}</div>
