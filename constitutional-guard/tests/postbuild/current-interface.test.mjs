@@ -429,7 +429,7 @@ test('the canonical monogram, welcome dialog, social links, and loader copy shar
 	assert.match(html, /When everything/);
 	assert.match(html, /Lies down\./);
 	assert.match(html, /Welcome to IRONCREED/);
-	assert.match(html, /IRONCREED is a currently classified recurring character/);
+	assert.match(html, /IRONCREED is the IT practice of/);
 	assert.match(html, /href="https:\/\/t\.me\/\+6-ge0JXP25o4MTQy"/);
 	assert.match(html, /href="https:\/\/github\.com\/IRONCREED"/);
 	assert.match(html, /href="https:\/\/www\.linkedin\.com\/showcase\/ironcreed\/"/);

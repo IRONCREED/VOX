@@ -366,7 +366,7 @@ export interface LocalizedAboutStory {
 		workTypes: { code: string; label: string }[];
 		labels: PracticeMapCopy;
 	};
-	transition: {
+	transition?: {
 		eyebrow: string;
 		title: string;
 		body: string;

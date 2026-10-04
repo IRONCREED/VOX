@@ -5,11 +5,11 @@
 		"order": 10,
 		"locale": "en",
 		"slug": "about",
-		"title": "About IRONCREED",
-		"description": "IRONCREED is a currently classified recurring character of [Zhovten Games](https://zhovten.games/) and a personified engineering process connecting code, research, scenarios, and publications.",
+		"title": "IRONCREED — the personified engineering process of Zhovten Games",
+		"description": "IRONCREED is the IT practice of [Zhovten Games](https://zhovten.games/): web development, infrastructure, automation, security, research, and technical publishing within one traceable engineering process.",
 		"shortLabel": "About",
-		"eyebrow": "IRONCREED / IDENTITY",
-		"body": "**IRONCREED** is a recurring [Zhovten Games](https://zhovten.games/) character. His identity and role in the game remain classified for now; further details will be disclosed later.\n\nOutside the game, Credo is a personified technocrat—not a caricature dreaming of world domination, but a figure who treats every problem as an engineering system of conditions, constraints, failures, tests, and consequences.\n\nWithin the studio’s IT practice, he personifies the development process itself, joining code, research, scenarios, and publications into one traceable circuit. IRONCREED is therefore a character, a working voice, and a recurring figure across the project at once.",
+		"eyebrow": "IRONCREED / ENGINEERING PRACTICE",
+		"body": "**IRONCREED** is a recurring [Zhovten Games](https://zhovten.games/) character and personifies development in the studio’s IT practice. His identity and role in the game remain classified for now; further details will be disclosed later.\n\nOutside the game, Credo is a personified technocrat—not a caricature dreaming of world domination, but a figure who treats every problem as an engineering system of conditions, constraints, failures, tests, and consequences.\n\nWe handle web development, infrastructure, automation, security, research, and technical publishing, bringing code, research, scenarios, and publications into one traceable system. IRONCREED is therefore a character, a working voice, and a recurring figure across the project at once.",
 		"pageType": "about",
 		"status": "published",
 		"conversationViewId": "view.about.iron-creed",
@@ -157,11 +157,6 @@
 					"components": "Project components",
 					"relations": "Related projects"
 				}
-			},
-			"transition": {
-				"eyebrow": "IRONCREED / ENGINEERING PRACTICE",
-				"title": "IRONCREED — the personified engineering process of Zhovten Games",
-				"body": "IRONCREED personifies the development process and serves as the IT practice of [Zhovten Games](https://zhovten.games/). We handle web development, infrastructure, automation, security, research, and technical publishing, joining them into one traceable system."
 			},
 			"sections": [
 				{
@@ -1651,11 +1646,11 @@
 		"order": 10,
 		"locale": "uk",
 		"slug": "about",
-		"title": "Про проєкт",
-		"description": "IRONCREED — поки засекречений наскрізний персонаж студії [Zhovten Games](https://zhovten.games/) та персоніфікований інженерний процес, що пов’язує код, дослідження, сценарії й публікації.",
+		"title": "IRONCREED — персоніфікований інженерний процес Zhovten Games",
+		"description": "IRONCREED — ІТ-напрям студії [Zhovten Games](https://zhovten.games/): веброзробка, інфраструктура, автоматизація, безпека, дослідження й технічне видавництво в межах простежуваної інженерної практики.",
 		"shortLabel": "Про проєкт",
-		"eyebrow": "IRONCREED / ІДЕНТИЧНІСТЬ",
-		"body": "**IRONCREED** — наскрізний персонаж [Zhovten Games](https://zhovten.games/). Його особистість і роль у грі поки засекречені; подробиці буде оприлюднено пізніше.\n\nПоза грою Кредо — персоніфікований образ технократа: не карикатурного претендента на світове панування, а суб’єкта, який розглядає кожну проблему як інженерну систему — через умови, обмеження, відмови, перевірки й наслідки.\n\nВ ІТ-напрямі студії він уособлює сам процес розроблення: пов’язує код, дослідження, сценарії та публікації в один простежуваний контур. Тому IRONCREED одночасно є персонажем, робочим голосом і наскрізною фігурою проєкту.",
+		"eyebrow": "IRONCREED / ІНЖЕНЕРНА ПРАКТИКА",
+		"body": "**IRONCREED** — наскрізний персонаж [Zhovten Games](https://zhovten.games/) і персоніфікований процес розроблення в ІТ-напрямі студії. Його особистість і роль у грі поки засекречені; подробиці буде оприлюднено пізніше.\n\nПоза грою Кредо — персоніфікований образ технократа: не карикатурного претендента на світове панування, а суб’єкта, який розглядає кожну проблему як інженерну систему — через умови, обмеження, відмови, перевірки й наслідки.\n\nМи беремо на себе веброзробку, інфраструктуру, автоматизацію, безпеку, дослідження й технічне видавництво, пов’язуючи код, дослідження, сценарії та публікації в одну простежувану систему. Тому IRONCREED одночасно є персонажем, робочим голосом і наскрізною фігурою проєкту.",
 		"pageType": "about",
 		"status": "published",
 		"conversationViewId": "view.about.iron-creed",
@@ -1803,11 +1798,6 @@
 					"components": "Складові проєкту",
 					"relations": "Пов’язані проєкти"
 				}
-			},
-			"transition": {
-				"eyebrow": "IRONCREED / ІНЖЕНЕРНА ПРАКТИКА",
-				"title": "IRONCREED — персоніфікований інженерний процес Zhovten Games",
-				"body": "IRONCREED уособлює процес розроблення і водночас є ІТ-напрямом студії [Zhovten Games](https://zhovten.games/). Ми беремо на себе веброзробку, інфраструктуру, автоматизацію, безпеку, дослідження й технічне видавництво, об’єднуючи їх у простежувану систему."
 			},
 			"sections": [
 				{

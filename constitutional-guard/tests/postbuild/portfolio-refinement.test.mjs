@@ -31,6 +31,10 @@ test('portfolio priority, open identity paragraphs and LinkedIn anchor agree in 
 		assert.match(html, /href="#team-profiles"/);
 		assert.match(html, /<section id="team-profiles" tabindex="-1"/);
 		assert.doesNotMatch(html, /about-iron-creed-identity/);
+		assert.doesNotMatch(html, /id="about-cycle-title"/);
+		const heading = /<h1[^>]*>([\s\S]*?)<\/h1>/.exec(html)?.[1];
+		assert.ok(heading?.includes(page.title));
+		assert.equal(page.aboutStory.transition, undefined);
 		const intro = /class="content-page-header__identity">([\s\S]*?)<\/div><\/div>/.exec(html)?.[1];
 		assert.ok(intro);
 		assert.equal((intro.match(/<p>/g) ?? []).length, 3);

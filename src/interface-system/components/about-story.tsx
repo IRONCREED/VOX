@@ -34,14 +34,6 @@ interface AboutStoryProps {
 export function AboutStory({ locale, nextSlideLabel, previousSlideLabel, story }: AboutStoryProps) {
 	return (
 		<section className="about-story">
-			<section className="about-cycle about-cycle--combined" aria-labelledby="about-cycle-title">
-				<header className="about-story__transition">
-					<small>{story.transition.eyebrow}</small>
-					<h2 id="about-cycle-title">{story.transition.title}</h2>
-					<ArticleBody body={story.transition.body} />
-				</header>
-			</section>
-
 			<div className="about-services">
 				{story.sections
 					.filter((section) => !story.practiceMap || section.kind !== 'testimonials')

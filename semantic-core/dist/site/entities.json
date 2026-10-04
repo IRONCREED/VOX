@@ -1663,19 +1663,6 @@
 		"href": "/en/research/write-america-how-article-i-turns-intent-into-general-law"
 	},
 	{
-		"id": "page.about",
-		"kind": "page",
-		"locale": "en",
-		"label": "About IRONCREED",
-		"summary": "IRONCREED is a currently classified recurring character of [Zhovten Games](https://zhovten.games/) and a personified engineering process connecting code, research, scenarios, and publications.",
-		"status": "published",
-		"materialIds": [],
-		"pageIds": [
-			"page.about"
-		],
-		"href": "/en/pages/about"
-	},
-	{
 		"id": "page.ai-policy",
 		"kind": "page",
 		"locale": "en",
@@ -1713,6 +1700,19 @@
 			"page.corpus-index"
 		],
 		"href": "/en/pages/corpus-index"
+	},
+	{
+		"id": "page.about",
+		"kind": "page",
+		"locale": "en",
+		"label": "IRONCREED — the personified engineering process of Zhovten Games",
+		"summary": "IRONCREED is the IT practice of [Zhovten Games](https://zhovten.games/): web development, infrastructure, automation, security, research, and technical publishing within one traceable engineering process.",
+		"status": "published",
+		"materialIds": [],
+		"pageIds": [
+			"page.about"
+		],
+		"href": "/en/pages/about"
 	},
 	{
 		"id": "page.licensing",
@@ -10126,6 +10126,19 @@
 		"href": "/uk/research/chomu-doviriaie-ameryka-yak-stattia-vi-zbyraie-verkhovnyi-poriadok"
 	},
 	{
+		"id": "page.about",
+		"kind": "page",
+		"locale": "uk",
+		"label": "IRONCREED — персоніфікований інженерний процес Zhovten Games",
+		"summary": "IRONCREED — ІТ-напрям студії [Zhovten Games](https://zhovten.games/): веброзробка, інфраструктура, автоматизація, безпека, дослідження й технічне видавництво в межах простежуваної інженерної практики.",
+		"status": "published",
+		"materialIds": [],
+		"pageIds": [
+			"page.about"
+		],
+		"href": "/uk/pages/about"
+	},
+	{
 		"id": "page.anthem",
 		"kind": "page",
 		"locale": "uk",
@@ -10189,19 +10202,6 @@
 			"page.privacy-policy"
 		],
 		"href": "/uk/pages/privacy-policy"
-	},
-	{
-		"id": "page.about",
-		"kind": "page",
-		"locale": "uk",
-		"label": "Про проєкт",
-		"summary": "IRONCREED — поки засекречений наскрізний персонаж студії [Zhovten Games](https://zhovten.games/) та персоніфікований інженерний процес, що пов’язує код, дослідження, сценарії й публікації.",
-		"status": "published",
-		"materialIds": [],
-		"pageIds": [
-			"page.about"
-		],
-		"href": "/uk/pages/about"
 	},
 	{
 		"id": "page.terms-of-use",
