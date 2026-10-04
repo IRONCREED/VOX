@@ -16,13 +16,71 @@
 		"aboutStory": {
 			"identityHintLabel": "Who is IRONCREED?",
 			"practiceMap": {
+				"workTypes": [
+					{
+						"code": "websites",
+						"label": "Websites / web applications"
+					},
+					{
+						"code": "wordpress",
+						"label": "WordPress / CMS"
+					},
+					{
+						"code": "plugins",
+						"label": "Plugins / custom tooling"
+					},
+					{
+						"code": "ecommerce",
+						"label": "E-commerce"
+					},
+					{
+						"code": "support",
+						"label": "Technical support / infrastructure"
+					},
+					{
+						"code": "content",
+						"label": "Writing / content"
+					},
+					{
+						"code": "localization",
+						"label": "Localization"
+					},
+					{
+						"code": "publishing",
+						"label": "Publishing / typesetting"
+					},
+					{
+						"code": "games",
+						"label": "Game / narrative work"
+					},
+					{
+						"code": "consulting",
+						"label": "Process / product consulting"
+					},
+					{
+						"code": "research",
+						"label": "Research / methodology"
+					},
+					{
+						"code": "tooling",
+						"label": "Tools / reusable engineering systems"
+					},
+					{
+						"code": "security",
+						"label": "Security engineering"
+					},
+					{
+						"code": "automation",
+						"label": "Automation / delivery pipelines"
+					}
+				],
 				"countries": [
 					{
 						"code": "UA",
 						"geographyId": "804",
 						"labelOffset": [
-							22,
-							-32
+							35,
+							-36
 						],
 						"label": "Ukraine"
 					},
@@ -30,8 +88,8 @@
 						"code": "GB",
 						"geographyId": "826",
 						"labelOffset": [
-							-33,
-							-13
+							-34,
+							-25
 						],
 						"label": "United Kingdom"
 					},
@@ -48,14 +106,37 @@
 						"code": "IL",
 						"geographyId": "376",
 						"labelOffset": [
-							38,
-							15
+							-6,
+							41
 						],
 						"label": "Israel"
 					},
 					{
-						"code": "ZZ",
-						"label": "Country not listed"
+						"code": "CN",
+						"geographyId": "156",
+						"labelOffset": [
+							0,
+							0
+						],
+						"label": "China"
+					},
+					{
+						"code": "AL",
+						"geographyId": "008",
+						"labelOffset": [
+							-51,
+							10
+						],
+						"label": "Albania"
+					},
+					{
+						"code": "AE",
+						"geographyId": "784",
+						"labelOffset": [
+							58,
+							32
+						],
+						"label": "United Arab Emirates"
 					}
 				],
 				"labels": {
@@ -66,8 +147,16 @@
 					"reviews": "Reviews",
 					"review": "Client review",
 					"unlocatedNote": "These reviews do not specify the client’s country.",
-					"geographyNote": "Locations refer to the organisation or project.",
-					"sourceNote": "Links to the original reviews are available on request."
+					"geographyNote": "Numbers show distinct client relationships in each country. One relationship may span several countries; owned projects do not increase the client count.",
+					"sourceNote": "Links to the original reviews are available on request.",
+					"projectTypes": "Project types",
+					"allTypes": "All types",
+					"resetCountry": "Reset country",
+					"clientWork": "Client and contract work",
+					"ownedWork": "Owned projects",
+					"empty": "No projects match this combination of filters.",
+					"components": "Project components",
+					"relations": "Related projects"
 				}
 			},
 			"transition": {
@@ -137,226 +226,1221 @@
 					"kind": "portfolio",
 					"status": "active",
 					"title": "Clients, projects and reviews",
-					"summary": "Choose a country to explore the work and client reviews.",
-					"body": "The team’s documented experience covers 200+ high-density cases combining content, product and technical work. The map presents cases we have worked on since 2019.\n\nThe studio’s game-development experience is intentionally excluded from this list of IT cases. It is presented on the [Zhovten Games projects page](https://zhovten.games/projects).",
+					"summary": "Client work, contract experience and owned projects, with relationships and reviews.",
+					"body": "The team’s documented experience covers 200+ high-density cases combining content, product and technical work. The map presents cases we have worked on since 2019.\n\nExplore the studio’s games and creative projects on the [Zhovten Games projects page](https://zhovten.games/projects).\n\nThis portfolio is an approved public projection of a closed registry. Some contract experience has no artifacts available for public release; find further experience on [LinkedIn](https://www.linkedin.com/showcase/ironcreed/).",
 					"entries": [
 						{
-							"id": "embo-studio",
-							"clientId": "embo-studio",
-							"countryCode": "UA",
-							"reviewIds": [],
-							"title": "EMBO Studio · long-term infrastructure support",
-							"body": "Our work with [EMBO Studio](https://embo-studio.ua/) began with article production and grew into continuous support for the studio’s internal projects. Under an active contract spanning more than three years, we maintain infrastructure, security, updates, and system corrections.\n\n- Parallel maintenance of 20+ internal websites.\n- Bulk procedures at the Cloudflare level.\n- Support for individual projects from an ongoing client.\n- Regular implementation of commercial services; the scope is outlined on the [EMBO Studio services page](https://embo-studio.ua/services/).",
-							"meta": "Contract · 3+ years · 20+ internal sites"
-						},
-						{
-							"id": "academic-publishing",
-							"clientId": "mtc",
-							"countryCode": "GB",
-							"reviewIds": [
-								"yegor-grebnev-mtc-2026-04",
-								"yegor-grebnev-mtc-2026-01",
-								"yegor-grebnev-mtc-test-2025"
+							"id": "aleksandr-v-content",
+							"clientId": "aleksandr-v",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
 							],
-							"title": "Academic typesetting → an in-house publishing pipeline",
-							"body": "We worked on academic journal typesetting, including [Manuscript and Text Cultures](https://mtc-journal.org/index.php/mtc/index). That experience demonstrated the value of a reproducible process and inspired [ZG Journal Template](https://github.com/Zhovten-Games/zg-journal-template), an open pipeline that transforms Markdown and YAML into a typography-controlled PDF.",
-							"meta": "MTC · OJS · Pandoc → XeLaTeX"
-						},
-						{
-							"id": "shifton",
-							"clientId": "shifton",
-							"countryCode": "US",
-							"reviewIds": [],
-							"title": "Shifton · product content",
-							"body": "Content work for Shifton, including materials about shift scheduling and workforce management.",
-							"link": {
-								"label": "Shifton",
-								"href": "https://shifton.com/blog/"
-							}
-						},
-						{
-							"id": "zipy",
-							"clientId": "zipy",
-							"countryCode": "IL",
-							"reviewIds": [],
-							"title": "Zipy · product company",
-							"body": "An Israeli product company among the teams we have worked with and remember warmly."
-						},
-						{
-							"id": "project-illia-humeniuk-linkedin-2026",
-							"clientId": "illia-humeniuk-linkedin-2026",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"illia-humeniuk-linkedin-2026"
+							"workTypes": [
+								"content"
 							],
-							"title": "E-commerce and full-stack development",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "Client · e-commerce and full-stack development · 15 July 2026 · LinkedIn"
-						},
-						{
-							"id": "project-viktor-stinich-berat-2025",
-							"clientId": "viktor-stinich-berat-2025",
-							"countryCode": "ZZ",
 							"reviewIds": [
-								"viktor-stinich-berat-2025"
+								"aleksandr-v-script-2024",
+								"aleksandr-v-writing-2024-05",
+								"aleksandr-v-writing-2024-06"
 							],
-							"title": "Article about Berat",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "Article about Berat · 19 January 2025 · Freelancehunt"
+							"links": [],
+							"relations": [],
+							"components": [],
+							"title": "Aleksandr V. — text and script writing",
+							"body": "A script-writing task and repeated text assignments for one client in May–June 2024. Reviews document fast completion, timely delivery and an intention to collaborate again.",
+							"meta": "Writing / content"
 						},
 						{
-							"id": "project-gary-l-copywriting-2024",
-							"clientId": "gary-l-copywriting-2024",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"gary-l-copywriting-2024"
+							"id": "andrey-minkiv-gambling-copy",
+							"clientId": "andrey-minkiv",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
 							],
-							"title": "English-language copywriting",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "English-language copywriting · 22 November 2024 · Freelancehunt"
-						},
-						{
-							"id": "project-bogdan-p-wordpress-review-2024",
-							"clientId": "bogdan-p-wordpress-review-2024",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"bogdan-p-wordpress-review-2024"
+							"workTypes": [
+								"content"
 							],
-							"title": "WordPress plugin review article",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "WordPress plugin review article · 2 August 2024 · Freelancehunt"
-						},
-						{
-							"id": "project-yuliia-lukianchuk-neuer-2024",
-							"clientId": "yuliia-lukianchuk",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"yuliia-lukianchuk-neuer-2024"
-							],
-							"title": "Article about Manuel Neuer",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "Article about Manuel Neuer · 6 July 2024 · Freelancehunt"
-						},
-						{
-							"id": "project-andrey-minkiv-gambling-2024",
-							"clientId": "andrey-minkiv-gambling-2024",
-							"countryCode": "ZZ",
 							"reviewIds": [
 								"andrey-minkiv-gambling-2024"
 							],
+							"links": [],
+							"relations": [],
+							"components": [],
 							"title": "Copywriting for a gambling website",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "Copywriting for a gambling website · 29 June 2024 · Freelancehunt"
+							"body": "A single copywriting assignment for a gambling website in June 2024. The review records fast, high-quality execution against the brief. The case does not imply an ongoing product role or wider responsibility for the service.",
+							"meta": "Writing / content"
 						},
 						{
-							"id": "project-jane-doe-igaming-2024",
-							"clientId": "jane-doe-igaming-2024",
-							"countryCode": "ZZ",
+							"id": "berat-article",
+							"clientId": "viktor-stinich",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"AL"
+							],
+							"workTypes": [
+								"content"
+							],
+							"reviewIds": [
+								"viktor-stinich-berat-2025"
+							],
+							"links": [],
+							"relations": [],
+							"components": [],
+							"title": "Article about Berat",
+							"body": "Research and writing for an article about Berat, completed for a local client in January 2025. The review confirms the quality of the text; the case does not claim broader tourism, SEO or publishing services.",
+							"meta": "Writing / content"
+						},
+						{
+							"id": "canon-horror-series",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"research",
+								"publishing",
+								"content"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Zenodo record",
+									"href": "https://zenodo.org/records/21889335"
+								}
+							],
+							"relations": [
+								{
+									"type": "originated-from",
+									"targetId": "interdead",
+									"label": "Originated from"
+								},
+								{
+									"type": "uses",
+									"targetId": "zg-journal-template",
+									"label": "Uses"
+								}
+							],
+							"components": [],
+							"title": "Canon Horror Series — Language as Infection and the Systems of Horror",
+							"body": "Connected horror/media research corpus on language, perception, infection and systems of vulnerability, published through a reproducible technical-publishing workflow.",
+							"meta": "Research / methodology · Publishing / typesetting · Writing / content"
+						},
+						{
+							"id": "clockwork-magick-game-master",
+							"clientId": "clockwork-magick",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"games"
+							],
+							"reviewIds": [],
+							"links": [],
+							"relations": [],
+							"components": [],
+							"title": "Clockwork Magick — game mastering",
+							"body": "Game-master work in 2020–2021 covered complete scenarios, characters, locations and NPCs. Game systems were adapted to individual stories, tested in live sessions and revised from observed player behaviour.",
+							"meta": "Game / narrative work"
+						},
+						{
+							"id": "cloudflare-operations",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"security",
+								"automation",
+								"tooling",
+								"research"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Repository",
+									"href": "https://github.com/IRONCREED/cloudflare"
+								},
+								{
+									"label": "Public series",
+									"href": "https://web.zhovten.games/en/series/the-great-and-terrible-cloudflare"
+								}
+							],
+							"relations": [
+								{
+									"type": "originated-from",
+									"targetId": "embo-bogdan",
+									"label": "Originated from"
+								}
+							],
+							"components": [],
+							"title": "Cloudflare Operations / The Great and Terrible Cloudflare",
+							"body": "IRONCREED article-and-code series for auditable Cloudflare policy-plane operations; Case 001 implements a reusable zone-level WAF Custom Rules fleet workflow derived from a production crawler incident.",
+							"meta": "Security engineering · Automation / delivery pipelines · Tools / reusable engineering systems · Research / methodology"
+						},
+						{
+							"id": "code-constitution",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"research",
+								"tooling"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Research",
+									"href": "https://doi.org/10.5281/zenodo.21894242"
+								},
+								{
+									"label": "Repository",
+									"href": "https://github.com/FOP-Oksana-Dubinetska/code-constitution"
+								}
+							],
+							"relations": [
+								{
+									"type": "supports",
+									"targetId": "ironcreed-security",
+									"label": "Supports"
+								},
+								{
+									"type": "supports",
+									"targetId": "cloudflare-operations",
+									"label": "Supports"
+								}
+							],
+							"components": [],
+							"title": "Code Constitution: Software Architecture as a Normative Order",
+							"body": "Software-governance model treating architecture, authority, canonical sources, constraints, change procedures and verification evidence as one normative system.",
+							"meta": "Research / methodology · Tools / reusable engineering systems"
+						},
+						{
+							"id": "elaris-process-optimization",
+							"clientId": "elaris-studio-games",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"consulting"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Elaris Studio Games",
+									"href": "https://www.linkedin.com/company/elaris-studio-games"
+								}
+							],
+							"relations": [],
+							"components": [],
+							"title": "Elaris Studio Games — process optimization",
+							"body": "Development-process consulting in 2025–2026: task decomposition, backlog structure, phases, early risk identification and acceptance criteria. The result was a clearer and more manageable workflow; no unsupported quantitative productivity claims are made.",
+							"meta": "Process / product consulting"
+						},
+						{
+							"id": "embo-bogdan",
+							"clientId": "embo-studio",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"websites",
+								"wordpress",
+								"plugins",
+								"support",
+								"content"
+							],
+							"reviewIds": [
+								"bogdan-p-wordpress-review-2024"
+							],
+							"links": [
+								{
+									"label": "EMBO Studio",
+									"href": "https://embo-studio.ua/"
+								},
+								{
+									"label": "Services",
+									"href": "https://embo-studio.ua/services/"
+								}
+							],
+							"relations": [],
+							"components": [
+								{
+									"id": "embo-ppc-keyword-preprocessor",
+									"title": "PPC keyword preprocessing service",
+									"links": [
+										{
+											"label": "Open",
+											"href": "https://embo-studio.ua/uk/services/servis-dlya-ppc-specialistiv/"
+										}
+									]
+								},
+								{
+									"id": "embo-text-statistics",
+									"title": "Text / SEO statistics service",
+									"links": [
+										{
+											"label": "Open",
+											"href": "https://embo-studio.ua/ru/services/pidraxunok-simvoliv/"
+										}
+									]
+								},
+								{
+									"id": "embo-duplicate-cleaner",
+									"title": "Duplicate text / keyword cleaner",
+									"links": [
+										{
+											"label": "Open",
+											"href": "https://embo-studio.ua/ru/services/ochishhuvach-dublikativ-tekstu/"
+										}
+									]
+								}
+							],
+							"title": "EMBO Studio — content, WordPress and infrastructure relationship",
+							"body": "The relationship began on 2 August 2024 with a WordPress-plugin review article and developed into ongoing work on web systems. Its scope covers WordPress, custom tools and plugins, infrastructure, security, maintenance and technical content. Individual public services appear below as components of this relationship.",
+							"meta": "Websites / web applications · WordPress / CMS · Plugins / custom tooling · Technical support / infrastructure · Writing / content"
+						},
+						{
+							"id": "glenbotal",
+							"clientId": "zipy-holdings",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"GB",
+								"IL"
+							],
+							"workTypes": [
+								"websites",
+								"wordpress",
+								"ecommerce",
+								"localization",
+								"support"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Glenbotal",
+									"href": "https://glenbotal.co.uk/"
+								}
+							],
+							"relations": [],
+							"components": [],
+							"title": "Glenbotal premium spirits platform",
+							"body": "Work under ZIPY HOLDINGS LTD. in 2019–2021 covered a premium-spirits subscription platform for the UK market. The WordPress/WooCommerce system combined custom subscription logic, Figma-based frontend implementation, localization, SEO, performance optimization, security hardening and production support.",
+							"meta": "Websites / web applications · WordPress / CMS · E-commerce · Localization · Technical support / infrastructure"
+						},
+						{
+							"id": "grandma-narrative-game-design",
+							"clientId": "grandma-studios",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"games"
+							],
+							"reviewIds": [],
+							"links": [],
+							"relations": [
+								{
+									"type": "has-component",
+									"targetId": "whispered-secrets-13-tying-the-knot",
+									"label": "Contains"
+								},
+								{
+									"type": "has-component",
+									"targetId": "mcf-25-the-dalimar-legacy",
+									"label": "Contains"
+								},
+								{
+									"type": "has-component",
+									"targetId": "mcf-26-a-crime-in-reflection",
+									"label": "Contains"
+								},
+								{
+									"type": "has-component",
+									"targetId": "mcf-27-the-riddle-of-mrs-bishop",
+									"label": "Contains"
+								},
+								{
+									"type": "has-component",
+									"targetId": "mcf-28-house-that-love-built",
+									"label": "Contains"
+								}
+							],
+							"components": [],
+							"title": "GrandMA Studios — game and narrative design",
+							"body": "Commercial HOPA production work in 2021–2025 covered game and narrative design: scripts, dialogue, quests, branching logic, interactive sequences and implementation-facing documentation. Decisions were coordinated with art, engineering and QA. Five released titles are listed below; public copy stays within documented facts and NDA boundaries.",
+							"meta": "Game / narrative work"
+						},
+						{
+							"id": "hostiq-technical-support",
+							"clientId": "hostiq-zone3000",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"AE",
+								"UA"
+							],
+							"workTypes": [
+								"wordpress",
+								"support"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "HOSTiQ",
+									"href": "https://hostiq.ua/ukr/"
+								},
+								{
+									"label": "ZONE3000",
+									"href": "https://zone3000.com/"
+								}
+							],
+							"relations": [],
+							"components": [],
+							"title": "HOSTiQ — technical support",
+							"body": "Technical support for HOSTiQ within the ZONE3000 contractual context since 2026. Issue reproduction, diagnosis, WordPress, site configuration, hosting, DNS, cPanel and Git/GitHub work are combined with explanation of findings and documented resolutions. The case describes public technical responsibilities.",
+							"meta": "WordPress / CMS · Technical support / infrastructure"
+						},
+						{
+							"id": "illia-humeniuk-ecommerce",
+							"clientId": "illia-humeniuk",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"websites",
+								"wordpress"
+							],
+							"reviewIds": [
+								"illia-humeniuk-linkedin-2026"
+							],
+							"links": [
+								{
+									"label": "Helpsinistre",
+									"href": "https://helpsinistre.humeniuk.digital/login/"
+								},
+								{
+									"label": "Project repository",
+									"href": "https://github.com/pan-canon/helpsinistre"
+								},
+								{
+									"label": "Illia Humeniuk",
+									"href": "https://ua.linkedin.com/in/illia-humeniuk/en"
+								}
+							],
+							"relations": [],
+							"components": [],
+							"title": "Helpsinistre — WordPress insurance portal and site development",
+							"body": "WordPress portal development for the Helpsinistre insurance startup, together with public-site and landing corrections. Work covered account/auth foundations, customer routes, policy flows, claim foundations, documents and access, operational notifications and responsive frontend work. Client feedback praised analysis, planning and regular progress updates. Sweden is market/regulatory context, without claiming legal certification or creating an additional map credit.",
+							"meta": "Websites / web applications · WordPress / CMS"
+						},
+						{
+							"id": "interdead",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"games",
+								"research"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Zhovten Games project",
+									"href": "https://zhovten.games/projects"
+								},
+								{
+									"label": "Public snapshot",
+									"href": "https://zhovten-games.itch.io/interdead"
+								}
+							],
+							"relations": [
+								{
+									"type": "has-component",
+									"targetId": "interdead-site",
+									"label": "Contains"
+								},
+								{
+									"type": "has-component",
+									"targetId": "interdead-reference-library",
+									"label": "Contains"
+								},
+								{
+									"type": "has-component",
+									"targetId": "interdead-proto",
+									"label": "Contains"
+								},
+								{
+									"type": "has-component",
+									"targetId": "interdead-core",
+									"label": "Contains"
+								},
+								{
+									"type": "has-component",
+									"targetId": "psyframework",
+									"label": "Contains"
+								}
+							],
+							"components": [],
+							"title": "InterDead — narrative horror project",
+							"body": "Narrative horror project built as a connected system of game, web, documentation, research and infrastructure components.",
+							"meta": "Game / narrative work · Research / methodology"
+						},
+						{
+							"id": "interdead-core",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"tooling",
+								"websites"
+							],
+							"parentId": "interdead",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Repository",
+									"href": "https://github.com/Zhovten-Games/InterDeadCore"
+								}
+							],
+							"relations": [
+								{
+									"type": "part-of",
+									"targetId": "interdead",
+									"label": "Part of"
+								},
+								{
+									"type": "supports",
+									"targetId": "interdead-site",
+									"label": "Supports"
+								}
+							],
+							"components": [],
+							"title": "InterDeadCore",
+							"body": "Shared TypeScript identity, EFBD and web-side domain packages consumed by InterDead’s public web surface; distinct from the newer C++ game-runtime core.",
+							"meta": "Tools / reusable engineering systems · Websites / web applications"
+						},
+						{
+							"id": "interdead-proto",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"games",
+								"tooling",
+								"websites"
+							],
+							"parentId": "interdead",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Repository",
+									"href": "https://github.com/Zhovten-Games/InterDeadProto"
+								}
+							],
+							"relations": [
+								{
+									"type": "part-of",
+									"targetId": "interdead",
+									"label": "Part of"
+								}
+							],
+							"components": [],
+							"title": "InterDeadProto / NOIR",
+							"body": "Narrative-driven interface prototype for InterDead and the NOIR in-world device layer.",
+							"meta": "Game / narrative work · Tools / reusable engineering systems · Websites / web applications"
+						},
+						{
+							"id": "interdead-reference-library",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"research",
+								"publishing"
+							],
+							"parentId": "interdead",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Repository",
+									"href": "https://github.com/Zhovten-Games/InterDeadReferenceLibrary"
+								}
+							],
+							"relations": [
+								{
+									"type": "part-of",
+									"targetId": "interdead",
+									"label": "Part of"
+								}
+							],
+							"components": [],
+							"title": "InterDead Reference Library",
+							"body": "Public reference library for InterDead documentation, standards, references and shareable research notes.",
+							"meta": "Research / methodology · Publishing / typesetting"
+						},
+						{
+							"id": "interdead-site",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"websites",
+								"tooling",
+								"support"
+							],
+							"parentId": "interdead",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Live site",
+									"href": "https://interdead.phantom-draft.com/"
+								},
+								{
+									"label": "InterDeadIT repository",
+									"href": "https://github.com/Zhovten-Games/InterDeadIT"
+								}
+							],
+							"relations": [
+								{
+									"type": "public-surface-of",
+									"targetId": "interdead",
+									"label": "Public surface of"
+								},
+								{
+									"type": "part-of",
+									"targetId": "interdead",
+									"label": "Part of"
+								},
+								{
+									"type": "uses",
+									"targetId": "interdead-core",
+									"label": "Uses"
+								},
+								{
+									"type": "integrates-with",
+									"targetId": "interdead-proto",
+									"label": "Integrates with"
+								}
+							],
+							"components": [
+								{
+									"id": "interdead-discord-identity",
+									"title": "Discord identity / OAuth",
+									"links": [
+										{
+											"label": "Open",
+											"href": "https://github.com/Zhovten-Games/InterDeadCore/tree/main/identity-core"
+										}
+									]
+								},
+								{
+									"id": "interdead-auth-worker",
+									"title": "Cloudflare auth / EFBD Worker",
+									"links": [
+										{
+											"label": "Open",
+											"href": "https://github.com/Zhovten-Games/InterDeadIT/tree/main/workers/interdead-auth"
+										}
+									]
+								},
+								{
+									"id": "interdead-authenticated-polls",
+									"title": "Authenticated polls / mini-games",
+									"links": [
+										{
+											"label": "Open",
+											"href": "https://github.com/Zhovten-Games/InterDeadIT/tree/main/themes/InterDead/assets/mini-games/efbd-poll"
+										}
+									]
+								},
+								{
+									"id": "interdead-proto-integration",
+									"title": "Game application integration",
+									"links": [
+										{
+											"label": "Open",
+											"href": "https://github.com/Zhovten-Games/InterDeadProto"
+										}
+									]
+								}
+							],
+							"title": "InterDead — public website and entry point",
+							"body": "Hugo-powered public InterDead web surface with Discord OAuth, authenticated polls / mini-games, Cloudflare Worker + D1 profile persistence, replay/account-cleanup guards and integration hooks into the wider InterDead application network.",
+							"meta": "Websites / web applications · Tools / reusable engineering systems · Technical support / infrastructure"
+						},
+						{
+							"id": "ironcreed-request-log",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"wordpress",
+								"plugins",
+								"security",
+								"tooling"
+							],
+							"parentId": "ironcreed-security",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "WordPress.org",
+									"href": "https://wordpress.org/plugins/ironcreed-request-log/"
+								},
+								{
+									"label": "Source",
+									"href": "https://github.com/IRONCREED/SECURITY/tree/main/plugins/ironcreed-request-log"
+								}
+							],
+							"relations": [
+								{
+									"type": "part-of",
+									"targetId": "ironcreed-security",
+									"label": "Part of"
+								}
+							],
+							"components": [],
+							"title": "IRONCREED Request Log",
+							"body": "Open-source WordPress request-visibility plugin separating WordPress Runtime observations from optional Hosting Ukraine nginx log imports with bounded retention and privacy controls.",
+							"meta": "WordPress / CMS · Plugins / custom tooling · Security engineering · Tools / reusable engineering systems"
+						},
+						{
+							"id": "ironcreed-security",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"security",
+								"wordpress",
+								"tooling"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Repository",
+									"href": "https://github.com/IRONCREED/SECURITY"
+								}
+							],
+							"relations": [
+								{
+									"type": "has-component",
+									"targetId": "ironcreed-request-log",
+									"label": "Contains"
+								},
+								{
+									"type": "uses",
+									"targetId": "code-constitution",
+									"label": "Uses"
+								}
+							],
+							"components": [],
+							"title": "IRONCREED Security",
+							"body": "Governance-first monorepo for focused WordPress administration and security utilities, with independently installable/testable plugin packages and release tooling.",
+							"meta": "Security engineering · WordPress / CMS · Tools / reusable engineering systems"
+						},
+						{
+							"id": "jane-doe-igaming-copy",
+							"clientId": "jane-doe-igaming",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"content"
+							],
 							"reviewIds": [
 								"jane-doe-igaming-2024"
 							],
+							"links": [],
+							"relations": [],
+							"components": [],
 							"title": "SEO article for i-gaming",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "SEO article for i-gaming · 7 June 2024 · Freelancehunt"
+							"body": "An SEO article for an online-gaming client, completed in June 2024. The client assessed compliance with the brief as minimal. This is a historical record of completed work, not evidence of exceptional quality.",
+							"meta": "Writing / content"
 						},
 						{
-							"id": "project-oleksandra-bevz-sports-2024",
-							"clientId": "oleksandra-bevz-sports-2024",
-							"countryCode": "ZZ",
+							"id": "literate-programming",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"research",
+								"publishing",
+								"tooling"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Research",
+									"href": "https://doi.org/10.5281/zenodo.20608558"
+								},
+								{
+									"label": "Repository",
+									"href": "https://github.com/Zhovten-Games/literate-programming"
+								}
+							],
+							"relations": [
+								{
+									"type": "originated-from",
+									"targetId": "interdead",
+									"label": "Originated from"
+								},
+								{
+									"type": "informed",
+									"targetId": "interdead",
+									"label": "Informed"
+								}
+							],
+							"components": [],
+							"title": "Literate Programming: Donald Knuth, WEB, and Contemporary Workflows",
+							"body": "Methodological review of Knuth’s Literate Programming with reproducible companion implementations and a controlled LLM-assisted boundary case.",
+							"meta": "Research / methodology · Publishing / typesetting · Tools / reusable engineering systems"
+						},
+						{
+							"id": "mcf-25-the-dalimar-legacy",
+							"clientId": "grandma-studios",
+							"originKind": "external-relationship",
+							"countryCodes": [],
+							"workTypes": [
+								"games"
+							],
+							"parentId": "grandma-narrative-game-design",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Mystery Case Files 25: The Dalimar Legacy",
+									"href": "https://www.youtube.com/watch?v=0PtNx_loBHw"
+								}
+							],
+							"relations": [
+								{
+									"type": "credited-under",
+									"targetId": "grandma-narrative-game-design",
+									"label": "Credited under"
+								}
+							],
+							"components": [],
+							"title": "Mystery Case Files 25: The Dalimar Legacy",
+							"body": "Released HOPA title credited to Oksana Dubinetska for game / narrative design work at GrandMA Studios.",
+							"meta": "Game / narrative work"
+						},
+						{
+							"id": "mcf-26-a-crime-in-reflection",
+							"clientId": "grandma-studios",
+							"originKind": "external-relationship",
+							"countryCodes": [],
+							"workTypes": [
+								"games"
+							],
+							"parentId": "grandma-narrative-game-design",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Mystery Case Files 26: A Crime in Reflection",
+									"href": "https://www.youtube.com/watch?v=8mZmJsagw-0"
+								}
+							],
+							"relations": [
+								{
+									"type": "credited-under",
+									"targetId": "grandma-narrative-game-design",
+									"label": "Credited under"
+								}
+							],
+							"components": [],
+							"title": "Mystery Case Files 26: A Crime in Reflection",
+							"body": "Released HOPA title credited to Oksana Dubinetska for game / narrative design work at GrandMA Studios.",
+							"meta": "Game / narrative work"
+						},
+						{
+							"id": "mcf-27-the-riddle-of-mrs-bishop",
+							"clientId": "grandma-studios",
+							"originKind": "external-relationship",
+							"countryCodes": [],
+							"workTypes": [
+								"games"
+							],
+							"parentId": "grandma-narrative-game-design",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Mystery Case Files 27: The Riddle of Mrs. Bishop",
+									"href": "https://www.youtube.com/watch?v=krGvGm9o7jE"
+								}
+							],
+							"relations": [
+								{
+									"type": "credited-under",
+									"targetId": "grandma-narrative-game-design",
+									"label": "Credited under"
+								}
+							],
+							"components": [],
+							"title": "Mystery Case Files 27: The Riddle of Mrs. Bishop",
+							"body": "Released HOPA title credited to Oksana Dubinetska for game / narrative design work at GrandMA Studios.",
+							"meta": "Game / narrative work"
+						},
+						{
+							"id": "mcf-28-house-that-love-built",
+							"clientId": "grandma-studios",
+							"originKind": "external-relationship",
+							"countryCodes": [],
+							"workTypes": [
+								"games"
+							],
+							"parentId": "grandma-narrative-game-design",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Mystery Case Files 28: House That Love Built",
+									"href": "https://www.youtube.com/watch?v=vCQ_1Rlirm8"
+								}
+							],
+							"relations": [
+								{
+									"type": "credited-under",
+									"targetId": "grandma-narrative-game-design",
+									"label": "Credited under"
+								}
+							],
+							"components": [],
+							"title": "Mystery Case Files 28: House That Love Built",
+							"body": "Released HOPA title credited to Oksana Dubinetska for game / narrative design work at GrandMA Studios.",
+							"meta": "Game / narrative work"
+						},
+						{
+							"id": "mtc-journal-typesetting",
+							"clientId": "mtc",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"CN",
+								"GB"
+							],
+							"workTypes": [
+								"publishing"
+							],
+							"reviewIds": [
+								"yegor-grebnev-mtc-test-2025",
+								"yegor-grebnev-mtc-2026-01",
+								"yegor-grebnev-mtc-2026-04"
+							],
+							"links": [
+								{
+									"label": "MTC journal",
+									"href": "https://mtc-journal.org/index.php/mtc/index"
+								}
+							],
+							"relations": [
+								{
+									"type": "informed",
+									"targetId": "zg-journal-template",
+									"label": "Informed"
+								}
+							],
+							"components": [],
+							"title": "MTC — academic journal typesetting",
+							"body": "A test assignment in late 2025 grew into recurring academic typesetting in 2026. The work required understanding the journal’s templates, editorial practices and substantive requirements. Reviews document deep immersion, improvements to the formatting process and expanded documentation. The independently owned ZG Journal Template is connected to this experience without becoming a client-owned component.",
+							"meta": "Publishing / typesetting"
+						},
+						{
+							"id": "oleg-s-telegram-content",
+							"clientId": "oleg-s",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"content"
+							],
+							"reviewIds": [
+								"oleg-s-telegram-2024-05",
+								"oleg-s-telegram-2024-06"
+							],
+							"links": [],
+							"relations": [],
+							"components": [],
+							"title": "Telegram-channel content for web design/layout",
+							"body": "Recurring content for a Telegram channel about website layout and design in May–June 2024. The client confirmed delivery as agreed and, on the later assignment, completion ahead of schedule.",
+							"meta": "Writing / content"
+						},
+						{
+							"id": "oleksandra-bevz-sports-content",
+							"clientId": "oleksandra-bevz",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"content"
+							],
 							"reviewIds": [
 								"oleksandra-bevz-sports-2024"
 							],
+							"links": [],
+							"relations": [],
+							"components": [],
 							"title": "Sports-prediction texts",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "Sports-prediction texts · 7 June 2024 · Freelancehunt"
+							"body": "Three AI-assisted sports-prediction texts produced under a client brief in June 2024. The assignment covered generation, editing and responsibility for final delivery. Feedback praised responsibility; the case makes no claim of model development or sports-forecasting expertise.",
+							"meta": "Writing / content"
 						},
 						{
-							"id": "project-yuliia-lukianchuk-lindemann-2024",
-							"clientId": "yuliia-lukianchuk",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"yuliia-lukianchuk-lindemann-2024"
+							"id": "psyframework",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"tooling",
+								"research",
+								"websites"
 							],
-							"title": "SEO text about Till Lindemann",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "SEO text about Till Lindemann · 7 June 2024 · Freelancehunt"
-						},
-						{
-							"id": "project-aleksandr-v-writing-2024-06",
-							"clientId": "aleksandr-v",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"aleksandr-v-writing-2024-06"
+							"parentId": "interdead",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Repository",
+									"href": "https://github.com/Zhovten-Games/PsyFramework"
+								},
+								{
+									"label": "Public tool",
+									"href": "https://zhovten-games.github.io/PsyFramework/"
+								}
 							],
-							"title": "Text writing",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "Text writing · 4 June 2024 · Freelancehunt"
-						},
-						{
-							"id": "project-oleg-s-telegram-2024-06",
-							"clientId": "oleg-s",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"oleg-s-telegram-2024-06"
+							"relations": [
+								{
+									"type": "part-of",
+									"targetId": "interdead",
+									"label": "Part of"
+								},
+								{
+									"type": "supports",
+									"targetId": "interdead",
+									"label": "Supports"
+								}
 							],
-							"title": "Telegram channel about website design",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "Telegram channel about website design · 2 June 2024 · Freelancehunt"
+							"components": [],
+							"title": "PsyFramework",
+							"body": "Browser framework for prototyping player-facing psyche mechanics, fear matrices and related experimental systems.",
+							"meta": "Tools / reusable engineering systems · Research / methodology · Websites / web applications"
 						},
 						{
-							"id": "project-aleksandr-v-writing-2024-05",
-							"clientId": "aleksandr-v",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"aleksandr-v-writing-2024-05"
+							"id": "quokka-consulting",
+							"clientId": "adducates-quokka",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"US"
 							],
-							"title": "Text writing",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "Text writing · 26 May 2024 · Freelancehunt"
-						},
-						{
-							"id": "project-oleg-s-telegram-2024-05",
-							"clientId": "oleg-s",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"oleg-s-telegram-2024-05"
+							"workTypes": [
+								"games"
 							],
-							"title": "Telegram channel about website layout",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "Telegram channel about website layout · 8 May 2024 · Freelancehunt"
-						},
-						{
-							"id": "project-aleksandr-v-script-2024",
-							"clientId": "aleksandr-v",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"aleksandr-v-script-2024"
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "QUOKKA",
+									"href": "https://quokka.com/"
+								},
+								{
+									"label": "ADDUCATES",
+									"href": "https://adducates.com/about/"
+								},
+								{
+									"label": "QUOKKA · LinkedIn",
+									"href": "https://www.linkedin.com/search/results/all/?keywords=QUOKKA&origin=RICH_QUERY_SUGGESTION&heroEntityKey=urn%3Ali%3Aorganization%3A105488841&position=0"
+								}
 							],
-							"title": "Script writing",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "Script writing · 8 May 2024 · Freelancehunt"
+							"relations": [],
+							"components": [],
+							"title": "QUOKKA / ADDUCATES — short-term game/product work",
+							"body": "A short-term contract engagement in spring 2026 connected with ADDUCATES and the QUOKKA educational-games brand. The public scope is game/product work in an educational context. NDA applies; the exact role, internal responsibilities and engagement details remain undisclosed.",
+							"meta": "Game / narrative work"
 						},
 						{
-							"id": "project-xitatxen-text-slots-2024",
-							"clientId": "xitatxen-text-slots-2024",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"xitatxen-text-slots-2024"
+							"id": "safe-blind-zones-live-tester",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"tooling",
+								"websites"
 							],
-							"title": "50 text slots",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "50 text slots · 13 March 2024 · Freelancehunt"
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Repository",
+									"href": "https://github.com/Zhovten-Games/safe-blind-zones-live-tester"
+								},
+								{
+									"label": "Public tool",
+									"href": "https://zhovten-games.github.io/safe-blind-zones-live-tester/"
+								}
+							],
+							"relations": [],
+							"components": [],
+							"title": "Safe / Blind Zones — Live Tester",
+							"body": "Browser utility for visualizing safe and blind zones in mobile interfaces with presets, orientation switching, layered previews and PNG export.",
+							"meta": "Tools / reusable engineering systems · Websites / web applications"
 						},
 						{
-							"id": "project-tetiana-s-writing-2024",
-							"clientId": "tetiana-s-writing-2024",
-							"countryCode": "ZZ",
+							"id": "shifton-product-content",
+							"clientId": "shifton",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"US"
+							],
+							"workTypes": [
+								"content"
+							],
+							"reviewIds": [
+								"gary-l-copywriting-2024"
+							],
+							"links": [
+								{
+									"label": "Shifton",
+									"href": "https://shifton.com/"
+								},
+								{
+									"label": "Freelancehunt project",
+									"href": "https://freelancehunt.com/en/project/ischu-anglopishushego-kopiraytera-na-dolgosrok/1444379.html"
+								}
+							],
+							"relations": [],
+							"components": [],
+							"title": "Shifton — English-language product content",
+							"body": "A focused English-language content assignment for the workforce-management product in November 2024. Copy followed the service’s terminology, audience and brief; client feedback praised a professional approach. This is a completed project, without implying a continuing contract.",
+							"meta": "Writing / content"
+						},
+						{
+							"id": "sme-banking-club-copywriting",
+							"clientId": "sme-banking-club",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"content"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "SME Banking Club",
+									"href": "https://smebanking.club/"
+								}
+							],
+							"relations": [],
+							"components": [],
+							"title": "SME Banking Club — analytical copywriting",
+							"body": "Analytical copywriting for a professional banking audience in 2019–2020. English-language mobile-banking research was understood, structured and adapted into editorial content. The documented scope is research-based writing, without claims of banking software development or financial consultancy.",
+							"meta": "Writing / content"
+						},
+						{
+							"id": "tetiana-s-content",
+							"clientId": "tetiana-s",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"content"
+							],
 							"reviewIds": [
 								"tetiana-s-writing-2024"
 							],
+							"links": [],
+							"relations": [],
+							"components": [],
 							"title": "Text writing",
-							"body": "Completed project. The client’s review is included below.",
-							"meta": "Text writing · 4 March 2024 · Freelancehunt"
+							"body": "A writing assignment completed in March 2024. The client confirmed completion and an intention to continue working together; the source does not specify the subject domain.",
+							"meta": "Writing / content"
+						},
+						{
+							"id": "whispered-secrets-13-tying-the-knot",
+							"clientId": "grandma-studios",
+							"originKind": "external-relationship",
+							"countryCodes": [],
+							"workTypes": [
+								"games"
+							],
+							"parentId": "grandma-narrative-game-design",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Whispered Secrets 13: Tying the Knot",
+									"href": "https://www.youtube.com/watch?v=1lVupJG68xc"
+								}
+							],
+							"relations": [
+								{
+									"type": "credited-under",
+									"targetId": "grandma-narrative-game-design",
+									"label": "Credited under"
+								}
+							],
+							"components": [],
+							"title": "Whispered Secrets 13: Tying the Knot",
+							"body": "Released HOPA title credited to Oksana Dubinetska for game / narrative design work at GrandMA Studios.",
+							"meta": "Game / narrative work"
+						},
+						{
+							"id": "xitatxen-text-slots",
+							"clientId": "xitatxen",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"content"
+							],
+							"reviewIds": [
+								"xitatxen-text-slots-2024"
+							],
+							"links": [],
+							"relations": [],
+							"components": [],
+							"title": "50 text slots",
+							"body": "The “50 text slots” assignment was completed in March 2024. The review records speed, efficiency and responsibility. The source does not establish a broader subject domain.",
+							"meta": "Writing / content"
+						},
+						{
+							"id": "yuliia-lukianchuk-content",
+							"clientId": "yuliia-lukianchuk",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"content"
+							],
+							"reviewIds": [
+								"yuliia-lukianchuk-lindemann-2024",
+								"yuliia-lukianchuk-neuer-2024"
+							],
+							"links": [],
+							"relations": [],
+							"components": [],
+							"title": "Yuliia Lukianchuk — SEO/article work",
+							"body": "Two assignments in June and July 2024: an SEO text about Till Lindemann and an article about Manuel Neuer. Repeat work and reviews support quality and compliance with the brief. The reviews also mention minor delivery delays, which remain part of the record.",
+							"meta": "Writing / content"
+						},
+						{
+							"id": "zg-journal-template",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"publishing",
+								"tooling",
+								"automation"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Repository",
+									"href": "https://github.com/Zhovten-Games/zg-journal-template"
+								}
+							],
+							"relations": [
+								{
+									"type": "inspired-by",
+									"targetId": "mtc-journal-typesetting",
+									"label": "Inspired by"
+								},
+								{
+									"type": "supports",
+									"targetId": "canon-horror-series",
+									"label": "Supports"
+								}
+							],
+							"components": [],
+							"title": "ZG Journal Template",
+							"body": "Reproducible Markdown + YAML → Pandoc → XeLaTeX article pipeline with typography control and global/sectioned bibliography modes.",
+							"meta": "Publishing / typesetting · Tools / reusable engineering systems · Automation / delivery pipelines"
 						}
 					]
 				},
@@ -540,13 +1624,71 @@
 		"aboutStory": {
 			"identityHintLabel": "Хто такий IRONCREED?",
 			"practiceMap": {
+				"workTypes": [
+					{
+						"code": "websites",
+						"label": "Вебсайти / вебзастосунки"
+					},
+					{
+						"code": "wordpress",
+						"label": "WordPress / CMS"
+					},
+					{
+						"code": "plugins",
+						"label": "Плагіни"
+					},
+					{
+						"code": "ecommerce",
+						"label": "Електронна комерція"
+					},
+					{
+						"code": "support",
+						"label": "Підтримка / інфраструктура"
+					},
+					{
+						"code": "content",
+						"label": "Тексти / контент"
+					},
+					{
+						"code": "localization",
+						"label": "Локалізація"
+					},
+					{
+						"code": "publishing",
+						"label": "Видавництво / верстка"
+					},
+					{
+						"code": "games",
+						"label": "Ігри / наратив"
+					},
+					{
+						"code": "consulting",
+						"label": "Процеси / консалтинг"
+					},
+					{
+						"code": "research",
+						"label": "Дослідження / методологія"
+					},
+					{
+						"code": "tooling",
+						"label": "Інженерні інструменти"
+					},
+					{
+						"code": "security",
+						"label": "Безпека"
+					},
+					{
+						"code": "automation",
+						"label": "Автоматизація"
+					}
+				],
 				"countries": [
 					{
 						"code": "UA",
 						"geographyId": "804",
 						"labelOffset": [
-							22,
-							-32
+							35,
+							-36
 						],
 						"label": "Україна"
 					},
@@ -554,8 +1696,8 @@
 						"code": "GB",
 						"geographyId": "826",
 						"labelOffset": [
-							-33,
-							-13
+							-34,
+							-25
 						],
 						"label": "Велика Британія"
 					},
@@ -572,14 +1714,37 @@
 						"code": "IL",
 						"geographyId": "376",
 						"labelOffset": [
-							38,
-							15
+							-6,
+							41
 						],
 						"label": "Ізраїль"
 					},
 					{
-						"code": "ZZ",
-						"label": "Країну не вказано"
+						"code": "CN",
+						"geographyId": "156",
+						"labelOffset": [
+							0,
+							0
+						],
+						"label": "Китай"
+					},
+					{
+						"code": "AL",
+						"geographyId": "008",
+						"labelOffset": [
+							-51,
+							10
+						],
+						"label": "Албанія"
+					},
+					{
+						"code": "AE",
+						"geographyId": "784",
+						"labelOffset": [
+							58,
+							32
+						],
+						"label": "ОАЕ"
 					}
 				],
 				"labels": {
@@ -590,8 +1755,16 @@
 					"reviews": "Відгуки",
 					"review": "Відгук клієнта",
 					"unlocatedNote": "У цих відгуках країну замовника не зазначено.",
-					"geographyNote": "Географія вказана за розташуванням організації або проєкту.",
-					"sourceNote": "Посилання на оригінали відгуків надамо на запит."
+					"geographyNote": "Числа — унікальні клієнтські відносини в кожній країні. Одне відношення може охоплювати кілька країн; власні проєкти не збільшують число клієнтів.",
+					"sourceNote": "Посилання на оригінали відгуків надамо на запит.",
+					"projectTypes": "Типи проєктів",
+					"allTypes": "Усі типи",
+					"resetCountry": "Скинути країну",
+					"clientWork": "Клієнтські та контрактні роботи",
+					"ownedWork": "Власні проєкти",
+					"empty": "Немає проєктів за цим поєднанням фільтрів.",
+					"components": "Складові проєкту",
+					"relations": "Пов’язані проєкти"
 				}
 			},
 			"transition": {
@@ -661,226 +1834,1221 @@
 					"kind": "portfolio",
 					"status": "active",
 					"title": "Клієнти, проєкти та відгуки",
-					"summary": "Оберіть країну, щоб побачити виконані роботи та відгуки клієнтів.",
-					"body": "Задокументований досвід команди охоплює понад 200 насичених кейсів: контент, продукт і технічна робота в межах одного рішення. На карті представлені кейси, над якими ми працювали з 2019 року.\n\nДосвід студії у розробленні ігор свідомо не включено до цього переліку ІТ-кейсів. Він представлений на [сторінці проєктів Zhovten Games](https://zhovten.games/projects).",
+					"summary": "Клієнтські роботи, контрактний досвід і власні проєкти — зі зв’язками та відгуками.",
+					"body": "Задокументований досвід команди охоплює понад 200 насичених кейсів: контент, продукт і технічна робота в межах одного рішення. На карті представлені кейси, над якими ми працювали з 2019 року.\n\nБільше про ігри та творчі проєкти студії — на [сторінці проєктів Zhovten Games](https://zhovten.games/projects).\n\nПортфоліо є дозволеною публічною проєкцією закритого реєстру. Частина контрактного досвіду не має артефактів для відкритої публікації; більше про цей досвід — у [LinkedIn](https://www.linkedin.com/showcase/ironcreed/).",
 					"entries": [
 						{
-							"id": "embo-studio",
-							"clientId": "embo-studio",
-							"countryCode": "UA",
-							"reviewIds": [],
-							"title": "EMBO Studio · довгострокова інфраструктурна підтримка",
-							"body": "Співпраця з [EMBO Studio](https://embo-studio.ua/) почалася з підготовки статей і виросла до постійного супроводу внутрішніх проєктів студії. У межах чинного контракту понад три роки підтримуємо інфраструктуру, безпеку, оновлення й коригування систем.\n\n- Паралельне обслуговування 20+ внутрішніх сайтів.\n- Масові процедури на рівні Cloudflare.\n- Допомога з окремими проєктами постійного клієнта.\n- Регулярна реалізація комерційних сервісів; перелік напрямів — на [сторінці послуг EMBO Studio](https://embo-studio.ua/services/).",
-							"meta": "Контракт · 3+ роки · 20+ внутрішніх сайтів"
-						},
-						{
-							"id": "academic-publishing",
-							"clientId": "mtc",
-							"countryCode": "GB",
-							"reviewIds": [
-								"yegor-grebnev-mtc-2026-04",
-								"yegor-grebnev-mtc-2026-01",
-								"yegor-grebnev-mtc-test-2025"
+							"id": "aleksandr-v-content",
+							"clientId": "aleksandr-v",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
 							],
-							"title": "Академічна верстка → власний видавничий пайплайн",
-							"body": "Працювали з версткою академічних журналів, зокрема [Manuscript and Text Cultures](https://mtc-journal.org/index.php/mtc/index). Цей досвід показав цінність відтворюваного процесу й надихнув на створення [ZG Journal Template](https://github.com/Zhovten-Games/zg-journal-template) — відкритого пайплайна, що перетворює Markdown і YAML на типографічно контрольований PDF.",
-							"meta": "MTC · OJS · Pandoc → XeLaTeX"
-						},
-						{
-							"id": "shifton",
-							"clientId": "shifton",
-							"countryCode": "US",
-							"reviewIds": [],
-							"title": "Shifton · продуктовий контент",
-							"body": "Робота з контентом для продукту Shifton, зокрема матеріалами про планування змін і керування командами.",
-							"link": {
-								"label": "Shifton",
-								"href": "https://shifton.com/blog/"
-							}
-						},
-						{
-							"id": "zipy",
-							"clientId": "zipy",
-							"countryCode": "IL",
-							"reviewIds": [],
-							"title": "Zipy · продуктова компанія",
-							"body": "Ізраїльська продуктова компанія серед команд, з якими ми працювали та які згадуємо з теплом."
-						},
-						{
-							"id": "project-illia-humeniuk-linkedin-2026",
-							"clientId": "illia-humeniuk-linkedin-2026",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"illia-humeniuk-linkedin-2026"
+							"workTypes": [
+								"content"
 							],
-							"title": "E-commerce та full-stack розроблення",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "Клієнт · e-commerce та full-stack розроблення · 15 липня 2026 · LinkedIn"
-						},
-						{
-							"id": "project-viktor-stinich-berat-2025",
-							"clientId": "viktor-stinich-berat-2025",
-							"countryCode": "ZZ",
 							"reviewIds": [
-								"viktor-stinich-berat-2025"
+								"aleksandr-v-script-2024",
+								"aleksandr-v-writing-2024-05",
+								"aleksandr-v-writing-2024-06"
 							],
-							"title": "Стаття про Берат",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "Стаття про Берат · 19 січня 2025 · Freelancehunt"
+							"links": [],
+							"relations": [],
+							"components": [],
+							"title": "Олександр В. — сценарій і текстові замовлення",
+							"body": "У травні–червні 2024 року виконано сценарне завдання та кілька текстових замовлень для одного клієнта. Відгуки відзначають швидкість, своєчасне виконання й намір продовжити співпрацю.",
+							"meta": "Тексти / контент"
 						},
 						{
-							"id": "project-gary-l-copywriting-2024",
-							"clientId": "gary-l-copywriting-2024",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"gary-l-copywriting-2024"
+							"id": "andrey-minkiv-gambling-copy",
+							"clientId": "andrey-minkiv",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
 							],
-							"title": "Англомовний копірайтинг",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "Англомовний копірайтинг · 22 листопада 2024 · Freelancehunt"
-						},
-						{
-							"id": "project-bogdan-p-wordpress-review-2024",
-							"clientId": "bogdan-p-wordpress-review-2024",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"bogdan-p-wordpress-review-2024"
+							"workTypes": [
+								"content"
 							],
-							"title": "Огляд плагіна WordPress",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "Огляд плагіна WordPress · 2 серпня 2024 · Freelancehunt"
-						},
-						{
-							"id": "project-yuliia-lukianchuk-neuer-2024",
-							"clientId": "yuliia-lukianchuk",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"yuliia-lukianchuk-neuer-2024"
-							],
-							"title": "Стаття про Мануеля Ноєра",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "Стаття про Мануеля Ноєра · 6 липня 2024 · Freelancehunt"
-						},
-						{
-							"id": "project-andrey-minkiv-gambling-2024",
-							"clientId": "andrey-minkiv-gambling-2024",
-							"countryCode": "ZZ",
 							"reviewIds": [
 								"andrey-minkiv-gambling-2024"
 							],
-							"title": "Копірайтинг для gambling-сайту",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "Копірайтинг для gambling-сайту · 29 червня 2024 · Freelancehunt"
+							"links": [],
+							"relations": [],
+							"components": [],
+							"title": "Копірайтинг для азартного вебсайту",
+							"body": "Окреме замовлення копірайтингу для азартного вебсайту у червні 2024 року. Відгук відзначає швидке та якісне виконання за брифом. Кейс не означає постійної продуктової ролі чи ширшої відповідальності за сервіс.",
+							"meta": "Тексти / контент"
 						},
 						{
-							"id": "project-jane-doe-igaming-2024",
-							"clientId": "jane-doe-igaming-2024",
-							"countryCode": "ZZ",
+							"id": "berat-article",
+							"clientId": "viktor-stinich",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"AL"
+							],
+							"workTypes": [
+								"content"
+							],
+							"reviewIds": [
+								"viktor-stinich-berat-2025"
+							],
+							"links": [],
+							"relations": [],
+							"components": [],
+							"title": "Стаття про Берат",
+							"body": "У січні 2025 року виконано дослідження й написано статтю про Берат для місцевого клієнта. Відгук підтверджує якість тексту; ширші туристичні, SEO чи видавничі послуги цим кейсом не заявляються.",
+							"meta": "Тексти / контент"
+						},
+						{
+							"id": "canon-horror-series",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"research",
+								"publishing",
+								"content"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Публікація Zenodo",
+									"href": "https://zenodo.org/records/21889335"
+								}
+							],
+							"relations": [
+								{
+									"type": "originated-from",
+									"targetId": "interdead",
+									"label": "Походить із досвіду"
+								},
+								{
+									"type": "uses",
+									"targetId": "zg-journal-template",
+									"label": "Використовує"
+								}
+							],
+							"components": [],
+							"title": "Canon Horror Series — мова як інфекція та системи горору",
+							"body": "Пов’язаний дослідницький корпус про мову, сприйняття, інфекцію та системи вразливості у горорі й медіа, опублікований через відтворюваний технічний видавничий процес.",
+							"meta": "Дослідження / методологія · Видавництво / верстка · Тексти / контент"
+						},
+						{
+							"id": "clockwork-magick-game-master",
+							"clientId": "clockwork-magick",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"games"
+							],
+							"reviewIds": [],
+							"links": [],
+							"relations": [],
+							"components": [],
+							"title": "Clockwork Magick — ігрове майстрування",
+							"body": "У 2020–2021 роках робота ігрової майстрині охоплювала повні сценарії, персонажів, локації та NPC. Ігрові системи адаптували до потреб історій, перевіряли у живих сесіях і змінювали за спостереженнями за гравцями.",
+							"meta": "Ігри / наратив"
+						},
+						{
+							"id": "cloudflare-operations",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"security",
+								"automation",
+								"tooling",
+								"research"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Репозиторій",
+									"href": "https://github.com/IRONCREED/cloudflare"
+								},
+								{
+									"label": "Публічна серія",
+									"href": "https://web.zhovten.games/en/series/the-great-and-terrible-cloudflare"
+								}
+							],
+							"relations": [
+								{
+									"type": "originated-from",
+									"targetId": "embo-bogdan",
+									"label": "Походить із досвіду"
+								}
+							],
+							"components": [],
+							"title": "Cloudflare Operations / The Great and Terrible Cloudflare",
+							"body": "Серія IRONCREED зі статтями й кодом для перевірюваних операцій з політиками Cloudflare. Case 001 містить повторно застосовний процес керування WAF Custom Rules на рівні зон, створений із досвіду інциденту з краулерами.",
+							"meta": "Безпека · Автоматизація · Інженерні інструменти · Дослідження / методологія"
+						},
+						{
+							"id": "code-constitution",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"research",
+								"tooling"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Дослідження",
+									"href": "https://doi.org/10.5281/zenodo.21894242"
+								},
+								{
+									"label": "Репозиторій",
+									"href": "https://github.com/FOP-Oksana-Dubinetska/code-constitution"
+								}
+							],
+							"relations": [
+								{
+									"type": "supports",
+									"targetId": "ironcreed-security",
+									"label": "Підтримує"
+								},
+								{
+									"type": "supports",
+									"targetId": "cloudflare-operations",
+									"label": "Підтримує"
+								}
+							],
+							"components": [],
+							"title": "Конституція коду: архітектура ПЗ як нормативний порядок",
+							"body": "Модель управління програмним проєктом, що поєднує архітектуру, повноваження, канонічні джерела, обмеження, процедури змін і докази перевірки у нормативну систему.",
+							"meta": "Дослідження / методологія · Інженерні інструменти"
+						},
+						{
+							"id": "elaris-process-optimization",
+							"clientId": "elaris-studio-games",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"consulting"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Elaris Studio Games",
+									"href": "https://www.linkedin.com/company/elaris-studio-games"
+								}
+							],
+							"relations": [],
+							"components": [],
+							"title": "Elaris Studio Games — оптимізація процесів",
+							"body": "Консалтинг з організації розроблення у 2025–2026 роках: декомпозиція завдань, структура беклогу, етапи, раннє виявлення ризиків і критерії приймання. Результат — зрозуміліший та керованіший процес; непідтверджені кількісні оцінки продуктивності не наводяться.",
+							"meta": "Процеси / консалтинг"
+						},
+						{
+							"id": "embo-bogdan",
+							"clientId": "embo-studio",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"websites",
+								"wordpress",
+								"plugins",
+								"support",
+								"content"
+							],
+							"reviewIds": [
+								"bogdan-p-wordpress-review-2024"
+							],
+							"links": [
+								{
+									"label": "EMBO Studio",
+									"href": "https://embo-studio.ua/"
+								},
+								{
+									"label": "Services",
+									"href": "https://embo-studio.ua/services/"
+								}
+							],
+							"relations": [],
+							"components": [
+								{
+									"id": "embo-ppc-keyword-preprocessor",
+									"title": "Сервіс підготовки ключових слів для PPC",
+									"links": [
+										{
+											"label": "Відкрити",
+											"href": "https://embo-studio.ua/uk/services/servis-dlya-ppc-specialistiv/"
+										}
+									]
+								},
+								{
+									"id": "embo-text-statistics",
+									"title": "Статистика тексту та SEO",
+									"links": [
+										{
+											"label": "Відкрити",
+											"href": "https://embo-studio.ua/ru/services/pidraxunok-simvoliv/"
+										}
+									]
+								},
+								{
+									"id": "embo-duplicate-cleaner",
+									"title": "Очищення дублікатів тексту й ключових слів",
+									"links": [
+										{
+											"label": "Відкрити",
+											"href": "https://embo-studio.ua/ru/services/ochishhuvach-dublikativ-tekstu/"
+										}
+									]
+								}
+							],
+							"title": "EMBO Studio — WordPress, інфраструктура та підтримка",
+							"body": "Співпраця почалася 2 серпня 2024 року зі статті про WordPress-плагін і розвинулася у тривалу роботу з вебсистемами. Обсяг охоплює WordPress, власні інструменти й плагіни, інфраструктуру, безпеку, обслуговування та технічний контент. Окремі публічні сервіси наведено як складові цієї співпраці.",
+							"meta": "Вебсайти / вебзастосунки · WordPress / CMS · Плагіни · Підтримка / інфраструктура · Тексти / контент"
+						},
+						{
+							"id": "glenbotal",
+							"clientId": "zipy-holdings",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"GB",
+								"IL"
+							],
+							"workTypes": [
+								"websites",
+								"wordpress",
+								"ecommerce",
+								"localization",
+								"support"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Glenbotal",
+									"href": "https://glenbotal.co.uk/"
+								}
+							],
+							"relations": [],
+							"components": [],
+							"title": "Glenbotal — платформа підписки на преміальні напої",
+							"body": "У 2019–2021 роках робота під ZIPY HOLDINGS LTD. охоплювала платформу підписки на преміальні напої для британського ринку. WordPress/WooCommerce поєднував власну логіку підписок, фронтенд за Figma, локалізацію, SEO, оптимізацію швидкодії, посилення безпеки та підтримку продакшену.",
+							"meta": "Вебсайти / вебзастосунки · WordPress / CMS · Електронна комерція · Локалізація · Підтримка / інфраструктура"
+						},
+						{
+							"id": "grandma-narrative-game-design",
+							"clientId": "grandma-studios",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"games"
+							],
+							"reviewIds": [],
+							"links": [],
+							"relations": [
+								{
+									"type": "has-component",
+									"targetId": "whispered-secrets-13-tying-the-knot",
+									"label": "Містить"
+								},
+								{
+									"type": "has-component",
+									"targetId": "mcf-25-the-dalimar-legacy",
+									"label": "Містить"
+								},
+								{
+									"type": "has-component",
+									"targetId": "mcf-26-a-crime-in-reflection",
+									"label": "Містить"
+								},
+								{
+									"type": "has-component",
+									"targetId": "mcf-27-the-riddle-of-mrs-bishop",
+									"label": "Містить"
+								},
+								{
+									"type": "has-component",
+									"targetId": "mcf-28-house-that-love-built",
+									"label": "Містить"
+								}
+							],
+							"components": [],
+							"title": "GrandMA Studios — ігровий та наративний дизайн",
+							"body": "У 2021–2025 роках робота над комерційними HOPA-іграми охоплювала наративний та ігровий дизайн: сценарії, діалоги, квести, розгалуження, інтерактивні сцени й документацію для виробництва. Рішення узгоджували з художниками, розробниками та QA. Нижче — п’ять випущених ігор; публічний опис обмежено підтвердженими фактами з урахуванням NDA.",
+							"meta": "Ігри / наратив"
+						},
+						{
+							"id": "hostiq-technical-support",
+							"clientId": "hostiq-zone3000",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"AE",
+								"UA"
+							],
+							"workTypes": [
+								"wordpress",
+								"support"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "HOSTiQ",
+									"href": "https://hostiq.ua/ukr/"
+								},
+								{
+									"label": "ZONE3000",
+									"href": "https://zone3000.com/"
+								}
+							],
+							"relations": [],
+							"components": [],
+							"title": "HOSTiQ / ZONE3000 — технічна підтримка вебсистем",
+							"body": "З 2026 року — технічна підтримка HOSTiQ у контрактному контексті ZONE3000. Відтворення проблем, діагностика, WordPress, конфігурація сайтів, хостинг, DNS, cPanel і Git/GitHub поєднуються з поясненням висновків та документуванням рішень. Опис стосується публічних технічних обов’язків.",
+							"meta": "WordPress / CMS · Підтримка / інфраструктура"
+						},
+						{
+							"id": "illia-humeniuk-ecommerce",
+							"clientId": "illia-humeniuk",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"websites",
+								"wordpress"
+							],
+							"reviewIds": [
+								"illia-humeniuk-linkedin-2026"
+							],
+							"links": [
+								{
+									"label": "Helpsinistre",
+									"href": "https://helpsinistre.humeniuk.digital/login/"
+								},
+								{
+									"label": "Project repository",
+									"href": "https://github.com/pan-canon/helpsinistre"
+								},
+								{
+									"label": "Illia Humeniuk",
+									"href": "https://ua.linkedin.com/in/illia-humeniuk/en"
+								}
+							],
+							"relations": [],
+							"components": [],
+							"title": "Helpsinistre — страховий WordPress-портал і вебсайт",
+							"body": "Розроблення WordPress-порталу страхового стартапу Helpsinistre разом із виправленнями публічного сайту та лендингу. Робота охоплювала основу акаунтів і авторизації, клієнтські маршрути, поліси, основу страхових звернень, документи й доступ, операційні сповіщення та адаптивний фронтенд. Клієнт відзначив аналіз, планування й регулярні повідомлення про прогрес. Швеція є ринковим і регуляторним контекстом, без заяв про юридичну сертифікацію та без додаткового клієнта на карті.",
+							"meta": "Вебсайти / вебзастосунки · WordPress / CMS"
+						},
+						{
+							"id": "interdead",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"games",
+								"research"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Проєкти Zhovten Games",
+									"href": "https://zhovten.games/projects"
+								},
+								{
+									"label": "Публічний зріз",
+									"href": "https://zhovten-games.itch.io/interdead"
+								}
+							],
+							"relations": [
+								{
+									"type": "has-component",
+									"targetId": "interdead-site",
+									"label": "Містить"
+								},
+								{
+									"type": "has-component",
+									"targetId": "interdead-reference-library",
+									"label": "Містить"
+								},
+								{
+									"type": "has-component",
+									"targetId": "interdead-proto",
+									"label": "Містить"
+								},
+								{
+									"type": "has-component",
+									"targetId": "interdead-core",
+									"label": "Містить"
+								},
+								{
+									"type": "has-component",
+									"targetId": "psyframework",
+									"label": "Містить"
+								}
+							],
+							"components": [],
+							"title": "InterDead — наративний горор-проєкт",
+							"body": "Наративний горор-проєкт як пов’язана система гри, вебсередовища, документації, досліджень та інфраструктури.",
+							"meta": "Ігри / наратив · Дослідження / методологія"
+						},
+						{
+							"id": "interdead-core",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"tooling",
+								"websites"
+							],
+							"parentId": "interdead",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Репозиторій",
+									"href": "https://github.com/Zhovten-Games/InterDeadCore"
+								}
+							],
+							"relations": [
+								{
+									"type": "part-of",
+									"targetId": "interdead",
+									"label": "Складова"
+								},
+								{
+									"type": "supports",
+									"targetId": "interdead-site",
+									"label": "Підтримує"
+								}
+							],
+							"components": [],
+							"title": "InterDeadCore",
+							"body": "Спільні TypeScript-пакети ідентичності, EFBD і вебдомену для публічного вебсередовища InterDead. Окремі від новішого ігрового ядра на C++.",
+							"meta": "Інженерні інструменти · Вебсайти / вебзастосунки"
+						},
+						{
+							"id": "interdead-proto",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"games",
+								"tooling",
+								"websites"
+							],
+							"parentId": "interdead",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Репозиторій",
+									"href": "https://github.com/Zhovten-Games/InterDeadProto"
+								}
+							],
+							"relations": [
+								{
+									"type": "part-of",
+									"targetId": "interdead",
+									"label": "Складова"
+								}
+							],
+							"components": [],
+							"title": "InterDeadProto / NOIR",
+							"body": "Наративний прототип інтерфейсу InterDead і внутрішньоігрового пристрою NOIR.",
+							"meta": "Ігри / наратив · Інженерні інструменти · Вебсайти / вебзастосунки"
+						},
+						{
+							"id": "interdead-reference-library",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"research",
+								"publishing"
+							],
+							"parentId": "interdead",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Репозиторій",
+									"href": "https://github.com/Zhovten-Games/InterDeadReferenceLibrary"
+								}
+							],
+							"relations": [
+								{
+									"type": "part-of",
+									"targetId": "interdead",
+									"label": "Складова"
+								}
+							],
+							"components": [],
+							"title": "InterDead Reference Library",
+							"body": "Публічна бібліотека документації InterDead, стандартів, джерел і дослідницьких нотаток.",
+							"meta": "Дослідження / методологія · Видавництво / верстка"
+						},
+						{
+							"id": "interdead-site",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"websites",
+								"tooling",
+								"support"
+							],
+							"parentId": "interdead",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Вебсайт",
+									"href": "https://interdead.phantom-draft.com/"
+								},
+								{
+									"label": "InterDeadIT repository",
+									"href": "https://github.com/Zhovten-Games/InterDeadIT"
+								}
+							],
+							"relations": [
+								{
+									"type": "public-surface-of",
+									"targetId": "interdead",
+									"label": "Публічне представлення"
+								},
+								{
+									"type": "part-of",
+									"targetId": "interdead",
+									"label": "Складова"
+								},
+								{
+									"type": "uses",
+									"targetId": "interdead-core",
+									"label": "Використовує"
+								},
+								{
+									"type": "integrates-with",
+									"targetId": "interdead-proto",
+									"label": "Інтегрується з"
+								}
+							],
+							"components": [
+								{
+									"id": "interdead-discord-identity",
+									"title": "Ідентичність Discord / OAuth",
+									"links": [
+										{
+											"label": "Відкрити",
+											"href": "https://github.com/Zhovten-Games/InterDeadCore/tree/main/identity-core"
+										}
+									]
+								},
+								{
+									"id": "interdead-auth-worker",
+									"title": "Cloudflare Worker авторизації / EFBD",
+									"links": [
+										{
+											"label": "Відкрити",
+											"href": "https://github.com/Zhovten-Games/InterDeadIT/tree/main/workers/interdead-auth"
+										}
+									]
+								},
+								{
+									"id": "interdead-authenticated-polls",
+									"title": "Авторизовані опитування / мініігри",
+									"links": [
+										{
+											"label": "Відкрити",
+											"href": "https://github.com/Zhovten-Games/InterDeadIT/tree/main/themes/InterDead/assets/mini-games/efbd-poll"
+										}
+									]
+								},
+								{
+									"id": "interdead-proto-integration",
+									"title": "Інтеграція ігрового застосунку",
+									"links": [
+										{
+											"label": "Відкрити",
+											"href": "https://github.com/Zhovten-Games/InterDeadProto"
+										}
+									]
+								}
+							],
+							"title": "InterDead — публічний вебсайт",
+							"body": "Публічний вебсайт InterDead на Hugo: Discord OAuth, авторизовані опитування та мініігри, профілі у Cloudflare Worker + D1, захист повторних операцій і очищення акаунтів та інтеграційні точки ширшої мережі застосунків.",
+							"meta": "Вебсайти / вебзастосунки · Інженерні інструменти · Підтримка / інфраструктура"
+						},
+						{
+							"id": "ironcreed-request-log",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"wordpress",
+								"plugins",
+								"security",
+								"tooling"
+							],
+							"parentId": "ironcreed-security",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "WordPress.org",
+									"href": "https://wordpress.org/plugins/ironcreed-request-log/"
+								},
+								{
+									"label": "Вихідний код",
+									"href": "https://github.com/IRONCREED/SECURITY/tree/main/plugins/ironcreed-request-log"
+								}
+							],
+							"relations": [
+								{
+									"type": "part-of",
+									"targetId": "ironcreed-security",
+									"label": "Складова"
+								}
+							],
+							"components": [],
+							"title": "IRONCREED Request Log",
+							"body": "Відкритий WordPress-плагін спостереження за запитами. Відокремлює події WordPress Runtime від необов’язкового імпорту nginx-журналів Hosting Ukraine, з обмеженнями зберігання та засобами приватності.",
+							"meta": "WordPress / CMS · Плагіни · Безпека · Інженерні інструменти"
+						},
+						{
+							"id": "ironcreed-security",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"security",
+								"wordpress",
+								"tooling"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Репозиторій",
+									"href": "https://github.com/IRONCREED/SECURITY"
+								}
+							],
+							"relations": [
+								{
+									"type": "has-component",
+									"targetId": "ironcreed-request-log",
+									"label": "Містить"
+								},
+								{
+									"type": "uses",
+									"targetId": "code-constitution",
+									"label": "Використовує"
+								}
+							],
+							"components": [],
+							"title": "IRONCREED Security",
+							"body": "Монорепозиторій інструментів адміністрування й безпеки WordPress із нормативним управлінням, незалежним установленням і тестуванням пакетів плагінів та інструментами випуску.",
+							"meta": "Безпека · WordPress / CMS · Інженерні інструменти"
+						},
+						{
+							"id": "jane-doe-igaming-copy",
+							"clientId": "jane-doe-igaming",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"content"
+							],
 							"reviewIds": [
 								"jane-doe-igaming-2024"
 							],
-							"title": "SEO-стаття для i-gaming",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "SEO-стаття для i-gaming · 7 червня 2024 · Freelancehunt"
+							"links": [],
+							"relations": [],
+							"components": [],
+							"title": "SEO-стаття для онлайн-ігор",
+							"body": "SEO-стаття для клієнта у сфері онлайн-ігор, завершена у червні 2024 року. За оцінкою клієнта, робота відповідала технічному завданню на мінімально прийнятному рівні. Це історичний запис виконаної роботи, а не свідчення виняткової якості.",
+							"meta": "Тексти / контент"
 						},
 						{
-							"id": "project-oleksandra-bevz-sports-2024",
-							"clientId": "oleksandra-bevz-sports-2024",
-							"countryCode": "ZZ",
+							"id": "literate-programming",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"research",
+								"publishing",
+								"tooling"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Дослідження",
+									"href": "https://doi.org/10.5281/zenodo.20608558"
+								},
+								{
+									"label": "Репозиторій",
+									"href": "https://github.com/Zhovten-Games/literate-programming"
+								}
+							],
+							"relations": [
+								{
+									"type": "originated-from",
+									"targetId": "interdead",
+									"label": "Походить із досвіду"
+								},
+								{
+									"type": "informed",
+									"targetId": "interdead",
+									"label": "Вплинуло на"
+								}
+							],
+							"components": [],
+							"title": "Літературне програмування: Дональд Кнут, WEB і сучасні процеси",
+							"body": "Методологічний огляд літературного програмування Дональда Кнута з відтворюваними супровідними реалізаціями та контрольованим граничним випадком роботи за участю LLM.",
+							"meta": "Дослідження / методологія · Видавництво / верстка · Інженерні інструменти"
+						},
+						{
+							"id": "mcf-25-the-dalimar-legacy",
+							"clientId": "grandma-studios",
+							"originKind": "external-relationship",
+							"countryCodes": [],
+							"workTypes": [
+								"games"
+							],
+							"parentId": "grandma-narrative-game-design",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Mystery Case Files 25: The Dalimar Legacy",
+									"href": "https://www.youtube.com/watch?v=0PtNx_loBHw"
+								}
+							],
+							"relations": [
+								{
+									"type": "credited-under",
+									"targetId": "grandma-narrative-game-design",
+									"label": "У межах"
+								}
+							],
+							"components": [],
+							"title": "Mystery Case Files 25: The Dalimar Legacy",
+							"body": "Публічно випущена гра з підтвердженим внеском у межах роботи GrandMA Studios.",
+							"meta": "Ігри / наратив"
+						},
+						{
+							"id": "mcf-26-a-crime-in-reflection",
+							"clientId": "grandma-studios",
+							"originKind": "external-relationship",
+							"countryCodes": [],
+							"workTypes": [
+								"games"
+							],
+							"parentId": "grandma-narrative-game-design",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Mystery Case Files 26: A Crime in Reflection",
+									"href": "https://www.youtube.com/watch?v=8mZmJsagw-0"
+								}
+							],
+							"relations": [
+								{
+									"type": "credited-under",
+									"targetId": "grandma-narrative-game-design",
+									"label": "У межах"
+								}
+							],
+							"components": [],
+							"title": "Mystery Case Files 26: A Crime in Reflection",
+							"body": "Публічно випущена гра з підтвердженим внеском у межах роботи GrandMA Studios.",
+							"meta": "Ігри / наратив"
+						},
+						{
+							"id": "mcf-27-the-riddle-of-mrs-bishop",
+							"clientId": "grandma-studios",
+							"originKind": "external-relationship",
+							"countryCodes": [],
+							"workTypes": [
+								"games"
+							],
+							"parentId": "grandma-narrative-game-design",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Mystery Case Files 27: The Riddle of Mrs. Bishop",
+									"href": "https://www.youtube.com/watch?v=krGvGm9o7jE"
+								}
+							],
+							"relations": [
+								{
+									"type": "credited-under",
+									"targetId": "grandma-narrative-game-design",
+									"label": "У межах"
+								}
+							],
+							"components": [],
+							"title": "Mystery Case Files 27: The Riddle of Mrs. Bishop",
+							"body": "Публічно випущена гра з підтвердженим внеском у межах роботи GrandMA Studios.",
+							"meta": "Ігри / наратив"
+						},
+						{
+							"id": "mcf-28-house-that-love-built",
+							"clientId": "grandma-studios",
+							"originKind": "external-relationship",
+							"countryCodes": [],
+							"workTypes": [
+								"games"
+							],
+							"parentId": "grandma-narrative-game-design",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Mystery Case Files 28: House That Love Built",
+									"href": "https://www.youtube.com/watch?v=vCQ_1Rlirm8"
+								}
+							],
+							"relations": [
+								{
+									"type": "credited-under",
+									"targetId": "grandma-narrative-game-design",
+									"label": "У межах"
+								}
+							],
+							"components": [],
+							"title": "Mystery Case Files 28: House That Love Built",
+							"body": "Публічно випущена гра з підтвердженим внеском у межах роботи GrandMA Studios.",
+							"meta": "Ігри / наратив"
+						},
+						{
+							"id": "mtc-journal-typesetting",
+							"clientId": "mtc",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"CN",
+								"GB"
+							],
+							"workTypes": [
+								"publishing"
+							],
+							"reviewIds": [
+								"yegor-grebnev-mtc-test-2025",
+								"yegor-grebnev-mtc-2026-01",
+								"yegor-grebnev-mtc-2026-04"
+							],
+							"links": [
+								{
+									"label": "MTC journal",
+									"href": "https://mtc-journal.org/index.php/mtc/index"
+								}
+							],
+							"relations": [
+								{
+									"type": "informed",
+									"targetId": "zg-journal-template",
+									"label": "Вплинуло на"
+								}
+							],
+							"components": [],
+							"title": "Manuscript and Text Cultures — верстка наукового журналу",
+							"body": "Тестове завдання наприкінці 2025 року переросло в повторювану роботу з верстки академічних статей у 2026 році. Потрібно було опанувати шаблони, редакційні практики та змістові вимоги журналу. Відгуки підтверджують глибоке занурення, оптимізацію процесу оформлення й доповнення документації; власний ZG Journal Template пов’язаний із цим досвідом, але має окрему належність.",
+							"meta": "Видавництво / верстка"
+						},
+						{
+							"id": "oleg-s-telegram-content",
+							"clientId": "oleg-s",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"content"
+							],
+							"reviewIds": [
+								"oleg-s-telegram-2024-05",
+								"oleg-s-telegram-2024-06"
+							],
+							"links": [],
+							"relations": [],
+							"components": [],
+							"title": "Олег С. — контент для Telegram",
+							"body": "Повторювана підготовка контенту для Telegram-каналу про верстку та дизайн сайтів у травні–червні 2024 року. Клієнт підтвердив виконання домовленостей і, в наступному замовленні, дострокову здачу.",
+							"meta": "Тексти / контент"
+						},
+						{
+							"id": "oleksandra-bevz-sports-content",
+							"clientId": "oleksandra-bevz",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"content"
+							],
 							"reviewIds": [
 								"oleksandra-bevz-sports-2024"
 							],
+							"links": [],
+							"relations": [],
+							"components": [],
 							"title": "Тексти спортивних прогнозів",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "Тексти спортивних прогнозів · 7 червня 2024 · Freelancehunt"
+							"body": "Три тексти спортивних прогнозів із використанням ШІ за клієнтським брифом у червні 2024 року. Робота охоплювала генерацію, редагування та відповідальність за остаточний матеріал. Відгук відзначає відповідальність; кейс не заявляє розроблення моделей або експертизи спортивного прогнозування.",
+							"meta": "Тексти / контент"
 						},
 						{
-							"id": "project-yuliia-lukianchuk-lindemann-2024",
-							"clientId": "yuliia-lukianchuk",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"yuliia-lukianchuk-lindemann-2024"
+							"id": "psyframework",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"tooling",
+								"research",
+								"websites"
 							],
-							"title": "SEO-текст про Тілля Ліндеманна",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "SEO-текст про Тілля Ліндеманна · 7 червня 2024 · Freelancehunt"
-						},
-						{
-							"id": "project-aleksandr-v-writing-2024-06",
-							"clientId": "aleksandr-v",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"aleksandr-v-writing-2024-06"
+							"parentId": "interdead",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Репозиторій",
+									"href": "https://github.com/Zhovten-Games/PsyFramework"
+								},
+								{
+									"label": "Публічний інструмент",
+									"href": "https://zhovten-games.github.io/PsyFramework/"
+								}
 							],
-							"title": "Написання тексту",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "Написання тексту · 4 червня 2024 · Freelancehunt"
-						},
-						{
-							"id": "project-oleg-s-telegram-2024-06",
-							"clientId": "oleg-s",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"oleg-s-telegram-2024-06"
+							"relations": [
+								{
+									"type": "part-of",
+									"targetId": "interdead",
+									"label": "Складова"
+								},
+								{
+									"type": "supports",
+									"targetId": "interdead",
+									"label": "Підтримує"
+								}
 							],
-							"title": "Telegram-канал про вебдизайн",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "Telegram-канал про вебдизайн · 2 червня 2024 · Freelancehunt"
+							"components": [],
+							"title": "PsyFramework",
+							"body": "Браузерний фреймворк для прототипування ігрових психічних механік, матриць страху та суміжних експериментальних систем.",
+							"meta": "Інженерні інструменти · Дослідження / методологія · Вебсайти / вебзастосунки"
 						},
 						{
-							"id": "project-aleksandr-v-writing-2024-05",
-							"clientId": "aleksandr-v",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"aleksandr-v-writing-2024-05"
+							"id": "quokka-consulting",
+							"clientId": "adducates-quokka",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"US"
 							],
-							"title": "Написання тексту",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "Написання тексту · 26 травня 2024 · Freelancehunt"
-						},
-						{
-							"id": "project-oleg-s-telegram-2024-05",
-							"clientId": "oleg-s",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"oleg-s-telegram-2024-05"
+							"workTypes": [
+								"games"
 							],
-							"title": "Telegram-канал про верстку сайтів",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "Telegram-канал про верстку сайтів · 8 травня 2024 · Freelancehunt"
-						},
-						{
-							"id": "project-aleksandr-v-script-2024",
-							"clientId": "aleksandr-v",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"aleksandr-v-script-2024"
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "QUOKKA",
+									"href": "https://quokka.com/"
+								},
+								{
+									"label": "ADDUCATES",
+									"href": "https://adducates.com/about/"
+								},
+								{
+									"label": "QUOKKA · LinkedIn",
+									"href": "https://www.linkedin.com/search/results/all/?keywords=QUOKKA&origin=RICH_QUERY_SUGGESTION&heroEntityKey=urn%3Ali%3Aorganization%3A105488841&position=0"
+								}
 							],
-							"title": "Написання сценарію",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "Написання сценарію · 8 травня 2024 · Freelancehunt"
+							"relations": [],
+							"components": [],
+							"title": "QUOKKA / ADDUCATES — контрактна ігрова та продуктова робота",
+							"body": "Короткострокова контрактна робота навесні 2026 року з ADDUCATES та брендом освітніх ігор QUOKKA. Публічний обсяг — ігрова та продуктова робота в освітньому контексті. Діє NDA; точну роль, внутрішні обов’язки та деталі співпраці не розкриваємо.",
+							"meta": "Ігри / наратив"
 						},
 						{
-							"id": "project-xitatxen-text-slots-2024",
-							"clientId": "xitatxen-text-slots-2024",
-							"countryCode": "ZZ",
-							"reviewIds": [
-								"xitatxen-text-slots-2024"
+							"id": "safe-blind-zones-live-tester",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"tooling",
+								"websites"
 							],
-							"title": "50 текстових слотів",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "50 текстових слотів · 13 березня 2024 · Freelancehunt"
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Репозиторій",
+									"href": "https://github.com/Zhovten-Games/safe-blind-zones-live-tester"
+								},
+								{
+									"label": "Публічний інструмент",
+									"href": "https://zhovten-games.github.io/safe-blind-zones-live-tester/"
+								}
+							],
+							"relations": [],
+							"components": [],
+							"title": "Safe / Blind Zones — Live Tester",
+							"body": "Браузерна утиліта для візуалізації безпечних і сліпих зон мобільних інтерфейсів: пресети, зміна орієнтації, пошаровий перегляд та експорт PNG.",
+							"meta": "Інженерні інструменти · Вебсайти / вебзастосунки"
 						},
 						{
-							"id": "project-tetiana-s-writing-2024",
-							"clientId": "tetiana-s-writing-2024",
-							"countryCode": "ZZ",
+							"id": "shifton-product-content",
+							"clientId": "shifton",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"US"
+							],
+							"workTypes": [
+								"content"
+							],
+							"reviewIds": [
+								"gary-l-copywriting-2024"
+							],
+							"links": [
+								{
+									"label": "Shifton",
+									"href": "https://shifton.com/"
+								},
+								{
+									"label": "Freelancehunt project",
+									"href": "https://freelancehunt.com/en/project/ischu-anglopishushego-kopiraytera-na-dolgosrok/1444379.html"
+								}
+							],
+							"relations": [],
+							"components": [],
+							"title": "Shifton — англомовний продуктовий контент",
+							"body": "Окреме замовлення англомовного контенту для продукту керування робочими змінами у листопаді 2024 року. Текст узгоджували з термінологією сервісу, аудиторією та брифом; клієнт відзначив професійний підхід. Це завершене замовлення, без припущення про подальший контракт.",
+							"meta": "Тексти / контент"
+						},
+						{
+							"id": "sme-banking-club-copywriting",
+							"clientId": "sme-banking-club",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"content"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "SME Banking Club",
+									"href": "https://smebanking.club/"
+								}
+							],
+							"relations": [],
+							"components": [],
+							"title": "SME Banking Club — аналітичний копірайтинг",
+							"body": "Аналітичний копірайтинг для професійної банківської аудиторії у 2019–2020 роках. Англомовні дослідження мобільного банкінгу опрацьовували, структурували й адаптували до редакційних матеріалів. Обсяг роботи — дослідницьке письмо та контент, без заяв про розроблення банківського ПЗ чи фінансовий консалтинг.",
+							"meta": "Тексти / контент"
+						},
+						{
+							"id": "tetiana-s-content",
+							"clientId": "tetiana-s",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"content"
+							],
 							"reviewIds": [
 								"tetiana-s-writing-2024"
 							],
-							"title": "Написання тексту",
-							"body": "Виконаний проєкт. Відгук замовника наведено нижче.",
-							"meta": "Написання тексту · 4 березня 2024 · Freelancehunt"
+							"links": [],
+							"relations": [],
+							"components": [],
+							"title": "Тетяна С. — текстове замовлення",
+							"body": "Текстове замовлення, завершене у березні 2024 року. Клієнтка підтвердила виконання та намір продовжити роботу; предметна область у джерелі не уточнена.",
+							"meta": "Тексти / контент"
+						},
+						{
+							"id": "whispered-secrets-13-tying-the-knot",
+							"clientId": "grandma-studios",
+							"originKind": "external-relationship",
+							"countryCodes": [],
+							"workTypes": [
+								"games"
+							],
+							"parentId": "grandma-narrative-game-design",
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Whispered Secrets 13: Tying the Knot",
+									"href": "https://www.youtube.com/watch?v=1lVupJG68xc"
+								}
+							],
+							"relations": [
+								{
+									"type": "credited-under",
+									"targetId": "grandma-narrative-game-design",
+									"label": "У межах"
+								}
+							],
+							"components": [],
+							"title": "Whispered Secrets 13: Tying the Knot",
+							"body": "Публічно випущена гра з підтвердженим внеском у межах роботи GrandMA Studios.",
+							"meta": "Ігри / наратив"
+						},
+						{
+							"id": "xitatxen-text-slots",
+							"clientId": "xitatxen",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"content"
+							],
+							"reviewIds": [
+								"xitatxen-text-slots-2024"
+							],
+							"links": [],
+							"relations": [],
+							"components": [],
+							"title": "50 текстових слотів",
+							"body": "Замовлення «50 текстових слотів» виконано у березні 2024 року. Відгук відзначає швидкість, ефективність та відповідальність. Джерело не визначає ширшу предметну область, тому її не припускаємо.",
+							"meta": "Тексти / контент"
+						},
+						{
+							"id": "yuliia-lukianchuk-content",
+							"clientId": "yuliia-lukianchuk",
+							"originKind": "external-relationship",
+							"countryCodes": [
+								"UA"
+							],
+							"workTypes": [
+								"content"
+							],
+							"reviewIds": [
+								"yuliia-lukianchuk-lindemann-2024",
+								"yuliia-lukianchuk-neuer-2024"
+							],
+							"links": [],
+							"relations": [],
+							"components": [],
+							"title": "Юлія Лук’янчук — SEO та статті",
+							"body": "Два замовлення у червні та липні 2024 року: SEO-текст про Тілля Ліндеманна та стаття про Мануеля Ноєра. Повторне звернення й відгуки підтверджують якість та дотримання брифу. У відгуках також згадано невеликі затримки — цю деталь збережено.",
+							"meta": "Тексти / контент"
+						},
+						{
+							"id": "zg-journal-template",
+							"originKind": "owned",
+							"countryCodes": [],
+							"workTypes": [
+								"publishing",
+								"tooling",
+								"automation"
+							],
+							"reviewIds": [],
+							"links": [
+								{
+									"label": "Репозиторій",
+									"href": "https://github.com/Zhovten-Games/zg-journal-template"
+								}
+							],
+							"relations": [
+								{
+									"type": "inspired-by",
+									"targetId": "mtc-journal-typesetting",
+									"label": "Натхнено досвідом"
+								},
+								{
+									"type": "supports",
+									"targetId": "canon-horror-series",
+									"label": "Підтримує"
+								}
+							],
+							"components": [],
+							"title": "ZG Journal Template",
+							"body": "Відтворюваний видавничий процес Markdown + YAML → Pandoc → XeLaTeX із керуванням типографікою та загальною або посекційною бібліографією.",
+							"meta": "Видавництво / верстка · Інженерні інструменти · Автоматизація"
 						}
 					]
 				},

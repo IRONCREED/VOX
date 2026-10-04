@@ -69,10 +69,21 @@ test('the public release exposes the brand, service story, portfolio, and profil
 	const about = pages.find((entry) => entry.id === 'page.about.en');
 	assert.equal(about.aboutStory.sections.length, 8);
 	assert.equal(about.aboutStory.sections.find((entry) => entry.id === 'projects').status, 'active');
+	const projects = about.aboutStory.sections.find((entry) => entry.id === 'projects').entries;
+	assert.equal(projects.length, 39);
 	assert.equal(
-		about.aboutStory.sections.find((entry) => entry.id === 'projects').entries.length,
+		new Set(projects.flatMap((entry) => (entry.clientId ? [entry.clientId] : []))).size,
 		20,
 	);
+	assert.equal(about.aboutStory.practiceMap.countries.length, 7);
+	assert.ok(
+		projects
+			.filter((entry) => entry.originKind === 'owned')
+			.every((entry) => entry.countryCodes.length === 0),
+	);
+	assert.ok(projects.every((entry) => !entry.countryCodes.includes('RU')));
+	assert.ok(projects.some((entry) => entry.id === 'quokka-consulting'));
+	assert.ok(!projects.some((entry) => entry.id === 'rocketslides-scriptwriting'));
 	assert.equal(about.aboutStory.sections.find((entry) => entry.id === 'people').entries.length, 2);
 	const testimonials = about.aboutStory.sections.find((entry) => entry.id === 'testimonials');
 	assert.equal(testimonials.entries.length, 19);

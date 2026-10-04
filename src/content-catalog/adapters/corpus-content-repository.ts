@@ -590,6 +590,16 @@ export function getPublicEntityIndex(locale: Locale): PublicEntityIndexEntry[] {
 
 			return {
 				...entity,
+				...(entity.kind === 'question'
+					? {
+							answer: questions.find(
+								(question) =>
+									question.id === entity.id &&
+									question.status === 'published' &&
+									question.visibility === 'public',
+							)?.answer[locale],
+						}
+					: {}),
 				href: entity.kind === 'question' ? getQuestionHref(locale, entity.id) : entity.href,
 				relatedEntries,
 			};

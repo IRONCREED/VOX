@@ -280,6 +280,7 @@ export interface PublicEntityIndexEntry {
 	locale: Locale;
 	label: string;
 	summary: string;
+	answer?: string;
 	status: string;
 	materialIds: string[];
 	pageIds?: string[];
@@ -303,7 +304,13 @@ export interface AboutStoryLink {
 
 export interface AboutStoryEntry {
 	clientId?: string;
-	countryCode?: string;
+	countryCodes?: string[];
+	originKind?: 'external-relationship' | 'owned';
+	workTypes?: string[];
+	parentId?: string;
+	links?: AboutStoryLink[];
+	relations?: { type: string; targetId: string; label: string }[];
+	components?: { id: string; title: string; links: AboutStoryLink[] }[];
 	reviewIds?: string[];
 	id: string;
 	title: string;
@@ -343,9 +350,21 @@ export interface PracticeMapCopy {
 	unlocatedNote: string;
 	geographyNote: string;
 	sourceNote: string;
+	projectTypes: string;
+	allTypes: string;
+	resetCountry: string;
+	clientWork: string;
+	ownedWork: string;
+	empty: string;
+	components: string;
+	relations: string;
 }
 export interface LocalizedAboutStory {
-	practiceMap?: { countries: PracticeCountry[]; labels: PracticeMapCopy };
+	practiceMap?: {
+		countries: PracticeCountry[];
+		workTypes: { code: string; label: string }[];
+		labels: PracticeMapCopy;
+	};
 	identityHintLabel: string;
 	transition: {
 		eyebrow: string;

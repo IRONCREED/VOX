@@ -333,27 +333,27 @@ test('the build, policies, and four localized search maps are public', async () 
 	assert.doesNotMatch(aboutHtml, /about-cycle__steps/);
 	assert.match(aboutHtml, /DevOps as a way of working/);
 	assert.match(aboutHtml, /A website that can be read by more than people/);
-	assert.match(aboutHtml, /EMBO Studio · long-term infrastructure support/);
+	assert.match(aboutHtml, /EMBO Studio — content, WordPress and infrastructure relationship/);
 	assert.match(aboutHtml, /200\+ high-density cases/);
 	assert.match(aboutHtml, /since 2019/);
 	const mapNote = aboutHtml.match(
 		/class="practice-map__caption"><div class="article-body">([\s\S]*?)<\/div><\/div>/,
 	);
 	assert.ok(mapNote);
-	assert.equal((mapNote[1].match(/<p>/g) ?? []).length, 3);
+	assert.equal((mapNote[1].match(/<p>/g) ?? []).length, 4);
 	assert.doesNotMatch(mapNote[1], /<ul>|<ol>/);
 	assert.match(aboutHtml, /Public team profiles/);
 	assert.match(aboutHtml, /href="https:\/\/www\.linkedin\.com\/in\/oksanadubinetska\/"/);
 	assert.match(aboutHtml, /href="https:\/\/www\.linkedin\.com\/in\/pan-canon\/"/);
 	assert.match(aboutHtml, /Sam Starling/);
 	assert.match(aboutHtml, /href="https:\/\/www\.linkedin\.com\/showcase\/ironcreed\/"/);
-	assert.doesNotMatch(aboutHtml, /Project type|Problem description/);
+	assert.doesNotMatch(aboutHtml, /Problem description/);
 	assert.match(aboutHtml, /I hired Semen for a project for my client/);
 	assert.match(aboutHtml, /The work was done with an understanding of the matter/);
 	assert.match(aboutHtml, /Thank you\. The work is done/);
 	assert.doesNotMatch(aboutHtml, /Ruslan|Руслан|Pan Canon/);
 	assert.match(aboutHtml, /original reviews on specific platforms are available on request/);
-	assert.doesNotMatch(aboutHtml, /href="https:\/\/freelancehunt\.com/);
+	assert.doesNotMatch(aboutHtml, /href="https:\/\/freelancehunt\.com[^" ]*#reviews/);
 	assert.doesNotMatch(aboutHtml, /Testimonials will be published after client approval/);
 	assert.match(
 		aboutHtml,

@@ -117,7 +117,7 @@ export function EntityIndexTree({ copy, entries, initialEntityId }: EntityIndexT
 											<summary>{entry.label}</summary>
 											<div>
 												<code>{entry.id}</code>
-												<p>{entry.summary}</p>
+												<p>{entry.answer ?? entry.summary}</p>
 												{entry.kind === 'question' && entry.relatedEntries?.length ? (
 													<section className="entity-index__associations">
 														<strong>{copy.questionAssociations}</strong>

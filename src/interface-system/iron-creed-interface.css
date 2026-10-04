@@ -1947,7 +1947,7 @@ html[data-layout-controls='ready'] .sidebar-toggle {
 }
 
 .sidebar {
-	background: radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.8), transparent 37%);
+	background: transparent;
 }
 
 .sidebar::before {
@@ -4379,7 +4379,7 @@ html[data-theme='dark'] .anthem-toggle[aria-pressed='true'] {
 }
 
 html[data-theme='dark'] .sidebar {
-	background: radial-gradient(circle at 70% 80%, rgba(51, 80, 86, 0.28), transparent 38%);
+	background: transparent;
 }
 
 html[data-theme='dark'] .navigation-item:hover,
@@ -6080,4 +6080,26 @@ html[data-theme='dark'] .ic-diagram {
 	.companion-column[data-collapsed='true'] .companion-content {
 		display: none;
 	}
+}
+
+.editorial-questions {
+	margin: 1.5rem 0;
+	padding: 1rem;
+	border: 1px solid var(--line);
+	border-radius: 4px;
+}
+.editorial-questions summary {
+	padding: 0.75rem 0;
+	cursor: pointer;
+	font-weight: 650;
+	line-height: 1.5;
+}
+.editorial-questions details details {
+	margin-left: 0.75rem;
+	padding: 0.25rem 0 0.75rem;
+	border-top: 1px solid var(--line-soft);
+}
+.editorial-questions .article-body {
+	padding: 0;
+	font-size: 1rem;
 }

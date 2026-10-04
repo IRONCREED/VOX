@@ -75,25 +75,8 @@ export default async function QuestionIndexPage({ params }: QuestionIndexPagePro
 	const page = getContentPageById(locale, 'page.corpus-index');
 	if (!question || !page) notFound();
 	const translatedPage = getTranslatedContentPage(page, locale === 'uk' ? 'en' : 'uk');
-	const canonical = new URL(getQuestionHref(locale, question.id), getSiteOrigin()).href;
-	const structuredData = JSON.stringify({
-		'@context': 'https://schema.org',
-		'@type': 'QAPage',
-		inLanguage: locale,
-		mainEntity: {
-			'@type': 'Question',
-			name: question.label,
-			url: canonical,
-			acceptedAnswer: {
-				'@type': 'Answer',
-				text: question.summary,
-			},
-		},
-	}).replaceAll('<', '\\u003c');
-
 	return (
 		<>
-			<script dangerouslySetInnerHTML={{ __html: structuredData }} type="application/ld+json" />
 			<CorpusIndexPageTemplate
 				buildIdentity={getBuildIdentity()}
 				copy={getInterfaceCopy(locale)}

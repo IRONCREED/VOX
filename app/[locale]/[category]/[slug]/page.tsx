@@ -105,6 +105,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 	const structuredData = {
 		'@context': 'https://schema.org',
 		'@type': 'Article',
+		hasPart: { '@id': `${articleUrl}#questions` },
 		headline: article.title,
 		description: article.description,
 		datePublished: article.publishedAt,

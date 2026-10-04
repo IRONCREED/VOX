@@ -20,8 +20,14 @@ Only questions receive generated entity routes:
 
 The route renders the ordinary Corpus Index, selects and expands the requested
 question, and lists its associated public materials or content pages. It also
-publishes localized canonical and alternate metadata plus `QAPage` structured
-data. Concepts, claims, sources, protocols, and assets remain index entities but
+publishes localized canonical and alternate metadata plus `FAQPage` structured
+data with the complete, visible editorial answer. The Corpus Index exposes all
+approved public questions and their full answers in native disclosures; a
+question route marks up only its selected question. Material pages also render
+their approved view's questions and answers in native disclosures and link the
+matching `FAQPage` from Article metadata. These are reviewed editorial answers,
+not a forum where visitors submit alternatives. This markup does not promise
+Google FAQ rich results. Concepts, claims, sources, protocols, and assets remain index entities but
 do not receive equivalent generated routes.
 
 ## Four content maps

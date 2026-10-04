@@ -1,3 +1,6 @@
+import { EditorialQuestions } from '../components/editorial-questions';
+import { getArticleHref } from '../../content-catalog/adapters/corpus-content-repository';
+import { getSiteOrigin } from '../../site-metadata/site-origin';
 import Link from 'next/link';
 import type {
 	ArticleSeriesContext,
@@ -246,6 +249,12 @@ export function ArticlePageTemplate({
 						</Link>
 					</nav>
 				) : null}
+
+				<EditorialQuestions
+					scenario={companionScenario}
+					locale={locale}
+					url={new URL(getArticleHref(article), getSiteOrigin()).href}
+				/>
 
 				<footer className="knowledge-footer">
 					<p>{article.memoryLine}</p>

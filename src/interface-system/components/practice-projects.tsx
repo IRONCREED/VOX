@@ -12,60 +12,95 @@ export function PracticeProjects({
 	const map = story.practiceMap;
 	if (!map) return null;
 	const portfolio = story.sections.find((section) => section.kind === 'portfolio');
-	const projects = portfolio?.entries ?? [];
-	const collator = new Intl.Collator(locale, { sensitivity: 'base', numeric: true });
+	const entries = portfolio?.entries ?? [];
 	const testimonials = story.sections.find((section) => section.kind === 'testimonials');
 	const reviews = testimonials?.entries ?? [];
-	const groups = map.countries.map((country) => {
-		const entries = projects
-			.filter((entry) => entry.countryCode === country.code)
-			.toSorted((left, right) => collator.compare(left.title, right.title));
-		return {
-			code: country.code,
-			clientCount: new Set(entries.map((entry) => entry.clientId)).size,
-			projectCount: entries.length,
-			content: entries.map((entry, index) => (
-				<details className="practice-project" key={entry.id} open={index === 0}>
-					<summary>
-						<span>
-							{entry.title}
-							{entry.reviewIds?.length ? (
-								<small className="practice-project__review-count">
-									{map.labels.reviews}: {entry.reviewIds.length}
-								</small>
-							) : null}
-						</span>
-						<span aria-hidden="true">+</span>
-					</summary>
-					<div className="practice-project__content">
-						{entry.meta ? <p className="practice-project__meta">{entry.meta}</p> : null}
-						{!entry.id.startsWith('project-') ? <ArticleBody body={entry.body} /> : null}
-						{entry.link ? (
-							<a href={entry.link.href} target="_blank" rel="noreferrer noopener">
-								{entry.link.label}
-							</a>
-						) : null}
-						{entry.reviewIds?.map((id) => {
-							const review = reviews.find((item) => item.id === id);
-							return review ? (
-								<figure className="practice-project__review" key={id}>
-									<figcaption>
-										{map.labels.review} · {review.meta}
-									</figcaption>
-									<ArticleBody body={review.body} />
-								</figure>
-							) : null;
-						})}
-					</div>
-				</details>
-			)),
-		};
-	});
+	const collator = new Intl.Collator(locale, { sensitivity: 'base', numeric: true });
+	const projects = entries
+		.toSorted((left, right) => collator.compare(left.title, right.title))
+		.map((entry) => ({
+			id: entry.id,
+			title: entry.title,
+			clientId: entry.clientId,
+			countryCodes: entry.countryCodes,
+			workTypes: entry.workTypes,
+			originKind: entry.originKind,
+			parentId: entry.parentId,
+			reviewCount: entry.reviewIds?.length ?? 0,
+			relations: (entry.relations ?? [])
+				.filter(
+					(relation) => !['part-of', 'has-component', 'credited-under'].includes(relation.type),
+				)
+				.map((relation) => ({
+					...relation,
+					title: entries.find((item) => item.id === relation.targetId)?.title ?? relation.targetId,
+				})),
+			content: (
+				<>
+					{entry.meta ? <p className="practice-project__meta">{entry.meta}</p> : null}
+					<ArticleBody body={entry.body} />
+					{entry.links?.length ? (
+						<ul className="practice-project__links">
+							{entry.links.map((link) => (
+								<li key={link.href}>
+									<a href={link.href} target="_blank" rel="noreferrer noopener">
+										{link.label}
+									</a>
+								</li>
+							))}
+						</ul>
+					) : null}
+					{entry.components?.length ? (
+						<section aria-label={map.labels.components}>
+							<p className="practice-project__meta">{map.labels.components}</p>
+							<ul className="practice-project__tree">
+								{entry.components
+									.toSorted((a, b) => collator.compare(a.title, b.title))
+									.map((component) => (
+										<li key={component.id}>
+											<details className="practice-project">
+												<summary>
+													<span>{component.title}</span>
+													<span aria-hidden="true">+</span>
+												</summary>
+												<div className="practice-project__content">
+													{component.links.map((link) => (
+														<a
+															key={link.href}
+															href={link.href}
+															target="_blank"
+															rel="noreferrer noopener"
+														>
+															{link.label}
+														</a>
+													))}
+												</div>
+											</details>
+										</li>
+									))}
+							</ul>
+						</section>
+					) : null}
+					{entry.reviewIds?.map((id) => {
+						const review = reviews.find((item) => item.id === id);
+						return review ? (
+							<figure className="practice-project__review" key={id}>
+								<figcaption>
+									{map.labels.review} · {review.meta}
+								</figcaption>
+								<ArticleBody body={review.body} />
+							</figure>
+						) : null;
+					})}
+				</>
+			),
+		}));
 	return (
 		<PracticeMap
 			countries={map.countries}
+			workTypes={map.workTypes}
 			labels={map.labels}
-			groups={groups}
+			projects={projects}
 			reviewNote={
 				<ArticleBody body={[testimonials?.body, portfolio?.body].filter(Boolean).join('\n\n')} />
 			}

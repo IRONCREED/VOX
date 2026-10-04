@@ -28,15 +28,15 @@ test('the public build renders the service story, attributed portfolio, and real
 		html,
 		/href="https:\/\/github\.com\/IRONCREED\/VOX\/tree\/main\/constitutional-guard"/,
 	);
-	assert.match(html, /EMBO Studio · long-term infrastructure support/);
-	assert.match(html, /Academic typesetting → an in-house publishing pipeline/);
+	assert.match(html, /EMBO Studio — content, WordPress and infrastructure relationship/);
+	assert.match(html, /MTC — academic journal typesetting/);
 	assert.match(html, /200\+ high-density cases/);
 	assert.match(html, /Public team profiles/);
 	assert.match(html, /href="https:\/\/www\.linkedin\.com\/showcase\/ironcreed\/"/);
-	assert.doesNotMatch(html, /Project type|Problem description/);
+	assert.doesNotMatch(html, /Problem description/);
 	assert.match(html, /reviews from all platforms/);
 	assert.match(html, /available on request/);
-	assert.doesNotMatch(html, /href="https:\/\/freelancehunt\.com/);
+	assert.doesNotMatch(html, /href="https:\/\/freelancehunt\.com[^" ]*#reviews/);
 	assert.doesNotMatch(html, />link</i);
 });
 
@@ -62,3 +62,5 @@ test('the public build renders the faceted monogram and local anthem only', asyn
 });
 
 import '../../postbuild/practice-map-metadata.test.mjs';
+
+import '../../postbuild/registry-faq.test.mjs';

@@ -11,6 +11,8 @@ import { ArticleBody } from '../components/article-body';
 import { EntityIndexTree } from '../components/entity-index-tree';
 import { QuipCollection } from '../components/quip-collection';
 import { SiteShell } from './site-shell';
+import { editorialFaq } from '../../site-metadata/editorial-faq';
+import { getSiteOrigin } from '../../site-metadata/site-origin';
 
 interface CorpusIndexPageTemplateProps {
 	buildIdentity: BuildIdentity;
@@ -34,6 +36,23 @@ export function CorpusIndexPageTemplate({
 	translatedPage,
 }: CorpusIndexPageTemplateProps) {
 	const otherLocale: Locale = locale === 'uk' ? 'en' : 'uk';
+	const questions = entities
+		.filter(
+			(entry) =>
+				entry.kind === 'question' &&
+				entry.answer &&
+				(!selectedEntityId || entry.id === selectedEntityId),
+		)
+		.map((entry) => ({
+			id: entry.id,
+			label: entry.label,
+			answer: entry.answer!,
+			url: new URL(getQuestionHref(locale, entry.id), getSiteOrigin()).href,
+		}));
+	const faqUrl = new URL(
+		selectedEntityId ? getQuestionHref(locale, selectedEntityId) : `/${locale}/pages/${page.slug}`,
+		getSiteOrigin(),
+	).href;
 	const localeLinks = [
 		{
 			locale,
@@ -62,6 +81,15 @@ export function CorpusIndexPageTemplate({
 			navigation={navigation}
 		>
 			<main className="knowledge-panel knowledge-panel--content-page corpus-index-page" id="main">
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(editorialFaq(locale, faqUrl, questions)).replaceAll(
+							'<',
+							'\\u003c',
+						),
+					}}
+				/>
 				<header className="content-page-header">
 					<small>{page.eyebrow}</small>
 					<h1>{page.title}</h1>
