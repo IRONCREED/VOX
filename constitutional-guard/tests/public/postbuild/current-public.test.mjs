@@ -13,7 +13,7 @@ test('the public build renders the service story, attributed portfolio, and real
 	assert.equal(response.status, 200);
 	const html = await response.text();
 
-	assert.match(html, /Who is IRONCREED\?/);
+	assert.doesNotMatch(html, /about-iron-creed-identity/);
 	assert.match(html, /IRONCREED — the personified engineering process of Zhovten Games/);
 	assert.match(html, /href="\/en\/pages\/material-cycle"/);
 	assert.match(html, /href="\/en\/pages\/anthem"/);
@@ -64,3 +64,5 @@ test('the public build renders the faceted monogram and local anthem only', asyn
 import '../../postbuild/practice-map-metadata.test.mjs';
 
 import '../../postbuild/registry-faq.test.mjs';
+
+import '../../postbuild/portfolio-refinement.test.mjs';

@@ -11,7 +11,7 @@ Canonical country assignments and review associations are editorial records.
 The public snapshot contains their localized projection. Markers count distinct
 client IDs, not assignments. One approved relationship may receive map credits
 in several countries; their sum can exceed the global distinct-client count.
-Owned work has no inferred country or client credit and appears separately.
+Owned work has no inferred country or client credit and keeps an explicit origin label.
 All projects and original review texts are server-rendered and accessible
 without JavaScript. Interactive filters and native disclosure controls retain
 keyboard access. Geography refers to the organisation or project, not a
@@ -29,8 +29,8 @@ landing. Only its approved public projection reaches this consumer; private
 registry notes, editorial documents and publication reasons are excluded.
 Explicit parent relations form nested project disclosures with CSS tree lines.
 Named embedded services appear within their carrying project, while other typed
-relations remain labelled cross-links. Alphabetical sorting uses the active
-locale at each sibling level.
+relations remain labelled cross-links. Configured primary work types order all origins and sibling levels: engineering
+first, games next, writing last. Localized titles break ties.
 
 The map selects a country. One button opens work-type choices, which intersect
 with the selected country. Applying either facet scrolls and focuses results,
@@ -38,7 +38,7 @@ respecting reduced motion. Matching children retain their parent context.
 Following a project cross-link resets facets and opens the target's ancestors.
 The compact note retains the original review-source statement, 200+ cases and
 mapped work since 2019, and separate studio game projects. A fourth paragraph
-acknowledges the closed registry and links to LinkedIn for contract experience
+acknowledges the closed registry and scrolls to the team LinkedIn profiles below for contract experience
 without public artifacts.
 
 The geometry generator transfers the original Crimea polygon from Natural

@@ -326,7 +326,7 @@ test('the build, policies, and four localized search maps are public', async () 
 	assert.match(aboutHtml, /identity and role in the game remain classified/);
 	assert.match(aboutHtml, /personified engineering process/);
 	assert.doesNotMatch(aboutHtml, /military medical-AI prototype/);
-	assert.match(aboutHtml, /Who is IRONCREED\?/);
+	assert.doesNotMatch(aboutHtml, /about-iron-creed-identity/);
 	assert.match(aboutHtml, /IRONCREED — the personified engineering process of Zhovten Games/);
 	const cycleHtml = await (await site.request('/en/pages/material-cycle')).text();
 	assert.match(cycleHtml, /From a working question to a verifiable publication/);

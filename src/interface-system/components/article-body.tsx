@@ -193,6 +193,7 @@ function parseBlocks(source: string): MarkdownBlock[] {
 }
 
 function safeHref(candidate: string) {
+	if (/^#[a-zA-Z][a-zA-Z0-9:_-]*$/.test(candidate)) return candidate;
 	if (candidate.startsWith('/')) {
 		return candidate;
 	}
@@ -207,7 +208,7 @@ function safeHref(candidate: string) {
 
 function renderInline(source: string, keyPrefix = 'inline'): ReactNode[] {
 	const tokenPattern =
-		/(\[[^\]]+\]\((?:https?:\/\/|\/)[^)]+\)|\*\*[^*]+\*\*|\*[^*\n]+\*|_[^_\n]+_|\x60[^\x60]+\x60|\n)/g;
+		/(\[[^\]]+\]\((?:https?:\/\/|\/|#)[^)]+\)|\*\*[^*]+\*\*|\*[^*\n]+\*|_[^_\n]+_|\x60[^\x60]+\x60|\n)/g;
 
 	return source.split(tokenPattern).map((token, index) => {
 		const key = keyPrefix + '-' + index;

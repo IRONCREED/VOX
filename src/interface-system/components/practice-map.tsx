@@ -92,6 +92,11 @@ export function PracticeMap({
 					<summary>
 						<span>
 							{project.title}
+							{!project.parentId ? (
+								<small className="practice-project__origin">
+									{project.originKind === 'owned' ? labels.ownedWork : labels.clientWork}
+								</small>
+							) : null}
 							{project.reviewCount ? (
 								<small className="practice-project__review-count">
 									{labels.reviews}: {project.reviewCount}
@@ -245,18 +250,9 @@ export function PracticeMap({
 					</span>
 				</p>
 				{selection.projectCount === 0 ? <p>{labels.empty}</p> : null}
-				{(['external-relationship', 'owned'] as const).map((kind) => {
-					const roots = projects.filter((p) => p.originKind === kind && !p.parentId);
-					return (
-						<section
-							key={kind}
-							hidden={enhanced && !roots.some((p) => selection.visibleIds.has(p.id))}
-						>
-							<h3>{kind === 'owned' ? labels.ownedWork : labels.clientWork}</h3>
-							<ul className="practice-project__list">{roots.map(renderProject)}</ul>
-						</section>
-					);
-				})}
+				<ul className="practice-project__list">
+					{projects.filter((project) => !project.parentId).map(renderProject)}
+				</ul>
 			</div>
 			<div className="practice-map__caption">{reviewNote}</div>
 		</div>

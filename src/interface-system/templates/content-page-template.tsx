@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import type {
 	CompanionScenario,
-	ContextualHint as ContextualHintModel,
 	InterfaceCopy,
 	Locale,
 	LocalizedContentPage,
@@ -11,7 +10,6 @@ import type { BuildIdentity } from '../../site-navigation/application/build-iden
 import { ArticleBody, InlineMarkdown } from '../components/article-body';
 import { AboutStory } from '../components/about-story';
 import { CompanionPanel } from '../components/companion-panel';
-import { ContextualHint } from '../components/contextual-hint';
 import { QuipCollection } from '../components/quip-collection';
 import { SiteShell } from './site-shell';
 import { SectionIcon } from '../components/section-icon';
@@ -51,20 +49,6 @@ export function ContentPageTemplate({
 			direct: Boolean(translatedPage),
 		},
 	].toSorted((left, right) => (left.locale === 'uk' ? -1 : right.locale === 'uk' ? 1 : 0));
-	const identityHint: ContextualHintModel | undefined =
-		page.pageType === 'about' && page.aboutStory
-			? {
-					id: 'about-iron-creed-identity',
-					locale,
-					label: page.aboutStory.identityHintLabel,
-					source: { kind: 'text', text: page.body },
-				}
-			: undefined;
-	const identityTrigger = 'IRONCREED';
-	const identityRemainder =
-		identityHint && page.description.startsWith(identityTrigger)
-			? page.description.slice(identityTrigger.length)
-			: undefined;
 
 	return (
 		<SiteShell
@@ -86,21 +70,13 @@ export function ContentPageTemplate({
 						<SectionIcon sectionId={isProjectPage ? 'about' : page.pageType} variant="heading" />
 						<span>{page.title}</span>
 					</h1>
-					{page.pageType !== 'anthem' ? (
-						<p className={identityHint ? 'content-page-header__identity' : undefined}>
-							{identityHint && identityRemainder !== undefined ? (
-								<>
-									<ContextualHint
-										closeLabel={copy.closeHint}
-										hint={identityHint}
-										triggerLabel={identityTrigger}
-										variant="inline"
-									/>
-									<InlineMarkdown source={identityRemainder} />
-								</>
-							) : (
-								<InlineMarkdown source={page.description} />
-							)}
+					{page.pageType === 'about' ? (
+						<div className="content-page-header__identity">
+							<ArticleBody body={page.body} />
+						</div>
+					) : page.pageType !== 'anthem' ? (
+						<p>
+							<InlineMarkdown source={page.description} />
 						</p>
 					) : null}
 				</header>

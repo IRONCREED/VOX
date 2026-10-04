@@ -47,6 +47,8 @@ export function AboutStory({ locale, nextSlideLabel, previousSlideLabel, story }
 					.filter((section) => !story.practiceMap || section.kind !== 'testimonials')
 					.map((section, index) => (
 						<section
+							id={section.kind === 'profiles' ? 'team-profiles' : undefined}
+							tabIndex={section.kind === 'profiles' ? -1 : undefined}
 							className={`about-service about-service--${section.kind}`}
 							data-status={section.status}
 							key={section.id}

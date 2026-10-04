@@ -307,6 +307,7 @@ export interface AboutStoryEntry {
 	countryCodes?: string[];
 	originKind?: 'external-relationship' | 'owned';
 	workTypes?: string[];
+	primaryWorkType?: string;
 	parentId?: string;
 	links?: AboutStoryLink[];
 	relations?: { type: string; targetId: string; label: string }[];
@@ -365,7 +366,6 @@ export interface LocalizedAboutStory {
 		workTypes: { code: string; label: string }[];
 		labels: PracticeMapCopy;
 	};
-	identityHintLabel: string;
 	transition: {
 		eyebrow: string;
 		title: string;

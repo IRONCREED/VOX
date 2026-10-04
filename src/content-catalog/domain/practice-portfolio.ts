@@ -2,8 +2,20 @@ import type { AboutStoryEntry } from './content-model';
 
 export type PracticeProjectIdentity = Pick<
 	AboutStoryEntry,
-	'id' | 'clientId' | 'countryCodes' | 'workTypes' | 'parentId' | 'originKind'
+	'id' | 'clientId' | 'countryCodes' | 'workTypes' | 'primaryWorkType' | 'parentId' | 'originKind'
 >;
+
+export function sortPracticeProjects<T extends PracticeProjectIdentity & { title: string }>(
+	projects: T[],
+	workTypes: { code: string }[],
+	locale: string,
+): T[] {
+	const ranks = new Map(workTypes.map((type, index) => [type.code, index]));
+	const rank = (project: T) =>
+		ranks.get(project.primaryWorkType ?? project.workTypes?.[0] ?? '') ?? Number.MAX_SAFE_INTEGER;
+	const collator = new Intl.Collator(locale, { sensitivity: 'base', numeric: true });
+	return projects.toSorted((a, b) => rank(a) - rank(b) || collator.compare(a.title, b.title));
+}
 
 export function projectCountries(
 	project: PracticeProjectIdentity,
