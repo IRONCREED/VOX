@@ -2,6 +2,8 @@
 	grid-column: 1 / -1;
 }
 .practice-map {
+	--studio-orange: #f58220;
+	--studio-ink: #9b4100;
 	min-width: 0;
 	width: 100%;
 	color: var(--ink);
@@ -275,4 +277,53 @@
 
 .about-service--profiles {
 	scroll-margin-top: 1rem;
+}
+
+.practice-map__marker[data-kind='studio'] {
+	border-color: var(--studio-orange);
+	background: var(--studio-orange);
+	color: #1f160d;
+}
+.practice-map__marker[data-kind='studio']:hover,
+.practice-map__marker[data-kind='studio'][aria-pressed='true'] {
+	background: #c95c09;
+	color: #fff;
+}
+.practice-map__leader[data-kind='studio'] {
+	stroke: var(--studio-orange);
+}
+.practice-project__reference {
+	margin: 0 0 0.75rem;
+	padding: 0.75rem 1rem;
+	border-left: 2px solid var(--studio-orange);
+	scroll-margin-top: 1rem;
+	overflow-wrap: anywhere;
+}
+.practice-project__reference > a {
+	color: var(--studio-ink);
+	font-weight: 650;
+	text-decoration: underline;
+	text-underline-offset: 0.18em;
+}
+.practice-project__studio-label {
+	display: block;
+	margin-top: 0.25rem;
+	font-size: 0.8rem;
+	font-weight: 400;
+}
+.practice-studio {
+	margin-top: 1.5rem;
+	border-color: var(--studio-orange);
+	background: rgb(245 130 32 / 6%);
+}
+.practice-studio > summary {
+	color: var(--studio-ink);
+	scroll-margin-top: 1rem;
+}
+.practice-project__reference > a:focus-visible,
+.practice-studio > summary:focus-visible {
+	outline-color: var(--studio-orange);
+}
+[data-theme='dark'] .practice-map {
+	--studio-ink: #ffa55f;
 }

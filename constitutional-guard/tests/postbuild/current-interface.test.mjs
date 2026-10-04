@@ -340,7 +340,12 @@ test('the build, policies, and four localized search maps are public', async () 
 		/class="practice-map__caption"><div class="article-body">([\s\S]*?)<\/div><\/div>/,
 	);
 	assert.ok(mapNote);
-	assert.equal((mapNote[1].match(/<p>/g) ?? []).length, 4);
+	assert.equal((mapNote[1].match(/<p>/g) ?? []).length, 3);
+	assert.doesNotMatch(mapNote[1], /href="https:\/\/zhovten.games\/projects"/);
+	assert.match(
+		aboutHtml,
+		/<details class="practice-project practice-studio">[\s\S]*?href="https:\/\/zhovten.games\/projects"/,
+	);
 	assert.doesNotMatch(mapNote[1], /<ul>|<ol>/);
 	assert.match(aboutHtml, /Public team profiles/);
 	assert.match(aboutHtml, /href="https:\/\/www\.linkedin\.com\/in\/oksanadubinetska\/"/);

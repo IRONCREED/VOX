@@ -308,6 +308,7 @@ export interface AboutStoryEntry {
 	originKind?: 'external-relationship' | 'owned';
 	workTypes?: string[];
 	primaryWorkType?: string;
+	presentation?: 'full' | 'studio-reference';
 	parentId?: string;
 	links?: AboutStoryLink[];
 	relations?: { type: string; targetId: string; label: string }[];
@@ -359,12 +360,14 @@ export interface PracticeMapCopy {
 	empty: string;
 	components: string;
 	relations: string;
+	studioReference: string;
 }
 export interface LocalizedAboutStory {
 	practiceMap?: {
 		countries: PracticeCountry[];
 		workTypes: { code: string; label: string }[];
 		labels: PracticeMapCopy;
+		studio: { id: string; title: string; body: string };
 	};
 	transition?: {
 		eyebrow: string;

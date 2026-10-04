@@ -12,7 +12,7 @@ The public snapshot contains their localized projection. Markers count distinct
 client IDs, not assignments. One approved relationship may receive map credits
 in several countries; their sum can exceed the global distinct-client count.
 Owned work has no inferred country or client credit and keeps an explicit origin label.
-All projects and original review texts are server-rendered and accessible
+All approved case descriptions, studio references and original review texts are server-rendered and accessible
 without JavaScript. Interactive filters and native disclosure controls retain
 keyboard access. Geography refers to the organisation or project, not a
 reviewer's nationality or residence.
@@ -36,13 +36,24 @@ The map selects a country. One button opens work-type choices, which intersect
 with the selected country. Applying either facet scrolls and focuses results,
 respecting reduced motion. Matching children retain their parent context.
 Following a project cross-link resets facets and opens the target's ancestors.
-The compact note retains the original review-source statement, 200+ cases and
-mapped work since 2019, and separate studio game projects. A fourth paragraph
-acknowledges the closed registry and scrolls to the team LinkedIn profiles below for contract experience
-without public artifacts.
+The compact note retains the original review-source statement and 200+ cases
+with mapped work since 2019. The studio projects link now belongs to the orange
+studio disclosure. The closed-registry paragraph scrolls to the team LinkedIn
+profiles below for contract experience without public artifacts.
 
 The geometry generator transfers the original Crimea polygon from Natural
 Earth's default de facto Russia feature to Ukraine and dissolves the internal
 border. Other countries and the coastline are preserved. The United States
 includes its contiguous area, Alaska and Hawaii. The geographic source test
 checks representative locations, other features and total area.
+
+Game work is delegated to a shared orange Zhovten Games disclosure. Reviewed
+`studio-reference` rows retain IDs, typed relations, filters and map credits but
+only render short local links; full game descriptions and direct artifacts are
+absent from this consumer. Technical children of InterDead retain their own
+cards and explicit parent. Full cases and references follow the same type order.
+Country markers are orange only when every associated project is a studio
+reference, including explicit parent geography; mixed countries keep practice
+color regardless of the active work-type filter. Client counts remain distinct.
+Links open and focus the studio disclosure with reduced-motion-aware scrolling;
+native disclosure and anchors remain usable without JavaScript.

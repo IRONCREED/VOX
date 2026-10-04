@@ -2,7 +2,14 @@ import type { AboutStoryEntry } from './content-model';
 
 export type PracticeProjectIdentity = Pick<
 	AboutStoryEntry,
-	'id' | 'clientId' | 'countryCodes' | 'workTypes' | 'primaryWorkType' | 'parentId' | 'originKind'
+	| 'id'
+	| 'clientId'
+	| 'countryCodes'
+	| 'workTypes'
+	| 'primaryWorkType'
+	| 'parentId'
+	| 'originKind'
+	| 'presentation'
 >;
 
 export function sortPracticeProjects<T extends PracticeProjectIdentity & { title: string }>(
@@ -50,4 +57,17 @@ export function selectPracticeProjects(
 		clientCount: new Set(matched.flatMap((project) => (project.clientId ? [project.clientId] : [])))
 			.size,
 	};
+}
+
+export function practiceCountryMarker(
+	projects: PracticeProjectIdentity[],
+	country: string,
+): 'studio' | 'practice' {
+	const associated = projects.filter((project) =>
+		projectCountries(project, projects).includes(country),
+	);
+	return associated.length > 0 &&
+		associated.every((project) => project.presentation === 'studio-reference')
+		? 'studio'
+		: 'practice';
 }

@@ -4,11 +4,28 @@ import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } fro
 import type { PracticeCountry, PracticeMapCopy } from '../../content-catalog/domain/content-model';
 import {
 	selectPracticeProjects,
+	practiceCountryMarker,
 	type PracticeProjectIdentity,
 } from '../../content-catalog/domain/practice-portfolio';
 import world from '../geography/world-countries.json';
 
 const subscribe = () => () => {};
+function scrollToPractice(target: HTMLElement | null, reveal: boolean) {
+	if (reveal) {
+		let node = target;
+		while (node) {
+			if (node instanceof HTMLDetailsElement) node.open = true;
+			node = node.parentElement;
+		}
+	}
+	const focusTarget =
+		reveal && !target?.matches('summary') ? target?.querySelector('summary, a') : target;
+	(focusTarget as HTMLElement | null)?.focus({ preventScroll: true });
+	target?.scrollIntoView({
+		block: 'start',
+		behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+	});
+}
 interface PracticeProject extends PracticeProjectIdentity {
 	title: string;
 	reviewCount: number;
@@ -22,12 +39,14 @@ export function PracticeMap({
 	labels,
 	projects,
 	reviewNote,
+	studio,
 }: {
 	countries: PracticeCountry[];
 	workTypes: { code: string; label: string }[];
 	labels: PracticeMapCopy;
 	projects: PracticeProject[];
 	reviewNote: ReactNode;
+	studio: { id: string; title: string; content: ReactNode };
 }) {
 	const enhanced = useSyncExternalStore(
 		subscribe,
@@ -41,26 +60,17 @@ export function PracticeMap({
 	const [revealId, setRevealId] = useState<string>();
 	const resultsRef = useRef<HTMLDivElement>(null);
 	useEffect(() => {
+		if (window.location.hash === `#${studio.id}`) {
+			scrollToPractice(document.getElementById(studio.id), true);
+		}
+	}, [studio.id]);
+	useEffect(() => {
 		if (scrollRequest === 0) return;
 		const target = revealId
-			? document.getElementById(`practice-project-${revealId}`)
+			? document.getElementById(revealId === studio.id ? studio.id : `practice-project-${revealId}`)
 			: resultsRef.current;
-		if (revealId) {
-			let node = target;
-			while (node) {
-				if (node instanceof HTMLDetailsElement) node.open = true;
-				node = node.parentElement;
-			}
-		}
-		const focusTarget = revealId ? target?.querySelector('summary') : target;
-		(focusTarget as HTMLElement | null)?.focus({ preventScroll: true });
-		target?.scrollIntoView({
-			block: 'start',
-			behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
-				? 'instant'
-				: 'smooth',
-		});
-	}, [scrollRequest, revealId]);
+		scrollToPractice(target, Boolean(revealId));
+	}, [scrollRequest, revealId, studio.id]);
 	function apply(country: string, type: string) {
 		setSelected(country);
 		setWorkType(type);
@@ -75,17 +85,49 @@ export function PracticeMap({
 		return [
 			{
 				country,
+				kind: practiceCountryMarker(projects, country.code),
 				point,
 				x: point[0] + (country.labelOffset?.[0] ?? 0),
 				y: point[1] + (country.labelOffset?.[1] ?? 0),
-				count: new Set(
-					projects.filter((p) => p.countryCodes?.includes(country.code)).map((p) => p.clientId),
-				).size,
+				count: selectPracticeProjects(projects, country.code, 'all').clientCount,
 			},
 		];
 	});
 	function renderProject(project: PracticeProject): ReactNode {
 		const children = projects.filter((item) => item.parentId === project.id);
+		if (project.presentation === 'studio-reference') {
+			return (
+				<li key={project.id} hidden={enhanced && !selection.visibleIds.has(project.id)}>
+					<div className="practice-project__reference" id={`practice-project-${project.id}`}>
+						<a
+							href={`#${studio.id}`}
+							onClick={
+								enhanced
+									? (event) => {
+											event.preventDefault();
+											setRevealId(studio.id);
+											setScrollRequest((request) => request + 1);
+										}
+									: undefined
+							}
+						>
+							{project.title}
+							<span className="practice-project__studio-label">{labels.studioReference} ↓</span>
+						</a>
+						{!project.parentId ? (
+							<small className="practice-project__origin">
+								{project.originKind === 'owned' ? labels.ownedWork : labels.clientWork}
+							</small>
+						) : null}
+						{children.length ? (
+							<ul className="practice-project__tree" aria-label={labels.components}>
+								{children.map(renderProject)}
+							</ul>
+						) : null}
+					</div>
+				</li>
+			);
+		}
 		return (
 			<li key={project.id} hidden={enhanced && !selection.visibleIds.has(project.id)}>
 				<details className="practice-project" id={`practice-project-${project.id}`}>
@@ -159,7 +201,7 @@ export function PracticeMap({
 							data-selected={enhanced && active?.geographyId === country.id}
 						/>
 					))}
-					{markers.map(({ country, point, x, y }) => (
+					{markers.map(({ country, point, x, y, kind }) => (
 						<line
 							key={country.code}
 							x1={point[0]}
@@ -167,17 +209,19 @@ export function PracticeMap({
 							x2={x}
 							y2={y}
 							className="practice-map__leader"
+							data-kind={kind}
 						/>
 					))}
 				</svg>
-				{markers.map(({ country, x, y, count }) => {
-					const label = `${country.label} · ${labels.clients}: ${count}`;
+				{markers.map(({ country, x, y, count, kind }) => {
+					const label = `${country.label} · ${labels.clients}: ${count}${kind === 'studio' ? ` · ${labels.studioReference}` : ''}`;
 					const style = { left: `${x / 10}%`, top: `${y / 5}%` };
 					return enhanced ? (
 						<button
 							key={country.code}
 							type="button"
 							className="practice-map__marker"
+							data-kind={kind}
 							style={style}
 							aria-label={label}
 							title={label}
@@ -192,6 +236,7 @@ export function PracticeMap({
 						<a
 							key={country.code}
 							className="practice-map__marker"
+							data-kind={kind}
 							href="#practice-results"
 							style={style}
 							aria-label={label}
@@ -254,6 +299,13 @@ export function PracticeMap({
 					{projects.filter((project) => !project.parentId).map(renderProject)}
 				</ul>
 			</div>
+			<details className="practice-project practice-studio">
+				<summary id={studio.id}>
+					<span>{studio.title}</span>
+					<span aria-hidden="true">+</span>
+				</summary>
+				<div className="practice-project__content">{studio.content}</div>
+			</details>
 			<div className="practice-map__caption">{reviewNote}</div>
 		</div>
 	);

@@ -18,7 +18,9 @@ test('portfolio priority, open identity paragraphs and LinkedIn anchor agree in 
 		const projects = page.aboutStory.sections.find((s) => s.kind === 'portfolio').entries;
 		const roots = new Map(projects.filter((p) => !p.parentId).map((p) => [p.id, p]));
 		const ids = [
-			...html.matchAll(/<details class="practice-project" id="practice-project-([^"]+)"/g),
+			...html.matchAll(
+				/<(?:details class="practice-project"|div class="practice-project__reference") id="practice-project-([^"]+)"/g,
+			),
 		]
 			.map((m) => m[1])
 			.filter((id) => roots.has(id));
@@ -39,5 +41,61 @@ test('portfolio priority, open identity paragraphs and LinkedIn anchor agree in 
 		assert.ok(intro);
 		assert.equal((intro.match(/<p>/g) ?? []).length, 3);
 		assert.match(intro, /href="https:\/\/zhovten.games\/"/);
+	}
+});
+
+test('game cases are compact references to one studio disclosure while technical children and reviews remain public', async () => {
+	const site = await createCompiledSiteDriver();
+	for (const locale of ['uk', 'en']) {
+		const html = await (await site.request(`/${locale}/pages/about`)).text();
+		assert.equal((html.match(/class="practice-project__reference"/g) ?? []).length, 11);
+		assert.equal((html.match(/class="practice-project"/g) ?? []).length, 35);
+		assert.equal((html.match(/class="practice-project practice-studio"/g) ?? []).length, 1);
+		assert.equal((html.match(/class="practice-project__review"/g) ?? []).length, 19);
+		assert.equal(
+			(html.match(/class="practice-map__marker" data-kind="practice"/g) ?? []).length,
+			7,
+		);
+		for (const id of [
+			'clockwork-magick-game-master',
+			'grandma-narrative-game-design',
+			'interdead',
+			'quokka-consulting',
+			'safe-blind-zones-live-tester',
+			'interdead-proto',
+			'mcf-28-house-that-love-built',
+		]) {
+			assert.match(
+				html,
+				new RegExp(
+					`<div class="practice-project__reference" id="practice-project-${id}"><a href="#studio-game-development"`,
+				),
+			);
+			assert.doesNotMatch(html, new RegExp(`<details[^>]*id="practice-project-${id}"`));
+		}
+		for (const id of [
+			'interdead-site',
+			'interdead-core',
+			'psyframework',
+			'interdead-reference-library',
+		]) {
+			assert.match(
+				html,
+				new RegExp(`<details class="practice-project" id="practice-project-${id}"`),
+			);
+		}
+		const disclosure =
+			/<details class="practice-project practice-studio">([\s\S]*?)<\/details>/.exec(html)?.[1];
+		assert.ok(disclosure);
+		assert.match(disclosure, /<summary id="studio-game-development"/);
+		assert.match(disclosure, /href="https:\/\/zhovten.games\/projects"/);
+		assert.ok(
+			html.indexOf('class="practice-project practice-studio"') >
+				html.indexOf('id="practice-results"'),
+		);
+		assert.doesNotMatch(
+			html,
+			/Game-master work in 2020|A short-term contract engagement in spring 2026|робота ігрової майстрині охоплювала/,
+		);
 	}
 });

@@ -15,6 +15,11 @@
 		"conversationViewId": "view.about.iron-creed",
 		"aboutStory": {
 			"practiceMap": {
+				"studio": {
+					"id": "studio-game-development",
+					"title": "Game development and creative projects at Zhovten Games",
+					"body": "Explore the studio’s games and creative projects on the [Zhovten Games projects page](https://zhovten.games/projects)."
+				},
 				"workTypes": [
 					{
 						"code": "websites",
@@ -146,7 +151,7 @@
 					"reviews": "Reviews",
 					"review": "Client review",
 					"unlocatedNote": "These reviews do not specify the client’s country.",
-					"geographyNote": "Numbers show distinct client relationships in each country. One relationship may span several countries; owned projects do not increase the client count.",
+					"geographyNote": "Numbers show distinct client relationships in each country. One relationship may span several countries; owned projects do not increase the client count. Orange markers indicate countries with only Zhovten Games references; mixed countries keep the regular color.",
 					"sourceNote": "Links to the original reviews are available on request.",
 					"projectTypes": "Project types",
 					"allTypes": "All types",
@@ -155,7 +160,8 @@
 					"ownedWork": "Owned projects",
 					"empty": "No projects match this combination of filters.",
 					"components": "Project components",
-					"relations": "Related projects"
+					"relations": "Related projects",
+					"studioReference": "Game development / Zhovten Games"
 				}
 			},
 			"sections": [
@@ -221,7 +227,7 @@
 					"status": "active",
 					"title": "Clients, projects and reviews",
 					"summary": "Client work, contract experience and owned projects, with relationships and reviews.",
-					"body": "The team’s documented experience covers 200+ high-density cases combining content, product and technical work. The map presents cases we have worked on since 2019.\n\nExplore the studio’s games and creative projects on the [Zhovten Games projects page](https://zhovten.games/projects).\n\nThis portfolio is an approved public projection of a closed registry. Some contract experience has no artifacts available for public release; find further experience in the [LinkedIn profiles below](#team-profiles).",
+					"body": "The team’s documented experience covers 200+ high-density cases combining content, product and technical work. The map presents cases we have worked on since 2019.\n\nThis portfolio is an approved public projection of a closed registry. Some contract experience has no artifacts available for public release; find further experience in the [LinkedIn profiles below](#team-profiles).",
 					"entries": [
 						{
 							"id": "aleksandr-v-content",
@@ -234,6 +240,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"aleksandr-v-script-2024",
 								"aleksandr-v-writing-2024-05",
@@ -257,6 +264,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"andrey-minkiv-gambling-2024"
 							],
@@ -278,6 +286,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"viktor-stinich-berat-2025"
 							],
@@ -298,6 +307,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -333,12 +343,13 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"reviewIds": [],
 							"links": [],
 							"relations": [],
 							"components": [],
 							"title": "Clockwork Magick — game mastering",
-							"body": "Game-master work in 2020–2021 covered complete scenarios, characters, locations and NPCs. Game systems were adapted to individual stories, tested in live sessions and revised from observed player behaviour.",
+							"body": "Find the studio’s games and creative projects in the [Zhovten Games section below](#studio-game-development).",
 							"meta": "Game / narrative work"
 						},
 						{
@@ -352,6 +363,7 @@
 								"research"
 							],
 							"primaryWorkType": "security",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -384,6 +396,7 @@
 								"tooling"
 							],
 							"primaryWorkType": "research",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -423,6 +436,7 @@
 								"consulting"
 							],
 							"primaryWorkType": "consulting",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -451,6 +465,7 @@
 								"content"
 							],
 							"primaryWorkType": "websites",
+							"presentation": "full",
 							"reviewIds": [
 								"bogdan-p-wordpress-review-2024"
 							],
@@ -517,6 +532,7 @@
 								"support"
 							],
 							"primaryWorkType": "websites",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -541,6 +557,7 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"reviewIds": [],
 							"links": [],
 							"relations": [
@@ -572,7 +589,7 @@
 							],
 							"components": [],
 							"title": "GrandMA Studios — game and narrative design",
-							"body": "Commercial HOPA production work in 2021–2025 covered game and narrative design: scripts, dialogue, quests, branching logic, interactive sequences and implementation-facing documentation. Decisions were coordinated with art, engineering and QA. Five released titles are listed below; public copy stays within documented facts and NDA boundaries.",
+							"body": "Find the studio’s games and creative projects in the [Zhovten Games section below](#studio-game-development).",
 							"meta": "Game / narrative work"
 						},
 						{
@@ -588,6 +605,7 @@
 								"support"
 							],
 							"primaryWorkType": "wordpress",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -617,6 +635,7 @@
 								"wordpress"
 							],
 							"primaryWorkType": "websites",
+							"presentation": "full",
 							"reviewIds": [
 								"illia-humeniuk-linkedin-2026"
 							],
@@ -649,17 +668,9 @@
 								"research"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Zhovten Games project",
-									"href": "https://zhovten.games/projects"
-								},
-								{
-									"label": "Public snapshot",
-									"href": "https://zhovten-games.itch.io/interdead"
-								}
-							],
+							"links": [],
 							"relations": [
 								{
 									"type": "has-component",
@@ -689,7 +700,7 @@
 							],
 							"components": [],
 							"title": "InterDead — narrative horror project",
-							"body": "Narrative horror project built as a connected system of game, web, documentation, research and infrastructure components.",
+							"body": "Find the studio’s games and creative projects in the [Zhovten Games section below](#studio-game-development).",
 							"meta": "Game / narrative work · Research / methodology"
 						},
 						{
@@ -701,6 +712,7 @@
 								"websites"
 							],
 							"primaryWorkType": "tooling",
+							"presentation": "full",
 							"parentId": "interdead",
 							"reviewIds": [],
 							"links": [
@@ -736,14 +748,10 @@
 								"websites"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"parentId": "interdead",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Repository",
-									"href": "https://github.com/Zhovten-Games/InterDeadProto"
-								}
-							],
+							"links": [],
 							"relations": [
 								{
 									"type": "part-of",
@@ -753,7 +761,7 @@
 							],
 							"components": [],
 							"title": "InterDeadProto / NOIR",
-							"body": "Narrative-driven interface prototype for InterDead and the NOIR in-world device layer.",
+							"body": "Find the studio’s games and creative projects in the [Zhovten Games section below](#studio-game-development).",
 							"meta": "Game / narrative work · Tools / reusable engineering systems · Websites / web applications"
 						},
 						{
@@ -765,6 +773,7 @@
 								"publishing"
 							],
 							"primaryWorkType": "research",
+							"presentation": "full",
 							"parentId": "interdead",
 							"reviewIds": [],
 							"links": [
@@ -795,6 +804,7 @@
 								"support"
 							],
 							"primaryWorkType": "websites",
+							"presentation": "full",
 							"parentId": "interdead",
 							"reviewIds": [],
 							"links": [
@@ -886,6 +896,7 @@
 								"tooling"
 							],
 							"primaryWorkType": "wordpress",
+							"presentation": "full",
 							"parentId": "ironcreed-security",
 							"reviewIds": [],
 							"links": [
@@ -920,6 +931,7 @@
 								"tooling"
 							],
 							"primaryWorkType": "security",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -955,6 +967,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"jane-doe-igaming-2024"
 							],
@@ -975,6 +988,7 @@
 								"tooling"
 							],
 							"primaryWorkType": "research",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -1012,14 +1026,10 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"parentId": "grandma-narrative-game-design",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Mystery Case Files 25: The Dalimar Legacy",
-									"href": "https://www.youtube.com/watch?v=0PtNx_loBHw"
-								}
-							],
+							"links": [],
 							"relations": [
 								{
 									"type": "credited-under",
@@ -1029,7 +1039,7 @@
 							],
 							"components": [],
 							"title": "Mystery Case Files 25: The Dalimar Legacy",
-							"body": "Released HOPA title credited to Oksana Dubinetska for game / narrative design work at GrandMA Studios.",
+							"body": "Find the studio’s games and creative projects in the [Zhovten Games section below](#studio-game-development).",
 							"meta": "Game / narrative work"
 						},
 						{
@@ -1041,14 +1051,10 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"parentId": "grandma-narrative-game-design",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Mystery Case Files 26: A Crime in Reflection",
-									"href": "https://www.youtube.com/watch?v=8mZmJsagw-0"
-								}
-							],
+							"links": [],
 							"relations": [
 								{
 									"type": "credited-under",
@@ -1058,7 +1064,7 @@
 							],
 							"components": [],
 							"title": "Mystery Case Files 26: A Crime in Reflection",
-							"body": "Released HOPA title credited to Oksana Dubinetska for game / narrative design work at GrandMA Studios.",
+							"body": "Find the studio’s games and creative projects in the [Zhovten Games section below](#studio-game-development).",
 							"meta": "Game / narrative work"
 						},
 						{
@@ -1070,14 +1076,10 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"parentId": "grandma-narrative-game-design",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Mystery Case Files 27: The Riddle of Mrs. Bishop",
-									"href": "https://www.youtube.com/watch?v=krGvGm9o7jE"
-								}
-							],
+							"links": [],
 							"relations": [
 								{
 									"type": "credited-under",
@@ -1087,7 +1089,7 @@
 							],
 							"components": [],
 							"title": "Mystery Case Files 27: The Riddle of Mrs. Bishop",
-							"body": "Released HOPA title credited to Oksana Dubinetska for game / narrative design work at GrandMA Studios.",
+							"body": "Find the studio’s games and creative projects in the [Zhovten Games section below](#studio-game-development).",
 							"meta": "Game / narrative work"
 						},
 						{
@@ -1099,14 +1101,10 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"parentId": "grandma-narrative-game-design",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Mystery Case Files 28: House That Love Built",
-									"href": "https://www.youtube.com/watch?v=vCQ_1Rlirm8"
-								}
-							],
+							"links": [],
 							"relations": [
 								{
 									"type": "credited-under",
@@ -1116,7 +1114,7 @@
 							],
 							"components": [],
 							"title": "Mystery Case Files 28: House That Love Built",
-							"body": "Released HOPA title credited to Oksana Dubinetska for game / narrative design work at GrandMA Studios.",
+							"body": "Find the studio’s games and creative projects in the [Zhovten Games section below](#studio-game-development).",
 							"meta": "Game / narrative work"
 						},
 						{
@@ -1131,6 +1129,7 @@
 								"publishing"
 							],
 							"primaryWorkType": "publishing",
+							"presentation": "full",
 							"reviewIds": [
 								"yegor-grebnev-mtc-test-2025",
 								"yegor-grebnev-mtc-2026-01",
@@ -1165,6 +1164,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"oleg-s-telegram-2024-05",
 								"oleg-s-telegram-2024-06"
@@ -1187,6 +1187,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"oleksandra-bevz-sports-2024"
 							],
@@ -1207,6 +1208,7 @@
 								"websites"
 							],
 							"primaryWorkType": "tooling",
+							"presentation": "full",
 							"parentId": "interdead",
 							"reviewIds": [],
 							"links": [
@@ -1247,25 +1249,13 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "QUOKKA",
-									"href": "https://quokka.com/"
-								},
-								{
-									"label": "ADDUCATES",
-									"href": "https://adducates.com/about/"
-								},
-								{
-									"label": "QUOKKA · LinkedIn",
-									"href": "https://www.linkedin.com/search/results/all/?keywords=QUOKKA&origin=RICH_QUERY_SUGGESTION&heroEntityKey=urn%3Ali%3Aorganization%3A105488841&position=0"
-								}
-							],
+							"links": [],
 							"relations": [],
 							"components": [],
 							"title": "QUOKKA / ADDUCATES — short-term game/product work",
-							"body": "A short-term contract engagement in spring 2026 connected with ADDUCATES and the QUOKKA educational-games brand. The public scope is game/product work in an educational context. NDA applies; the exact role, internal responsibilities and engagement details remain undisclosed.",
+							"body": "Find the studio’s games and creative projects in the [Zhovten Games section below](#studio-game-development).",
 							"meta": "Game / narrative work"
 						},
 						{
@@ -1277,21 +1267,13 @@
 								"websites"
 							],
 							"primaryWorkType": "tooling",
+							"presentation": "studio-reference",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Repository",
-									"href": "https://github.com/Zhovten-Games/safe-blind-zones-live-tester"
-								},
-								{
-									"label": "Public tool",
-									"href": "https://zhovten-games.github.io/safe-blind-zones-live-tester/"
-								}
-							],
+							"links": [],
 							"relations": [],
 							"components": [],
 							"title": "Safe / Blind Zones — Live Tester",
-							"body": "Browser utility for visualizing safe and blind zones in mobile interfaces with presets, orientation switching, layered previews and PNG export.",
+							"body": "Find the studio’s games and creative projects in the [Zhovten Games section below](#studio-game-development).",
 							"meta": "Tools / reusable engineering systems · Websites / web applications"
 						},
 						{
@@ -1305,6 +1287,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"gary-l-copywriting-2024"
 							],
@@ -1335,6 +1318,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -1359,6 +1343,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"tetiana-s-writing-2024"
 							],
@@ -1378,14 +1363,10 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"parentId": "grandma-narrative-game-design",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Whispered Secrets 13: Tying the Knot",
-									"href": "https://www.youtube.com/watch?v=1lVupJG68xc"
-								}
-							],
+							"links": [],
 							"relations": [
 								{
 									"type": "credited-under",
@@ -1395,7 +1376,7 @@
 							],
 							"components": [],
 							"title": "Whispered Secrets 13: Tying the Knot",
-							"body": "Released HOPA title credited to Oksana Dubinetska for game / narrative design work at GrandMA Studios.",
+							"body": "Find the studio’s games and creative projects in the [Zhovten Games section below](#studio-game-development).",
 							"meta": "Game / narrative work"
 						},
 						{
@@ -1409,6 +1390,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"xitatxen-text-slots-2024"
 							],
@@ -1430,6 +1412,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"yuliia-lukianchuk-lindemann-2024",
 								"yuliia-lukianchuk-neuer-2024"
@@ -1451,6 +1434,7 @@
 								"automation"
 							],
 							"primaryWorkType": "tooling",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -1656,6 +1640,11 @@
 		"conversationViewId": "view.about.iron-creed",
 		"aboutStory": {
 			"practiceMap": {
+				"studio": {
+					"id": "studio-game-development",
+					"title": "Геймдев та творчі проєкти Zhovten Games",
+					"body": "Більше про ігри та творчі проєкти студії — на [сторінці проєктів Zhovten Games](https://zhovten.games/projects)."
+				},
 				"workTypes": [
 					{
 						"code": "websites",
@@ -1787,7 +1776,7 @@
 					"reviews": "Відгуки",
 					"review": "Відгук клієнта",
 					"unlocatedNote": "У цих відгуках країну замовника не зазначено.",
-					"geographyNote": "Числа — унікальні клієнтські відносини в кожній країні. Одне відношення може охоплювати кілька країн; власні проєкти не збільшують число клієнтів.",
+					"geographyNote": "Числа — унікальні клієнтські відносини в кожній країні. Одне відношення може охоплювати кілька країн; власні проєкти не збільшують число клієнтів. Помаранчеві маркери позначають країни лише з роботами Zhovten Games; змішані країни зберігають звичайний колір.",
 					"sourceNote": "Посилання на оригінали відгуків надамо на запит.",
 					"projectTypes": "Типи проєктів",
 					"allTypes": "Усі типи",
@@ -1796,7 +1785,8 @@
 					"ownedWork": "Власні проєкти",
 					"empty": "Немає проєктів за цим поєднанням фільтрів.",
 					"components": "Складові проєкту",
-					"relations": "Пов’язані проєкти"
+					"relations": "Пов’язані проєкти",
+					"studioReference": "Геймдев / Zhovten Games"
 				}
 			},
 			"sections": [
@@ -1862,7 +1852,7 @@
 					"status": "active",
 					"title": "Клієнти, проєкти та відгуки",
 					"summary": "Клієнтські роботи, контрактний досвід і власні проєкти — зі зв’язками та відгуками.",
-					"body": "Задокументований досвід команди охоплює понад 200 насичених кейсів: контент, продукт і технічна робота в межах одного рішення. На карті представлені кейси, над якими ми працювали з 2019 року.\n\nБільше про ігри та творчі проєкти студії — на [сторінці проєктів Zhovten Games](https://zhovten.games/projects).\n\nПортфоліо є дозволеною публічною проєкцією закритого реєстру. Частина контрактного досвіду не має артефактів для відкритої публікації; більше про цей досвід — у [профілях LinkedIn нижче](#team-profiles).",
+					"body": "Задокументований досвід команди охоплює понад 200 насичених кейсів: контент, продукт і технічна робота в межах одного рішення. На карті представлені кейси, над якими ми працювали з 2019 року.\n\nПортфоліо є дозволеною публічною проєкцією закритого реєстру. Частина контрактного досвіду не має артефактів для відкритої публікації; більше про цей досвід — у [профілях LinkedIn нижче](#team-profiles).",
 					"entries": [
 						{
 							"id": "aleksandr-v-content",
@@ -1875,6 +1865,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"aleksandr-v-script-2024",
 								"aleksandr-v-writing-2024-05",
@@ -1898,6 +1889,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"andrey-minkiv-gambling-2024"
 							],
@@ -1919,6 +1911,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"viktor-stinich-berat-2025"
 							],
@@ -1939,6 +1932,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -1974,12 +1968,13 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"reviewIds": [],
 							"links": [],
 							"relations": [],
 							"components": [],
 							"title": "Clockwork Magick — ігрове майстрування",
-							"body": "У 2020–2021 роках робота ігрової майстрині охоплювала повні сценарії, персонажів, локації та NPC. Ігрові системи адаптували до потреб історій, перевіряли у живих сесіях і змінювали за спостереженнями за гравцями.",
+							"body": "Ігри та творчі проєкти студії — у [блоці Zhovten Games нижче](#studio-game-development).",
 							"meta": "Ігри / наратив"
 						},
 						{
@@ -1993,6 +1988,7 @@
 								"research"
 							],
 							"primaryWorkType": "security",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -2025,6 +2021,7 @@
 								"tooling"
 							],
 							"primaryWorkType": "research",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -2064,6 +2061,7 @@
 								"consulting"
 							],
 							"primaryWorkType": "consulting",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -2092,6 +2090,7 @@
 								"content"
 							],
 							"primaryWorkType": "websites",
+							"presentation": "full",
 							"reviewIds": [
 								"bogdan-p-wordpress-review-2024"
 							],
@@ -2158,6 +2157,7 @@
 								"support"
 							],
 							"primaryWorkType": "websites",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -2182,6 +2182,7 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"reviewIds": [],
 							"links": [],
 							"relations": [
@@ -2213,7 +2214,7 @@
 							],
 							"components": [],
 							"title": "GrandMA Studios — ігровий та наративний дизайн",
-							"body": "У 2021–2025 роках робота над комерційними HOPA-іграми охоплювала наративний та ігровий дизайн: сценарії, діалоги, квести, розгалуження, інтерактивні сцени й документацію для виробництва. Рішення узгоджували з художниками, розробниками та QA. Нижче — п’ять випущених ігор; публічний опис обмежено підтвердженими фактами з урахуванням NDA.",
+							"body": "Ігри та творчі проєкти студії — у [блоці Zhovten Games нижче](#studio-game-development).",
 							"meta": "Ігри / наратив"
 						},
 						{
@@ -2229,6 +2230,7 @@
 								"support"
 							],
 							"primaryWorkType": "wordpress",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -2258,6 +2260,7 @@
 								"wordpress"
 							],
 							"primaryWorkType": "websites",
+							"presentation": "full",
 							"reviewIds": [
 								"illia-humeniuk-linkedin-2026"
 							],
@@ -2290,17 +2293,9 @@
 								"research"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Проєкти Zhovten Games",
-									"href": "https://zhovten.games/projects"
-								},
-								{
-									"label": "Публічний зріз",
-									"href": "https://zhovten-games.itch.io/interdead"
-								}
-							],
+							"links": [],
 							"relations": [
 								{
 									"type": "has-component",
@@ -2330,7 +2325,7 @@
 							],
 							"components": [],
 							"title": "InterDead — наративний горор-проєкт",
-							"body": "Наративний горор-проєкт як пов’язана система гри, вебсередовища, документації, досліджень та інфраструктури.",
+							"body": "Ігри та творчі проєкти студії — у [блоці Zhovten Games нижче](#studio-game-development).",
 							"meta": "Ігри / наратив · Дослідження / методологія"
 						},
 						{
@@ -2342,6 +2337,7 @@
 								"websites"
 							],
 							"primaryWorkType": "tooling",
+							"presentation": "full",
 							"parentId": "interdead",
 							"reviewIds": [],
 							"links": [
@@ -2377,14 +2373,10 @@
 								"websites"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"parentId": "interdead",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Репозиторій",
-									"href": "https://github.com/Zhovten-Games/InterDeadProto"
-								}
-							],
+							"links": [],
 							"relations": [
 								{
 									"type": "part-of",
@@ -2394,7 +2386,7 @@
 							],
 							"components": [],
 							"title": "InterDeadProto / NOIR",
-							"body": "Наративний прототип інтерфейсу InterDead і внутрішньоігрового пристрою NOIR.",
+							"body": "Ігри та творчі проєкти студії — у [блоці Zhovten Games нижче](#studio-game-development).",
 							"meta": "Ігри / наратив · Інженерні інструменти · Вебсайти / вебзастосунки"
 						},
 						{
@@ -2406,6 +2398,7 @@
 								"publishing"
 							],
 							"primaryWorkType": "research",
+							"presentation": "full",
 							"parentId": "interdead",
 							"reviewIds": [],
 							"links": [
@@ -2436,6 +2429,7 @@
 								"support"
 							],
 							"primaryWorkType": "websites",
+							"presentation": "full",
 							"parentId": "interdead",
 							"reviewIds": [],
 							"links": [
@@ -2527,6 +2521,7 @@
 								"tooling"
 							],
 							"primaryWorkType": "wordpress",
+							"presentation": "full",
 							"parentId": "ironcreed-security",
 							"reviewIds": [],
 							"links": [
@@ -2561,6 +2556,7 @@
 								"tooling"
 							],
 							"primaryWorkType": "security",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -2596,6 +2592,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"jane-doe-igaming-2024"
 							],
@@ -2616,6 +2613,7 @@
 								"tooling"
 							],
 							"primaryWorkType": "research",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -2653,14 +2651,10 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"parentId": "grandma-narrative-game-design",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Mystery Case Files 25: The Dalimar Legacy",
-									"href": "https://www.youtube.com/watch?v=0PtNx_loBHw"
-								}
-							],
+							"links": [],
 							"relations": [
 								{
 									"type": "credited-under",
@@ -2670,7 +2664,7 @@
 							],
 							"components": [],
 							"title": "Mystery Case Files 25: The Dalimar Legacy",
-							"body": "Публічно випущена гра з підтвердженим внеском у межах роботи GrandMA Studios.",
+							"body": "Ігри та творчі проєкти студії — у [блоці Zhovten Games нижче](#studio-game-development).",
 							"meta": "Ігри / наратив"
 						},
 						{
@@ -2682,14 +2676,10 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"parentId": "grandma-narrative-game-design",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Mystery Case Files 26: A Crime in Reflection",
-									"href": "https://www.youtube.com/watch?v=8mZmJsagw-0"
-								}
-							],
+							"links": [],
 							"relations": [
 								{
 									"type": "credited-under",
@@ -2699,7 +2689,7 @@
 							],
 							"components": [],
 							"title": "Mystery Case Files 26: A Crime in Reflection",
-							"body": "Публічно випущена гра з підтвердженим внеском у межах роботи GrandMA Studios.",
+							"body": "Ігри та творчі проєкти студії — у [блоці Zhovten Games нижче](#studio-game-development).",
 							"meta": "Ігри / наратив"
 						},
 						{
@@ -2711,14 +2701,10 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"parentId": "grandma-narrative-game-design",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Mystery Case Files 27: The Riddle of Mrs. Bishop",
-									"href": "https://www.youtube.com/watch?v=krGvGm9o7jE"
-								}
-							],
+							"links": [],
 							"relations": [
 								{
 									"type": "credited-under",
@@ -2728,7 +2714,7 @@
 							],
 							"components": [],
 							"title": "Mystery Case Files 27: The Riddle of Mrs. Bishop",
-							"body": "Публічно випущена гра з підтвердженим внеском у межах роботи GrandMA Studios.",
+							"body": "Ігри та творчі проєкти студії — у [блоці Zhovten Games нижче](#studio-game-development).",
 							"meta": "Ігри / наратив"
 						},
 						{
@@ -2740,14 +2726,10 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"parentId": "grandma-narrative-game-design",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Mystery Case Files 28: House That Love Built",
-									"href": "https://www.youtube.com/watch?v=vCQ_1Rlirm8"
-								}
-							],
+							"links": [],
 							"relations": [
 								{
 									"type": "credited-under",
@@ -2757,7 +2739,7 @@
 							],
 							"components": [],
 							"title": "Mystery Case Files 28: House That Love Built",
-							"body": "Публічно випущена гра з підтвердженим внеском у межах роботи GrandMA Studios.",
+							"body": "Ігри та творчі проєкти студії — у [блоці Zhovten Games нижче](#studio-game-development).",
 							"meta": "Ігри / наратив"
 						},
 						{
@@ -2772,6 +2754,7 @@
 								"publishing"
 							],
 							"primaryWorkType": "publishing",
+							"presentation": "full",
 							"reviewIds": [
 								"yegor-grebnev-mtc-test-2025",
 								"yegor-grebnev-mtc-2026-01",
@@ -2806,6 +2789,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"oleg-s-telegram-2024-05",
 								"oleg-s-telegram-2024-06"
@@ -2828,6 +2812,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"oleksandra-bevz-sports-2024"
 							],
@@ -2848,6 +2833,7 @@
 								"websites"
 							],
 							"primaryWorkType": "tooling",
+							"presentation": "full",
 							"parentId": "interdead",
 							"reviewIds": [],
 							"links": [
@@ -2888,25 +2874,13 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "QUOKKA",
-									"href": "https://quokka.com/"
-								},
-								{
-									"label": "ADDUCATES",
-									"href": "https://adducates.com/about/"
-								},
-								{
-									"label": "QUOKKA · LinkedIn",
-									"href": "https://www.linkedin.com/search/results/all/?keywords=QUOKKA&origin=RICH_QUERY_SUGGESTION&heroEntityKey=urn%3Ali%3Aorganization%3A105488841&position=0"
-								}
-							],
+							"links": [],
 							"relations": [],
 							"components": [],
 							"title": "QUOKKA / ADDUCATES — контрактна ігрова та продуктова робота",
-							"body": "Короткострокова контрактна робота навесні 2026 року з ADDUCATES та брендом освітніх ігор QUOKKA. Публічний обсяг — ігрова та продуктова робота в освітньому контексті. Діє NDA; точну роль, внутрішні обов’язки та деталі співпраці не розкриваємо.",
+							"body": "Ігри та творчі проєкти студії — у [блоці Zhovten Games нижче](#studio-game-development).",
 							"meta": "Ігри / наратив"
 						},
 						{
@@ -2918,21 +2892,13 @@
 								"websites"
 							],
 							"primaryWorkType": "tooling",
+							"presentation": "studio-reference",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Репозиторій",
-									"href": "https://github.com/Zhovten-Games/safe-blind-zones-live-tester"
-								},
-								{
-									"label": "Публічний інструмент",
-									"href": "https://zhovten-games.github.io/safe-blind-zones-live-tester/"
-								}
-							],
+							"links": [],
 							"relations": [],
 							"components": [],
 							"title": "Safe / Blind Zones — Live Tester",
-							"body": "Браузерна утиліта для візуалізації безпечних і сліпих зон мобільних інтерфейсів: пресети, зміна орієнтації, пошаровий перегляд та експорт PNG.",
+							"body": "Ігри та творчі проєкти студії — у [блоці Zhovten Games нижче](#studio-game-development).",
 							"meta": "Інженерні інструменти · Вебсайти / вебзастосунки"
 						},
 						{
@@ -2946,6 +2912,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"gary-l-copywriting-2024"
 							],
@@ -2976,6 +2943,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{
@@ -3000,6 +2968,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"tetiana-s-writing-2024"
 							],
@@ -3019,14 +2988,10 @@
 								"games"
 							],
 							"primaryWorkType": "games",
+							"presentation": "studio-reference",
 							"parentId": "grandma-narrative-game-design",
 							"reviewIds": [],
-							"links": [
-								{
-									"label": "Whispered Secrets 13: Tying the Knot",
-									"href": "https://www.youtube.com/watch?v=1lVupJG68xc"
-								}
-							],
+							"links": [],
 							"relations": [
 								{
 									"type": "credited-under",
@@ -3036,7 +3001,7 @@
 							],
 							"components": [],
 							"title": "Whispered Secrets 13: Tying the Knot",
-							"body": "Публічно випущена гра з підтвердженим внеском у межах роботи GrandMA Studios.",
+							"body": "Ігри та творчі проєкти студії — у [блоці Zhovten Games нижче](#studio-game-development).",
 							"meta": "Ігри / наратив"
 						},
 						{
@@ -3050,6 +3015,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"xitatxen-text-slots-2024"
 							],
@@ -3071,6 +3037,7 @@
 								"content"
 							],
 							"primaryWorkType": "content",
+							"presentation": "full",
 							"reviewIds": [
 								"yuliia-lukianchuk-lindemann-2024",
 								"yuliia-lukianchuk-neuer-2024"
@@ -3092,6 +3059,7 @@
 								"automation"
 							],
 							"primaryWorkType": "tooling",
+							"presentation": "full",
 							"reviewIds": [],
 							"links": [
 								{

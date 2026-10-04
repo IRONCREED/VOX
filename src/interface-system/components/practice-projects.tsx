@@ -24,6 +24,7 @@ export function PracticeProjects({
 		countryCodes: entry.countryCodes,
 		workTypes: entry.workTypes,
 		primaryWorkType: entry.primaryWorkType,
+		presentation: entry.presentation,
 		originKind: entry.originKind,
 		parentId: entry.parentId,
 		reviewCount: entry.reviewIds?.length ?? 0,
@@ -99,6 +100,7 @@ export function PracticeProjects({
 			workTypes={map.workTypes}
 			labels={map.labels}
 			projects={projects}
+			studio={{ ...map.studio, content: <ArticleBody body={map.studio.body} /> }}
 			reviewNote={
 				<ArticleBody body={[testimonials?.body, portfolio?.body].filter(Boolean).join('\n\n')} />
 			}

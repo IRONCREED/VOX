@@ -5598,6 +5598,10 @@ html[data-sidebar-resizing='true'] .sidebar-resize-handle::after {
 
 .content-page-header {
 	z-index: 200;
+	container-type: inline-size;
+	width: 100%;
+	min-width: 0;
+	flex: 0 0 auto;
 }
 
 .contextual-hint.is-open {
@@ -5901,6 +5905,9 @@ html[data-theme='dark'] .ic-diagram {
 }
 .section-heading > span {
 	min-width: 0;
+	flex: 1;
+	overflow-wrap: anywhere;
+	hyphens: auto;
 }
 .section-heading .section-icon--heading {
 	width: clamp(48px, 5vw, 76px);
@@ -5957,6 +5964,15 @@ html[data-theme='dark'] .ic-diagram {
 .project-directory + .about-cycle,
 .project-directory + .about-story > .about-cycle:first-child {
 	border-top: 0;
+}
+
+.project-directory + .about-story > .about-services > .about-service:first-child {
+	border-top: 0;
+}
+
+.content-page-header h1 {
+	font-size: clamp(2rem, 8cqi, 5.125rem);
+	line-height: 1.06;
 }
 
 .knowledge-panel h1 {
